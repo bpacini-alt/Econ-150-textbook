@@ -1,0 +1,1453 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 96.8127%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;} .etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;} .etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;} .etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:pointer;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after,[data-tip].tip-open::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"\2192 ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-deck{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-style:italic;color:#9a9a9a;line-height:1.4;margin:-.7rem 0 1.2rem;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;} .etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-ret-body p{margin:0 0 .75rem;} .etb-ret-body p:last-child{margin:0;}details.etb-misc{background:#fdf0f0;border:1px solid #dba8a8;border-radius:8px;margin:1.5rem 0;}details.etb-misc summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#6b1f1f;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-misc summary::-webkit-details-marker{display:none;}.etb-misc-badge{background:#a33030;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-misc-arrow{margin-left:auto;color:#a33030;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-misc[open] .etb-misc-arrow{transform:rotate(90deg);}.etb-misc-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #dba8a8;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d0f0f;}.etb-misc-body p{margin:0 0 .75rem;} .etb-misc-body p:last-child{margin:0;}.etb-research{background:#f5f0fe;border:1px solid #b89dd4;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-research-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-research-badge{background:#6d4aaa;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-research-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#2d1854;}.etb-research-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#2d1854;}.etb-research-body p{margin:0 0 .65rem;} .etb-research-body p:last-child{margin:0;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;} .etb-note-body p:last-child{margin:0;} .etb-note-body a{color:#1a3a5c;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-sub{font-family:Georgia,'Times New Roman',serif;font-size:14px;font-style:italic;color:#3a6b52;margin:-.4rem 0 .4rem;}.etb-app-grouplbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a7a4f;margin:1.15rem 0 .15rem;}.etb-app-grouplbl:first-of-type{margin-top:.5rem;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;} .etb-app-body p{margin:0 0 .75rem;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"\2192";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-synthesis{background:#1a3a5c;border-radius:10px;padding:1.75rem 2rem;margin:2.5rem 0 3rem;}.etb-syn-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem;}.etb-syn-body{font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.85;color:rgba(255,255,255,.9);font-style:italic;}/* Chapter synthesis — redesigned card (light, two-tone, icons) */.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-head{display:flex;align-items:center;gap:9px;margin-bottom:.65rem;}.etb-synth-card-head svg{width:18px;height:18px;flex:none;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin-top:1px;}.etb-synth-card.pos .etb-synth-card-label{color:#1f6f47;}.etb-synth-card.pos .etb-synth-card-sub{color:#418a64;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li + li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;}.etb-synth-card.pos .etb-synth-list li{color:#2c4034;}.etb-synth-card.pos .etb-synth-list li::before{color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{display:flex;align-items:center;gap:7px;font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take-head svg{width:15px;height:15px;flex:none;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-synth-arrow{display:flex;justify-content:center;margin-top:1.3rem;}.etb-synth-arrow span{width:34px;height:34px;border:1px solid #dcdcdc;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#aaa;}.etb-synth-arrow svg{width:16px;height:16px;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;} .etb-yt:last-child{margin-bottom:0;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-thumb:hover .etb-yt-play{background:rgba(0,0,0,.48);} .etb-yt-play::after{content:"\25B6";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;} .etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-2col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-2item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item-hd{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.5;padding:10px 12px;}.etb-4col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-4item{flex:1 1 140px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-4item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-4item-bd{font-family:sans-serif;font-size:12.5px;color:#444;line-height:1.5;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;} .etb-compare tr:last-child td{border-bottom:none;}blockquote.etb-quote{border-left:3px solid #bbb;margin:1.25rem 0;padding:.75rem 1.25rem;background:#f9f9f7;font-style:italic;font-size:14.5px;color:#444;line-height:1.75;}.etb-photo{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-photo img{display:block;width:100%;height:auto;}.etb-photo-cap{padding:.6rem 1rem;border-top:1px solid #eee;font-family:sans-serif;font-size:12px;color:#666;line-height:1.55;}.etb-photo-cap strong{color:#1a3a5c;font-weight:700;}.etb-photo-credit{display:block;margin-top:.35rem;font-size:10.5px;color:#aaa;} .etb-photo-credit a{color:#aaa;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:auto;min-width:280px;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 18px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 18px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched tr:nth-child(even) td{background:#f7fafd;} .etb-sched tr:last-child td{border-bottom:none;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-svgwrap{display:block;width:100%;} .etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-rof{background:#fbfaf7;border:1px solid #d8cfb8;border-radius:10px;padding:1.2rem 1.4rem;margin:1.75rem 0;}.etb-rof-header{display:flex;align-items:center;gap:10px;margin-bottom:.4rem;}.etb-rof-badge{background:#8a6d2f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-rof-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#5a4718;}.etb-rof-intro{font-family:sans-serif;font-size:13px;line-height:1.65;color:#5a4718;margin:0 0 1rem;}.etb-rof-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;} @media (max-width:540px){.etb-rof-grid{grid-template-columns:1fr;}}.etb-rof-cell{background:#fff;border:1px solid #e4dcc8;border-radius:8px;padding:.7rem .9rem;}.etb-rof-lbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a6d2f;margin-bottom:.4rem;display:flex;align-items:center;gap:6px;}.etb-rof-lbl .etb-rof-n{background:#8a6d2f;color:#fff;width:15px;height:15px;border-radius:50%;font-size:9px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}.etb-rof-body{font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#3a3526;}.etb-rof-body code{font-family:'Courier New',monospace;font-size:12.5px;color:#1a3a5c;background:#eef4fb;padding:1px 4px;border-radius:3px;}.etb-rof-mini{width:100%;height:auto;display:block;margin-top:.2rem;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;} .etb-worked-body p{margin:0 0 .65rem;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:last-child{border-bottom:none;}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;} .etb-figure-notice strong{color:#1a3a5c;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;gap:0;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab:hover{background:#e3e9ef;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.etb-exam-tab.active .etb-exam-tab-chip{background:#26323f;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;} .etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}details.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}details.etb-reveal>
+summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-reveal>
+summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}details.etb-reveal[open]>
+summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;margin:0 0 .6rem;} .etb-reveal-body p:last-child{margin:0;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li:last-child{border-bottom:none;}.etb-frq-parts li::before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-loses{list-style:none;padding:0;margin:0;}.etb-loses li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .65rem;} .etb-loses li:last-child{margin:0;}.etb-loses .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:7px;white-space:nowrap;}
+</style>
+<div class="etb">
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+19
+</div>
+<div class="etb-title-unit">
+Unit 3 · Critique of Markets
+</div>
+<h2 class="etb-title-main">
+Market Failures III: The Case for (Pigouvian) Taxes, Subsidies, and Incentives
+</h2>
+<p class="etb-title-sub">
+Incentives are better than bans
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 19
+</span>
+<span>
+~ 48 min read
+</span>
+</div>
+</div>
+<div class="etb-hook">
+<p>
+Everyone wants less traffic, but almost everyone also wants to be one of the cars causing it.
+</p>
+<p>
+That is the strange honesty of a crowded road. A driver entering at rush hour receives the benefit of the trip, but also imposes delay on everyone else. The private decision is simple: Is this trip worth my time and gas? The social decision is bigger: Is this trip worth my time, my gas, and the delay I impose on hundreds of other people?
+</p>
+<p>
+A
+<span data-tip="A charge for using scarce road space during crowded times.">
+<strong>
+congestion charge
+</strong>
+</span>
+does not ban driving. It asks drivers to face more of the cost their trip imposes on everyone else. A ban says, "do not do this." A price says, "do this only if it is worth the full cost."
+</p>
+</div>
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+Markets need honest prices. When prices leave out external costs or benefits, well-designed taxes, subsidies, congestion charges, and tradable permits can move private incentives closer to social efficiency. The goal is not to micromanage every choice. The goal is to make private choices face the real costs and benefits they create — and the hard part, as the end of this chapter shows, is that someone has to know those costs and set the price honestly.
+</div>
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0" title="Internalize an externality: make private decision-makers account for external costs or benefits.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Internalize an externality
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+To make decision-makers account for external costs or external benefits when choosing how much to produce or consume.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Pigouvian tax: corrective tax equal to marginal external cost at the efficient quantity.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Pigouvian tax
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A corrective tax on an activity with a negative externality, ideally equal to the marginal external cost at the socially efficient quantity.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Pigouvian subsidy: corrective subsidy equal to marginal external benefit at the efficient quantity.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Pigouvian subsidy
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A corrective payment for an activity with a positive externality, ideally equal to the marginal external benefit at the socially efficient quantity.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Congestion pricing: charging for scarce road space at crowded times.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Congestion pricing
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A price for using crowded roads, bridges, or lanes when an additional trip imposes delay on others.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Carbon tax: a charge per unit of greenhouse gas emissions.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Carbon tax
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A charge per unit of carbon dioxide or greenhouse gas emissions, designed to make emitters face more of the social cost of emissions.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Cap-and-trade: set an emissions cap and allow permits to be traded.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Cap-and-trade
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A policy that limits total emissions with permits and allows firms to trade those permits, so reductions happen where they are cheapest.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item" title="Marginal external cost: external cost from one more unit.">
+MEC
+<span class="etb-ak-pop">
+Marginal external cost: the extra third-party cost caused by one more unit.
+</span>
+</span>
+<span class="etb-ak-item" title="Marginal external benefit: external benefit from one more unit.">
+MEB
+<span class="etb-ak-pop">
+Marginal external benefit: the extra third-party benefit created by one more unit.
+</span>
+</span>
+<span class="etb-ak-item" title="Marginal social cost: private cost plus external cost.">
+MSC
+<span class="etb-ak-pop">
+Marginal social cost: MPC plus marginal external cost.
+</span>
+</span>
+<span class="etb-ak-item" title="Marginal social benefit: private benefit plus external benefit.">
+MSB
+<span class="etb-ak-pop">
+Marginal social benefit: MPB plus marginal external benefit.
+</span>
+</span>
+<span class="etb-ak-item" title="Tradable permit: permission to emit a limited amount that can be bought or sold.">
+tradable permit
+<span class="etb-ak-pop">
+A government-created permission to emit or use a resource; trading helps allocate reductions to low-cost reducers.
+</span>
+</span>
+<span class="etb-ak-item" title="Regulatory capture: regulators end up serving the industry they regulate.">
+regulatory capture
+<span class="etb-ak-pop">
+When the firms being regulated gain enough influence over the regulator that the rules end up serving them.
+</span>
+</span>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1
+</div>
+<h2>
+Internalizing an Externality
+</h2>
+<p class="etb-deck">
+The repair is to bring the missing cost or benefit into the decision.
+</p>
+<div class="etb-body">
+<p>
+Chapter 18 showed the problem: private decision-makers may ignore costs or benefits that fall on others. This chapter is about repairs. To
+<span data-tip="To make decision-makers account for external costs or external benefits when choosing how much to produce or consume.">
+<strong>
+internalize an externality
+</strong>
+</span>
+means to make the decision-maker face the external cost or receive credit for the external benefit.
+</p>
+<p>
+For a negative externality, the market produces too much because the private cost is too low. The policy goal is to raise the private cost until the decision-maker acts as if they are facing the full social cost. For a positive externality, the market produces too little because the private benefit is too low. The policy goal is to raise the private reward until the decision-maker acts as if they are receiving more of the social benefit.
+</p>
+</div>
+<table class="etb-compare">
+<thead>
+<tr>
+<th>
+Externality
+</th>
+<th>
+Market problem
+</th>
+<th>
+Corrective tool
+</th>
+<th>
+Efficient size
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>
+Negative externality
+</strong>
+</td>
+<td>
+Too much output because MPC is below MSC.
+</td>
+<td>
+Tax or fee
+</td>
+<td>
+Tax = marginal external cost at Qs
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Positive externality
+</strong>
+</td>
+<td>
+Too little output because MPB is below MSB.
+</td>
+<td>
+Subsidy
+</td>
+<td>
+Subsidy = marginal external benefit at Qs
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+If a good creates external costs, should policy usually push quantity up or down?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Down. A negative externality means the market quantity is above the socially efficient quantity.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2
+</div>
+<h2>
+Pigouvian Taxes
+</h2>
+<p class="etb-deck">
+A well-calibrated tax can make private cost look more like social cost.
+</p>
+<div class="etb-body">
+<p>
+A
+<span data-tip="A corrective tax on an activity with a negative externality, ideally equal to marginal external cost at the socially efficient quantity.">
+<strong>
+Pigouvian tax
+</strong>
+</span>
+is a corrective tax on a negative externality. The point is not "taxes are always good." The point is narrower and more powerful: if an activity imposes an external cost, a tax can make the private decision-maker face that cost.
+</p>
+<p>
+On the AP graph, the tax shifts
+<strong>
+MPC/S
+</strong>
+upward toward
+<strong>
+MSC
+</strong>
+. The market moves from
+<strong>
+Qm
+</strong>
+, where MPB intersects MPC, to
+<strong>
+Qs
+</strong>
+, where MPB intersects MSC. Output falls because some units were worth producing only when the external cost was ignored.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Pigouvian tax correcting a negative externality">
+<rect fill="#fff">
+</rect>
+<defs>
+<marker id="axisArrow19a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#333">
+</path>
+</marker>
+<marker id="taxArrow19a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 Z" fill="#a33030">
+</path>
+</marker>
+</defs>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2" marker-end="url(#axisArrow19a)">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2" marker-end="url(#axisArrow19a)">
+</line>
+<line x1="130" y1="250" x2="610" y2="50" stroke="#a33030" stroke-width="4">
+</line>
+<line x1="130" y1="315" x2="610" y2="115" stroke="#2a7a4f" stroke-width="4">
+</line>
+<line x1="120" y1="90" x2="600" y2="320" stroke="#1a3a5c" stroke-width="4">
+</line>
+<polygon points="303,178 376,148 376,213" fill="#f6c5c5" stroke="#a33030" stroke-width="1.5" opacity=".9">
+</polygon>
+<line x1="303" y1="178" x2="303" y2="350" stroke="#888" stroke-dasharray="6 6">
+</line>
+<line x1="376" y1="213" x2="376" y2="350" stroke="#888" stroke-dasharray="6 6">
+</line>
+<line x1="303" y1="243" x2="303" y2="178" stroke="#a33030" stroke-width="2.5" marker-end="url(#taxArrow19a)">
+</line>
+<circle cx="303" cy="178" r="4" fill="#a33030">
+</circle>
+<circle cx="376" cy="213" r="4" fill="#2a7a4f">
+</circle>
+<text x="313" y="215" font-family="sans-serif" font-size="12" fill="#a33030" font-weight="700">
+tax = MEC
+</text>
+<text x="585" y="48" font-family="sans-serif" font-size="15" font-weight="700" fill="#a33030">
+MSC
+</text>
+<text x="583" y="114" font-family="sans-serif" font-size="15" font-weight="700" fill="#2a7a4f">
+MPC / S
+</text>
+<text x="586" y="318" font-family="sans-serif" font-size="15" font-weight="700" fill="#1a3a5c">
+MPB / D
+</text>
+<text x="292" y="374" font-family="sans-serif" font-size="13">
+Qs
+</text>
+<text x="365" y="374" font-family="sans-serif" font-size="13">
+Qm
+</text>
+<text x="330" y="160" font-family="sans-serif" font-size="12" fill="#a33030" font-weight="700">
+DWL removed
+</text>
+<text x="640" y="374" font-family="sans-serif" font-size="14">
+Quantity
+</text>
+<text x="26" y="200" font-family="sans-serif" font-size="14" text-anchor="middle" transform="rotate(-90 26 200)">
+Price / cost / benefit
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 19.1
+</span>
+<span class="etb-figure-title">
+Pigouvian tax for a negative externality. The tax raises private cost toward social cost and moves output from Qm to Qs.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP watch:
+</strong>
+the tax should equal the vertical gap between MSC and MPC at the socially efficient quantity, not just any random tax.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked calculation
+</span>
+<span class="etb-worked-title">
+Optimal corrective tax
+</span>
+</div>
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+Marginal social cost is $11.
+</li>
+<li>
+Marginal private cost is $8.
+</li>
+<li>
+Marginal external cost is MSC - MPC = $11 - $8 = $3.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Optimal Pigouvian tax = $3 per unit.
+</div>
+</div>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Misconception
+</span>
+Any tax on a harmful product is a Pigouvian tax.
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+A true Pigouvian tax is calibrated: it equals the marginal external cost at the efficient quantity, no more and no less. Its job is to make the price tell the truth, then get out of the way. A tax set to raise revenue, or set above the external cost because the activity is unpopular, is not corrective — it overshoots Qs and creates its own deadweight loss. "It taxes a bad thing" does not make a tax Pigouvian; the right
+<em>
+size
+</em>
+does.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3
+</div>
+<h2>
+Congestion Pricing
+</h2>
+<p class="etb-deck">
+Traffic is a clean everyday example of pricing the external cost.
+</p>
+<div class="etb-body">
+<p>
+<span data-tip="A price for using crowded road space when one more trip delays other people.">
+<strong>
+Congestion pricing
+</strong>
+</span>
+charges drivers for scarce road space at crowded times. The idea is not that driving is evil. It is that a road at 8:30 a.m. is not the same economic good as that same road at 2:00 a.m. At rush hour, one more car can slow many other people down.
+</p>
+<p>
+A congestion price asks: Is this trip worth the full cost, including delay imposed on others? Some drivers still pay because the trip is important. Some shift to transit, carpooling, a different route, remote work, or a less crowded time. That flexibility is why economists often like prices more than commands: people know more about their own alternatives than a central planner does.
+</p>
+<p>
+There is an equity issue, and it should not be waved away. A congestion charge can burden lower-income drivers if designed badly. Revenue use matters. The money can support transit, reduce other regressive fees, improve roads, or offset burdens on households with fewer options. Good policy design asks not only "Does this improve efficiency?" but also "Who bears the burden, and what do we do with the revenue?"
+</p>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+Mature policy note
+</div>
+<div class="etb-note-body">
+Market failure does not automatically prove government success. A congestion price works best when the harm is measurable, the rule is enforceable, and the revenue use is transparent enough to earn public trust.
+</div>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Misconception
+</span>
+A price and a ban accomplish the same thing, so it doesn't matter which you use.
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+They reach very different places. A ban treats every use as equally unworthy and forbids it. A price lets the trips, units, or activities that are genuinely worth the full cost continue, while discouraging the ones that are not — and it does this using information only the users have about their own alternatives. Same goal, very different efficiency. That gap is exactly why economists usually reach for the price first.
+</p>
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why is a congestion charge more flexible than a driving ban?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+A ban treats all trips the same. A price lets people make trips that are worth the full cost while encouraging lower-value trips to shift time, route, or mode.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4
+</div>
+<h2>
+Pigouvian Subsidies
+</h2>
+<p class="etb-deck">
+Positive externalities often need encouragement, not punishment.
+</p>
+<div class="etb-body">
+<p>
+A
+<span data-tip="A corrective payment for an activity with a positive externality, ideally equal to marginal external benefit at the efficient quantity.">
+<strong>
+Pigouvian subsidy
+</strong>
+</span>
+corrects a positive externality. When education, vaccination, or research creates benefits for people beyond the direct decision-maker, the market may produce too little. The private reward is smaller than the social benefit.
+</p>
+<p>
+On the AP graph,
+<strong>
+MSB
+</strong>
+lies above
+<strong>
+MPB/D
+</strong>
+. The market quantity is
+<strong>
+Qm
+</strong>
+, where MPB intersects MPC. The socially efficient quantity is
+<strong>
+Qs
+</strong>
+, where MSB intersects MPC. A subsidy raises the private benefit or lowers the effective price paid by consumers, moving output from Qm to Qs.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Pigouvian subsidy correcting a positive externality">
+<rect fill="#fff">
+</rect>
+<defs>
+<marker id="axisArrow19b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#333">
+</path>
+</marker>
+<marker id="subArrow19b" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 Z" fill="#1a3a5c">
+</path>
+</marker>
+</defs>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2" marker-end="url(#axisArrow19b)">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2" marker-end="url(#axisArrow19b)">
+</line>
+<line x1="130" y1="315" x2="610" y2="115" stroke="#2a7a4f" stroke-width="4">
+</line>
+<line x1="120" y1="90" x2="600" y2="320" stroke="#a33030" stroke-width="4">
+</line>
+<line x1="120" y1="155" x2="600" y2="385" stroke="#1a3a5c" stroke-width="4">
+</line>
+<polygon points="303,243 303,178 376,213" fill="#dbe8fb" stroke="#1a3a5c" stroke-width="1.5" opacity=".9">
+</polygon>
+<line x1="303" y1="243" x2="303" y2="350" stroke="#888" stroke-dasharray="6 6">
+</line>
+<line x1="376" y1="213" x2="376" y2="350" stroke="#888" stroke-dasharray="6 6">
+</line>
+<line x1="376" y1="278" x2="376" y2="213" stroke="#1a3a5c" stroke-width="2.5" marker-end="url(#subArrow19b)">
+</line>
+<circle cx="303" cy="243" r="4" fill="#1a3a5c">
+</circle>
+<circle cx="376" cy="213" r="4" fill="#2a7a4f">
+</circle>
+<text x="386" y="248" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+subsidy = MEB
+</text>
+<text x="583" y="114" font-family="sans-serif" font-size="15" font-weight="700" fill="#2a7a4f">
+MPC / S
+</text>
+<text x="585" y="318" font-family="sans-serif" font-size="15" font-weight="700" fill="#a33030">
+MSB
+</text>
+<text x="585" y="382" font-family="sans-serif" font-size="15" font-weight="700" fill="#1a3a5c">
+MPB / D
+</text>
+<text x="292" y="374" font-family="sans-serif" font-size="13">
+Qm
+</text>
+<text x="365" y="374" font-family="sans-serif" font-size="13">
+Qs
+</text>
+<text x="317" y="205" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+DWL removed
+</text>
+<text x="640" y="374" font-family="sans-serif" font-size="14">
+Quantity
+</text>
+<text x="26" y="200" font-family="sans-serif" font-size="14" text-anchor="middle" transform="rotate(-90 26 200)">
+Price / cost / benefit
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 19.2
+</span>
+<span class="etb-figure-title">
+Pigouvian subsidy for a positive externality. The subsidy moves output from Qm to Qs by helping private benefit reflect social benefit.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP watch:
+</strong>
+for positive externalities, the socially efficient quantity is larger: Qs &gt; Qm.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked calculation
+</span>
+<span class="etb-worked-title">
+Optimal corrective subsidy
+</span>
+</div>
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+Marginal social benefit is $28.
+</li>
+<li>
+Marginal private benefit is $20.
+</li>
+<li>
+Marginal external benefit is MSB - MPB = $28 - $20 = $8.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Optimal Pigouvian subsidy = $8 per unit.
+</div>
+</div>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Misconception
+</span>
+If something is good, subsidize it as much as possible.
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+The corrective amount is finite and specific: the subsidy equals the marginal external benefit at the efficient quantity. Over-subsidizing pushes output past Qs, which is inefficient in the same way under-providing it was — just in the other direction. Too much of a good thing is still too much. A subsidy that ignores the size of the spillover is no more "right" than a tax that ignores the size of the harm.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 5
+</div>
+<h2>
+Carbon Taxes and Cap-and-Trade
+</h2>
+<p class="etb-deck">
+Two different ways to put a price on emissions.
+</p>
+<div class="etb-body">
+<p>
+A
+<span data-tip="A charge per unit of carbon dioxide or greenhouse gas emissions.">
+<strong>
+carbon tax
+</strong>
+</span>
+charges per unit of emissions. A firm that emits more pays more. A household or business that finds cheap ways to cut emissions saves money. The policy uses the price system to reward low-cost reductions.
+</p>
+<p>
+<span data-tip="A policy that sets a total emissions cap and allows permits to be bought and sold.">
+<strong>
+Cap-and-trade
+</strong>
+</span>
+works differently. The government sets a total cap on emissions and issues permits. Firms that can reduce emissions cheaply do so and sell extra permits. Firms that face higher reduction costs buy permits. The cap controls the total quantity, while trading lets reductions happen where they cost least.
+</p>
+</div>
+<table class="etb-compare">
+<thead>
+<tr>
+<th>
+Policy
+</th>
+<th>
+What it fixes
+</th>
+<th>
+What government sets
+</th>
+<th>
+Why economists like it
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>
+Carbon tax
+</strong>
+</td>
+<td>
+Emissions price is too low.
+</td>
+<td>
+Price per unit of emissions.
+</td>
+<td>
+Simple incentive: pollute less, pay less.
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Cap-and-trade
+</strong>
+</td>
+<td>
+Total emissions are too high.
+</td>
+<td>
+Total emissions cap.
+</td>
+<td>
+Trading finds lower-cost reductions across firms.
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Which policy sets the quantity directly: carbon tax or cap-and-trade?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Cap-and-trade sets the total quantity of allowed emissions directly through the cap.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 6
+</div>
+<h2>
+Incentives vs. Bans
+</h2>
+<p class="etb-deck">
+Prices can use local knowledge that commands often miss.
+</p>
+<div class="etb-body">
+<p>
+Economists are not allergic to rules. Some harms are extreme enough that bans make sense. Some standards are necessary because measuring every harm perfectly is impossible. But the economist's instinct is to ask whether a price-based tool can achieve the goal with less waste.
+</p>
+<p>
+Do not command every person to make the same sacrifice. Put a price on the harm and let people find the cheapest ways to reduce it. That is not a slogan against government. It is a way to design government policy that uses the same price signals that make markets powerful in the first place.
+</p>
+</div>
+<table class="etb-compare">
+<thead>
+<tr>
+<th>
+Policy
+</th>
+<th>
+Strength
+</th>
+<th>
+Weakness
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>
+Ban
+</strong>
+</td>
+<td>
+Clear and useful for extreme harms.
+</td>
+<td>
+Blunt; treats very different cases the same.
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Regulation
+</strong>
+</td>
+<td>
+Can target a specific technology, practice, or safety rule.
+</td>
+<td>
+May miss the cheapest ways to reduce harm.
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Pigouvian tax
+</strong>
+</td>
+<td>
+Flexible incentive; makes harmful activity more costly.
+</td>
+<td>
+Requires measuring and calibrating external cost.
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Subsidy
+</strong>
+</td>
+<td>
+Encourages activities with external benefits.
+</td>
+<td>
+Can be poorly targeted or captured by interest groups.
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Cap-and-trade
+</strong>
+</td>
+<td>
+Caps quantity while allowing flexible reductions.
+</td>
+<td>
+Requires monitoring, enforcement, and permit design.
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-note">
+<div class="etb-note-label">
+Core line
+</div>
+<div class="etb-note-body">
+Use prices before prohibitions. Not always instead of prohibitions, but before them when the harm can be priced and the incentive can work.
+</div>
+</div>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 7
+</div>
+<h2>
+The Pigouvian Catch
+</h2>
+<p class="etb-deck">
+To price the harm correctly, someone has to know the harm — and want to.
+</p>
+<div class="etb-body">
+<p>
+Everything above is real, and where it works, it works beautifully. But the elegant graph hides two problems, and neither is about the theory. Both are about the fixer.
+</p>
+<p>
+The first is a
+<strong>
+knowledge problem
+</strong>
+. The optimal tax equals the marginal external cost
+<em>
+at the efficient quantity
+</em>
+— a number no one observes directly. What is a ton of carbon's damage worth? An hour of rush-hour delay? A unit of river pollution? These are genuinely hard to measure, contested among honest experts, and they shift with conditions. The graph draws a single clean line for MSC; reality hands a regulator a wide range. Set the tax too high and you destroy valuable activity; too low and the externality survives. A perfectly designed tax requires information that is hard to get.
+</p>
+<p>
+The second is a
+<strong>
+public-choice problem
+</strong>
+. A Pigouvian tax is not handed down by a benevolent planner. It is set by legislators, agencies, and regulators who have their own incentives — re-election, budgets, lobbying,
+<span data-tip="When the firms being regulated gain enough influence over the regulator that the rules end up serving them.">
+<strong>
+regulatory capture
+</strong>
+</span>
+. The same self-interest that let the factory pollute in the first place now operates on the people meant to price the pollution. Affected industries lobby for exemptions, loopholes, and free permits. And a government can grow fond of revenue from a tax that was supposed to shrink the activity — a tax that fully succeeds shrinks its own base, an awkward thing to want.
+</p>
+<p>
+So the honest conclusion does not retract the chapter; it completes it. The externality diagnosis is settled, and the corrective tax is right in theory and often right in practice. But "market failure" does not prove "government success." A corrective policy has to clear a second bar: can
+<em>
+this
+</em>
+government measure the harm well enough, and resist capture enough, to set the price near right? Sometimes clearly yes — carbon and congestion are measurable, enforceable, and have worked in real cities and countries. Sometimes no, and a cruder rule, or even tolerating the externality, beats a badly-set tax. The point is not that government cannot price externalities. It is that doing so is a second question with its own answer each time, not an automatic follow-on from "the market failed."
+</p>
+</div>
+<div class="etb-research">
+<div class="etb-research-header">
+<span class="etb-research-badge">
+Where this comes from
+</span>
+<span class="etb-research-title">
+Public choice and the knowledge problem
+</span>
+</div>
+<div class="etb-research-body">
+<p>
+Two traditions sharpen the catch.
+<span data-tip="James Buchanan and Gordon Tullock; Buchanan won the 1986 Nobel for public-choice theory.">
+Public choice
+</span>
+, associated with James Buchanan and Gordon Tullock, studies political actors with the same assumption economics uses for everyone else: they respond to incentives. Buchanan called it "politics without romance" — voters, legislators, and regulators are not selfless planners, so the body that corrects a market failure is itself subject to lobbying, capture, and self-interest. Separately,
+<span data-tip="Friedrich Hayek, 1974 Nobel laureate, on dispersed knowledge.">
+Friedrich Hayek
+</span>
+'s knowledge problem argues that the information needed to intervene well — here, the true external cost — is dispersed and local, and rarely sits in usable form on a planner's desk.
+</p>
+<p>
+Mark the weight honestly: these are political economy, not AP supply-and-demand mechanics, and you will not graph "public choice." What is fair game, and what matters, is the concept of
+<em>
+government failure
+</em>
+— the recognition that the regulator is also self-interested and imperfectly informed, so intervention must be judged, not assumed.
+</p>
+</div>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Misconception
+</span>
+Showing a market fails proves the government should step in.
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+A market failure is a
+<em>
+necessary
+</em>
+condition for intervention, not a
+<em>
+sufficient
+</em>
+one. It establishes that the unregulated outcome is flawed — but the proposed fix is run by people who are also imperfectly informed and self-interested, so it might improve on the market or might not. "The market failed" and "this government policy will help" are two separate claims, each needing its own evidence. Skipping the second is the most common way good economics turns into bad policy.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+Where this goes next
+</div>
+<div class="etb-note-body">
+<p>
+You now hold the whole unit in your hands: the failures — escapability, missing institutions, the commons, externalities, hidden information — and the repairs, each with its own catch. The last chapter puts them all in one room, on one person. Healthcare is the market where nearly every failure in this unit fires at once: inelastic demand when you cannot walk away, public-good spillovers, a commons in antibiotic resistance, externalities in contagion, and information so lopsided that the patient often cannot judge what they are buying. It is the capstone because it is where the entire unit comes due.
+<span class="etb-xref">
+Chapter 20
+</span>
+</p>
+</div>
+</div>
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+Correct the externality
+</p>
+<p class="etb-exam-sub">
+The moves you can now make: size a corrective tax or subsidy to the external cost or benefit, move the market from Qm to Qs without confusing the two graphs, and judge when a price beats a ban — and when the fixer's limits matter.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+1
+</span>
+Tax
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+2
+</span>
+Subsidy
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+3
+</span>
+Policy
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Corrective tax
+</p>
+<p class="etb-exam-q">
+A factory's marginal private cost is $8 and its marginal social cost is $11 at the efficient quantity. What Pigouvian tax would internalize the externality?
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+$3 per unit. MEC = MSC - MPC = $11 - $8.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Corrective subsidy
+</p>
+<p class="etb-exam-q">
+A vaccination creates $20 of private benefit and $28 of social benefit at the efficient quantity. What Pigouvian subsidy would internalize the externality?
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+$8 per unit. MEB = MSB - MPB = $28 - $20.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Policy comparison
+</p>
+<p class="etb-exam-q">
+Why might economists prefer cap-and-trade to a rule requiring every firm to cut emissions by the same percentage?
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Different firms have different costs of reducing emissions. Trading lets firms with low reduction costs cut more and sell permits, while firms with high reduction costs buy permits. The same total cap can be achieved at lower cost.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-frq">
+<span class="etb-frq-badge">
+FRQ practice
+</span>
+<p class="etb-frq-title">
+Correcting pollution and education spillovers
+</p>
+<p class="etb-frq-meta">
+Suggested time: 12 minutes · 9 points
+</p>
+<p class="etb-frq-scenario">
+A competitive market for a product creates pollution. In a separate market, job training creates benefits for firms and workers beyond the person receiving the training.
+</p>
+<ol class="etb-frq-parts">
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Identify the type of externality in the pollution market.
+</li>
+<li>
+<span class="etb-frq-pts">
+2 pts
+</span>
+Draw a correctly labeled negative externality graph with MPC, MSC, MPB/D, Qm, and Qs.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Explain how a Pigouvian tax changes output.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Calculate the optimal tax if MSC is $14 and MPC is $9 at Qs.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Identify the type of externality in the job-training market.
+</li>
+<li>
+<span class="etb-frq-pts">
+2 pts
+</span>
+Draw or describe the positive externality correction with MSB above MPB/D and a subsidy moving Qm toward Qs.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Explain why a price-based policy may be more flexible than a ban.
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal scoring guide
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+Pollution is a negative production externality.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Correctly labels MPC/S and MPB/D.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Draws MSC above MPC and labels Qm and Qs with Qm &gt; Qs.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Explains a tax raises private cost and reduces output toward Qs.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Optimal tax = $14 - $9 = $5.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Job training is a positive externality.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Correctly states MSB is above MPB/D.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Correctly states subsidy increases quantity from Qm toward Qs.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Explains prices allow people/firms to choose lower-cost adjustments.
+</li>
+</ul>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal common mistakes
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul>
+<li>
+Setting the tax equal to the total external cost rather than the marginal external cost at the efficient quantity.
+</li>
+<li>
+Mixing up the corrections: taxing a positive externality or subsidizing a negative one.
+</li>
+<li>
+Drawing MSB below MPB for a positive externality (it sits above) or MSC below MPC for a negative one (it sits above).
+</li>
+<li>
+Assuming any corrective policy automatically improves welfare, without checking whether the harm can be measured and the rule enforced.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+When prices omit external costs or benefits, well-designed taxes, subsidies, and tradable permits can move private incentives toward social efficiency — but only if someone can measure the harm and set the price honestly.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world…
+</div>
+<p class="etb-synth-leadtext">
+they would usually prefer incentives to bans — use prices before prohibitions, put a price on the harm and let people find the cheapest ways to reduce it — while admitting that a price set by the wrong number, or the wrong motives, can do its own damage.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z">
+</path>
+<circle cx="12" cy="12" r="3">
+</circle>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+A calibrated Pigouvian tax reduces a negative externality toward Qs; a subsidy raises a positive one toward Qs.
+</li>
+<li>
+The right correction equals the external cost or benefit at the efficient quantity — not more.
+</li>
+<li>
+Tradable permits can hit a cap while routing reductions to whoever can make them cheapest.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#b0883a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16">
+</path>
+<path d="M5 20h14">
+</path>
+<path d="M4 7h16">
+</path>
+<path d="M4 7l-2.5 5h5z">
+</path>
+<path d="M20 7l-2.5 5h5z">
+</path>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Can this government measure the harm and resist capture well enough to set the price near right?
+</li>
+<li>
+How should the revenue be used, especially when the burden falls unevenly?
+</li>
+<li>
+When is the harm too serious or too hard to price, so that a rule beats a price?
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+</path>
+</svg>
+In your life
+</div>
+<p>
+When a policy "puts a price on" something you dislike, ask two questions: is the price the size of the actual harm, and who set it? A corrective tax and a money grab can look identical from the outside.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="7" rx="2">
+</rect>
+<path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+</path>
+</svg>
+In your work
+</div>
+<p>
+To change behavior, price the outcome you care about and let people find their own cheapest path — but expect the people being priced to lobby the number. Design as if the rule will be gamed, because it will.
+</p>
+</div>
+</div>
+<div class="etb-synth-arrow">
+<span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9l6 6 6-6">
+</path>
+</svg>
+</span>
+</div>
+</div>
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/ap-consumer-producer-surplus/the-effects-of-government-intervention-in-different-market-structures/v/taxes-for-factoring-in-negative-externalities" target="_blank" rel="noopener">
+<img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Taxes for factoring in negative externalities
+</div>
+<div class="etb-yt-note">
+Khan Academy / AP Micro · clearest AP mechanics for shifting MPC toward MSC · Pairs with Concept 2
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/market-failure-and-the-role-of-government/externalities/v/positive-externalities" target="_blank" rel="noopener">
+<img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Positive externalities
+</div>
+<div class="etb-yt-note">
+Khan Academy / AP Micro · best subsidy-side counterpart for MSB, MPB, Qm, and Qs · Pairs with Concept 4
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/clean-air-act-pollution-control" target="_blank" rel="noopener">
+<img src="https://mru.org/themes/custom/mru_theme/images/mru-logo-social.png" alt="Marginal Revolution University">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Trading Pollution
+</div>
+<div class="etb-yt-note">
+Alex Tabarrok / MRU · clean incentives-versus-command-and-control application · Pairs with Concepts 5-6
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/deeper-look-tradable-allowances" target="_blank" rel="noopener">
+<img src="https://mru.org/themes/custom/mru_theme/images/mru-logo-social.png" alt="Marginal Revolution University">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+A Deeper Look at Tradable Allowances
+</div>
+<div class="etb-yt-note">
+Alex Tabarrok / MRU · best extension for cap-and-trade and low-cost reductions · Pairs with Concept 5
+</div>
+</div>
+</div>
+</div>
+<script>
+(function () { var pg = document.getElementById('etb-pg'); if (pg) { window.addEventListener('scroll', function () { var d = document.documentElement; var pct = (d.scrollTop || document.body.scrollTop) / ((d.scrollHeight - d.clientHeight) || 1); pg.style.width = Math.min(100, pct * 100) + '%'; }, { passive: true }); } document.querySelectorAll('.etb-flip').forEach(function (c) { c.addEventListener('click', function () { c.classList.toggle('flipped'); }); c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('flipped'); } }); }); document.querySelectorAll('.etb-ak-item').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('ak-open'); document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); if (!isOpen) el.classList.add('ak-open'); }); }); document.querySelectorAll('[data-tip]').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('tip-open'); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); if (!isOpen) el.classList.add('tip-open'); }); }); document.addEventListener('click', function () { document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); }); document.querySelectorAll('.etb-exam').forEach(function (box) { var tabs = box.querySelectorAll('.etb-exam-tab'); var panels = box.querySelectorAll('.etb-exam-panel'); tabs.forEach(function (t) { t.addEventListener('click', function () { var i = t.getAttribute('data-i'); tabs.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-i') === i); }); panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-i') === i); }); }); }); });})();
+</script>
+</div>

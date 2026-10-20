@@ -1,0 +1,1493 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 76.0415%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;}.etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint,.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;}.etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:pointer;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;line-height:1.45;padding:7px 11px;border-radius:6px;width:235px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after,[data-tip].tip-open::after{opacity:1;}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-deck{font-size:15px;font-style:italic;color:#9a9a9a;line-height:1.4;margin:-.7rem 0 1.2rem;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;}code{font-family:'Courier New',monospace;font-size:.95em;color:#1a3a5c;background:#eef4fb;padding:1px 4px;border-radius:3px;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:before{content:"\2192";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-svgwrap{display:block;width:100%;}.etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:auto;min-width:280px;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 18px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 18px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched tr:nth-child(even) td{background:#f7fafd;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}details.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}details.etb-reveal>
+summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-reveal>
+summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}details.etb-reveal[open]>
+summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;margin:0 0 .6rem;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;}.etb-exam-tab.active .etb-exam-tab-chip{background:#26323f;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;}.etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li:before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-loses{list-style:none;padding:0;margin:0;}.etb-loses li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .65rem;}.etb-loses .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:7px;white-space:nowrap;}.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;color:#1f6f47;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin:1px 0 .65rem;color:#666;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li+li{margin-top:.5rem;}.etb-synth-list li:before{content:"\2022";position:absolute;left:1px;font-weight:700;color:#69ad86;}.etb-synth-card.norm .etb-synth-list li:before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);}.etb-yt-play:after{content:"\25B6";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;}.etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-yt-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}.etb-title-card{padding:1.6rem 1.25rem 1.4rem;}.etb-title-main{font-size:25px;}.etb-sched{font-size:12px;min-width:100%;}.etb-sched th,.etb-sched td{padding:6px 8px;}.etb-yt{display:block;}.etb-yt-thumb{width:100%;height:auto;aspect-ratio:16/9;margin-bottom:8px;}}
+</style>
+<div class="etb">
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+12
+</div>
+<div class="etb-title-unit">
+Unit 2 · The Logic of Competition
+</div>
+<h2 class="etb-title-main">
+Profit Maximization II: The Long Run
+</h2>
+<p class="etb-title-sub">
+Easy Come, Easy Go
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 12
+</span>
+<span>
+~ 46 min read
+</span>
+</div>
+</div>
+<div class="etb-hook">
+<p>
+Find a company that has earned large profits for more than 100 years without enjoying some kind of government protection, legal barrier, network privilege, patent shelter, trade restriction, exclusive privilege, or durable moat. It sounds easy. Big old companies exist. Famous brands exist. But sustained large
+<span data-tip="Profit after all explicit and implicit opportunity costs are counted.">
+<strong>
+economic profits
+</strong>
+</span>
+are harder to find than people expect, because profit attracts attention.
+</p>
+<p>
+If one firm discovers an easy way to make money, other firms notice. They copy, enter, imitate, invest, undercut, improve, and expand. What was once a brilliant opportunity becomes normal. The market does not let an easy profit sit quietly in the corner. It points at it.
+</p>
+<p>
+<strong>
+Profit is a flare.
+</strong>
+In Chapter 11, profit told the firm, "You found something consumers value." In Chapter 12, profit tells everyone else, "Look over here."
+<span data-tip="New firms joining a market, usually in response to economic profit.">
+<strong>
+Entry
+</strong>
+</span>
+is the market's way of spreading the gain. The first firm may have created the opportunity, but competition is what hands much of the value to consumers.
+</p>
+</div>
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+Competition is the consumer's ally: free entry drives profit toward zero and hands the gains to buyers. Profit rewards the firm that found value in the short run, then summons competitors in the long run. That process is hard on firms and good for consumers. Firms that want long-run profit must either renew value again and again, or protect profit by blocking entry. The chapter's policy test is simple: attack protected profit, not profit.
+</div>
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Long run
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A period long enough for firms to enter or exit and for all inputs to adjust.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Entry
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+New firms joining a market, usually in response to economic profit.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Exit
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Firms leaving a market, usually in response to economic losses.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Zero economic profit
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Total revenue equals total economic cost. The firm earns normal profit but no excess return.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Barrier to entry
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Anything that prevents or discourages new firms from entering a market.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Contestable market
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A market where potential competitors can enter and challenge incumbents, limiting excess profit.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item">
+normal profit
+<span class="etb-ak-pop">
+The return required to keep resources in their current use; included in economic cost.
+</span>
+</span>
+<span class="etb-ak-item">
+productive efficiency
+<span class="etb-ak-pop">
+Producing at the lowest average total cost.
+</span>
+</span>
+<span class="etb-ak-item">
+allocative efficiency
+<span class="etb-ak-pop">
+Producing where price equals marginal cost.
+</span>
+</span>
+<span class="etb-ak-item">
+rent-seeking
+<span class="etb-ak-pop">
+Seeking profit through rules, privileges, or barriers rather than value creation.
+</span>
+</span>
+<span class="etb-ak-item">
+trade barrier
+<span class="etb-ak-pop">
+A policy such as a tariff or quota that restricts foreign competition.
+</span>
+</span>
+<span class="etb-ak-item">
+tariff
+<span class="etb-ak-pop">
+A tax on imports.
+</span>
+</span>
+<span class="etb-ak-item">
+quota
+<span class="etb-ak-pop">
+A legal limit on how much of a good can be imported.
+</span>
+</span>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1
+</div>
+<h2>
+Profit Is an Invitation
+</h2>
+<p class="etb-deck">
+The Chapter 11 scoreboard is public. Other firms can see it too.
+</p>
+<div class="etb-body">
+<p>
+In the
+<span data-tip="A period long enough for firms to enter or exit and for all inputs to adjust.">
+<strong>
+long run
+</strong>
+</span>
+, firms can do more than adjust output. They can enter a market, leave it, build capacity, sell equipment, hire, fire, copy, and expand. That changes the meaning of profit. Short-run profit says, "This firm found value." Long-run profit says, "Everyone, look over here."
+</p>
+<p>
+<span data-tip="New firms joining a market, usually in response to economic profit.">
+<strong>
+Entry
+</strong>
+</span>
+is what happens when profit attracts competitors. New firms enter, existing firms expand, and supply rises.
+<span data-tip="Firms leaving a market, usually in response to losses.">
+<strong>
+Exit
+</strong>
+</span>
+is what happens when losses push firms out. Firms leave, capacity shrinks, and supply falls.
+</p>
+<p>
+The intuition is brutal and beautiful: easy profits are easy come and easy go because easy profits invite imitation. A firm may deserve the first reward for discovering value. But once the opportunity is visible, competition turns the discovery into a wider consumer benefit.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 700 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Entry shifts market supply right and lowers the individual firm's price line, shrinking profit">
+<text x="180" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Market: profit invites entry
+</text>
+<line x1="55" y1="330" x2="320" y2="330" stroke="#1a1a1a">
+</line>
+<line x1="55" y1="60" x2="55" y2="330" stroke="#1a1a1a">
+</line>
+<path d="M80 80 L300 300" stroke="#1a3a5c" stroke-width="2.4" fill="none">
+</path>
+<text x="304" y="302" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+D
+</text>
+<path d="M90 295 L275 90" stroke="#8a6d2f" stroke-width="2.4" fill="none">
+</path>
+<text x="278" y="92" font-family="sans-serif" font-size="12" fill="#8a6d2f" font-weight="700">
+S1
+</text>
+<path d="M135 300 L318 105" stroke="#2a7a4f" stroke-width="2.4" fill="none">
+</path>
+<text x="322" y="107" font-family="sans-serif" font-size="12" fill="#2a7a4f" font-weight="700">
+S2
+</text>
+<line x1="55" y1="178" x2="320" y2="178" stroke="#8a6d2f" stroke-dasharray="5 4">
+</line>
+<line x1="55" y1="215" x2="320" y2="215" stroke="#2a7a4f" stroke-dasharray="5 4">
+</line>
+<text x="64" y="170" font-family="sans-serif" font-size="10" fill="#8a6d2f">
+P1
+</text>
+<text x="64" y="230" font-family="sans-serif" font-size="10" fill="#2a7a4f">
+P2
+</text>
+<path d="M285 188 L315 188 L315 215" stroke="#2a7a4f" stroke-width="1.8" fill="none">
+</path>
+<text x="235" y="350" font-family="sans-serif" font-size="11" fill="#2a7a4f">
+entry shifts supply right, price falls
+</text>
+<text x="530" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Firm: profit rectangle shrinks
+</text>
+<line x1="400" y1="330" x2="670" y2="330" stroke="#1a1a1a">
+</line>
+<line x1="400" y1="60" x2="400" y2="330" stroke="#1a1a1a">
+</line>
+<path d="M430 295 C480 250,525 240,560 252 C610 268,640 205,660 130" stroke="#1a3a5c" stroke-width="2.4" fill="none">
+</path>
+<text x="662" y="128" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+MC
+</text>
+<path d="M425 120 C475 205,535 222,600 206 C635 198,655 190,668 184" stroke="#0f7d7d" stroke-width="2.4" fill="none">
+</path>
+<text x="670" y="182" font-family="sans-serif" font-size="12" fill="#0f7d7d" font-weight="700">
+ATC
+</text>
+<line x1="400" y1="165" x2="670" y2="165" stroke="#8a6d2f" stroke-width="2.2">
+</line>
+<text x="565" y="154" font-family="sans-serif" font-size="11" fill="#8a6d2f">
+P1
+</text>
+<line x1="400" y1="205" x2="670" y2="205" stroke="#2a7a4f" stroke-width="2.2">
+</line>
+<text x="565" y="221" font-family="sans-serif" font-size="11" fill="#2a7a4f">
+P2
+</text>
+<rect x="400" y="165" fill="#2a7a4f" opacity=".15">
+</rect>
+<line x1="578" y1="165" x2="578" y2="330" stroke="#8a6d2f" stroke-dasharray="4 4">
+</line>
+<line x1="535" y1="205" x2="535" y2="330" stroke="#2a7a4f" stroke-dasharray="4 4">
+</line>
+<text x="490" y="191" font-family="sans-serif" font-size="11" fill="#2a7a4f">
+profit shrinks
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 12.1
+</span>
+<span class="etb-figure-title">
+Short-run profit attracts entry. Entry shifts market supply right, lowers market price, and shrinks the individual firm's profit rectangle.
+</span>
+</div>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 700 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Exit shifts market supply left and raises the individual firm's price line, shrinking losses">
+<text x="180" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Market: losses cause exit
+</text>
+<line x1="55" y1="330" x2="320" y2="330" stroke="#1a1a1a">
+</line>
+<line x1="55" y1="60" x2="55" y2="330" stroke="#1a1a1a">
+</line>
+<path d="M80 80 L300 300" stroke="#1a3a5c" stroke-width="2.4" fill="none">
+</path>
+<text x="304" y="302" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+D
+</text>
+<path d="M130 300 L315 105" stroke="#8a6d2f" stroke-width="2.4" fill="none">
+</path>
+<text x="318" y="107" font-family="sans-serif" font-size="12" fill="#8a6d2f" font-weight="700">
+S1
+</text>
+<path d="M85 295 L270 90" stroke="#2a7a4f" stroke-width="2.4" fill="none">
+</path>
+<text x="273" y="92" font-family="sans-serif" font-size="12" fill="#2a7a4f" font-weight="700">
+S2
+</text>
+<line x1="55" y1="215" x2="320" y2="215" stroke="#8a6d2f" stroke-dasharray="5 4">
+</line>
+<line x1="55" y1="178" x2="320" y2="178" stroke="#2a7a4f" stroke-dasharray="5 4">
+</line>
+<text x="64" y="230" font-family="sans-serif" font-size="10" fill="#8a6d2f">
+P1
+</text>
+<text x="64" y="170" font-family="sans-serif" font-size="10" fill="#2a7a4f">
+P2
+</text>
+<text x="220" y="350" font-family="sans-serif" font-size="11" fill="#2a7a4f">
+exit shifts supply left, price rises
+</text>
+<text x="530" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Firm: loss shrinks
+</text>
+<line x1="400" y1="330" x2="670" y2="330" stroke="#1a1a1a">
+</line>
+<line x1="400" y1="60" x2="400" y2="330" stroke="#1a1a1a">
+</line>
+<path d="M430 295 C480 250,525 240,560 252 C610 268,640 205,660 130" stroke="#1a3a5c" stroke-width="2.4" fill="none">
+</path>
+<text x="662" y="128" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+MC
+</text>
+<path d="M425 120 C475 205,535 222,600 206 C635 198,655 190,668 184" stroke="#0f7d7d" stroke-width="2.4" fill="none">
+</path>
+<text x="670" y="182" font-family="sans-serif" font-size="12" fill="#0f7d7d" font-weight="700">
+ATC
+</text>
+<line x1="400" y1="235" x2="670" y2="235" stroke="#8a6d2f" stroke-width="2.2">
+</line>
+<text x="565" y="250" font-family="sans-serif" font-size="11" fill="#8a6d2f">
+P1
+</text>
+<line x1="400" y1="205" x2="670" y2="205" stroke="#2a7a4f" stroke-width="2.2">
+</line>
+<text x="565" y="195" font-family="sans-serif" font-size="11" fill="#2a7a4f">
+P2
+</text>
+<rect x="400" y="205" fill="#a33030" opacity=".14">
+</rect>
+<line x1="545" y1="235" x2="545" y2="330" stroke="#8a6d2f" stroke-dasharray="4 4">
+</line>
+<line x1="535" y1="205" x2="535" y2="330" stroke="#2a7a4f" stroke-dasharray="4 4">
+</line>
+<text x="480" y="225" font-family="sans-serif" font-size="11" fill="#a33030">
+loss shrinks
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 12.2
+</span>
+<span class="etb-figure-title">
+Short-run losses cause exit. Exit shifts market supply left, raises market price, and shrinks the remaining firms' losses toward zero economic profit.
+</span>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A competitive firm is earning economic profit. Predict what happens in the long run if entry is open.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+New firms enter, market supply increases, price falls, and the firm's profit shrinks toward zero economic profit.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Explain the line "profit is a flare" in your own words.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Profit rewards the firm that discovered value, but it also signals the opportunity to competitors. If entry is open, rivals enter or expand, supply rises, price falls, and consumers capture much of the gain.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2
+</div>
+<h2>
+Zero Economic Profit Is Not Failure
+</h2>
+<p class="etb-deck">
+Zero economic profit means the firm is covering every opportunity cost. It does not mean the owner earns nothing.
+</p>
+<div class="etb-body">
+<p>
+In long-run perfect competition, entry continues while firms earn economic profit. Exit continues while firms suffer economic losses. The process stops at
+<span data-tip="Total revenue equals total economic cost; the firm earns normal profit but no excess return.">
+<strong>
+zero economic profit
+</strong>
+</span>
+, also called
+<span data-tip="The return required to keep resources in their current use; included in economic cost.">
+<strong>
+normal profit
+</strong>
+</span>
+.
+</p>
+<p>
+This is the point students often misread. Zero economic profit does not mean "the owner earns nothing." It means the firm covers explicit costs and implicit opportunity costs. The owner is earning enough to keep the resources in this use, but not enough to attract new firms in.
+</p>
+<p>
+The long-run competitive condition is:
+</p>
+<p>
+<code>
+P = MR = MC = min ATC
+</code>
+</p>
+<p>
+That single line carries a lot. Price equals marginal cost. The firm produces at the bottom of average total cost. And price equals ATC, so economic profit is zero.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Long-run competitive firm equilibrium at P equals MR equals MC equals minimum ATC">
+<line x1="80" y1="350" x2="600" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="55" x2="80" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="340" y="395" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="28" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 28 205)">
+Dollars per unit
+</text>
+<path d="M120 295 C190 240,255 232,325 242 C410 255,500 200,570 85" stroke="#1a3a5c" stroke-width="2.5" fill="none">
+</path>
+<text x="575" y="82" font-family="sans-serif" font-size="13" fill="#1a3a5c" font-weight="700">
+MC
+</text>
+<path d="M120 120 C190 210,285 245,365 230 C455 214,525 194,585 183" stroke="#0f7d7d" stroke-width="2.5" fill="none">
+</path>
+<text x="590" y="181" font-family="sans-serif" font-size="13" fill="#0f7d7d" font-weight="700">
+ATC
+</text>
+<line x1="80" y1="230" x2="590" y2="230" stroke="#2a7a4f" stroke-width="2.6">
+</line>
+<text x="455" y="218" font-family="sans-serif" font-size="13" font-weight="700" fill="#2a7a4f">
+P = MR
+</text>
+<circle cx="365" cy="230" r="5" fill="#2a7a4f">
+</circle>
+<line x1="365" y1="230" x2="365" y2="350" stroke="#8a6d2f" stroke-dasharray="5 4">
+</line>
+<text x="365" y="373" font-family="sans-serif" font-size="12" font-weight="700" fill="#8a6d2f" text-anchor="middle">
+Q*
+</text>
+<text x="188" y="90" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c">
+Long-run equilibrium:
+</text>
+<text x="188" y="110" font-family="sans-serif" font-size="12" fill="#1a3a5c">
+P = MR = MC = min ATC
+</text>
+<text x="188" y="130" font-family="sans-serif" font-size="12" fill="#1a3a5c">
+zero economic profit
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 12.3
+</span>
+<span class="etb-figure-title">
+Long-run equilibrium in perfect competition. The firm earns zero economic profit, produces at minimum ATC, and has no incentive to enter or exit.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP warning:
+</strong>
+zero economic profit is not shutdown. It means all opportunity costs are covered.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Why zero is not nothing
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+A firm earns $500,000 in revenue, pays $430,000 in explicit costs, and uses owner time and capital worth $70,000 in their next-best use.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Accounting profit = 500,000 - 430,000 = $70,000.
+</li>
+<li>
+Economic profit = 500,000 - 430,000 - 70,000 = $0.
+</li>
+<li>
+The owner is not unpaid. The owner's opportunity cost is fully covered.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Zero economic profit means normal profit. The firm is doing as well as its next-best alternative.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+If P = ATC in long-run perfect competition, should firms enter, exit, or stay?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Stay. P = ATC means zero economic profit: no excess profit to attract entry and no loss to force exit.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why is zero economic profit not the same as no accounting profit?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Economic cost includes implicit opportunity costs. A firm can earn accounting profit while earning zero economic profit, because the accounting profit is just enough to cover the owner's foregone alternatives.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3
+</div>
+<h2>
+Competition Hands the Gains to Consumers
+</h2>
+<p class="etb-deck">
+The first firm discovers the value. Entry spreads it.
+</p>
+<div class="etb-body">
+<p>
+Economists do not usually respond to value-producing profit by saying, "Cap it." They usually ask, "Can competitors enter?" If entry is open, profit calls in rivals. Rivals expand supply, price falls, quality improves, and consumers inherit much of the original discovery.
+</p>
+<p>
+That is why competition is uncomfortable for firms and wonderful for consumers. A firm wants the profit to last. Consumers want the value to spread. Free entry is the mechanism that turns a private discovery into a public gain.
+</p>
+<p>
+Long-run perfect competition produces two efficiency results.
+<span data-tip="Producing where price equals marginal cost.">
+<strong>
+Allocative efficiency
+</strong>
+</span>
+means
+<code>
+P = MC
+</code>
+: the value consumers place on one more unit equals the cost of producing it.
+<span data-tip="Producing at the lowest average total cost.">
+<strong>
+Productive efficiency
+</strong>
+</span>
+means the firm produces at
+<code>
+min ATC
+</code>
+: output is produced at the lowest average cost.
+</p>
+</div>
+<div class="etb-applications">
+<div class="etb-app-header">
+<span class="etb-app-badge">
+Translation
+</span>
+<span class="etb-app-title">
+What the equations mean in English
+</span>
+</div>
+<div class="etb-app-body">
+<ul class="etb-app-list">
+<li>
+<strong>
+P = MC:
+</strong>
+society is not leaving mutually valuable units unmade, and not making units that cost more than consumers value.
+</li>
+<li>
+<strong>
+P = min ATC:
+</strong>
+firms are pushed to produce at the lowest average cost they can reach.
+</li>
+<li>
+<strong>
+Zero economic profit:
+</strong>
+consumers receive much of the gain through lower prices instead of firms keeping excess profit forever.
+</li>
+</ul>
+</div>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 700 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profit entry adjustment ending with price equals marginal cost and minimum average total cost">
+<rect x="45" y="45" rx="8" fill="#fbfaf7" stroke="#d8cfb8">
+</rect>
+<rect x="385" y="45" rx="8" fill="#eef6f0" stroke="#5a9a7f">
+</rect>
+<text x="198" y="75" font-family="sans-serif" font-size="13" font-weight="700" fill="#8a6d2f" text-anchor="middle">
+Firm view
+</text>
+<text x="538" y="75" font-family="sans-serif" font-size="13" font-weight="700" fill="#2a7a4f" text-anchor="middle">
+Consumer view
+</text>
+<text x="78" y="118" font-family="sans-serif" font-size="12" fill="#3a3526">
+Profit appears.
+</text>
+<text x="78" y="148" font-family="sans-serif" font-size="12" fill="#3a3526">
+Rivals enter.
+</text>
+<text x="78" y="178" font-family="sans-serif" font-size="12" fill="#3a3526">
+Price falls.
+</text>
+<text x="78" y="208" font-family="sans-serif" font-size="12" fill="#3a3526">
+Excess profit disappears.
+</text>
+<text x="78" y="252" font-family="sans-serif" font-size="13" font-weight="700" fill="#8a6d2f">
+Competition eats the easy profit.
+</text>
+<text x="420" y="118" font-family="sans-serif" font-size="12" fill="#1a3a2a">
+More firms supply the good.
+</text>
+<text x="420" y="148" font-family="sans-serif" font-size="12" fill="#1a3a2a">
+Prices move down.
+</text>
+<text x="420" y="178" font-family="sans-serif" font-size="12" fill="#1a3a2a">
+Quality and availability improve.
+</text>
+<text x="420" y="208" font-family="sans-serif" font-size="12" fill="#1a3a2a">
+Consumers capture the gain.
+</text>
+<text x="420" y="252" font-family="sans-serif" font-size="13" font-weight="700" fill="#2a7a4f">
+Competition spreads the value.
+</text>
+<path d="M318 190 C350 165,370 165,402 190" fill="none" stroke="#1a3a5c" stroke-width="2" marker-end="url(#a12)">
+</path>
+<defs>
+<marker id="a12" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#1a3a5c">
+</path>
+</marker>
+</defs>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 12.4
+</span>
+<span class="etb-figure-title">
+Competition is hard on firms and good for consumers. Entry turns private discovery into lower prices, more output, and normal profit.
+</span>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Which efficiency condition is P = MC? Which is producing at minimum ATC?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+P = MC is allocative efficiency. Producing at minimum ATC is productive efficiency.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why might economists prefer open entry to profit caps when profits come from value creation?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Open entry lets profit summon competitors. Competitors expand supply, lower price, and pass much of the gain to consumers, while preserving the incentive for firms to discover new value in the first place.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4
+</div>
+<h2>
+Two Ways to Keep Profit
+</h2>
+<p class="etb-deck">
+Renew value, or protect profit. One helps consumers. The other often blocks them.
+</p>
+<div class="etb-body">
+<p>
+If entry erodes profit, firms that want profit to last face two broad strategies. The first is to keep creating value: innovate, lower cost, improve quality, earn trust, learn faster, solve the next problem. The second is to make entry harder: lobby, restrict, protect, license, exclude, subsidize incumbents, or turn policy into a moat.
+</p>
+<p>
+A
+<span data-tip="Anything that prevents or discourages new firms from entering a market.">
+<strong>
+barrier to entry
+</strong>
+</span>
+can let economic profit persist because the flare goes up but rivals cannot answer it. Barriers include regulatory walls, tariffs and quotas, exclusive franchises, certificate-of-need laws, zoning restrictions, incumbent subsidies, complex permitting, licensing walls, patents, and legal privileges.
+</p>
+<p>
+Precision matters. Some protections can be defensible. Patents can encourage invention. Licensing can protect safety. Some rules reduce fraud or severe information problems. The economist's question is not "rule or no rule?" It is: does this rule solve a real problem at reasonable cost, or mainly protect insiders from competition?
+</p>
+</div>
+<div class="etb-note" style="border-left-color:#8a6d2f;background:#fbf8f0;">
+<div class="etb-note-label" style="color:#8a6d2f;">
+Life and business · when everyone runs away, run toward
+</div>
+<div class="etb-note-body">
+Mike Rowe's line, "when everyone runs away, run toward," fits this chapter because profit often appears where other people refuse to look: dirty work, awkward work, hard logistics, unglamorous repairs, boring compliance, neglected customers, and problems nobody wants to own. In markets, entry usually rushes toward easy profit. But long-run opportunity often belongs to the person or firm willing to run toward the hard problem others avoid. The rule is not recklessness. It is attention: when everyone flees a real need because it is difficult, low-status, or uncomfortable, there may be value waiting for the person disciplined enough to serve it well.
+</div>
+</div>
+<div class="etb-applications">
+<div class="etb-app-header">
+<span class="etb-app-badge">
+Business rule
+</span>
+<span class="etb-app-title">
+Build the habit, not the hit
+</span>
+</div>
+<div class="etb-app-body">
+<ul class="etb-app-list">
+<li>
+<strong>
+Do not bet only on the horse.
+</strong>
+One profitable idea will be copied.
+</li>
+<li>
+<strong>
+Bet on the jockey.
+</strong>
+Become the kind of person or firm that repeatedly finds new value.
+</li>
+<li>
+<strong>
+Run toward real needs.
+</strong>
+The problem others avoid may be the problem consumers most need solved.
+</li>
+</ul>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Give one example of value renewal and one example of protected profit.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Value renewal: a firm lowers delivery costs through better logistics. Protected profit: a firm lobbies for a rule that prevents qualified rivals from entering.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why is "protect profit" different from "renew value"?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Renewing value means earning profit by solving problems better. Protecting profit means keeping rivals out so the firm can keep excess returns without continuing to improve. The first tends to help consumers; the second often transfers wealth from consumers to incumbents.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 5
+</div>
+<h2>
+Contestability: Break Barriers and Let Entry Work
+</h2>
+<p class="etb-deck">
+If entry is the mechanism, the policy question is what blocks entry.
+</p>
+<div class="etb-body">
+<p>
+A
+<span data-tip="A market where potential competitors can enter and challenge incumbents.">
+<strong>
+contestable market
+</strong>
+</span>
+is one where potential rivals can enter and challenge incumbents. Contestability matters because even the threat of entry can discipline existing firms. If incumbents know rivals can enter, they have less room to keep prices high and quality low.
+</p>
+<p>
+When profit persists, do not ask only, "Why are firms greedy?" Ask, "Why has entry not happened?" Sometimes entry is hard because the industry is genuinely difficult. Sometimes it is blocked by law, politics, paperwork, or privilege. If profit survives because entry is blocked, attack the barrier.
+</p>
+<p>
+International trade is one of the most powerful forms of entry. Imports are competitors. A
+<span data-tip="A tax on imports.">
+<strong>
+tariff
+</strong>
+</span>
+and a
+<span data-tip="A legal limit on how much of a good can be imported.">
+<strong>
+quota
+</strong>
+</span>
+are barriers to entry by another name. They may protect domestic producers, but they also protect domestic profits from the discipline of competition and make consumers pay more.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 690 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Blocked entry prevents long-run adjustment and lets profit persist">
+<text x="345" y="32" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+When entry is blocked, profit can persist
+</text>
+<line x1="70" y1="340" x2="640" y2="340" stroke="#1a1a1a">
+</line>
+<line x1="70" y1="60" x2="70" y2="340" stroke="#1a1a1a">
+</line>
+<text x="355" y="382" font-family="sans-serif" font-size="12" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="28" y="200" font-family="sans-serif" font-size="12" font-weight="700" fill="#1a3a5c" transform="rotate(-90 28 200)" text-anchor="middle">
+Price / cost
+</text>
+<line x1="70" y1="150" x2="640" y2="150" stroke="#2a7a4f" stroke-width="2.6">
+</line>
+<text x="525" y="138" font-family="sans-serif" font-size="12" font-weight="700" fill="#2a7a4f">
+protected price
+</text>
+<path d="M105 285 C185 230,270 218,350 232 C450 250,535 190,610 82" fill="none" stroke="#1a3a5c" stroke-width="2.5">
+</path>
+<text x="615" y="80" font-family="sans-serif" font-size="12" fill="#1a3a5c" font-weight="700">
+MC
+</text>
+<path d="M110 105 C190 205,310 240,410 222 C500 205,570 190,625 185" fill="none" stroke="#0f7d7d" stroke-width="2.5">
+</path>
+<text x="630" y="183" font-family="sans-serif" font-size="12" fill="#0f7d7d" font-weight="700">
+ATC
+</text>
+<line x1="70" y1="210" x2="455" y2="210" stroke="#0f7d7d" stroke-dasharray="4 4">
+</line>
+<line x1="455" y1="150" x2="455" y2="340" stroke="#8a6d2f" stroke-dasharray="5 4">
+</line>
+<rect x="70" y="150" fill="#a33030" opacity=".16">
+</rect>
+<text x="265" y="185" font-family="sans-serif" font-size="13" font-weight="700" fill="#a33030" text-anchor="middle">
+profit persists because entry is blocked
+</text>
+<g font-family="sans-serif" font-size="12" fill="#6b1f1f">
+<text x="92" y="270">
+barriers:
+</text>
+<text x="92" y="290">
+tariffs, quotas, licensing walls, exclusive privileges, permits
+</text>
+</g>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 12.5
+</span>
+<span class="etb-figure-title">
+If entry is blocked, the long-run adjustment cannot finish. Price can remain above ATC, and consumers do not receive the full benefit of competition.
+</span>
+</div>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+Policy rule · attack protected profit, not profit
+</div>
+<div class="etb-note-body">
+If high profit comes from lower cost, better quality, or a discovered need, let it summon competitors. If high profit survives because entry is blocked, break the blockage. Reduce needless permitting, exclusive privileges, incumbent subsidies, regulatory capture, and trade barriers. The goal is not to punish value creation. The goal is to make markets contestable enough that value spreads.
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Why can imports act like entry?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Foreign producers can compete with domestic firms, increase supply, lower prices, and reduce domestic firms' ability to keep excess profit. Tariffs and quotas limit that entry pressure.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+What is the economist's test for a barrier to entry?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Ask whether the rule solves a real consumer or safety problem at reasonable cost, or mainly protects incumbents from competition. The first may be defensible; the second is protected profit.
+</div>
+</details>
+</div>
+<div class="etb-slbl">
+Practice — trace the long-run adjustment
+</div>
+<div class="etb-body" style="margin-bottom:1rem;">
+<p>
+The essential AP move is the adjustment story. Start with profit or loss. Predict entry or exit. Shift market supply. Show the price change. Move the firm's horizontal price line. End at
+<code>
+P = MR = MC = min ATC
+</code>
+</p>
+</div>
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+The moves you can now make
+</p>
+<p class="etb-exam-sub">
+Three AP-style moves: profit-entry, loss-exit, and barriers to entry. Try each before revealing.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+A
+</span>
+Profit to entry
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+B
+</span>
+Loss to exit
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+C
+</span>
+Blocked entry
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Type A · long-run adjustment from profit
+</p>
+<p class="etb-exam-q">
+A perfectly competitive firm is earning economic profit. Explain what happens in the long run, using both the market and firm graphs.
+</p>
+<details class="etb-reveal">
+<summary>
+Show model answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Profit attracts entry. In the market graph, entry shifts supply right and lowers price. In the firm graph, the horizontal P = MR line falls. Entry continues until price equals ATC at the firm's profit-maximizing output. In long-run equilibrium, P = MR = MC = min ATC and firms earn zero economic profit.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Type B · long-run adjustment from loss
+</p>
+<p class="etb-exam-q">
+A perfectly competitive firm is suffering economic losses. Explain what happens in the long run.
+</p>
+<details class="etb-reveal">
+<summary>
+Show model answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Losses cause exit. In the market graph, exit shifts supply left and raises price. In the firm graph, the horizontal P = MR line rises. Exit continues until remaining firms earn zero economic profit, where P = ATC at Q*.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Type C · barriers
+</p>
+<p class="etb-exam-q">
+A domestic industry earns economic profit, but imports are limited by quotas and new domestic firms face complex permits. Explain why profit may persist and what policy would make the market more contestable.
+</p>
+<details class="etb-reveal">
+<summary>
+Show model answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Profit may persist because entry is blocked. Quotas limit foreign entry through imports, and complex permits discourage domestic entry. If new supply cannot enter, price may stay above ATC. The contestability policy is to reduce or remove unnecessary quotas and permitting barriers while keeping rules that solve genuine safety or information problems.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-frq">
+<span class="etb-frq-badge">
+Capstone · free response
+</span>
+<p class="etb-frq-title">
+Put the moves together
+</p>
+<p class="etb-frq-meta">
+AP-style long free response · ~10 points · graph and explanation required
+</p>
+<p class="etb-frq-scenario">
+Firms in a perfectly competitive market are earning positive economic profit in the short run. Entry is legally open.
+</p>
+<ol class="etb-frq-parts">
+<li>
+On side-by-side market and firm graphs, show the short-run profit condition.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+<li>
+Explain what happens to market supply as firms respond.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+<li>
+Show the effect on market price and on the individual firm's horizontal price line.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+<li>
+State the long-run equilibrium condition for a perfectly competitive firm.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+<li>
+Explain why zero economic profit is not failure.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+<li>
+Explain how a tariff could interrupt this adjustment if foreign producers are the likely entrants.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal a full-credit response
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+(a)
+</strong>
+The market graph begins at a price that gives the representative firm P &gt; ATC at Q*, so the firm earns economic profit.
+</p>
+<p>
+<strong>
+(b)
+</strong>
+Profit attracts entry, so market supply shifts right.
+</p>
+<p>
+<strong>
+(c)
+</strong>
+The increase in supply lowers market price. The firm's horizontal P = MR line falls with the market price.
+</p>
+<p>
+<strong>
+(d)
+</strong>
+Entry continues until P = MR = MC = min ATC. At that point firms earn zero economic profit.
+</p>
+<p>
+<strong>
+(e)
+</strong>
+Zero economic profit means the firm covers all explicit and implicit opportunity costs, including normal profit. It does not mean the owner earns nothing.
+</p>
+<p>
+<strong>
+(f)
+</strong>
+A tariff raises the cost of imports and reduces foreign competition. If foreign producers would have entered and expanded supply, the tariff blocks entry pressure and can let domestic firms keep economic profit longer while consumers pay higher prices.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal the scoring rubric
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+Market and firm graphs correctly labeled.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Firm graph shows P &gt; ATC at Q*.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+States entry occurs because of economic profit.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Shows market supply shifting right and price falling.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Shows the firm's price/MR line falling.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+States P = MR = MC = min ATC.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Connects long-run equilibrium to zero economic profit.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Explains normal profit / opportunity cost.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Explains tariff as a barrier to entry by foreign competitors.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Connects blocked entry to persistent profit or higher consumer prices.
+</li>
+</ul>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal what loses points
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-loses">
+<li>
+<span class="tag" style="background:#fdecec;color:#a33030;">
+Graph
+</span>
+Forgetting to shift market supply and only moving the firm's graph.
+</li>
+<li>
+<span class="tag" style="background:#fbf0db;color:#8a6d2f;">
+Concept
+</span>
+Saying zero economic profit means the firm earns no money.
+</li>
+<li>
+<span class="tag" style="background:#eef2f6;color:#3e4e60;">
+Policy
+</span>
+Calling every rule bad. The better test is whether the rule protects consumers or mainly protects incumbents.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+Competition is the consumer's ally: free entry drives profit toward zero and hands the gains to buyers. Profit is the flare that rewards discovery and summons rivals; entry is the mechanism that spreads value.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world...
+</div>
+<p class="etb-synth-leadtext">
+we would make markets easier to enter and let competition solve the profit problem. If entry is open, let profit call competitors in. If entry is blocked, break the blockage.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+<ul class="etb-synth-list">
+<li>
+Economic profit attracts entry; economic losses cause exit.
+</li>
+<li>
+Long-run perfect competition ends at P = MR = MC = min ATC.
+</li>
+<li>
+Free entry pushes firms toward productive and allocative efficiency.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+<ul class="etb-synth-list">
+<li>
+Which barriers protect consumers, and which mainly protect incumbents?
+</li>
+<li>
+When should policy defend temporary profit as a reward for discovery, and when should it attack protected profit?
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+In your life
+</div>
+<p>
+When everyone runs away, run toward. Not toward danger for its own sake, but toward real needs others avoid because they are difficult, unglamorous, or uncomfortable.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+In your work
+</div>
+<p>
+Build the habit, not the hit. Do not expect one profitable position to stay untouched. Keep learning, improving, and finding the next need to fill.
+</p>
+</div>
+</div>
+</div>
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=ZtSZNcaWbf4" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/ZtSZNcaWbf4/mqdefault.jpg" alt="Perfect Competition Microeconomics">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Perfect Competition - Microeconomics 3.7
+</div>
+<div class="etb-yt-note">
+Jacob Clifford / ACDC Econ · best overall Chapter 12 companion: price-taking, entry and exit, zero economic profit, and efficiency.
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=KuAcVz8o13w" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/KuAcVz8o13w/mqdefault.jpg" alt="Perfect Competition in the Long Run">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Micro 3.7B Perfect Competition in the Long Run
+</div>
+<div class="etb-yt-note">
+ReviewEcon · focused AP practice for profit attracting entry, losses causing exit, and return to zero economic profit.
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/production-cost-and-the-perfect-competition-model-temporary/ap-perfect-competition/v/long-run-economic-profit-for-perfectly-competitive-firms" target="_blank" rel="noopener">
+<div class="etb-yt-fallback">
+Khan
+</div>
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Long-Run Economic Profit for Perfectly Competitive Firms
+</div>
+<div class="etb-yt-note">
+Khan Academy · good reinforcement for why zero economic profit is normal profit, not failure.
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/supply-curve-constant-cost-industry" target="_blank" rel="noopener">
+<div class="etb-yt-fallback">
+MRU
+</div>
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Entry, Exit, and Supply Curves: Constant Costs
+</div>
+<div class="etb-yt-note">
+Marginal Revolution University · strong conceptual support for the profit-as-flare story: entry expands supply and competes profit away.
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.policyed.org/intellections/unseen-consequences-occupational-licensing/video" target="_blank" rel="noopener">
+<div class="etb-yt-fallback">
+PolicyEd
+</div>
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+The Unseen Consequences of Occupational Licensing
+</div>
+<div class="etb-yt-note">
+PolicyEd · application video for barriers to entry and how restrictions can protect incumbents and raise prices.
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function(){var pg=document.getElementById('etb-pg');if(pg){window.addEventListener('scroll',function(){var d=document.documentElement;var pct=(d.scrollTop||document.body.scrollTop)/((d.scrollHeight-d.clientHeight)||1);pg.style.width=Math.min(100,pct*100)+'%';},{passive:true});}document.querySelectorAll('.etb-flip').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();c.classList.toggle('flipped');}});});document.querySelectorAll('.etb-ak-item').forEach(function(el){el.addEventListener('click',function(e){e.stopPropagation();var isOpen=el.classList.contains('ak-open');document.querySelectorAll('.etb-ak-item.ak-open').forEach(function(a){a.classList.remove('ak-open');});if(!isOpen)el.classList.add('ak-open');});});document.querySelectorAll('[data-tip]').forEach(function(el){el.addEventListener('click',function(e){e.stopPropagation();var isOpen=el.classList.contains('tip-open');document.querySelectorAll('[data-tip].tip-open').forEach(function(t){t.classList.remove('tip-open');});if(!isOpen)el.classList.add('tip-open');});});document.addEventListener('click',function(){document.querySelectorAll('.etb-ak-item.ak-open').forEach(function(a){a.classList.remove('ak-open');});document.querySelectorAll('[data-tip].tip-open').forEach(function(t){t.classList.remove('tip-open');});});document.querySelectorAll('.etb-exam').forEach(function(box){var tabs=box.querySelectorAll('.etb-exam-tab');var panels=box.querySelectorAll('.etb-exam-panel');tabs.forEach(function(t){t.addEventListener('click',function(){var i=t.getAttribute('data-i');tabs.forEach(function(x){x.classList.toggle('active',x.getAttribute('data-i')===i);});panels.forEach(function(p){p.classList.toggle('active',p.getAttribute('data-i')===i);});});});});})();
+</script>

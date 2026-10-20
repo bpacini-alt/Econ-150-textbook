@@ -1,0 +1,2734 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 96.0354%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;} .etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;} .etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;} .etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:pointer;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after,[data-tip].tip-open::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"\2192 ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-deck{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-style:italic;color:#9a9a9a;line-height:1.4;margin:-.7rem 0 1.2rem;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;} .etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-ret-body p{margin:0 0 .75rem;} .etb-ret-body p:last-child{margin:0;}details.etb-misc{background:#fdf0f0;border:1px solid #dba8a8;border-radius:8px;margin:1.5rem 0;}details.etb-misc summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#6b1f1f;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-misc summary::-webkit-details-marker{display:none;}.etb-misc-badge{background:#a33030;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-misc-arrow{margin-left:auto;color:#a33030;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-misc[open] .etb-misc-arrow{transform:rotate(90deg);}.etb-misc-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #dba8a8;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d0f0f;}.etb-misc-body p{margin:0 0 .75rem;} .etb-misc-body p:last-child{margin:0;}.etb-research{background:#f5f0fe;border:1px solid #b89dd4;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-research-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-research-badge{background:#6d4aaa;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-research-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#2d1854;}.etb-research-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#2d1854;}.etb-research-body p{margin:0 0 .65rem;} .etb-research-body p:last-child{margin:0;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;} .etb-note-body p:last-child{margin:0;} .etb-note-body a{color:#1a3a5c;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-sub{font-family:Georgia,'Times New Roman',serif;font-size:14px;font-style:italic;color:#3a6b52;margin:-.4rem 0 .4rem;}.etb-app-grouplbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a7a4f;margin:1.15rem 0 .15rem;}.etb-app-grouplbl:first-of-type{margin-top:.5rem;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;} .etb-app-body p{margin:0 0 .75rem;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"\2192";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-synthesis{background:#1a3a5c;border-radius:10px;padding:1.75rem 2rem;margin:2.5rem 0 3rem;}.etb-syn-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem;}.etb-syn-body{font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.85;color:rgba(255,255,255,.9);font-style:italic;}/* Chapter synthesis — redesigned card (light, two-tone, icons) */.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-head{display:flex;align-items:center;gap:9px;margin-bottom:.65rem;}.etb-synth-card-head svg{width:18px;height:18px;flex:none;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin-top:1px;}.etb-synth-card.pos .etb-synth-card-label{color:#1f6f47;}.etb-synth-card.pos .etb-synth-card-sub{color:#418a64;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li + li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;}.etb-synth-card.pos .etb-synth-list li{color:#2c4034;}.etb-synth-card.pos .etb-synth-list li::before{color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{display:flex;align-items:center;gap:7px;font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take-head svg{width:15px;height:15px;flex:none;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-synth-arrow{display:flex;justify-content:center;margin-top:1.3rem;}.etb-synth-arrow span{width:34px;height:34px;border:1px solid #dcdcdc;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#aaa;}.etb-synth-arrow svg{width:16px;height:16px;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;} .etb-yt:last-child{margin-bottom:0;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-thumb:hover .etb-yt-play{background:rgba(0,0,0,.48);} .etb-yt-play::after{content:"\25B6";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;} .etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-2col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-2item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item-hd{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.5;padding:10px 12px;}.etb-4col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-4item{flex:1 1 140px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-4item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-4item-bd{font-family:sans-serif;font-size:12.5px;color:#444;line-height:1.5;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;} .etb-compare tr:last-child td{border-bottom:none;}blockquote.etb-quote{border-left:3px solid #bbb;margin:1.25rem 0;padding:.75rem 1.25rem;background:#f9f9f7;font-style:italic;font-size:14.5px;color:#444;line-height:1.75;}.etb-photo{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-photo img{display:block;width:100%;height:auto;}.etb-photo-cap{padding:.6rem 1rem;border-top:1px solid #eee;font-family:sans-serif;font-size:12px;color:#666;line-height:1.55;}.etb-photo-cap strong{color:#1a3a5c;font-weight:700;}.etb-photo-credit{display:block;margin-top:.35rem;font-size:10.5px;color:#aaa;} .etb-photo-credit a{color:#aaa;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:auto;min-width:280px;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 18px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 18px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched tr:nth-child(even) td{background:#f7fafd;} .etb-sched tr:last-child td{border-bottom:none;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-svgwrap{display:block;width:100%;} .etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-rof{background:#fbfaf7;border:1px solid #d8cfb8;border-radius:10px;padding:1.2rem 1.4rem;margin:1.75rem 0;}.etb-rof-header{display:flex;align-items:center;gap:10px;margin-bottom:.4rem;}.etb-rof-badge{background:#8a6d2f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-rof-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#5a4718;}.etb-rof-intro{font-family:sans-serif;font-size:13px;line-height:1.65;color:#5a4718;margin:0 0 1rem;}.etb-rof-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;} @media (max-width:540px){.etb-rof-grid{grid-template-columns:1fr;}}.etb-rof-cell{background:#fff;border:1px solid #e4dcc8;border-radius:8px;padding:.7rem .9rem;}.etb-rof-lbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a6d2f;margin-bottom:.4rem;display:flex;align-items:center;gap:6px;}.etb-rof-lbl .etb-rof-n{background:#8a6d2f;color:#fff;width:15px;height:15px;border-radius:50%;font-size:9px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}.etb-rof-body{font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#3a3526;}.etb-rof-body code{font-family:'Courier New',monospace;font-size:12.5px;color:#1a3a5c;background:#eef4fb;padding:1px 4px;border-radius:3px;}.etb-rof-mini{width:100%;height:auto;display:block;margin-top:.2rem;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;} .etb-worked-body p{margin:0 0 .65rem;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:last-child{border-bottom:none;}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;} .etb-figure-notice strong{color:#1a3a5c;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;gap:0;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab:hover{background:#e3e9ef;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.etb-exam-tab.active .etb-exam-tab-chip{background:#26323f;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;} .etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}details.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}details.etb-reveal>
+summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-reveal>
+summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}details.etb-reveal[open]>
+summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;margin:0 0 .6rem;} .etb-reveal-body p:last-child{margin:0;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li:last-child{border-bottom:none;}.etb-frq-parts li::before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-loses{list-style:none;padding:0;margin:0;}.etb-loses li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .65rem;} .etb-loses li:last-child{margin:0;}.etb-loses .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:7px;white-space:nowrap;}
+</style>
+<div class="etb">
+<!-- (1) TITLE CARD -->
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+9
+</div>
+<div class="etb-title-unit">
+Unit 2 · The Logic of Competition
+</div>
+<h2 class="etb-title-main">
+Firm Model I: Costs
+</h2>
+<p class="etb-title-sub">
+Where the firm meets reality
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 9
+</span>
+<span>
+~ 32 min read
+</span>
+</div>
+</div>
+<!-- (2) HOOK -->
+<div class="etb-hook">
+<p>
+In 1999, Coca-Cola let slip an idea that would haunt its public relations for years: vending machines fitted with a temperature sensor and a chip, programmed to raise the price of a cold Coke as the temperature climbed. The company's chairman, Douglas Ivester, defended it to a Brazilian magazine — a cold drink is simply worth more in a heat wave, he reasoned, so "it is fair that it should be more expensive." The reaction was instant and brutal. Critics called it a scheme to squeeze customers for the crime of being thirsty, and the company quickly backpedaled and shelved the machines. The strangest part: they had never actually reached the street. The whole backlash was over an idea.
+</p>
+<p>
+What had Ivester gotten wrong? Not the economics, exactly — prices rise with demand all the time, and nobody storms the airport when holiday airfares jump. What enraged people was subtler: they saw a price climbing with no new
+<em>
+cost
+</em>
+behind it. A Coke costs no more to make or stock when it's hot out; you were simply thirstier. The price had come unhooked from cost and latched onto need.
+</p>
+<p>
+Until now this textbook has lived inside the
+<em>
+buyer's
+</em>
+head — demand, diminishing marginal utility, willingness to pay, and the budget constraint. Now we cross to the other side of the market, into the producer's mind, where scarcity shows a different face:
+<em>
+cost
+</em>
+. Cost is what scarcity looks like from the supply side, and it is where reality exerts discipline on every firm trying to sell something to a consumer.
+</p>
+<p>
+Was Ivester right? Should prices rise on Coke machines in the heat of summer? And if so, what does it have to do with cost?
+</p>
+</div>
+<!-- (3) CORE IDEA -->
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+Costs carry information. They are how scarcity — the idea this course began with — shows itself to the people who produce. Price is where supply meets demand, but where does supply come from? In a competitive market, it is the marginal cost curve. A firm that listens to its costs stays in contact with reality; a firm that ignores them drifts into wishful thinking. By the end of this chapter, you will be able to name the different meanings of the word "cost," build a cost table and read its curves, explain why marginal cost eventually rises, and explain why a cost can be a tragedy, an opportunity, or a distraction.
+</div>
+<!-- (4) VOCABULARY -->
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Fixed vs. variable cost
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Fixed cost doesn't change with output (rent, the lease, the plant). Variable cost rises and falls with output (labor, materials, power) and is zero at zero output.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Marginal cost (MC)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The added cost of making one more unit: the change in total cost divided by the change in quantity. The number behind the supply curve.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Average total cost (ATC)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Total cost divided by quantity — the all-in cost per unit. Falls, bottoms out, then rises: the U at the center of the model.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Short run
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A period in which at least one input, such as the plant, is fixed. Not a set length of time. Every cost curve in this chapter is a short-run curve.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Diminishing marginal returns
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+With at least one input fixed, each added unit of a variable input eventually adds less output than the last (also called diminishing marginal product). The reason marginal cost rises.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Bottleneck
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The fixed input that limits everything else: the oven, the runway, the manager's attention. Pile more onto everything else and the bottleneck is why each extra unit costs more.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item">
+average fixed cost (AFC)
+<span class="etb-ak-pop">
+Fixed cost divided by quantity. Always falling — the same overhead spread over more units.
+</span>
+</span>
+<span class="etb-ak-item">
+average variable cost (AVC)
+<span class="etb-ak-pop">
+Variable cost per unit; U-shaped, and always below ATC by the amount of AFC.
+</span>
+</span>
+<span class="etb-ak-item">
+opportunity cost
+<span class="etb-ak-pop">
+The value of the best alternative given up — the root of all economic cost (Ch 1).
+</span>
+</span>
+<span class="etb-ak-item">
+implicit cost
+<span class="etb-ak-pop">
+A cost paid in foregone alternatives, not money — a salary or interest given up.
+</span>
+</span>
+<span class="etb-ak-item">
+explicit cost
+<span class="etb-ak-pop">
+A cost paid out in money — wages, rent, materials. What an accountant records.
+</span>
+</span>
+<span class="etb-ak-item">
+sunk cost
+<span class="etb-ak-pop">
+A cost already spent and unrecoverable; it should not sway a forward-looking decision (Ch 10).
+</span>
+</span>
+<span class="etb-ak-item">
+efficient scale
+<span class="etb-ak-pop">
+The quantity at which average total cost is lowest — the bottom of the ATC curve.
+</span>
+</span>
+</div>
+<!-- (5) CONCEPT 1 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1 · Costs are reality talking
+</div>
+<h2>
+Cost as Opportunity, Tragedy, and Distraction
+</h2>
+<div class="etb-body">
+<p>
+Before any graphs, consider three ways to think about what a cost
+<em>
+is
+</em>
+.
+</p>
+<p>
+<strong>
+Cost as opportunity.
+</strong>
+Clayton Christensen looked at cost constraints and saw a provocation. Many organizations are expensive not because the work is hard but because they keep solving it the old, comfortable way. For Christensen, a constraint can be an engine for innovation: simplification and ruthless prioritization can improve what a customer gets for the money. Southwest has long flown a single aircraft type, the Boeing 737, so its mechanics, crews, and spare parts are interchangeable and its planes spend less time sitting at the gate. Aldi stocks about 1,400 items where a full supermarket carries 30,000, almost all of them its own label, which buys it bargaining power and a fraction of the overhead. In-N-Out sells three burgers, fries, and shakes — and little else. IKEA made
+<em>
+you
+</em>
+the assembler. None of them found more resources; each accepted a hard constraint and rethought everything around it. The costs everyone treats as fixed are often the ones most worth attacking. And when firms find ways to produce at lower cost, supply curves shift right: lower prices and more output for everyone.
+</p>
+<p>
+<strong>
+Cost as tragedy.
+</strong>
+The economist William Baumol noticed that some things resist getting cheaper no matter how clever anyone is. He called it
+<em>
+cost disease
+</em>
+. (Many economists prefer the term "Baumol effect.") A factory can learn to produce more widgets with fewer inputs, but a string quartet still needs four musicians to play a quartet, just as it did in 1820; a classroom still needs a teacher's attention; a counseling hour is still an hour; a nurse can only care for so many patients at once. In manufacturing, a worker makes vastly more per hour than a century ago — so factory goods got cheap. But the quartet, the class, and the therapy session can't be sped up without becoming a different, lesser thing. So their cost climbs relative to everything else,
+<em>
+even under fierce competition
+</em>
+. Why does it climb at all? Because the musicians could earn more elsewhere. As factories grow more productive, wages rise across the whole economy, and the quartet must pay enough to keep its players. Its productivity stayed put; its wage bill didn't. That's why cost disease bites hardest in rich countries like the United States. The deeper lesson is also important: not every rising price is waste, and not every expensive service is run by fools. Some costs are simply the shape of a real constraint, and pretending otherwise — demanding the quartet play twice as fast — just breaks the thing.
+</p>
+<p>
+<strong>
+Cost as distraction.
+</strong>
+This chapter focuses on costs because it is such an essential part of economics; but ultimately, cost can become a distraction. Cost-cutting is not the same as profit-making. There is a simple way to reduce all costs to zero: shut down operations. A business's goal is not to spend as little as possible; it is to create more value than it consumes. Amazon pays the enormous cost of fast shipping because convenience helps sell Prime memberships and encourages customers to buy more often. Costco accepts remarkably small markups, while paying for warehouses, inventory, employees, and distribution, because low prices attract members whose dues help make the whole model profitable. Netflix spends enormous sums on content because a cheaper streaming service with nothing worth watching would not retain subscribers. In each case, the cost is part of the product. The right question is not, "Can we eliminate this expense?" but "Will the revenue it creates exceed what it costs?" Jesus asked who, intending to build a tower, does not first sit down and count the cost (Luke 14:28). The point isn't to avoid building; it's to know what finishing will take. A firm that becomes obsessed with cutting costs can save pennies while losing pounds. Profit maximization requires cost discipline — but cost discipline does not always lead to profits.
+</p>
+<p>
+All three readings are true. The entrepreneur's skill is telling them apart — knowing which costs need to be ruthlessly eliminated, which are load-bearing walls, and which are simply a necessary part of doing business.
+</p>
+</div>
+<table class="etb-sched">
+<caption>
+Cost as a problem to solve, not a fact to accept
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Company
+</th>
+<th style="text-align:left;">
+The constraint it faced
+</th>
+<th style="text-align:left;">
+What it did
+</th>
+<th style="text-align:left;">
+Concept at work
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight:600;">
+Southwest
+</td>
+<td style="text-align:left;">
+fleet complexity &amp; slow gate time
+</td>
+<td style="text-align:left;">
+one aircraft type, point-to-point routes, fast turnarounds
+</td>
+<td style="text-align:left;">
+attacking the bottleneck (gate time)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight:600;">
+Aldi
+</td>
+<td style="text-align:left;">
+overhead and waste per item
+</td>
+<td style="text-align:left;">
+~1,400 items vs 30,000, mostly own-label
+</td>
+<td style="text-align:left;">
+lean variable cost + buying scale
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight:600;">
+Costco
+</td>
+<td style="text-align:left;">
+razor-thin retail margins
+</td>
+<td style="text-align:left;">
+~4,000 items, volume buying, membership, fast inventory turnover
+</td>
+<td style="text-align:left;">
+buying power + spreading overhead
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight:600;">
+In-N-Out
+</td>
+<td style="text-align:left;">
+menu sprawl
+</td>
+<td style="text-align:left;">
+three burgers, fries, shakes — and little else
+</td>
+<td style="text-align:left;">
+prioritization (respect the bottleneck)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight:600;">
+Toyota
+</td>
+<td style="text-align:left;">
+waste on the production line
+</td>
+<td style="text-align:left;">
+lean production: strip out every motion and every pile of inventory that adds no value
+</td>
+<td style="text-align:left;">
+eliminating waste
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-note" style="border-left-color:#8a6d2f;background:#fbf8f0;">
+<div class="etb-note-label" style="color:#8a6d2f;">
+Rules of business success · Rule #1: costs matter
+</div>
+<div class="etb-note-body">
+<p>
+This unit follows a firm trying to win, and each chapter adds one rule to the list. Here is the first: a firm that consistently ignores its costs loses to one that doesn't. That is
+<em>
+not
+</em>
+the same as saying cheap is the goal; the goal is profit. But costs are the firm's contact point with reality. A firm that loses track of what things actually cost has let strategy drift into fantasy, and the market always sends the bill.
+</p>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+University tuition has risen far faster than inflation for decades. Give the Baumol reading and the Christensen reading of that fact.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Baumol: teaching is labor-heavy and hard to speed up — a professor and a seminar still take the hours they always did — so its cost climbs relative to goods that got cheaper. Christensen: much of college is delivered the same way it was a century ago, and cheaper "good enough" models (online, competency-based, community colleges) are a standing invitation to do it differently. Both are partly true — which is exactly the debate.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Which reading does a manager take who says, "Our costs are high because this work is simply expensive — nothing to be done"? What's the risk?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The Baumol reading. The risk is mistaking a Christensen cost for a Baumol one — accepting a cost that a rival is about to engineer away. (The opposite error, assuming every cost can be innovated away, is just as dangerous.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A grocery chain's CFO proposes ending free delivery, which costs $3 million a year. What should the CEO ask first?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Whether delivery brings in more than $3 million in profit the chain wouldn't otherwise earn — repeat customers, bigger baskets, members who don't drift to a rival. If it does, the cost is part of the product, and cutting it saves money while losing more.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Name one cost in your own life that looks like a Baumol case and one that looks like a Christensen case. What would tell you which is which?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+A Baumol cost comes from a constraint that
+<em>
+is
+</em>
+the product: a piano lesson needs a teacher's undivided hour, so it can't get much cheaper without becoming a different thing. A Christensen cost comes from how the thing happens to be done — a paperwork process, a commute, a way of delivering a course — where someone could redesign the process and keep the value. The test: if you cut the input or sped it up, would you still get what you wanted? If not, it's Baumol; if so, it's an invitation. A common slip is to collapse to one view — fatalism ("nothing can be cheaper") or magical thinking ("everything can").
+</p>
+</div>
+</details>
+<div class="etb-body">
+<p>
+Telling the difference requires us to understand what costs are, a word we've been using quite loosely. Before we can manage costs, we need to be precise about what economists mean by one.
+</p>
+</div>
+</div>
+<!-- (5) CONCEPT 2 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2 · A taxonomy of costs
+</div>
+<h2>
+Cost Definitions
+</h2>
+<div class="etb-body">
+<p>
+Economists sort costs by asking four questions.
+</p>
+<p>
+<strong>
+Does it change with output?
+</strong>
+The factory that bottles soda costs the same whether it makes one bottle or a hundred thousand. That is a
+<span data-tip="A cost that doesn't change with output: rent, the lease, the plant.">
+<strong>
+fixed cost
+</strong>
+</span>
+: it does not vary with quantity (output). The syrup, lid, and carbonated water climb with every bottle and vanish at zero output — those are
+<span data-tip="A cost that rises and falls with output: labor, materials, power.">
+<strong>
+variable costs
+</strong>
+</span>
+. Together they make
+<span data-tip="Fixed plus variable cost: everything it costs to produce a given output.">
+total cost
+</span>
+:
+<code>
+TC = FC + VC
+</code>
+.
+</p>
+<p>
+<strong>
+Is it paid in money?
+</strong>
+Wages, rent, and syrup deliveries are
+<span data-tip="Costs paid in money: wages, rent, materials.">
+explicit costs
+</span>
+— money that leaves the till, costs you can add up as line items in a budget. But quit a $60,000 job to run the soda shop and no one bills you for the salary you gave up, though you surrendered it as surely as you pay for aluminum cans. That foregone alternative is an
+<span data-tip="A cost paid in foregone alternatives, not money: a salary or interest given up.">
+<strong>
+implicit cost
+</strong>
+</span>
+— the opportunity cost of using your own time or money here instead of in its next-best use. This is the idea the course opened with, now applied to a firm:
+<em>
+economists count what was given up, not merely what was spent.
+</em>
+<span class="etb-xref">
+Ch 1
+</span>
+</p>
+<p>
+<strong>
+Which costs are counted?
+</strong>
+Economists like to say that accountants get cost wrong. (That's a bit of grandstanding: accountants know plenty about costs, including opportunity costs.) But the distinction matters. Accountants tally the money that moved —
+<span data-tip="Explicit costs only: the money that actually left the till.">
+accounting cost
+</span>
+. Economists add the opportunities forgone —
+<span data-tip="Explicit plus implicit cost: every cost, including opportunities given up.">
+<strong>
+economic (or opportunity) cost
+</strong>
+</span>
+. The full cost of a choice includes the best alternative it ruled out.
+</p>
+<p>
+<strong>
+Can it still be changed?
+</strong>
+Money already spent and unrecoverable — non-refundable equipment, the rent you've already committed to under a signed lease — is a
+<span data-tip="A cost already spent and unrecoverable; it should not sway a forward-looking decision.">
+<strong>
+sunk cost
+</strong>
+</span>
+. Because nothing you do now can change it, it should play no part in deciding what to do next. That is what a rational decision-maker would do; in practice, people let sunk costs sway them all the time.
+</p>
+</div>
+<table class="etb-compare">
+<caption style="font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;">
+Four questions hiding in one word
+</caption>
+<thead>
+<tr>
+<th>
+The question
+</th>
+<th>
+One side
+</th>
+<th>
+The other
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Does it change with output?
+</td>
+<td>
+Fixed (rent, lease)
+</td>
+<td>
+Variable (labor, materials)
+</td>
+</tr>
+<tr>
+<td>
+Is it paid in money?
+</td>
+<td>
+Explicit (wages, syrup)
+</td>
+<td>
+Implicit (salary foregone)
+</td>
+</tr>
+<tr>
+<td>
+Which costs are counted?
+</td>
+<td>
+Accounting (explicit only)
+</td>
+<td>
+Economic (explicit + implicit)
+</td>
+</tr>
+<tr>
+<td>
+Can it still be changed?
+</td>
+<td>
+Avoidable (going forward)
+</td>
+<td>
+Sunk (already spent)
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A food truck pays $1,200/month to lease the truck and $3 in ingredients per taco. Which is fixed, which variable?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The $1,200 lease is fixed — owed at zero tacos or a thousand. The $3-per-taco ingredients are variable — they rise with each taco and vanish at zero output.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+You leave an $80,000 salary and invest $50,000 of savings to start a firm. Name the implicit costs an accountant misses.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The $80,000 salary forgone and the interest the $50,000 would have earned elsewhere. Both are real opportunity costs — part of economic cost — but leave no paper trail, so accounting cost ignores them.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Name the four cost distinctions as questions, and explain why "fixed" and "sunk" are not the same.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Does it change with output (fixed/variable)? Is it paid in money (explicit/implicit)? Which costs are counted (accounting/economic)? Can it still be changed (avoidable/sunk)? Fixed and sunk answer different questions: "fixed" means unmoved by
+<em>
+output
+</em>
+; "sunk" means unrecoverable no matter what you do. This month's rent under a signed lease is both fixed and sunk. Next month's rent is fixed but not yet sunk — you could still decline to renew.
+</p>
+</div>
+</details>
+<div class="etb-body">
+<p>
+With the vocabulary straight, we can ask what costs do as a firm produces more. Some per-unit costs
+<em>
+fall
+</em>
+as output grows; others
+<em>
+rise
+</em>
+as production strains against a fixed input. We'll take them in turn.
+</p>
+</div>
+</div>
+<!-- (5) CONCEPT 3 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3 · Why costs fall before they rise
+</div>
+<h2>
+Cost Curves and Their Shapes
+</h2>
+<div class="etb-body">
+<p>
+If rational people think at the margin, then we should focus on marginal cost and marginal revenue. In fact, that's exactly what we'll do soon: future chapters will give you rules for business decisions made at the margin. But marginal thinking only helps if we know what the marginal curves look like, and to get there we need to do a little digging. Marginal revenue is easy, at least for a firm in a competitive market: each unit sells at the market price, so the marginal revenue curve we'll meet in a chapter or two is a flat line at that price. Selling widgets at a competitive market price of $5? Your MR curve is just a flat line at $5. Selling hovercraft at $100? Your MR is $100.
+</p>
+<p>
+But what is the shape of marginal cost?
+</p>
+<p>
+In introductory microeconomics, we assume that
+<strong>
+the marginal cost curve goes down and then back up
+</strong>
+— think of a checkmark. Explaining why takes a few steps, starting with the costs that don't change at all.
+</p>
+<p>
+<strong>
+Fixed costs and average fixed cost
+</strong>
+</p>
+<p>
+Imagine you rent an apartment for $1,000 a month. You cannot negotiate a cheaper price, no matter how hard you try. You could try to leave town to stay with your parents, but your landlord won't care: you save nothing. The cost doesn't depend on how intensely you use the place. But there is a way to make it lighter: split it among roommates. With four of you, each pays $250.
+</p>
+<p>
+A fixed cost — a $60-a-month equipment lease, a factory, a movie that cost $200 million to shoot — works the same way: the more units you make, the thinner that same cost spreads. Spreading costs isn't the firm's goal; it's one mechanism among several, and we start with it because the cost curves rely on it.
+</p>
+<p>
+Average fixed cost,
+<code>
+AFC = FC ÷ Q
+</code>
+, only ever falls. Plotted against quantity, total fixed cost is a horizontal line; AFC starts at the full fixed cost and tapers toward zero. That's why the first unit looks ruinously expensive and the second far less so: the more you produce, the thinner the overhead.
+</p>
+</div>
+<table class="etb-sched">
+<caption>
+The same $60, spread thinner
+</caption>
+<thead>
+<tr>
+<th>
+Q
+</th>
+<th>
+FC
+</th>
+<th>
+AFC = FC ÷ Q
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+60
+</td>
+<td>
+60
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+60
+</td>
+<td>
+30
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+60
+</td>
+<td>
+20
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+60
+</td>
+<td>
+15
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+60
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+60
+</td>
+<td>
+10
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A flat total fixed cost line at sixty dollars and a falling average fixed cost curve that starts at sixty and drops toward the axis as quantity rises">
+<line x1="70" y1="40" x2="70" y2="300" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="300" x2="560" y2="300" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="315" y="340" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="24" y="170" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 24 170)">
+Dollars ($)
+</text>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="62" y="304">
+0
+</text>
+<text x="62" y="233">
+20
+</text>
+<text x="62" y="161">
+40
+</text>
+<text x="62" y="90">
+60
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="110" y="316">
+1
+</text>
+<text x="192" y="316">
+2
+</text>
+<text x="274" y="316">
+3
+</text>
+<text x="356" y="316">
+4
+</text>
+<text x="438" y="316">
+5
+</text>
+<text x="520" y="316">
+6
+</text>
+</g>
+<line x1="110" y1="86" x2="520" y2="86" stroke="#1a3a5c" stroke-width="2.5">
+</line>
+<text x="360" y="78" font-family="sans-serif" font-size="12" font-weight="700" fill="#1a3a5c">
+Total fixed cost = $60 (flat)
+</text>
+<polyline points="110.0,86.0 121.7,112.8 133.4,133.6 145.1,150.2 156.9,163.8 168.6,175.2 180.3,184.8 192.0,193.0 203.7,200.1 215.4,206.4 227.1,211.9 238.9,216.8 250.6,221.2 262.3,225.1 274.0,228.7 285.7,231.9 297.4,234.9 309.1,237.6 320.9,240.1 332.6,242.4 344.3,244.5 356.0,246.5 367.7,248.3 379.4,250.1 391.1,251.7 402.9,253.2 414.6,254.6 426.3,255.9 438.0,257.2 449.7,258.4 461.4,259.5 473.1,260.6 484.9,261.6 496.6,262.6 508.3,263.5 520.0,264.3" fill="none" stroke="#8a6d2f" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="455" y="250" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#8a6d2f">
+AFC
+</text>
+<circle cx="110" cy="86" r="4" fill="#1a3a5c">
+</circle>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 9.1
+</span>
+<span class="etb-figure-title">
+Total fixed cost never moves ($60). Spread over more units, average fixed cost starts at $60 (one unit carries the whole thing) and falls toward the axis.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+AFC never turns back up. As long as a cost is fixed, more output can only dilute it.
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+If costs only ever fell, every firm would grow forever and the largest would make everything. They don't, because a second force pushes the other way. Picture a small kitchen with one oven, a fixed counter, one head chef. Hire a second cook and output jumps — one preps while the other cooks. A third specializes further; output leaps again. But keep going. The fifth cook is reaching across the fourth for the same pans; the sixth waits on oven time; the seventh is mostly in the way. Each still helps, but less and less — and to squeeze out those last few meals you're paying whole salaries. The cost of
+<em>
+one more meal
+</em>
+is climbing.
+</p>
+<p>
+The culprit isn't the cooks. It's the oven. The kitchen has a
+<span data-tip="The fixed input that limits everything else: the oven, the runway, the manager's attention.">
+<strong>
+bottleneck
+</strong>
+</span>
+— a fixed input everything else has to funnel through — and once you've added enough of the things you
+<em>
+can
+</em>
+add, that fixed thing throttles the rest. Economists call the result
+<span data-tip="With at least one input fixed, each added unit of a variable input eventually adds less output than the last.">
+<strong>
+diminishing marginal returns
+</strong>
+</span>
+(you'll also see
+<em>
+diminishing marginal product
+</em>
+): with at least one input fixed, each extra worker (or machine, or dollar) eventually adds less output than the one before. It is the supply-side mirror of diminishing marginal utility, and it reaches far past kitchens: the constraint that matters is usually not the resource you're piling on, but the one capping everything else.
+</p>
+<p>
+You see the same bottleneck everywhere once you look. Workers waiting on a single machine. Trucks queued at one loading dock. Diners filling a restaurant with a fixed number of tables. A class where the teacher's attention is the scarce thing, not the number of desks. In each, output can be pushed up for a while; then the fixed input bites and every additional unit gets costlier to produce. That is why marginal cost eventually rises. The firms that win this game hunt the bottleneck down instead of throwing bodies at it. Eliyahu Goldratt built a whole management philosophy, the Theory of Constraints, on one rule: find the single step that limits the whole line and widen it — the opposite of hiring a seventh cook for a one-oven kitchen.
+</p>
+<p>
+Notice what the kitchen story takes for granted: the oven stays put. Economists call any stretch of time in which at least one input can't be changed the
+<span data-tip="A period in which at least one input, such as the plant, is fixed.">
+<strong>
+short run
+</strong>
+</span>
+. It isn't a set number of weeks; it lasts as long as the oven, the lease, or the building stays fixed. Every cost in this chapter is a short-run cost, and the next chapter keeps the plant fixed too. What happens when the firm can finally buy a second oven or build a new kitchen, the
+<em>
+long run
+</em>
+, is the subject of
+<span class="etb-xref">
+Ch 11
+</span>
+.
+</p>
+<p>
+Now we can return to
+<span data-tip="The added cost of making one more unit: the change in total cost divided by the change in quantity.">
+<strong>
+marginal cost
+</strong>
+</span>
+: the cost of one more unit,
+<code>
+MC = ΔTC ÷ ΔQ
+</code>
+. Its checkmark shape comes straight from the kitchen. While added workers can still specialize, each extra unit takes less effort than the last, so MC dips. Once the oven becomes the bottleneck, diminishing marginal returns set in and MC climbs. Notice what's
+<em>
+not
+</em>
+in that story: fixed cost. Fixed cost doesn't change when output changes, so it never shows up in ΔTC and has no effect on marginal cost.
+</p>
+<p>
+The averages divide a total by the units sharing it:
+<span data-tip="Variable cost per unit; U-shaped.">
+average variable cost
+</span>
+<code>
+AVC = VC ÷ Q
+</code>
+and
+<span data-tip="Total cost per unit; the U-shaped curve at the center of the model.">
+<strong>
+average total cost
+</strong>
+</span>
+<code>
+ATC = TC ÷ Q
+</code>
+(note: ATC is just AFC + AVC).
+</p>
+<p>
+Here is the whole workshop in one table.
+</p>
+</div>
+<table class="etb-sched">
+<caption>
+The workshop's costs (fixed cost = $60)
+</caption>
+<thead>
+<tr>
+<th>
+Q
+</th>
+<th>
+FC
+</th>
+<th>
+VC
+</th>
+<th>
+TC
+</th>
+<th>
+MC
+</th>
+<th>
+AFC
+</th>
+<th>
+AVC
+</th>
+<th>
+ATC
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+60
+</td>
+<td>
+40
+</td>
+<td>
+100
+</td>
+<td>
+40
+</td>
+<td>
+60
+</td>
+<td>
+40
+</td>
+<td>
+100
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+60
+</td>
+<td>
+70
+</td>
+<td>
+130
+</td>
+<td>
+30
+</td>
+<td>
+30
+</td>
+<td>
+35
+</td>
+<td>
+65
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+60
+</td>
+<td>
+90
+</td>
+<td>
+150
+</td>
+<td>
+20
+</td>
+<td>
+20
+</td>
+<td>
+30
+</td>
+<td>
+50
+</td>
+</tr>
+<tr class="etb-sched-eq">
+<td>
+4
+</td>
+<td>
+60
+</td>
+<td>
+120
+</td>
+<td>
+180
+</td>
+<td>
+30
+</td>
+<td>
+15
+</td>
+<td>
+30
+</td>
+<td>
+45
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+60
+</td>
+<td>
+170
+</td>
+<td>
+230
+</td>
+<td>
+50
+</td>
+<td>
+12
+</td>
+<td>
+34
+</td>
+<td>
+46
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+60
+</td>
+<td>
+240
+</td>
+<td>
+300
+</td>
+<td>
+70
+</td>
+<td>
+10
+</td>
+<td>
+40
+</td>
+<td>
+50
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-reveal">
+<summary>
+Worked: build one row of the table from scratch
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Every cost at Q = 5
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Given FC = $60, VC = $170 at five units, and TC = $180 at four units (the row before).
+</p>
+<ol class="etb-worked-steps">
+<li>
+Total cost:
+<code>
+TC = FC + VC
+</code>
+= 60 + 170 = $230.
+</li>
+<li>
+Marginal cost of the 5th:
+<code>
+MC = ΔTC ÷ ΔQ
+</code>
+= (230 − 180) ÷ 1 = $50.
+</li>
+<li>
+AFC = 60 ÷ 5 = $12; AVC = 170 ÷ 5 = $34.
+</li>
+<li>
+ATC = 230 ÷ 5 = $46 — and the check, AFC + AVC = 12 + 34 = $46. ✓
+</li>
+</ol>
+<div class="etb-worked-answer">
+At Q = 5: TC $230, MC $50, AFC $12, AVC $34, ATC $46. MC ($50) is now above both averages, so it pulls them up — the bottleneck, showing up in the numbers.
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A landscaping crew shares one truck and one mower. The 2nd and 3rd workers roughly double and triple the lawns done; the 5th barely helps. Name the bottleneck and the principle.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The truck and mower (the fixed equipment) are the bottleneck. With one set of gear, extra workers wait their turn, so each adds less — diminishing marginal returns. The constraint is the equipment, not the labor being piled on.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+From the table, what happens to marginal cost after the 3rd unit, and why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+MC rises: $20 (3rd), then $30, $50, $70. The gains from specialization are used up and the fixed inputs are now the bottleneck, so each extra unit is harder to produce than the last.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+From memory: why does average total cost fall at first, why does marginal cost eventually rise, and why doesn't fixed cost affect marginal cost?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+ATC falls at first for two reasons: the fixed cost is spread over more units (AFC falls), and early workers can specialize, so AVC and MC fall too. MC eventually rises because of diminishing marginal returns: with a fixed input as the bottleneck, each added worker adds less output, so each extra unit costs more. Fixed cost doesn't change with output, so it never appears in ΔTC — it affects the averages but not the margin. A common slip is to credit "economies of scale" for the falling part of these curves. That's a long-run idea about growing the plant itself (Ch 11); here the plant is fixed.
+</p>
+</div>
+</details>
+</div>
+<!-- (5) CONCEPT 4 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4 · From table to picture
+</div>
+<h2>
+Graphing Cost Curves
+</h2>
+<div class="etb-body">
+<p>
+The fastest way to make cost curves intuitive is repetition: fill in cost tables with holes in them until the patterns feel automatic. The practice tool at the end of this concept does exactly that.
+</p>
+<p>
+Once the tables are familiar, it's time to see the curves themselves. Here are the workshop's costs on a graph. Per-unit costs fall at first (the fixed cost spreads thinner and workers specialize), then rise (diminishing marginal returns — one stove, too many cooks). Do all industries look this way? No; it's a simplification. But the pattern is common enough to be representative, and it teaches the core logic of the firm.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cost curves for the workshop: marginal cost falls then rises, average variable cost and average total cost are both U-shaped, and marginal cost passes through the minimum of each average curve">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="610" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="345" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 205)">
+Cost per unit ($)
+</text>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="72" y="364">
+0
+</text>
+<text x="72" y="296">
+25
+</text>
+<text x="72" y="228">
+50
+</text>
+<text x="72" y="160">
+75
+</text>
+<text x="72" y="91">
+100
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="120" y="378">
+1
+</text>
+<text x="212" y="378">
+2
+</text>
+<text x="304" y="378">
+3
+</text>
+<text x="396" y="378">
+4
+</text>
+<text x="488" y="378">
+5
+</text>
+<text x="580" y="378">
+6
+</text>
+</g>
+<line x1="212" y1="194" x2="212" y2="276" stroke="#b9a36a" stroke-width="6" opacity="0.45" stroke-linecap="round">
+</line>
+<text x="222" y="252" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#8a6d2f">
+AFC = ATC − AVC
+</text>
+<polyline points="120.0,97.2 131.3,117.5 142.7,134.2 154.0,148.1 165.4,159.9 176.7,170.0 188.0,178.9 199.4,186.6 210.7,193.4 222.1,199.4 233.4,204.7 244.7,209.4 256.1,213.6 267.4,217.3 278.8,220.5 290.1,223.4 301.4,225.9 312.8,228.0 324.1,229.8 335.5,231.3 346.8,232.6 358.1,233.5 369.5,234.2 380.8,234.7 392.1,234.9 403.5,234.8 414.8,234.6 426.2,234.1 437.5,233.4 448.8,232.5 460.2,231.3 471.5,230.0 482.9,228.5 494.2,226.8 505.5,224.9 516.9,222.8 528.2,220.5 539.6,218.0 550.9,215.3 562.2,212.5 573.6,209.5 584.9,206.3 596.3,202.9 607.6,199.3" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="612" y="203" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c">
+ATC
+</text>
+<polyline points="83.2,251.4 95.4,254.6 107.6,257.5 119.8,260.3 132.0,263.0 144.2,265.4 156.4,267.6 168.6,269.7 180.8,271.6 193.0,273.4 205.2,274.9 217.3,276.3 229.5,277.4 241.7,278.4 253.9,279.3 266.1,279.9 278.3,280.4 290.5,280.7 302.7,280.8 314.9,280.7 327.1,280.5 339.3,280.0 351.5,279.4 363.7,278.6 375.9,277.7 388.1,276.5 400.3,275.2 412.5,273.7 424.7,272.0 436.9,270.1 449.1,268.1 461.3,265.9 473.5,263.5 485.6,260.9 497.8,258.1 510.0,255.2 522.2,252.1 534.4,248.8 546.6,245.3 558.8,241.7 571.0,237.8 583.2,233.8 595.4,229.6 607.6,225.2" fill="none" stroke="#6d4aaa" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="612" y="229" font-family="sans-serif" font-size="13" font-weight="700" fill="#6d4aaa">
+AVC
+</text>
+<polyline points="83.2,266.1 94.2,271.0 105.2,275.5 116.3,279.5 127.3,283.1 138.3,286.3 149.3,289.0 160.3,291.3 171.3,293.1 182.4,294.5 193.4,295.5 204.4,296.0 215.4,296.1 226.4,295.7 237.5,294.9 248.5,293.7 259.5,292.0 270.5,289.9 281.5,287.3 292.6,284.4 303.6,280.9 314.6,277.1 325.6,272.7 336.6,268.0 347.6,262.8 358.7,257.2 369.7,251.1 380.7,244.6 391.7,237.7 402.7,230.3 413.8,222.5 424.8,214.2 435.8,205.5 446.8,196.4 457.8,186.8 468.9,176.8 479.9,166.4 490.9,155.5 501.9,144.2 512.9,132.4 523.9,120.2 535.0,107.5 546.0,94.4 557.0,80.9" fill="none" stroke="#0f7d7d" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="563" y="82" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+MC
+</text>
+<circle cx="396" cy="234.9" r="5" fill="#1a3a5c">
+</circle>
+<text x="388" y="212" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#1a3a5c" text-anchor="end">
+min ATC (efficient scale)
+</text>
+<circle cx="304" cy="280.8" r="5" fill="#6d4aaa">
+</circle>
+<text x="312" y="304" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#6d4aaa">
+MC = AVC at min AVC
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 9.2
+</span>
+<span class="etb-figure-title">
+The workshop's cost family, smoothed from the table. MC dips while workers specialize, then rises as the bottleneck bites, passing through the bottom of AVC and then the bottom of ATC. The gap between ATC and AVC is average fixed cost.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+MC crosses AVC first, at a smaller quantity, then ATC — and the gap between ATC and AVC narrows as output grows.
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+<strong>
+AFC
+</strong>
+falls forever — the fixed cost spreading thinner. It isn't drawn as its own line here; it's the narrowing gap between ATC and AVC.
+</p>
+<p>
+<strong>
+AVC
+</strong>
+is U-shaped. Early on, specialization makes each unit cheaper to produce; later, the bottleneck makes each costlier. Down, then up.
+</p>
+<p>
+<strong>
+ATC
+</strong>
+is also U-shaped, for a combined reason. Falling AFC drags it down while AVC eventually pushes it up. AFC wins at first, then AVC takes over. We call the bottom the
+<span data-tip="The quantity where average total cost is lowest.">
+efficient scale
+</span>
+. (It's tempting to assume a firm should always produce at efficient scale. It usually shouldn't; we'll see why when we get to profit.)
+</p>
+<p>
+<strong>
+MC
+</strong>
+falls, then rises once the bottleneck bites. A cool math fact that is worth memorizing: MC will always slice through the lowest point of both average curves. That's not a coincidence, just the logic of any average. When the next unit costs
+<em>
+less
+</em>
+than the running average, it pulls the average down; once it costs
+<em>
+more
+</em>
+, it pulls the average up; the two are equal exactly at the bottom. It's the same reason a test score above your GPA lifts it and one below drags it down. For those who know some calculus, you can use the quotient rule to get to the same conclusion: MC will always intersect AVC and ATC at their minimum points.
+</p>
+<p>
+And now the payoff promised at the start of the chapter: look again at that rising MC curve, because
+<em>
+it is the supply curve in disguise.
+</em>
+A producer makes a unit whenever the price covers what that unit costs — its marginal cost. At a low price, only the cheap units clear the bar; raise the price and the costlier later units become worth making too. Read the MC curve as "what price would it take to make this unit worthwhile?" and you've drawn supply: upward-sloping because cost rises at the margin.
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+At some quantity a firm's MC is $18 and its ATC is $25. Is ATC rising or falling there? Why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Falling. The next unit ($18) costs less than the running average ($25), so it pulls the average down. ATC keeps falling until MC catches up to it — at the bottom of the U.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Why does the gap between ATC and AVC shrink as output grows, and what is that gap?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The gap is average fixed cost (ATC = AFC + AVC). Fixed cost spread over more units makes AFC fall, so the two curves squeeze together.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+In one sentence, why does the supply curve slope upward?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Because marginal cost rises — each extra unit costs more than the last (the bottleneck), so it takes a higher price to make producing it worthwhile.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+From memory: why is ATC U-shaped, where does MC cross the average curves, and how does this graph become the supply curve?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+ATC is U-shaped because falling AFC pulls it down while AVC eventually pushes it up; the minimum is where they trade off. MC crosses AVC and ATC at their minimum points — while the marginal is below the average it pulls it down, above it pulls it up, equal at the bottom. The MC curve becomes the supply curve because a unit is worth making whenever price covers its marginal cost, so rising MC means higher prices are needed for more output. A frequent slip is drawing MC crossing somewhere other than the minimums, or forgetting that AVC's minimum sits to the left of ATC's.
+</p>
+</div>
+</details>
+<!-- PRACTICE WIDGET (end of Concept 4) -->
+<div class="etb-slbl">
+Practice — build the curves yourself
+</div>
+<div class="etb-body" style="margin-bottom:1rem;">
+<p>
+The surest way to lock this in is to build the cost family from a schedule yourself, over and over, until the shapes feel inevitable — and to read costs back off a finished graph. Every table and question is freshly generated, so there is always another one. Keep going until it feels automatic.
+</p>
+</div>
+<style>
+#etb-cost-widget{display:block;margin:1.5rem 0;clear:both;}#etb-cost-widget *{box-sizing:border-box;}#etb-cost-widget p{margin:0;}#etb-cost-widget button,#etb-cost-widget input{margin:0;height:auto;min-height:0;max-width:none;box-shadow:none;text-shadow:none;text-transform:none;letter-spacing:normal;line-height:1.3;vertical-align:middle;-webkit-appearance:none;appearance:none;background-image:none;}#etb-cost-widget table,#etb-cost-widget th,#etb-cost-widget td{margin:0;border:0;border-spacing:0;border-collapse:collapse;box-shadow:none;background-image:none;}#etb-cost-widget table{width:100%;max-width:none;}#etb-cost-widget svg{max-width:100%;}#etb-cost-widget details,#etb-cost-widget summary{margin:0;border:0;padding:0;background:none;}#etb-cost-widget *{box-sizing:border-box;}#etb-cost-widget button,#etb-cost-widget input{-webkit-tap-highlight-color:transparent;}#etb-cost-widget .w{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;background:#fff;font-size:14px;line-height:1.55;}#etb-cost-widget .w-head{background:#1a3a5c;padding:1rem 1.2rem .9rem;}#etb-cost-widget .w-badge{display:inline-block;background:#0f2740;color:#cdd8e4;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.45rem;}#etb-cost-widget .w-title{font-size:15px;font-weight:700;color:#fff;margin:0;}#etb-cost-widget .w-sub{font-size:12.5px;color:#b9c6d4;margin:.25rem 0 0;}#etb-cost-widget .w-tabs{display:flex;background:#eef2f6;border-bottom:1px solid #c2cdd9;}#etb-cost-widget .w-tab{flex:1 1 0;font:inherit;font-size:13px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .6rem;cursor:pointer;}#etb-cost-widget .w-tab:hover{background:#e3e9ef;}#etb-cost-widget .w-tab.active{color:#1a3a5c;background:#fff;border-bottom-color:#1a3a5c;}#etb-cost-widget .w-tab:focus-visible,#etb-cost-widget .w-btn:focus-visible,#etb-cost-widget .w-seg button:focus-visible,#etb-cost-widget .w-opt:focus-visible{outline:2px solid #0f7d7d;outline-offset:2px;}#etb-cost-widget .w-panel{display:none;padding:1rem 1.2rem 1.2rem;}#etb-cost-widget .w-panel.active{display:block;}#etb-cost-widget .w-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 .75rem;}#etb-cost-widget .w-lbl{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a98a6;margin-right:2px;}#etb-cost-widget .w-seg{display:inline-flex;border:1px solid #c2cdd9;border-radius:7px;overflow:hidden;}#etb-cost-widget .w-seg button{font:inherit;font-size:12.5px;font-weight:600;color:#3e4e60;background:#fff;border:none;border-right:1px solid #c2cdd9;padding:.4rem .7rem;cursor:pointer;}#etb-cost-widget .w-seg button:last-child{border-right:none;}#etb-cost-widget .w-seg button.on{background:#1a3a5c;color:#fff;}#etb-cost-widget .w-task{font-size:14px;color:#1a1a1a;margin:0 0 .6rem;}#etb-cost-widget .w-forms{font-size:12.5px;color:#3e4e60;margin:0 0 .75rem;}#etb-cost-widget .w-forms summary{cursor:pointer;font-weight:600;color:#1a3a5c;}#etb-cost-widget .w-forms-body{display:flex;flex-wrap:wrap;gap:4px 14px;padding:.45rem 0 0;font-family:"Courier New",monospace;font-size:12.5px;}#etb-cost-widget .w-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 .8rem;border:1px solid #e1e7ee;border-radius:8px;}#etb-cost-widget table.w-t{border-collapse:collapse;width:100%;font-size:13px;}#etb-cost-widget .w-t th{background:#1a3a5c;color:#fff;font-weight:600;padding:6px 6px;text-align:right;white-space:nowrap;}#etb-cost-widget .w-t th:first-child,#etb-cost-widget .w-t td:first-child{text-align:center;}#etb-cost-widget .w-t td{padding:4px 6px;text-align:right;border-bottom:1px solid #eef1f4;white-space:nowrap;color:#26323f;}#etb-cost-widget .w-t tr:last-child td{border-bottom:none;}#etb-cost-widget .w-t tr:nth-child(even) td{background:#f7fafd;}#etb-cost-widget .w-t td.dim{color:#b3bdc7;}#etb-cost-widget .w-t input{width:62px;font:inherit;font-size:13px;text-align:right;padding:4px 5px;border:1px solid #b9c6d4;border-radius:4px;background:#fffdf5;color:#1a1a1a;}#etb-cost-widget .w-t input:focus{outline:2px solid #0f7d7d;outline-offset:0;border-color:#0f7d7d;}#etb-cost-widget .w-t input.ok{border-color:#2a7a4f;background:#eaf5ee;color:#1d5c3a;}#etb-cost-widget .w-t input.bad{border-color:#a33030;background:#fdecec;color:#7a1f1f;}#etb-cost-widget .w-t input.shown{border-color:#d5dce3;background:#f3f5f7;color:#8a98a6;font-style:italic;}#etb-cost-widget .w-btns{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 .8rem;}#etb-cost-widget .w-btn{font:inherit;font-size:13px;font-weight:600;border-radius:7px;padding:.5rem .95rem;cursor:pointer;border:1px solid #1a3a5c;background:#1a3a5c;color:#fff;}#etb-cost-widget .w-btn.sec{background:#fff;color:#1a3a5c;}#etb-cost-widget .w-btn.ghost{background:#fff;color:#5a6b7d;border-color:#c2cdd9;}#etb-cost-widget .w-btn[disabled]{opacity:.45;cursor:default;}#etb-cost-widget .w-fb{font-size:13.5px;line-height:1.6;border-radius:8px;padding:.7rem .9rem;margin:0 0 .8rem;display:none;}#etb-cost-widget .w-fb.show{display:block;}#etb-cost-widget .w-fb.good{background:#eaf5ee;border:1px solid #9cc9ae;color:#1d4d33;}#etb-cost-widget .w-fb.warn{background:#fdf3e1;border:1px solid #e3c27c;color:#5c4210;}#etb-cost-widget .w-fb.bad{background:#fdecec;border:1px solid #dba8a8;color:#5c1a1a;}#etb-cost-widget .w-fb ul{margin:.35rem 0 0;padding-left:1.1rem;}#etb-cost-widget .w-fb li{margin:.15rem 0;}#etb-cost-widget .w-graph{border:1px solid #e1e7ee;border-radius:8px;overflow:hidden;margin:0 0 .6rem;}#etb-cost-widget .w-graph svg{display:block;width:100%;height:auto;touch-action:manipulation;user-select:none;-webkit-user-select:none;}#etb-cost-widget .w-cap{font-size:12.5px;color:#5a6b7d;padding:.55rem .8rem;border-top:1px solid #eef1f4;}#etb-cost-widget .w-q-type{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a98a6;margin:0 0 .3rem;}#etb-cost-widget .w-q{font-size:14.5px;font-weight:600;color:#1a1a1a;margin:0 0 .7rem;}#etb-cost-widget .w-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 .8rem;}@media (max-width:520px){#etb-cost-widget .w-opts{grid-template-columns:1fr;}#etb-cost-widget .w-panel{padding:.9rem .75rem 1rem;}#etb-cost-widget table.w-t{font-size:12.5px;}#etb-cost-widget .w-t th{padding:5px 3px;}#etb-cost-widget .w-t td{padding:3px 3px;}#etb-cost-widget .w-t input{width:46px;padding:4px 3px;font-size:12.5px;}#etb-cost-widget .w-seg button{padding:.4rem .55rem;}}#etb-cost-widget .w-opt{font:inherit;font-size:13.5px;text-align:left;line-height:1.45;border:1px solid #c2cdd9;background:#fff;color:#1a1a1a;border-radius:8px;padding:.6rem .8rem;cursor:pointer;}#etb-cost-widget .w-opt:hover:not([disabled]){background:#f3f6f9;}#etb-cost-widget .w-opt.right{border-color:#2a7a4f;background:#eaf5ee;color:#1d4d33;font-weight:600;}#etb-cost-widget .w-opt.wrong{border-color:#a33030;background:#fdecec;color:#5c1a1a;}#etb-cost-widget .w-opt[disabled]{cursor:default;}#etb-cost-widget .w-score{font-size:12px;color:#8a98a6;margin-left:auto;}#etb-cost-widget .w-hint{font-size:12.5px;color:#5a6b7d;margin:-.3rem 0 .7rem;}#etb-cost-widget .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+</style>
+<div id="etb-cost-widget">
+<div class="w" id="cw-w">
+<div class="w-head">
+<div class="w-badge">
+Practice
+</div>
+<p class="w-title">
+Build and read the cost curves
+</p>
+<p class="w-sub">
+Fill in cost tables until the patterns feel automatic, then read costs straight off a graph.
+</p>
+</div>
+<div class="w-tabs" role="tablist">
+<button class="w-tab active" role="tab" aria-selected="true" data-m="table">
+Build the table
+</button>
+<button class="w-tab" role="tab" aria-selected="false" data-m="graph">
+Read the graph
+</button>
+</div>
+<!-- MODE 1: TABLE -->
+<div class="w-panel active" id="cw-p-table" role="tabpanel">
+<div class="w-row">
+<span class="w-lbl">
+Level
+</span>
+<div class="w-seg" id="cw-lvl">
+<button data-l="1" class="on">
+One column
+</button>
+<button data-l="2">
+Scattered
+</button>
+<button data-l="3">
+From scratch
+</button>
+</div>
+<span class="w-score" id="cw-t-score">
+</span>
+</div>
+<p class="w-task" id="cw-t-task">
+Fill in the
+<strong>
+marginal cost
+</strong>
+column. Round to the nearest cent where needed.
+</p>
+<details class="w-forms">
+<summary>
+Formulas
+</summary>
+<div class="w-forms-body">
+<span>
+TC = FC + VC
+</span>
+<span>
+MC = ΔTC ÷ ΔQ
+</span>
+<span>
+AFC = FC ÷ Q
+</span>
+<span>
+AVC = VC ÷ Q
+</span>
+<span>
+ATC = TC ÷ Q = AFC + AVC
+</span>
+</div>
+</details>
+<div class="w-tablewrap">
+<table class="w-t" id="cw-t-table">
+<thead>
+<tr>
+<th scope="col" title="Quantity">
+Q
+</th>
+<th scope="col" title="fixed cost">
+FC
+</th>
+<th scope="col" title="variable cost">
+VC
+</th>
+<th scope="col" title="total cost">
+TC
+</th>
+<th scope="col" title="marginal cost">
+MC
+</th>
+<th scope="col" title="average fixed cost">
+AFC
+</th>
+<th scope="col" title="average variable cost">
+AVC
+</th>
+<th scope="col" title="average total cost">
+ATC
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>
+0
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+0
+</td>
+<td>
+90
+</td>
+<td class="dim">
+—
+</td>
+<td class="dim">
+—
+</td>
+<td class="dim">
+—
+</td>
+<td class="dim">
+—
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+1
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+45
+</td>
+<td>
+135
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="1" aria-label="MC at Q = 1">
+</td>
+<td>
+90
+</td>
+<td>
+45
+</td>
+<td>
+135
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+2
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+75
+</td>
+<td>
+165
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="2" aria-label="MC at Q = 2">
+</td>
+<td>
+45
+</td>
+<td>
+37.50
+</td>
+<td>
+82.50
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+3
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+110
+</td>
+<td>
+200
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="3" aria-label="MC at Q = 3">
+</td>
+<td>
+30
+</td>
+<td>
+36.67
+</td>
+<td>
+66.67
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+4
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+165
+</td>
+<td>
+255
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="4" aria-label="MC at Q = 4">
+</td>
+<td>
+22.50
+</td>
+<td>
+41.25
+</td>
+<td>
+63.75
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+5
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+245
+</td>
+<td>
+335
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="5" aria-label="MC at Q = 5">
+</td>
+<td>
+18
+</td>
+<td>
+49
+</td>
+<td>
+67
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+6
+</strong>
+</td>
+<td>
+90
+</td>
+<td>
+355
+</td>
+<td>
+445
+</td>
+<td>
+<input type="text" inputmode="decimal" autocomplete="off" data-k="mc" data-q="6" aria-label="MC at Q = 6">
+</td>
+<td>
+15
+</td>
+<td>
+59.17
+</td>
+<td>
+74.17
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="w-btns">
+<button class="w-btn" id="cw-t-check">
+Check
+</button>
+<button class="w-btn sec" id="cw-t-new">
+New table
+</button>
+<button class="w-btn ghost" id="cw-t-show">
+Show answers
+</button>
+</div>
+<div class="w-fb" id="cw-t-fb" aria-live="polite">
+</div>
+<div id="cw-t-graphbox" style="display:none;">
+<div class="w-graph">
+<svg id="cw-t-svg" viewBox="0 0 600 340" role="img" aria-label="Graph of the marginal cost, average variable cost, and average total cost from your table">
+</svg>
+<div class="w-cap">
+Your curves, drawn from your table. MC is plotted halfway between quantities, because it is the cost of moving from one row to the next. That is why it passes near the bottom of AVC and then ATC.
+</div>
+</div>
+<div class="w-btns">
+<button class="w-btn ghost" id="cw-t-afc">
+Show AFC
+</button>
+</div>
+</div>
+</div>
+<!-- MODE 2: GRAPH -->
+<div class="w-panel" id="cw-p-graph" role="tabpanel">
+<div class="w-row" style="margin-bottom:.4rem;">
+<p class="w-q-type" id="cw-g-type" style="margin:0;">
+</p>
+<span class="w-score" id="cw-g-score">
+</span>
+</div>
+<p class="w-q" id="cw-g-q">
+</p>
+<p class="w-hint" id="cw-g-hint">
+</p>
+<div class="w-graph">
+<svg id="cw-g-svg" viewBox="0 0 600 380" role="img" aria-label="Cost curve graph">
+</svg>
+</div>
+<div class="w-opts" id="cw-g-opts">
+</div>
+<div class="w-fb" id="cw-g-fb" aria-live="polite">
+</div>
+<div class="w-btns">
+<button class="w-btn" id="cw-g-next">
+Next question
+</button>
+<button class="w-btn ghost" id="cw-g-show">
+Show me
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- (5) CONCEPT 5 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 5 · Price is a meeting
+</div>
+<h2>
+Economists Favor Demand Pricing
+</h2>
+<div class="etb-body">
+<p>
+In earlier chapters you found the most important point on any market graph: where supply crosses demand, the market clears, and, in a competitive market, the total benefit to buyers and sellers is as large as it can be.
+<span class="etb-xref">
+Ch 6–8
+</span>
+Back then the supply curve sloped up because we said it did. Now you can explain it:
+<em>
+the supply curve is the marginal-cost curve.
+</em>
+Picture my backyard chickens. A few eggs a week cost almost nothing beyond feed. To get more eggs from the same flock, I'd need extra lighting, richer feed, and more of my own time coaxing hens that are already laying near their limit — and each additional egg costs more than the last. That's a rising MC curve. Think of it this way: "what would the price have to be to make this egg worth producing?" Answer that and you've drawn supply. Demand measures a buyer's willingness to pay; supply measures a seller's willingness to sell, and a seller will sell another unit whenever the price covers its marginal cost, whenever MR &gt; MC.
+</p>
+<p>
+That retires the tempting mistake from the start of the chapter. Consumers often assume price and cost are the same thing. They aren't. Cost builds only half the picture: the supply curve, the producer's side. The price is where that supply curve
+<em>
+meets demand
+</em>
+— where the cost of one more unit is weighed against what a buyer will give for one more. So a high price is never, on its own, "a high cost made visible." It is a meeting point, with cost on one side and willingness to pay on the other.
+</p>
+<p>
+Seeing price as a meeting sorts every price increase into two cases.
+<strong>
+Sometimes the supply curve itself shifts left
+</strong>
+— the cost of one more genuinely rises: the 2 a.m. driver who must be coaxed out of bed with a doubled ride-share fare; the congested lane; the power plant fired up only at peak; the crop half wiped out by a hurricane; the hotel rooms damaged in a storm. Here the higher price really is the higher marginal cost showing through.
+<strong>
+Sometimes supply can't move at all, and demand surges against it.
+</strong>
+A vending machine holds a fixed stock of cans; a heat wave sends demand leaping while the cost of stocking a can stays exactly what it was. The price climbs anyway — not because cost rose, but because demand is now crowding a supply that cannot grow. The hot-day Coke is this second kind, which is exactly why calling it a "cost" rang false. It wasn't one.
+</p>
+<p>
+In the Coke machine's case, does anything cost more during the hot part of the day? No. So what
+<em>
+is
+</em>
+the higher price doing? It is
+<em>
+rationing a fixed supply during a surge in demand
+</em>
+. And there is something worse than a $10 bottle of Coke: an "out of stock" sign. There are only so many cold cans, and on a blazing day more people want one than there are cans to go around. Someone goes without — that is what scarcity means, and no pricing scheme, imposed or repealed, can change it. The only question is
+<em>
+who
+</em>
+, and how it gets decided. Let the price rise, and it decides: the can goes to whoever will give up the most for it. Forbid the price to move — pin it at the cool-morning number — and the machine empties by noon. The parched customer at three o'clock meets the one price higher than any surge:
+<em>
+sold out
+</em>
+. A shortage is a price too. It is just paid in queues, in luck, in showing up early — and it falls hardest on whoever has the least time to wait. Holding a price down doesn't abolish the rationing; it only changes the currency.
+</p>
+<p>
+This is why economists tend to favor demand-based pricing more than the general public does: not because it tracks cost — it doesn't — but because it rations openly and heads off the kind of shortage we studied in Chapter 3.
+</p>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+Reflection · when the can is insulin
+</div>
+<div class="etb-note-body">
+<p>
+A cold Coke is a fine thing to ration by price, because going without one costs you almost nothing. Run the same logic on a good no one can do without — insulin, an inhaler, the only hospital bed for sixty miles — and "the price decides who goes without" stops sounding clever and starts sounding cruel. The machinery is identical; what changed is the
+<em>
+stakes
+</em>
+, and one thing we haven't named yet: how sharply buyers pull back when the price rises, which is very different for a luxury than for a necessity. That responsiveness has a name and a measure, and it is the hinge on which the fairness of price-rationing turns. We'll come back to the insulin machine when we reach
+<em>
+elasticity
+</em>
+— and we'll be able to say something precise, instead of merely uneasy.
+</p>
+</div>
+</div>
+<div class="etb-body">
+<p>
+A single Coke machine on a blazing afternoon is a
+<em>
+stylized
+</em>
+case — the textbook kind, simpler than real markets, which have more buyers, more sellers, and more stock. But the lesson carries: a price free to move rations a scarce good by willingness to pay; a price held down rations it by shortage.
+<em>
+Which you would rather live with
+</em>
+— for a Coke, for a parking space, for a dose of insulin — is the question the chapter leaves in your hands.
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A ride-share fare doubles at 2 a.m.; a vending-machine Coke doubles on a hot afternoon. One reflects a real cost and one doesn't. Which is which — and why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The 2 a.m. fare reflects a real cost: coaxing a driver out of bed genuinely costs more, so the supply curve has shifted left. The hot-day Coke does not: the can costs no more to stock, so supply is fixed and demand has surged against it. That price is rationing the scarce cans, not tracking a cost.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+During a heat wave a city caps bottled-water prices at their normal level. The water doesn't become more plentiful. So what does the cap actually change?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Not
+<em>
+whether
+</em>
+the water is rationed — it still is, because there isn't enough — only
+<em>
+how
+</em>
+. Instead of price deciding who goes without, a shortage does: shelves empty, and the water goes to whoever queued earliest or got lucky, not whoever needed it most.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Fill in the blanks: the supply curve is the ______ curve, and a market price is set where that curve meets ______.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The marginal-cost curve; demand. Cost alone gives you supply; the price is the crossing of supply and demand, never the cost by itself.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+From memory: say what the supply curve really is, why a price is not the same thing as a cost, and the two currencies a scarce good can be rationed in.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+The supply curve
+<em>
+is
+</em>
+the marginal-cost curve — it slopes up because the cost of one more unit rises at the margin. A price is not a cost: it is where the supply curve (cost of one more) meets demand (value of one more), so demand is always half of it. And a scarce good is always rationed somehow — either by price (it goes to whoever will pay most) or, if the price is held down, by shortage (it goes to whoever queues, waits, or gets lucky). The error to avoid is thinking a price control removes the rationing, when it only changes the currency.
+</p>
+</div>
+</details>
+</div>
+<!-- (7) ON THE EXAM -->
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+The moves you can now make
+</p>
+<p class="etb-exam-sub">
+Three questions at the level the exam actually asks — compute the costs, read the cost graph, and explain the crossing. Try each on paper first, then reveal.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+A
+</span>
+Fill the cost table
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+B
+</span>
+Read the cost graph
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+C
+</span>
+Explain the crossing
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Type A · computation from a schedule
+</p>
+<p class="etb-exam-q">
+A firm has a fixed cost of $50. Its total cost is $90 at 2 units and $108 at 3 units. Find, for the third unit: marginal cost; and at Q = 3, average fixed cost, average variable cost, and average total cost. Show the steps.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+<code>
+MC = ΔTC ÷ ΔQ
+</code>
+= (108 − 90) ÷ 1 = $18 for the third unit.
+</li>
+<li>
+<code>
+AFC = FC ÷ Q
+</code>
+= 50 ÷ 3 = $16.67.
+</li>
+<li>
+Variable cost at Q = 3 is TC − FC = 108 − 50 = $58, so
+<code>
+AVC = VC ÷ Q
+</code>
+= 58 ÷ 3 = $19.33.
+</li>
+<li>
+<code>
+ATC = TC ÷ Q
+</code>
+= 108 ÷ 3 = $36 — check: AFC + AVC = 16.67 + 19.33 = $36. ✓
+</li>
+</ol>
+<div class="etb-worked-answer">
+Third-unit MC $18; at Q = 3, AFC $16.67, AVC $19.33, ATC $36. The AFC + AVC check catches arithmetic slips before they cost you.
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Type B · identify and read
+</p>
+<p class="etb-exam-q">
+Three short-run cost curves are drawn below, labeled only 1, 2, and 3. Identify which is marginal cost, which is average total cost, and which is average variable cost — and state how you can tell. Then mark the firm's efficient scale.
+</p>
+<div class="etb-figure" style="margin:.5rem 0 .9rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three unlabeled short-run cost curves numbered 1, 2 and 3: two U-shaped averages and one steeper curve that crosses both from below at their minimum points">
+<line x1="70" y1="40" x2="70" y2="270" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="270" x2="500" y2="270" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="285" y="302" font-family="sans-serif" font-size="12" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="155" font-family="sans-serif" font-size="12" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 155)">
+Cost per unit ($)
+</text>
+<polyline points="91.6,217.1 100.0,220.8 108.3,224.2 116.7,227.2 125.1,229.9 133.5,232.3 141.8,234.3 150.2,235.9 158.6,237.2 166.9,238.1 175.3,238.7 183.7,238.9 192.1,238.8 200.4,238.4 208.8,237.6 217.2,236.4 225.6,234.9 233.9,233.0 242.3,230.8 250.7,228.3 259.0,225.3 267.4,222.1 275.8,218.5 284.2,214.5 292.5,210.2 300.9,205.5 309.3,200.5 317.6,195.2 326.0,189.5 334.4,183.4 342.8,177.0 351.1,170.2 359.5,163.1 367.9,155.7 376.3,147.9 384.6,139.7 393.0,131.2 401.4,122.3 409.7,113.1 418.1,103.6 426.5,93.7 434.9,83.4 443.2,72.8 451.6,61.8" fill="none" stroke="#4a5866" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="458" y="64" font-family="sans-serif" font-size="13" font-weight="700" fill="#26323f">
+1
+</text>
+<polyline points="124.0,91.3 132.0,103.5 139.9,113.9 147.9,122.9 155.8,130.8 163.8,137.7 171.7,143.8 179.7,149.3 187.6,154.1 195.6,158.5 203.5,162.4 211.5,165.9 219.4,169.1 227.4,171.9 235.3,174.4 243.3,176.7 251.3,178.7 259.2,180.4 267.2,182.0 275.1,183.3 283.1,184.4 291.0,185.3 299.0,186.0 306.9,186.6 314.9,186.9 322.8,187.1 330.8,187.2 338.7,187.1 346.7,186.8 354.7,186.4 362.6,185.9 370.6,185.2 378.5,184.3 386.5,183.3 394.4,182.2 402.4,181.0 410.3,179.6 418.3,178.1 426.2,176.4 434.2,174.7 442.1,172.8 450.1,170.8 458.0,168.6 466.0,166.4" fill="none" stroke="#4a5866" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="472" y="169" font-family="sans-serif" font-size="13" font-weight="700" fill="#26323f">
+2
+</text>
+<polyline points="91.6,203.2 100.3,205.5 109.0,207.7 117.7,209.8 126.4,211.8 135.1,213.6 143.8,215.3 152.5,216.9 161.3,218.4 170.0,219.7 178.7,220.9 187.4,222.0 196.1,222.9 204.8,223.7 213.5,224.4 222.2,225.0 230.9,225.4 239.6,225.8 248.3,225.9 257.0,226.0 265.7,226.0 274.4,225.8 283.2,225.5 291.9,225.0 300.6,224.4 309.3,223.8 318.0,222.9 326.7,222.0 335.4,220.9 344.1,219.7 352.8,218.4 361.5,217.0 370.2,215.4 378.9,213.7 387.6,211.9 396.3,209.9 405.1,207.8 413.8,205.6 422.5,203.3 431.2,200.8 439.9,198.3 448.6,195.5 457.3,192.7 466.0,189.7" fill="none" stroke="#4a5866" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="472" y="194" font-family="sans-serif" font-size="13" font-weight="700" fill="#26323f">
+3
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-title">
+Three short-run cost curves — which is which?
+</span>
+</div>
+</div>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Curve 1 is
+<em>
+marginal cost
+</em>
+: it is the one that crosses both of the others from below, and it crosses each at that curve's lowest point. Curve 2 is
+<em>
+average total cost
+</em>
+and curve 3 is
+<em>
+average variable cost
+</em>
+— the tells are that ATC sits
+<em>
+above
+</em>
+AVC everywhere (it carries the extra average fixed cost), and the two converge as quantity grows because that fixed-cost gap shrinks.
+</p>
+<p>
+The efficient scale is the quantity at the bottom of curve 2 (ATC) — where MC slices through its minimum. To the left of it ATC is still falling; to the right it has turned up. A frequent error is to read the minimum of AVC (curve 3, to the left) as the efficient scale; efficient scale is defined on
+<em>
+total
+</em>
+cost per unit, so it is the bottom of ATC.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Type C · explain the relationship
+</p>
+<p class="etb-exam-q">
+Explain why the marginal cost curve must intersect the average total cost curve at the minimum of average total cost. Do not just assert it — give the reasoning.
+</p>
+<details class="etb-reveal">
+<summary>
+Show model answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+It follows from how any average responds to the next value added to it. When the marginal (next) unit costs
+<em>
+less
+</em>
+than the current average, it drags the average down; when it costs
+<em>
+more
+</em>
+, it pulls the average up. So ATC falls exactly while MC is below it and rises exactly while MC is above it.
+</p>
+<p>
+The turning point — the bottom of ATC, where it stops falling and starts rising — is therefore precisely the quantity where MC has just risen to equal ATC. Below that quantity MC &lt; ATC (ATC falling); above it MC &gt; ATC (ATC rising); at it, MC = ATC. That is why the curves must cross at the minimum, not before or after — the same logic that makes one low test score pull your grade down only while it sits below your average.
+</p>
+</div>
+</details>
+</div>
+<!-- FRQ CAPSTONE -->
+<div class="etb-frq">
+<span class="etb-frq-badge">
+Capstone · free response
+</span>
+<p class="etb-frq-title">
+Put the moves together
+</p>
+<p class="etb-frq-meta">
+AP-style long free response · ~9 points · graph required · model answer and scoring below
+</p>
+<p class="etb-frq-scenario">
+A small furniture workshop produces tables in the short run, with its workshop space fixed. Its fixed cost is $120. The schedule below gives total cost at each output.
+</p>
+<table class="etb-sched" style="margin:.2rem 0 1rem;">
+<thead>
+<tr>
+<th>
+Q (tables)
+</th>
+<th>
+1
+</th>
+<th>
+2
+</th>
+<th>
+3
+</th>
+<th>
+4
+</th>
+<th>
+5
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Total cost ($)
+</td>
+<td>
+200
+</td>
+<td>
+260
+</td>
+<td>
+300
+</td>
+<td>
+360
+</td>
+<td>
+460
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="etb-frq-parts">
+<li>
+Calculate the marginal cost of the 2nd table and of the 5th table. Show your work.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+<li>
+Calculate average variable cost and average total cost at Q = 4. Show your work.
+<span class="etb-frq-pts">
+(2 pt)
+</span>
+</li>
+<li>
+On a correctly labeled graph, draw the firm's marginal cost, average variable cost, and average total cost curves, and mark the efficient scale.
+<span class="etb-frq-pts">
+(3 pt)
+</span>
+</li>
+<li>
+Identify the quantity at which average total cost is minimized, and state what must be true of marginal cost at that quantity.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+<li>
+Explain why average total cost is U-shaped, referring to diminishing marginal product.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal a full-credit response
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+(a)
+</strong>
+MC of the 2nd table = (260 − 200) ÷ 1 =
+<strong>
+$60
+</strong>
+. MC of the 5th = (460 − 360) ÷ 1 =
+<strong>
+$100
+</strong>
+.
+</p>
+<p>
+<strong>
+(b)
+</strong>
+At Q = 4: variable cost = TC − FC = 360 − 120 = $240, so AVC = 240 ÷ 4 =
+<strong>
+$60
+</strong>
+. ATC = 360 ÷ 4 =
+<strong>
+$90
+</strong>
+.
+</p>
+<p>
+<strong>
+(c)
+</strong>
+The full schedule (FC = $120) works out to: MC 80, 60, 40, 60, 100; AVC 80, 70, 60, 60, 68; ATC 200, 130, 100, 90, 92. The model graph:
+</p>
+<div class="etb-figure" style="margin:.3rem 0 .2rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Model answer cost graph: marginal cost, average variable cost, and average total cost for the furniture workshop, with marginal cost passing through the minimum of each average and the efficient scale marked at four tables">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="610" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="345" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (tables)
+</text>
+<text x="26" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 205)">
+Cost per unit ($)
+</text>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="72" y="364">
+0
+</text>
+<text x="72" y="289">
+50
+</text>
+<text x="72" y="214">
+100
+</text>
+<text x="72" y="139">
+150
+</text>
+<text x="72" y="64">
+200
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="130" y="378">
+1
+</text>
+<text x="240" y="378">
+2
+</text>
+<text x="350" y="378">
+3
+</text>
+<text x="460" y="378">
+4
+</text>
+<text x="570" y="378">
+5
+</text>
+</g>
+<polyline points="130.0,53.6 141.0,73.6 152.0,90.7 163.0,105.6 174.0,118.6 185.0,130.2 196.0,140.5 207.0,149.8 218.0,158.2 229.0,165.8 240.0,172.8 251.0,179.1 262.0,184.8 273.0,190.1 284.0,194.9 295.0,199.3 306.0,203.3 317.0,206.9 328.0,210.2 339.0,213.1 350.0,215.8 361.0,218.1 372.0,220.2 383.0,222.0 394.0,223.5 405.0,224.8 416.0,225.8 427.0,226.6 438.0,227.2 449.0,227.5 460.0,227.6 471.0,227.5 482.0,227.2 493.0,226.6 504.0,225.9 515.0,225.0 526.0,223.8 537.0,222.5 548.0,220.9 559.0,219.2 570.0,217.3 581.0,215.2 592.0,212.8 603.0,210.4" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="607" y="214" font-family="sans-serif" font-size="13" font-weight="700" fill="#1a3a5c">
+ATC
+</text>
+<polyline points="86.0,217.4 98.0,222.1 110.0,226.5 122.1,230.8 134.1,235.0 146.1,238.9 158.1,242.6 170.2,246.1 182.2,249.4 194.2,252.6 206.2,255.5 218.3,258.3 230.3,260.8 242.3,263.2 254.3,265.4 266.3,267.3 278.4,269.1 290.4,270.7 302.4,272.1 314.4,273.3 326.5,274.3 338.5,275.2 350.5,275.8 362.5,276.2 374.6,276.5 386.6,276.5 398.6,276.4 410.6,276.0 422.7,275.5 434.7,274.8 446.7,273.8 458.7,272.7 470.7,271.4 482.8,269.9 494.8,268.2 506.8,266.4 518.8,264.3 530.9,262.0 542.9,259.5 554.9,256.9 566.9,254.0 579.0,251.0 591.0,247.7 603.0,244.3" fill="none" stroke="#6d4aaa" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="607" y="248" font-family="sans-serif" font-size="13" font-weight="700" fill="#6d4aaa">
+AVC
+</text>
+<polyline points="86.0,243.6 97.6,251.6 109.3,259.0 120.9,265.9 132.6,272.2 144.2,278.0 155.8,283.2 167.5,287.9 179.1,292.1 190.8,295.7 202.4,298.8 214.0,301.3 225.7,303.3 237.3,304.7 249.0,305.6 260.6,305.9 272.2,305.8 283.9,305.0 295.5,303.7 307.2,301.9 318.8,299.6 330.4,296.7 342.1,293.2 353.7,289.2 365.3,284.7 377.0,279.6 388.6,274.0 400.3,267.8 411.9,261.1 423.5,253.8 435.2,246.0 446.8,237.7 458.5,228.8 470.1,219.4 481.7,209.4 493.4,198.9 505.0,187.9 516.7,176.3 528.3,164.1 539.9,151.4 551.6,138.2 563.2,124.4 574.9,110.1 586.5,95.2" fill="none" stroke="#0f7d7d" stroke-width="2.5" stroke-linejoin="round">
+</polyline>
+<text x="592" y="98" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+MC
+</text>
+<line x1="460" y1="227.6" x2="460" y2="360" stroke="#8a6d2f" stroke-width="1.4" stroke-dasharray="5 4">
+</line>
+<circle cx="460" cy="227.6" r="5" fill="#1a3a5c">
+</circle>
+<text x="452" y="205" font-family="sans-serif" font-size="11" font-weight="700" fill="#8a6d2f" text-anchor="end">
+efficient scale (Q = 4)
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Model graph
+</span>
+<span class="etb-figure-title">
+A sketch, as you'd draw it on the exam: MC cuts AVC and then ATC at their minimum points; ATC bottoms out at Q = 4, the efficient scale.
+</span>
+</div>
+</div>
+<p>
+<strong>
+(d)
+</strong>
+ATC is minimized at
+<strong>
+Q = 4
+</strong>
+(ATC = $90, its lowest value). Marginal cost equals average total cost at the minimum of ATC — MC cuts ATC there from below. In this discrete schedule the crossing shows up as a switch: MC is $60 (below ATC) at the 4th table and $100 (above ATC) at the 5th, which is exactly what pins the minimum at Q = 4.
+</p>
+<p>
+<strong>
+(e)
+</strong>
+With the workshop fixed, adding variable inputs runs into diminishing marginal product: each added unit of input eventually yields less extra output, so marginal cost rises. ATC first falls (the fixed cost is spread over more units, and early workers can specialize), then rises once rising marginal cost outweighs the shrinking average fixed cost — producing the U.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal the scoring rubric
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) MC of 2nd table = $60
+<strong>
+with work shown
+</strong>
+(ΔTC ÷ ΔQ).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) MC of 5th table = $100 with work shown.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) AVC at Q = 4 = $60 with work (VC = TC − FC).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) ATC at Q = 4 = $90 with work.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Axes labeled (cost per unit on vertical, quantity on horizontal); all three curves drawn and labeled.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) MC drawn cutting AVC and ATC at their minimum points, from below.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Efficient scale marked at the minimum of ATC (Q = 4).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) States ATC is minimized at Q = 4 AND that MC equals ATC at the minimum (in the schedule, MC rises from below ATC to above it at Q = 4).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(e) Explains the U via diminishing marginal product driving MC up.
+</li>
+</ul>
+<p style="font-family:sans-serif;font-size:12px;color:#8a98a6;margin:.75rem 0 0;">
+Nine independent points. A wrong number in (a) or (b) doesn't sink the graph points in (c) if the shapes and crossing are right for your own figures.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal what loses points
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-loses">
+<li>
+<span class="tag" style="background:#fdecec;color:#a33030;">
+Conceptual
+</span>
+Drawing MC through the downward slope of ATC, or above the minimum — MC must cut each average at its lowest point, from below. Drawing AVC
+<em>
+above
+</em>
+ATC also forfeits the point; AVC is always the lower of the two.
+</li>
+<li>
+<span class="tag" style="background:#fbf0db;color:#8a6d2f;">
+Precision
+</span>
+Writing "MC = $60" with no
+<code>
+ΔTC ÷ ΔQ
+</code>
+setup. An AP "Calculate" prompt requires shown work; a bare correct number routinely earns nothing.
+</li>
+<li>
+<span class="tag" style="background:#eef2f6;color:#3e4e60;">
+Exam craft
+</span>
+Unlabeled axes or unlabeled curves on the graph — even a perfectly shaped diagram scores zero on the labeling points if the reader can't tell which curve is which or what the axes measure.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<!-- (8) CHAPTER SYNTHESIS -->
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+Costs are how scarcity reveals itself to producers. The firm that reads its costs honestly — accepting the real constraints and reinventing the rest — stays in contact with reality; the firm that ignores them drifts into fantasy.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world…
+</div>
+<p class="etb-synth-leadtext">
+prices would be free to move to wherever supply meets demand — surge fares, congestion tolls, peak-power and drought-water rates — so that scarce things were rationed out in the open, by price, instead of quietly, by shortage, queue, and luck.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z">
+</path>
+<circle cx="12" cy="12" r="3">
+</circle>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Spreading a fixed cost over more units makes average fixed cost fall; that, plus early specialization, is why average total cost falls at first.
+</li>
+<li>
+With a fixed input as the bottleneck, diminishing marginal returns make marginal cost rise — and MC cuts AVC and ATC at their minimums.
+</li>
+<li>
+The rising marginal-cost curve is the supply curve: higher prices are needed to make costlier units worthwhile.
+</li>
+<li>
+A price set where supply meets demand rations a scarce good by willingness to pay; hold the price down and a shortage rations it instead, by queue and luck.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#b0883a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16">
+</path>
+<path d="M5 20h14">
+</path>
+<path d="M4 7h16">
+</path>
+<path d="M4 7l-2.5 5h5z">
+</path>
+<path d="M20 7l-2.5 5h5z">
+</path>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+When an industry's costs keep climbing, is it missing competition (a Christensen opening) or running into cost disease (a Baumol constraint)? The cure differs entirely.
+</li>
+<li>
+Should we subsidize services whose costs are structurally high — care, teaching, the arts — or treat the high price as a signal to ration them?
+</li>
+<li>
+When a price climbs because demand is crowding a fixed supply — a surge fare, a hot-day Coke, a scarce dose of insulin — is the seller rationing honestly or exploiting a captive buyer? The answer leans on how badly the buyer can do without.
+<span class="etb-xref">
+Ch 16
+</span>
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+</path>
+</svg>
+In your life
+</div>
+<p>
+Every choice has a cost in roads not taken. Name it honestly — then ask whether the constraint is real or just the familiar way of doing things.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="7" rx="2">
+</rect>
+<path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+</path>
+</svg>
+In your work
+</div>
+<p>
+When output stalls, don't pile more onto the abundant input — find the bottleneck. The constraint that matters is the one capping everything else.
+</p>
+</div>
+</div>
+<div class="etb-synth-arrow">
+<span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9l6 6 6-6">
+</path>
+</svg>
+</span>
+</div>
+</div>
+<!-- (8) LEARN MORE -->
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=ucJBO9UTmwo" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/ucJBO9UTmwo/mqdefault.jpg" alt="Short-run costs, part 1">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Short-Run Costs (Part 1)
+</div>
+<div class="etb-yt-note">
+~8 min · fixed, variable, total, and marginal cost — plus AFC, AVC, and ATC — built straight from a table · Pairs with Concepts 2–3 · ACDC Econ
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=qYKJdooEnwU" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/qYKJdooEnwU/mqdefault.jpg" alt="Short-run cost curves, part 2">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Short-Run Cost Curves (Part 2)
+</div>
+<div class="etb-yt-note">
+~8 min · builds the curves from the table and explains why each takes its shape — the picture behind Fig 9.2 · Pairs with Concepts 3 and 4 · ACDC Econ
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/profit-maximization-average-cost" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/hl5HqR8bCio/mqdefault.jpg" alt="Maximizing profit and the average cost curve">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Maximizing Profit and the Average Cost Curve
+</div>
+<div class="etb-yt-note">
+~7 min · why marginal cost cuts average cost at its minimum — the crossing in Fig 9.2 · Pairs with Concept 4 (the profit use comes in Ch 10) · Marginal Revolution University
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.etb -->
+<!-- ===== canonical behavior: paste at end of each chapter (before final
+</div>
+) ===== -->
+<script>
+(function () { var pg = document.getElementById('etb-pg'); if (pg) { window.addEventListener('scroll', function () { var d = document.documentElement; var pct = (d.scrollTop || document.body.scrollTop) / ((d.scrollHeight - d.clientHeight) || 1); pg.style.width = Math.min(100, pct * 100) + '%'; }, { passive: true }); } document.querySelectorAll('.etb-flip').forEach(function (c) { c.addEventListener('click', function () { c.classList.toggle('flipped'); }); c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('flipped'); } }); }); document.querySelectorAll('.etb-ak-item').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('ak-open'); document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); if (!isOpen) el.classList.add('ak-open'); }); }); document.querySelectorAll('[data-tip]').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('tip-open'); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); if (!isOpen) el.classList.add('tip-open'); }); }); document.addEventListener('click', function () { document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); }); document.querySelectorAll('.etb-exam').forEach(function (box) { var tabs = box.querySelectorAll('.etb-exam-tab'); var panels = box.querySelectorAll('.etb-exam-panel'); tabs.forEach(function (t) { t.addEventListener('click', function () { var i = t.getAttribute('data-i'); tabs.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-i') === i); }); panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-i') === i); }); }); }); });})();
+</script>
+<!-- cost-curve practice widget (Concept 4) -->
+<script>
+(function(){var s=document.createElement('script');s.text=atob('CihmdW5jdGlvbiAoKSB7CiAgJ3VzZSBzdHJpY3QnOwogIHZhciBDT0wgPSB7IG1jOiAnIzBmN2Q3ZCcsIGF0YzogJyMxYTNhNWMnLCBhdmM6ICcjNmQ0YWFhJywgYWZjOiAnIzhhNmQyZicsIG9rOiAnIzJhN2E0ZicsIGJhZDogJyNhMzMwMzAnLCBncmlkOiAnI2U5ZWVmMycsIGF4aXM6ICcjMjYzMjNmJywgdGljazogJyM3YjhhOTknLCBncmF5OiAnIzViNmI3YycgfTsKICB2YXIgTkFNRSA9IHsgdmM6ICd2YXJpYWJsZSBjb3N0JywgdGM6ICd0b3RhbCBjb3N0JywgbWM6ICdtYXJnaW5hbCBjb3N0JywgYWZjOiAnYXZlcmFnZSBmaXhlZCBjb3N0JywgYXZjOiAnYXZlcmFnZSB2YXJpYWJsZSBjb3N0JywgYXRjOiAnYXZlcmFnZSB0b3RhbCBjb3N0JyB9OwogIHZhciBBQkJSID0geyBxOiAnUScsIGZjOiAnRkMnLCB2YzogJ1ZDJywgdGM6ICdUQycsIG1jOiAnTUMnLCBhZmM6ICdBRkMnLCBhdmM6ICdBVkMnLCBhdGM6ICdBVEMnIH07CiAgdmFyIEZPUk0gPSB7IHZjOiAnVkMgPSBUQyBcdTIyMTIgRkMnLCB0YzogJ1RDID0gRkMgKyBWQycsIG1jOiAnTUMgPSBcdTAzOTRUQyBcdTAwZjcgXHUwMzk0UTogdGhpcyByb3dcdTIwMTlzIFRDIG1pbnVzIHRoZSByb3cgYWJvdmUnLCBhZmM6ICdBRkMgPSBGQyBcdTAwZjcgUScsIGF2YzogJ0FWQyA9IFZDIFx1MDBmNyBRJywgYXRjOiAnQVRDID0gVEMgXHUwMGY3IFEgKG9yIEFGQyArIEFWQyknIH07CiAgdmFyIEtFWVMgPSBbJ3EnLCAnZmMnLCAndmMnLCAndGMnLCAnbWMnLCAnYWZjJywgJ2F2YycsICdhdGMnXTsKICB2YXIgU1ZHTlMgPSAnaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnOwoKICBmdW5jdGlvbiAkKGlkKSB7IHJldHVybiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY3ctJyArIGlkKTsgfQogIGZ1bmN0aW9uIHJpKGEsIGIpIHsgcmV0dXJuIGEgKyBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiAoYiAtIGEgKyAxKSk7IH0KICBmdW5jdGlvbiBwaWNrKGEpIHsgcmV0dXJuIGFbTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogYS5sZW5ndGgpXTsgfQogIGZ1bmN0aW9uIHNodWZmbGUoYSkgeyBhID0gYS5zbGljZSgpOyBmb3IgKHZhciBpID0gYS5sZW5ndGggLSAxOyBpID4gMDsgaS0tKSB7IHZhciBqID0gTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogKGkgKyAxKSk7IHZhciB0ID0gYVtpXTsgYVtpXSA9IGFbal07IGFbal0gPSB0OyB9IHJldHVybiBhOyB9CiAgZnVuY3Rpb24gZm10KHYpIHsgaWYgKHYgPT09IG51bGwgfHwgdiA9PT0gdW5kZWZpbmVkKSByZXR1cm4gJ1x1MjAxNCc7IHZhciByID0gTWF0aC5yb3VuZCh2ICogMTAwKSAvIDEwMDsgcmV0dXJuIE1hdGguYWJzKHIgLSBNYXRoLnJvdW5kKHIpKSA8IDFlLTkgPyBTdHJpbmcoTWF0aC5yb3VuZChyKSkgOiByLnRvRml4ZWQoMik7IH0KICBmdW5jdGlvbiBtb25leSh2KSB7IHJldHVybiAnJCcgKyBNYXRoLnJvdW5kKHYpLnRvTG9jYWxlU3RyaW5nKCdlbi1VUycpOyB9CiAgZnVuY3Rpb24gbmVhcihhLCBiLCB0b2wpIHsgcmV0dXJuIE1hdGguYWJzKGEgLSBiKSA8PSB0b2w7IH0KICBmdW5jdGlvbiBlbCh0YWcsIGF0dHJzLCBwYXJlbnQpIHsgdmFyIGUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoU1ZHTlMsIHRhZyk7IGZvciAodmFyIGsgaW4gYXR0cnMpIGUuc2V0QXR0cmlidXRlKGssIGF0dHJzW2tdKTsgaWYgKHBhcmVudCkgcGFyZW50LmFwcGVuZENoaWxkKGUpOyByZXR1cm4gZTsgfQogIHZhciBGUyA9IDE7CiAgZnVuY3Rpb24gdHh0KHBhcmVudCwgeCwgeSwgcywgYXR0cnMpIHsgdmFyIGEgPSB7IHg6IHgsIHk6IHksICdmb250LXNpemUnOiAxMSwgZmlsbDogQ09MLnRpY2ssICdmb250LWZhbWlseSc6ICdzYW5zLXNlcmlmJyB9OyBmb3IgKHZhciBrIGluIGF0dHJzKSBhW2tdID0gYXR0cnNba107IGFbJ2ZvbnQtc2l6ZSddID0gKyhhWydmb250LXNpemUnXSAqIEZTKS50b0ZpeGVkKDEpOyB2YXIgdCA9IGVsKCd0ZXh0JywgYSwgcGFyZW50KTsgdC50ZXh0Q29udGVudCA9IHM7IHJldHVybiB0OyB9CiAgZnVuY3Rpb24gbmljZUF4aXMobWF4dikgeyB2YXIgc3RlcHMgPSBbNSwgMTAsIDIwLCAyNSwgNTAsIDEwMCwgMjAwLCAyNTAsIDUwMF07IGZvciAodmFyIGkgPSAwOyBpIDwgc3RlcHMubGVuZ3RoOyBpKyspIHsgaWYgKG1heHYgLyBzdGVwc1tpXSA8PSA2KSByZXR1cm4geyBzdGVwOiBzdGVwc1tpXSwgbWF4OiBNYXRoLmNlaWwobWF4diAvIHN0ZXBzW2ldKSAqIHN0ZXBzW2ldIH07IH0gcmV0dXJuIHsgc3RlcDogMTAwMCwgbWF4OiBNYXRoLmNlaWwobWF4diAvIDEwMDApICogMTAwMCB9OyB9CiAgLy8gU21vb3RoIHBhdGggdGhyb3VnaCBwb2ludHMgKENhdG11bGwtUm9tIC0+IGN1YmljIEJlemllcikKICBmdW5jdGlvbiBzbW9vdGgocHRzKSB7CiAgICBpZiAocHRzLmxlbmd0aCA8IDIpIHJldHVybiAnJzsKICAgIHZhciBkID0gJ00nICsgcHRzWzBdWzBdLnRvRml4ZWQoMSkgKyAnLCcgKyBwdHNbMF1bMV0udG9GaXhlZCgxKTsKICAgIGZvciAodmFyIGkgPSAwOyBpIDwgcHRzLmxlbmd0aCAtIDE7IGkrKykgewogICAgICB2YXIgcDAgPSBwdHNbaSAtIDFdIHx8IHB0c1tpXSwgcDEgPSBwdHNbaV0sIHAyID0gcHRzW2kgKyAxXSwgcDMgPSBwdHNbaSArIDJdIHx8IHAyOwogICAgICB2YXIgYzF4ID0gcDFbMF0gKyAocDJbMF0gLSBwMFswXSkgLyA2LCBjMXkgPSBwMVsxXSArIChwMlsxXSAtIHAwWzFdKSAvIDY7CiAgICAgIHZhciBjMnggPSBwMlswXSAtIChwM1swXSAtIHAxWzBdKSAvIDYsIGMyeSA9IHAyWzFdIC0gKHAzWzFdIC0gcDFbMV0pIC8gNjsKICAgICAgZCArPSAnQycgKyBjMXgudG9GaXhlZCgxKSArICcsJyArIGMxeS50b0ZpeGVkKDEpICsgJyAnICsgYzJ4LnRvRml4ZWQoMSkgKyAnLCcgKyBjMnkudG9GaXhlZCgxKSArICcgJyArIHAyWzBdLnRvRml4ZWQoMSkgKyAnLCcgKyBwMlsxXS50b0ZpeGVkKDEpOwogICAgfQogICAgcmV0dXJuIGQ7CiAgfQogIGZ1bmN0aW9uIHBsYWNlTGFiZWxzKGl0ZW1zLCBtaW5HYXAsIHRvcCwgYm90dG9tKSB7CiAgICAvLyBpdGVtczoge3l9OyBudWRnZSBhcGFydCB2ZXJ0aWNhbGx5CiAgICBpdGVtcy5zb3J0KGZ1bmN0aW9uIChhLCBiKSB7IHJldHVybiBhLnkgLSBiLnk7IH0pOwogICAgZm9yICh2YXIgaSA9IDA7IGkgPCBpdGVtcy5sZW5ndGg7IGkrKykgeyBpdGVtc1tpXS55ID0gTWF0aC5tYXgoaXRlbXNbaV0ueSwgdG9wKTsgaWYgKGkgPiAwICYmIGl0ZW1zW2ldLnkgLSBpdGVtc1tpIC0gMV0ueSA8IG1pbkdhcCkgaXRlbXNbaV0ueSA9IGl0ZW1zW2kgLSAxXS55ICsgbWluR2FwOyB9CiAgICBmb3IgKGkgPSBpdGVtcy5sZW5ndGggLSAxOyBpID49IDA7IGktLSkgeyBpZiAoaXRlbXNbaV0ueSA+IGJvdHRvbSkgaXRlbXNbaV0ueSA9IGJvdHRvbTsgaWYgKGkgPCBpdGVtcy5sZW5ndGggLSAxICYmIGl0ZW1zW2kgKyAxXS55IC0gaXRlbXNbaV0ueSA8IG1pbkdhcCkgaXRlbXNbaV0ueSA9IGl0ZW1zW2kgKyAxXS55IC0gbWluR2FwOyB9CiAgfQoKICBmdW5jdGlvbiBkaW1zRm9yKHN2Z0VsLCB0YWxsKSB7CiAgICB2YXIgdyA9IChzdmdFbC5wYXJlbnROb2RlICYmIHN2Z0VsLnBhcmVudE5vZGUuY2xpZW50V2lkdGgpIHx8IDYwMDsKICAgIHZhciBEID0gdyA8IDUwMCA/IHsgVzogNDMwLCB4MDogNTYsIHgxOiAzODAsIHkwOiAxNiwgY29tcGFjdDogdHJ1ZSB9IDogeyBXOiA2MDAsIHgwOiA2MiwgeDE6IDU0MCwgeTA6IDE4LCBjb21wYWN0OiBmYWxzZSB9OwogICAgRC5IID0gdGFsbCA/IChELmNvbXBhY3QgPyAzNjAgOiAzODApIDogKEQuY29tcGFjdCA/IDMyMCA6IDM0MCk7CiAgICBELnkxID0gRC5IIC0gNTQ7CiAgICBzdmdFbC5zZXRBdHRyaWJ1dGUoJ3ZpZXdCb3gnLCAnMCAwICcgKyBELlcgKyAnICcgKyBELkgpOwogICAgRlMgPSBELmNvbXBhY3QgPyAxLjIyIDogMTsKICAgIHJldHVybiBEOwogIH0KCiAgZnVuY3Rpb24gcG9zdEgoKSB7fQoKICAvKiAtLS0tLS0tLS0tIHRhYnMgLS0tLS0tLS0tLSAqLwogIHZhciBST09UID0gJCgndycpOyBpZiAoIVJPT1QpIHJldHVybjsKICB2YXIgdGFicyA9IFJPT1QucXVlcnlTZWxlY3RvckFsbCgnLnctdGFiJyk7CiAgZm9yICh2YXIgdGkgPSAwOyB0aSA8IHRhYnMubGVuZ3RoOyB0aSsrKSB0YWJzW3RpXS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uICgpIHsKICAgIHZhciBtID0gdGhpcy5nZXRBdHRyaWJ1dGUoJ2RhdGEtbScpOwogICAgZm9yICh2YXIgaiA9IDA7IGogPCB0YWJzLmxlbmd0aDsgaisrKSB7IHZhciBvbiA9IHRhYnNbal0uZ2V0QXR0cmlidXRlKCdkYXRhLW0nKSA9PT0gbTsgdGFic1tqXS5jbGFzc0xpc3QudG9nZ2xlKCdhY3RpdmUnLCBvbik7IHRhYnNbal0uc2V0QXR0cmlidXRlKCdhcmlhLXNlbGVjdGVkJywgb24gPyAndHJ1ZScgOiAnZmFsc2UnKTsgfQogICAgJCgncC10YWJsZScpLmNsYXNzTGlzdC50b2dnbGUoJ2FjdGl2ZScsIG0gPT09ICd0YWJsZScpOyAkKCdwLWdyYXBoJykuY2xhc3NMaXN0LnRvZ2dsZSgnYWN0aXZlJywgbSA9PT0gJ2dyYXBoJyk7CiAgICBpZiAobSA9PT0gJ2dyYXBoJyAmJiAhRy5xKSBuZXh0UXVlc3Rpb24oKTsKICAgIHBvc3RIKCk7CiAgfSk7CgogIC8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgIE1PREUgMSAtIEJVSUxEIFRIRSBUQUJMRQogICAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqLwogIHZhciBUID0geyBsZXZlbDogMSwgUzogbnVsbCwgZ2l2ZW46IG51bGwsIHJldmVhbGVkOiBmYWxzZSwgc29sdmVkOiBmYWxzZSwgZG9uZTogMCwgc2hvd0FGQzogZmFsc2UgfTsKCiAgZnVuY3Rpb24gYXJnbWluKGEsIGxvLCBoaSkgeyB2YXIgYiA9IGxvOyBmb3IgKHZhciBpID0gbG8gKyAxOyBpIDw9IGhpOyBpKyspIGlmIChhW2ldIDwgYVtiXSAtIDFlLTkpIGIgPSBpOyByZXR1cm4gYjsgfQogIGZ1bmN0aW9uIGlzVShhLCBrKSB7IGZvciAodmFyIGkgPSAyOyBpIDw9IGs7IGkrKykgaWYgKCEoYVtpXSA8IGFbaSAtIDFdIC0gMWUtOSkpIHJldHVybiBmYWxzZTsgZm9yIChpID0gayArIDE7IGkgPD0gNjsgaSsrKSBpZiAoIShhW2ldID4gYVtpIC0gMV0gKyAxZS05KSkgcmV0dXJuIGZhbHNlOyByZXR1cm4gdHJ1ZTsgfQoKICBmdW5jdGlvbiBnZW5TY2hlZHVsZSgpIHsKICAgIGZvciAodmFyIHQgPSAwOyB0IDwgNTAwMDsgdCsrKSB7CiAgICAgIHZhciBtaW5RID0gcGljayhbMiwgMiwgM10pOwogICAgICB2YXIgbSA9IHBpY2soWzEwLCAxNSwgMjAsIDI1LCAzMCwgMzUsIDQwXSk7CiAgICAgIHZhciBtYyA9IFtudWxsXTsgbWNbbWluUV0gPSBtOwogICAgICBmb3IgKHZhciBxID0gbWluUSAtIDE7IHEgPj0gMTsgcS0tKSBtY1txXSA9IG1jW3EgKyAxXSArIHBpY2soWzUsIDEwLCAxNV0pOwogICAgICB2YXIgc3RlcCA9IHBpY2soWzUsIDEwLCAxMCwgMTVdKTsKICAgICAgZm9yIChxID0gbWluUSArIDE7IHEgPD0gNjsgcSsrKSB7IG1jW3FdID0gbWNbcSAtIDFdICsgc3RlcDsgc3RlcCArPSBwaWNrKFs1LCAxMCwgMTVdKTsgfQogICAgICB2YXIgRkMgPSBwaWNrKFszMCwgNDAsIDUwLCA2MCwgODAsIDkwLCAxMDAsIDEyMCwgMTUwLCAxODAsIDIwMCwgMjQwXSk7CiAgICAgIHZhciBTID0geyBxOiBbMCwgMSwgMiwgMywgNCwgNSwgNl0sIGZjOiBbXSwgdmM6IFswXSwgdGM6IFtGQ10sIG1jOiBtYywgYWZjOiBbbnVsbF0sIGF2YzogW251bGxdLCBhdGM6IFtudWxsXSwgRkM6IEZDIH07CiAgICAgIGZvciAocSA9IDA7IHEgPD0gNjsgcSsrKSBTLmZjW3FdID0gRkM7CiAgICAgIGZvciAocSA9IDE7IHEgPD0gNjsgcSsrKSB7IFMudmNbcV0gPSBTLnZjW3EgLSAxXSArIG1jW3FdOyBTLnRjW3FdID0gRkMgKyBTLnZjW3FdOyBTLmFmY1txXSA9IEZDIC8gcTsgUy5hdmNbcV0gPSBTLnZjW3FdIC8gcTsgUy5hdGNbcV0gPSBTLnRjW3FdIC8gcTsgfQogICAgICB2YXIgYXYgPSBhcmdtaW4oUy5hdmMsIDEsIDYpLCBhdCA9IGFyZ21pbihTLmF0YywgMSwgNik7CiAgICAgIGlmIChhdiA8IDIgfHwgYXYgPiA1IHx8IGF0IDwgMyB8fCBhdCA+IDUgfHwgYXQgPD0gYXYpIGNvbnRpbnVlOwogICAgICBpZiAoIWlzVShTLmF2YywgYXYpIHx8ICFpc1UoUy5hdGMsIGF0KSkgY29udGludWU7CiAgICAgIHJldHVybiBTOwogICAgfQogICAgcmV0dXJuIG51bGw7CiAgfQoKICBmdW5jdGlvbiBtYWtlTWFzayhsZXZlbCkgewogICAgdmFyIGcgPSB7fSwgaywgcSwga2V5cyA9IFsndmMnLCAndGMnLCAnbWMnLCAnYWZjJywgJ2F2YycsICdhdGMnXTsKICAgIGZ1bmN0aW9uIHNldEFsbChrZXksIHYpIHsgZ1trZXldID0gW107IGZvciAodmFyIHIgPSAxOyByIDw9IDY7IHIrKykgZ1trZXldW3JdID0gdjsgfQogICAgdmFyIHRhc2s7CiAgICBpZiAobGV2ZWwgPT09IDEpIHsKICAgICAgdmFyIHRhcmdldCA9IHBpY2soWyd2YycsICdtYycsICdhZmMnLCAnYXZjJywgJ2F0YyddKTsKICAgICAga2V5cy5mb3JFYWNoKGZ1bmN0aW9uIChrZXkpIHsgc2V0QWxsKGtleSwga2V5ICE9PSB0YXJnZXQpOyB9KTsKICAgICAgdGFzayA9ICdGaWxsIGluIHRoZTxiPiAnICsgTkFNRVt0YXJnZXRdICsgJyA8L2I+Y29sdW1uLiBSb3VuZCB0byB0aGUgbmVhcmVzdCBjZW50IHdoZXJlIG5lZWRlZC4nOwogICAgfSBlbHNlIGlmIChsZXZlbCA9PT0gMikgewogICAgICBmb3IgKHZhciB0cmllcyA9IDA7IHRyaWVzIDwgMjAwOyB0cmllcysrKSB7CiAgICAgICAgc2V0QWxsKCd0YycsIHRydWUpOwogICAgICAgIFsndmMnLCAnbWMnLCAnYWZjJywgJ2F2YycsICdhdGMnXS5mb3JFYWNoKGZ1bmN0aW9uIChrZXkpIHsgZ1trZXldID0gW107IGZvciAodmFyIHIgPSAxOyByIDw9IDY7IHIrKykgZ1trZXldW3JdID0gTWF0aC5yYW5kb20oKSA8IDAuNDU7IH0pOwogICAgICAgIGZvciAocSA9IDE7IHEgPD0gNjsgcSsrKSBpZiAoZy52Y1txXSAmJiBNYXRoLnJhbmRvbSgpIDwgMC40NSkgZy50Y1txXSA9IGZhbHNlOwogICAgICAgIHZhciBibGFua3MgPSAwOyBrZXlzLmZvckVhY2goZnVuY3Rpb24gKGtleSkgeyBmb3IgKHZhciByID0gMTsgciA8PSA2OyByKyspIGlmICghZ1trZXldW3JdKSBibGFua3MrKzsgfSk7CiAgICAgICAgaWYgKGJsYW5rcyA+PSAxMiAmJiBibGFua3MgPD0gMjApIGJyZWFrOwogICAgICB9CiAgICAgIHRhc2sgPSAnRmlsbCBpbiBldmVyeSBibGFuay4gRWFjaCByb3cgZ2l2ZXMgeW91IGVub3VnaCB0byB3b3JrIGl0IG91dC4gUm91bmQgdG8gdGhlIG5lYXJlc3QgY2VudCB3aGVyZSBuZWVkZWQuJzsKICAgIH0gZWxzZSB7CiAgICAgIHZhciB2YXJpYW50ID0gcGljayhbJ3RjJywgJ21jJ10pOwogICAgICBrZXlzLmZvckVhY2goZnVuY3Rpb24gKGtleSkgeyBzZXRBbGwoa2V5LCBrZXkgPT09IHZhcmlhbnQpOyB9KTsKICAgICAgdGFzayA9IHZhcmlhbnQgPT09ICd0YycgPyAnWW91IGhhdmUgZml4ZWQgY29zdCBhbmQgdG90YWwgY29zdC4gQnVpbGQgZXZlcnkgb3RoZXIgY29sdW1uLicgOiAnWW91IGhhdmUgZml4ZWQgY29zdCBhbmQgbWFyZ2luYWwgY29zdC4gQnVpbGQgdG90YWwgY29zdCBieSBhZGRpbmcgdXAgdGhlIE1DcywgdGhlbiBmaWxsIGluIHRoZSByZXN0Lic7CiAgICB9CiAgICByZXR1cm4geyBnOiBnLCB0YXNrOiB0YXNrIH07CiAgfQoKICBmdW5jdGlvbiBuZXdUYWJsZSgpIHsKICAgIFQuUyA9IGdlblNjaGVkdWxlKCk7IHZhciBtayA9IG1ha2VNYXNrKFQubGV2ZWwpOyBULmdpdmVuID0gbWsuZzsgVC5yZXZlYWxlZCA9IGZhbHNlOyBULnNvbHZlZCA9IGZhbHNlOyBULnNob3dBRkMgPSBmYWxzZTsKICAgICQoJ3QtdGFzaycpLmlubmVySFRNTCA9IG1rLnRhc2s7CiAgICB2YXIgUyA9IFQuUywgaCA9ICc8dGhlYWQ+PHRyPic7CiAgICBLRVlTLmZvckVhY2goZnVuY3Rpb24gKGspIHsgaCArPSAnPHRoIHNjb3BlPSJjb2wiIHRpdGxlPSInICsgKGsgPT09ICdxJyA/ICdRdWFudGl0eScgOiBrID09PSAnZmMnID8gJ2ZpeGVkIGNvc3QnIDogTkFNRVtrXSkgKyAnIj4nICsgQUJCUltrXSArICc8L3RoPic7IH0pOwogICAgaCArPSAnPC90cj48L3RoZWFkPjx0Ym9keT4nOwogICAgZm9yICh2YXIgcSA9IDA7IHEgPD0gNjsgcSsrKSB7CiAgICAgIGggKz0gJzx0cj4nOwogICAgICBLRVlTLmZvckVhY2goZnVuY3Rpb24gKGspIHsKICAgICAgICBpZiAoayA9PT0gJ3EnKSB7IGggKz0gJzx0ZD48Yj4nICsgcSArICc8L2I+PC90ZD4nOyByZXR1cm47IH0KICAgICAgICBpZiAocSA9PT0gMCkgeyB2YXIgdjAgPSBTW2tdWzBdOyBoICs9ICc8dGQnICsgKHYwID09PSBudWxsID8gJyBjbGFzcz0iZGltIicgOiAnJykgKyAnPicgKyBmbXQodjApICsgJzwvdGQ+JzsgcmV0dXJuOyB9CiAgICAgICAgaWYgKGsgPT09ICdmYycgfHwgVC5naXZlbltrXVtxXSkgeyBoICs9ICc8dGQ+JyArIGZtdChTW2tdW3FdKSArICc8L3RkPic7IHJldHVybjsgfQogICAgICAgIGggKz0gJzx0ZD48aW5wdXQgdHlwZT0idGV4dCIgaW5wdXRtb2RlPSJkZWNpbWFsIiBhdXRvY29tcGxldGU9Im9mZiIgZGF0YS1rPSInICsgayArICciIGRhdGEtcT0iJyArIHEgKyAnIiBhcmlhLWxhYmVsPSInICsgQUJCUltrXSArICcgYXQgUSA9ICcgKyBxICsgJyI+PC90ZD4nOwogICAgICB9KTsKICAgICAgaCArPSAnPC90cj4nOwogICAgfQogICAgaCArPSAnPC90Ym9keT4nOwogICAgJCgndC10YWJsZScpLmlubmVySFRNTCA9IGg7CiAgICB2YXIgZmIgPSAkKCd0LWZiJyk7IGZiLmNsYXNzTmFtZSA9ICd3LWZiJzsgZmIuaW5uZXJIVE1MID0gJyc7CiAgICAkKCd0LWdyYXBoYm94Jykuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICAgICQoJ3QtY2hlY2snKS5kaXNhYmxlZCA9IGZhbHNlOyAkKCd0LXNob3cnKS5kaXNhYmxlZCA9IGZhbHNlOyAkKCd0LWFmYycpLnRleHRDb250ZW50ID0gJ1Nob3cgQUZDJzsKICAgIHZhciBpbnB1dHMgPSBpbnB1dHNMaXN0KCk7CiAgICBpbnB1dHMuZm9yRWFjaChmdW5jdGlvbiAoaW5wLCBpKSB7CiAgICAgIGlucC5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgZnVuY3Rpb24gKGUpIHsgaWYgKGUua2V5ID09PSAnRW50ZXInKSB7IGUucHJldmVudERlZmF1bHQoKTsgdmFyIG54ID0gaW5wdXRzW2kgKyAxXTsgaWYgKG54KSBueC5mb2N1cygpOyBlbHNlIGNoZWNrKCk7IH0gfSk7CiAgICAgIGlucC5hZGRFdmVudExpc3RlbmVyKCdpbnB1dCcsIGZ1bmN0aW9uICgpIHsgaW5wLmNsYXNzTGlzdC5yZW1vdmUoJ29rJywgJ2JhZCcpOyB9KTsKICAgIH0pOwogICAgdXBkYXRlVFNjb3JlKCk7IHBvc3RIKCk7CiAgfQogIGZ1bmN0aW9uIGlucHV0c0xpc3QoKSB7IHJldHVybiBBcnJheS5wcm90b3R5cGUuc2xpY2UuY2FsbCgkKCd0LXRhYmxlJykucXVlcnlTZWxlY3RvckFsbCgnaW5wdXQnKSk7IH0KCiAgZnVuY3Rpb24gZGlhZ25vc2UoaywgcSwgdikgewogICAgdmFyIFMgPSBULlMsIHRvbCA9IDAuMDExOwogICAgaWYgKG5lYXIodiwgU1trXVtxXSwgMC4xKSkgcmV0dXJuICdDbG9zZS4gUm91bmQgdG8gdGhlIG5lYXJlc3QgY2VudC4nOwogICAgaWYgKGsgPT09ICdtYycpIHsKICAgICAgaWYgKG5lYXIodiwgUy5hdGNbcV0sIHRvbCkpIHJldHVybiAnQW4gTUMgZW50cnkgbWF0Y2hlcyBhdmVyYWdlIHRvdGFsIGNvc3QuIE1DIGlzIHRoZSBjaGFuZ2UgaW4gdG90YWwgY29zdCBmcm9tIHRoZSByb3cgYWJvdmUsIG5vdCBUQyBcdTAwZjcgUS4nOwogICAgICBpZiAobmVhcih2LCBTLnRjW3FdLCB0b2wpIHx8IG5lYXIodiwgUy52Y1txXSwgdG9sKSkgcmV0dXJuICdNQyBpc25cdTIwMTl0IGEgdG90YWwuIEl0XHUyMDE5cyBob3cgbXVjaCBUQyByb3NlIGZyb20gdGhlIHJvdyBhYm92ZS4nOwogICAgICBpZiAocSA8IDYgJiYgbmVhcih2LCBTLnRjW3EgKyAxXSAtIFMudGNbcV0sIHRvbCkpIHJldHVybiAnQ2hlY2sgd2hpY2ggcm93cyB5b3Ugc3VidHJhY3Q6IE1DIGF0IFEgaXMgVEMgYXQgUSBtaW51cyBUQyBhdCBRIFx1MjIxMiAxLic7CiAgICB9CiAgICBpZiAoayA9PT0gJ2F2YycgJiYgbmVhcih2LCBTLmF0Y1txXSwgdG9sKSkgcmV0dXJuICdBVkMgbGVhdmVzIG91dCBmaXhlZCBjb3N0LiBEaXZpZGUgdmFyaWFibGUgY29zdCwgbm90IHRvdGFsIGNvc3QsIGJ5IFEuJzsKICAgIGlmIChrID09PSAnYXRjJyAmJiBuZWFyKHYsIFMuYXZjW3FdLCB0b2wpKSByZXR1cm4gJ0FUQyBpbmNsdWRlcyBmaXhlZCBjb3N0LiBEaXZpZGUgdG90YWwgY29zdCwgbm90IHZhcmlhYmxlIGNvc3QsIGJ5IFEuJzsKICAgIGlmIChrID09PSAnYWZjJyAmJiBuZWFyKHYsIFMuZmNbcV0sIHRvbCkpIHJldHVybiAnQUZDIGlzIGZpeGVkIGNvc3QgcGVyIHVuaXQuIERpdmlkZSBGQyBieSBRLic7CiAgICBpZiAoayA9PT0gJ3ZjJykgewogICAgICBpZiAobmVhcih2LCBTLnRjW3FdLCB0b2wpKSByZXR1cm4gJ1ZhcmlhYmxlIGNvc3QgaXMgdG90YWwgY29zdCBtaW51cyBmaXhlZCBjb3N0Lic7CiAgICAgIGlmIChuZWFyKHYsIFMubWNbcV0sIHRvbCkpIHJldHVybiAnVkMgaXMgdGhlIHJ1bm5pbmcgdG90YWwgb2YgTUMgc28gZmFyLCBub3Qgb25lIHJvd1x1MjAxOXMgTUMuJzsKICAgIH0KICAgIGlmIChrID09PSAndGMnKSB7CiAgICAgIGlmIChuZWFyKHYsIFMudmNbcV0sIHRvbCkpIHJldHVybiAnVG90YWwgY29zdCBpbmNsdWRlcyBmaXhlZCBjb3N0OiBUQyA9IEZDICsgVkMuJzsKICAgICAgaWYgKG5lYXIodiwgUy5GQyArIFMubWNbcV0sIHRvbCkpIHJldHVybiAnVEMgYXQgUSBpcyBmaXhlZCBjb3N0IHBsdXMgZXZlcnkgTUMgdXAgdG8gUSwgbm90IGp1c3QgdGhpcyByb3dcdTIwMTlzLic7CiAgICB9CiAgICByZXR1cm4gbnVsbDsKICB9CgogIGZ1bmN0aW9uIGNoZWNrKCkgewogICAgaWYgKFQuc29sdmVkKSByZXR1cm47CiAgICB2YXIgd3JvbmcgPSAwLCBibGFuayA9IDAsIG1zZ3MgPSBbXSwgY29scyA9IHt9OwogICAgaW5wdXRzTGlzdCgpLmZvckVhY2goZnVuY3Rpb24gKGlucCkgewogICAgICB2YXIgayA9IGlucC5nZXRBdHRyaWJ1dGUoJ2RhdGEtaycpLCBxID0gK2lucC5nZXRBdHRyaWJ1dGUoJ2RhdGEtcScpOwogICAgICB2YXIgcmF3ID0gaW5wLnZhbHVlLnRyaW0oKS5yZXBsYWNlKC9bJCxcc10vZywgJycpOwogICAgICBpbnAuY2xhc3NMaXN0LnJlbW92ZSgnb2snLCAnYmFkJyk7CiAgICAgIGlmIChyYXcgPT09ICcnKSB7IGJsYW5rKys7IHJldHVybjsgfQogICAgICB2YXIgdiA9IE51bWJlcihyYXcpOwogICAgICBpZiAoaXNGaW5pdGUodikgJiYgbmVhcih2LCBULlNba11bcV0sIDAuMDExKSkgeyBpbnAuY2xhc3NMaXN0LmFkZCgnb2snKTsgfQogICAgICBlbHNlIHsgd3JvbmcrKzsgaW5wLmNsYXNzTGlzdC5hZGQoJ2JhZCcpOyBjb2xzW2tdID0gMTsgdmFyIGQgPSBpc0Zpbml0ZSh2KSA/IGRpYWdub3NlKGssIHEsIHYpIDogJ0VudGVyIG51bWJlcnMgb25seS4nOyBpZiAoZCAmJiBtc2dzLmluZGV4T2YoZCkgPCAwKSBtc2dzLnB1c2goZCk7IH0KICAgIH0pOwogICAgdmFyIGZiID0gJCgndC1mYicpLCBoOwogICAgaWYgKHdyb25nKSB7CiAgICAgIE9iamVjdC5rZXlzKGNvbHMpLmZvckVhY2goZnVuY3Rpb24gKGspIHsgdmFyIGYgPSAnUmVjaGVjayAnICsgQUJCUltrXSArICc6ICcgKyBGT1JNW2tdICsgJy4nOyBpZiAobXNncy5sZW5ndGggPCA0ICYmICFtc2dzLnNvbWUoZnVuY3Rpb24gKG0pIHsgcmV0dXJuIG0uaW5kZXhPZihBQkJSW2tdKSA+PSAwIHx8IG0udG9Mb3dlckNhc2UoKS5pbmRleE9mKE5BTUVba10pID49IDA7IH0pKSBtc2dzLnB1c2goZik7IH0pOwogICAgICBoID0gJzxiPicgKyB3cm9uZyArICcgPC9iPicgKyAod3JvbmcgPT09IDEgPyAnY2VsbCBuZWVkcycgOiAnY2VsbHMgbmVlZCcpICsgJyBhbm90aGVyIGxvb2snICsgKGJsYW5rID8gJywgYW5kICcgKyBibGFuayArICcgJyArIChibGFuayA9PT0gMSA/ICdpcycgOiAnYXJlJykgKyAnIHN0aWxsIGJsYW5rLicgOiAnLicpICsgJzx1bD4nICsgbXNncy5zbGljZSgwLCA0KS5tYXAoZnVuY3Rpb24gKG0pIHsgcmV0dXJuICc8bGk+JyArIG0gKyAnPC9saT4nOyB9KS5qb2luKCcnKSArICc8L3VsPic7CiAgICAgIGZiLmNsYXNzTmFtZSA9ICd3LWZiIHNob3cgYmFkJzsgZmIuaW5uZXJIVE1MID0gaDsKICAgIH0gZWxzZSBpZiAoYmxhbmspIHsKICAgICAgZmIuY2xhc3NOYW1lID0gJ3ctZmIgc2hvdyB3YXJuJzsgZmIuaW5uZXJIVE1MID0gJ0V2ZXJ5dGhpbmcgeW91XHUyMDE5dmUgZW50ZXJlZCBpcyByaWdodC48Yj4gJyArIGJsYW5rICsgJyA8L2I+JyArIChibGFuayA9PT0gMSA/ICdjZWxsJyA6ICdjZWxscycpICsgJyB0byBnby4nOwogICAgfSBlbHNlIHsKICAgICAgVC5zb2x2ZWQgPSB0cnVlOyBULmRvbmUrKzsKICAgICAgZmIuY2xhc3NOYW1lID0gJ3ctZmIgc2hvdyBnb29kJzsKICAgICAgZmIuaW5uZXJIVE1MID0gJzxiPlRhYmxlIGNvbXBsZXRlLiA8L2I+JyArIHN1bW1hcnlMaW5lKCkgKyAnIFlvdXIgY3VydmVzIGFyZSBiZWxvdy4nOwogICAgICBmaW5pc2hUYWJsZSgpOwogICAgfQogICAgcG9zdEgoKTsKICB9CgogIGZ1bmN0aW9uIHN1bW1hcnlMaW5lKCkgewogICAgdmFyIFMgPSBULlMsIGF0ID0gYXJnbWluKFMuYXRjLCAxLCA2KSwgYXYgPSBhcmdtaW4oUy5hdmMsIDEsIDYpOwogICAgcmV0dXJuICdBVkMgYm90dG9tcyBvdXQgYXQgUSA9ICcgKyBhdiArICcgYW5kIEFUQyBhdCBRID0gJyArIGF0ICsgJyAodGhlIGVmZmljaWVudCBzY2FsZSkuIExvb2sgYXQgTUMgYXJvdW5kIHRob3NlIHJvd3M6IGl0IHJpc2VzIGZyb20gYmVsb3cgZWFjaCBhdmVyYWdlIHRvIGFib3ZlIGl0Lic7CiAgfQoKICBmdW5jdGlvbiBmaW5pc2hUYWJsZSgpIHsKICAgICQoJ3QtY2hlY2snKS5kaXNhYmxlZCA9IHRydWU7ICQoJ3Qtc2hvdycpLmRpc2FibGVkID0gdHJ1ZTsKICAgIGlucHV0c0xpc3QoKS5mb3JFYWNoKGZ1bmN0aW9uIChpbnApIHsgaW5wLnJlYWRPbmx5ID0gdHJ1ZTsgfSk7CiAgICAkKCd0LWdyYXBoYm94Jykuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICBkcmF3VGFibGVHcmFwaCgpOyB1cGRhdGVUU2NvcmUoKTsgcG9zdEgoKTsKICB9CgogIGZ1bmN0aW9uIHNob3dBbnN3ZXJzKCkgewogICAgaWYgKFQuc29sdmVkKSByZXR1cm47CiAgICBpbnB1dHNMaXN0KCkuZm9yRWFjaChmdW5jdGlvbiAoaW5wKSB7CiAgICAgIHZhciBrID0gaW5wLmdldEF0dHJpYnV0ZSgnZGF0YS1rJyksIHEgPSAraW5wLmdldEF0dHJpYnV0ZSgnZGF0YS1xJyk7CiAgICAgIHZhciByYXcgPSBpbnAudmFsdWUudHJpbSgpLnJlcGxhY2UoL1skLFxzXS9nLCAnJyksIHYgPSBOdW1iZXIocmF3KTsKICAgICAgaWYgKHJhdyAhPT0gJycgJiYgaXNGaW5pdGUodikgJiYgbmVhcih2LCBULlNba11bcV0sIDAuMDExKSkgeyBpbnAuY2xhc3NMaXN0LnJlbW92ZSgnYmFkJyk7IGlucC5jbGFzc0xpc3QuYWRkKCdvaycpOyByZXR1cm47IH0KICAgICAgaW5wLnZhbHVlID0gZm10KFQuU1trXVtxXSk7IGlucC5jbGFzc0xpc3QucmVtb3ZlKCdvaycsICdiYWQnKTsgaW5wLmNsYXNzTGlzdC5hZGQoJ3Nob3duJyk7CiAgICB9KTsKICAgIFQucmV2ZWFsZWQgPSB0cnVlOyBULnNvbHZlZCA9IHRydWU7CiAgICB2YXIgZmIgPSAkKCd0LWZiJyk7IGZiLmNsYXNzTmFtZSA9ICd3LWZiIHNob3cgd2Fybic7CiAgICBmYi5pbm5lckhUTUwgPSAnQW5zd2VycyBmaWxsZWQgaW4gZ3JheS4gV29yayB0aHJvdWdoIG9uZSBncmF5IGNlbGwgd2l0aCB0aGUgZm9ybXVsYSBiZWZvcmUgeW91IG1vdmUgb24uICcgKyBzdW1tYXJ5TGluZSgpOwogICAgZmluaXNoVGFibGUoKTsKICB9CgogIGZ1bmN0aW9uIHVwZGF0ZVRTY29yZSgpIHsgJCgndC1zY29yZScpLnRleHRDb250ZW50ID0gVC5kb25lID8gJ1RhYmxlcyBjb21wbGV0ZWQ6ICcgKyBULmRvbmUgOiAnJzsgfQoKICBmdW5jdGlvbiBkcmF3VGFibGVHcmFwaCgpIHsKICAgIHZhciBTID0gVC5TLCBzdmcgPSAkKCd0LXN2ZycpOyBzdmcuaW5uZXJIVE1MID0gJyc7CiAgICB2YXIgRCA9IGRpbXNGb3Ioc3ZnLCBmYWxzZSksIHgwID0gRC54MCwgeDEgPSBELngxICsgKEQuY29tcGFjdCA/IC02IDogMTQpLCB5MCA9IEQueTAsIHkxID0gRC55MTsKICAgIHZhciB2YWxzID0gW107CiAgICBmb3IgKHZhciBxID0gMTsgcSA8PSA2OyBxKyspIHsgdmFscy5wdXNoKFMubWNbcV0sIFMuYXZjW3FdKTsgaWYgKHEgPj0gMikgdmFscy5wdXNoKFMuYXRjW3FdKTsgaWYgKFQuc2hvd0FGQyAmJiBxID49IDIpIHZhbHMucHVzaChTLmFmY1txXSk7IH0KICAgIHZhciBheCA9IG5pY2VBeGlzKE1hdGgubWF4LmFwcGx5KG51bGwsIHZhbHMpICogMS4wOCk7CiAgICBmdW5jdGlvbiBYKHF2KSB7IHJldHVybiB4MCArIHF2IC8gNiAqICh4MSAtIHgwKTsgfQogICAgZnVuY3Rpb24gWSh2KSB7IHJldHVybiB5MSAtIHYgLyBheC5tYXggKiAoeTEgLSB5MCk7IH0KICAgIHZhciBkZWZzID0gZWwoJ2RlZnMnLCB7fSwgc3ZnKSwgY3AgPSBlbCgnY2xpcFBhdGgnLCB7IGlkOiAnY3ctdGNsaXAnIH0sIGRlZnMpOyBlbCgncmVjdCcsIHsgeDogeDAsIHk6IHkwIC0gMiwgd2lkdGg6IHgxIC0geDAgKyAzMCwgaGVpZ2h0OiB5MSAtIHkwICsgMiB9LCBjcCk7CiAgICBmb3IgKHZhciB2ID0gMDsgdiA8PSBheC5tYXggKyAxZS05OyB2ICs9IGF4LnN0ZXApIHsgZWwoJ2xpbmUnLCB7IHgxOiB4MCwgeDI6IHgxLCB5MTogWSh2KSwgeTI6IFkodiksIHN0cm9rZTogQ09MLmdyaWQsICdzdHJva2Utd2lkdGgnOiAxIH0sIHN2Zyk7IHR4dChzdmcsIHgwIC0gNywgWSh2KSArIDQsIFN0cmluZyh2KSwgeyAndGV4dC1hbmNob3InOiAnZW5kJyB9KTsgfQogICAgZm9yIChxID0gMDsgcSA8PSA2OyBxKyspIHR4dChzdmcsIFgocSksIHkxICsgMTcsIFN0cmluZyhxKSwgeyAndGV4dC1hbmNob3InOiAnbWlkZGxlJyB9KTsKICAgIGVsKCdsaW5lJywgeyB4MTogeDAsIHgyOiB4MCwgeTE6IHkwLCB5MjogeTEsIHN0cm9rZTogQ09MLmF4aXMsICdzdHJva2Utd2lkdGgnOiAxLjUgfSwgc3ZnKTsKICAgIGVsKCdsaW5lJywgeyB4MTogeDAsIHgyOiB4MSwgeTE6IHkxLCB5MjogeTEsIHN0cm9rZTogQ09MLmF4aXMsICdzdHJva2Utd2lkdGgnOiAxLjUgfSwgc3ZnKTsKICAgIHR4dChzdmcsICh4MCArIHgxKSAvIDIsIHkxICsgNDAsICdRdWFudGl0eScsIHsgJ3RleHQtYW5jaG9yJzogJ21pZGRsZScsICdmb250LXdlaWdodCc6IDcwMCwgZmlsbDogJyMxYTNhNWMnLCAnZm9udC1zaXplJzogMTIgfSk7CiAgICB0eHQoc3ZnLCAxNCwgKHkwICsgeTEpIC8gMiwgJ0Nvc3QgcGVyIHVuaXQgKCQpJywgeyAndGV4dC1hbmNob3InOiAnbWlkZGxlJywgJ2ZvbnQtd2VpZ2h0JzogNzAwLCBmaWxsOiAnIzFhM2E1YycsICdmb250LXNpemUnOiAxMiwgdHJhbnNmb3JtOiAncm90YXRlKC05MCAxNCAnICsgKHkwICsgeTEpIC8gMiArICcpJyB9KTsKICAgIHZhciBzZXJpZXMgPSBbCiAgICAgIHsgazogJ2F0YycsIHB0czogWzEsIDIsIDMsIDQsIDUsIDZdLm1hcChmdW5jdGlvbiAocSkgeyByZXR1cm4gW1gocSksIFkoUy5hdGNbcV0pXTsgfSkgfSwKICAgICAgeyBrOiAnYXZjJywgcHRzOiBbMSwgMiwgMywgNCwgNSwgNl0ubWFwKGZ1bmN0aW9uIChxKSB7IHJldHVybiBbWChxKSwgWShTLmF2Y1txXSldOyB9KSB9LAogICAgICB7IGs6ICdtYycsIHB0czogWzEsIDIsIDMsIDQsIDUsIDZdLm1hcChmdW5jdGlvbiAocSkgeyByZXR1cm4gW1gocSAtIDAuNSksIFkoUy5tY1txXSldOyB9KSB9CiAgICBdOwogICAgaWYgKFQuc2hvd0FGQykgc2VyaWVzLnB1c2goeyBrOiAnYWZjJywgcHRzOiBbMSwgMiwgMywgNCwgNSwgNl0ubWFwKGZ1bmN0aW9uIChxKSB7IHJldHVybiBbWChxKSwgWShTLmFmY1txXSldOyB9KSB9KTsKICAgIHZhciBnID0gZWwoJ2cnLCB7ICdjbGlwLXBhdGgnOiAndXJsKCNjdy10Y2xpcCknIH0sIHN2ZyksIGxhYmVscyA9IFtdOwogICAgc2VyaWVzLmZvckVhY2goZnVuY3Rpb24gKHMpIHsKICAgICAgZWwoJ3BhdGgnLCB7IGQ6IHNtb290aChzLnB0cyksIGZpbGw6ICdub25lJywgc3Ryb2tlOiBDT0xbcy5rXSwgJ3N0cm9rZS13aWR0aCc6IDIuNiwgJ3N0cm9rZS1saW5lam9pbic6ICdyb3VuZCcsICdzdHJva2UtZGFzaGFycmF5Jzogcy5rID09PSAnYWZjJyA/ICc2IDQnIDogJ25vbmUnIH0sIGcpOwogICAgICBzLnB0cy5mb3JFYWNoKGZ1bmN0aW9uIChwKSB7IGlmIChwWzFdID49IHkwKSBlbCgnY2lyY2xlJywgeyBjeDogcFswXSwgY3k6IHBbMV0sIHI6IDMuNiwgZmlsbDogQ09MW3Mua10gfSwgZyk7IH0pOwogICAgICB2YXIgbGFzdCA9IHMucHRzW3MucHRzLmxlbmd0aCAtIDFdOyBsYWJlbHMucHVzaCh7IGs6IHMuaywgeDogbGFzdFswXSArIDgsIHk6IGxhc3RbMV0gKyA0IH0pOwogICAgfSk7CiAgICBwbGFjZUxhYmVscyhsYWJlbHMsIDE0LCB5MCArIDEwLCB5MSAtIDQpOwogICAgbGFiZWxzLmZvckVhY2goZnVuY3Rpb24gKGwpIHsgdHh0KHN2ZywgbC54LCBsLnksIEFCQlJbbC5rXSwgeyBmaWxsOiBDT0xbbC5rXSwgJ2ZvbnQtd2VpZ2h0JzogNzAwLCAnZm9udC1zaXplJzogMTIuNSB9KTsgfSk7CiAgICB2YXIgYXQgPSBhcmdtaW4oUy5hdGMsIDEsIDYpOwogICAgZWwoJ2NpcmNsZScsIHsgY3g6IFgoYXQpLCBjeTogWShTLmF0Y1thdF0pLCByOiA3LjUsIGZpbGw6ICdub25lJywgc3Ryb2tlOiBDT0wuYXRjLCAnc3Ryb2tlLXdpZHRoJzogMS42IH0sIHN2Zyk7CiAgICB0eHQoc3ZnLCBYKGF0KSwgWShTLmF0Y1thdF0pIC0gMTMsICdtaW4gQVRDJywgeyAndGV4dC1hbmNob3InOiAnbWlkZGxlJywgZmlsbDogQ09MLmF0YywgJ2ZvbnQtd2VpZ2h0JzogNzAwLCAnZm9udC1zaXplJzogMTAuNSwgc3Ryb2tlOiAnI2ZmZicsICdzdHJva2Utd2lkdGgnOiAzLjUsICdwYWludC1vcmRlcic6ICdzdHJva2UnIH0pOwogIH0KCiAgdmFyIHNlZ3MgPSAkKCdsdmwnKS5xdWVyeVNlbGVjdG9yQWxsKCdidXR0b24nKTsKICBmb3IgKHZhciBzaSA9IDA7IHNpIDwgc2Vncy5sZW5ndGg7IHNpKyspIHNlZ3Nbc2ldLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24gKCkgewogICAgZm9yICh2YXIgaiA9IDA7IGogPCBzZWdzLmxlbmd0aDsgaisrKSBzZWdzW2pdLmNsYXNzTGlzdC50b2dnbGUoJ29uJywgc2Vnc1tqXSA9PT0gdGhpcyk7CiAgICBULmxldmVsID0gK3RoaXMuZ2V0QXR0cmlidXRlKCdkYXRhLWwnKTsgbmV3VGFibGUoKTsKICB9KTsKICAkKCd0LWNoZWNrJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBjaGVjayk7CiAgJCgndC1uZXcnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIG5ld1RhYmxlKTsKICAkKCd0LXNob3cnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIHNob3dBbnN3ZXJzKTsKICAkKCd0LWFmYycpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24gKCkgeyBULnNob3dBRkMgPSAhVC5zaG93QUZDOyB0aGlzLnRleHRDb250ZW50ID0gVC5zaG93QUZDID8gJ0hpZGUgQUZDJyA6ICdTaG93IEFGQyc7IGRyYXdUYWJsZUdyYXBoKCk7IH0pOwoKICAvKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgICBNT0RFIDIgLSBSRUFEIFRIRSBHUkFQSAogICAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqLwogIHZhciBHID0geyBxOiBudWxsLCBhbnN3ZXJlZDogZmFsc2UsIHJpZ2h0OiAwLCB0b3RhbDogMCwgc3RyZWFrOiAwLCBkZWNrOiBbXSB9OwogIHZhciBHWDAgPSA2MiwgR1gxID0gNTQwLCBHWTAgPSAxOCwgR1kxID0gMzI2LCBjdXJLID0gbnVsbCwgZ0NvbXBhY3QgPSBudWxsOwoKICBmdW5jdGlvbiBnZW5DdXJ2ZXMoKSB7CiAgICBmb3IgKHZhciB0ID0gMDsgdCA8IDUwMDA7IHQrKykgewogICAgICB2YXIgUXYgPSBwaWNrKFszMCwgMzUsIDQwLCA0NSwgNTBdKSwgUXQgPSBRdiArIHBpY2soWzEwLCAxNSwgMjBdKTsKICAgICAgaWYgKFF0ID4gNzApIGNvbnRpbnVlOwogICAgICB2YXIgYXZjTWluID0gcmkoMTAsIDIwKSAqIDIsIGsgPSAwLjMgKyAwLjM1ICogTWF0aC5yYW5kb20oKTsKICAgICAgdmFyIGMgPSBrICogYXZjTWluIC8gKFF2ICogUXYpLCBiID0gMiAqIGMgKiBRdiwgYSA9IGF2Y01pbiArIGMgKiBRdiAqIFF2LCBGID0gMiAqIGMgKiBRdCAqIFF0ICogKFF0IC0gUXYpOwogICAgICB2YXIgSyA9IHsgYTogYSwgYjogYiwgYzogYywgRjogRiwgUXY6IFF2LCBRdDogUXQgfTsKICAgICAgSy5tYyA9IGZ1bmN0aW9uIChxKSB7IHJldHVybiBhIC0gMiAqIGIgKiBxICsgMyAqIGMgKiBxICogcTsgfTsKICAgICAgSy5hdmMgPSBmdW5jdGlvbiAocSkgeyByZXR1cm4gYSAtIGIgKiBxICsgYyAqIHEgKiBxOyB9OwogICAgICBLLmF0YyA9IGZ1bmN0aW9uIChxKSB7IHJldHVybiBGIC8gcSArIGEgLSBiICogcSArIGMgKiBxICogcTsgfTsKICAgICAgSy5RbSA9IGIgLyAoMyAqIGMpOwogICAgICB2YXIgcmF0aW8gPSBLLmF0YyhRdCkgLyBhdmNNaW47CiAgICAgIGlmIChyYXRpbyA8IDEuMyB8fCByYXRpbyA+IDEuNzUpIGNvbnRpbnVlOwogICAgICB2YXIgYXggPSBuaWNlQXhpcyhLLmF0YyhRdCkgKiAxLjc1KTsgSy55bWF4ID0gYXgubWF4OyBLLnlzdGVwID0gYXguc3RlcDsKICAgICAgLy8gcmlnaHQgZWRnZSBvZiB0aGUgcXVhbnRpdHkgYXhpczogbGFzdCBtdWx0aXBsZSBvZiAxMCB3aGVyZSBBVEMgaXMgc3RpbGwgY29tZm9ydGFibHkgb24gdGhlIGNoYXJ0CiAgICAgIGZvciAodmFyIGd1YXJkID0gMDsgZ3VhcmQgPCA2OyBndWFyZCsrKSB7CiAgICAgICAgSy5xZW5kID0gMDsKICAgICAgICBmb3IgKHZhciBxZSA9IDEwOyBxZSA8PSAxMDA7IHFlICs9IDEwKSBpZiAoSy5hdGMocWUpIDw9IDAuOSAqIEsueW1heCkgSy5xZW5kID0gcWU7CiAgICAgICAgaWYgKEsucWVuZCA+PSBRdCArIDIwKSBicmVhazsKICAgICAgICBLLnltYXggKz0gSy55c3RlcDsKICAgICAgfQogICAgICBpZiAoSy5xZW5kIDwgUXQgKyAyMCB8fCBLLmF0Yyg0KSA8IEsueW1heCkgY29udGludWU7IC8vIEFUQyBzaG91bGQgZW50ZXIgZnJvbSB0aGUgdG9wCiAgICAgIHJldHVybiBLOwogICAgfQogIH0KICBmdW5jdGlvbiBHWGYocSwgSykgeyBLID0gSyB8fCBjdXJLOyByZXR1cm4gR1gwICsgcSAvIEsucWVuZCAqIChHWDEgLSBHWDApOyB9CiAgZnVuY3Rpb24gR1lmKEssIHYpIHsgcmV0dXJuIEdZMSAtIHYgLyBLLnltYXggKiAoR1kxIC0gR1kwKTsgfQogIGZ1bmN0aW9uIGN1cnZlUHRzKEssIGtleSkgeyB2YXIgcHRzID0gW107IGZvciAodmFyIHEgPSAyOyBxIDw9IEsucWVuZCArIDFlLTk7IHEgKz0gSy5xZW5kIC8gMTIwKSB7IHZhciB2ID0gS1trZXldKHEpOyBwdHMucHVzaChbR1hmKHEsIEspLCBHWWYoSywgdiksIHEsIHZdKTsgfSByZXR1cm4gcHRzOyB9CiAgZnVuY3Rpb24gdmlzaWJsZUVuZChLLCBrZXkpIHsgdmFyIHB0cyA9IGN1cnZlUHRzKEssIGtleSksIGxhc3QgPSBudWxsOyBmb3IgKHZhciBpID0gMDsgaSA8IHB0cy5sZW5ndGg7IGkrKykgaWYgKHB0c1tpXVszXSA8PSBLLnltYXggJiYgcHRzW2ldWzNdID49IDApIGxhc3QgPSBwdHNbaV07IHJldHVybiBsYXN0OyB9CgogIGZ1bmN0aW9uIGRyYXdHcmFwaChLLCBvcHQpIHsKICAgIHZhciBzdmcgPSAkKCdnLXN2ZycpOyBzdmcuaW5uZXJIVE1MID0gJyc7IGN1cksgPSBLOwogICAgdmFyIEQgPSBkaW1zRm9yKHN2ZywgdHJ1ZSk7IEdYMCA9IEQueDA7IEdYMSA9IEQueDE7IEdZMCA9IEQueTA7IEdZMSA9IEQueTE7IGdDb21wYWN0ID0gRC5jb21wYWN0OwogICAgdmFyIGRlZnMgPSBlbCgnZGVmcycsIHt9LCBzdmcpLCBjcCA9IGVsKCdjbGlwUGF0aCcsIHsgaWQ6ICdjdy1nY2xpcCcgfSwgZGVmcyk7IGVsKCdyZWN0JywgeyB4OiBHWDAsIHk6IEdZMCwgd2lkdGg6IEdYMSAtIEdYMCwgaGVpZ2h0OiBHWTEgLSBHWTAgfSwgY3ApOwogICAgZm9yICh2YXIgdiA9IDA7IHYgPD0gSy55bWF4ICsgMWUtOTsgdiArPSBLLnlzdGVwKSB7IGVsKCdsaW5lJywgeyB4MTogR1gwLCB4MjogR1gxLCB5MTogR1lmKEssIHYpLCB5MjogR1lmKEssIHYpLCBzdHJva2U6IENPTC5ncmlkIH0sIHN2Zyk7IHR4dChzdmcsIEdYMCAtIDcsIEdZZihLLCB2KSArIDQsIFN0cmluZyh2KSwgeyAndGV4dC1hbmNob3InOiAnZW5kJyB9KTsgfQogICAgaWYgKG9wdC52Z3JpZCkgZm9yICh2YXIgcSA9IDEwOyBxIDw9IEsucWVuZDsgcSArPSAxMCkgZWwoJ2xpbmUnLCB7IHgxOiBHWGYocSksIHgyOiBHWGYocSksIHkxOiBHWTAsIHkyOiBHWTEsIHN0cm9rZTogJyNmMWY0ZjcnIH0sIHN2Zyk7CiAgICBmb3IgKHEgPSAwOyBxIDw9IEsucWVuZDsgcSArPSAxMCkgdHh0KHN2ZywgR1hmKHEpLCBHWTEgKyAxNywgU3RyaW5nKHEpLCB7ICd0ZXh0LWFuY2hvcic6ICdtaWRkbGUnIH0pOwogICAgZWwoJ2xpbmUnLCB7IHgxOiBHWDAsIHgyOiBHWDAsIHkxOiBHWTAsIHkyOiBHWTEsIHN0cm9rZTogQ09MLmF4aXMsICdzdHJva2Utd2lkdGgnOiAxLjUgfSwgc3ZnKTsKICAgIGVsKCdsaW5lJywgeyB4MTogR1gwLCB4MjogR1gxLCB5MTogR1kxLCB5MjogR1kxLCBzdHJva2U6IENPTC5heGlzLCAnc3Ryb2tlLXdpZHRoJzogMS41IH0sIHN2Zyk7CiAgICB0eHQoc3ZnLCAoR1gwICsgR1gxKSAvIDIsIEdZMSArIDQyLCAnUXVhbnRpdHknLCB7ICd0ZXh0LWFuY2hvcic6ICdtaWRkbGUnLCAnZm9udC13ZWlnaHQnOiA3MDAsIGZpbGw6ICcjMWEzYTVjJywgJ2ZvbnQtc2l6ZSc6IDEyIH0pOwogICAgdHh0KHN2ZywgMTQsIChHWTAgKyBHWTEpIC8gMiwgJ0Nvc3QgcGVyIHVuaXQgKCQpJywgeyAndGV4dC1hbmNob3InOiAnbWlkZGxlJywgJ2ZvbnQtd2VpZ2h0JzogNzAwLCBmaWxsOiAnIzFhM2E1YycsICdmb250LXNpemUnOiAxMiwgdHJhbnNmb3JtOiAncm90YXRlKC05MCAxNCAnICsgKEdZMCArIEdZMSkgLyAyICsgJyknIH0pOwogICAgaWYgKG9wdC5ndWlkZVEpIHsKICAgICAgZWwoJ2xpbmUnLCB7IHgxOiBHWGYob3B0Lmd1aWRlUSksIHgyOiBHWGYob3B0Lmd1aWRlUSksIHkxOiBHWTAsIHkyOiBHWTEsIHN0cm9rZTogQ09MLmFmYywgJ3N0cm9rZS13aWR0aCc6IDEuNiwgJ3N0cm9rZS1kYXNoYXJyYXknOiAnNiA0JyB9LCBzdmcpOwogICAgICB0eHQoc3ZnLCBHWGYob3B0Lmd1aWRlUSkgKyA1LCBHWTEgLSA4LCAnUSA9ICcgKyBvcHQuZ3VpZGVRLCB7IGZpbGw6IENPTC5hZmMsICdmb250LXdlaWdodCc6IDcwMCwgJ2ZvbnQtc2l6ZSc6IDExIH0pOwogICAgfQogICAgdmFyIGcgPSBlbCgnZycsIHsgJ2NsaXAtcGF0aCc6ICd1cmwoI2N3LWdjbGlwKScsIGlkOiAnY3ctZy1jdXJ2ZXMnIH0sIHN2Zyk7CiAgICB2YXIgbGFiZWxzID0gW107CiAgICBbJ2F0YycsICdhdmMnLCAnbWMnXS5mb3JFYWNoKGZ1bmN0aW9uIChrZXkpIHsKICAgICAgdmFyIGNvbG9yID0gb3B0LmxhYmVsZWQgPyBDT0xba2V5XSA6IENPTC5ncmF5OwogICAgICBlbCgncGF0aCcsIHsgZDogc21vb3RoKGN1cnZlUHRzKEssIGtleSkubWFwKGZ1bmN0aW9uIChwKSB7IHJldHVybiBbcFswXSwgcFsxXV07IH0pKSwgZmlsbDogJ25vbmUnLCBzdHJva2U6IGNvbG9yLCAnc3Ryb2tlLXdpZHRoJzogMi44LCAnc3Ryb2tlLWxpbmVqb2luJzogJ3JvdW5kJywgJ2RhdGEtayc6IGtleSB9LCBnKTsKICAgICAgdmFyIGVuZCA9IHZpc2libGVFbmQoSywga2V5KTsKICAgICAgdmFyIGxibCA9IG9wdC5sYWJlbGVkID8gQUJCUltrZXldIDogU3RyaW5nKG9wdC5udW1zW2tleV0pOwogICAgICB2YXIgYXRFZGdlID0gZW5kWzJdID49IEsucWVuZCAtIDFlLTY7CiAgICAgIHZhciBseCA9IGF0RWRnZSA/IEdYMSArIDcgOiBlbmRbMF0gKyA4LCBseSA9IGF0RWRnZSA/IGVuZFsxXSArIDQgOiBNYXRoLm1heChHWTAgKyAxMiwgZW5kWzFdICsgMTQpOwogICAgICBsYWJlbHMucHVzaCh7IGs6IGtleSwgeDogbHgsIHk6IGx5LCBzOiBsYmwsIGNvbG9yOiBjb2xvciwgZWRnZTogYXRFZGdlIH0pOwogICAgfSk7CiAgICB2YXIgZWRnZSA9IGxhYmVscy5maWx0ZXIoZnVuY3Rpb24gKGwpIHsgcmV0dXJuIGwuZWRnZTsgfSk7CiAgICBwbGFjZUxhYmVscyhlZGdlLCAxNSwgR1kwICsgMTAsIEdZMSAtIDYpOwogICAgbGFiZWxzLmZvckVhY2goZnVuY3Rpb24gKGwpIHsgdHh0KHN2ZywgbC54LCBsLnksIGwucywgeyBmaWxsOiBsLmNvbG9yLCAnZm9udC13ZWlnaHQnOiA3MDAsICdmb250LXNpemUnOiAxMywgaWQ6ICdjdy1sYWItJyArIGwuayB9KTsgfSk7CiAgICBlbCgnZycsIHsgaWQ6ICdjdy1nLW1hcmtzJyB9LCBzdmcpOwogIH0KCiAgZnVuY3Rpb24gc3ZnUG9pbnQoZXZ0KSB7CiAgICB2YXIgc3ZnID0gJCgnZy1zdmcnKSwgcHQgPSBzdmcuY3JlYXRlU1ZHUG9pbnQoKTsKICAgIHZhciBzcmMgPSBldnQuY2hhbmdlZFRvdWNoZXMgPyBldnQuY2hhbmdlZFRvdWNoZXNbMF0gOiBldnQ7CiAgICBwdC54ID0gc3JjLmNsaWVudFg7IHB0LnkgPSBzcmMuY2xpZW50WTsKICAgIHJldHVybiBwdC5tYXRyaXhUcmFuc2Zvcm0oc3ZnLmdldFNjcmVlbkNUTSgpLmludmVyc2UoKSk7CiAgfQogIGZ1bmN0aW9uIG5lYXJlc3RDdXJ2ZShLLCBwKSB7CiAgICB2YXIgYmVzdCA9IG51bGwsIGJkID0gMWU5OwogICAgWydhdGMnLCAnYXZjJywgJ21jJ10uZm9yRWFjaChmdW5jdGlvbiAoa2V5KSB7CiAgICAgIGN1cnZlUHRzKEssIGtleSkuZm9yRWFjaChmdW5jdGlvbiAoYykgeyBpZiAoY1szXSA+IEsueW1heCB8fCBjWzNdIDwgMCkgcmV0dXJuOyB2YXIgZCA9IE1hdGguaHlwb3QoY1swXSAtIHAueCwgY1sxXSAtIHAueSk7IGlmIChkIDwgYmQpIHsgYmQgPSBkOyBiZXN0ID0ga2V5OyB9IH0pOwogICAgfSk7CiAgICByZXR1cm4geyBrOiBiZXN0LCBkOiBiZCB9OwogIH0KICBmdW5jdGlvbiBtYXJrKHgsIHksIGNvbG9yLCBraW5kKSB7CiAgICB2YXIgbSA9ICQoJ2ctbWFya3MnKTsKICAgIGlmIChraW5kID09PSAncmluZycpIHsgZWwoJ2NpcmNsZScsIHsgY3g6IHgsIGN5OiB5LCByOiA5LCBmaWxsOiAnbm9uZScsIHN0cm9rZTogY29sb3IsICdzdHJva2Utd2lkdGgnOiAyLjQgfSwgbSk7IGVsKCdjaXJjbGUnLCB7IGN4OiB4LCBjeTogeSwgcjogMy41LCBmaWxsOiBjb2xvciB9LCBtKTsgfQogICAgZWxzZSB7IGVsKCdsaW5lJywgeyB4MTogeCAtIDYsIHkxOiB5IC0gNiwgeDI6IHggKyA2LCB5MjogeSArIDYsIHN0cm9rZTogY29sb3IsICdzdHJva2Utd2lkdGgnOiAyLjQgfSwgbSk7IGVsKCdsaW5lJywgeyB4MTogeCAtIDYsIHkxOiB5ICsgNiwgeDI6IHggKyA2LCB5MjogeSAtIDYsIHN0cm9rZTogY29sb3IsICdzdHJva2Utd2lkdGgnOiAyLjQgfSwgbSk7IH0KICB9CiAgZnVuY3Rpb24gcmV2ZWFsQ3VydmUoa2V5LCBsYWJlbGVkTm93KSB7CiAgICB2YXIgcCA9ICQoJ2ctY3VydmVzJykucXVlcnlTZWxlY3RvcigncGF0aFtkYXRhLWs9IicgKyBrZXkgKyAnIl0nKTsgaWYgKHApIHsgcC5zZXRBdHRyaWJ1dGUoJ3N0cm9rZScsIENPTFtrZXldKTsgcC5zZXRBdHRyaWJ1dGUoJ3N0cm9rZS13aWR0aCcsIDQpOyB9CiAgICB2YXIgbCA9ICQoJ2xhYi0nICsga2V5KTsgaWYgKGwgJiYgbGFiZWxlZE5vdykgeyBsLnNldEF0dHJpYnV0ZSgnZmlsbCcsIENPTFtrZXldKTsgbC50ZXh0Q29udGVudCA9IEFCQlJba2V5XTsgfQogIH0KCiAgdmFyIENVUlZFX1RFTEwgPSB7CiAgICBtYzogJ01DIGlzIHRoZSBjdXJ2ZSB0aGF0IGN1dHMgdGhyb3VnaCBib3RoIFVcdTIwMTlzIGF0IHRoZWlyIGxvd2VzdCBwb2ludHMsIHJpc2luZyBzdGVlcGx5IGFmdGVyLicsCiAgICBhdGM6ICdBVEMgaXMgdGhlIGhpZ2hlciBVLiBJdCBjYXJyaWVzIGF2ZXJhZ2UgZml4ZWQgY29zdCBvbiB0b3Agb2YgQVZDLCBzbyBpdCBzaXRzIGFib3ZlIEFWQyBldmVyeXdoZXJlLicsCiAgICBhdmM6ICdBVkMgaXMgdGhlIGxvd2VyIFUuIFRoZSBnYXAgYmV0d2VlbiBpdCBhbmQgQVRDIChhdmVyYWdlIGZpeGVkIGNvc3QpIHNocmlua3MgYXMgcXVhbnRpdHkgZ3Jvd3MuJwogIH07CgogIGZ1bmN0aW9uIGJ1aWxkUXVlc3Rpb24odHlwZSkgewogICAgdmFyIEsgPSBnZW5DdXJ2ZXMoKSwgUSA9IHsgdHlwZTogdHlwZSwgSzogSyB9OwogICAgaWYgKHR5cGUgPT09ICdpZGN1cnZlJykgewogICAgICB2YXIgbnVtcyA9IHNodWZmbGUoWzEsIDIsIDNdKTsgUS5udW1zID0geyBhdGM6IG51bXNbMF0sIGF2YzogbnVtc1sxXSwgbWM6IG51bXNbMl0gfTsKICAgICAgUS50YXJnZXQgPSBwaWNrKFsnbWMnLCAnYXRjJywgJ2F2YyddKTsKICAgICAgUS5sYWJlbCA9ICdJZGVudGlmeSB0aGUgY3VydmUnOwogICAgICBRLnByb21wdCA9ICdUYXAgdGhlPGI+ICcgKyBOQU1FW1EudGFyZ2V0XSArICcgPC9iPmN1cnZlLic7CiAgICAgIFEuaGludCA9ICdUaGUgY3VydmVzIGFyZSB1bmxhYmVsZWQuIFVzZSB0aGVpciBzaGFwZXMgYW5kIHdoZXJlIHRoZXkgY3Jvc3MuJzsKICAgICAgUS5raW5kID0gJ3RhcEN1cnZlJzsKICAgIH0gZWxzZSBpZiAodHlwZSA9PT0gJ3B0JykgewogICAgICB2YXIgd2hpY2ggPSBwaWNrKFsnZWZmJywgJ2VmZicsICdhdmNtaW4nLCAnbWNjcm9zcycsICdtY21pbiddKTsKICAgICAgUS5sYWJlbCA9ICdGaW5kIHRoZSBwb2ludCc7IFEua2luZCA9ICd0YXBQb2ludCc7IFEubGFiZWxlZCA9IHRydWU7CiAgICAgIGlmICh3aGljaCA9PT0gJ2VmZicpIHsgUS50cSA9IEsuUXQ7IFEudHYgPSBLLmF0YyhLLlF0KTsgUS5wcm9tcHQgPSAnVGFwIHRoZSBmaXJtXHUyMDE5czxiPiBlZmZpY2llbnQgc2NhbGUgPC9iPih0aGUgbG93ZXN0IHBvaW50IG9uIEFUQykuJzsgUS53aHkgPSAnRWZmaWNpZW50IHNjYWxlIGlzIHRoZSBib3R0b20gb2YgQVRDLCBleGFjdGx5IHdoZXJlIE1DIGNyb3NzZXMgaXQgb24gaXRzIHdheSB1cC4nOyB9CiAgICAgIGVsc2UgaWYgKHdoaWNoID09PSAnYXZjbWluJykgeyBRLnRxID0gSy5RdjsgUS50diA9IEsuYXZjKEsuUXYpOyBRLnByb21wdCA9ICdUYXAgdGhlPGI+IGxvd2VzdCBwb2ludCA8L2I+b24gdGhlIEFWQyBjdXJ2ZS4nOyBRLndoeSA9ICdBVkMgYm90dG9tcyBvdXQgZXhhY3RseSB3aGVyZSBNQyBjcm9zc2VzIGl0LiBUaGF0IHBvaW50IHNpdHMgdG8gdGhlIGxlZnQgb2YgQVRDXHUyMDE5cyBtaW5pbXVtLic7IH0KICAgICAgZWxzZSBpZiAod2hpY2ggPT09ICdtY2Nyb3NzJykgeyBRLnRxID0gSy5RdjsgUS50diA9IEsuYXZjKEsuUXYpOyBRLnByb21wdCA9ICdUYXAgdGhlIHBvaW50IHdoZXJlPGI+IE1DIGNyb3NzZXMgQVZDPC9iPi4nOyBRLndoeSA9ICdNQyBjcm9zc2VzIEFWQyBhdCBBVkNcdTIwMTlzIGxvd2VzdCBwb2ludC4gQmVmb3JlIGl0LCBNQyBpcyBiZWxvdyBBVkMgYW5kIHB1bGxzIGl0IGRvd247IGFmdGVyIGl0LCBNQyBwdWxscyBBVkMgdXAuJzsgfQogICAgICBlbHNlIHsgUS50cSA9IEsuUW07IFEudHYgPSBLLm1jKEsuUW0pOyBRLnByb21wdCA9ICdUYXAgdGhlPGI+IGxvd2VzdCBwb2ludCA8L2I+b24gdGhlIE1DIGN1cnZlLic7IFEud2h5ID0gJ01DIGJvdHRvbXMgb3V0IGZpcnN0LCB3aGlsZSBhZGRlZCB3b3JrZXJzIGNhbiBzdGlsbCBzcGVjaWFsaXplLiBJdCB0dXJucyB1cCBvbmNlIGRpbWluaXNoaW5nIG1hcmdpbmFsIHJldHVybnMgc2V0IGluLCBiZWZvcmUgZWl0aGVyIGF2ZXJhZ2UgcmVhY2hlcyBpdHMgbWluaW11bS4nOyB9CiAgICAgIFEuaGludCA9ICdUYXAgb24gdGhlIGdyYXBoLic7CiAgICB9IGVsc2UgaWYgKHR5cGUgPT09ICdyZWFkJykgewogICAgICBRLmxhYmVsZWQgPSB0cnVlOyBRLmtpbmQgPSAnY2hvaWNlJzsgUS52Z3JpZCA9IHRydWU7CiAgICAgIGZvciAodmFyIHQgPSAwOyB0IDwgNDAwOyB0KyspIHsKICAgICAgICB2YXIgWCA9IHBpY2soWzIwLCAzMCwgNDAsIDUwLCA2MCwgNzAsIDgwLCA5MF0pOwogICAgICAgIGlmIChYID4gSy5xZW5kIC0gMTApIGNvbnRpbnVlOwogICAgICAgIGlmIChLLmF0YyhYKSA+IEsueW1heCAqIDAuOTIgfHwgSy5tYyhYKSA+IEsueW1heCAqIDAuOTIpIGNvbnRpbnVlOwogICAgICAgIHZhciBBID0gTWF0aC5yb3VuZChLLmF0YyhYKSksIFYgPSBNYXRoLnJvdW5kKEsuYXZjKFgpKSwgTSA9IE1hdGgucm91bmQoSy5tYyhYKSk7CiAgICAgICAgdmFyIHN1YiA9IHBpY2soWydhZmMnLCAndGMnLCAndmMnLCAnZmMnXSksIG9wdHMsIGFucywgd2h5LCBwcm9tcHQ7CiAgICAgICAgaWYgKHN1YiA9PT0gJ2FmYycpIHsgYW5zID0gQSAtIFY7IG9wdHMgPSBbYW5zLCBBLCBWLCBNXTsgcHJvbXB0ID0gJ0F0IFEgPSAnICsgWCArICcsIHdoYXQgaXM8Yj4gYXZlcmFnZSBmaXhlZCBjb3N0PC9iPj8nOyB3aHkgPSAnQUZDIGlzIHRoZSB2ZXJ0aWNhbCBnYXAgYmV0d2VlbiBBVEMgYW5kIEFWQzogYWJvdXQgJyArIG1vbmV5KEEpICsgJyBcdTIyMTIgJyArIG1vbmV5KFYpICsgJyA9ICcgKyBtb25leShhbnMpICsgJy4nOyB9CiAgICAgICAgZWxzZSBpZiAoc3ViID09PSAndGMnKSB7IGFucyA9IEEgKiBYOyBvcHRzID0gW2FucywgQSwgViAqIFgsIE0gKiBYXTsgcHJvbXB0ID0gJ0F0IFEgPSAnICsgWCArICcsIHdoYXQgaXMgdGhlIGZpcm1cdTIwMTlzPGI+IHRvdGFsIGNvc3Q8L2I+Pyc7IHdoeSA9ICdUb3RhbCBjb3N0IGlzIEFUQyBcdTAwZDcgUTogYWJvdXQgJyArIG1vbmV5KEEpICsgJyBcdTAwZDcgJyArIFggKyAnID0gJyArIG1vbmV5KGFucykgKyAnLiAoQVZDIFx1MDBkNyBRIHdvdWxkIGJlIHZhcmlhYmxlIGNvc3Qgb25seS4pJzsgfQogICAgICAgIGVsc2UgaWYgKHN1YiA9PT0gJ3ZjJykgeyBhbnMgPSBWICogWDsgb3B0cyA9IFthbnMsIFYsIEEgKiBYLCAoQSAtIFYpICogWF07IHByb21wdCA9ICdBdCBRID0gJyArIFggKyAnLCB3aGF0IGlzIHRoZSBmaXJtXHUyMDE5czxiPiB0b3RhbCB2YXJpYWJsZSBjb3N0PC9iPj8nOyB3aHkgPSAnVmFyaWFibGUgY29zdCBpcyBBVkMgXHUwMGQ3IFE6IGFib3V0ICcgKyBtb25leShWKSArICcgXHUwMGQ3ICcgKyBYICsgJyA9ICcgKyBtb25leShhbnMpICsgJy4nOyB9CiAgICAgICAgZWxzZSB7IGFucyA9IChBIC0gVikgKiBYOyBvcHRzID0gW2FucywgQSAtIFYsIEEgKiBYLCBWICogWF07IHByb21wdCA9ICdSZWFkaW5nIGF0IFEgPSAnICsgWCArICcsIHdoYXQgaXMgdGhlIGZpcm1cdTIwMTlzPGI+IHRvdGFsIGZpeGVkIGNvc3Q8L2I+Pyc7IHdoeSA9ICdGaXhlZCBjb3N0IGlzIEFGQyBcdTAwZDcgUTogYWJvdXQgKCcgKyBtb25leShBKSArICcgXHUyMjEyICcgKyBtb25leShWKSArICcpIFx1MDBkNyAnICsgWCArICcgPSAnICsgbW9uZXkoYW5zKSArICcuIFJlYWQgaXQgYXQgYW55IHF1YW50aXR5IGFuZCB5b3UgZ2V0IHJvdWdobHkgdGhlIHNhbWUgdG90YWwsIGJlY2F1c2UgZml4ZWQgY29zdCBkb2Vzblx1MjAxOXQgY2hhbmdlIHdpdGggb3V0cHV0Lic7IH0KICAgICAgICB2YXIgb2tTZXAgPSB0cnVlOwogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgb3B0cy5sZW5ndGg7IGkrKykgZm9yICh2YXIgaiA9IGkgKyAxOyBqIDwgb3B0cy5sZW5ndGg7IGorKykgeyB2YXIgbG8gPSBNYXRoLm1pbihvcHRzW2ldLCBvcHRzW2pdKSwgaGkgPSBNYXRoLm1heChvcHRzW2ldLCBvcHRzW2pdKTsgaWYgKGhpIC0gbG8gPCBNYXRoLm1heCgzLCAwLjEyICogaGkpKSBva1NlcCA9IGZhbHNlOyB9CiAgICAgICAgaWYgKCFva1NlcCB8fCBhbnMgPD0gMCkgY29udGludWU7CiAgICAgICAgUS5ndWlkZVEgPSBYOyBRLnByb21wdCA9IHByb21wdDsgUS53aHkgPSB3aHk7IFEub3B0aW9ucyA9IHNodWZmbGUob3B0cy5tYXAoZnVuY3Rpb24gKG8sIGlkeCkgeyByZXR1cm4geyB0OiBtb25leShvKSwgcmlnaHQ6IGlkeCA9PT0gMCB9OyB9KSk7CiAgICAgICAgYnJlYWs7CiAgICAgIH0KICAgICAgaWYgKCFRLm9wdGlvbnMpIHJldHVybiBidWlsZFF1ZXN0aW9uKCdwdCcpOwogICAgICBRLmxhYmVsID0gJ1JlYWQgdGhlIGdyYXBoJzsgUS5oaW50ID0gJ1VzZSB0aGUgZ3JpZGxpbmVzLiBBbnN3ZXJzIGFyZSByb3VuZGVkLCBzbyBwaWNrIHRoZSBjbG9zZXN0Lic7CiAgICB9IGVsc2UgeyAvLyBkaXIKICAgICAgUS5sYWJlbGVkID0gdHJ1ZTsgUS5raW5kID0gJ2Nob2ljZSc7CiAgICAgIHZhciBmYWxsaW5nID0gTWF0aC5yYW5kb20oKSA8IDAuNiwgY2FuZHMgPSBbXTsKICAgICAgZm9yICh2YXIgeCA9IDU7IHggPD0gSy5xZW5kIC0gNTsgeCArPSA1KSB7CiAgICAgICAgaWYgKGZhbGxpbmcgJiYgeCA+IEsuUXYgKyAyICYmIHggPD0gSy5RdCAtIDUgJiYgSy5tYyh4KSA8IEsuYXRjKHgpIC0gNCkgY2FuZHMucHVzaCh4KTsKICAgICAgICBpZiAoIWZhbGxpbmcgJiYgeCA+PSBLLlF0ICsgOCAmJiBLLmF0Yyh4KSA8IEsueW1heCAqIDAuOSAmJiBLLm1jKHgpIDwgSy55bWF4ICogMC45NSkgY2FuZHMucHVzaCh4KTsKICAgICAgfQogICAgICBpZiAoIWNhbmRzLmxlbmd0aCkgcmV0dXJuIGJ1aWxkUXVlc3Rpb24oJ2RpcicpOwogICAgICBRLmd1aWRlUSA9IHBpY2soY2FuZHMpOwogICAgICBRLmxhYmVsID0gJ1Jpc2luZyBvciBmYWxsaW5nPyc7CiAgICAgIFEucHJvbXB0ID0gJ0F0IFEgPSAnICsgUS5ndWlkZVEgKyAnLCBpczxiPiBBVEMgPC9iPnJpc2luZyBvciBmYWxsaW5nLCBhbmQgd2h5Pyc7CiAgICAgIFEuaGludCA9ICdMb29rIGF0IHdoZXJlIE1DIHNpdHMgY29tcGFyZWQgd2l0aCBBVEMgYXQgdGhlIGRhc2hlZCBsaW5lLic7CiAgICAgIGlmIChmYWxsaW5nKSB7CiAgICAgICAgUS5vcHRpb25zID0gc2h1ZmZsZShbCiAgICAgICAgICB7IHQ6ICdGYWxsaW5nOiBNQyBpcyBiZWxvdyBBVEMsIHNvIGVhY2ggZXh0cmEgdW5pdCBwdWxscyB0aGUgYXZlcmFnZSBkb3duLicsIHJpZ2h0OiB0cnVlIH0sCiAgICAgICAgICB7IHQ6ICdSaXNpbmc6IE1DIGlzIHJpc2luZyBoZXJlLCBzbyBBVEMgbXVzdCBiZSByaXNpbmcgdG9vLicgfSwKICAgICAgICAgIHsgdDogJ1Jpc2luZzogTUMgaXMgYWxyZWFkeSBhYm92ZSBBVkMuJyB9LAogICAgICAgICAgeyB0OiAnWW91IGNhblx1MjAxOXQgdGVsbCB3aXRob3V0IHRoZSBudW1iZXJzLicgfV0pOwogICAgICAgIFEud2h5ID0gJ0NvbXBhcmUgTUMgd2l0aCBBVEMsIG5vdCBNQ1x1MjAxOXMgc2xvcGUuIEhlcmUgTUMgaXMgcmlzaW5nIGFuZCBoYXMgcGFzc2VkIEFWQywgYnV0IGl0IGlzIHN0aWxsIGJlbG93IEFUQywgc28gQVRDIGtlZXBzIGZhbGxpbmcgdW50aWwgTUMgcmVhY2hlcyBpdCBhdCBRID0gJyArIEsuUXQgKyAnLic7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgUS5vcHRpb25zID0gc2h1ZmZsZShbCiAgICAgICAgICB7IHQ6ICdSaXNpbmc6IE1DIGlzIGFib3ZlIEFUQywgc28gZWFjaCBleHRyYSB1bml0IHB1bGxzIHRoZSBhdmVyYWdlIHVwLicsIHJpZ2h0OiB0cnVlIH0sCiAgICAgICAgICB7IHQ6ICdGYWxsaW5nOiBBRkMgaXMgc3RpbGwgZmFsbGluZywgc28gQVRDIG11c3QgYmUgdG9vLicgfSwKICAgICAgICAgIHsgdDogJ1Jpc2luZzogTUMgaXMgcmlzaW5nLCBhbmQgQVRDIGFsd2F5cyBmb2xsb3dzIE1DXHUyMDE5cyBzbG9wZS4nIH0sCiAgICAgICAgICB7IHQ6ICdZb3UgY2FuXHUyMDE5dCB0ZWxsIHdpdGhvdXQgdGhlIG51bWJlcnMuJyB9XSk7CiAgICAgICAgUS53aHkgPSAnT25jZSBNQyBpcyBhYm92ZSBBVEMsIGVhY2ggbmV3IHVuaXQgY29zdHMgbW9yZSB0aGFuIHRoZSBhdmVyYWdlLCBzbyBBVEMgcmlzZXMsIGV2ZW4gdGhvdWdoIEFGQyBrZWVwcyBmYWxsaW5nLiBNQ1x1MjAxOXMgc2xvcGUgYWxvbmUgZG9lc25cdTIwMTl0IHNldHRsZSBpdDogTUMgd2FzIGFsc28gcmlzaW5nIGJhY2sgd2hlbiBBVEMgd2FzIHN0aWxsIGZhbGxpbmcuJzsKICAgICAgfQogICAgfQogICAgcmV0dXJuIFE7CiAgfQoKICBmdW5jdGlvbiBuZXh0UXVlc3Rpb24oKSB7CiAgICBpZiAoIUcuZGVjay5sZW5ndGgpIEcuZGVjayA9IHNodWZmbGUoWydpZGN1cnZlJywgJ2lkY3VydmUnLCAncHQnLCAncHQnLCAncHQnLCAncmVhZCcsICdyZWFkJywgJ3JlYWQnLCAnZGlyJywgJ2RpciddKTsKICAgIHZhciBRID0gYnVpbGRRdWVzdGlvbihHLmRlY2sucG9wKCkpOyBHLnEgPSBROyBHLmFuc3dlcmVkID0gZmFsc2U7CiAgICAkKCdnLXR5cGUnKS50ZXh0Q29udGVudCA9IFEubGFiZWw7ICQoJ2ctcScpLmlubmVySFRNTCA9IFEucHJvbXB0OyAkKCdnLWhpbnQnKS50ZXh0Q29udGVudCA9IFEuaGludCB8fCAnJzsKICAgIHZhciBmYiA9ICQoJ2ctZmInKTsgZmIuY2xhc3NOYW1lID0gJ3ctZmInOyBmYi5pbm5lckhUTUwgPSAnJzsKICAgIGRyYXdHcmFwaChRLkssIHsgbGFiZWxlZDogUS5raW5kICE9PSAndGFwQ3VydmUnLCBudW1zOiBRLm51bXMsIGd1aWRlUTogUS5ndWlkZVEsIHZncmlkOiBRLnZncmlkIH0pOwogICAgdmFyIGJveCA9ICQoJ2ctb3B0cycpOyBib3guaW5uZXJIVE1MID0gJyc7IGJveC5zdHlsZS5kaXNwbGF5ID0gUS5raW5kID09PSAnY2hvaWNlJyA/ICdncmlkJyA6ICdub25lJzsKICAgIGlmIChRLmtpbmQgPT09ICdjaG9pY2UnKSBRLm9wdGlvbnMuZm9yRWFjaChmdW5jdGlvbiAobykgewogICAgICB2YXIgYiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2J1dHRvbicpOyBiLmNsYXNzTmFtZSA9ICd3LW9wdCc7IGIudGV4dENvbnRlbnQgPSBvLnQ7CiAgICAgIGIuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbiAoKSB7IGFuc3dlckNob2ljZShvLCBiKTsgfSk7IGJveC5hcHBlbmRDaGlsZChiKTsKICAgIH0pOwogICAgJCgnZy1zaG93JykuZGlzYWJsZWQgPSBmYWxzZTsgJCgnZy1zdmcnKS5zdHlsZS5jdXJzb3IgPSBRLmtpbmQgPT09ICdjaG9pY2UnID8gJ2RlZmF1bHQnIDogJ2Nyb3NzaGFpcic7CiAgICB1cGRhdGVHU2NvcmUoKTsgcG9zdEgoKTsKICB9CgogIGZ1bmN0aW9uIHNldHRsZShyaWdodCwgaHRtbCkgewogICAgRy5hbnN3ZXJlZCA9IHRydWU7IEcudG90YWwrKzsgaWYgKHJpZ2h0KSB7IEcucmlnaHQrKzsgRy5zdHJlYWsrKzsgfSBlbHNlIEcuc3RyZWFrID0gMDsKICAgIHZhciBmYiA9ICQoJ2ctZmInKTsgZmIuY2xhc3NOYW1lID0gJ3ctZmIgc2hvdyAnICsgKHJpZ2h0ID8gJ2dvb2QnIDogJ2JhZCcpOyBmYi5pbm5lckhUTUwgPSBodG1sOwogICAgJCgnZy1zaG93JykuZGlzYWJsZWQgPSB0cnVlOyAkKCdnLXN2ZycpLnN0eWxlLmN1cnNvciA9ICdkZWZhdWx0JzsgdXBkYXRlR1Njb3JlKCk7IHBvc3RIKCk7CiAgICAkKCdnLW5leHQnKS5mb2N1cyh7IHByZXZlbnRTY3JvbGw6IHRydWUgfSk7CiAgfQogIGZ1bmN0aW9uIGFuc3dlckNob2ljZShvLCBidG4pIHsKICAgIGlmIChHLmFuc3dlcmVkKSByZXR1cm47CiAgICB2YXIgYnMgPSAkKCdnLW9wdHMnKS5xdWVyeVNlbGVjdG9yQWxsKCcudy1vcHQnKTsKICAgIGZvciAodmFyIGkgPSAwOyBpIDwgYnMubGVuZ3RoOyBpKyspIHsgYnNbaV0uZGlzYWJsZWQgPSB0cnVlOyBpZiAoRy5xLm9wdGlvbnNbaV0ucmlnaHQpIGJzW2ldLmNsYXNzTGlzdC5hZGQoJ3JpZ2h0Jyk7IH0KICAgIGlmICghby5yaWdodCkgYnRuLmNsYXNzTGlzdC5hZGQoJ3dyb25nJyk7CiAgICBzZXR0bGUoby5yaWdodCwgJzxiPicgKyAoby5yaWdodCA/ICdSaWdodC4gJyA6ICdOb3QgcXVpdGUuICcpICsgJzwvYj4nICsgRy5xLndoeSk7CiAgfQogIGZ1bmN0aW9uIG9uVGFwKGV2dCkgewogICAgdmFyIFEgPSBHLnE7IGlmICghUSB8fCBHLmFuc3dlcmVkIHx8IFEua2luZCA9PT0gJ2Nob2ljZScpIHJldHVybjsKICAgIHZhciBwID0gc3ZnUG9pbnQoZXZ0KTsKICAgIGlmIChwLnggPCBHWDAgLSAxMCB8fCBwLnggPiBHWDEgKyAzMCB8fCBwLnkgPCBHWTAgLSAxMCB8fCBwLnkgPiBHWTEgKyAxMCkgcmV0dXJuOwogICAgaWYgKFEua2luZCA9PT0gJ3RhcEN1cnZlJykgewogICAgICB2YXIgbiA9IG5lYXJlc3RDdXJ2ZShRLkssIHApOwogICAgICB2YXIgZFQgPSAxZTk7IGN1cnZlUHRzKFEuSywgUS50YXJnZXQpLmZvckVhY2goZnVuY3Rpb24gKGMpIHsgaWYgKGNbM10gPD0gUS5LLnltYXggJiYgY1szXSA+PSAwKSBkVCA9IE1hdGgubWluKGRULCBNYXRoLmh5cG90KGNbMF0gLSBwLngsIGNbMV0gLSBwLnkpKTsgfSk7CiAgICAgIGlmIChkVCA8PSAyNiAmJiBkVCA8PSBuLmQgKyA2KSBuID0geyBrOiBRLnRhcmdldCwgZDogZFQgfTsKICAgICAgaWYgKG4uZCA+IDI2KSB7IHZhciBmYiA9ICQoJ2ctZmInKTsgZmIuY2xhc3NOYW1lID0gJ3ctZmIgc2hvdyB3YXJuJzsgZmIuaW5uZXJIVE1MID0gJ1RhcCBjbG9zZXIgdG8gb25lIG9mIHRoZSBjdXJ2ZXMuJzsgcG9zdEgoKTsgcmV0dXJuOyB9CiAgICAgIHZhciByaWdodCA9IG4uayA9PT0gUS50YXJnZXQ7CiAgICAgIHJldmVhbEN1cnZlKFEudGFyZ2V0LCB0cnVlKTsgaWYgKCFyaWdodCkgcmV2ZWFsQ3VydmUobi5rLCB0cnVlKTsKICAgICAgc2V0dGxlKHJpZ2h0LCAnPGI+JyArIChyaWdodCA/ICdSaWdodC4gJyA6ICdUaGF0IG9uZSBpcyAnICsgQUJCUltuLmtdICsgJy4gJykgKyAnPC9iPicgKyBDVVJWRV9URUxMW1EudGFyZ2V0XSk7CiAgICB9IGVsc2UgewogICAgICB2YXIgdHggPSBHWGYoUS50cSksIHR5ID0gR1lmKFEuSywgUS50diksIGQgPSBNYXRoLmh5cG90KHAueCAtIHR4LCBwLnkgLSB0eSk7CiAgICAgIHZhciBvayA9IGQgPD0gMzA7CiAgICAgIGlmICghb2spIG1hcmsocC54LCBwLnksIENPTC5iYWQsICd4Jyk7CiAgICAgIG1hcmsodHgsIHR5LCBDT0wub2ssICdyaW5nJyk7CiAgICAgIHNldHRsZShvaywgJzxiPicgKyAob2sgPyAnUmlnaHQuICcgOiAnTm90IHF1aXRlLiBUaGUgZ3JlZW4gcmluZyBtYXJrcyBpdC4gJykgKyAnPC9iPicgKyBRLndoeSk7CiAgICB9CiAgfQogICQoJ2ctc3ZnJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBvblRhcCk7CiAgJCgnZy1uZXh0JykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBuZXh0UXVlc3Rpb24pOwogICQoJ2ctc2hvdycpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24gKCkgewogICAgdmFyIFEgPSBHLnE7IGlmICghUSB8fCBHLmFuc3dlcmVkKSByZXR1cm47CiAgICBpZiAoUS5raW5kID09PSAnY2hvaWNlJykgeyB2YXIgYnMgPSAkKCdnLW9wdHMnKS5xdWVyeVNlbGVjdG9yQWxsKCcudy1vcHQnKTsgZm9yICh2YXIgaSA9IDA7IGkgPCBicy5sZW5ndGg7IGkrKykgeyBic1tpXS5kaXNhYmxlZCA9IHRydWU7IGlmIChRLm9wdGlvbnNbaV0ucmlnaHQpIGJzW2ldLmNsYXNzTGlzdC5hZGQoJ3JpZ2h0Jyk7IH0gc2V0dGxlKGZhbHNlLCBRLndoeSk7IH0KICAgIGVsc2UgaWYgKFEua2luZCA9PT0gJ3RhcEN1cnZlJykgeyByZXZlYWxDdXJ2ZShRLnRhcmdldCwgdHJ1ZSk7IHNldHRsZShmYWxzZSwgQ1VSVkVfVEVMTFtRLnRhcmdldF0pOyB9CiAgICBlbHNlIHsgbWFyayhHWGYoUS50cSksIEdZZihRLkssIFEudHYpLCBDT0wub2ssICdyaW5nJyk7IHNldHRsZShmYWxzZSwgUS53aHkpOyB9CiAgfSk7CiAgZnVuY3Rpb24gdXBkYXRlR1Njb3JlKCkgeyAkKCdnLXNjb3JlJykudGV4dENvbnRlbnQgPSBHLnRvdGFsID8gKEcucmlnaHQgKyAnIG9mICcgKyBHLnRvdGFsICsgJyByaWdodCcgKyAoRy5zdHJlYWsgPiAxID8gJyBcdTAwYjcgc3RyZWFrICcgKyBHLnN0cmVhayA6ICcnKSkgOiAnJzsgfQoKICB2YXIgcnNUID0gbnVsbDsKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncmVzaXplJywgZnVuY3Rpb24gKCkgewogICAgY2xlYXJUaW1lb3V0KHJzVCk7CiAgICByc1QgPSBzZXRUaW1lb3V0KGZ1bmN0aW9uICgpIHsKICAgICAgdmFyIHcgPSAkKCd3JykuY2xpZW50V2lkdGgsIGNvbXBhY3QgPSB3IDwgNTIwOwogICAgICBpZiAoVC5zb2x2ZWQpIGRyYXdUYWJsZUdyYXBoKCk7CiAgICAgIGlmIChHLnEgJiYgZ0NvbXBhY3QgIT09IG51bGwgJiYgY29tcGFjdCAhPT0gZ0NvbXBhY3QgJiYgIUcuYW5zd2VyZWQpIGRyYXdHcmFwaChHLnEuSywgeyBsYWJlbGVkOiBHLnEua2luZCAhPT0gJ3RhcEN1cnZlJywgbnVtczogRy5xLm51bXMsIGd1aWRlUTogRy5xLmd1aWRlUSwgdmdyaWQ6IEcucS52Z3JpZCB9KTsKICAgICAgcG9zdEgoKTsKICAgIH0sIDE1MCk7CiAgfSk7CgogIC8vIHRlc3QgaG9vayAoaGFybWxlc3MpCiAgd2luZG93Ll9fY29zdFdpZGdldCA9IHsgVDogVCwgRzogRywgY2hlY2s6IGNoZWNrLCBuZXh0UXVlc3Rpb246IG5leHRRdWVzdGlvbiwgYnVpbGRRdWVzdGlvbjogYnVpbGRRdWVzdGlvbiwgZ2VuU2NoZWR1bGU6IGdlblNjaGVkdWxlLCBnZW5DdXJ2ZXM6IGdlbkN1cnZlcywgR1hmOiBHWGYsIEdZZjogR1lmIH07CgogIG5ld1RhYmxlKCk7Cn0pKCk7Cg==');document.body.appendChild(s);})();
+</script>

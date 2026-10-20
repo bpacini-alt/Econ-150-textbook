@@ -1,0 +1,1659 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 90.7061%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;}.etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;}.etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;}.etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:230px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:pointer;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;font-weight:400;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after,[data-tip].tip-open::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"\2192 ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-deck{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-style:italic;color:#9a9a9a;line-height:1.4;margin:-.7rem 0 1.2rem;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;}.etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"\2192";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-2col,.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd,.etb-3item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-hd{background:#2a7a4f;}.etb-2item-bd,.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:100%;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 10px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched td:first-child,.etb-sched th:first-child{text-align:left;}.etb-sched tr:nth-child(even) td{background:#f7fafd;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-svgwrap{display:block;width:100%;}.etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;gap:0;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;}.etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}details.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}details.etb-reveal summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-reveal summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}details.etb-reveal[open] summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p,.etb-reveal-body li{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li::before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;color:#1f6f47;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin:1px 0 .65rem;color:#418a64;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;color:#2c4034;}.etb-synth-list li+li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-play::after{content:"\25B6";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;}.etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}.etb-title-main{font-size:26px;}.etb-yt-thumb{width:112px;height:63px;}.etb-sched{font-size:12px;}}
+</style>
+<div class="etb">
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+14
+</div>
+<div class="etb-title-unit">
+Unit 3 · How Markets Move Resources
+</div>
+<h2 class="etb-title-main">
+Factor Markets II and Unit Capstone: Labor Markets
+</h2>
+<p class="etb-title-sub">
+Work, wages, and dignity
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 14
+</span>
+<span>
+~ 43 min read
+</span>
+</div>
+</div>
+<div class="etb-hook">
+<p>
+Who pays the highest marginal tax rate in America?
+</p>
+<p>
+One of the key ideas of "supply-side" neoliberal thinkers is that taxes harm economic growth. Economists recognize that this is only true on the margin: no one cares about how much total money will be taxed. Ronald Reagan once recalled that he was tempted to make a third movie in a single year, but that's when the tax rate would jump to near 90%. He said, "
+<!--StartFragment-->
+<span class="citation-23">
+Why should I have done a third picture, even if it was
+</span>
+<em>
+<span class="citation-23">
+Gone with the Wind
+</span>
+</em>
+<span class="citation-23 citation-end-23">
+? What good would it have done me?
+</span>
+<!--EndFragment-->
+"
+</p>
+<p>
+The basic logic of marginal taxation is just this simple: people respond to the incentives to work and not work, and the higher the marginal tax, the less they will respond by working.
+</p>
+<p>
+So the question naturally presents itself: which group of Americans suffer the negative incentive effects of marginal tax rates the most?
+</p>
+<p>
+The answer: the very poor.
+</p>
+<p>
+The well-intended welfare scheme operates as a diffuse network of government programs that require permissions and interviews and social worker sign offs and work requirements. One of the biggest problems, however, is the welfare cliff.
+</p>
+<p>
+Imagine you are very, very poor. You get a few welfare benefits, but it's not enough for a decent living. You decide to go out and work. You make $100. Then you get an update from the various programs, do some tabulating, use your spreadsheet, and realize that your $100 cost you $400.
+</p>
+<p>
+Labor markets are subject to the same rules as any other markets: supply curves slope up; when people are paid at higher rates, they will work more. People think on the margin; marginal taxes affect billionaires and the poor the same. And, most important of all, people respond to incentives.
+</p>
+<p>
+Now, an important note: wages obey the laws of supply and demand, but that does not mean that they are an indication of fundamental worth. Why do some people work incredibly hard and earn very little, while other people earn a lot for work that may not look harder? Effort matters. Skill matters. Luck matters. Power matters. But wages do not simply line up with sweat, exhaustion, or moral deservingness.
+</p>
+<p>
+The labor-market question is more precise: what determines the value of a worker's next hour? In the competitive model, a worker's
+<span data-tip="The price of labor, usually paid per hour, week, year, or task.">
+<strong>
+wage
+</strong>
+</span>
+is connected to the extra revenue a firm can earn by hiring one more unit of labor. That value depends on skill, effort, tools, technology, organization, demand for the output, and the worker's alternatives. It is a marginal question, not a total-person question.
+</p>
+<p>
+A wage is a market price, not a measurement of a person's value. A liberal society treats people as equal in dignity even when markets pay different prices for different kinds of work. The model explains why wages differ. It does not tell us who matters.
+</p>
+</div>
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+Labor is a factor of production, and workers are people. That double truth makes this chapter the capstone of the firm unit. The competitive model says firms hire workers when the worker's next hour adds at least as much revenue as it costs, and wages tend to move toward the value of the worker's marginal contribution. But real labor markets are full of search costs, mobility barriers, monopsony power, discrimination, credentials, licensing rules, bargaining, and institutions. Learn the model because it is powerful. Keep the guardrail because wages are prices for labor services, not measures of human worth.
+</div>
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0" title="Labor market: a market where firms demand labor and workers supply it.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Labor market
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A market in which firms demand labor and workers supply labor. The wage is the price of labor.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Human capital: skills, education, training, habits, and knowledge that make labor more productive.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Human capital
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Skills, education, training, habits, and knowledge that make a worker more productive.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Marginal product: extra output produced by one more unit of labor.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Marginal product (MP)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The additional output produced by one more unit of labor, holding other inputs constant.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Marginal revenue product: additional revenue generated by one more unit of a resource.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Marginal revenue product (MRP)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The additional revenue generated by one more unit of a resource. For labor: MRP = MP x MR.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Marginal resource cost: added cost of hiring one more unit of a resource.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Marginal resource cost (MRC)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The additional cost of hiring one more unit of a resource. For a wage-taking firm, MRC equals the wage.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0" title="Monopsony: a labor market with one dominant buyer of labor.">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Monopsony
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A labor market with a single dominant buyer of labor, giving the employer wage-setting power.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item" title="Derived demand: input demand that comes from output demand.">
+derived demand
+<span class="etb-ak-pop">
+Demand for a resource that comes from demand for the output it helps produce.
+</span>
+</span>
+<span class="etb-ak-item" title="Labor demand: firms' willingness and ability to hire labor at different wages.">
+labor demand
+<span class="etb-ak-pop">
+Firms' willingness and ability to hire labor at different wages. It slopes downward because MRP usually falls as more labor is added to fixed inputs.
+</span>
+</span>
+<span class="etb-ak-item" title="Labor supply: workers' willingness and ability to offer labor at different wages.">
+labor supply
+<span class="etb-ak-pop">
+Workers' willingness and ability to offer labor at different wages, shaped by alternatives, preferences, mobility, training, and barriers.
+</span>
+</span>
+<span class="etb-ak-item" title="Diminishing marginal product: MP eventually falls as more labor is added to fixed inputs.">
+diminishing marginal product
+<span class="etb-ak-pop">
+The tendency for marginal product to fall as more of a variable input is added to fixed inputs.
+</span>
+</span>
+<span class="etb-ak-item" title="Mobility barrier: anything that makes moving across jobs, places, or occupations harder.">
+mobility barrier
+<span class="etb-ak-pop">
+Anything that makes it harder for workers to move across jobs, occupations, firms, regions, or countries.
+</span>
+</span>
+<span class="etb-ak-item" title="Occupational licensure: legal permission required before working in a profession.">
+occupational licensure
+<span class="etb-ak-pop">
+A legal requirement to obtain government permission before working in a profession; sometimes justified by safety, often a barrier to entry.
+</span>
+</span>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1
+</div>
+<h2>
+Labor Demand Is Derived Demand
+</h2>
+<p class="etb-deck">
+A firm hires workers because customers value what those workers help produce.
+</p>
+<div class="etb-body">
+<p>
+A
+<span data-tip="A market in which firms demand labor and workers supply labor." class="">
+<strong>
+labor market
+</strong>
+</span>
+is a factor market. Firms demand labor; workers supply it; the
+<span data-tip="The price of labor, usually paid per hour, week, year, or task." class="">
+<strong>
+wage
+</strong>
+</span>
+is the price. But demand for labor is not floating in space. It is
+<span data-tip="Demand for a resource that comes from demand for the output it helps produce." class="">
+<strong>
+derived demand
+</strong>
+</span>
+: firms demand workers because workers help produce goods and services consumers value.
+</p>
+<p>
+A restaurant hires cooks because people want meals. A hospital hires nurses because patients value care. A software firm hires engineers because users, advertisers, or clients value the product. If demand for the output rises, demand for the labor that helps produce it often rises too. If customers stop wanting the output, the demand for that labor can fall even if the workers are hardworking and decent.
+</p>
+<p>
+This model tells us something about why firms hire, and what they're willing to pay. (As mentioned earlier, it does not explain virtue, intelligence, effort, kindness, courage, or full social contribution.) This question is narrow: how much extra revenue does this worker's next hour help create for this firm in this market?
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Competitive labor market graph">
+<rect fill="#fff">
+</rect>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2">
+</line>
+<path d="M140 315 C260 250 420 160 610 75" fill="none" stroke="#2a7a4f" stroke-width="4">
+</path>
+<path d="M140 85 C260 135 420 235 610 320" fill="none" stroke="#1a3a5c" stroke-width="4">
+</path>
+<circle cx="355" cy="196" r="5" fill="#333">
+</circle>
+<line x1="355" y1="196" x2="355" y2="350" stroke="#999" stroke-dasharray="6 6">
+</line>
+<line x1="90" y1="196" x2="355" y2="196" stroke="#999" stroke-dasharray="6 6">
+</line>
+<text x="640" y="374" font-family="sans-serif" font-size="14" fill="#333">
+Q of labor
+</text>
+<text x="24" y="62" font-family="sans-serif" font-size="14" fill="#333" transform="rotate(-90 24 62)">
+Wage
+</text>
+<text x="600" y="72" font-family="sans-serif" font-size="15" font-weight="700" fill="#2a7a4f">
+S labor
+</text>
+<text x="600" y="315" font-family="sans-serif" font-size="15" font-weight="700" fill="#1a3a5c">
+D labor
+</text>
+<text x="365" y="190" font-family="sans-serif" font-size="13" fill="#333">
+E
+</text>
+<text x="47" y="201" font-family="sans-serif" font-size="13" fill="#333">
+W*
+</text>
+<text x="345" y="374" font-family="sans-serif" font-size="13" fill="#333">
+L*
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 14.1
+</span>
+<span class="etb-figure-title">
+A competitive labor market. Labor demand comes from firms; labor supply comes from workers. The equilibrium wage and employment level are set by supply and demand.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP watch:
+</strong>
+the vertical axis is the wage, not the product price. The horizontal axis is quantity of labor.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Demand for restaurant meals rises. What happens to demand for cooks, and why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Demand for cooks increases because labor demand is derived demand. Customers want more meals, so restaurants demand more of the labor that helps produce meals.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2
+</div>
+<h2>
+Marginal Product and Marginal Revenue Product
+</h2>
+<p class="etb-deck">
+Chapter 10 said inputs become output. Now ask the sharper question: how much value does one more worker add?
+</p>
+<div class="etb-body">
+<p>
+The value of an additional worker depends on two pieces. First, how much extra output does the worker help produce? That is
+<span data-tip="The additional output produced by one more unit of labor, holding other inputs constant." class="">
+<strong>
+marginal product
+</strong>
+</span>
+. Second, how much revenue does the firm receive from selling that extra output? Multiply them together and you get
+<span data-tip="The additional revenue generated by one more unit of a resource. For labor: MRP = MP x MR." class="">
+<strong>
+marginal revenue product
+</strong>
+</span>
+.
+</p>
+<p>
+The formulas are the AP muscle of the chapter:
+</p>
+<p>
+<code>
+MP = change in total product / change in labor
+</code>
+</p>
+<p>
+<code>
+MRP = MP x MR
+</code>
+</p>
+<p>
+In a perfectly competitive product market,
+<code>
+MR = P
+</code>
+, so
+<code>
+MRP = MP x P
+</code>
+. If each smoothie sells for $5, and the next worker adds 18 smoothies per day, that worker's MRP is $90 per day.
+</p>
+</div>
+<table class="etb-sched">
+<caption>
+Calculating MP and MRP when product price is $5
+</caption>
+<thead>
+<tr>
+<th>
+Workers
+</th>
+<th>
+Total product
+</th>
+<th>
+MP
+</th>
+<th>
+Price / MR
+</th>
+<th>
+MRP
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+-
+</td>
+<td>
+$5
+</td>
+<td>
+-
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+20
+</td>
+<td>
+20
+</td>
+<td>
+$5
+</td>
+<td>
+$100
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+38
+</td>
+<td>
+18
+</td>
+<td>
+$5
+</td>
+<td>
+$90
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+52
+</td>
+<td>
+14
+</td>
+<td>
+$5
+</td>
+<td>
+$70
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+62
+</td>
+<td>
+10
+</td>
+<td>
+$5
+</td>
+<td>
+$50
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+68
+</td>
+<td>
+6
+</td>
+<td>
+$5
+</td>
+<td>
+$30
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+70
+</td>
+<td>
+2
+</td>
+<td>
+$5
+</td>
+<td>
+$10
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-body">
+<p>
+Notice the pattern. Total product rises as more workers are added, but marginal product falls after a while. This is
+<span data-tip="The tendency for marginal product to fall as more labor is added to fixed inputs." class="">
+<strong>
+diminishing marginal product
+</strong>
+</span>
+. The counter gets crowded. The blender becomes the bottleneck. The manager cannot coordinate everyone perfectly. When marginal product falls, MRP falls too, so the firm's demand for labor slopes downward.
+</p>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Find MP and MRP
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+When the third worker is hired, total product rises from 38 to 52 smoothies. Each smoothie sells for $5.
+</p>
+<ol class="etb-worked-steps">
+<li>
+MP = 52 - 38 = 14 smoothies.
+</li>
+<li>
+MRP = MP x price = 14 x $5 = $70.
+</li>
+<li>
+The third worker adds $70 of revenue per day.
+</li>
+</ol>
+<div class="etb-worked-answer">
+AP habit: show the change in total product before multiplying by price.
+</div>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Using the table, calculate the MP and MRP of the fifth worker.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+The fifth worker raises total product from 62 to 68, so MP = 6. With price/MR = $5, MRP = 6 x $5 = $30.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3
+</div>
+<h2>
+The Hiring Rule: Hire Until MRP = MRC
+</h2>
+<p class="etb-deck">
+Chapter 11 gave firms MR = MC for output. For inputs, the matching rule is MRP = MRC.
+</p>
+<div class="etb-body">
+<p>
+A profit-maximizing firm does not hire workers because "more labor is always good." It hires as long as the next worker adds at least as much revenue as the worker costs. The added cost of hiring one more unit of a resource is
+<span data-tip="The additional cost of hiring one more unit of a resource." class="">
+<strong>
+marginal resource cost
+</strong>
+</span>
+.
+</p>
+<p>
+The rule is simple:
+</p>
+<p>
+<code>
+Hire if MRP &gt; MRC.
+</code>
+</p>
+<p>
+<code>
+Do not hire if MRP &lt; MRC.
+</code>
+</p>
+<p>
+<code>
+Profit-maximizing input choice: MRP = MRC
+</code>
+, or as close as possible without hiring a worker whose cost exceeds added revenue.
+</p>
+<p>
+In a competitive labor market, the individual firm is a wage taker. It can hire as many workers as it wants at the market wage, so
+<code>
+MRC = wage
+</code>
+. If the wage is $50 per day, the firm hires workers whose MRP is at least $50 and stops before hiring a worker whose MRP is below $50.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Individual firm MRP and MRC graph">
+<rect fill="#fff">
+</rect>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2">
+</line>
+<path d="M135 75 C250 125 395 225 615 330" fill="none" stroke="#1a3a5c" stroke-width="4">
+</path>
+<line x1="110" y1="215" x2="630" y2="215" stroke="#2a7a4f" stroke-width="4">
+</line>
+<circle cx="405" cy="215" r="5" fill="#333">
+</circle>
+<line x1="405" y1="215" x2="405" y2="350" stroke="#999" stroke-dasharray="6 6">
+</line>
+<line x1="90" y1="215" x2="405" y2="215" stroke="#999" stroke-dasharray="6 6">
+</line>
+<text x="602" y="323" font-family="sans-serif" font-size="15" font-weight="700" fill="#1a3a5c">
+MRP = D labor
+</text>
+<text x="545" y="205" font-family="sans-serif" font-size="15" font-weight="700" fill="#2a7a4f">
+MRC = wage
+</text>
+<text x="640" y="374" font-family="sans-serif" font-size="14" fill="#333">
+Labor
+</text>
+<text x="24" y="62" font-family="sans-serif" font-size="14" fill="#333" transform="rotate(-90 24 62)">
+Dollars
+</text>
+<text x="48" y="220" font-family="sans-serif" font-size="13" fill="#333">
+W
+</text>
+<text x="393" y="374" font-family="sans-serif" font-size="13" fill="#333">
+L*
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 14.2
+</span>
+<span class="etb-figure-title">
+The individual competitive firm's hiring graph. The firm takes the wage as given, so MRC is horizontal. It hires where MRP equals MRC.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP watch:
+</strong>
+do not confuse this with the market graph. The market sets the wage; the individual competitive firm takes the wage.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Hiring decision
+</span>
+<span class="etb-worked-title">
+How many workers at a $50 wage?
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Use the MRP column from the smoothie table: $100, $90, $70, $50, $30, $10.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Workers 1, 2, and 3 all have MRP greater than the $50 wage.
+</li>
+<li>
+Worker 4 has MRP equal to the $50 wage.
+</li>
+<li>
+Worker 5 has MRP of $30, which is below the wage.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Hire 4 workers. Stop before hiring the fifth.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+If the wage rises from $50 to $80 in the table, how many workers should the firm hire?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Hire 2 workers. The first worker's MRP is $100 and the second is $90. The third worker's MRP is $70, which is below the $80 wage.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4
+</div>
+<h2>
+Competitive Labor-Market Equilibrium
+</h2>
+<p class="etb-deck">
+Wages coordinate two searches: firms looking for productive labor and workers looking for worthwhile opportunities.
+</p>
+<div class="etb-body">
+<p>
+In the market labor graph, wages and employment are determined by
+<span data-tip="Workers' willingness and ability to offer labor at different wages.">
+<strong>
+labor supply
+</strong>
+</span>
+and
+<span data-tip="Firms' willingness and ability to hire labor at different wages.">
+<strong>
+labor demand
+</strong>
+</span>
+. Labor demand shifts when output demand changes, product price changes, worker productivity changes, technology changes, or complementary capital becomes more valuable. Labor supply shifts when population, immigration, training, alternative wages, working conditions, preferences, licensing rules, credentials, or mobility costs change.
+</p>
+<p>
+Capital and technology can cut both ways. A machine can replace some workers, reducing demand for that kind of labor. But better tools can also raise the marginal product of workers who use them, increasing demand for those workers. A nurse with better diagnostic technology, a carpenter with better tools, or a programmer with stronger software can create more value per hour.
+</p>
+<p>
+This is the market-allocation thread. Labor markets pull workers toward jobs, firms, industries, and places where their skills create more value. The more options workers have, the better that process works. A worker with three competing employers has a stronger position than a worker with one employer and no realistic exit.
+</p>
+</div>
+<div class="etb-2col">
+<div class="etb-2item">
+<div class="etb-2item-hd">
+Demand shifts right when...
+</div>
+<div class="etb-2item-bd">
+Output demand rises, product price rises, worker productivity rises, workers gain better complementary capital, or technology makes a skill more valuable.
+</div>
+</div>
+<div class="etb-2item">
+<div class="etb-2item-hd">
+Supply shifts right when...
+</div>
+<div class="etb-2item-bd">
+More workers enter, immigration expands the workforce, training lowers entry costs, alternative jobs become less attractive, or barriers to entry fall.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+New software makes paralegals much more productive. What happens to demand for paralegals if firms still need humans to use the software well?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Labor demand can increase because the software is complementary capital. It raises paralegals' marginal product and therefore their MRP.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Draw the market graph and show what happens when demand for the output rises.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Draw wage on the vertical axis and quantity of labor on the horizontal axis. Shift labor demand right because output demand rises. Equilibrium wage and employment both rise, assuming labor supply slopes upward.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 5
+</div>
+<h2>
+The Competitive Wage Model Is Powerful and Incomplete
+</h2>
+<p class="etb-deck">
+The benchmark says wages tend toward MRP. Reality asks whether competition and worker options are actually there.
+</p>
+<div class="etb-body">
+<p>
+The clean model is powerful because it says something precise: in competitive labor and product markets, employers cannot long pay workers more than the value they add, because the firm will lose money. They also cannot long pay workers much less than the value they add if other employers are free to bid those workers away. Competition pushes wages toward MRP.
+</p>
+<p>
+But "toward" matters. Real labor markets can depart from the benchmark because of search costs, bargaining power, discrimination, unions, credentials, licensing, immigration restrictions, noncompete agreements, information problems, regional immobility, and employer market power. A wage can be lower than a worker's MRP if the worker has few options. A wage can be higher than MRP for a while because of institutions, contracts, or mistakes. The model is a benchmark, not a moral verdict.
+</p>
+<p>
+There is, of course, a limitation:
+<span data-tip="A labor market with one dominant buyer of labor, giving the employer wage-setting power.">
+<strong>
+monopsony
+</strong>
+</span>
+. A monopsonist faces an upward-sloping labor supply curve. To hire more workers, it must raise the wage, often for all workers, so its MRC curve lies above labor supply. It hires where MRP = MRC, then pays the wage from the labor supply curve at that employment level. Compared with a competitive market, monopsony usually means lower employment and lower wages.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Monopsony labor market graph">
+<rect fill="#fff">
+</rect>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2">
+</line>
+<path d="M145 320 C270 255 430 160 610 78" fill="none" stroke="#2a7a4f" stroke-width="4">
+</path>
+<path d="M155 285 C285 210 430 105 590 45" fill="none" stroke="#b0883a" stroke-width="4">
+</path>
+<path d="M145 75 C260 125 405 220 610 322" fill="none" stroke="#1a3a5c" stroke-width="4">
+</path>
+<circle cx="355" cy="162" r="5" fill="#333">
+</circle>
+<line x1="355" y1="162" x2="355" y2="350" stroke="#999" stroke-dasharray="6 6">
+</line>
+<line x1="90" y1="246" x2="355" y2="246" stroke="#999" stroke-dasharray="6 6">
+</line>
+<line x1="355" y1="246" x2="355" y2="162" stroke="#999" stroke-dasharray="3 5">
+</line>
+<text x="610" y="80" font-family="sans-serif" font-size="15" font-weight="700" fill="#2a7a4f">
+S labor
+</text>
+<text x="590" y="50" font-family="sans-serif" font-size="15" font-weight="700" fill="#b0883a">
+MRC
+</text>
+<text x="603" y="317" font-family="sans-serif" font-size="15" font-weight="700" fill="#1a3a5c">
+MRP
+</text>
+<text x="32" y="251" font-family="sans-serif" font-size="13" fill="#333">
+Wm
+</text>
+<text x="338" y="374" font-family="sans-serif" font-size="13" fill="#333">
+Lm
+</text>
+<text x="640" y="374" font-family="sans-serif" font-size="14" fill="#333">
+Labor
+</text>
+<text x="24" y="62" font-family="sans-serif" font-size="14" fill="#333" transform="rotate(-90 24 62)">
+Wage
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 14.3
+</span>
+<span class="etb-figure-title">
+Monopsony benchmark. The employer hires where MRP = MRC, then pays the wage workers require from the labor supply curve. This usually reduces both wages and employment compared with competition.
+</span>
+<div class="etb-figure-notice">
+<strong>
+AP watch:
+</strong>
+in monopsony, the wage is read down from the hiring quantity to the labor supply curve, not from the MRC curve.
+</div>
+</div>
+</div>
+<div class="etb-applications">
+<div class="etb-app-header">
+<span class="etb-app-badge">
+Model meets reality
+</span>
+<span class="etb-app-title">
+How economists analyze a wage gap
+</span>
+</div>
+<div class="etb-app-body">
+<p>
+A wage gap is not solved by one slogan. Economists ask which mechanisms are operating: human capital, occupation and industry choice, hours and flexibility, caregiving constraints, discrimination, monopsony or bargaining power, workplace norms, networks, and institutions. Some mechanisms affect MRP. Some affect labor supply. Some affect bargaining conditions or access to opportunities. The point is not to settle every case in one chapter. The point is to ask better questions.
+</p>
+</div>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+If economists ruled the world · Make it easy for people to work
+</div>
+<div class="etb-note-body">
+<p>
+Default away from
+<span data-tip="A legal requirement to obtain government permission before working in a profession.">
+<strong>
+occupational licensure
+</strong>
+</span>
+unless the public-safety case is strong, and even then design it narrowly. Doctors, pilots, and electricians are not the same as low-risk service work. Use certification, inspections, bonding, insurance, disclosure, ratings, or targeted training when those solve the problem with less damage. Do not make it illegal for people to work unless the public case is strong.
+</p>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Name two reasons wages may depart from competitive MRP.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+Examples include monopsony power, discrimination, search costs, bargaining power, licensing, credentials, immigration restrictions, noncompete agreements, information problems, unions, or regional immobility.
+</div>
+</details>
+</div>
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 6
+</div>
+<h2>
+The Welfare Cliff
+</h2>
+<p class="etb-deck">
+How welfare can harm welfare: what happens when good intentions ignore economic laws.
+</p>
+<div class="etb-body">
+<p>
+The safety net has a moral goal: reduce poverty, narrow inequality, and raise
+<span data-tip="The total well-being of a society — the thing anti-poverty policy ultimately exists to protect." class="">
+<strong>
+social welfare
+</strong>
+</span>
+. The word does double duty. "Welfare" names both the programs that transfer resources and the human flourishing those programs exist to protect. Most of this chapter has treated the wage as the price that clears a labor market. Here we ask what happens when government tops up low incomes — because the way it does so runs straight into the laws of incentives we have been building all unit.
+</p>
+<p>
+Almost every means-tested program shares one design feature: benefits shrink as earned income rises. That is reasonable, since help should flow to those who need it most. But shrinking a benefit as earnings rise is, mathematically, a tax on earning more. Economists measure it with the
+<span data-tip="The share of one additional dollar of earnings lost to taxes plus reduced benefits.">
+<strong>
+effective marginal tax rate
+</strong>
+</span>
+: the fraction of one additional dollar of earnings that is lost to taxes and to benefits that phase out. If earning $1 more costs 40 cents in taxes and forgone benefits, the effective marginal tax rate is 40 percent, whatever the official bracket says.
+</p>
+<p>
+Now stack several programs together — food assistance, housing, child care, health coverage. Their phase-outs pile on top of one another, and the effective marginal tax rate on a low-income worker can climb past 60, 80, even 100 percent. When it crosses 100 percent, earning more leaves a family with less. That is a
+<span data-tip="A point where one more dollar of earnings triggers the loss of benefits worth far more than a dollar, so total resources fall." class="">
+<strong>
+welfare cliff
+</strong>
+</span>
+: a threshold where a single extra dollar of earnings ends a benefit worth far more than a dollar, so total resources drop (Fig 14.4).
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="Welfare cliff: total resources fall when earnings cross a benefit threshold">
+<rect x="0" y="0" fill="#fff">
+</rect>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2">
+</line>
+<path d="M90 350 L610 150" fill="none" stroke="#9bb0c4" stroke-width="2.5" stroke-dasharray="7 6">
+</path>
+<path d="M90 255 L360 165 L360 250 L610 118" fill="none" stroke="#2a7a4f" stroke-width="4">
+</path>
+<path d="M360 165 L360 250" fill="none" stroke="#b0883a" stroke-width="5">
+</path>
+<circle cx="360" cy="165" r="5" fill="#b0883a">
+</circle>
+<circle cx="360" cy="250" r="5" fill="#b0883a">
+</circle>
+<line x1="90" y1="165" x2="360" y2="165" stroke="#d8d8d8" stroke-dasharray="4 5">
+</line>
+<line x1="90" y1="250" x2="360" y2="250" stroke="#d8d8d8" stroke-dasharray="4 5">
+</line>
+<text x="378" y="150" font-family="sans-serif" font-size="14" font-weight="700" fill="#b0883a">
+Welfare cliff
+</text>
+<text x="378" y="168" font-family="sans-serif" font-size="11.5" fill="#8a6a2a">
+one $ over the limit
+</text>
+<text x="410" y="322" font-family="sans-serif" font-size="14" font-weight="700" fill="#2a7a4f">
+Resources incl. benefits
+</text>
+<text x="505" y="140" font-family="sans-serif" font-size="13" fill="#6b8199">
+Earnings only
+</text>
+<text x="560" y="374" font-family="sans-serif" font-size="14" fill="#333">
+Earned income
+</text>
+<text x="30" y="70" font-family="sans-serif" font-size="14" fill="#333" transform="rotate(-90 30 70)">
+Total resources
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 14.4
+</span>
+<span class="etb-figure-title">
+The welfare cliff. As earnings rise, benefits phase out, so total resources climb more slowly than earnings (the gap to the dashed line). At the cliff, crossing an eligibility limit ends a benefit outright and total resources fall — earning more has left the family worse off.
+</span>
+<div class="etb-figure-notice">
+<strong>
+Watch:
+</strong>
+the drop is the whole point. A worker would have to earn far past the cliff just to get back to where they stood before it.
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+A worker facing a cliff who turns down a raise, declines extra hours, or refuses a promotion is not being lazy. They are responding rationally to the incentive the policy built, exactly as this unit's labor-supply logic predicts: people supply more labor when the net return to working rises and less when it falls. A cliff makes the net return to crossing it negative. The tragedy is that a program meant to raise well-being can trap a family below the cliff, discourage advancement, and lower the output and mobility that well-being ultimately rests on. Well-meant welfare can, through incentives alone, harm welfare.
+</p>
+</div>
+<table class="etb-sched">
+<caption>
+One dollar over the limit: a benefits cliff
+</caption>
+<tbody>
+<tr>
+<th>
+Earned income
+</th>
+<th>
+Benefits kept
+</th>
+<th>
+Total resources
+</th>
+</tr>
+<tr>
+<td>
+$26,000
+</td>
+<td>
+$9,000
+</td>
+<td>
+$35,000
+</td>
+</tr>
+<tr>
+<td>
+$30,000
+</td>
+<td>
+$9,000
+</td>
+<td>
+$39,000
+</td>
+</tr>
+<tr style="background:#fbeee0;">
+<td>
+<strong>
+$31,000
+</strong>
+</td>
+<td>
+<strong>
+$0
+</strong>
+</td>
+<td>
+<strong>
+$31,000
+</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+The effective marginal tax rate at a cliff
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+A worker earning $30,000 keeps $9,000 in stacked benefits, for $39,000 in total resources. A $1,000 raise pushes them just over an eligibility limit and ends the entire $9,000 benefit.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Extra earnings from the raise: $31,000 − $30,000 = $1,000.
+</li>
+<li>
+Benefits lost by crossing the limit: $9,000.
+</li>
+<li>
+Change in total resources: +$1,000 − $9,000 = −$8,000.
+</li>
+<li>
+Effective marginal tax rate = resources lost ÷ extra earned = $8,000 ÷ $1,000 = 800%.
+</li>
+</ol>
+<div class="etb-worked-answer">
+The raise leaves the family $8,000 poorer. An 800% effective tax on those earnings makes turning the raise down the rational choice. The incentive is broken, not the worker.
+</div>
+</div>
+</div>
+<div class="etb-bigidea">
+A transfer that phases out too fast taxes effort; a transfer that rewards effort expands it. Same goal, opposite results, because incentives are not optional.
+</div>
+<div class="etb-body">
+<p>
+The fix is not to abandon the goal but to redesign the incentive. The
+<span data-tip="A refundable U.S. tax credit for low- and moderate-income working people; you must have earned income to receive it.">
+<strong>
+Earned Income Tax Credit
+</strong>
+</span>
+(EITC) is the clearest example of a transfer that works with incentives instead of against them, and it is among the largest anti-poverty programs in the United States. Its defining feature is that you must earn to receive it, and it is built in three stages.
+</p>
+<p>
+In the
+<span data-tip="The range where the credit grows with every dollar earned, adding a set share on top of wages.">
+<strong>
+phase-in
+</strong>
+</span>
+range, the credit rises with every dollar earned: for each dollar of wages the worker keeps the wage and receives an extra share on top. That is a negative marginal tax rate on work — the government pays you to earn. Across a middle plateau the credit holds at its maximum. Then a gradual
+<span data-tip="The range where the credit shrinks slowly as income rises, until it reaches zero — a modest positive marginal tax rate, never a sudden drop.">
+<strong>
+phase-out
+</strong>
+</span>
+shrinks it slowly to zero. The phase-out is smooth by design: a modest tax on additional earnings, never a cliff (Fig 14.5).
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 720 430" role="img" aria-label="EITC structure: credit phases in, plateaus, then phases out gradually">
+<rect x="0" y="0" fill="#fff">
+</rect>
+<line x1="90" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2">
+</line>
+<line x1="90" y1="350" x2="90" y2="45" stroke="#333" stroke-width="2">
+</line>
+<line x1="250" y1="350" x2="250" y2="140" stroke="#cfcfcf" stroke-dasharray="4 5">
+</line>
+<line x1="380" y1="350" x2="380" y2="140" stroke="#cfcfcf" stroke-dasharray="4 5">
+</line>
+<path d="M90 350 L250 140 L380 140 L600 350" fill="none" stroke="#2a7a4f" stroke-width="4">
+</path>
+<circle cx="250" cy="140" r="4" fill="#2a7a4f">
+</circle>
+<circle cx="380" cy="140" r="4" fill="#2a7a4f">
+</circle>
+<text x="150" y="240" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#2a7a4f" transform="rotate(-52 150 240)">
+credit rises
+</text>
+<text x="300" y="126" font-family="sans-serif" font-size="12" fill="#5a6b5f">
+maximum credit
+</text>
+<text x="150" y="372" font-family="sans-serif" font-size="12" fill="#555">
+Phase-in
+</text>
+<text x="290" y="372" font-family="sans-serif" font-size="12" fill="#555">
+Plateau
+</text>
+<text x="455" y="372" font-family="sans-serif" font-size="12" fill="#555">
+Phase-out
+</text>
+<text x="435" y="238" font-family="sans-serif" font-size="12" fill="#8a6a2a">
+gradual, no cliff
+</text>
+<text x="560" y="398" font-family="sans-serif" font-size="14" fill="#333">
+Earned income
+</text>
+<text x="30" y="66" font-family="sans-serif" font-size="14" fill="#333" transform="rotate(-90 30 66)">
+EITC credit
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 14.5
+</span>
+<span class="etb-figure-title">
+The EITC obeys incentives. The credit grows as earnings rise (a subsidy to work), holds at a maximum, then tapers gently to zero. Compare Fig 14.4: there is no vertical drop anywhere, so working always leaves a household better off.
+</span>
+</div>
+</div>
+<div class="etb-body">
+<p>
+Because the phase-in raises the reward to the first hours of work, the EITC pulls people into the labor force — the
+<span data-tip="The decision of whether to work at all, as opposed to the intensive margin of how many hours to work." class="">
+<strong>
+extensive margin
+</strong>
+</span>
+of labor supply. Research consistently finds it raised employment among low-income single mothers, especially after the expansions of the 1990s, and it lifts millions above the poverty line each year by rewarding work rather than replacing it. It is not flawless: the phase-out still adds a modest tax on additional earnings, which can trim hours at the intensive margin; it does little for those who cannot work; and it arrives once a year in a tax refund rather than in each paycheck. But measured against a cliff, a gentle slope is a triumph. The EITC obeys the laws of incentives, and that is precisely why it shows real promise.
+</p>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+If economists ruled the world · Reward work, never punish it
+</div>
+<div class="etb-note-body">
+<p>
+Keep the effective marginal tax rate on low-income workers well below 100 percent, always. Coordinate benefit phase-outs so they do not stack into cliffs, replace abrupt eligibility limits with gradual tapers, and prefer earnings subsidies like the EITC that pay people for working over transfers that withdraw sharply the moment they do. The goal is not smaller help. It is help designed so that working is never the losing choice.
+</p>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why does a welfare cliff reduce work incentives, and how does the EITC avoid one?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+A cliff pushes the effective marginal tax rate above 100 percent, so earning more leaves a worker with fewer total resources — making it rational to not earn more. The EITC instead subsidizes the first dollars earned (a negative marginal tax rate) and phases out gradually, so working always pays.
+</div>
+</details>
+</div>
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+AP Micro practice
+</span>
+<p class="etb-exam-title">
+MP, MRP, hiring, and labor-market shifts
+</p>
+<p class="etb-exam-sub">
+This is the exam muscle of the chapter: table to graph to hiring decision.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+1
+</span>
+Calculate
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+2
+</span>
+Hire
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+3
+</span>
+Shift
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+MP and MRP
+</p>
+<p class="etb-exam-q">
+A firm sells output for $8. When labor rises from 3 to 4 workers, total product rises from 54 to 64 units. Calculate MP and MRP for the fourth worker.
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+MP = 64 - 54 = 10 units. MRP = MP x price = 10 x $8 = $80.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Hiring rule
+</p>
+<p class="etb-exam-q">
+A wage-taking firm faces a wage of $80. Its workers have MRP values of $140, $118, $96, $80, $62, and $35. How many workers should it hire?
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Hire 4 workers. The first three have MRP greater than the wage, the fourth has MRP equal to the wage, and the fifth has MRP below the wage.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Market graph shift
+</p>
+<p class="etb-exam-q">
+Demand for home health care rises as the population ages. In a competitive labor market for home health aides, what happens to labor demand, wage, and employment?
+</p>
+<details class="etb-reveal">
+<summary>
+Reveal answer
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Labor demand shifts right because demand for the output rises. Equilibrium wage rises and equilibrium employment rises, assuming labor supply slopes upward.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-frq">
+<span class="etb-frq-badge">
+FRQ practice
+</span>
+<p class="etb-frq-title">
+Hiring workers in a competitive labor market
+</p>
+<p class="etb-frq-meta">
+Suggested time: 10 minutes · 9 points
+</p>
+<p class="etb-frq-scenario">
+A firm sells its output in a perfectly competitive product market at a price of $6. It hires workers in a competitive labor market at a wage of $72 per day. The firm's total product schedule is: 0 workers = 0 units, 1 = 18 units, 2 = 34 units, 3 = 46 units, 4 = 56 units, 5 = 63 units, 6 = 67 units.
+</p>
+<ol class="etb-frq-parts">
+<li>
+<span class="etb-frq-pts">
+2 pts
+</span>
+Calculate the marginal product and marginal revenue product of the third worker.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+State the hiring rule for a profit-maximizing firm.
+</li>
+<li>
+<span class="etb-frq-pts">
+2 pts
+</span>
+Determine the profit-maximizing number of workers and explain why.
+</li>
+<li>
+<span class="etb-frq-pts">
+2 pts
+</span>
+Draw the individual firm's labor demand graph with MRP and horizontal MRC/wage line.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Explain why an increase in demand for the firm's product would shift labor demand.
+</li>
+<li>
+<span class="etb-frq-pts">
+1 pt
+</span>
+Explain one reason a real-world wage might differ from the competitive MRP benchmark.
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal scoring guide
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+MP of third worker = 46 - 34 = 12 units.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+MRP of third worker = 12 x $6 = $72.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+States hire until MRP = MRC, or hire while MRP is at least the wage and stop before MRP falls below wage.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Calculates or identifies MRP sequence: $108, $96, $72, $60, $42, $24.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Hires 3 workers because the third worker's MRP equals the wage and the fourth worker's MRP is below the wage.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Correct graph axes: dollars/wage on vertical and quantity of labor on horizontal, with MRP downward sloping.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Horizontal MRC/wage line at $72 and hiring quantity marked at 3 workers.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Explains labor demand is derived demand, so higher product demand raises the value of labor's output and shifts MRP/labor demand right.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+Names and explains a real-world friction such as monopsony, discrimination, search costs, licensing, bargaining power, or mobility barriers.
+</li>
+</ul>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal common mistakes
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul>
+<li>
+Using total product instead of marginal product when calculating MRP.
+</li>
+<li>
+Hiring the fourth worker because total product still rises. The correct comparison is MRP versus wage.
+</li>
+<li>
+Drawing the market labor graph when the prompt asks for the individual firm's graph.
+</li>
+<li>
+Writing that wages measure human worth. In this chapter, wages are prices for labor services under scarcity.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+Markets allocate labor by pulling workers toward the places where their work creates the most value. In competitive markets, wages tend toward marginal revenue product: not because people are worth only what they earn, but because firms bid for labor services according to the value those services help create.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world...
+</div>
+<p class="etb-synth-leadtext">
+we would make it easy for people to work, change jobs, enter occupations, move across places, and bargain from real options. We would be skeptical of rules that sound protective but mostly keep outsiders out.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+<ul class="etb-synth-list">
+<li>
+Labor demand is derived from demand for output.
+</li>
+<li>
+Firms hire until MRP = MRC, or as close as possible without hiring a worker whose MRP is below wage.
+</li>
+<li>
+Productivity, output demand, human capital, tools, and worker options all affect wages.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+<ul class="etb-synth-list">
+<li>
+Which licensing rules genuinely protect the public, and which protect insiders from competition?
+</li>
+<li>
+How should institutions respond when monopsony, discrimination, or immobility weakens worker options?
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+In your life
+</div>
+<p>
+Specialize in skills that raise the value of your marginal contribution, then keep enough options that someone has to compete for it. Look for the place where your next hour creates more value.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+In your work
+</div>
+<p>
+Take good care of people by raising their productivity, options, and dignity. Better tools, training, processes, teams, and management can raise MRP without treating labor as disposable.
+</p>
+</div>
+</div>
+</div>
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/factor-markets/introduction-to-factor-markets/v/introduction-to-labor-markets" target="_blank" rel="noopener">
+<img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Introduction to labor markets
+</div>
+<div class="etb-yt-note">
+~7 min · best AP opener for wage/employment graphs, derived demand, and MRP · Pairs with Concepts 1 and 4 · Khan Academy
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/factor-markets/introduction-to-factor-markets/v/a-firm-s-marginal-product-revenue-curve" target="_blank" rel="noopener">
+<img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+A firm's marginal product revenue curve
+</div>
+<div class="etb-yt-note">
+AP calculation and graph bridge for MP, MRP, and the individual firm's labor demand curve · Pairs with Concepts 2-3 · Khan Academy
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/labor-economics-marginal-product-labor" target="_blank" rel="noopener">
+<img src="https://mru.org/themes/custom/mru_theme/images/mru-logo-social.png" alt="Marginal Revolution University">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+The Marginal Product of Labor
+</div>
+<div class="etb-yt-note">
+Conceptual application for productivity, human capital, and why wages can differ without measuring human worth · Pairs with the chapter thesis · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/factor-markets/monopsonistic-markets/v/a-monopsonistic-market-for-labor" target="_blank" rel="noopener">
+<img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+A monopsonistic market for labor
+</div>
+<div class="etb-yt-note">
+Best AP extension for the limits section: employer power, lower wages, and lower employment · Pairs with Concept 5 · Khan Academy
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function () { var pg = document.getElementById('etb-pg'); if (pg) { window.addEventListener('scroll', function () { var d = document.documentElement; var pct = (d.scrollTop || document.body.scrollTop) / ((d.scrollHeight - d.clientHeight) || 1); pg.style.width = Math.min(100, pct * 100) + '%'; }, { passive: true }); } document.querySelectorAll('.etb-flip').forEach(function (c) { c.addEventListener('click', function () { c.classList.toggle('flipped'); }); c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('flipped'); } }); }); document.querySelectorAll('.etb-ak-item').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('ak-open'); document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); if (!isOpen) el.classList.add('ak-open'); }); }); document.querySelectorAll('[data-tip]').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('tip-open'); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); if (!isOpen) el.classList.add('tip-open'); }); }); document.addEventListener('click', function () { document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); }); document.querySelectorAll('.etb-exam').forEach(function (box) { var tabs = box.querySelectorAll('.etb-exam-tab'); var panels = box.querySelectorAll('.etb-exam-panel'); tabs.forEach(function (t) { t.addEventListener('click', function () { var i = t.getAttribute('data-i'); tabs.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-i') === i); }); panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-i') === i); }); }); }); });})();
+</script>

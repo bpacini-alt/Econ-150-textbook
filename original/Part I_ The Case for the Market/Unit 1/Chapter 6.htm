@@ -1,0 +1,1463 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 0%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;}.etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;}.etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;}.etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:help;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"→ ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;}.etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-ret-body p{margin:0 0 .75rem;}.etb-ret-body p:last-child{margin:0;}details.etb-misc{background:#fdf0f0;border:1px solid #dba8a8;border-radius:8px;margin:1.5rem 0;}details.etb-misc summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#6b1f1f;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-misc summary::-webkit-details-marker{display:none;}.etb-misc-badge{background:#a33030;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-misc-arrow{margin-left:auto;color:#a33030;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-misc[open] .etb-misc-arrow{transform:rotate(90deg);}.etb-misc-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #dba8a8;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d0f0f;}.etb-misc-body p{margin:0 0 .75rem;}.etb-misc-body p:last-child{margin:0;}.etb-research{background:#f5f0fe;border:1px solid #b89dd4;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-research-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-research-badge{background:#6d4aaa;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-research-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#2d1854;}.etb-research-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#2d1854;}.etb-research-body p{margin:0 0 .65rem;}.etb-research-body p:last-child{margin:0;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;}.etb-note-body p:last-child{margin:0;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;}.etb-app-body p{margin:0 0 .75rem;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"→";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-synthesis{background:#1a3a5c;border-radius:10px;padding:1.75rem 2rem;margin:2.5rem 0 3rem;}.etb-syn-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem;}.etb-syn-body{font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.85;color:rgba(255,255,255,.9);font-style:italic;margin-bottom:1.35rem;}.etb-syn-takes{border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;display:flex;flex-direction:column;gap:9px;}.etb-syn-take{display:flex;gap:11px;align-items:flex-start;}.etb-syn-dot{width:6px;height:6px;border-radius:50%;background:#5dcaa5;flex-shrink:0;margin-top:7px;}.etb-syn-text{font-family:sans-serif;font-size:13px;color:rgba(255,255,255,.82);line-height:1.6;}.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-head{display:flex;align-items:center;gap:9px;margin-bottom:.65rem;}.etb-synth-card-head svg{width:18px;height:18px;flex:none;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin-top:1px;}.etb-synth-card.pos .etb-synth-card-label{color:#1f6f47;}.etb-synth-card.pos .etb-synth-card-sub{color:#418a64;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li + li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;}.etb-synth-card.pos .etb-synth-list li{color:#2c4034;}.etb-synth-card.pos .etb-synth-list li::before{color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{display:flex;align-items:center;gap:7px;font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take-head svg{width:15px;height:15px;flex:none;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-synth-arrow{display:flex;justify-content:center;margin-top:1.3rem;}.etb-synth-arrow span{width:34px;height:34px;border:1px solid #dcdcdc;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#aaa;}.etb-synth-arrow svg{width:16px;height:16px;}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}.etb-yt:last-child{margin-bottom:0;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-thumb:hover .etb-yt-play{background:rgba(0,0,0,.48);}.etb-yt-play::after{content:"▶";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;}.etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-2col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-2item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item-hd{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.5;padding:10px 12px;}.etb-4col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-4item{flex:1 1 140px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-4item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-4item-bd{font-family:sans-serif;font-size:12.5px;color:#444;line-height:1.5;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;}.etb-compare tr:last-child td{border-bottom:none;}blockquote.etb-quote{border-left:3px solid #bbb;margin:1.25rem 0;padding:.75rem 1.25rem;background:#f9f9f7;font-style:italic;font-size:14.5px;color:#444;line-height:1.75;}.etb-photo{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-photo img{display:block;width:100%;height:auto;}.etb-photo-cap{padding:.6rem 1rem;border-top:1px solid #eee;font-family:sans-serif;font-size:12px;color:#666;line-height:1.55;}.etb-photo-cap strong{color:#1a3a5c;font-weight:700;}.etb-photo-credit{display:block;margin-top:.35rem;font-size:10.5px;color:#aaa;}.etb-photo-credit a{color:#aaa;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:auto;min-width:280px;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 18px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 18px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched tr:nth-child(even) td{background:#f7fafd;}.etb-sched tr:last-child td{border-bottom:none;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-svgwrap{display:block;width:100%;}.etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;}.etb-worked-body p{margin:0 0 .65rem;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:last-child{border-bottom:none;}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;}.etb-figure-notice strong{color:#1a3a5c;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}}
+</style>
+<div class="etb">
+<!-- ① TITLE CARD -->
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+6
+</div>
+<div class="etb-title-unit">
+Unit 1 · How Markets Coordinate
+</div>
+<h2 class="etb-title-main">
+Trade Part II:
+<br>
+Welfare Analysis, Shortages and Surpluses
+</h2>
+<p class="etb-title-sub">
+Also, the deadweight loss of Christmas
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 6
+</span>
+<span>
+~ 46 min read
+</span>
+</div>
+</div>
+<!-- ② HOOK -->
+<div class="etb-hook">
+<p>
+You spend $50 on a sweater for your cousin. He smiles, says thanks, and quietly would never have paid more than $30 for it himself. Something just happened that's worth pausing on: $50 of resources went in, $30 of value came out, and $20 simply… evaporated. Not stolen, not transferred to anyone — gone. No one is $20 richer for it. The world is poorer by twenty dollars and a sweater nobody quite wanted.
+</p>
+<p>
+In 1993 an economist named Joel Waldfogel did the arithmetic on this for the whole holiday season and published it under the magnificently grumpy title "The Deadweight Loss of Christmas." His finding: gift recipients typically value what they're given at something like a tenth to a third
+<em>
+less
+</em>
+than the giver paid — and across an economy, that adds up to tens of billions of dollars of value destroyed every December. He later called the holiday "an organized institution for value destruction." Bah, humbug, with a regression.
+</p>
+<p>
+This is a Scrooge-ish way to open a chapter, but it points at something profound and genuinely useful: economists can
+<em>
+measure
+</em>
+the value a trade creates, in dollars, off a supply-and-demand graph. Last chapter you watched trade create value but could only describe it; this chapter hands you the ruler. And once you can measure the value created, you can measure the value
+<em>
+destroyed
+</em>
+when the right trades don't happen — by a clumsy gift, a price control, a tax, a monopoly. That measurement is the payoff of everything in Unit 1. It's how we put a number on "markets create value," and on what it costs when they're blocked.
+</p>
+</div>
+<!-- ③ CORE IDEA -->
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+Last chapter showed that every voluntary trade creates value; this chapter measures it. A buyer who'd have paid more than the price pockets the difference (consumer surplus); a seller who'd have accepted less keeps the rest (producer surplus); together they are total surplus, the value the market creates. The market equilibrium maximizes that total — this is what "efficiency" means, and the equilibrium turns out to be efficient in two senses at once: it maximizes total surplus and it is Pareto efficient. But efficiency is only about the
+<em>
+size
+</em>
+of the pie, never about how fairly it's sliced. And when something blocks trades that should happen — most starkly, a price the law won't let move — total surplus shrinks: the lost value is deadweight loss, gone to no one. By the end you should be able to compute consumer and producer surplus as areas, explain why equilibrium is efficient, and measure the deadweight loss of a distortion — including a binding price ceiling or floor.
+</div>
+<!-- ④ VOCABULARY -->
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Willingness to pay
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The most a buyer would pay for a unit — its marginal value to them. The demand curve is just everyone's willingness to pay, lined up from highest to lowest.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Consumer surplus
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The gap between what a buyer was willing to pay and what they actually paid — the value they got for free. On a graph, the area below demand and above the price.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Producer surplus
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The gap between the price a seller received and the least they'd have accepted (their cost). On a graph, the area above supply and below the price.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Total surplus
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Consumer surplus + producer surplus — the whole value a market creates. Also called social surplus. The thing efficiency maximizes.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Efficiency
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+An outcome that maximizes total surplus — every worthwhile trade happens, no wasteful ones do. Says nothing about whether the result is
+<em>
+fair
+</em>
+.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Deadweight loss
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Total surplus that disappears when trades that should happen don't — value lost to everyone, transferred to no one. The triangle of vanished gains.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item">
+willingness to accept
+<span class="etb-ak-pop">
+The least a seller would take for a unit — their cost. The supply curve, read as a schedule.
+</span>
+</span>
+<span class="etb-ak-item">
+marginal benefit
+<span class="etb-ak-pop">
+The value of one more unit to a buyer — the demand curve's height. From Ch 2's marginal utility.
+</span>
+</span>
+<span class="etb-ak-item">
+marginal cost
+<span class="etb-ak-pop">
+The cost of making one more unit — the supply curve's height.
+</span>
+</span>
+<span class="etb-ak-item">
+social surplus
+<span class="etb-ak-pop">
+Another name for total surplus — the combined gains to buyers and sellers.
+</span>
+</span>
+<span class="etb-ak-item">
+equity
+<span class="etb-ak-pop">
+Fairness in how the pie is divided — a separate question from efficiency, and partly a values question.
+</span>
+</span>
+<span class="etb-ak-item">
+allocative efficiency
+<span class="etb-ak-pop">
+Producing exactly the quantity where marginal benefit equals marginal cost — total surplus maximized.
+</span>
+</span>
+<span class="etb-ak-item">
+Pareto efficient
+<span class="etb-ak-pop">
+No one can be made better off without making someone else worse off — every gain from trade already captured. From Ch 5.
+</span>
+</span>
+<span class="etb-ak-item">
+price ceiling
+<span class="etb-ak-pop">
+A legal maximum price. Binds (and causes a shortage) only when set below equilibrium. From Ch 4.
+</span>
+</span>
+<span class="etb-ak-item">
+price floor
+<span class="etb-ak-pop">
+A legal minimum price. Binds (and causes a surplus) only when set above equilibrium.
+</span>
+</span>
+<span class="etb-ak-item">
+Waldfogel
+<span class="etb-ak-pop">
+Economist whose "Deadweight Loss of Christmas" (1993) measured the value lost to ill-fitting gifts.
+</span>
+</span>
+</div>
+<!-- ⑤ CONCEPT 1 — SURPLUS -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1 · This is how we measure it all
+</div>
+<h2>
+Consumer and producer surplus
+</h2>
+<div class="etb-body">
+<p>
+Last chapter ended on a promise: that the gains from trade, which we could only describe, could be
+<em>
+measured
+</em>
+— in dollars, right off a supply-and-demand graph. This is the chapter that measures them. It builds the one ruler the rest of Unit 1 runs on: lay it against a working market and it reads off the value created; lay it against a blocked one and it reads off the value destroyed. Surplus is that ruler.
+</p>
+<p>
+One thing to settle first, because the phrase "gains from trade" has quietly grown. Last chapter the gains came from
+<em>
+specialization
+</em>
+— Crusoe fishing, Friday gathering, each doing what they sacrifice least to make.
+<span class="etb-xref">
+Ch 5
+</span>
+But value is also created whenever a buyer and seller simply
+<em>
+exchange
+</em>
+, with no specializing at all: if you'd happily pay $90 for a thing and I'd let it go for $45, the trade manufactures value out of the gap between us. These are two engines — gains from specialization and gains from exchange — and they are not rivals; they compound. You specialize to make a thing at low cost, then exchange it with someone who values it more than you do, and value is created at both steps. The tool we build now measures
+<em>
+both
+</em>
+, because both arrive on the graph as the same shape: a wedge between what a unit is worth to a buyer and what it costs a seller.
+</p>
+<p>
+Start with the demand curve, and recall what Chapter 2 taught us it really is.
+<span class="etb-xref">
+Ch 2
+</span>
+Each point on a demand curve is somebody's
+<span data-tip="The most a buyer would pay — the marginal value of the unit to them.">
+willingness to pay
+</span>
+— the marginal value of that unit to that buyer. The curve slopes down because, one buyer to the next and one unit to the next, that value falls. So the demand curve is a ranked list of what each unit is worth to the people who want it.
+</p>
+<p>
+Now suppose the market price is $60 and you'd have happily paid $90. You buy, hand over $60, and walk away with $30 of value you didn't have to pay for. That $30 is your
+<span data-tip="Willingness to pay minus the price actually paid.">
+consumer surplus
+</span>
+— the value you captured beyond what you spent. Add up that gap for every buyer in the market and you get total consumer surplus: on the graph, it's the area
+<em>
+below the demand curve and above the price
+</em>
+.
+</p>
+<p>
+Sellers have a mirror-image story. The supply curve is each seller's
+<span data-tip="The least a seller would accept — their cost.">
+willingness to accept
+</span>
+— the least they'd take, which is their cost of making that unit. A seller who'd have sold for $45 but receives $60 keeps $15 of
+<span data-tip="Price received minus the least the seller would have accepted.">
+producer surplus
+</span>
+. Summed across sellers, that's the area
+<em>
+above the supply curve and below the price
+</em>
+. Put the two together — consumer surplus plus producer surplus — and you have
+<span data-tip="Consumer surplus plus producer surplus; the whole value the market creates.">
+total surplus
+</span>
+: the entire value the market created by letting these trades happen.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Supply and demand graph with consumer surplus and producer surplus shaded as triangles">
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="62" y="104">
+100
+</text>
+<text x="62" y="204">
+60
+</text>
+<text x="62" y="254">
+40
+</text>
+</g>
+<text x="350" y="384" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="200" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price ($)
+</text>
+<polygon points="70,100 70,200 282,200" fill="#a33030" opacity="0.16">
+</polygon>
+<polygon points="70,250 70,200 282,200" fill="#0f7d7d" opacity="0.18">
+</polygon>
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="600" y="345" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="600" y="120" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="70" y1="200" x2="282" y2="200" stroke="#1a3a5c" stroke-width="1.2" stroke-dasharray="5 3">
+</line>
+<line x1="282" y1="200" x2="282" y2="350" stroke="#1a3a5c" stroke-width="1.2" stroke-dasharray="5 3">
+</line>
+<circle cx="282" cy="200" r="5" fill="#1a3a5c">
+</circle>
+<text x="290" y="194" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E ($60, 20)
+</text>
+<text x="160" y="150" font-family="sans-serif" font-size="12" font-weight="700" fill="#a33030">
+CS = $400
+</text>
+<text x="150" y="228" font-family="sans-serif" font-size="12" font-weight="700" fill="#0a4a4a">
+PS = $200
+</text>
+<text x="282" y="365" font-family="sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+20
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 6.1
+</span>
+<span class="etb-figure-title">
+The anchor market: demand P = 100 − 2Q, supply P = 40 + Q, clearing at $60 and 20 units. Consumer surplus is the upper triangle; producer surplus the lower.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the two triangles together are every dollar of value this market created. The wedge between what buyers would pay (demand) and what sellers would accept (supply), out to the equilibrium quantity — that whole area is the gains from trade, made visible.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Computing surplus as triangle areas
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Using the anchor market — demand P = 100 − 2Q, supply P = 40 + Q, equilibrium at P = $60, Q = 20 — find consumer and producer surplus.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Each surplus is a right triangle, so use area = ½ × base × height. The base is the equilibrium quantity, 20.
+</li>
+<li>
+Consumer surplus height = (demand's price-intercept) − (price) = 100 − 60 = 40. So CS = ½ × 20 × 40 = $400.
+</li>
+<li>
+Producer surplus height = (price) − (supply's price-intercept) = 60 − 40 = 20. So PS = ½ × 20 × 20 = $200.
+</li>
+<li>
+Total surplus = CS + PS = 400 + 200 = $600.
+</li>
+</ol>
+<div class="etb-worked-answer">
+CS = $400, PS = $200, total surplus = $600. The base is the same for both triangles (the quantity traded); only the heights differ — each height is the vertical distance from the price to that curve's intercept.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A buyer would pay $25 for a concert ticket and gets in for $18. What's their consumer surplus?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+$25 − $18 = $7. They captured $7 of value beyond what they paid.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: A market clears at P = $50, Q = 30. The demand price-intercept is $110. What is consumer surplus?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Height = 110 − 50 = 60; base = 30. CS = ½ × 30 × 60 = $900.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: Same market (P = $50, Q = 30). The supply price-intercept is $20. Find producer surplus and total surplus.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+PS height = 50 − 20 = 30; PS = ½ × 30 × 30 = $450. Total surplus = 900 + 450 = $1,350.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why is the demand curve the right tool for measuring the value buyers get — and how does Chapter 2 explain its shape?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Because the height of the demand curve at each quantity
+<em>
+is
+</em>
+a buyer's willingness to pay — the marginal value of that unit to them, which Chapter 2 showed is just its marginal utility expressed in dollars.
+<span class="etb-xref">
+Ch 2
+</span>
+So the vertical gap between the demand curve and the price is, unit by unit, value received minus value paid: exactly the surplus a buyer captures. The curve slopes down because of diminishing marginal utility — each additional unit is worth less — which is why the surplus triangle narrows toward the equilibrium. A wrong answer often confuses willingness to pay with the price actually paid; the whole point of surplus is that they differ, and the gap is the value the market hands the buyer for free.
+</p>
+</div>
+</details>
+</div>
+<!-- ⑤ CONCEPT 2 — EFFICIENCY VS FAIRNESS -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2 · Why the market maximizes the pie
+</div>
+<h2>
+Efficiency — and what it deliberately ignores
+</h2>
+<div class="etb-body">
+<p>
+Here is the quietly remarkable thing about the equilibrium quantity: it maximizes total surplus. Not approximately — exactly. To see why, think about each unit. As long as a buyer values the next unit more than it costs a seller to make it (demand above supply), that trade creates surplus, so it should happen — and at the market price, it does. The moment the cost of making one more exceeds what anyone will pay for it (supply above demand), the trade would
+<em>
+destroy
+</em>
+value, so it shouldn't happen — and at the market price, it doesn't. The equilibrium is precisely the point where every value-creating trade has occurred and no value-destroying one has. Produce less and you leave good trades on the table; produce more and you force bad ones. Either way total surplus falls.
+</p>
+<p>
+It's worth being precise about the word, because "efficiency" names a small family of related ideas. What we just described — producing exactly the quantity where the marginal benefit of the last unit equals its marginal cost, so total surplus is maximized — is
+<span data-tip="Producing the quantity where marginal benefit = marginal cost; total surplus maximized.">
+allocative efficiency
+</span>
+: the right amount is made, and it flows to the people who value it most. (A cousin,
+<span data-tip="Making each unit at the lowest possible cost — producing on the production-possibilities frontier.">
+productive efficiency
+</span>
+, asks a different question — whether each unit is made as cheaply as possible; that's a story for the chapters on firms.
+<span class="etb-xref">
+Ch 9
+</span>
+)
+</p>
+<p>
+There's a second lens that lands on the very same point. Last chapter we met the Pareto test: an outcome is
+<span data-tip="No one can be made better off without making someone worse off.">
+Pareto efficient
+</span>
+when no one can be made better off without making someone else worse off — when every gain from trade has been captured and no costless improvement remains.
+<span class="etb-xref">
+Ch 5
+</span>
+The competitive equilibrium passes this test. At any other quantity, an unrealized trade sits on the table — a buyer who values the good above its cost — so you could make that buyer
+<em>
+and
+</em>
+a seller better off while harming no one: a Pareto improvement still available. Only at the equilibrium are they all used up. So the market's crossing point is efficient in both senses at once — it maximizes total surplus
+<em>
+and
+</em>
+it is Pareto efficient. That an unguided market reaches this is striking enough to be one of the few results economists dignify with the word "theorem." But hold the wonder, because the caveat from last chapter returns at full force.
+</p>
+<p>
+This is the measurable version of the gains-from-trade idea from
+<span class="etb-xref">
+Ch 5
+</span>
+and the spontaneous order of
+<span class="etb-xref">
+Ch 3
+</span>
+, now with a dollar figure attached: Adam Smith's invisible hand, weighed and counted.
+</p>
+</div>
+<div class="etb-note">
+<div class="etb-note-label">
+Efficiency is the size of the pie — never how it's sliced
+</div>
+<div class="etb-note-body">
+<p>
+This is the most important caveat in Unit 1, and economists state it plainly: efficiency is
+<em>
+only
+</em>
+about the size of the pie. It says the market produces the largest possible total surplus — and absolutely nothing about whether the people who get that surplus deserve it, need it, or already have plenty. An outcome can be perfectly efficient and grotesquely unfair. A market that efficiently allocates life-saving medicine to whoever can pay maximizes total surplus while a poorer, sicker person goes without; the pie is as big as possible, and the slicing may be monstrous. The same is true of the Pareto test, despite its reassuring name: an allocation in which one person holds nearly everything can still be Pareto efficient, because you can't make anyone else better off without taking from them. Efficiency, in either sense, simply does not see fairness.
+</p>
+<p>
+Economists lean hard on efficiency anyway, and for a real reason: a bigger pie means there is
+<em>
+more
+</em>
+to go around, so in principle everyone
+<em>
+could
+</em>
+be made better off. Growth-first instincts come from there. But "could be" is doing heavy lifting — efficiency guarantees the pie is big, not that anyone actually shares it. That second question —
+<span data-tip="Fairness in how the gains are distributed.">
+equity
+</span>
+, how the pie is divided — is partly a question of values, not something a surplus calculation can settle, which is exactly why reasonable people land in different places on it. Keep the two apart and you'll think clearly about policy for the rest of your life:
+<em>
+is this efficient?
+</em>
+and
+<em>
+is this fair?
+</em>
+are different questions, and a serious answer needs both. We'll feel this tension at full strength when we reach the genuinely hard cases.
+<span class="etb-xref">
+Ch 18
+</span>
+<span class="etb-xref">
+Ch 20
+</span>
+</p>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A market produces fewer units than the equilibrium quantity. Is total surplus larger or smaller than at equilibrium, and why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Smaller. Some trades where buyers value the unit more than it costs to make are not happening — value-creating trades left undone. Total surplus is maximized only at the equilibrium quantity.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+At a quantity below equilibrium, is a Pareto improvement still available?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Yes — there's an unmade trade where the buyer values the unit above the seller's cost. Letting it happen makes both better off and harms no one. Only at the equilibrium are all such improvements exhausted, which is why it's Pareto efficient.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+"This outcome is efficient, so it must be fair." What's wrong with that sentence?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Efficiency — total surplus or Pareto — is only about the size and exhaustion of the gains, not their distribution. An outcome can maximize the pie and still divide it in a way many would call unfair. Efficient and fair are separate questions.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why do economists put so much weight on efficiency if it ignores fairness entirely?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Because a larger total surplus means there is more value in existence to potentially share — an efficient outcome makes it
+<em>
+possible
+</em>
+for everyone to be better off than an inefficient one, even if it doesn't guarantee they will be. Inefficiency, by contrast, destroys value that
+<em>
+no one
+</em>
+gets, which is hard to defend on any grounds: it makes the losers worse off without making anyone better off. So efficiency is a sensible first screen — "are we wasting value?" — and a natural starting point for analysis. But it's only a first screen. It deliberately brackets the question of who ends up with the surplus, and that question — equity — depends on values a calculation can't supply. The honest position is that economics is unusually good at measuring the size of the pie and has no special authority over how it should be divided.
+</p>
+</div>
+</details>
+</div>
+<!-- ⑤ CONCEPT 3 — DEADWEIGHT LOSS -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3 · Value that vanishes
+</div>
+<h2>
+Deadweight loss: the triangle of trades that didn't happen
+</h2>
+<div class="etb-body">
+<p>
+If the equilibrium quantity maximizes total surplus, then anything that pushes the market
+<em>
+away
+</em>
+from it must shrink the pie. The lost surplus has a name:
+<span data-tip="Total surplus that disappears when worthwhile trades don't happen.">
+deadweight loss
+</span>
+— value that disappears, captured by no one. This is the crucial difference from a simple transfer. When a tax moves $10 from your pocket to the government's, that's a transfer: you lose, they gain, the surplus still exists somewhere. Deadweight loss is worse — it's surplus that stops existing at all, because the trade that would have created it never happens.
+</p>
+<p>
+Picture our anchor market with something holding the quantity at 10 instead of the efficient 20. Every unit between 10 and 20 was a trade where the buyer valued the good more than it cost to make — a trade that
+<em>
+should
+</em>
+have happened and created surplus. Block them, and that surplus is simply gone. It shows up on the graph as a triangle between the demand and supply curves, from the restricted quantity out to the efficient one. (In the next concept we'll see that "something holding the quantity at 10" is, concretely, a price the law won't let move.)
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The same market with quantity restricted to 10, showing the deadweight loss triangle between demand and supply out to the equilibrium quantity">
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="62" y="154">
+80
+</text>
+<text x="62" y="204">
+60
+</text>
+<text x="62" y="229">
+50
+</text>
+</g>
+<text x="350" y="384" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="200" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price ($)
+</text>
+<polygon points="176,150 176,225 282,200" fill="#c48b00" opacity="0.30">
+</polygon>
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="600" y="345" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="600" y="120" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="176" y1="150" x2="176" y2="350" stroke="#1a1a1a" stroke-width="1.1" stroke-dasharray="5 3">
+</line>
+<text x="176" y="365" font-family="sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+10
+</text>
+<circle cx="282" cy="200" r="5" fill="#1a3a5c">
+</circle>
+<text x="290" y="195" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+efficient Q = 20
+</text>
+<text x="282" y="365" font-family="sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+20
+</text>
+<circle cx="176" cy="150" r="3.5" fill="#a33030">
+</circle>
+<circle cx="176" cy="225" r="3.5" fill="#0f7d7d">
+</circle>
+<text x="300" y="270" font-family="sans-serif" font-size="12" font-weight="700" fill="#8a6d2f">
+DWL = $150
+</text>
+<text x="300" y="286" font-family="sans-serif" font-size="10.5" fill="#8a6d2f">
+lost trades (Q 10→20)
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 6.2
+</span>
+<span class="etb-figure-title">
+The same market, quantity choked to 10. The shaded triangle between demand and supply — the surplus those lost trades would have created — is deadweight loss.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+at the restricted quantity, buyers still value the good ($80) far above what it costs to make ($50) — a $30 gap of unrealized gains. Those trades just don't happen, so the surplus is gone, transferred to no one.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Computing deadweight loss as a triangle
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+The anchor market (demand P = 100 − 2Q, supply P = 40 + Q, efficient Q = 20) is restricted to Q = 10. Find the deadweight loss.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Find the gap between willingness to pay and cost at the restricted quantity. At Q = 10: demand price = 100 − 2(10) = 80; supply price = 40 + 10 = 50.
+</li>
+<li>
+That vertical gap is the triangle's height: 80 − 50 = 30.
+</li>
+<li>
+The base is the quantity of lost trades — from the restricted 10 out to the efficient 20: 20 − 10 = 10.
+</li>
+<li>
+Deadweight loss = ½ × base × height = ½ × 10 × 30 = $150.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Deadweight loss = $150. Total surplus was $600 at the efficient quantity; the restriction destroys $150 of it — value that simply ceases to exist, benefiting no one. (The triangle always points to the efficient equilibrium, where the gap closes to zero.)
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: A market's efficient quantity is 50. A regulation holds it at 35. At Q = 35, willingness to pay is $40 and marginal cost is $22. Find the deadweight loss.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Height = 40 − 22 = 18; base = 50 − 35 = 15. DWL = ½ × 15 × 18 = $135.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Why is deadweight loss worse than a tax that simply transfers money from buyers to the government?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+A transfer moves surplus from one party to another — it still exists. Deadweight loss is surplus that stops existing entirely, because the value-creating trade never happens. Nobody captures it.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Back to the hook: you pay $50 for a gift your cousin values at $30. Where's the deadweight loss, and why did it happen?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The $20 gap is destroyed value — your cousin would have spent the $50 on something worth at least $50 to him, but the gift is worth only $30. The cause is information: you don't know his preferences as well as he does. Cash (or a gift card) avoids it by letting him choose.
+</div>
+</details>
+<div class="etb-body">
+<p>
+That clumsy gift is deadweight loss in a Santa hat: a "trade" where the giver guesses wrong about the recipient's willingness to pay, so value is destroyed. The fix is the one Chapter 2 implied — let people choose for themselves, because no one knows your marginal utility better than you. Cash isn't unromantic; it's efficient. (Whether efficiency is what Christmas is
+<em>
+for
+</em>
+is, fittingly, a question economics can't answer.) But the gift is the gentle case. The next concept turns the same triangle on the policy that produces it most reliably — a price the government won't let move.
+</p>
+</div>
+</div>
+<!-- ⑤ CONCEPT 4 — PRICE CONTROLS -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4 · Forcing the price
+</div>
+<h2>
+Price controls: locking the inefficiency in place
+</h2>
+<div class="etb-body">
+<p>
+Begin with a question the last three concepts now let us answer in a sharper way: what happens when the price is simply
+<em>
+wrong
+</em>
+? Suppose it sits
+<em>
+above
+</em>
+the equilibrium — too high. Sellers, tempted by the high price, want to sell more than buyers want to buy; unsold units pile up as a
+<span data-tip="Quantity supplied exceeds quantity demanded; happens when price is above equilibrium.">
+surplus
+</span>
+. Or suppose it sits
+<em>
+below
+</em>
+equilibrium — too low. Buyers want more than sellers will provide, and a
+<span data-tip="Quantity demanded exceeds quantity supplied; happens when price is below equilibrium.">
+shortage
+</span>
+opens. We met the mechanics of both back in Chapter 3.
+<span class="etb-xref">
+Ch 3
+</span>
+What we can add now is the welfare reading: a price away from equilibrium isn't just out of balance — it's
+<em>
+inefficient
+</em>
+. Value-creating trades are going unmade, total surplus sits below its maximum, and a deadweight-loss triangle has opened.
+</p>
+<p>
+In a free market, none of this lasts. A surplus has sellers shading their prices down to move stock; a shortage has buyers bidding the price up. The price slides back to the crossing, the triangle closes, and efficiency is restored — that was Chapter 3's lesson, now with a welfare price tag. Disequilibrium is a force, not a resting place. So the inefficiency of a "wrong" price is, in a free market, temporary: the market corrects itself.
+</p>
+<p>
+Unless it can't. A
+<span data-tip="A government-set limit on a price — a ceiling (maximum) or a floor (minimum).">
+price control
+</span>
+is a law that forbids the price from moving — and it is precisely the case where the inefficiency does
+<em>
+not
+</em>
+self-correct. It is held open, by force of law, indefinitely. There are two kinds, mirror images of each other:
+</p>
+<div class="etb-2col">
+<div class="etb-2item">
+<div class="etb-2item-hd">
+Price ceiling — a legal maximum
+</div>
+<div class="etb-2item-bd">
+"You may not charge
+<em>
+more
+</em>
+than this." Bites only when set
+<em>
+below
+</em>
+equilibrium (a ceiling above the market price is irrelevant — non-binding). A binding ceiling locks in a permanent
+<strong>
+shortage
+</strong>
+. Rent control is the classic case.
+<span class="etb-xref">
+Ch 4
+</span>
+</div>
+</div>
+<div class="etb-2item">
+<div class="etb-2item-hd">
+Price floor — a legal minimum
+</div>
+<div class="etb-2item-bd">
+"You may not charge
+<em>
+less
+</em>
+than this." Bites only when set
+<em>
+above
+</em>
+equilibrium. A binding floor locks in a permanent
+<strong>
+surplus
+</strong>
+. Agricultural price supports and the minimum wage (a floor on the price of labor) are the classic cases.
+</div>
+</div>
+</div>
+<p>
+Either way, the controlled price stops the two quantities from meeting, and one side ends up rationed. The rule for how much actually trades is simple and worth memorizing:
+<strong>
+the short side wins.
+</strong>
+Whichever quantity is
+<em>
+smaller
+</em>
+at the controlled price — what sellers will supply under a ceiling, or what buyers will buy under a floor — is the amount that actually changes hands. Because that amount is always below the efficient quantity, a binding control
+<em>
+always
+</em>
+destroys surplus. The unmade trades between the controlled quantity and the efficient one are a deadweight-loss triangle, exactly the one from the last concept — only now we know its cause has a name.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A binding price ceiling of 50 dollars below the equilibrium of 60, producing a shortage and a deadweight loss triangle">
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="62" y="154">
+80
+</text>
+<text x="62" y="204">
+60
+</text>
+<text x="62" y="229">
+50
+</text>
+</g>
+<text x="350" y="384" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="200" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price ($)
+</text>
+<polygon points="176,150 176,225 282,200" fill="#c48b00" opacity="0.30">
+</polygon>
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="600" y="345" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="600" y="120" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="70" y1="225" x2="335" y2="225" stroke="#a33030" stroke-width="2" stroke-dasharray="7 3">
+</line>
+<text x="338" y="229" font-family="sans-serif" font-size="11" font-weight="700" fill="#a33030">
+ceiling = $50
+</text>
+<line x1="176" y1="225" x2="176" y2="350" stroke="#1a1a1a" stroke-width="1.1" stroke-dasharray="5 3">
+</line>
+<circle cx="282" cy="200" r="4.5" fill="#1a3a5c" opacity="0.55">
+</circle>
+<text x="289" y="196" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#1a3a5c">
+E ($60, 20)
+</text>
+<circle cx="176" cy="225" r="4" fill="#0f7d7d">
+</circle>
+<circle cx="335" cy="225" r="4" fill="#a33030">
+</circle>
+<text x="176" y="365" font-family="sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+Qs=10
+</text>
+<text x="335" y="365" font-family="sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+Qd=25
+</text>
+<line x1="176" y1="335" x2="335" y2="335" stroke="#6b1f1f" stroke-width="2.5">
+</line>
+<text x="255" y="330" font-family="sans-serif" font-size="11" font-weight="700" fill="#6b1f1f" text-anchor="middle">
+SHORTAGE = 15
+</text>
+<text x="305" y="262" font-family="sans-serif" font-size="12" font-weight="700" fill="#8a6d2f">
+DWL = $150
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 6.3
+</span>
+<span class="etb-figure-title">
+A binding price ceiling of $50 on the anchor market. Sellers supply only 10; buyers want 25; a shortage of 15 opens, and just 10 units trade — the gold triangle is the deadweight loss.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the "something holding quantity at 10" from the last concept was
+<em>
+this
+</em>
+— a $50 ceiling. The short side (sellers, at 10) sets the quantity traded; the gap to the efficient 20 is the same $150 of destroyed surplus.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+The deadweight loss of a binding price ceiling
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Anchor market (demand P = 100 − 2Q, supply P = 40 + Q, equilibrium $60/20). The government sets a price ceiling of $50. Find the quantity traded, the shortage, and the deadweight loss.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Is it binding? $50 is below the $60 equilibrium, so yes — it bites.
+</li>
+<li>
+Quantity supplied at $50 (from supply): 50 = 40 + Q → Q
+<sub>
+s
+</sub>
+= 10. Quantity demanded at $50 (from demand): 50 = 100 − 2Q → Q
+<sub>
+d
+</sub>
+= 25.
+</li>
+<li>
+Shortage = Q
+<sub>
+d
+</sub>
+− Q
+<sub>
+s
+</sub>
+= 25 − 10 = 15. The short side (sellers) wins, so only 10 units actually trade.
+</li>
+<li>
+Deadweight loss: at the traded quantity 10, demand price = 80, supply price = 50, so height = 30; base = efficient 20 − traded 10 = 10. DWL = ½ × 10 × 30 = $150.
+</li>
+</ol>
+<div class="etb-worked-answer">
+10 units trade, a shortage of 15, deadweight loss = $150. Note what else happens but
+<em>
+isn't
+</em>
+deadweight loss: the buyers who still get the good now pay $50 instead of $60, so surplus shifts from sellers to them — a transfer, not destruction. The $150 triangle is the part that benefits no one.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example (faded)
+</span>
+<span class="etb-worked-title">
+The mirror case: a binding price floor
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Same market. Now a price
+<em>
+floor
+</em>
+of $70 (think an agricultural support price). The mechanical setup is filled; you finish the deadweight loss.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Binding? $70 is above the $60 equilibrium → yes, it bites, and creates a surplus.
+</li>
+<li>
+At $70: quantity demanded 70 = 100 − 2Q → Q
+<sub>
+d
+</sub>
+= 15; quantity supplied 70 = 40 + Q → Q
+<sub>
+s
+</sub>
+= 30. Surplus = 30 − 15 = 15.
+</li>
+<li>
+Short side now is
+<em>
+buyers
+</em>
+(15), so 15 units trade. Height at Q = 15: demand price 70 − supply price 55 = 15. Base = 20 − 15 = 5.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Deadweight loss = ½ × base × height = ½ × 5 × ______ = $______.
+<em>
+(Answer: ½ × 5 × 15 = $37.50. A surplus of 15 piles up; only 15 trade instead of the efficient 20; the unmade 5 trades are the destroyed surplus.)
+</em>
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A city sets a rent ceiling
+<em>
+above
+</em>
+the current market rent. What happens?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Nothing — it's non-binding. A ceiling only bites when it's below equilibrium; set above, the market price is already legal, so the control does nothing. (The mirror holds for floors: a floor below equilibrium is non-binding.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Under a binding price ceiling, which side determines how much actually trades — buyers or sellers?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Sellers. At the low capped price, the quantity supplied is the smaller of the two, and the short side wins — you can't buy what isn't offered. (Under a binding floor, it flips: buyers are the short side.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: Demand P = 120 − 2Q, supply P = 30 + Q (equilibrium P = $60, Q = 30). A price ceiling of $45 is imposed. Find the quantity traded and the deadweight loss.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+At $45: Q
+<sub>
+s
+</sub>
+= 45 − 30 = 15 (trades); Q
+<sub>
+d
+</sub>
+= (120 − 45)/2 = 37.5. Height at Q = 15: demand 120 − 30 = 90, supply 45, gap = 45; base = 30 − 15 = 15. DWL = ½ × 15 × 45 = $337.50.
+</div>
+</details>
+<div class="etb-note">
+<div class="etb-note-label">
+If controls are inefficient, why do governments use them?
+</div>
+<div class="etb-note-body">
+<p>
+Because efficiency was never the only goal — and Concept 2 already told us it can't be. Price controls are almost always reached for on
+<em>
+equity
+</em>
+grounds: to protect tenants from rising rents, farmers from collapsing crop prices, workers from low wages. The deadweight loss is the efficiency cost; whether the fairness gain is worth that cost is exactly the efficiency-versus-equity judgment, and it turns on values a surplus triangle can't supply. An honest analyst names the cost
+<em>
+and
+</em>
+takes the goal seriously, rather than pretending one of them away.
+</p>
+<p>
+Two more honest caveats. First, the model assumes a competitive market with many price-taking buyers and sellers; where that fails — a single dominant employer setting wages, for instance — a floor can behave differently, which is why the minimum wage is a genuine empirical dispute rather than a settled diagram.
+<span class="etb-xref">
+Ch 17
+</span>
+<span class="etb-xref">
+Ch 18
+</span>
+Second, a shortage doesn't vanish just because the price can't ration it — it gets rationed some other way: queues, waiting lists, declining quality, favoritism, black markets. Those substitutes burn real resources (hours in line are gone for good), so the true cost of a binding ceiling is often
+<em>
+larger
+</em>
+than the triangle alone.
+</p>
+</div>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Common misconception
+</span>
+"A price ceiling on rent helps tenants — it makes housing cheaper."
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+It helps
+<em>
+some
+</em>
+tenants — the ones who already hold a rent-controlled apartment now pay less. But "cheaper" hides what the diagram shows: at the capped price, landlords supply fewer units (convert to condos, stop building, let quality slide) while more renters want in, so a chronic shortage opens. The tenant lucky enough to have a lease wins; the renter who can't
+<em>
+find
+</em>
+one at any legal price loses entirely, and the housing that's never built is pure deadweight loss.
+</p>
+<p>
+So the honest verdict is mixed, not "helps tenants" full stop: it redistributes from landlords to incumbent tenants (a transfer, arguably the point), while shrinking the total supply of housing and destroying value through shortage and rationing. Whether that trade is worth it is the equity-versus-efficiency question — but you can't even weigh it if you believe a ceiling simply makes housing cheaper for everyone. It doesn't; it makes housing
+<em>
+scarcer
+</em>
+, and cheaper only for whoever's already inside.
+</p>
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why does
+<em>
+every
+</em>
+binding price control create deadweight loss — ceiling or floor, no exceptions?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Because both push the quantity actually traded
+<em>
+below
+</em>
+the efficient quantity. A binding ceiling sits below equilibrium, so sellers supply less; a binding floor sits above equilibrium, so buyers buy less; either way the short side rules and fewer units change hands than at the crossing. The trades that vanish — between the controlled quantity and the efficient one — are all value-creating: the buyer valued the unit above the seller's cost. That surplus is destroyed, captured by no one, which is the definition of deadweight loss. The control may also transfer surplus between buyers and sellers (that's the redistribution it's usually after), but the shrunken quantity guarantees a triangle of pure loss on top of any transfer. The only way a control avoids deadweight loss is to be non-binding — i.e., to do nothing at all.
+<span class="etb-xref">
+Ch 4
+</span>
+</p>
+</div>
+</details>
+</div>
+<!-- ⑦ SYNTHESIS CARD -->
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+The wedge between what buyers will pay and what sellers will accept is the value a market creates — and we can measure it to the dollar, including the value that vanishes when a price is forced to stand still.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world…
+</div>
+<p class="etb-synth-leadtext">
+they would let supply and demand set the price — and could tell you, in dollars, exactly what is lost every time a law freezes it in place.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z">
+</path>
+<circle cx="12" cy="12" r="3">
+</circle>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Total surplus is maximized at the competitive equilibrium — that's what efficiency means, and it's Pareto efficient too.
+</li>
+<li>
+Any binding price control pushes quantity below the efficient level, destroying surplus as deadweight loss.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#b0883a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16">
+</path>
+<path d="M5 20h14">
+</path>
+<path d="M4 7h16">
+</path>
+<path d="M4 7l-2.5 5h5z">
+</path>
+<path d="M20 7l-2.5 5h5z">
+</path>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+If we destroy some surplus to steer resources toward people we think need them more, how big a loss is too big to be fair?
+</li>
+<li>
+Efficiency makes the pie biggest; it's silent on who deserves the slices. When is taking from some to help others worth the value lost?
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+</path>
+</svg>
+In your life
+</div>
+<p>
+When you pay less for something than it's worth to you, that gap is consumer surplus — a quiet reason trade keeps making you richer, even when you never see the bill for it.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="7" rx="2">
+</rect>
+<path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+</path>
+</svg>
+In your work
+</div>
+<p>
+When a policy blocks or forces trades — cap, floor, quota, mandate — look for the deadweight-loss triangle: the value-creating trades that now won't happen. That's the real cost, separate from money that merely changes hands.
+</p>
+</div>
+</div>
+<div class="etb-synth-arrow">
+<span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9l6 6 6-6">
+</path>
+</svg>
+</span>
+</div>
+</div>
+<!-- ⑧ LEARN MORE -->
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=yK4wGzN8D2A" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/yK4wGzN8D2A/mqdefault.jpg" alt="Consumer surplus, producer surplus, and deadweight loss — holiday edition">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Consumer Surplus, Producer Surplus &amp; Deadweight Loss (Holiday Edition)
+</div>
+<div class="etb-yt-note">
+~6 min · surplus and deadweight loss worked on a graph — with a holiday-gift framing that matches this chapter exactly · Pairs with Concepts 1 &amp; 3 · ACDC Econ (Jacob Clifford)
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/rent-controls-economics" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/hMkvmZK3AJ4/mqdefault.jpg" alt="Price ceilings and the shortage they create">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Price Ceilings and the Lost Gains from Trade
+</div>
+<div class="etb-yt-note">
+~7 min · how a binding price ceiling chokes off trades — the deadweight loss we now measure · Pairs with Concept 4 &amp; the Ch 4 callback · Marginal Revolution University
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.etb -->
+<script>
+</script>
