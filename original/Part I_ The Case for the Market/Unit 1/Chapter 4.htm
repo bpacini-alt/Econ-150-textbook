@@ -1,0 +1,3061 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 91.1227%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;} .etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;} .etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;} .etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:pointer;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after,[data-tip].tip-open::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"\2192 ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-deck{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-style:italic;color:#9a9a9a;line-height:1.4;margin:-.7rem 0 1.2rem;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;} .etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-ret-body p{margin:0 0 .75rem;} .etb-ret-body p:last-child{margin:0;}details.etb-misc{background:#fdf0f0;border:1px solid #dba8a8;border-radius:8px;margin:1.5rem 0;}details.etb-misc summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#6b1f1f;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-misc summary::-webkit-details-marker{display:none;}.etb-misc-badge{background:#a33030;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-misc-arrow{margin-left:auto;color:#a33030;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-misc[open] .etb-misc-arrow{transform:rotate(90deg);}.etb-misc-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #dba8a8;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d0f0f;}.etb-misc-body p{margin:0 0 .75rem;} .etb-misc-body p:last-child{margin:0;}.etb-research{background:#f5f0fe;border:1px solid #b89dd4;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-research-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-research-badge{background:#6d4aaa;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-research-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#2d1854;}.etb-research-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#2d1854;}.etb-research-body p{margin:0 0 .65rem;} .etb-research-body p:last-child{margin:0;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;} .etb-note-body p:last-child{margin:0;} .etb-note-body a{color:#1a3a5c;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-sub{font-family:Georgia,'Times New Roman',serif;font-size:14px;font-style:italic;color:#3a6b52;margin:-.4rem 0 .4rem;}.etb-app-grouplbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a7a4f;margin:1.15rem 0 .15rem;}.etb-app-grouplbl:first-of-type{margin-top:.5rem;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;} .etb-app-body p{margin:0 0 .75rem;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"\2192";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-synthesis{background:#1a3a5c;border-radius:10px;padding:1.75rem 2rem;margin:2.5rem 0 3rem;}.etb-syn-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem;}.etb-syn-body{font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.85;color:rgba(255,255,255,.9);font-style:italic;}.etb-syn-title{font-family:sans-serif;font-size:15.5px;font-weight:700;color:#fff;margin:0 0 .3rem;}.etb-syn-sec{margin-top:1rem;}.etb-syn-sec + .etb-syn-sec{border-top:1px solid rgba(255,255,255,.13);padding-top:1rem;}.etb-syn-lbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a9bdd6;margin:0 0 .5rem;}.etb-syn-list{list-style:none;padding:0;margin:0;}.etb-syn-list li{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.88);padding:4px 0 4px 20px;position:relative;}.etb-syn-list li::before{content:"\2192";position:absolute;left:0;color:#a9bdd6;font-weight:700;}/* Chapter synthesis — redesigned card (light, two-tone, icons) */.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-head{display:flex;align-items:center;gap:9px;margin-bottom:.65rem;}.etb-synth-card-head svg{width:18px;height:18px;flex:none;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin-top:1px;}.etb-synth-card.pos .etb-synth-card-label{color:#1f6f47;}.etb-synth-card.pos .etb-synth-card-sub{color:#418a64;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li + li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;}.etb-synth-card.pos .etb-synth-list li{color:#2c4034;}.etb-synth-card.pos .etb-synth-list li::before{color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{display:flex;align-items:center;gap:7px;font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take-head svg{width:15px;height:15px;flex:none;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-synth-arrow{display:flex;justify-content:center;margin-top:1.3rem;}.etb-synth-arrow span{width:34px;height:34px;border:1px solid #dcdcdc;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#aaa;}.etb-synth-arrow svg{width:16px;height:16px;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;} .etb-yt:last-child{margin-bottom:0;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-thumb:hover .etb-yt-play{background:rgba(0,0,0,.48);} .etb-yt-play::after{content:"\25B6";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;} .etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-2col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-2item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item-hd{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.5;padding:10px 12px;}.etb-4col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-4item{flex:1 1 140px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-4item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-4item-bd{font-family:sans-serif;font-size:12.5px;color:#444;line-height:1.5;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;} .etb-compare tr:last-child td{border-bottom:none;}blockquote.etb-quote{border-left:3px solid #bbb;margin:1.25rem 0;padding:.75rem 1.25rem;background:#f9f9f7;font-style:italic;font-size:14.5px;color:#444;line-height:1.75;}.etb-photo{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-photo img{display:block;width:100%;height:auto;}.etb-photo-cap{padding:.6rem 1rem;border-top:1px solid #eee;font-family:sans-serif;font-size:12px;color:#666;line-height:1.55;}.etb-photo-cap strong{color:#1a3a5c;font-weight:700;}.etb-photo-credit{display:block;margin-top:.35rem;font-size:10.5px;color:#aaa;} .etb-photo-credit a{color:#aaa;}.etb-sched{border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;width:auto;min-width:280px;}.etb-sched caption{font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;}.etb-sched th{background:#1a3a5c;color:#fff;padding:7px 18px;text-align:right;font-weight:600;}.etb-sched td{padding:6px 18px;border-bottom:1px solid #eee;text-align:right;color:#333;}.etb-sched tr:nth-child(even) td{background:#f7fafd;} .etb-sched tr:last-child td{border-bottom:none;}.etb-sched .etb-sched-eq td{background:#eef6f0;font-weight:700;color:#1a3a2a;}.etb-svgwrap{display:block;width:100%;} .etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-rof{background:#fbfaf7;border:1px solid #d8cfb8;border-radius:10px;padding:1.2rem 1.4rem;margin:1.75rem 0;}.etb-rof-header{display:flex;align-items:center;gap:10px;margin-bottom:.4rem;}.etb-rof-badge{background:#8a6d2f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-rof-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#5a4718;}.etb-rof-intro{font-family:sans-serif;font-size:13px;line-height:1.65;color:#5a4718;margin:0 0 1rem;}.etb-rof-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;} @media (max-width:540px){.etb-rof-grid{grid-template-columns:1fr;}}.etb-rof-cell{background:#fff;border:1px solid #e4dcc8;border-radius:8px;padding:.7rem .9rem;}.etb-rof-lbl{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a6d2f;margin-bottom:.4rem;display:flex;align-items:center;gap:6px;}.etb-rof-lbl .etb-rof-n{background:#8a6d2f;color:#fff;width:15px;height:15px;border-radius:50%;font-size:9px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}.etb-rof-body{font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#3a3526;}.etb-rof-body code{font-family:'Courier New',monospace;font-size:12.5px;color:#1a3a5c;background:#eef4fb;padding:1px 4px;border-radius:3px;}.etb-rof-mini{width:100%;height:auto;display:block;margin-top:.2rem;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;} .etb-worked-body p{margin:0 0 .65rem;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:last-child{border-bottom:none;}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;} .etb-figure-notice strong{color:#1a3a5c;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;gap:0;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab:hover{background:#e3e9ef;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.etb-exam-tab.active .etb-exam-tab-chip{background:#26323f;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;} .etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}details.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}details.etb-reveal>
+summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-reveal>
+summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}details.etb-reveal[open]>
+summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;margin:0 0 .6rem;} .etb-reveal-body p:last-child{margin:0;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li:last-child{border-bottom:none;}.etb-frq-parts li::before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-loses{list-style:none;padding:0;margin:0;}.etb-loses li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .65rem;} .etb-loses li:last-child{margin:0;}.etb-loses .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:7px;white-space:nowrap;}
+</style>
+<div class="etb">
+<!-- (1) TITLE CARD -->
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+4
+</div>
+<div class="etb-title-unit">
+Unit 1 · How Markets Coordinate
+</div>
+<h2 class="etb-title-main">
+Supply and Demand II:
+<br>
+Shifts, Shocks, and Price Controls
+</h2>
+<p class="etb-title-sub">
+First, do no harm
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 4
+</span>
+<span>
+~ 38 min read
+</span>
+</div>
+</div>
+<!-- (2) HOOK -->
+<div class="etb-hook">
+<p>
+<!--StartFragment-->
+</p>
+<p>
+The date: June 7th, 1971. The speaker: Richard M. Nixon, President of the United States of America. The occasion: a briefing for the public about a new concern and priority for the US government.
+</p>
+<p>
+President Nixon said, "America's public enemy number one in the United States is drug abuse. In order to fight and defeat this enemy, it is necessary to wage a new, all-out offensive."
+</p>
+<p>
+With those words, the war on drugs was born.
+</p>
+The last chapter gave us tools to investigate static concerns: snap-shots of supply and demand at one point in time. On that basis, American politicians crafted a very simple drug policy: squelch supply by punishing suppliers with fines, prison, and potentially death. And it worked: many drug kingpins were killed or captured, and the cost inflicted on the drug trade was severe.
+<!--StartFragment-->
+<span>
+Escobar, the Cali bosses, then dozens of Mexican
+<span>
+</span>
+</span>
+<em>
+capos
+</em>
+<span>
+, removed one after another.
+</span>
+<!--EndFragment-->
+<p>
+</p>
+<p>
+Why, then, are the results of the drug war so abysmal?
+</p>
+<p>
+<!--StartFragment-->
+<span>
+In the short run the price of cocaine jumped, just as you'd expect when supply is cut.
+<span>
+This was the ideal outcome: with higher prices, fewer people would be involved in drugs.
+</span>
+</span>
+</p>
+<p>
+And then, over the long run, through decades of seizures and fallen kingpins, the drug on American streets did not get scarcer or dearer. Adjusted for purity, it fell to a fraction of where it began. Choke the supply, and the drug got
+<em>
+cheaper.
+</em>
+</p>
+<p>
+Meanwhile a very different intervention was failing in a very different way. A city, watching rents climb, does the humane and obvious thing: it caps them, so that no landlord may charge more than $1,000 for a one-bedroom. A year on, the tenants who kept their apartments pay less — and everyone else is worse off. Apartments vanish. Waiting lists stretch for years.
+</p>
+<p>
+To understand this set of ideas, we need more than static snapshots; we need something to compare. This chapter introduces the idea of shifts: the things that make supply and demand move as a curve. It also explains the idea of comparative statics: what happens to the equilibrium price and quantity when there is a shift in either supply or demand?
+</p>
+<p>
+With these tools in hand, you are ready to understand two key things: in this chapter, we will build on the insight that a market that does not leave prices alone will continue to create distortions. Second, the drug war failed in part because higher prices were an incentive to would-be kingpins. After every capture of a drug lord, another stepped up to the plate as CEO. Squelching supply without squelching demand led to skyrocketing prices, which provided enough incentive for drug runners to keep running drugs.
+</p>
+</div>
+<!-- (3) CORE IDEA -->
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+A price is a signal wrapped in an incentive: it tells strangers how scarce a thing is and pays them to act on it. Interfere with that price — by shocking supply, by capping the number, by any of a dozen means — and you push the market off the equilibrium that was coordinating it. Sometimes the market absorbs the blow and re-settles; sometimes a pinned price forbids it to, and the distortion hardens into a permanent shortage. By the end you should be able to shift a curve the right way, predict the new equilibrium for one shift and for two at once, and explain why interfering with a price doesn't erase scarcity — it moves it, hides it, or hands the rationing to something worse.
+</div>
+<!-- (4) VOCABULARY -->
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Change in demand (shift)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The whole demand curve moves left or right, caused by something other than the good's own price (income, tastes, number of buyers, related-good prices, expectations).
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Change in supply (shift)
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The whole supply curve moves, caused by something other than price — input costs, technology, taxes and subsidies, number of sellers, expectations.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Comparative statics
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Comparing one equilibrium to another after a shift: predicting how price and quantity change when a curve (or both) moves.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Price ceiling
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A legal maximum price. It binds — actually does something — only when set
+<em>
+below
+</em>
+equilibrium, where it creates a persistent shortage.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Price floor
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A legal minimum price. It binds only when set
+<em>
+above
+</em>
+equilibrium, where it creates a persistent surplus.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Signal &amp; incentive
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A price does two jobs at once: it carries information about scarcity (the signal) and rewards people for acting on it (the incentive).
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item">
+substitute
+<span class="etb-ak-pop">
+A good you'd switch to instead — buses for ride-shares. A rise in one's price raises demand for the other.
+</span>
+</span>
+<span class="etb-ak-item">
+complement
+<span class="etb-ak-pop">
+A good used together with another — printers and ink. A rise in one's price lowers demand for the other.
+</span>
+</span>
+<span class="etb-ak-item">
+shock
+<span class="etb-ak-pop">
+A sudden change in an underlying force — costs, income, the number of buyers — that shifts a curve. A supply shock or a demand shock.
+</span>
+</span>
+<span class="etb-ak-item">
+normal good
+<span class="etb-ak-pop">
+One you buy more of as your income rises.
+</span>
+</span>
+<span class="etb-ak-item">
+inferior good
+<span class="etb-ak-pop">
+One you buy less of as income rises (instant noodles, say).
+</span>
+</span>
+<span class="etb-ak-item">
+binding control
+<span class="etb-ak-pop">
+A price control that actually constrains the market — a ceiling below, or a floor above, equilibrium.
+</span>
+</span>
+<span class="etb-ak-item">
+indeterminate
+<span class="etb-ak-pop">
+Can't be pinned down without more information: when both curves shift, one of price/quantity is left ambiguous.
+</span>
+</span>
+<span class="etb-ak-item">
+non-price rationing
+<span class="etb-ak-pop">
+When price can't allocate a good, something else does — queues, waiting lists, favoritism, black markets.
+</span>
+</span>
+<span class="etb-ak-item">
+shortage
+<span class="etb-ak-pop">
+Quantity demanded exceeds quantity supplied. Self-correcting — unless a ceiling holds the price down.
+</span>
+</span>
+<span class="etb-ak-item">
+surplus
+<span class="etb-ak-pop">
+Quantity supplied exceeds quantity demanded. Self-correcting — unless a floor holds the price up.
+</span>
+</span>
+</div>
+<!-- (5) CONCEPT 1 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1
+</div>
+<h2>
+Shifts in supply and demand
+</h2>
+<p class="etb-deck">
+The one distinction that trips up half of all beginners.
+</p>
+<div class="etb-body">
+<p>
+In the last chapter we held the curves perfectly still and let only the price move, sliding up and down fixed lines. We kept promising that the day would come when the lines themselves move.
+<font color="#1a3a5c" face="sans-serif">
+<span style="font-size: 11px; letter-spacing: 0.22px; text-wrap-mode: nowrap; background-color: rgb(238, 244, 251);">
+<strong>
+</strong>
+</span>
+</font>
+This is that day — and the first line to move is the one from the rooftop. When enforcement removes the sellers of a drug, the whole supply curve picks up and shifts; watching exactly how is the machinery this chapter is made of.
+</p>
+<p>
+Recall the discipline from Chapter 3: a change in the good's
+<em>
+own price
+</em>
+never moves a curve — it slides you along one. Everything else is fair game. When something
+<em>
+other
+</em>
+than the apartment's own rent changes what renters want or what landlords offer, the entire curve picks up and moves. We call that a
+<span data-tip="The whole curve moves left or right, from a non-price cause." class="">
+<strong>
+shift
+</strong>
+</span>
+— a change in demand or a change in supply, as opposed to a change in quantity demanded or supplied.
+</p>
+<p>
+<em>
+What shifts demand?
+</em>
+Anything that changes how much buyers want
+<em>
+at every price
+</em>
+: their
+<span data-tip="More income raises demand for normal goods, lowers it for inferior ones.">
+income
+</span>
+, the price of a
+<span data-tip="A good you'd switch to instead." class="">
+<strong>
+substitute
+</strong>
+</span>
+or
+<span data-tip="A good used alongside it.">
+<strong>
+complement
+</strong>
+</span>
+, the number of buyers, tastes, and expectations about future prices. Income cuts two ways: you buy more of a
+<span data-tip="One you buy more of as your income rises." class="">
+<strong>
+normal good
+</strong>
+</span>
+as you grow richer (most things — restaurant meals, travel), but
+<em>
+less
+</em>
+of an
+<span data-tip="One you buy less of as income rises, like instant noodles." class="">
+<strong>
+inferior good
+</strong>
+</span>
+— instant noodles, the cross-town bus — as you can finally afford the nicer substitute. A big employer opens downtown — more buyers, demand shifts right. Remote work lets people leave — fewer buyers, demand shifts left.
+</p>
+<p>
+<em>
+What shifts supply?
+</em>
+Anything that changes sellers' costs or numbers: the price of inputs (lumber, labor), technology, taxes and subsidies, the number of sellers, and expectations. A new modular-construction method cuts building costs — supply shifts right. A spike in lumber prices — supply shifts left. And the case from the rooftop: when enforcement jails suppliers, seizes shipments, and raises the risk of dealing, the number of sellers willing to supply at any given price falls. Nothing about buyers changed, and the drug's own price didn't do the moving — the whole supply curve slid left. Interdiction is a supply shock, and now we can read what it does.
+</p>
+<p>
+One name ties this together. The triggering event itself — the frost, the lumber spike, the new employer downtown — is a
+<span data-tip="A sudden change in an underlying force, such as costs, income, or the number of buyers, that shifts a curve." class="">
+<strong>
+shock
+</strong>
+</span>
+: a sudden, often unexpected change in one of these underlying forces. A
+<em>
+supply shock
+</em>
+jolts costs or the number of sellers; a
+<em>
+demand shock
+</em>
+jolts buyers. Keep the two words straight: the shock is the event out in the world, the shift is what it does to the curve on the page.
+</p>
+<p>
+The direction is the whole game in this concept. "Right" always means
+<em>
+more at every price
+</em>
+; "left" means
+<em>
+less at every price.
+</em>
+It's worth practicing enough to have that nailed down before moving on.
+</p>
+</div>
+<table class="etb-compare">
+<caption style="font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;">
+Shifters — what moves each curve (and which way)
+</caption>
+<thead>
+<tr>
+<th>
+Force that changes
+</th>
+<th>
+Shifts demand…
+</th>
+<th>
+Shifts supply…
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Income rises (normal good)
+</td>
+<td>
+right (more buyers can afford it)
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Price of a substitute rises
+</td>
+<td>
+right (switch toward this good)
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Number of buyers rises
+</td>
+<td>
+right
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Input/resource cost rises
+</td>
+<td>
+—
+</td>
+<td>
+left (pricier to produce)
+</td>
+</tr>
+<tr>
+<td>
+Better technology
+</td>
+<td>
+—
+</td>
+<td>
+right (cheaper to produce)
+</td>
+</tr>
+<tr>
+<td>
+Number of sellers rises
+</td>
+<td>
+—
+</td>
+<td>
+right
+</td>
+</tr>
+<tr>
+<td>
+A tax on the good
+</td>
+<td>
+—
+</td>
+<td>
+left
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A popular streaming show makes a neighborhood famous. What happens to the demand curve for apartments there, and which way?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Tastes shifted toward the area → more buyers want it at every price → demand shifts
+<em>
+right
+</em>
+.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+The city doubles the property tax on rental buildings. Shift or movement along — and which curve, which way?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+A shift of
+<em>
+supply
+</em>
+to the
+<em>
+left
+</em>
+— a higher cost of supplying, not a change in the rent itself. (A tax is a classic supply shifter.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Rent itself rises and renters lease fewer apartments. Is the demand curve shifting?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+No — the trigger is the good's
+<em>
+own price
+</em>
+, so we slide
+<em>
+along
+</em>
+demand (a change in quantity demanded). Demand only shifts for non-price reasons. (The Ch 3 trap, still worth catching.)
+</div>
+</details>
+<div class="etb-note">
+<div class="etb-note-label">
+A fun aside · two goods that break the rule
+</div>
+<div class="etb-note-body">
+<p>
+One caution before we move on: everything above is about what
+<em>
+shifts
+</em>
+a demand curve. A different question is whether demand always slopes the usual way — less bought as price rises. Almost always, yes. But two famous oddballs break it, and they're too fun to skip.
+</p>
+<p>
+A Veblen good is wanted
+<em>
+because
+</em>
+it's expensive: a $30,000 watch, a handbag whose whole point is the price tag. Cut the price and you can kill the appeal — so demand can rise
+<em>
+with
+</em>
+price. (Named for Thorstein Veblen's "conspicuous consumption.") A Giffen good is rarer and stranger: a cheap staple so central to a poor household's budget that when its price rises, the household is now too poor to afford the pricier foods it used to mix in — so it buys
+<em>
+more
+</em>
+of the staple. The textbook cases are potatoes or rice for the very poor, though clean real-world Giffen goods are nearly impossible to pin down, and economists still argue over the few candidates. You could imagine rice next to costly meat such that when the price of rice goes up, the family buys more precisely because they can no longer afford meat.
+</p>
+<p>
+While the ideas behind Veblen and Giffen goods are interesting, you should treat both as curiosities — we flag them so the rule's exceptions don't ambush you, not because they'll be on the exam. What's more, they are very hard to identify in real life. Rather, they are evidence that economists know that their models have limits, and a good economist is willing to investigate just how far their assumptions will hold.
+</p>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Give a headline that would shift the supply of apartments left, and one that would shift demand right. Name the shifter in each.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Many answers work. Supply left: "Lumber and labor costs surge" (input costs) or "City adds new building fees" (tax). Demand right: "Tech firm relocates 5,000 jobs downtown" (number of buyers) or "Incomes climb after a boom" (income, normal good). The test is always the same: is the cause something
+<em>
+other
+</em>
+than the apartment's own rent? If yes, it's a shift, and you only need to decide which curve and which direction. Naming the wrong curve is the usual slip — a tax falls on sellers, so it moves
+<em>
+supply
+</em>
+, even though buyers feel the resulting price.
+</p>
+</div>
+</details>
+</div>
+<!-- (5) CONCEPT 2 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2
+</div>
+<h2>
+Comparative statics
+</h2>
+<p class="etb-deck">
+When two forces move at once, one answer goes dark.
+</p>
+<div class="etb-body">
+<p>
+Knowing a curve shifted is half the job. The other half is predicting what happens to equilibrium price and quantity once a curve has shifted. Economists call this
+<span data-tip="Comparing one equilibrium to another after a change." class="">
+<strong>
+comparative statics
+</strong>
+</span>
+: compare the market before and after, and read off the new crossing. We'll do it on the same apartment market from Chapter 3 (equilibrium $1,200, 300 units), so you're watching your own market change.
+</p>
+<p>
+We'll begin with
+<em>
+one curve moving
+</em>
+. Here the answer is always clean — both price and quantity are determinate. We'll take two single shifts: the supply shock from the rooftop, then a demand shift on your apartment market from Chapter 3.
+</p>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Interdiction: a supply shift with a sting in the tail
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+In this example, we'll use the drug market. To keep the arithmetic clean, say a gram trades at $100, and buyers take 100 units. The government introduces significant enforcement measures, leading suppliers to leave the market out of fear, capture, or death. Supply shifts left. Suppose the new supply crosses that steep demand at $150 and 90 units.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Supply shifts left: at every price, fewer sellers. The crossing climbs the demand curve to a higher price.
+</li>
+<li>
+Price: $100 → $150 (up 50%). Quantity: 100 → 90. (Drug users won't quit drugs over a mere 50% increase in price, that's not how addictive drugs work.)
+</li>
+<li>
+Now the sting. Revenue is price × quantity. Before: $100 × 100 = $10,000. After: $150 × 90 =
+<strong>
+$13,500.
+</strong>
+</li>
+</ol>
+<div class="etb-worked-answer">
+Cutting the supply of drugs
+<em>
+raises
+</em>
+the revenue flowing to the sellers who remain. Enforcement didn't shrink the prize; it grew it — and hung a larger prize over the market for anyone willing to step in.
+</div>
+</div>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A leftward supply shift against steep, inelastic demand: price rises sharply, quantity falls slightly, and the seller revenue rectangle grows larger">
+<rect x="80" y="135" fill="#0f7d7d" opacity="0.12">
+</rect>
+<rect x="80" y="210" fill="#6d4aaa" opacity="0.16">
+</rect>
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="30" y="56" fill="#555" font-size="15" font-weight="700">
+Price
+</text>
+<text x="560" y="352" fill="#555" font-size="15" font-weight="700">
+Quantity
+</text>
+<line x1="377" y1="60" x2="525" y2="360" stroke="#a33030" stroke-width="3.5">
+</line>
+<text x="527" y="356" fill="#a33030" font-size="15" font-weight="800">
+D (steep)
+</text>
+<line x1="250" y1="330" x2="560" y2="145" stroke="#0f7d7d" stroke-width="3.5">
+</line>
+<text x="562" y="150" fill="#0f7d7d" font-size="15" font-weight="800">
+S
+</text>
+<line x1="214" y1="255" x2="500" y2="84" stroke="#0f7d7d" stroke-width="3.5" stroke-dasharray="7 5">
+</line>
+<text x="150" y="250" fill="#0f7d7d" font-size="15" font-weight="800">
+S′
+</text>
+<line x1="80" y1="210" x2="451" y2="210" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4">
+</line>
+<line x1="451" y1="210" x2="451" y2="360" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4">
+</line>
+<line x1="80" y1="135" x2="414" y2="135" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4">
+</line>
+<line x1="414" y1="135" x2="414" y2="360" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4">
+</line>
+<circle cx="451" cy="210" r="6" fill="#1a1a1a">
+</circle>
+<circle cx="414" cy="135" r="6" fill="#1a1a1a">
+</circle>
+<text x="458" y="205" fill="#1a1a1a" font-size="14" font-weight="700">
+before
+</text>
+<text x="330" y="126" fill="#1a1a1a" font-size="14" font-weight="700">
+after
+</text>
+<text x="40" y="215" fill="#555" font-size="13">
+$100
+</text>
+<text x="40" y="140" fill="#555" font-size="13">
+$150
+</text>
+<text x="440" y="378" fill="#555" font-size="13">
+100
+</text>
+<text x="398" y="392" fill="#555" font-size="13">
+90
+</text>
+<text x="150" y="330" fill="#6d4aaa" font-size="13" font-weight="700">
+revenue before
+</text>
+<text x="150" y="410" fill="#0f7d7d" font-size="13" font-weight="700">
+revenue after (larger box)
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Figure
+</span>
+<span class="etb-figure-title">
+A leftward supply shift against steep (inelastic) demand. Price rises far, quantity falls little — and the revenue rectangle for the sellers who remain grows. Cutting supply made the business more lucrative.
+</span>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+A single shift: the employer arrives (demand right)
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+A large firm opens downtown, adding renters at every rent. Demand shifts right; suppose quantity demanded rises by 200 at every price, so the new demand is Q
+<sub>
+d
+</sub>
+= 1100 − 0.5P. Supply is unchanged at Q
+<sub>
+s
+</sub>
+= −300 + 0.5P.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Set new quantity demanded equal to quantity supplied: 1100 − 0.5P = −300 + 0.5P.
+</li>
+<li>
+Collect terms: 1100 + 300 = P, so 1400 = P.
+</li>
+<li>
+New equilibrium rent: P = $1,400 (up from $1,200).
+</li>
+<li>
+Substitute back: Q = −300 + 0.5(1400) = 400 (up from 300).
+</li>
+</ol>
+<div class="etb-worked-answer">
+Demand right → rent rises ($1,200 → $1,400) and quantity rises (300 → 400). With one curve moving, both price and quantity move in known directions.
+</div>
+</div>
+</div>
+<table class="etb-sched">
+<caption>
+The same shift as a schedule — every Q
+<sub>
+d
+</sub>
+entry rises by 200
+</caption>
+<thead>
+<tr>
+<th>
+Rent
+</th>
+<th>
+Q
+<sub>
+d
+</sub>
+before
+</th>
+<th>
+Q
+<sub>
+d
+</sub>
+after
+</th>
+<th>
+Q
+<sub>
+s
+</sub>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+$1,000
+</td>
+<td>
+400
+</td>
+<td>
+600
+</td>
+<td>
+200
+</td>
+</tr>
+<tr>
+<td>
+$1,200
+</td>
+<td>
+300
+</td>
+<td>
+500
+</td>
+<td>
+300
+</td>
+</tr>
+<tr class="etb-sched-eq">
+<td>
+$1,400
+</td>
+<td>
+200
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand curve shifting right, raising both equilibrium price and quantity">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="72" y="54">
+1800
+</text>
+<text x="72" y="106">
+1600
+</text>
+<text x="72" y="157">
+1400
+</text>
+<text x="72" y="209">
+1200
+</text>
+<text x="72" y="261">
+1000
+</text>
+<text x="72" y="312">
+800
+</text>
+<text x="72" y="364">
+600
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="80" y="378">
+0
+</text>
+<text x="170" y="378">
+100
+</text>
+<text x="260" y="378">
+200
+</text>
+<text x="350" y="378">
+300
+</text>
+<text x="440" y="378">
+400
+</text>
+<text x="530" y="378">
+500
+</text>
+<text x="620" y="378">
+600
+</text>
+</g>
+<text x="350" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (apartments / month)
+</text>
+<text x="22" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 22 205)">
+Rent ($ / month)
+</text>
+<line x1="147" y1="321" x2="575" y2="76" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="578" y="82" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="125" y1="76" x2="552" y2="321" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="556" y="320" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="305" y1="76" x2="575" y2="231" stroke="#a33030" stroke-width="2.5" stroke-dasharray="7 4">
+</line>
+<text x="578" y="232" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D′
+</text>
+<path d="M 250 150 L 330 150" stroke="#a33030" stroke-width="1.6">
+</path>
+<polygon points="338,150 328,145 328,155" fill="#a33030">
+</polygon>
+<circle cx="350" cy="205" r="5" fill="#1a3a5c">
+</circle>
+<text x="300" y="223" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#1a3a5c">
+E ($1200, 300)
+</text>
+<circle cx="440" cy="153" r="5" fill="#1a3a5c">
+</circle>
+<text x="450" y="150" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#1a3a5c">
+E′ ($1400, 400)
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 4.1
+</span>
+<span class="etb-figure-title">
+A rightward shift in demand. The new crossing E′ sits up and to the right of E.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the demand line moved
+<em>
+entirely
+</em>
+to the right — this is a change in demand, not a slide along it. Both rent and quantity rose, and the schedule, equation, and graph all land on the same E′.
+</div>
+</div>
+</div>
+<details class="etb-reveal">
+<summary>
+Faded rung — try the supply-right case, then reveal
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example (faded)
+</span>
+<span class="etb-worked-title">
+Cheaper construction (supply right)
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+A modular-building method lowers costs, so landlords supply 200 more at every rent: Q
+<sub>
+s
+</sub>
+= −100 + 0.5P. Demand is back to its original Q
+<sub>
+d
+</sub>
+= 900 − 0.5P. The mechanical steps are filled; supply the reasoning in the answer line.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Set equal: 900 − 0.5P = −100 + 0.5P.
+</li>
+<li>
+Collect: 900 + 100 = P, so 1000 = P.
+</li>
+<li>
+Substitute: Q = −100 + 0.5(1000) = 400.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Supply shifted
+<em>
+right
+</em>
+, so rent
+<em>
+fell
+</em>
+($1,200 → $1,000) and quantity
+<em>
+rose
+</em>
+(300 → 400). A supply increase lowers price but raises quantity — the opposite price effect of a demand increase, same quantity effect.
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: demand shifts
+<em>
+left
+</em>
+(a big employer leaves). Without computing, which way do rent and quantity move?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Both fall. Demand left = fewer buyers at every price → lower rent, lower quantity. (Mirror of the employer-arrives case.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: supply shifts
+<em>
+left
+</em>
+(lumber prices spike). Which way do rent and quantity move?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Rent rises, quantity falls. A supply decrease pushes price up and quantity down — the classic "costs rose" result.
+</div>
+</details>
+<div class="etb-rof">
+<div class="etb-rof-header">
+<span class="etb-rof-badge">
+Rule of Four
+</span>
+<span class="etb-rof-title">
+One market, four exact forms
+</span>
+</div>
+<p class="etb-rof-intro">
+The post-shift market (demand right to Q
+<sub>
+d
+</sub>
+= 1100 − 0.5P, supply unchanged) described four ways. Each form is the
+<em>
+same
+</em>
+function — the numbers reconcile across all four, and every form lands on the equilibrium $1,400, 400.
+</p>
+<div class="etb-rof-grid">
+<div class="etb-rof-cell">
+<div class="etb-rof-lbl">
+<span class="etb-rof-n">
+1
+</span>
+Equation
+</div>
+<div class="etb-rof-body" style="font-family:'Courier New',monospace;font-size:12.5px;line-height:1.9;">
+Q
+<sub>
+d
+</sub>
+= 1100 − 0.5P
+<br>
+Q
+<sub>
+s
+</sub>
+= −300 + 0.5P
+<br>
+P* = 1400 Q* = 400
+</div>
+</div>
+<div class="etb-rof-cell">
+<div class="etb-rof-lbl">
+<span class="etb-rof-n">
+2
+</span>
+Table
+</div>
+<div class="etb-rof-body">
+<table style="border-collapse:collapse;font-family:sans-serif;font-size:12px;width:100%;">
+<thead>
+<tr>
+<th style="text-align:right;padding:3px 8px;border-bottom:1px solid #d8cfb8;">
+P
+</th>
+<th style="text-align:right;padding:3px 8px;border-bottom:1px solid #d8cfb8;">
+Q
+<sub>
+d
+</sub>
+</th>
+<th style="text-align:right;padding:3px 8px;border-bottom:1px solid #d8cfb8;">
+Q
+<sub>
+s
+</sub>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;padding:3px 8px;">
+1000
+</td>
+<td style="text-align:right;padding:3px 8px;">
+600
+</td>
+<td style="text-align:right;padding:3px 8px;">
+200
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding:3px 8px;">
+1200
+</td>
+<td style="text-align:right;padding:3px 8px;">
+500
+</td>
+<td style="text-align:right;padding:3px 8px;">
+300
+</td>
+</tr>
+<tr style="background:#eef6f0;font-weight:700;color:#1a3a2a;">
+<td style="text-align:right;padding:3px 8px;">
+1400
+</td>
+<td style="text-align:right;padding:3px 8px;">
+400
+</td>
+<td style="text-align:right;padding:3px 8px;">
+400
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="etb-rof-cell">
+<div class="etb-rof-lbl">
+<span class="etb-rof-n">
+3
+</span>
+Graph
+</div>
+<div class="etb-rof-body">
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand shifts right from D to D-prime, raising the equilibrium up and to the right along supply" style="display:block;width:100%;height:auto;margin-top:.2rem;">
+<line x1="34" y1="18" x2="34" y2="180" stroke="#1a1a1a" stroke-width="1.2">
+</line>
+<line x1="34" y1="180" x2="290" y2="180" stroke="#1a1a1a" stroke-width="1.2">
+</line>
+<text x="30" y="14" font-family="sans-serif" font-size="10" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+P
+</text>
+<text x="290" y="196" font-family="sans-serif" font-size="10" font-weight="700" fill="#1a3a5c" text-anchor="end">
+Q
+</text>
+<line x1="55" y1="170" x2="270" y2="40" stroke="#0f7d7d" stroke-width="2">
+</line>
+<text x="274" y="42" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="45" y1="45" x2="210" y2="180" stroke="#a33030" stroke-width="2">
+</line>
+<text x="205" y="176" font-family="sans-serif" font-size="11" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="120" y1="45" x2="285" y2="160" stroke="#a33030" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="287" y="150" font-family="sans-serif" font-size="11" font-weight="700" fill="#a33030">
+D′
+</text>
+<circle cx="137" cy="120" r="3.5" fill="#1a3a5c">
+</circle>
+<text x="118" y="133" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1a3a5c">
+E
+</text>
+<circle cx="186" cy="91" r="3.5" fill="#1a3a5c">
+</circle>
+<text x="192" y="89" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1a3a5c">
+E′
+</text>
+</svg>
+</div>
+</div>
+<div class="etb-rof-cell">
+<div class="etb-rof-lbl">
+<span class="etb-rof-n">
+4
+</span>
+Story
+</div>
+<div class="etb-rof-body">
+New workers compete for the same apartments. They bid rent up; the higher rent coaxes out a few more units. More people housed, at a higher price.
+</div>
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+Now the harder, and more interesting, case:
+<em>
+both curves shift at once
+</em>
+. This happens constantly in the real world — the employer arrives
+<em>
+and
+</em>
+construction gets cheaper in the same year. The surprise is that when both move, you can usually pin down only
+<em>
+one
+</em>
+of price and quantity for certain. The other is
+<span data-tip="Can't be pinned down without knowing which shift is larger.">
+<strong>
+indeterminate
+</strong>
+</span>
+— its direction depends on which shift is bigger, which the model alone doesn't tell you.
+</p>
+<p>
+Take both shifting
+<em>
+right
+</em>
+— more renters and more units. Quantity clearly rises (both forces push it up). But rent? The demand increase pushes rent up; the supply increase pushes it down. Try to predict rent and quantity yourself before opening the example.
+</p>
+</div>
+<details class="etb-reveal">
+<summary>
+Both curves move right — what happens to rent and quantity?
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+A double shift: both curves move right
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Demand right by 200 (Q
+<sub>
+d
+</sub>
+= 1100 − 0.5P)
+<em>
+and
+</em>
+supply right by 200 (Q
+<sub>
+s
+</sub>
+= −100 + 0.5P) — equal-sized shifts.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Set equal: 1100 − 0.5P = −100 + 0.5P.
+</li>
+<li>
+Collect: 1100 + 100 = P, so 1200 = P.
+</li>
+<li>
+Rent is unchanged at $1,200 — the two pressures exactly cancel.
+</li>
+<li>
+Substitute: Q = −100 + 0.5(1200) = 500 (up from 300).
+</li>
+</ol>
+<div class="etb-worked-answer">
+Both right, equal size → quantity rises (300 → 500), rent unchanged. But that "unchanged" is an accident of equal shifts. If demand had grown
+<em>
+more
+</em>
+, rent would rise; if supply had grown more, rent would fall. Quantity is
+<strong>
+determinate
+</strong>
+(up); rent is
+<strong>
+indeterminate
+</strong>
+.
+</div>
+</div>
+</div>
+</div>
+</details>
+<div class="etb-body">
+<p>
+That is the key AP move, and it generalizes into one small table you should be able to reconstruct from scratch. When the two curves move the
+<em>
+same
+</em>
+way, quantity is pinned down and price is ambiguous. When they move
+<em>
+opposite
+</em>
+ways, price is pinned down and quantity is ambiguous.
+</p>
+</div>
+<table class="etb-compare">
+<caption style="font-family:sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a3a5c;text-align:left;padding-bottom:8px;">
+Every case in one place — what you can pin down
+</caption>
+<thead>
+<tr>
+<th>
+</th>
+<th>
+Supply ↑ (right)
+</th>
+<th>
+Supply unchanged
+</th>
+<th>
+Supply ↓ (left)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>
+Demand ↑ (right)
+</strong>
+</td>
+<td>
+Q↑ ·
+<em>
+P ?
+</em>
+</td>
+<td>
+P↑, Q↑
+</td>
+<td>
+P↑ ·
+<em>
+Q ?
+</em>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Demand unchanged
+</strong>
+</td>
+<td>
+P↓, Q↑
+</td>
+<td>
+no change
+</td>
+<td>
+P↑, Q↓
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+Demand ↓ (left)
+</strong>
+</td>
+<td>
+P↓ ·
+<em>
+Q ?
+</em>
+</td>
+<td>
+P↓, Q↓
+</td>
+<td>
+Q↓ ·
+<em>
+P ?
+</em>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="etb-body">
+<p>
+The middle row and middle column are the single shifts — one curve moves, the other holds still — and there both price and quantity are always determinate. The four corners are the double shifts, and there one variable is locked in while the other (the
+<em>
+?
+</em>
+) is genuinely
+<span data-tip="The model can't even pin down its direction.">
+indeterminate
+</span>
+. And "indeterminate" is stronger than "we didn't bother": the model can't tell you even the
+<em>
+direction
+</em>
+, because it depends on things the diagram alone doesn't fix — chiefly the relative
+<em>
+sizes
+</em>
+of the two shifts, and secondarily how steep the curves are. A small bump in demand against a massive jump in supply tips price one way; flip the magnitudes and it tips the other; equal shifts can leave it dead even. The answer lives in the numbers, not the arrows.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Both curves shifting right by different amounts, showing quantity rises but price could go either way">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="350" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="22" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 22 205)">
+Price
+</text>
+<line x1="125" y1="76" x2="552" y2="321" stroke="#a33030" stroke-width="2">
+</line>
+<text x="556" y="320" font-family="sans-serif" font-size="13" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="147" y1="321" x2="575" y2="76" stroke="#0f7d7d" stroke-width="2">
+</line>
+<text x="578" y="82" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="305" y1="102" x2="600" y2="271" stroke="#a33030" stroke-width="2" stroke-dasharray="7 4">
+</line>
+<text x="604" y="272" font-family="sans-serif" font-size="13" font-weight="700" fill="#a33030">
+D′
+</text>
+<line x1="240" y1="345" x2="600" y2="139" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="7 4">
+</line>
+<text x="604" y="136" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+S′
+</text>
+<circle cx="350" cy="205" r="4.5" fill="#1a3a5c">
+</circle>
+<text x="300" y="198" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E
+</text>
+<circle cx="485" cy="205" r="4.5" fill="#1a3a5c">
+</circle>
+<text x="492" y="200" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E′
+</text>
+<path d="M 350 345 L 480 345" stroke="#8a6d2f" stroke-width="1.6">
+</path>
+<polygon points="488,345 478,340 478,350" fill="#8a6d2f">
+</polygon>
+<text x="360" y="338" font-family="sans-serif" font-size="11" font-weight="700" fill="#8a6d2f">
+Q up for sure
+</text>
+<text x="300" y="120" font-family="sans-serif" font-size="11" font-weight="700" fill="#6d4aaa">
+P? depends which
+</text>
+<text x="300" y="134" font-family="sans-serif" font-size="11" font-weight="700" fill="#6d4aaa">
+shift is larger
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 4.2
+</span>
+<span class="etb-figure-title">
+Both curves shift right. The new equilibrium E′ is firmly to the right (more quantity) but its height depends on which curve moved more.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+quantity is pinned down by both forces pushing the same way; price is caught between them, so the model can't pin it down without knowing the relative sizes.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Demand rises and supply falls at the same time (more buyers, costlier to build). Which is determinate — price or quantity?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+<em>
+Price
+</em>
+is determinate — it rises (both forces push rent up). Quantity is indeterminate; it depends on which shift is larger. (Opposite-direction shifts pin down price.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+You observe that quantity definitely rose but the price change is ambiguous. What kind of double shift happened?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Both curves shifted the
+<em>
+same
+</em>
+direction (both right, here). Same-direction shifts always pin down quantity and leave price ambiguous.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Both curves shift
+<em>
+left
+</em>
+. What can you say about price and quantity?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Quantity falls for sure; price is indeterminate. (Same-direction → quantity determinate.)
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Without looking, rebuild the rule: when is price determinate, and when is quantity?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Same-direction shifts (both right or both left) →
+<em>
+quantity
+</em>
+is determinate, price ambiguous. Opposite-direction shifts (one right, one left) →
+<em>
+price
+</em>
+is determinate, quantity ambiguous. The intuition: when both forces push quantity the same way, quantity can't be in doubt — but they tug price in opposite directions, so price is the casualty. Flip it for opposite shifts. The single most common error is trying to pin down
+<em>
+both
+</em>
+variables; with a double shift, one of them is genuinely unknowable from the model alone, and saying so is the correct answer, not a cop-out.
+</p>
+</div>
+</details>
+</div>
+<!-- (5) CONCEPT 3 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3
+</div>
+<h2>
+Price as incentive: Entry and Exit
+</h2>
+<p class="etb-deck">
+Why a price that's wrong won't stay wrong for long.
+</p>
+<div class="etb-body">
+<p>
+A price does two jobs at the same instant. It is a
+<span data-tip="One number that compresses the dispersed facts of supply and demand into a figure anyone can read.">
+<strong>
+signal
+</strong>
+</span>
+: a single number that compresses an ocean of dispersed facts — how scarce apartments are, how badly people want them, how costly they are to build — into one figure everyone can read at a glance. And it is an
+<span data-tip="The same price seen as a reward; it pays people to act on what it signals.">
+<strong>
+incentive
+</strong>
+</span>
+: that same number rewards anyone who acts on the information. A high rent doesn't just
+<em>
+say
+</em>
+"this city is short of housing"; it
+<em>
+pays
+</em>
+developers to build more and nudges some renters to economize, double up, or look elsewhere. Information and motive, fused into one number. The rent isn't the disease — it's the fever, the body's signal that something needs attention.
+</p>
+<p>
+Of the two jobs, the incentive is the one that makes the market actually
+<em>
+move
+</em>
+. Information just sits there unless someone is paid to act on it — and they are. When a price sits
+<em>
+above
+</em>
+where supply and demand would meet, the reward for selling is unusually fat, so sellers pour in and offer more: owners list the unit they'd been sitting on, landlords convert buildings back to rentals, developers break ground. Economists call this
+<span data-tip="Sellers drawn in when the price or profit is high, adding supply." class="">
+<strong>
+entry
+</strong>
+</span>
+. All that new supply piles up as a surplus, and the surplus pushes the price back
+<em>
+down
+</em>
+. When a price sits
+<em>
+below
+</em>
+equilibrium, the reward is too thin to bother: sellers cut back, mothball units, or leave the market —
+<span data-tip="Sellers leaving when the price is too low to bother, withdrawing supply." class="">
+<strong>
+exit
+</strong>
+</span>
+— and the resulting shortage pushes the price back
+<em>
+up
+</em>
+. (Entry and exit return as the engine of long-run competition, where they grind profit down to zero in later chapters.)
+</p>
+<p>
+Here's the key idea: a high, fat price is not a wall around a market, it is a recruitment poster. The reward pulls new sellers in exactly as the model says it must: a captured route is replaced, a fallen supplier's territory is taken up by others, production migrates to wherever enforcement is weakest. Entry swells supply back toward — and, over years, past — where it began, and the price sinks with it. That is why, across decades of rising seizures, purity-adjusted cocaine prices did not climb but fell by roughly four-fifths: the entry the high price paid for eventually swamped the enforcement that raised it.
+</p>
+<p>
+But watch what the model does
+<em>
+not
+</em>
+price, in the spirit of the unseen cost from Chapter 1.
+<font color="#1a3a5c" face="sans-serif">
+<span style="font-size: 11px; letter-spacing: 0.22px; text-wrap-mode: nowrap; background-color: rgb(238, 244, 251);">
+<strong>
+</strong>
+</span>
+</font>
+Entry here is not a peaceful queue of new shopkeepers. When a kingpin is removed, the territory he held does not stay orderly; it fragments, and the fragments fight to inherit it. By one count the number of major organized-crime groups in Mexico rose from roughly five in 2006 to around sixty by 2012, and studies of the "kingpin strategy" find that removing a leader tends to be followed, on average, by about one additional group operating in his former territory — and by a spike in killings. The seen result was an arrest. The unseen result was a war, and a supply chain that barely flinched. That gap between the seen and the unseen is the whole cost of reading a market by its intentions instead of its incentives.
+</p>
+<p>
+None of this says enforcement is pointless or that the model settles what policy should be — the historical verdict is genuinely contested, and the market's answer to a supply shock is a positive fact, not a recommendation. What the model does say, cleanly, is what to
+<em>
+expect
+</em>
+: cut the supply of an inelastic good and the short-run price rises, the revenue rises, and the long-run answer is entry. A policy that didn't see that coming was reading the wrong page.
+</p>
+<p>
+This is why a "wrong" price doesn't stay wrong for long: the gap between the price and equilibrium is itself the incentive that closes it. But notice the fine print — all of that self-correction runs on one condition, that the price is
+<em>
+free to move
+</em>
+.
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A landlord lists a one-bedroom at $1,500 in a market that clears at $1,200 — and nothing forces that price. Walk through what happens next, and why.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+At $1,500, more units are offered than renters want at that rent — a
+<em>
+surplus
+</em>
+. Empty units earn nothing, so landlords cut the rent, and some who entered chasing the fat price find it isn't worth it. The price falls toward $1,200, where the surplus vanishes. The too-high price
+<em>
+created
+</em>
+the surplus that drags it back down.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Now the reverse: rent sits at $900 when the market clears at $1,200, with no law holding it there. Reason through what happens.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+At $900, renters want more apartments than landlords will supply — a
+<em>
+shortage
+</em>
+. Renters compete and offer more; landlords see money left on the table and raise the rent, while the better reward pulls new units in (entry). The price rises toward $1,200, where the shortage closes. The too-low price created the shortage that pushes it back up.
+</div>
+</details>
+<div class="etb-note">
+<div class="etb-note-label">
+The thread from Chapter 3
+</div>
+<div class="etb-note-body">
+<p>
+This is the payoff of Hayek's knowledge problem.
+<font color="#1a3a5c">
+<span style="font-size: 11px; letter-spacing: 0.22px; text-wrap-mode: nowrap;">
+<strong>
+</strong>
+</span>
+</font>
+The reason no planner can simply set the right price is that the price isn't
+<em>
+storing
+</em>
+the relevant knowledge anywhere a planner could copy it — the knowledge lives, scattered and fleeting, in millions of separate heads, and the price is the only device that gathers it. Switch the price off and the knowledge doesn't transfer to the planning office. It simply stops being expressed at all.
+</p>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+The price of a metal suddenly doubles. Name the two jobs that price is now doing.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Signal: the higher price tells everyone, without anyone announcing it, that the metal has become scarcer or more valued — users should economize, find substitutes, recycle. Incentive: the same higher price
+<em>
+rewards
+</em>
+exactly those responses — a miner who brings more to market profits, a manufacturer who switches to a cheaper alloy saves. The point is that one number does both at once, and to everyone simultaneously, with no central office collecting the information or issuing the orders. A wrong answer usually names only the signal ("it tells people it's scarce") and forgets the incentive — but information no one is paid to act on changes nothing.
+</p>
+</div>
+</details>
+</div>
+<!-- (5) CONCEPT 4 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4
+</div>
+<h2>
+Price controls
+</h2>
+<p class="etb-deck">
+You can't cure a fever by breaking the thermometer.
+</p>
+<div class="etb-body">
+<p>
+The drug market
+<em>
+swallowed
+</em>
+the shock: cut its supply and, given time, the reward pulled entry in until the price sank back and then below. This is a
+<span data-tip="A legal maximum price." class="">
+<strong>
+price ceiling:
+</strong>
+</span>
+a law forbidding any price above some level. Rent control is the classic case. The intuition behind it is humane: rents are too high, so cap them. But recall the two things we've built. A price is a signal (Concept 3), and a shortage cures itself
+<em>
+only because
+</em>
+the price is free to rise toward equilibrium (Chapter 3).
+<font color="#1a3a5c" face="sans-serif">
+<strong>
+</strong>
+</font>
+A binding ceiling forbids exactly that rise. So the shortage it creates cannot self-correct. It is permanent.
+</p>
+<p>
+First, a crucial distinction: a ceiling only does something if it's set
+<em>
+below
+</em>
+the equilibrium price. A ceiling
+<em>
+above
+</em>
+equilibrium — say, a $1,400 cap on a market that clears at $1,200 — is
+<span data-tip="A control that doesn't actually constrain the market.">
+non-binding
+</span>
+: the market never wanted to go that high, so nothing changes. The cap bites only when set below where the market would clear.
+</p>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+A binding rent ceiling and the shortage it freezes in
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Our market clears at $1,200 (300 units). The city caps rent at $1,000. Using the Chapter 3 schedules: at $1,000, Q
+<sub>
+d
+</sub>
+= 900 − 0.5(1000) = 400 and Q
+<sub>
+s
+</sub>
+= −300 + 0.5(1000) = 200.
+</p>
+<ol class="etb-worked-steps">
+<li>
+At the $1,000 ceiling, renters want 400 apartments but landlords offer only 200.
+</li>
+<li>
+Shortage = 400 − 200 = 200 apartments.
+</li>
+<li>
+In a free market this shortage would bid rent up toward $1,200, erasing itself. The ceiling forbids any rent above $1,000.
+</li>
+<li>
+So the price can't rise, the 200 missing units never appear, and the shortage stays — month after month.
+</li>
+</ol>
+<div class="etb-worked-answer">
+A binding ceiling ($1,000, below the $1,200 equilibrium) creates a
+<em>
+permanent
+</em>
+shortage of 200 apartments. The self-correction from Chapter 3 is switched off, because it ran entirely on the price being free to move.
+</div>
+</div>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A binding price ceiling below equilibrium creating a persistent shortage between quantity supplied and quantity demanded">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="72" y="54">
+1800
+</text>
+<text x="72" y="106">
+1600
+</text>
+<text x="72" y="157">
+1400
+</text>
+<text x="72" y="209">
+1200
+</text>
+<text x="72" y="261">
+1000
+</text>
+<text x="72" y="312">
+800
+</text>
+<text x="72" y="364">
+600
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="80" y="378">
+0
+</text>
+<text x="170" y="378">
+100
+</text>
+<text x="260" y="378">
+200
+</text>
+<text x="350" y="378">
+300
+</text>
+<text x="440" y="378">
+400
+</text>
+<text x="530" y="378">
+500
+</text>
+<text x="620" y="378">
+600
+</text>
+</g>
+<text x="350" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (apartments / month)
+</text>
+<text x="22" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 22 205)">
+Rent ($ / month)
+</text>
+<line x1="125" y1="76" x2="552" y2="321" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="556" y="320" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="147" y1="321" x2="575" y2="76" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="578" y="82" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<circle cx="350" cy="205" r="4.5" fill="#1a3a5c">
+</circle>
+<text x="358" y="200" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E ($1200)
+</text>
+<line x1="80" y1="257" x2="560" y2="257" stroke="#a33030" stroke-width="2" stroke-dasharray="6 4">
+</line>
+<text x="470" y="251" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#a33030">
+CEILING $1,000
+</text>
+<circle cx="260" cy="257" r="3.5" fill="#0f7d7d">
+</circle>
+<circle cx="440" cy="257" r="3.5" fill="#a33030">
+</circle>
+<line x1="260" y1="257" x2="440" y2="257" stroke="#c48b00" stroke-width="3">
+</line>
+<text x="350" y="278" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#c48b00" text-anchor="middle">
+SHORTAGE = 200 (permanent)
+</text>
+<text x="218" y="296" font-family="sans-serif" font-size="10.5" fill="#0f7d7d">
+Qs=200
+</text>
+<text x="430" y="296" font-family="sans-serif" font-size="10.5" fill="#a33030">
+Qd=400
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 4.3
+</span>
+<span class="etb-figure-title">
+A binding rent ceiling at $1,000. Quantity supplied (200) falls short of quantity demanded (400); the gap can't close because rent can't rise.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+in Chapter 3 a shortage came with an arrow pushing price up toward E. Here the ceiling is a wall the price can't climb — so the arrow is gone and the gap stays open.
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+If price can't ration the 200 scarce apartments, something else must. That something is
+<span data-tip="When price can't allocate a good, queues, favoritism, or black markets do." class="">
+<strong>
+non-price rationing
+</strong>
+</span>
+, and it is never pretty: years-long waiting lists, apartments passed through personal connections, landlords letting buildings decay because demand far exceeds supply anyway, under-the-table "key money," and black markets. The 1970s gave a vivid cousin of this — when gasoline prices were capped, the shortage showed up as hours-long lines and stations simply running dry.
+</p>
+<p>
+Step back for the deeper lesson, because it outlasts apartments. A scarce thing
+<em>
+will
+</em>
+be rationed — that part is not optional. You can ration by price, by queue, by lottery, or by who-you-know, but ration you must, because there isn't enough to go around. Capping the price doesn't abolish the rationing; it only changes the currency you pay in — from dollars to hours in line, favors, and luck. And price has one power none of its replacements share: because it is also an incentive, it doesn't merely decide who gets today's apartments — it pays builders to make more of them tomorrow. A waiting list rations the shortage and freezes it there; a free price rations it
+<em>
+and
+</em>
+goes to work erasing it. That is the quiet cost of breaking the thermometer.
+</p>
+</div>
+<div class="etb-photo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/THE_STATE_OF_OREGON_WAS_THE_FIRST_TO_GO_TO_A_SYSTEM_OF_ODD_AND_EVEN_NUMBERS_DURING_THE_GASOLINE_CRISIS_IN_THE_FALL..._-_NARA_-_555489.jpg/960px-THE_STATE_OF_OREGON_WAS_THE_FIRST_TO_GO_TO_A_SYSTEM_OF_ODD_AND_EVEN_NUMBERS_DURING_THE_GASOLINE_CRISIS_IN_THE_FALL..._-_NARA_-_555489.jpg" alt="Cars lined up at a gas station during the 1970s fuel crisis under price controls">
+<div class="etb-photo-cap">
+<strong>
+The shortage made visible.
+</strong>
+With gasoline prices capped in the 1970s, the gap between what drivers wanted and what was available couldn't show up as a higher price — so it showed up as lines, waiting, and stations running dry. The same logic that fences in a desire path.
+<span class="etb-photo-credit">
+Photo: U.S. National Archives (NARA 555489), Oregon, 1973 ·
+<a href="https://commons.wikimedia.org/wiki/File:THE_STATE_OF_OREGON_WAS_THE_FIRST_TO_GO_TO_A_SYSTEM_OF_ODD_AND_EVEN_NUMBERS_DURING_THE_GASOLINE_CRISIS_IN_THE_FALL..._-_NARA_-_555489.jpg" target="_blank" rel="noopener">
+Wikimedia Commons
+</a>
+, public domain
+</span>
+</div>
+</div>
+<div class="etb-body">
+<p>
+The mirror image is a
+<span data-tip="A legal minimum price; binds when set above equilibrium." class="">
+<strong>
+price floor
+</strong>
+</span>
+— a legal
+<em>
+minimum
+</em>
+. It binds only when set
+<em>
+above
+</em>
+equilibrium, and then it produces a persistent
+<em>
+surplus
+</em>
+instead of a shortage. Agricultural price supports are the textbook case: set a floor under the price of milk above what the market would pay, and you get year-after-year mountains of unsold dairy the government must buy up or store. The most famous floor of all is the minimum wage — a floor under the price of labor — but its effects are genuinely debated and we give it its own chapter.
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A city caps rent at $1,400 in a market that clears at $1,200. What happens?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Nothing — the ceiling is above equilibrium, so it's
+<em>
+non-binding
+</em>
+. The market still clears at $1,200. A ceiling only bites when set below equilibrium.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+The rent ceiling is lowered from $1,000 to $800. Using the Ch 3 schedules, what's the new shortage?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+At $800: Q
+<sub>
+d
+</sub>
+= 500, Q
+<sub>
+s
+</sub>
+= 100. Shortage = 400 — twice as large. The further below equilibrium, the worse the shortage.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A price floor on milk is set
+<em>
+below
+</em>
+the equilibrium price. Binding or not?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Non-binding. A floor only binds when set
+<em>
+above
+</em>
+equilibrium; below it, the market clears as usual. (Floors and ceilings bind from opposite sides.)
+</div>
+</details>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Common misconception
+</span>
+"A price ceiling makes apartments cheaper for everyone."
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+It makes them cheaper for the people who
+<em>
+already have one
+</em>
+— and unavailable for everyone still searching. At the $1,000 cap, only 200 apartments are supplied where 400 are wanted; 200 would-be renters who'd happily pay get nothing at all. For them the price didn't fall, it became infinite.
+</p>
+<p>
+And the lucky 200 don't escape free either. The "true price" they pay re-emerges in forms money can't measure: months on a waiting list, an apartment that never gets repaired, a finder's fee paid in cash, a landlord who rents only to friends. Add up the waiting and the side payments and the decay, and the real cost of a rent-controlled apartment often
+<em>
+exceeds
+</em>
+what the market rent would have been. The cap didn't lower the price of scarcity. It just changed who pays it, and in what currency — and froze the shortage in place so it never heals.
+</p>
+</div>
+</details>
+<div class="etb-research">
+<div class="etb-research-header">
+<span class="etb-research-badge">
+Research study
+</span>
+<span class="etb-research-title">
+What rent control actually does — the San Francisco evidence
+</span>
+</div>
+<div class="etb-research-body">
+<p>
+A widely cited study of San Francisco's 1994 expansion of rent control (Diamond, McQuade &amp; Qian, 2019) found the policy did what the model predicts on both sides. Tenants in covered units were substantially more likely to stay put — real protection, the intended effect. But landlords responded by converting and redeveloping to escape the rules,
+<em>
+reducing
+</em>
+the supply of rental housing by around 15% — which pushed market rents
+<em>
+up
+</em>
+citywide for everyone outside the controlled units.
+</p>
+<p>
+The honest reading: rent control is not a free lunch and not a pure villain either. It transfers real benefits to incumbent tenants while shrinking supply and raising rents for newcomers — exactly the "who pays the scarcity, and in what form" question above. Whether that trade is worth making is a values question, not a settled one, and economists who agree on the
+<em>
+mechanism
+</em>
+still disagree on the
+<em>
+policy
+</em>
+. That disagreement is where the readings and policy prompt pick up — it is not something the model alone can resolve.
+</p>
+</div>
+</div>
+</div>
+<!-- (7) ON THE EXAM -->
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+The moves you can now make
+</p>
+<p class="etb-exam-sub">
+Three questions at the level the exam will actually ask — application, not recall. Try each on paper first, then reveal the worked solution. The trying is where the learning happens.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+A
+</span>
+Predict the new equilibrium
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+B
+</span>
+Both curves move
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+C
+</span>
+Binding or not
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Type A · single shift &amp; comparative statics
+</p>
+<p class="etb-exam-q">
+In the market for coffee, a frost destroys much of the bean harvest. Identify which curve shifts and in which direction, then state what happens to the equilibrium price and quantity of coffee, and explain why.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+The frost raises the cost of producing coffee (fewer beans, pricier inputs), so it shifts the
+<em>
+supply
+</em>
+curve
+<em>
+left
+</em>
+— not demand, and not a slide along supply, because the trigger isn't coffee's own price.
+</p>
+<p>
+A leftward supply shift moves the equilibrium up the unchanged demand curve: price
+<em>
+rises
+</em>
+and quantity
+<em>
+falls
+</em>
+. Intuition: less is available at every price, so buyers bid the price up, and at the higher price fewer cups are bought. The tell that it's a supply story, not a demand story, is that price and quantity move in
+<em>
+opposite
+</em>
+directions.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Type B · double shift &amp; indeterminacy
+</p>
+<p class="etb-exam-q">
+In the smartphone market, consumer incomes rise (phones are a normal good) and at the same time a manufacturing breakthrough lowers production costs. Predict the effect on equilibrium price and quantity. If either is indeterminate, say so and explain why.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Higher incomes shift demand
+<em>
+right
+</em>
+; the cheaper process shifts supply
+<em>
+right
+</em>
+. Both curves move the
+<em>
+same
+</em>
+direction.
+</p>
+<p>
+Quantity is
+<strong>
+determinate
+</strong>
+: both forces push it up, so equilibrium quantity rises. Price is
+<strong>
+indeterminate
+</strong>
+: the demand increase pushes price up while the supply increase pushes it down, and which wins depends on the relative sizes of the two shifts — which the model alone doesn't give us. The correct, full-credit answer names quantity as rising and states explicitly that price cannot be pinned down without knowing which shift is larger. Trying to call price anyway is the classic error.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Type C · price controls
+</p>
+<p class="etb-exam-q">
+A campus textbook market is described by the equations below, and clears at a price of $80 with a quantity of
+<strong>
+500
+</strong>
+books:
+</p>
+<ul style="list-style:none;padding:0;margin:0 0 .5rem;font-family:'Courier New',monospace;font-size:14px;line-height:2;color:#1a1a1a;">
+<li>
+• Demand: Q
+<sub>
+d
+</sub>
+= 1100 − 7.5P
+</li>
+<li>
+• Supply: Q
+<sub>
+s
+</sub>
+= −100 + 7.5P
+</li>
+</ul>
+<div class="etb-figure" style="margin:.5rem 0 .9rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The textbook market: downward demand and upward supply crossing at 80 dollars and 500 books, with a dashed price cap drawn at 60 dollars below the equilibrium">
+<line x1="70" y1="50" x2="70" y2="330" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="330" x2="570" y2="330" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="26" y="190" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 190)">
+Price ($)
+</text>
+<text x="320" y="366" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (textbooks)
+</text>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="62" y="334">
+0
+</text>
+<text x="62" y="229">
+60
+</text>
+<text x="62" y="194">
+80
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="70" y="348">
+0
+</text>
+<text x="376" y="348">
+500
+</text>
+</g>
+<line x1="376" y1="190" x2="70" y2="190" stroke="#cbd3da" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="376" y1="190" x2="376" y2="330" stroke="#cbd3da" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="70" y1="307" x2="560" y2="120" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="566" y="122" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<line x1="70" y1="73" x2="560" y2="260" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="566" y="263" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<line x1="70" y1="225" x2="500" y2="225" stroke="#6d4aaa" stroke-width="2" stroke-dasharray="6 4">
+</line>
+<text x="410" y="219" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#6d4aaa">
+PRICE CAP $60
+</text>
+<circle cx="376" cy="190" r="5" fill="#1a3a5c">
+</circle>
+<text x="386" y="185" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#1a3a5c">
+E ($80, 500)
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-title">
+The textbook market, with the proposed $60 price cap.
+</span>
+</div>
+</div>
+<p class="etb-exam-q">
+A student government, calling prices unfair, caps the price at the $60 shown above. Determine whether the cap is binding, compute the resulting shortage, and name one form of non-price rationing likely to appear.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+The cap ($60) is
+<em>
+below
+</em>
+the equilibrium price ($80), so it is
+<strong>
+binding
+</strong>
+— it forces the price below where the market would clear.
+</li>
+<li>
+Quantity demanded at $60: Q
+<sub>
+d
+</sub>
+= 1100 − 7.5(60) = 1100 − 450 = 650.
+</li>
+<li>
+Quantity supplied at $60: Q
+<sub>
+s
+</sub>
+= −100 + 7.5(60) = −100 + 450 = 350.
+</li>
+<li>
+Shortage = Q
+<sub>
+d
+</sub>
+− Q
+<sub>
+s
+</sub>
+= 650 − 350 = 300 textbooks.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Binding cap → permanent shortage of 300 books — on the graph, the horizontal gap between supply and demand along the $60 line. Non-price rationing fills it: first-come waiting lines, sellouts and back-orders, favoritism, or a resale (black) market above $60. The cap didn't make books cheaper for everyone — only for the 350 who manage to get one.
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+<!-- FRQ CAPSTONE (graph-bearing long form) -->
+<div class="etb-frq">
+<span class="etb-frq-badge">
+Capstone · free response
+</span>
+<p class="etb-frq-title">
+Put the moves together
+</p>
+<p class="etb-frq-meta">
+AP-style long free response · ~10 points · graph required · model answer and scoring below
+</p>
+<p class="etb-frq-scenario">
+A coastal city's market for one-bedroom apartments is initially in equilibrium. Then a large technology firm relocates 5,000 employees downtown. Alarmed by rising rents, the city council responds with a rent ceiling.
+</p>
+<ol class="etb-frq-parts">
+<li>
+Draw a correctly labeled supply-and-demand graph for apartments, showing the initial equilibrium rent (R
+<sub>
+1
+</sub>
+) and quantity (Q
+<sub>
+1
+</sub>
+).
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Show the effect of the firm's relocation on your graph, and state what happens to the equilibrium rent and quantity.
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Suppose after the relocation demand is Q
+<sub>
+d
+</sub>
+= 1100 − 0.5R and supply is Q
+<sub>
+s
+</sub>
+= −300 + 0.5R. Calculate the new equilibrium rent and quantity. Show your work.
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+The council caps rent at $1,000. On your graph, show the ceiling and identify the resulting shortage. Is the ceiling binding? Explain.
+<span class="etb-frq-pts">
+(3 pts)
+</span>
+</li>
+<li>
+Identify one form of non-price rationing likely to emerge under the ceiling.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal a full-credit response
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+(a)
+</strong>
+A standard graph: vertical axis Rent ($), horizontal axis Quantity of apartments, downward-sloping D and upward-sloping S crossing at E
+<sub>
+1
+</sub>
+, with R
+<sub>
+1
+</sub>
+dropped to the price axis and Q
+<sub>
+1
+</sub>
+to the quantity axis. (See figure.)
+</p>
+<p>
+<strong>
+(b)
+</strong>
+The relocation adds buyers, so
+<em>
+demand shifts right
+</em>
+to D′. Equilibrium rent
+<em>
+rises
+</em>
+(R
+<sub>
+1
+</sub>
+→R
+<sub>
+2
+</sub>
+) and equilibrium quantity
+<em>
+rises
+</em>
+(Q
+<sub>
+1
+</sub>
+→Q
+<sub>
+2
+</sub>
+). Both move up because a demand increase slides the crossing up the unchanged supply curve.
+</p>
+<p>
+<strong>
+(c)
+</strong>
+Set Q
+<sub>
+d
+</sub>
+= Q
+<sub>
+s
+</sub>
+: 1100 − 0.5R = −300 + 0.5R → 1400 = R → R = $1,400. Substitute: Q = −300 + 0.5(1400) =
+<strong>
+400
+</strong>
+.
+</p>
+<p>
+<strong>
+(d)
+</strong>
+The $1,000 ceiling is drawn as a horizontal line below E′ ($1,400). At $1,000, Q
+<sub>
+d
+</sub>
+= 1100 − 0.5(1000) = 600 and Q
+<sub>
+s
+</sub>
+= −300 + 0.5(1000) = 200, a shortage of 400 (the horizontal gap between S and D′ at the ceiling). The ceiling
+<strong>
+is binding
+</strong>
+because it is set below the equilibrium rent of $1,400 — it forces rent under where the market would clear, so the price can't rise to erase the shortage.
+</p>
+<p>
+<strong>
+(e)
+</strong>
+Any one of: waiting lists / queues, landlord favoritism, deterioration of unmaintained units, "key money" side payments, or a black market in leases.
+</p>
+<div class="etb-figure" style="margin-top:.8rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Full-credit FRQ graph: initial demand and supply, demand shifting right to a higher equilibrium, and a binding rent ceiling below it creating a shortage">
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<text x="350" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity of apartments
+</text>
+<text x="26" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 205)">
+Rent ($)
+</text>
+<!-- supply -->
+<line x1="147" y1="321" x2="575" y2="76" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="578" y="82" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- initial demand -->
+<line x1="125" y1="76" x2="552" y2="321" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="556" y="320" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- new demand -->
+<line x1="305" y1="76" x2="620" y2="257" stroke="#a33030" stroke-width="2.5" stroke-dasharray="7 4">
+</line>
+<text x="606" y="250" font-family="sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D′
+</text>
+<!-- shift arrow -->
+<path d="M 250 150 L 330 150" stroke="#a33030" stroke-width="1.6">
+</path>
+<polygon points="338,150 328,145 328,155" fill="#a33030">
+</polygon>
+<!-- E1 -->
+<circle cx="350" cy="205" r="5" fill="#1a3a5c">
+</circle>
+<text x="300" y="223" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E₁ (R₁,Q₁)
+</text>
+<!-- E2 -->
+<circle cx="440" cy="153" r="5" fill="#1a3a5c">
+</circle>
+<text x="450" y="150" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E′ ($1400, 400)
+</text>
+<!-- ceiling -->
+<line x1="80" y1="257" x2="630" y2="257" stroke="#6d4aaa" stroke-width="2" stroke-dasharray="6 4">
+</line>
+<text x="486" y="251" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#6d4aaa">
+CEILING $1,000
+</text>
+<!-- shortage bracket between Qs=200 (x260) and Qd'=600 (x620) -->
+<circle cx="260" cy="257" r="3.5" fill="#0f7d7d">
+</circle>
+<circle cx="620" cy="257" r="3.5" fill="#a33030">
+</circle>
+<line x1="260" y1="257" x2="620" y2="257" stroke="#c48b00" stroke-width="3">
+</line>
+<text x="440" y="278" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#c48b00" text-anchor="middle">
+SHORTAGE = 400
+</text>
+<text x="214" y="296" font-family="sans-serif" font-size="10.5" fill="#0f7d7d">
+Qs=200
+</text>
+<text x="592" y="296" font-family="sans-serif" font-size="10.5" fill="#a33030">
+Qd=600
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Model graph
+</span>
+<span class="etb-figure-title">
+Demand shifts right to D′ (parts a–b), the new equilibrium is computed at $1,400 / 400 (part c), and the $1,000 ceiling sits below it, opening a 400-unit shortage (part d).
+</span>
+</div>
+</div>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal the scoring rubric
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Axes labeled (Rent on vertical, Quantity on horizontal) with a downward D and upward S.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Initial equilibrium marked where D and S cross, with R
+<sub>
+1
+</sub>
+and Q
+<sub>
+1
+</sub>
+indicated.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) Demand shown shifting
+<strong>
+right
+</strong>
+(a new curve D′, not a movement along D).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) States both equilibrium rent AND quantity
+<strong>
+rise
+</strong>
+.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Correct equilibrium rent R = $1,400 with work shown (Q
+<sub>
+d
+</sub>
+set equal to Q
+<sub>
+s
+</sub>
+).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Correct equilibrium quantity Q = 400.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) Ceiling drawn as a horizontal line
+<strong>
+below
+</strong>
+the new equilibrium.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) Shortage identified as the gap between Q
+<sub>
+s
+</sub>
+and Q
+<sub>
+d
+</sub>
+at the ceiling (here 400, or shown on the graph).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) States the ceiling is binding AND explains it is below equilibrium.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(e) Names a valid form of non-price rationing.
+</li>
+</ul>
+<p style="font-family:sans-serif;font-size:12px;color:#8a98a6;margin:.75rem 0 0;">
+Ten independent points — each earned on its own, the way a real reader scores it. A wrong number in (c) doesn't cost you the (d) points if your shortage logic is right given your own equilibrium.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal what loses points
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-loses">
+<li>
+<span class="tag" style="background:#fdecec;color:#a33030;">
+Conceptual
+</span>
+In (b), drawing a
+<em>
+movement along
+</em>
+demand instead of a rightward
+<em>
+shift
+</em>
+— the Chapter 1-of-this-unit trap. A relocation changes the number of buyers, which moves the whole curve, not a point on it.
+</li>
+<li>
+<span class="tag" style="background:#fbf0db;color:#8a6d2f;">
+Precision
+</span>
+In (c), writing the answer "$1,400" with no equation set up. AP "Calculate" prompts require shown work; a correct number with no work routinely earns nothing.
+</li>
+<li>
+<span class="tag" style="background:#eef2f6;color:#3e4e60;">
+Exam craft
+</span>
+In (d), saying "the ceiling causes a shortage" without stating it is
+<em>
+binding because it is below equilibrium
+</em>
+. The "Explain" verb wants the mechanism, not just the outcome — and an unlabeled ceiling line (no value, no horizontal placement) forfeits the graph point even when the prose is right.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<!-- (8) CHAPTER SYNTHESIS — redesigned closing card -->
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+Interfere with a market — by any of many means — and you push it off the equilibrium that was coordinating it. Sometimes the market absorbs the blow, as the drug trade did through entry; sometimes a pinned price forbids it to, and the distortion gets a whole lot worse.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world…
+</div>
+<p class="etb-synth-leadtext">
+they'd treat a price as information before treating it as a target — because a supply shock, a cap, a tax, a quota all push a market off equilibrium, and the distortion is often not the one intended. Drugs, gas, and rent are three of many cases; the chapters ahead measure and catalogue the rest.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z">
+</path>
+<circle cx="12" cy="12" r="3">
+</circle>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Every intervention moves a market off equilibrium and pays for it in distortion; a binding ceiling makes a lasting shortage, a floor a lasting surplus, and a supply shock a price the market then unwinds through entry.
+</li>
+<li>
+Rent control protects today's tenants — at the cost of less housing and higher rents for everyone else.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#b0883a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16">
+</path>
+<path d="M5 20h14">
+</path>
+<path d="M4 7h16">
+</path>
+<path d="M4 7l-2.5 5h5z">
+</path>
+<path d="M20 7l-2.5 5h5z">
+</path>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Is protecting today's tenants worth shrinking tomorrow's housing?
+</li>
+<li>
+Distortion is not the same as "bad": some are worth their cost. That is Chapter 3's rule — override a price only with a reason — and Chapter 6 puts a number on the cost so the reason can be weighed.
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+</path>
+</svg>
+In your life
+</div>
+<p>
+If you're not paying for something in money, ask what you're paying for it in.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="7" rx="2">
+</rect>
+<path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+</path>
+</svg>
+In your work
+</div>
+<p>
+If you have a line, you likely aren't charging enough.
+</p>
+</div>
+</div>
+<div class="etb-synth-arrow">
+<span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9l6 6 6-6">
+</path>
+</svg>
+</span>
+</div>
+</div>
+<!-- (9) LEARN MORE -->
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/demand-curve-shifts-definition" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/kUPm2tMCbGE/mqdefault.jpg" alt="What shifts the demand curve">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+What Shifts the Demand Curve?
+</div>
+<div class="etb-yt-note">
+~6 min · income, substitutes, tastes, expectations — real examples of each shifter · Pairs with Concept 1 · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/what-shifts-supply-curve" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/TvBHJERKto0/mqdefault.jpg" alt="What shifts the supply curve">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+What Shifts the Supply Curve?
+</div>
+<div class="etb-yt-note">
+~6 min · how input costs, technology, taxes, and expectations move supply · Pairs with Concept 1 · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/price-system-spontaneous-order" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/aBYzvPbIFNw/mqdefault.jpg" alt="A price is a signal wrapped up in an incentive">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+A Price Is a Signal Wrapped Up in an Incentive
+</div>
+<div class="etb-yt-note">
+~6 min · the signal-and-incentive idea at the heart of Concept 3 · Pairs with Concept 3 · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/rent-controls-economics" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/hMkvmZK3AJ4/mqdefault.jpg" alt="Price ceilings and rent control">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Price Ceilings: Rent Controls
+</div>
+<div class="etb-yt-note">
+~7 min · how a binding ceiling produces shortages and non-price rationing · Pairs with Concept 4 · Marginal Revolution University
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.etb -->
+<script>
+(function () { var pg = document.getElementById('etb-pg'); if (pg) { window.addEventListener('scroll', function () { var d = document.documentElement; var pct = (d.scrollTop || document.body.scrollTop) / ((d.scrollHeight - d.clientHeight) || 1); pg.style.width = Math.min(100, pct * 100) + '%'; }, { passive: true }); } document.querySelectorAll('.etb-flip').forEach(function (c) { c.addEventListener('click', function () { c.classList.toggle('flipped'); }); c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('flipped'); } }); }); document.querySelectorAll('.etb-ak-item').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('ak-open'); document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); if (!isOpen) el.classList.add('ak-open'); }); }); document.querySelectorAll('[data-tip]').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('tip-open'); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); if (!isOpen) el.classList.add('tip-open'); }); }); document.addEventListener('click', function () { document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { t.classList.remove('tip-open'); }); }); document.querySelectorAll('.etb-exam').forEach(function (box) { var tabs = box.querySelectorAll('.etb-exam-tab'); var panels = box.querySelectorAll('.etb-exam-panel'); tabs.forEach(function (t) { t.addEventListener('click', function () { var i = t.getAttribute('data-i'); tabs.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-i') === i); }); panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-i') === i); }); }); }); });})();
+</script>

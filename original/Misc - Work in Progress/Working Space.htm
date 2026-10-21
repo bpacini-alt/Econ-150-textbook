@@ -1,0 +1,551 @@
+<p>
+<br>
+</p>
+<meta charset="UTF-8">
+<title>
+Unit 1 · Homework Portal
+</title>
+<style>
+/* Global Styles mirroring the Textbook Architecture */ body { font-family: Georgia, 'Times New Roman', serif; background-color: #fcfcfc; color: #1a1a1a; line-height: 1.6; margin: 0; padding: 2rem 1rem 5rem; } .homework-container { max-width: 740px; margin: 0 auto; } .hw-slbl { font-family: sans-serif; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: #aaa; margin: 3rem 0 1rem; padding-bottom: 6px; border-bottom: 1px solid #eee; } .hw-header-card { border-top: 4px solid #2a7a4f; border-radius: 0 0 10px 10px; background: #fff; padding: 2.25rem 2rem 1.75rem; box-shadow: 0 1px 6px rgba(0,0,0,.06); margin-bottom: 2rem; } .hw-title { font-size: 28px; font-weight: 700; color: #1a3a5c; margin: 0 0 0.55rem; } .hw-subtitle { font-style: italic; color: #555; margin: 0; } /* Interactive Tier 1 Styles (Pure CSS) */ .t1-fb { display: none; margin-top: 15px; padding: 12px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; font-family: sans-serif; } #t1-correct:checked ~ .t1-correct-msg { display: block; background: #eef6f0; border-left: 4px solid #2a7a4f; color: #1a3a2a; } .t1-wrong:checked ~ .t1-wrong-msg { display: block; background: #fdf0f0; border-left: 4px solid #a33030; color: #3d0f0f; } /* Interactive Tier 2 Styles (Pure CSS regex pattern validation) */ .t2-box { font-family: sans-serif; padding: 8px 12px; font-size: 14px; border-radius: 4px; width: 140px; outline: none; box-sizing: border-box; transition: all 0.2s; } .t2-box:placeholder-shown { border: 2px solid #ccc; background-color: #fff; } .t2-box:not(:placeholder-shown):valid { border: 2px solid #2a7a4f; background-color: #eef6f0; } .t2-box:not(:placeholder-shown):invalid { border: 2px solid #a33030; background-color: #fdf0f0; } .t2-info { display: none; margin-top: 12px; font-size: 13.5px; line-height: 1.5; font-family: sans-serif; } .t2-box:not(:placeholder-shown):valid ~ .t2-valid-msg { display: block; color: #1a3a2a; background: #eef6f0; padding: 12px; border-radius: 6px; border-left: 4px solid #2a7a4f; } .t2-box:not(:placeholder-shown):invalid ~ .t2-invalid-msg { display: block; color: #3d0f0f; background: #fdf0f0; padding: 12px; border-radius: 6px; border-left: 4px solid #a33030; } /* Accountability Gate Styles */ .disclaimer-box { display: none; background: #fff8e6; border: 1px solid #e8c96a; padding: 15px; border-radius: 8px; margin-top: 15px; } #work-incomplete:checked ~ .disclaimer-box { display: block; } .completion-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; font-size: 14.5px; color: #333; line-height: 1.4; font-family: sans-serif; } .completion-row input { margin-top: 3px; cursor: pointer; }
+</style>
+<div class="homework-container">
+<!-- MAIN HEADER -->
+<div class="hw-header-card">
+<div style="font-family: sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: #2a7a4f; margin-bottom: .45rem;">
+Unit 1 · Formative Assessment
+</div>
+<h2>
+Practice Problems &amp; Accountability Gate
+</h2>
+<p class="hw-subtitle">
+To be completed following your reading of Chapter 1: The Wealth of Nations.
+</p>
+</div>
+<p style="font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 2rem;">
+Welcome to your practice workspace. Complete as many problems below as necessary to establish mastery before completing the **Accountability Gate** at the bottom of this page. Remember to add this week's hand-drawn model graph to your physical portfolio binder to secure your exam privileges.
+</p>
+<p style="font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 2rem;">
+<br>
+</p>
+<p style="font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 2rem;">
+<br>
+</p>
+<ol class="practice_quiz list-group">
+<li class="list-group-item pq-active" data-etb-pq-value="0">
+Option 1
+</li>
+<li class="list-group-item pq-active" data-etb-pq-value="0">
+Option 2
+</li>
+<li class="list-group-item pq-active" data-etb-pq-value="0">
+Option 3
+</li>
+</ol>
+<!-- TIER 1: REMEMBER / UNDERSTAND (BLOOM'S LEVEL 1) -->
+<div class="hw-slbl">
+Tier 1 · Knowledge &amp; Comprehension
+</div>
+<fieldset style="border: 1px solid #ddd; padding: 25px; border-radius: 8px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
+<legend style="background: #1a3a5c; color: #fff; padding: 4px 12px; font-size: 11px; font-weight: bold; border-radius: 4px; letter-spacing: 0.05em; text-transform: uppercase; font-family: sans-serif;">
+Question 1 · Methodological Commitments
+</legend>
+<p style="margin-top: 10px; font-weight: 600; color: #1a1a1a; font-size: 16px; line-height: 1.45;">
+An economist claims:
+<em>
+"The adoption of open trade policies and structured property rights in South Korea after 1953 caused its long-term output per worker to vastly exceed that of North Korea."
+</em>
+How should this statement be classified?
+</p>
+<div style="display: flex; flex-direction: column; gap: 11px; font-size: 14.5px; margin-top: 15px; color: #333; font-family: sans-serif;">
+<label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+<input type="radio" name="tier1-q" class="t1-wrong" style="margin-top: 3px;">
+<span>
+A normative statement, because it makes a moral judgment about which economic system is superior.
+</span>
+</label>
+<label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+<input type="radio" name="tier1-q" id="t1-correct" style="margin-top: 3px;">
+<span>
+A positive statement, because it presents a causal claim that can be verified or falsified against real-world data.
+</span>
+</label>
+<label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+<input type="radio" name="tier1-q" class="t1-wrong" style="margin-top: 3px;">
+<span>
+A revealed preference, because it tracks how citizens choose to allocate their structural resources.
+</span>
+</label>
+<label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+<input type="radio" name="tier1-q" class="t1-wrong" style="margin-top: 3px;">
+<span>
+A scarcity statement, because it directly addresses the natural shortage of physical land across the peninsula.
+</span>
+</label>
+</div>
+<div class="t1-fb t1-correct-msg">
+<strong>
+✓ Correct!
+</strong>
+This is a
+<strong>
+positive statement
+</strong>
+. It makes an objective claim about cause and effect ("System X caused Outcome Y") that can be tested by tracking actual economic history and productivity data, completely separate from your personal political or moral opinions.
+</div>
+<div class="t1-fb t1-wrong-msg">
+<strong>
+✗ Incorrect.
+</strong>
+Look carefully at the wording. The claim doesn't use subjective words like "ought," "should," "just," or "unfair." It asserts a structural fact that can be checked using satellite data and GDP records. Review your Chapter 1 flashcards for the difference between positive and normative analysis.
+</div>
+</fieldset>
+<!-- TIER 2: APPLY / ANALYZE (BLOOM'S LEVEL 2) -->
+<div class="hw-slbl">
+Tier 2 · Application &amp; Analysis
+</div>
+<form style="border: 1px solid #ddd; padding: 25px; border-radius: 8px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 1.5rem;" onsubmit="return false;">
+<span style="background: #8a6d2f; color: #fff; padding: 3px 9px; font-size: 10px; font-weight: bold; border-radius: 4px; letter-spacing: 0.05em; text-transform: uppercase; font-family: sans-serif;">
+Question 2 · Historical Data Application
+</span>
+<p style="margin-top: 12px; font-weight: 600; color: #1a1a1a; font-size: 16px; line-height: 1.45;">
+Refer to the "hockey stick of human prosperity" (Fig 1.1) highlighted in Chapter 1. For approximately how many thousands of years did human living standards and income per person remain flat along the absolute baseline before bending sharply upward?
+</p>
+<p style="font-size: 13.5px; color: #555; margin-bottom: 15px; font-family: sans-serif;">
+Type your numeric answer as a single whole number below (do not include text or symbols):
+</p>
+<!-- pattern="^100$" validates exactly 100 -->
+<input type="text" class="t2-box" pattern="^100$" placeholder="Type number..." required="">
+<div class="t2-info t2-valid-msg">
+<strong>
+✓ Correct!
+</strong>
+As detailed in Chapter 1, human living standards stagnated in a default state of deep poverty for approximately
+<strong>
+100 thousand years
+</strong>
+before institutional changes and productivity explosions triggered the modern upward escape around the year 1800.
+</div>
+<div class="t2-info t2-invalid-msg">
+<strong>
+✗ Incorrect.
+</strong>
+Check the text under the "Major Concept 1" header in the textbook. Look closely at the timeframe given for how long poverty was humanity's baseline. (Hint: The answer is expressed in thousands of years; if the text says 100,000 years, your numeric answer should represent how many *thousands* that is).
+</div>
+<small style="display: block; margin-top: 8px; color: #999; font-style: italic; font-family: sans-serif; font-size: 12px;">
+(Press Enter or click outside the box to verify your solution.)
+</small>
+</form>
+<!-- TIER 3: EVALUATE / CREATE - GRAPH OF THE WEEK -->
+<div class="hw-slbl">
+Tier 3 · Synthesis, Evaluation &amp; Creation
+</div>
+<div style="border: 2px dashed #1a3a5c; background-color: #f7fafd; padding: 25px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.02); margin-bottom: 1.5rem;">
+<div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #1a3a5c; padding-bottom: 10px; margin-bottom: 15px;">
+<h3 style="margin: 0; font-family: Georgia, serif; color: #1a3a5c; font-size: 19px;">
+📈 Graph-of-the-Week #1 Portfolio Task
+</h3>
+<span style="background: #2a7a4f; color: #fff; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; font-family: sans-serif; letter-spacing: 0.05em;">
+EXAM PRIVILEGE ELIGIBLE
+</span>
+</div>
+<p style="font-size: 15px; color: #2a2a2a; line-height: 1.6; margin-bottom: 15px;">
+<strong>
+The Construction Challenge:
+</strong>
+Take out a clean sheet of physical printer paper and a straightedge. Using Chapter 1's deep dive into the satellite photography of the Korean Peninsula as your theoretical framework, sketch a standard Production Possibilities Curve (PPC) model representing an economy producing two broad metrics:
+<strong>
+Capital Innovation Goods
+</strong>
+on the vertical Y-axis and
+<strong>
+Basic Survival Goods
+</strong>
+on the horizontal X-axis.
+</p>
+<ol style="font-size: 14.5px; color: #333; line-height: 1.6; margin-bottom: 20px; padding-left: 20px; font-family: sans-serif;">
+<li style="margin-bottom: 8px;">
+Plot a point and label it
+<strong>
+N
+</strong>
+to represent the production coordinate choice of a modern command economy matching the description of North Korea.
+</li>
+<li style="margin-bottom: 8px;">
+Plot a point and label it
+<strong>
+S
+</strong>
+to represent the production coordinate choice of a modern market economy matching the description of South Korea.
+</li>
+<li style="margin-bottom: 8px;">
+Write a brief 2-sentence structural rationale on your sheet defending your spatial placement choices using Bastiat's concept of
+<em>
+"the unseen"
+</em>
+costs.
+</li>
+</ol>
+<div style="background: #fff; border-left: 4px solid #8a6d2f; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 6px 6px 0; font-size: 13px; color: #5a4718; line-height: 1.5; font-family: sans-serif;">
+<strong>
+Portfolio Directive:
+</strong>
+This graph must be entirely hand-drawn. Computer prints, structural templates, or trace copies are completely prohibited. Store this sheet securely inside your physical binder; you are authorized to pull this layout out and consult it live during your proctored Unit 1 Exam.
+</div>
+<!-- Self-Evaluation Reveal Frame -->
+<details style="background: #fff; border: 1px solid #ccc; padding: 12px; border-radius: 6px; cursor: pointer;">
+<summary style="font-size: 13.5px; font-weight: bold; color: #333; user-select: none; font-family: sans-serif;">
+🔍 Click to reveal Master Review Criteria
+</summary>
+<div style="margin-top: 15px; font-size: 13.5px; color: #444; line-height: 1.6; cursor: default; border-top: 1px solid #eee; padding-top: 15px;">
+<strong style="color: #2a7a4f; font-family: sans-serif; display: block; margin-bottom: 6px;">
+Self-Correction Inspection Matrix:
+</strong>
+<ul style="margin: 0 0 15px 20px; padding: 0; font-family: sans-serif; color: #555;">
+<li style="margin-bottom: 4px;">
+Is your point
+<strong>
+S
+</strong>
+sitting cleanly on or near the outer frontier edge, weighted significantly up toward Capital Innovation?
+</li>
+<li style="margin-bottom: 4px;">
+Is your point
+<strong>
+N
+</strong>
+sitting distinctly deep
+<em>
+inside
+</em>
+the frontier line (inefficient and underutilizing labor resources), or heavily restricted to the baseline origin corner?
+</li>
+<li style="margin-bottom: 4px;">
+Does your written justification explicitly state that the "unseen cost" of centralized central command command is the systematic destruction of worker productivity incentives?
+</li>
+</ul>
+<div style="background: #f9f9f9; border: 1px solid #eee; border-radius: 6px; padding: 30px; text-align: center; color: #888; font-style: italic; font-size: 12px; font-family: sans-serif;">
+[Instructor Note: Drop your specific hand-drawn graphic or answer key PNG image path here in your final deploy]
+</div>
+</div>
+</details>
+</div>
+<!-- INTEGRATED NARRATIVE: "THE JOY OF ECON" PRACTICE SECTION -->
+<div class="hw-slbl">
+Joy of Economics · Narrative Integration
+</div>
+<div style="border: 1px solid #b8cfe0; background-color: #f4f8fc; padding: 25px; border-radius: 8px; margin-bottom: 3rem;">
+<span style="background: #1a3a5c; color: #fff; padding: 3px 8px; font-size: 9px; font-weight: 700; letter-spacing: 0.05em; border-radius: 3px; font-family: sans-serif; text-transform: uppercase;">
+Weekly Reading Application
+</span>
+<h3 style="margin: 10px 0 5px; font-family: Georgia, serif; color: #1a3a5c; font-size: 18px;">
+Narrative Focus: "The Light and the Dark Peninsulas"
+</h3>
+<p style="margin: 0 0 15px; font-size: 13.5px; color: #555; font-style: italic;">
+Testing the boundaries between basic identification and advanced analytical extrapolation.
+</p>
+<div style="background: #fff; padding: 15px; border-radius: 6px; border: 1px solid #dbeafe; font-size: 14px; color: #333;">
+<strong style="color: #1e40af; display: block; margin-bottom: 5px;">
+Released Practice Matrix (Questions A &amp; B):
+</strong>
+<p style="margin: 0 0 10px; line-height: 1.5;">
+<strong>
+Question A (Identification):
+</strong>
+Based on Chapter 1's introduction, what single institutional event occurred in the year 1953 that created the stark divergent conditions visible in modern satellite photos?
+</p>
+<p style="margin: 0 0 15px; line-height: 1.5;">
+<strong>
+Question B (Analysis):
+</strong>
+Using Adam Smith's core definition of
+<em>
+productivity
+</em>
+from the text, explain how the blackness of the northern half of the peninsula demonstrates a breakdown in worker output per hour.
+</p>
+<div style="background: #fef3c7; border-left: 4px solid #d97706; padding: 10px; border-radius: 4px; font-size: 12.5px; color: #78350f; font-family: sans-serif; line-height: 1.45;">
+<strong>
+⚠️ Proctored Exam Warning:
+</strong>
+Your weekly homework verification certifies that you have drafted solutions to Questions A and B. Be advised that
+<strong>
+Question C (Evaluation)
+</strong>
+remains completely unreleased and will appear live on your unit exam without further warning. If you have not read the chapter and completed this scratchpad work, you will face significant time penalties during the test.
+</div>
+</div>
+</div>
+<!-- AUTOMATED ACCOUNTABILITY GATE AND COMPLIANCE SIGNATURE TRAP -->
+<div class="hw-slbl">
+Accountability &amp; Sign-Off Gate
+</div>
+<form style="border: 2px solid #1a3a5c; background-color: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);" onsubmit="alert('Verification state recorded successfully. Integrity path logged.'); return false;">
+<div style="text-align: center; border-bottom: 2px solid #1a3a5c; padding-bottom: 15px; margin-bottom: 25px;">
+<span style="background: #1a3a5c; color: #fff; padding: 3px 10px; font-size: 10px; font-weight: bold; border-radius: 4px; letter-spacing: 0.1em; text-transform: uppercase; font-family: sans-serif;">
+System Validation
+</span>
+<h3 style="margin: 8px 0 0; font-family: Georgia, serif; color: #1a3a5c; font-size: 21px;">
+Unit 1 · Chapter 1 Verification Gate
+</h3>
+<p style="margin: 5px 0 0; font-size: 13px; color: #666; font-style: italic; font-family: sans-serif;">
+Certify your performance parameters below to close the week.
+</p>
+</div>
+<!-- Section A: Performance Indicators -->
+<div style="margin-bottom: 25px;">
+<h4 style="margin: 0 0 12px; font-size: 13px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.05em; color: #1a3a5c; border-bottom: 1px solid #eee; padding-bottom: 4px;">
+Section A: Task Verification
+</h4>
+<div class="completion-row">
+<input type="checkbox" id="chk-practice" required="">
+<label for="chk-practice">
+I completed the interactive Tier 1 and Tier 2 practice elements provided on this page to lock in numerical validation thresholds.
+</label>
+</div>
+<div class="completion-row">
+<input type="checkbox" id="chk-graph" required="">
+<label for="chk-graph">
+<strong>
+[Graph Portfolio]
+</strong>
+I have hand-drawn, verified, and placed the spatial model comparing coordinates N and S into my physical binder for use during the unit exam.
+</label>
+</div>
+<div class="completion-row">
+<input type="checkbox" id="chk-joy" required="">
+<label for="chk-joy">
+<strong>
+[Joy of Econ]
+</strong>
+I read the introductory satellite essay and manually solved practice Matrix Questions A and B on my scratch paper.
+</label>
+</div>
+</div>
+<!-- Section B: The Behavioral Economics Disclaimer Trap -->
+<div style="margin-bottom: 25px; border-top: 1px solid #eee; padding-top: 20px;">
+<h4 style="margin: 0 0 12px; font-size: 13px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.05em; color: #1a3a5c;">
+Section B: Compliance Affirmation
+</h4>
+<p style="font-size: 14px; color: #333; margin: 0 0 12px; font-family: sans-serif;">
+Did you genuinely execute and finalize all three homework modules marked above?
+</p>
+<label style="display: block; font-size: 14px; color: #2a7a4f; font-weight: 600; margin-bottom: 8px; cursor: pointer; font-family: sans-serif;">
+<input type="radio" name="integrity-status" id="work-complete" required="">
+Yes, I performed the work exactly as directed.
+</label>
+<label style="display: block; font-size: 14px; color: #a33030; font-weight: 600; cursor: pointer; font-family: sans-serif;">
+<input type="radio" name="integrity-status" id="work-incomplete">
+No, I am choosing to log an incomplete or partial preparation path.
+</label>
+<!-- Conditional Display Container driven cleanly via CSS Sibling Selector -->
+<div class="disclaimer-box">
+<strong style="color: #b45309; display: block; margin-bottom: 8px; font-size: 13.5px; font-family: sans-serif;">
+⚠️ Non-Performance Acknowledgment Statement
+</strong>
+<p style="margin: 0 0 12px; font-size: 13px; color: #78350f; line-height: 1.5; font-family: sans-serif;">
+To log your partial progress and clear the system block for this unit, you must transcribe the exact legal-pedagogical disclaimer below into the input box:
+</p>
+<blockquote style="margin: 0 0 12px; background: #fff; padding: 10px 14px; border-left: 3px solid #d97706; font-style: italic; font-size: 13px; color: #4b5563; font-family: Georgia, serif;">
+I the undersigned understand that I am likely to get a worse score because I didn't do the work as I should have.
+</blockquote>
+<input type="text" placeholder="Type or copy your signature statement exactly here..." style="width: 100%; padding: 10px; font-size: 13px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font-family: Georgia, serif; outline: none; background-color: #fff;">
+</div>
+</div>
+<!-- Final Submission Footer -->
+<div style="border-top: 1px solid #eee; padding-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+<small style="color: #999; font-size: 11px; max-width: 60%; font-family: sans-serif;">
+Automated timestamp sync active. Verification records pipe directly to the gradebook architecture.
+</small>
+<button type="submit" style="background: #1a3a5c; color: #fff; border: none; padding: 10px 22px; font-size: 13.5px; font-weight: bold; border-radius: 6px; cursor: pointer; font-family: sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+Submit Sign-Off
+</button>
+</div>
+</form>
+</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+Reading the equilibrium graph — hotspot
+</title>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1.5rem 1rem 4rem;color:#1a1a1a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-svgwrap{display:block;width:100%;} .etb-svgwrap svg{display:block;width:100%;height:auto;touch-action:manipulation;cursor:crosshair;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.hs-top{display:flex;align-items:center;gap:10px;padding:.85rem 1rem .6rem;border-bottom:1px solid #eee;font-family:sans-serif;}.hs-progress{display:flex;gap:5px;}.hs-dot{width:9px;height:9px;border-radius:50%;background:#e0e0e0;}.hs-dot.done{background:#2a7a4f;} .hs-dot.now{background:#1a3a5c;}.hs-new{margin-left:auto;font-family:sans-serif;font-size:11.5px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:6px;padding:.4rem .8rem;cursor:pointer;}.hs-new:hover{background:#e2eef9;}.hs-prompt{font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#1a1a1a;padding:.75rem 1rem;display:flex;align-items:center;gap:10px;min-height:20px;}.hs-step{display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;background:#1a3a5c;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.hs-step.done{background:#2a7a4f;}.hs-prompt em{font-style:normal;font-weight:700;color:#1a3a5c;}.hs-feedback{font-family:sans-serif;font-size:12px;margin-left:auto;font-weight:600;white-space:nowrap;}.hs-feedback.ok{color:#2a7a4f;} .hs-feedback.no{color:#a33030;}.hs-result{font-family:sans-serif;font-size:13px;line-height:1.75;color:#1a3a2a;background:#eef6f0;border-top:1px solid #cfe6d8;padding:.85rem 1rem;display:none;}.hs-result.show{display:block;} .hs-result b{color:#1a3a2a;}
+</style>
+<div class="etb">
+<div class="etb-figure">
+<div class="hs-top">
+<div class="hs-progress" id="hs-progress">
+</div>
+<button class="hs-new" id="hs-new">
+New market ↻
+</button>
+</div>
+<div class="hs-prompt">
+<span class="hs-step" id="hs-step">
+1
+</span>
+<span id="hs-prompt-text">
+</span>
+<span class="hs-feedback" id="hs-feedback">
+</span>
+</div>
+<div class="etb-svgwrap">
+<svg id="hs-svg" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reading an equilibrium graph: click to identify each quantity the graph reports">
+<defs>
+<clipPath id="hs-clip">
+<rect x="80" y="50">
+</rect>
+</clipPath>
+</defs>
+<!-- axes -->
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="72" y="54">
+100
+</text>
+<text x="72" y="116">
+80
+</text>
+<text x="72" y="178">
+60
+</text>
+<text x="72" y="240">
+40
+</text>
+<text x="72" y="302">
+20
+</text>
+<text x="72" y="364">
+0
+</text>
+</g>
+<g font-family="sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="80" y="378">
+0
+</text>
+<text x="170" y="378">
+100
+</text>
+<text x="260" y="378">
+200
+</text>
+<text x="350" y="378">
+300
+</text>
+<text x="440" y="378">
+400
+</text>
+<text x="530" y="378">
+500
+</text>
+<text x="620" y="378">
+600
+</text>
+</g>
+<text x="350" y="404" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="22" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 22 205)">
+Price ($)
+</text>
+<g id="hs-curves" clip-path="url(#hs-clip)">
+</g>
+<g id="hs-labels">
+</g>
+<g id="hs-dyn">
+</g>
+</svg>
+</div>
+<div class="hs-result" id="hs-result">
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Experiment
+</span>
+<span class="etb-figure-title">
+One crossing reports a surprising amount. Click your way through what the graph tells you, then press
+<em>
+New market
+</em>
+for a fresh one.
+</span>
+</div>
+</div>
+<script>
+(function () { var SVG = "http://www.w3.org/2000/svg"; var svg = document.getElementById('hs-svg'); var curves = document.getElementById('hs-curves'); var labels = document.getElementById('hs-labels'); var dyn = document.getElementById('hs-dyn'); var promptText = document.getElementById('hs-prompt-text'); var stepEl = document.getElementById('hs-step'); var fb = document.getElementById('hs-feedback'); var resultEl = document.getElementById('hs-result'); var progressEl = document.getElementById('hs-progress'); var X = function (q) { return 80 + 0.9 * q; }; var Y = function (p) { return 360 - 3.1 * p; }; var rint = function (a) { return a[Math.floor(Math.random() * a.length)]; }; function el(tag, attrs, text) { var n = document.createElementNS(SVG, tag); for (var k in attrs) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; return n; } // ---- randomize the GEOMETRY, not just the labels ---- function genMarket() { for (;;) { var Ps = rint([40, 45, 50, 55, 60]); var Qs = rint([250, 300, 350]); var md = rint([80, 100, 120]); // demand: units per $10 var ms = rint([80, 100, 120]); // supply: units per $10 var delta = rint([10, 15, 20]); var above = Math.random()
+< 0.5; var Pp = above ? Ps + delta : Ps - delta; var k = delta / 10; var Qd = above ? Qs - k * md : Qs + k * md; var Qq = above ? Qs + k * ms : Qs - k * ms; // quantity supplied at probe if (Pp
+< 14 || Pp >
+90) continue; if ([Qs, Qd, Qq].some(function (q) { return q
+< 60 || q >
+560; })) continue; var b = 10 / md, d = 10 / ms; return { Ps: Ps, Qs: Qs, Pp: Pp, above: above, Qd: Qd, Qq: Qq, a: Ps + b * Qs, b: b, // demand P = a - b Q c: Ps - d * Qs, d: d // supply P = c + d Q }; } } var M, idx, probeShown; // 6-step "everything the graph tells you" sequence function buildTargets(m) { var lo = Math.min(m.Qd, m.Qq), hi = Math.max(m.Qd, m.Qq); return [ { type: 'point', x: X(m.Qs), y: Y(m.Ps), color: '#1a3a5c', label: 'E', prompt: 'Click the market
+<em>
+equilibrium
+</em>
+\u2014 where the curves cross.' }, { type: 'price', y: Y(m.Ps), guideToX: X(m.Qs), color: '#1a3a5c', axisLabel: '$' + m.Ps, prompt: 'Click to mark the
+<em>
+equilibrium price
+</em>
+\u2014 read it off the price axis.' }, { type: 'qty', x: X(m.Qs), guideToY: Y(m.Ps), color: '#1a3a5c', axisLabel: '' + m.Qs, prompt: 'Click to mark the
+<em>
+equilibrium quantity
+</em>
+\u2014 read it off the quantity axis.' }, { type: 'qty', x: X(m.Qd), curveY: Y(m.Pp), color: '#a33030', axisLabel: 'Qd=' + m.Qd, prompt: 'At
+<em>
+$' + m.Pp + '
+</em>
+, click the
+<em>
+quantity demanded
+</em>
+.' }, { type: 'qty', x: X(m.Qq), curveY: Y(m.Pp), color: '#0f7d7d', axisLabel: 'Qs=' + m.Qq, prompt: 'Now click the
+<em>
+quantity supplied
+</em>
+at $' + m.Pp + '.' }, { type: 'seg', y: Y(m.Pp), span: [X(lo), X(hi)], color: '#c48b00', glabel: (m.above ? 'Surplus' : 'Shortage') + ' = ' + Math.abs(m.Qq - m.Qd), prompt: 'Click the
+<em>
+' + (m.above ? 'surplus' : 'shortage') + '
+</em>
+\u2014 the gap at $' + m.Pp + '.' } ]; } var targets; function drawCurves(m) { curves.innerHTML = ''; labels.innerHTML = ''; // demand & supply across full Q range; clipped to plot box var dP0 = m.a, dP6 = m.a - m.b * 600; // demand at Q=0, Q=600 var sP0 = m.c, sP6 = m.c + m.d * 600; // supply at Q=0, Q=600 curves.appendChild(el('line', { x1: X(0), y1: Y(dP0), x2: X(600), y2: Y(dP6), stroke: '#a33030', 'stroke-width': 2.5 })); curves.appendChild(el('line', { x1: X(0), y1: Y(sP0), x2: X(600), y2: Y(sP6), stroke: '#0f7d7d', 'stroke-width': 2.5 })); var clamp = function (y) { return Math.max(60, Math.min(348, y)); }; labels.appendChild(el('text', { x: 626, y: clamp(Y(m.a - m.b * 590)), 'font-family': 'sans-serif', 'font-size': 14, 'font-weight': 700, fill: '#a33030' }, 'D')); labels.appendChild(el('text', { x: 626, y: clamp(Y(m.c + m.d * 590)), 'font-family': 'sans-serif', 'font-size': 14, 'font-weight': 700, fill: '#0f7d7d' }, 'S')); } function newMarket() { M = genMarket(); targets = buildTargets(M); idx = 0; probeShown = false; dyn.innerHTML = ''; resultEl.classList.remove('show'); resultEl.innerHTML = ''; fb.textContent = ''; fb.className = 'hs-feedback'; drawCurves(M); buildProgress(); showPrompt(); } function buildProgress() { progressEl.innerHTML = ''; for (var i = 0; i
+< targets.length; i++) progressEl.appendChild(el2('span', 'hs-dot')); paintProgress(); } function el2(tag, cls) { var n = document.createElement(tag); n.className = cls; return n; } function paintProgress() { var dots = progressEl.children; for (var i = 0; i
+< dots.length; i++) { dots[i].className = 'hs-dot' + (i
+< idx ? ' done' : (i === idx ? ' now' : '')); } } function showPrompt() { if (idx === 3 && !probeShown) { probeShown = true; var py = Y(M.Pp); dyn.appendChild(el('line', { x1: 80, y1: py, x2: 620, y2: py, stroke: '#1a3a5c', 'stroke-width': 2, 'stroke-dasharray': '6 4' })); dyn.appendChild(el('text', { x: 614, y: py - 7, 'font-family': 'sans-serif', 'font-size': 11.5, 'font-weight': 700, fill: '#1a3a5c', 'text-anchor': 'end' }, 'Price $' + M.Pp)); } paintProgress(); if (idx >
+= targets.length) { stepEl.classList.add('done'); stepEl.textContent = '\u2713'; promptText.innerHTML = 'You read the whole graph.'; var gap = Math.abs(M.Qq - M.Qd); resultEl.innerHTML = 'From one crossing you read the clearing price (
+<b>
+$' + M.Ps + '
+</b>
+) and clearing quantity (
+<b>
+' + M.Qs + '
+</b>
+). Impose a price of
+<b>
+$' + M.Pp + '
+</b>
+and the graph reports exactly how far the market misses: Qd=
+<b>
+' + M.Qd + '
+</b>
+, Qs=
+<b>
+' + M.Qq + '
+</b>
+\u2014 a
+<b>
+' + (M.above ? 'surplus' : 'shortage') + ' of ' + gap + '
+</b>
+. That is a lot of information from two lines and a dot.'; resultEl.classList.add('show'); return; } stepEl.classList.remove('done'); stepEl.textContent = (idx + 1); promptText.innerHTML = targets[idx].prompt; } function dropMarker(t) { if (t.type === 'point') { dyn.appendChild(el('circle', { cx: t.x, cy: t.y, r: 5, fill: t.color })); dyn.appendChild(el('text', { x: t.x + 8, y: t.y - 8, 'font-family': 'sans-serif', 'font-size': 12, 'font-weight': 700, fill: t.color }, t.label)); } else if (t.type === 'price') { dyn.appendChild(el('line', { x1: 80, y1: t.y, x2: t.guideToX, y2: t.y, stroke: t.color, 'stroke-width': 1.5, 'stroke-dasharray': '4 3' })); dyn.appendChild(el('circle', { cx: 80, cy: t.y, r: 4, fill: t.color })); dyn.appendChild(el('text', { x: 74, y: t.y + 4, 'font-family': 'sans-serif', 'font-size': 11, 'font-weight': 700, fill: t.color, 'text-anchor': 'end' }, t.axisLabel)); } else if (t.type === 'qty') { var topY = t.guideToY != null ? t.guideToY : t.curveY; dyn.appendChild(el('line', { x1: t.x, y1: topY, x2: t.x, y2: 360, stroke: t.color, 'stroke-width': 1.5, 'stroke-dasharray': '4 3' })); dyn.appendChild(el('circle', { cx: t.x, cy: topY, r: 4, fill: t.color })); dyn.appendChild(el('text', { x: t.x, y: 392, 'font-family': 'sans-serif', 'font-size': 11, 'font-weight': 700, fill: t.color, 'text-anchor': 'middle' }, t.axisLabel)); } else if (t.type === 'seg') { dyn.appendChild(el('line', { x1: t.span[0], y1: t.y, x2: t.span[1], y2: t.y, stroke: t.color, 'stroke-width': 4 })); dyn.appendChild(el('text', { x: (t.span[0] + t.span[1]) / 2, y: t.y - 8, 'font-family': 'sans-serif', 'font-size': 11.5, 'font-weight': 700, fill: t.color, 'text-anchor': 'middle' }, t.glabel)); } } function svgPoint(evt) { var pt = svg.createSVGPoint(); var src = evt.touches ? evt.touches[0] : evt; pt.x = src.clientX; pt.y = src.clientY; return pt.matrixTransform(svg.getScreenCTM().inverse()); } function hitTest(t, loc) { if (t.type === 'point') return Math.hypot(loc.x - t.x, loc.y - t.y)
+<= 26; if (t.type === 'price') return loc.x >
+= 70 && loc.x
+<= 626 && Math.abs(loc.y - t.y)
+<= 12; if (t.type === 'qty') return loc.y >
+= 50 && loc.y
+<= 368 && Math.abs(loc.x - t.x)
+<= 13; if (t.type === 'seg') return loc.x >
+= t.span[0] - 12 && loc.x
+<= t.span[1] + 12 && Math.abs(loc.y - t.y)
+<= 16; return false; } svg.addEventListener('click', function (evt) { if (idx >
+= targets.length) return; var loc = svgPoint(evt); var t = targets[idx]; if (hitTest(t, loc)) { dropMarker(t); fb.textContent = '\u2713 correct'; fb.className = 'hs-feedback ok'; idx++; showPrompt(); } else { fb.textContent = 'not quite \u2014 try again'; fb.className = 'hs-feedback no'; } }); document.getElementById('hs-new').addEventListener('click', newMarket); newMarket();})();
+</script>
+</div>

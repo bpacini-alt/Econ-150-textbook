@@ -1,0 +1,376 @@
+{
+ "source": "https://books.byui.edu/microeconomics",
+ "snapshot_date": "2026-10-20",
+ "chapters": [
+  {
+   "id": 28878,
+   "short": "introduction",
+   "title": "Introduction: The Wealth of Nations",
+   "updated": "2026-10-10T02:52:47.000Z",
+   "len": 97675,
+   "published": 1,
+   "order": 1,
+   "file": "introduction.html"
+  },
+  {
+   "id": 27774,
+   "short": "Chapter0",
+   "title": "Chapter 0: Algebra Review",
+   "updated": "2026-05-31T20:38:03.000Z",
+   "len": 141637,
+   "published": 1,
+   "order": 2,
+   "file": "Chapter0.html"
+  },
+  {
+   "id": 27770,
+   "short": "PartI",
+   "title": "Part I: The Case for the Market",
+   "updated": "2026-05-31T20:34:30.000Z",
+   "len": 4355,
+   "published": 1,
+   "order": 3,
+   "file": "PartI.html"
+  },
+  {
+   "id": 29674,
+   "short": "cvjsuukrox",
+   "title": "Unit 1: Markets in Perfect Competition",
+   "updated": "2026-10-15T18:00:01.000Z",
+   "len": 0,
+   "published": 1,
+   "order": 4,
+   "file": "cvjsuukrox.html"
+  },
+  {
+   "id": 27775,
+   "short": "Chapter1",
+   "title": "Chapter 1: Thinking Like An Economist",
+   "updated": "2026-10-13T21:33:05.000Z",
+   "len": 112206,
+   "published": 1,
+   "order": 5,
+   "file": "Chapter1.html"
+  },
+  {
+   "id": 27776,
+   "short": "Chapter2",
+   "title": "Chapter 2: Consumer Choice",
+   "updated": "2026-10-13T21:30:54.000Z",
+   "len": 180022,
+   "published": 1,
+   "order": 6,
+   "file": "Chapter2.html"
+  },
+  {
+   "id": 27769,
+   "short": "Chapter3",
+   "title": "Chapter 3: Supply and Demand I: The Price System",
+   "updated": "2026-10-13T21:26:14.000Z",
+   "len": 218537,
+   "published": 1,
+   "order": 7,
+   "file": "Chapter3.html"
+  },
+  {
+   "id": 27777,
+   "short": "Chapter4",
+   "title": "Chapter 4: Supply and Demand II: Shifts, Shocks, and the (Il)logic of Price Controls",
+   "updated": "2026-10-13T21:26:46.000Z",
+   "len": 172413,
+   "published": 1,
+   "order": 8,
+   "file": "Chapter4.html"
+  },
+  {
+   "id": 27778,
+   "short": "Chapter5",
+   "title": "Chapter 5: Trade, Specialization, and Efficiency",
+   "updated": "2026-10-13T21:37:11.000Z",
+   "len": 109704,
+   "published": 1,
+   "order": 9,
+   "file": "Chapter5.html"
+  },
+  {
+   "id": 27779,
+   "short": "Chapter6",
+   "title": "Chapter 6: Welfare Analysis",
+   "updated": "2026-10-13T21:29:11.000Z",
+   "len": 126944,
+   "published": 1,
+   "order": 10,
+   "file": "Chapter6.html"
+  },
+  {
+   "id": 27780,
+   "short": "Chapter7",
+   "title": "Chapter 7: Intervention Distortions I: Taxes, Subsidies, and Incidence",
+   "updated": "2026-10-15T18:13:49.000Z",
+   "len": 131693,
+   "published": 1,
+   "order": 11,
+   "file": "Chapter7.html"
+  },
+  {
+   "id": 27781,
+   "short": "Chapter8",
+   "title": "Chapter 8: Gains from Trade: The Case for International Cooperation",
+   "updated": "2026-10-15T18:20:58.000Z",
+   "len": 122020,
+   "published": 1,
+   "order": 12,
+   "file": "Chapter8.html"
+  },
+  {
+   "id": 27771,
+   "short": "PartII",
+   "title": "Unit II: The Firm in Perfect Competition",
+   "updated": "2026-05-31T20:35:10.000Z",
+   "len": 0,
+   "published": 1,
+   "order": 13,
+   "file": "PartII.html"
+  },
+  {
+   "id": 27807,
+   "short": "Chapter9",
+   "title": "Chapter 9: Firm Model I: Costs",
+   "updated": "2026-10-15T19:15:51.000Z",
+   "len": 182783,
+   "published": 1,
+   "order": 14,
+   "file": "Chapter9.html"
+  },
+  {
+   "id": 28111,
+   "short": "hdtbehpyhx",
+   "title": "Chapter 9 Homework (DRAFT)",
+   "updated": "2026-10-13T05:09:30.000Z",
+   "len": 196367,
+   "published": 1,
+   "order": 15,
+   "file": "hdtbehpyhx.html"
+  },
+  {
+   "id": 30426,
+   "short": "ittrdogupr",
+   "title": "Chapter 9 With Embedded Homework (DRAFT)",
+   "updated": "2026-10-20T11:08:05.000Z",
+   "len": 420781,
+   "published": 1,
+   "order": 16,
+   "file": "ittrdogupr.html"
+  },
+  {
+   "id": 27808,
+   "short": "Chapter10",
+   "title": "Chapter 10: Firm Model II: Short-Run Decisions",
+   "updated": "2026-10-15T19:28:42.000Z",
+   "len": 289113,
+   "published": 1,
+   "order": 17,
+   "file": "Chapter10.html"
+  },
+  {
+   "id": 30389,
+   "short": "wpmhluahgk",
+   "title": "Chapter 10 Homework (DRAFT)",
+   "updated": "2026-10-13T05:29:23.000Z",
+   "len": 194667,
+   "published": 1,
+   "order": 18,
+   "file": "wpmhluahgk.html"
+  },
+  {
+   "id": 27809,
+   "short": "Chapter11",
+   "title": "Chapter 11: Firm Model III: Long Run Decisions",
+   "updated": "2026-10-16T21:22:56.000Z",
+   "len": 543934,
+   "published": 1,
+   "order": 19,
+   "file": "Chapter11.html"
+  },
+  {
+   "id": 27810,
+   "short": "Chapter12",
+   "title": "Chapter 12: Factor Markets",
+   "updated": "2026-10-20T10:59:41.000Z",
+   "len": 117632,
+   "published": 1,
+   "order": 20,
+   "file": "Chapter12.html"
+  },
+  {
+   "id": 27811,
+   "short": "Chapter13",
+   "title": "Chapter 13: Labor Markets and Discrimination",
+   "updated": "2026-10-13T05:22:26.000Z",
+   "len": 126518,
+   "published": 1,
+   "order": 21,
+   "file": "Chapter13.html"
+  },
+  {
+   "id": 27812,
+   "short": "Chapter14",
+   "title": "Chapter 14: Unit Capstone: The Free Market Prescription for Poverty",
+   "updated": "2026-10-13T05:23:28.000Z",
+   "len": 127787,
+   "published": 1,
+   "order": 22,
+   "file": "Chapter14.html"
+  },
+  {
+   "id": 27772,
+   "short": "PartIII",
+   "title": "Part II: The Critique of the Market",
+   "updated": "2026-05-31T20:36:06.000Z",
+   "len": 0,
+   "published": 1,
+   "order": 23,
+   "file": "PartIII.html"
+  },
+  {
+   "id": 29675,
+   "short": "gstnnaevlx",
+   "title": "Unit III: Market Successes and Market Failures",
+   "updated": "2026-10-15T18:00:06.000Z",
+   "len": 3401,
+   "published": 1,
+   "order": 24,
+   "file": "gstnnaevlx.html"
+  },
+  {
+   "id": 27962,
+   "short": "Chapter15",
+   "title": "Chapter 15: Elasticity",
+   "updated": "2026-06-06T02:38:01.000Z",
+   "len": 121402,
+   "published": 1,
+   "order": 25,
+   "file": "Chapter15.html"
+  },
+  {
+   "id": 27963,
+   "short": "Chapter16",
+   "title": "Chapter 16: Institutions",
+   "updated": "2026-06-06T02:38:03.000Z",
+   "len": 109095,
+   "published": 1,
+   "order": 26,
+   "file": "Chapter16.html"
+  },
+  {
+   "id": 27964,
+   "short": "Chapter17",
+   "title": "Chapter 17: Market Failures I: The Tragedy of the Commons",
+   "updated": "2026-06-06T02:38:03.000Z",
+   "len": 63915,
+   "published": 1,
+   "order": 27,
+   "file": "Chapter17.html"
+  },
+  {
+   "id": 27965,
+   "short": "Chapter18",
+   "title": "Chapter 18: Market Failures II: Externalities",
+   "updated": "2026-06-06T02:38:04.000Z",
+   "len": 59851,
+   "published": 1,
+   "order": 28,
+   "file": "Chapter18.html"
+  },
+  {
+   "id": 27966,
+   "short": "Chapter19",
+   "title": "Chapter 19: Market Failures III: The Case for (Pigouvian) Taxes, Subsidies, and Incentives",
+   "updated": "2026-06-06T02:38:04.000Z",
+   "len": 69211,
+   "published": 1,
+   "order": 29,
+   "file": "Chapter19.html"
+  },
+  {
+   "id": 27967,
+   "short": "Chapter20",
+   "title": "Chapter 20: Unit Capstone: The Economics of Healthcare",
+   "updated": "2026-06-06T02:38:05.000Z",
+   "len": 74681,
+   "published": 1,
+   "order": 30,
+   "file": "Chapter20.html"
+  },
+  {
+   "id": 27773,
+   "short": "PartIV",
+   "title": "Unit IV: The Firm in Imperfect Competition",
+   "updated": "2026-05-31T20:36:37.000Z",
+   "len": 0,
+   "published": 1,
+   "order": 31,
+   "file": "PartIV.html"
+  },
+  {
+   "id": 27968,
+   "short": "Chapter21",
+   "title": "Chapter 21: Market Power I: Monopoly",
+   "updated": "2026-06-06T02:43:00.000Z",
+   "len": 65832,
+   "published": 1,
+   "order": 32,
+   "file": "Chapter21.html"
+  },
+  {
+   "id": 27969,
+   "short": "Chapter22",
+   "title": "Chapter 22: Market Power II: Addressing Market Power",
+   "updated": "2026-06-06T02:43:01.000Z",
+   "len": 62167,
+   "published": 1,
+   "order": 33,
+   "file": "Chapter22.html"
+  },
+  {
+   "id": 27970,
+   "short": "Chapter23",
+   "title": "Chapter 23: Imperfect Competition I: Monopolistic Competition",
+   "updated": "2026-06-06T02:43:02.000Z",
+   "len": 58338,
+   "published": 1,
+   "order": 34,
+   "file": "Chapter23.html"
+  },
+  {
+   "id": 27971,
+   "short": "Chapter24",
+   "title": "Chapter 24: Imperfect Competition II: Oligopoly, Cartels, and Collusion",
+   "updated": "2026-06-06T02:43:03.000Z",
+   "len": 57673,
+   "published": 1,
+   "order": 35,
+   "file": "Chapter24.html"
+  },
+  {
+   "id": 27972,
+   "short": "Chapter25",
+   "title": "Chapter 25: Behavioral Economics",
+   "updated": "2026-06-06T02:43:04.000Z",
+   "len": 56254,
+   "published": 1,
+   "order": 36,
+   "file": "Chapter25.html"
+  },
+  {
+   "id": 27973,
+   "short": "Chapter26",
+   "title": "Chapter 26: The Case for (and Limits of) Markets",
+   "updated": "2026-06-06T02:43:04.000Z",
+   "len": 56382,
+   "published": 1,
+   "order": 37,
+   "file": "Chapter26.html"
+  }
+ ]
+}

@@ -1,0 +1,3095 @@
+<!-- progress bar: first element in the body -->
+<div id="etb-pg" style="position: fixed; top: 0px; left: 0px; height: 3px; width: 96.1623%; background: linear-gradient(90deg, rgb(42, 122, 79), rgb(26, 58, 92)); z-index: 9999; transition: width 0.1s linear; pointer-events: none;">
+</div>
+<style>
+.etb{font-family:Georgia,'Times New Roman',serif;max-width:740px;margin:0 auto;padding:1rem 1rem 5rem;color:#1a1a1a;}.etb-slbl{font-family:sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#aaa;margin:2.75rem 0 .85rem;padding-bottom:6px;border-bottom:1px solid #eee;}.etb-title-card{position:relative;overflow:hidden;border-top:4px solid #1a3a5c;border-radius:0 0 10px 10px;background:#fff;padding:2.25rem 2rem 1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.06);}.etb-title-watermark{position:absolute;right:-8px;top:-22px;font-family:Georgia,serif;font-size:170px;font-weight:700;color:#f0f3f8;line-height:1;user-select:none;pointer-events:none;}.etb-title-unit{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem;position:relative;}.etb-title-main{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;color:#1a1a1a;line-height:1.2;margin:0 0 .55rem;position:relative;}.etb-title-sub{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-style:italic;color:#777;margin:0 0 1.25rem;position:relative;}.etb-title-meta{font-family:sans-serif;font-size:11px;color:#bbb;border-top:1px solid #eee;padding-top:.85rem;display:flex;gap:20px;}.etb-hook{font-family:Georgia,'Times New Roman',serif;font-size:16.5px;line-height:1.9;color:#2a2a2a;padding:2rem 0 1.75rem;border-bottom:1px solid #eee;margin-bottom:1.75rem;}.etb-hook p{margin:0 0 1rem;}.etb-hook p:last-child{margin:0;}.etb-hook p:first-child::first-letter{font-size:3.4em;font-weight:700;float:left;line-height:.78;margin:.06em .1em 0 0;color:#1a3a5c;}.etb-bigidea{background:#eef6f0;border-left:4px solid #2a7a4f;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:15.5px;line-height:1.8;color:#1a3a2a;font-style:italic;}.etb-flipgrid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;}.etb-flip{flex:1 1 200px;cursor:pointer;border-radius:8px;min-height:155px;}.etb-flip-front{background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip-back{background:#eef6f0;border:1px solid #5a9a7f;border-radius:8px;padding:1rem 1.1rem;display:none;flex-direction:column;min-height:155px;box-sizing:border-box;}.etb-flip.flipped .etb-flip-front{display:none;}.etb-flip.flipped .etb-flip-back{display:flex;}.etb-flip-front-term{font-family:sans-serif;font-size:14px;font-weight:700;color:#1a3a5c;flex:1;display:flex;align-items:center;line-height:1.35;}.etb-flip-front-hint{font-family:sans-serif;font-size:10px;color:#bbb;text-align:right;margin-top:auto;letter-spacing:.03em;}.etb-flip-back-def{font-family:sans-serif;font-size:12.5px;color:#1a3a2a;line-height:1.55;flex:1;}.etb-flip-back-label{font-family:sans-serif;font-size:10px;color:#2a7a4f;text-align:right;margin-top:auto;}.etb-alsoknow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem;}.etb-ak-item{font-family:sans-serif;font-size:12px;font-weight:600;color:#666;background:#f4f4f4;border:1px solid #e0e0e0;border-radius:99px;padding:4px 13px;cursor:pointer;position:relative;user-select:none;transition:background .15s,color .15s,border-color .15s;}.etb-ak-item:hover{background:#eaeaea;}.etb-ak-item.ak-open{background:#1a3a5c;color:#fff;border-color:#1a3a5c;}.etb-ak-pop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-size:12px;font-weight:400;line-height:1.55;padding:9px 12px;border-radius:7px;width:220px;white-space:normal;z-index:300;box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;}.etb-ak-pop::before{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-bottom-color:#1a3a5c;}.etb-ak-item.ak-open .etb-ak-pop{display:block;}[data-tip]{border-bottom:1px dotted #2a7a4f;cursor:help;position:relative;}[data-tip]::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-style:normal;line-height:1.45;padding:7px 11px;border-radius:6px;width:230px;white-space:normal;opacity:0;pointer-events:none;transition:opacity .18s;z-index:500;box-shadow:0 4px 16px rgba(0,0,0,.18);}[data-tip]:hover::after{opacity:1;}.etb-xref{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:700;color:#1a3a5c;background:#eef4fb;border:1px solid #b8cfe0;border-radius:4px;padding:1px 8px;letter-spacing:.02em;vertical-align:middle;white-space:nowrap;}.etb-xref::before{content:"→ ";}.etb-concept{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid #eee;}.etb-concept:last-child{border-bottom:none;}.etb-concept h2{font-size:21px;font-weight:700;color:#1a1a1a;margin:0 0 1rem;line-height:1.25;}.etb-body{font-size:15px;line-height:1.85;color:#1a1a1a;}.etb-body p{margin:0 0 1rem;}.etb-body p:last-child{margin:0;}details.etb-retrieval{background:#fff8e6;border:1px solid #e8c96a;border-radius:8px;margin:1.5rem 0;}details.etb-retrieval summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#7a5000;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-retrieval summary::-webkit-details-marker{display:none;}.etb-ret-badge{background:#c48b00;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-ret-arrow{margin-left:auto;color:#c48b00;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-retrieval[open] .etb-ret-arrow{transform:rotate(90deg);}.etb-ret-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #e8c96a;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d2e00;}.etb-ret-body p{margin:0 0 .75rem;}.etb-ret-body p:last-child{margin:0;}details.etb-misc{background:#fdf0f0;border:1px solid #dba8a8;border-radius:8px;margin:1.5rem 0;}details.etb-misc summary{padding:.9rem 1.25rem;font-family:sans-serif;font-size:13.5px;font-weight:600;color:#6b1f1f;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;}details.etb-misc summary::-webkit-details-marker{display:none;}.etb-misc-badge{background:#a33030;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;white-space:nowrap;}.etb-misc-arrow{margin-left:auto;color:#a33030;font-size:13px;transition:transform .2s;flex-shrink:0;}details.etb-misc[open] .etb-misc-arrow{transform:rotate(90deg);}.etb-misc-body{padding:.85rem 1.25rem 1.1rem;border-top:1px solid #dba8a8;font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#3d0f0f;}.etb-misc-body p{margin:0 0 .75rem;}.etb-misc-body p:last-child{margin:0;}.etb-research{background:#f5f0fe;border:1px solid #b89dd4;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-research-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-research-badge{background:#6d4aaa;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-research-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#2d1854;}.etb-research-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#2d1854;}.etb-research-body p{margin:0 0 .65rem;}.etb-research-body p:last-child{margin:0;}.etb-note{border-left:4px solid #1a3a5c;background:#eef4fb;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;}.etb-note-label{font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-bottom:.45rem;}.etb-note-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0d2239;}.etb-note-body p{margin:0 0 .65rem;}.etb-note-body p:last-child{margin:0;}.etb-applications{background:#eef6f0;border:1px solid #5a9a7f;border-radius:10px;padding:1.4rem 1.5rem;margin:2.5rem 0;}.etb-app-header{display:flex;align-items:center;gap:10px;margin-bottom:.85rem;}.etb-app-badge{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;}.etb-app-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#1a3a2a;}.etb-app-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a3a2a;}.etb-app-body p{margin:0 0 .75rem;}.etb-app-list{list-style:none;padding:0;margin:.5rem 0 0;}.etb-app-list li{font-family:sans-serif;font-size:13.5px;color:#1a3a2a;line-height:1.6;padding:6px 0 6px 22px;position:relative;border-bottom:1px solid rgba(42,122,79,.15);}.etb-app-list li:last-child{border-bottom:none;}.etb-app-list li::before{content:"→";position:absolute;left:0;color:#2a7a4f;font-weight:700;}.etb-synthesis{background:#1a3a5c;border-radius:10px;padding:1.75rem 2rem;margin:2.5rem 0 3rem;}.etb-syn-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem;}.etb-syn-body{font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.85;color:rgba(255,255,255,.9);font-style:italic;margin-bottom:1.35rem;}.etb-syn-takes{border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;display:flex;flex-direction:column;gap:9px;}.etb-syn-take{display:flex;gap:11px;align-items:flex-start;}.etb-syn-dot{width:6px;height:6px;border-radius:50%;background:#5dcaa5;flex-shrink:0;margin-top:7px;}.etb-syn-text{font-family:sans-serif;font-size:13px;color:rgba(255,255,255,.82);line-height:1.6;}.etb-synth{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:2rem 2rem 1.5rem;margin:2.5rem 0 1.5rem;}.etb-synth-eyebrow{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9a9a;text-align:center;margin:0 0 .7rem;}.etb-synth-thesis{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.45;color:#262626;text-align:center;max-width:560px;margin:0 auto;}.etb-synth-rule{border:none;border-top:1px solid #ededed;margin:1.4rem 0;}.etb-synth-lead{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.4;color:#262626;text-align:center;margin:0 0 .55rem;}.etb-synth-leadtext{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;color:#575757;text-align:center;max-width:520px;margin:0 auto;}.etb-synth-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0 0;}.etb-synth-card{border-radius:10px;padding:1rem 1.15rem 1.05rem;}.etb-synth-card.pos{background:#e9f4ee;}.etb-synth-card.norm{background:#faedd9;}.etb-synth-card-head{display:flex;align-items:center;gap:9px;margin-bottom:.65rem;}.etb-synth-card-head svg{width:18px;height:18px;flex:none;}.etb-synth-card-label{font-family:sans-serif;font-size:13.5px;font-weight:700;line-height:1.2;}.etb-synth-card-sub{font-family:sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;line-height:1.2;margin-top:1px;}.etb-synth-card.pos .etb-synth-card-label{color:#1f6f47;}.etb-synth-card.pos .etb-synth-card-sub{color:#418a64;}.etb-synth-card.norm .etb-synth-card-label{color:#956c2c;}.etb-synth-card.norm .etb-synth-card-sub{color:#b3893f;}.etb-synth-list{list-style:none;padding:0;margin:0;}.etb-synth-list li{font-family:sans-serif;font-size:13px;line-height:1.5;padding:0 0 0 15px;position:relative;}.etb-synth-list li + li{margin-top:.5rem;}.etb-synth-list li::before{content:"\2022";position:absolute;left:1px;font-weight:700;}.etb-synth-card.pos .etb-synth-list li{color:#2c4034;}.etb-synth-card.pos .etb-synth-list li::before{color:#69ad86;}.etb-synth-card.norm .etb-synth-list li{color:#4c4029;}.etb-synth-card.norm .etb-synth-list li::before{color:#c6a45c;}.etb-synth-takeaways{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:1rem;}.etb-synth-take-head{display:flex;align-items:center;gap:7px;font-family:sans-serif;font-size:13px;font-weight:700;color:#333;margin-bottom:.35rem;}.etb-synth-take-head svg{width:15px;height:15px;flex:none;}.etb-synth-take p{font-family:sans-serif;font-size:13.5px;line-height:1.55;color:#3c3c3c;margin:0;}.etb-synth-arrow{display:flex;justify-content:center;margin-top:1.3rem;}.etb-synth-arrow span{width:34px;height:34px;border:1px solid #dcdcdc;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#aaa;}.etb-synth-arrow svg{width:16px;height:16px;}.etb-learnmore{background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1.1rem 1.25rem;}.etb-lm-header{font-family:sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.85rem;}.etb-yt{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}.etb-yt:last-child{margin-bottom:0;}.etb-yt-thumb{position:relative;flex-shrink:0;width:140px;height:79px;border-radius:6px;overflow:hidden;display:block;background:#ddd;text-decoration:none;}.etb-yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;}.etb-yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.28);transition:background .2s;}.etb-yt-thumb:hover .etb-yt-play{background:rgba(0,0,0,.48);}.etb-yt-play::after{content:"▶";font-size:22px;color:#fff;line-height:1;}.etb-yt-title{font-family:sans-serif;font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}.etb-yt-note{font-family:sans-serif;font-size:12px;color:#888;line-height:1.5;}.etb-yt-hr{border:none;border-top:1px solid #ddd;margin:10px 0;}.etb-2col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-2item{flex:1 1 280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-2item-hd{background:#1a3a5c;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-2item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.55;padding:10px 12px;}.etb-3col{display:flex;flex-wrap:wrap;gap:10px;margin:1.25rem 0;}.etb-3item{flex:1 1 180px;border:1px solid #ddd;border-radius:8px;overflow:hidden;}.etb-3item-hd{background:#2a7a4f;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 12px;}.etb-3item-bd{font-family:sans-serif;font-size:13px;color:#444;line-height:1.5;padding:10px 12px;}.etb-compare{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:13px;margin:1.25rem 0;}.etb-compare th{background:#1a3a5c;color:#fff;padding:8px 12px;text-align:left;font-weight:600;}.etb-compare td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5;}.etb-compare tr:nth-child(even) td{background:#f7fafd;}.etb-compare tr:last-child td{border-bottom:none;}.etb-svgwrap{display:block;width:100%;}.etb-svgwrap svg{display:block;width:100%;height:auto;}.etb-worked{background:#ecf6f6;border:1px solid #6bb1b1;border-radius:8px;padding:1.1rem 1.4rem;margin:1.5rem 0;}.etb-worked-header{display:flex;align-items:center;gap:8px;margin-bottom:.65rem;}.etb-worked-badge{background:#0f7d7d;color:#fff;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;flex-shrink:0;}.etb-worked-title{font-family:sans-serif;font-size:13px;font-weight:700;color:#0a4a4a;}.etb-worked-body{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#0a3a3a;}.etb-worked-body p{margin:0 0 .65rem;}.etb-worked-steps{list-style:none;counter-reset:wstep;padding:0;margin:.5rem 0 0;}.etb-worked-steps li{position:relative;padding:7px 0 7px 30px;font-family:sans-serif;font-size:13.5px;line-height:1.6;color:#0a3a3a;border-bottom:1px solid rgba(15,125,125,.15);}.etb-worked-steps li:last-child{border-bottom:none;}.etb-worked-steps li::before{counter-increment:wstep;content:counter(wstep);position:absolute;left:0;top:7px;width:18px;height:18px;background:#0f7d7d;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}.etb-worked-answer{margin-top:.75rem;padding-top:.65rem;border-top:1px solid rgba(15,125,125,.3);font-family:sans-serif;font-size:13.5px;font-weight:700;color:#0a4a4a;}.etb-figure{margin:1.5rem 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;}.etb-figure-cap{padding:.7rem 1rem;border-top:1px solid #eee;font-family:sans-serif;}.etb-figure-num{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a3a5c;margin-right:8px;}.etb-figure-title{font-size:12.5px;color:#444;line-height:1.5;}.etb-figure-notice{margin-top:.5rem;font-size:12px;color:#666;line-height:1.55;}.etb-figure-notice strong{color:#1a3a5c;}details.etb-check{background:#fafafa;border:1px solid #e3e3e3;border-radius:6px;margin:.5rem 0;}details.etb-check summary{padding:.5rem .85rem;font-family:sans-serif;font-size:13px;color:#333;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}details.etb-check summary::-webkit-details-marker{display:none;}.etb-check-tag{background:#e3e3e3;color:#666;font-family:sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;}.etb-check-arrow{margin-left:auto;color:#999;font-size:12px;transition:transform .2s;flex-shrink:0;}details.etb-check[open] .etb-check-arrow{transform:rotate(90deg);}.etb-check-a{padding:0 .85rem .6rem 2.6rem;font-family:sans-serif;font-size:12.5px;line-height:1.55;color:#2a7a4f;font-weight:600;}blockquote.etb-quote{border-left:3px solid #bbb;margin:1.25rem 0;padding:.75rem 1.25rem;background:#f9f9f7;font-style:italic;font-size:14.5px;color:#444;line-height:1.75;}blockquote.etb-quote .etb-quote-attr{display:block;margin-top:.5rem;font-style:normal;font-size:12px;color:#888;}.etb-exam{border:1px solid #c2cdd9;border-radius:10px;overflow:hidden;margin:2.5rem 0;background:#fff;}.etb-exam-head{background:#3e4e60;padding:1.1rem 1.4rem;}.etb-exam-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-exam-title{font-family:sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;}.etb-exam-sub{font-family:sans-serif;font-size:12.5px;color:#b9c6d4;margin:.35rem 0 0;line-height:1.55;}.etb-exam-tabs{display:flex;flex-wrap:wrap;gap:0;background:#eef2f6;border-bottom:1px solid #c2cdd9;}.etb-exam-tab{flex:1 1 auto;font-family:sans-serif;font-size:12.5px;font-weight:600;color:#5a6b7d;background:transparent;border:none;border-bottom:3px solid transparent;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;gap:8px;justify-content:center;}.etb-exam-tab:hover{background:#e3e9ef;}.etb-exam-tab.active{color:#26323f;background:#fff;border-bottom-color:#3e4e60;}.etb-exam-tab-chip{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:#3e4e60;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;}.etb-exam-tab.active .etb-exam-tab-chip{background:#26323f;}.etb-exam-panel{padding:1.3rem 1.4rem;display:none;}.etb-exam-panel.active{display:block;}.etb-exam-type{font-family:sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a98a6;margin:0 0 .55rem;}.etb-exam-q{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .9rem;}.etb-reveal{background:#f5f8fa;border:1px solid #ccd6e0;border-radius:7px;margin:.5rem 0 0;}.etb-reveal>
+summary{padding:.6rem .9rem;font-family:sans-serif;font-size:12.5px;font-weight:700;color:#3e4e60;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;user-select:none;}.etb-reveal>
+summary::-webkit-details-marker{display:none;}.etb-reveal-arrow{margin-left:auto;color:#3e4e60;font-size:12px;transition:transform .2s;}.etb-reveal[open]>
+summary .etb-reveal-arrow{transform:rotate(90deg);}.etb-reveal-body{padding:.5rem .9rem 1rem;}.etb-reveal-body p{font-family:sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a1a;margin:0 0 .6rem;}.etb-reveal-body p:last-child{margin:0;}.etb-frq{border-top:1px solid #c2cdd9;background:#f7f9fb;padding:1.3rem 1.4rem;}.etb-frq-badge{display:inline-block;background:#26323f;color:#cdd8e4;font-family:sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:.55rem;}.etb-frq-title{font-family:sans-serif;font-size:14px;font-weight:700;color:#26323f;margin:0 0 .2rem;}.etb-frq-meta{font-family:sans-serif;font-size:11.5px;color:#8a98a6;margin:0 0 .95rem;}.etb-frq-scenario{font-family:sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 .85rem;font-style:italic;}.etb-frq-parts{list-style:none;counter-reset:frqp;padding:0;margin:0 0 .4rem;}.etb-frq-parts li{font-family:sans-serif;font-size:14px;line-height:1.65;color:#1a1a1a;padding:7px 0 7px 2.4rem;position:relative;border-bottom:1px solid #e6ecf1;}.etb-frq-parts li:last-child{border-bottom:none;}.etb-frq-parts li::before{counter-increment:frqp;content:"(" counter(frqp,lower-alpha) ")";position:absolute;left:0;top:7px;font-weight:700;color:#3e4e60;}.etb-frq-pts{color:#8a98a6;font-weight:400;font-size:12px;}.etb-rubric{list-style:none;padding:0;margin:0;}.etb-rubric li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .55rem;}.etb-rubric .pt{display:inline-block;background:#e1ece1;color:#2a7a4f;font-weight:700;font-size:11px;padding:1px 7px;border-radius:4px;margin-right:7px;white-space:nowrap;}.etb-loses{list-style:none;padding:0;margin:0;}.etb-loses li{font-family:sans-serif;font-size:13px;line-height:1.6;color:#1a1a1a;margin:0 0 .65rem;}.etb-loses li:last-child{margin:0;}.etb-loses .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:7px;white-space:nowrap;}@media(max-width:520px){.etb-synth-cards,.etb-synth-takeaways{grid-template-columns:1fr;}}
+</style>
+<div class="etb">
+<!-- ① TITLE CARD -->
+<div class="etb-title-card">
+<div class="etb-title-watermark">
+7
+</div>
+<div class="etb-title-unit">
+Unit 1 · How Markets Coordinate
+</div>
+<h2 class="etb-title-main">
+Distortions:
+<br>
+Taxes, Subsidies, and the Case of Education
+</h2>
+<p class="etb-title-sub">
+Plucking the Goose
+</p>
+<div class="etb-title-meta">
+<span>
+Chapter 7
+</span>
+<span>
+~ 45 min read
+</span>
+</div>
+</div>
+<!-- ② HOOK -->
+<div class="etb-hook">
+<p>
+In 1990, Congress decided the rich should pay more, and aimed carefully. It placed a 10% luxury tax on yachts over $100,000, plus private planes, furs, and jewels — goods only the wealthy buy. The logic seemed airtight: tax things only rich people purchase, and only rich people bear the tax. Senators crowed about fairness. The projected haul was tens of millions a year.
+</p>
+<p>
+What happened instead is one of the most instructive accidents in the history of tax policy. The wealthy, it turned out, did not have to buy new American yachts. They bought boats abroad, bought used, or simply didn't buy — their demand was
+<em>
+elastic
+</em>
+, full of escape routes. So yacht sales collapsed by roughly three-quarters. But the boat
+<em>
+builders
+</em>
+— the welders and carpenters in Maine and Florida — had nowhere to go. Their skills, tools, and shipyards couldn't be redirected overnight; their side of the market was
+<em>
+inelastic
+</em>
+. Within a year, thousands of them lost their jobs. A tax aimed at the rich landed on the workers, raised almost no money, and was repealed in 1993.
+</p>
+<p>
+This is the chapter's whole lesson in one cautionary tale:
+<strong>
+the burden of a tax has almost nothing to do with who legally pays it, and almost everything to do with who can escape it.
+</strong>
+Whoever is stuck — whoever can't substitute away — bears the load, no matter whose name is on the check. By the end you'll be able to compute exactly how a tax splits between buyers and sellers, why elasticity decides it, and how much value the tax destroys along the way.
+</p>
+<p>
+Taxes have a twin that is far more popular: the subsidy. Later in this chapter you'll meet one that feels wonderful to the people it's aimed at, maybe including you, and is worse for the economy than it looks. You'll see why before anyone has to repeal it.
+</p>
+</div>
+<!-- ③ CORE IDEA -->
+<div class="etb-slbl">
+The big picture
+</div>
+<div class="etb-bigidea">
+A tax is a price, and a price is an incentive: it makes the taxed thing more expensive, so people do less of it, driving a wedge between what buyers pay and what sellers keep and shrinking the quantity traded. Who actually bears it — the
+<em>
+incidence
+</em>
+— depends not on whom the law taxes but on the relative elasticities of supply and demand: the side that can more easily walk away pays less, the side that's stuck pays more. The tax raises revenue (a rectangle) but also destroys gains from trade that now never happen (a deadweight-loss triangle). The same logic runs subsidies, a tax with the sign flipped: the stuck side captures the benefit, so subsidizing demand where supply can't grow mostly raises the price. All of this is positive economics — what a tax
+<em>
+does
+</em>
+; whether a given tax is
+<em>
+fair
+</em>
+is a separate, normative question the model can't settle. By the end you should be able to find the burden on each side, compute revenue and deadweight loss, read incidence off relative elasticities, and work out what a subsidy does and who captures it.
+</div>
+<!-- ④ VOCABULARY -->
+<div class="etb-slbl">
+Essential vocabulary — tap each card to reveal
+</div>
+<div class="etb-flipgrid">
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Tax incidence
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Who actually bears the burden of a tax — how it splits between buyers and sellers — regardless of who legally hands the money to the government.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Tax wedge
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The gap a tax opens between the price buyers pay and the price sellers receive. Its size is the tax per unit.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Legal vs. economic incidence
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+Legal incidence is who the law requires to pay; economic incidence is who really bears the cost. They are usually different — economics decides the second, not the statute.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Elasticity
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+How responsive buyers or sellers are to a price change — how easily they can walk away. The more elastic side has escape routes; the inelastic side is stuck.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Tax revenue
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+The money the government collects: the tax per unit times the quantity still traded. On the graph, a rectangle (tax × quantity).
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+<div class="etb-flip" tabindex="0">
+<div class="etb-flip-front">
+<div class="etb-flip-front-term">
+Subsidy
+</div>
+<div class="etb-flip-front-hint">
+tap to reveal ↓
+</div>
+</div>
+<div class="etb-flip-back">
+<div class="etb-flip-back-def">
+A per-unit payment from the government that lowers the price buyers pay or raises what sellers receive — a tax with the sign reversed.
+</div>
+<div class="etb-flip-back-label">
+tap to hide ↑
+</div>
+</div>
+</div>
+</div>
+<div class="etb-slbl">
+Also know — tap any term
+</div>
+<div class="etb-alsoknow">
+<span class="etb-ak-item">
+excise tax
+<span class="etb-ak-pop">
+A per-unit tax on a specific good (gasoline, cigarettes, yachts) — the kind analyzed here.
+</span>
+</span>
+<span class="etb-ak-item">
+deadweight loss
+<span class="etb-ak-pop">
+Value destroyed when a tax stops trades that would have happened. From Ch 6 — now caused by a tax.
+</span>
+</span>
+<span class="etb-ak-item">
+pass-through
+<span class="etb-ak-pop">
+The share of a tax that gets passed on to buyers as a higher price.
+</span>
+</span>
+<span class="etb-ak-item">
+distortion
+<span class="etb-ak-pop">
+Anything that pushes a market away from its efficient equilibrium, shrinking total surplus.
+</span>
+</span>
+<span class="etb-ak-item">
+positive economics
+<span class="etb-ak-pop">
+Claims about what
+<em>
+is
+</em>
+— describable, testable. "A tax falls on the inelastic side" is positive.
+</span>
+</span>
+<span class="etb-ak-item">
+normative economics
+<span class="etb-ak-pop">
+Claims about what
+<em>
+ought
+</em>
+to be — value judgments. "This tax is fair" is normative; the model can't settle it.
+</span>
+</span>
+<span class="etb-ak-item">
+Laffer curve
+<span class="etb-ak-pop">
+Revenue rises then falls as the tax rate climbs — zero at 0% and zero at 100% — so a revenue-maximizing rate sits somewhere between.
+</span>
+</span>
+<span class="etb-ak-item">
+progressive tax
+<span class="etb-ak-pop">
+Takes a larger share of income as income rises (e.g. the federal income tax with rising brackets).
+</span>
+</span>
+<span class="etb-ak-item">
+regressive tax
+<span class="etb-ak-pop">
+Takes a larger share of income as income falls (e.g. a flat sales tax, since the poor spend a bigger share of income).
+</span>
+</span>
+<span class="etb-ak-item">
+Bennett hypothesis
+<span class="etb-ak-pop">
+The claim that increases in student aid let colleges raise tuition, capturing the aid as higher prices. Mechanism agreed; size disputed.
+</span>
+</span>
+<span class="etb-ak-item">
+school choice
+<span class="etb-ak-pop">
+Letting families choose among schools (vouchers, charters, open enrollment) instead of being assigned by address.
+</span>
+</span>
+</div>
+<!-- ⑤ CONCEPT 1 — THE WEDGE & INCIDENCE -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 1 · A Tax splits the market, and the law can't say how
+</div>
+<h2>
+The Tax Wedge
+</h2>
+<div class="etb-body">
+<p>
+A
+<strong>
+tax is a price, and a price is an incentive.
+</strong>
+Tax something and you make it more expensive, so people do less of it. Ronald Reagan once mocked how readily governments reach for that lever:
+</p>
+<blockquote class="etb-quote">
+Government's view of the economy could be summed up in a few short phrases: If it moves, tax it. If it keeps moving, regulate it. And if it stops moving, subsidize it.
+<span class="etb-quote-attr">
+— Ronald Reagan, remarks to the White House Conference on Small Business, 1986 (delivered, to laughter, as a jab at over-government)
+</span>
+</blockquote>
+<p>
+It was a partisan applause line, not a neutral description — but the mechanics underneath are real and apply to any tax. A tax discourages whatever it touches. Usually that discouragement is an unwanted side effect: we tax cigarettes mostly for revenue and get less smoking, we tax income and get a little less work. Occasionally the discouragement is the whole point — taxing things we'd like less of — an idea we'll sharpen later. Either way the quantity shrinks, which is exactly the wedge we're about to draw. And the flip side of Reagan's line — "subsidize it" — is the mirror image, a tax with the sign reversed, waiting later in this chapter.
+</p>
+<p>
+So, the wedge. Picture any market at its equilibrium, the one we measured in Chapter 6. Now the government places a tax of, say, $15 on each unit. The immediate effect is a
+<span data-tip="The gap a tax opens between what buyers pay and what sellers keep.">
+tax wedge
+</span>
+: the price the buyer pays and the price the seller keeps can no longer be the same number, because $15 of every transaction now goes to the government. The buyer pays one price; the seller pockets that price minus $15. The market settles at a smaller quantity, because some trades that barely made sense before don't survive the wedge.
+</p>
+<p>
+Here's the first surprise, and it's the heart of the chapter. It does not matter whether the law taxes the seller or the buyer — the outcome is identical. Tax the seller $15 per unit and they try to charge more; tax the buyer $15 and they offer sellers less. Either way the same wedge opens, the same quantity trades, and the same split of the burden emerges. The
+<span data-tip="Who the law says must pay.">
+legal incidence
+</span>
+— whose name is on the check — has no effect on the
+<span data-tip="Who actually bears the cost after prices adjust.">
+economic incidence
+</span>
+, who actually ends up worse off. As economists put it: who pays the tax is decided not by the laws of Congress but by the laws of supply and demand.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A per-unit tax shifts supply up, opening a 15 dollar wedge between the 70 dollar price buyers pay and the 55 dollar price sellers receive, reducing quantity from 20 to 15" style="display:block;width:100%;height:auto;">
+<!-- Tax revenue area -->
+<path d="M70 175H229V212.5H70Z" fill="#c48b00" opacity="0.22">
+</path>
+<!-- Axes -->
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="60" y="179">
+70
+</text>
+<text x="60" y="204">
+60
+</text>
+<text x="60" y="216">
+55
+</text>
+</g>
+<!-- Axis titles -->
+<text x="350" y="384" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="200" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price ($)
+</text>
+<!-- Demand -->
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="608" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Original supply -->
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="608" y="120" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- Supply including tax -->
+<line x1="70" y1="212.5" x2="547" y2="100" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="555" y="94" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f7d7d">
+S+tax
+</text>
+<!-- Original equilibrium -->
+<circle cx="282" cy="200" r="4" fill="#1a3a5c" opacity="0.5">
+</circle>
+<!-- Quantity and price guides -->
+<line x1="229" y1="175" x2="229" y2="350" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="70" y1="175" x2="229" y2="175" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="70" y1="212.5" x2="229" y2="212.5" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Prices with the tax -->
+<circle cx="229" cy="175" r="4.5" fill="#a33030">
+</circle>
+<circle cx="229" cy="212.5" r="4.5" fill="#0f7d7d">
+</circle>
+<!-- Buyer price label above the curves -->
+<text x="240" y="135" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#a33030">
+buyers pay $70
+</text>
+<!-- Seller price label below the curves -->
+<text x="240" y="242" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0a4a4a">
+sellers keep $55
+</text>
+<!-- Wedge label between demand and original supply -->
+<text x="310" y="206" font-family="Arial, sans-serif" font-size="10" fill="#8a6d2f">
+tax = $15 wedge
+</text>
+<!-- Revenue label inside the shaded area -->
+<text x="84" y="188" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#8a6d2f">
+tax revenue
+</text>
+<!-- Quantity values -->
+<text x="229" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+15
+</text>
+<text x="282" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle" opacity="0.6">
+20
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 7.1
+</span>
+<span class="etb-figure-title">
+A $15 tax on the Chapter 6 market (demand P = 100 − 2Q, supply P = 40 + Q). Quantity falls from 20 to 15; buyers pay $70, sellers keep $55.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the tax lifts the price buyers pay by only $10 (60 → 70) but cuts what sellers keep by $5 (60 → 55). The $15 wedge is split — and it's split unevenly. Why unevenly is the next concept.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Finding the burden on each side
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Market: demand P = 100 − 2Q, supply P = 40 + Q (equilibrium P = $60, Q = 20). Impose a $15 per-unit tax. Find the new quantity, the price buyers pay, the price sellers keep, and each side's share of the tax.
+</p>
+<ol class="etb-worked-steps">
+<li>
+A tax of $15 lifts the price sellers need by $15 at every quantity: the effective supply becomes P = 40 + Q + 15 = 55 + Q.
+</li>
+<li>
+Find the new quantity where buyers' price meets sellers'-with-tax: 100 − 2Q = 55 + Q → 45 = 3Q → Q = 15.
+</li>
+<li>
+Price buyers pay (on the demand curve): P = 100 − 2(15) = $70. Price sellers keep: $70 − $15 tax = $55.
+</li>
+<li>
+Split the $15 wedge against the old $60 price: buyers bear 70 − 60 = $10; sellers bear 60 − 55 = $5. (Check: 10 + 5 = 15. ✓)
+</li>
+</ol>
+<div class="etb-worked-answer">
+New quantity 15; buyers pay $70, sellers keep $55. Buyers bear $10 of the tax, sellers $5 — even if the law put the whole tax on the sellers. The check-writer is not the burden-bearer.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A law says sellers must pay a $4 tax. After prices adjust, buyers pay $3 more than before. How much of the tax do sellers actually bear?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+$1. The tax is $4; buyers bear $3 of it through the higher price, so sellers bear the remaining $1 — even though the law named the sellers.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: Demand P = 120 − 3Q, supply P = 20 + Q, with a $12 per-unit tax. Find the new quantity and the price buyers pay. (Hint: add the tax to the supply intercept.)
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Supply-with-tax: P = 32 + Q. Set 120 − 3Q = 32 + Q → 88 = 4Q → Q = 22. Buyers pay P = 120 − 3(22) = $54. (Sellers keep $54 − $12 = $42.)
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why does it make no difference whether the law taxes buyers or sellers?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Because a tax changes the
+<em>
+gap
+</em>
+between what buyers pay and what sellers receive, and that gap is the same wedge no matter which side hands over the money. Tax the seller, and they need a higher price to clear the same quantity, so the price buyers face rises; tax the buyer, and they offer sellers less, so the price sellers receive falls. Run either story to its end and you reach the identical new quantity, buyer price, and seller price. What determines how the wedge
+<em>
+splits
+</em>
+isn't the statute — it's how easily each side can walk away, which is elasticity. The statute picks who writes the check; supply and demand pick who feels the cost. A wrong answer usually assumes "taxing the seller means the seller pays," which confuses legal incidence with economic incidence — the single most common tax mistake there is.
+</p>
+</div>
+</details>
+</div>
+<!-- ⑤ CONCEPT 2 — ELASTICITY DECIDES -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 2 · Who can't escape
+</div>
+<h2>
+Elasticity decides the burden
+</h2>
+<div class="etb-body">
+<p>
+If the law doesn't decide who bears a tax, what does? The answer is the most useful idea in this chapter:
+<strong>
+the burden falls on whichever side can least escape it.
+</strong>
+"Escape" is just
+<span data-tip="How easily buyers or sellers can change their behavior when price changes.">
+elasticity
+</span>
+in plain clothes. An elastic side has alternatives — substitutes to buy instead, other markets to sell into — so when a tax pushes the price the wrong way for them, they simply do less of it and dodge most of the burden. An inelastic side is stuck: no good substitutes, no easy exit, so they swallow the tax to keep trading.
+</p>
+<p>
+What makes one side elastic and the other stuck? A handful of things, and you can feel every one of them without touching a number. Demand is more
+<em>
+elastic
+</em>
+when buyers have somewhere to go: close substitutes exist (one cola with another right beside it on the shelf), the purchase is a discretionary luxury rather than a necessity, it eats a big share of the budget so a price jump really stings, it's defined narrowly ("a Honda Civic" has substitutes; "a car" has almost none), or buyers have time to adjust. Flip each of those and demand turns
+<em>
+inelastic
+</em>
+— no substitutes, a necessity, a trivial share of spending, broadly defined, no time to react. The supply side runs on the same logic: sellers are elastic when they can redeploy easily (spare capacity, time, transferable skills) and inelastic when they're stuck (a built shipyard, land that can't be moved).
+</p>
+</div>
+<div class="etb-2col">
+<div class="etb-2item">
+<div class="etb-2item-hd">
+More elastic — easy to escape
+</div>
+<div class="etb-2item-bd">
+Close substitutes available · a luxury you can skip · a big share of your budget · narrowly defined good · plenty of time to adjust · sellers with spare capacity or transferable skills.
+</div>
+</div>
+<div class="etb-2item">
+<div class="etb-2item-hd">
+More inelastic — stuck
+</div>
+<div class="etb-2item-bd">
+No good substitutes · a necessity (or addictive) · a tiny share of spending · broadly defined good · no time to react · sellers who can't redeploy (land, a built factory).
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+Train the reflex. For each good below, decide
+<em>
+elastic
+</em>
+or
+<em>
+inelastic
+</em>
+— and why — before you tap.
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Elastic or inelastic?
+</span>
+One particular brand of bottled water, with ten others on the same shelf
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Elastic. The defining feature is close substitutes sitting right next to it — raise that one brand's price and buyers simply grab the bottle beside it. (Note "bottled water" in general is far less elastic than "this brand of bottled water." Narrow vs. broad.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Elastic or inelastic?
+</span>
+Insulin, for someone who needs it to live
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Extremely inelastic. A necessity with no substitute and life-or-death stakes — quantity barely responds to price. This is why a tax (or a price hike) on insulin lands squarely on patients: they can't walk away.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Elastic or inelastic?
+</span>
+Gasoline next week vs. gasoline over the next ten years
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Inelastic next week (you still have to drive to work; no time to change anything), but much more elastic over a decade (you can buy a fuel-efficient car, move closer to work, switch to transit). Same good — the time horizon flips the elasticity. That's the time-to-adjust rule.
+</div>
+</details>
+<div class="etb-body">
+<p>
+This is centuries-old wisdom. The line attributed to Jean-Baptiste Colbert, Louis XIV's finance minister, is that
+<span data-tip="Traditionally attributed to Colbert (c. 1665–83); the documentary trail is thin, but the attribution is conventional.">
+"the art of taxation consists in so plucking the goose as to obtain the largest amount of feathers with the least possible amount of hissing."
+</span>
+Strip away the cynicism and it's an elasticity rule in disguise: pluck where there's least hissing — tax the side that can't fly off. The goose that can escape (the elastic side) hisses loudly and loses few feathers; the goose that's stuck (the inelastic side) is plucked bare. The reason a luxury-yacht tax fails and a gasoline tax succeeds in raising revenue is the same reason: one goose can fly, the other can't.
+</p>
+<p>
+That's the whole yacht story. The wealthy buyers were
+<em>
+elastic
+</em>
+— boats abroad, used boats, no boat at all — so they escaped the tax by not buying. The boat
+<em>
+builders
+</em>
+were
+<em>
+inelastic
+</em>
+— their shipyards and skills couldn't pivot to making something else — so the burden rolled downhill onto them as lost work. The rule, worth memorizing:
+<strong>
+the more elastic side pays a smaller share of the tax; the more inelastic side pays a larger share.
+</strong>
+Think of relative elasticity as relative ability to flee. Whoever is more stuck, pays more.
+</p>
+<p>
+You can even read it off the graph without the rule. In our anchor market, demand is steeper (slope −2) than supply is shallow (slope +1) — the steeper curve is the less elastic one, so buyers are more stuck, and indeed buyers bore $10 of the $15 tax while sellers bore only $5. The numbers and the intuition agree: the inelastic side carries more. (We're working from the
+<em>
+intuition
+</em>
+of elasticity here — who's stuck. The number that makes it precise gets its own chapter later.)
+</p>
+</div>
+<table class="etb-compare">
+<thead>
+<tr>
+<th>
+If this side is more inelastic…
+</th>
+<th>
+…they bear more of the tax, because
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Buyers (inelastic demand — few substitutes, e.g. insulin, gasoline)
+</td>
+<td>
+they keep buying even as the price rises, so the tax passes through to them as a higher price.
+</td>
+</tr>
+<tr>
+<td>
+Sellers (inelastic supply — can't redeploy, e.g. boat builders, landowners)
+</td>
+<td>
+they keep selling even as their take falls, so the tax comes out of their pocket as a lower price received.
+</td>
+</tr>
+</tbody>
+</table>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A tax is placed on a good with very inelastic demand (insulin) and elastic supply. Who bears most of the tax?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Buyers. With inelastic demand they can't easily stop buying, so they're stuck with the burden; the elastic sellers escape by redeploying elsewhere.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: A town taxes hotel rooms. Tourists have many nearby towns to choose from (elastic demand); hotels can't move their buildings (inelastic supply). Who bears more of the tax, and why?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+The hotels (sellers). Tourists escape by staying elsewhere, so demand is elastic; the buildings are stuck, so supply is inelastic. The inelastic, stuck side — the hotels — bears the larger share.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Back to the hook: the luxury tax was meant to fall on rich buyers but landed on boat workers. Translate that into elasticity language.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Rich buyers had elastic demand (buy abroad, used, or not at all) so they escaped; boat builders had inelastic supply (skills and shipyards couldn't redeploy) so they were stuck and bore the burden as lost jobs.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Explain the principle "tax the inelastic side" to someone designing a tax to actually fall on the wealthy.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+The burden of a tax lands on whoever can't escape it, and "escape" means having alternatives — elasticity. To make a tax actually fall on the wealthy, you'd need to tax something for which the wealthy have
+<em>
+inelastic
+</em>
+demand or supply: something they can't easily substitute away from, buy elsewhere, or stop doing. Luxury yachts failed precisely because rich buyers had endless escape routes (foreign boats, used boats, no boat), so their elastic demand dodged the tax and it rolled onto the inelastic boat builders. A tax on, say, land or very high incomes is harder to escape, which is exactly why economists tend to think those fall closer to their intended target. The deep point: good tax design starts by asking "which side here is stuck?" — because that's the side that will pay, whatever the law says.
+</p>
+</div>
+</details>
+</div>
+<!-- ⑤ CONCEPT 3 — REVENUE & DWL -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 3 · The cost of the wedge
+</div>
+<h2>
+Revenue and deadweight loss
+</h2>
+<div class="etb-body">
+<p>
+A tax does two things at once, and it's vital to keep them separate. First, it
+<em>
+raises revenue
+</em>
+: the government collects the tax on every unit still sold. That's a transfer — surplus moving from buyers and sellers to the public purse, to fund roads or schools or whatever the state does. On the graph it's a
+<strong>
+rectangle
+</strong>
+: the tax per unit (the height of the wedge) times the quantity still traded (the width). In our market, $15 × 15 units = $225 of revenue.
+</p>
+<p>
+Second, and more subtly, a tax
+<em>
+destroys
+</em>
+value. Some trades that used to happen — where the buyer valued the good above the seller's cost — no longer clear once the wedge is driven in. Those gains from trade simply vanish, captured by no one, not even the government. This is
+<span data-tip="Value destroyed when a tax stops worthwhile trades.">
+deadweight loss
+</span>
+, the same triangle from Chapter 6, now caused by a tax. It sits between supply and demand, from the new quantity out to the old one.
+</p>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+Tax revenue (rectangle) and deadweight loss (triangle)
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Same market and $15 tax: quantity fell from 20 to 15. Find the tax revenue and the deadweight loss.
+</p>
+<ol class="etb-worked-steps">
+<li>
+<strong>
+Revenue (rectangle):
+</strong>
+tax per unit × quantity sold = $15 × 15 = $225.
+</li>
+<li>
+<strong>
+Deadweight loss (triangle):
+</strong>
+the base is the lost trades, 20 − 15 = 5; the height is the tax wedge, $15.
+</li>
+<li>
+Area = ½ × base × height = ½ × 5 × 15 = $37.50.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Revenue = $225 (a transfer, still exists). Deadweight loss = $37.50 (gone for good). The deadweight-loss triangle always sits between the curves, from the taxed quantity out to the efficient one — the trades the wedge killed.
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: A $6 tax cuts quantity from 100 to 90. Find tax revenue and deadweight loss.
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Revenue = $6 × 90 = $540. DWL = ½ × (100 − 90) × 6 = ½ × 10 × 6 = $30.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Why isn't the tax revenue itself a "loss" to society the way deadweight loss is?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Revenue is a transfer — it moves surplus from buyers and sellers to the government, which spends it. The value still exists. Deadweight loss is value that stops existing because the trade never happens; no one gets it.
+</div>
+</details>
+<div class="etb-body">
+<p>
+Here the taxes-as-incentive idea bites the government back. Point the incentive at the tax
+<em>
+rate
+</em>
+itself: if a higher rate collects more per unit, why not keep raising it forever? Because the rate is also an incentive to shrink the very thing being taxed. At a 0% rate the government collects nothing — obviously. But at a 100% rate it also collects almost nothing: if the state takes every dollar, almost no one bothers to earn, sell, or report the dollar in the first place, so the base all but vanishes. Zero at one end, near-zero at the other — so somewhere between, revenue must peak. Plot revenue against the rate and you get a hump: the
+<span data-tip="Named for economist Arthur Laffer, who popularized it in the 1970s; the underlying idea is older.">
+Laffer curve
+</span>
+.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Laffer curve: tax revenue rises then falls as the tax rate climbs from 0 to 100 percent. The location of the revenue-maximizing tax rate is disputed." style="display:block;width:100%;height:auto;">
+<!-- Axes -->
+<line x1="70" y1="40" x2="70" y2="320" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="320" x2="620" y2="320" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Axis titles -->
+<text x="345" y="352" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Tax rate
+</text>
+<text x="30" y="180" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 30 180)">
+Tax revenue
+</text>
+<!-- Tax rate endpoints -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">
+<text x="70" y="336">
+0%
+</text>
+<text x="620" y="336">
+100%
+</text>
+</g>
+<!-- Laffer curve -->
+<path d="M70 320 Q345 -40 620 320" fill="none" stroke="#1a3a5c" stroke-width="2.5">
+</path>
+<!-- Peak guide -->
+<line x1="345" y1="140" x2="345" y2="320" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<circle cx="345" cy="140" r="5" fill="#c48b00">
+</circle>
+<!-- Peak label -->
+<text x="345" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#8a6d2f" text-anchor="middle">
+peak — where? (disputed)
+</text>
+<!-- Rising side explanation -->
+<text font-family="Arial, sans-serif" font-size="10.5" fill="#2a7a4f" text-anchor="middle">
+<tspan x="215" y="257">
+raise rate
+</tspan>
+<tspan x="215" y="273">
+→ revenue up
+</tspan>
+</text>
+<!-- Falling side explanation -->
+<text font-family="Arial, sans-serif" font-size="10.5" fill="#a33030" text-anchor="middle">
+<tspan x="475" y="257">
+raise rate → base shrinks
+</tspan>
+<tspan x="475" y="273">
+→ revenue down
+</tspan>
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 7.2
+</span>
+<span class="etb-figure-title">
+The Laffer curve. Revenue is zero at a 0% rate and near zero at 100%, so it must peak somewhere between — but exactly where is hotly disputed.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the hump itself is guaranteed by the two endpoints; the peak's
+<em>
+location
+</em>
+is not. "Cut taxes to raise revenue" only works on the right-hand downslope — and for most real taxes we sit on the left.
+</div>
+</div>
+</div>
+<div class="etb-research">
+<div class="etb-research-header">
+<span class="etb-research-badge">
+Where the evidence is live
+</span>
+<span class="etb-research-title">
+Which side of the hump are we on?
+</span>
+</div>
+<div class="etb-research-body">
+<p>
+The
+<em>
+shape
+</em>
+isn't controversial — zero at both ends guarantees a peak. What's fiercely disputed is
+<em>
+where
+</em>
+the peak sits, and that's where careful economics and political slogans part ways. "Cut tax rates and revenue will rise" is true only if you're already past the peak, on the downward slope. For most taxes at the rates rich countries actually use, the weight of evidence is that we sit on the
+<em>
+upward
+</em>
+side, where cutting rates loses revenue rather than raising it. Estimates of the revenue-maximizing top income-tax rate land high and disagree with one another (often cited loosely in the 60–70% neighborhood), precisely because the answer turns on how easily people can shelter income or stop earning — elasticity again. The honest takeaway: the curve is real and a peak exists, but "tax cuts pay for themselves" is a claim about a specific magnitude that is usually wrong, not a consequence of the diagram. Be wary of anyone who states the peak's location with confidence in either direction.
+</p>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A country's tax rate is already extremely high and revenue is falling as it rises further. Would cutting the rate raise or lower revenue?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Raise it — if the country is genuinely past the peak (on the downslope), a lower rate shrinks the base less, so revenue climbs. The catch: this only holds past the peak. At the low-to-moderate rates most economies actually use, cutting the rate
+<em>
+lowers
+</em>
+revenue.
+</div>
+</details>
+<div class="etb-note">
+<div class="etb-note-label">
+Two families of inefficiency — a map for the rest of the book
+</div>
+<div class="etb-note-body">
+<p>
+Step back and notice what we've now collected. Price ceilings and floors, taxes, subsidies, and the tariffs and quotas of Chapter 8 all shrink the pie the same way: they
+<em>
+interfere
+</em>
+with a market whose equilibrium was already efficient, blocking good trades and opening a deadweight-loss triangle. Call this the first family —
+<strong>
+distortions of a good equilibrium
+</strong>
+. The fix is usually to remove the interference.
+</p>
+<p>
+But there's a second family coming in Unit 3, and it's stranger: cases where the market reaches its equilibrium smoothly, with no one blocking anything, and that equilibrium is
+<em>
+itself
+</em>
+the wrong one — because some cost or benefit isn't priced in (pollution, vaccines, education).
+<font color="#1a3a5c">
+<span style="font-size: 11px; letter-spacing: 0.22px; text-wrap-mode: nowrap;">
+<strong>
+</strong>
+</span>
+</font>
+There the deadweight loss exists even with no interference at all, and the fix may be to
+<em>
+add
+</em>
+a tax or subsidy rather than remove one. Keep the two families separate and the whole back half of this course stays clear:
+<em>
+is the market being prevented from working, or is it working fine and reaching a bad answer?
+</em>
+</p>
+</div>
+</div>
+</div>
+<!-- ⑤ CONCEPT 5 — TAX FAIRNESS & POLICY -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 4 · Who should pay
+</div>
+<h2>
+Tax fairness and the limits of economics
+</h2>
+<div class="etb-body">
+<p>
+Everything so far has answered who
+<em>
+does
+</em>
+pay a tax and what it costs — pure positive economics, the same answer for any analyst who runs the numbers. Now the question that actually dominates every real tax fight: who
+<em>
+should
+</em>
+pay? That word —
+<em>
+should
+</em>
+— has crossed a line. It is a
+<span data-tip="A claim about what ought to be — a value judgment.">
+normative
+</span>
+question, and no supply-and-demand diagram answers it.
+</p>
+<p>
+Start with what economics
+<em>
+can
+</em>
+say, because it's more than you'd guess. We can classify any tax by how its burden tracks income. A
+<span data-tip="Takes a larger share of income as income rises.">
+progressive
+</span>
+tax takes a bigger share of income the more you earn — the federal income tax, with its rising brackets. A
+<span data-tip="Takes a larger share of income as income falls.">
+regressive
+</span>
+tax takes a bigger share the
+<em>
+less
+</em>
+you earn — a flat sales tax is the classic case, because lower-income households spend a larger fraction of their income, so a tax on spending bites them harder. A
+<span data-tip="Same share of income at every level.">
+proportional
+</span>
+(or flat) tax takes the same share at every level. Which bucket a tax falls into is a factual, checkable question — positive economics; two experts will agree.
+</p>
+<p>
+What economics
+<em>
+can't
+</em>
+settle is which of those is
+<em>
+fair
+</em>
+. Here two reasonable principles collide. The
+<span data-tip="You should pay in proportion to the benefits you receive.">
+benefit principle
+</span>
+says you should pay for what you use — a gas tax that funds the roads you drive on feels fair on those grounds. The
+<span data-tip="Those more able to bear the burden should pay more.">
+ability-to-pay principle
+</span>
+says the burden should fall where it's easiest to bear, which points toward progressive taxation, taking more from those who have more. Both are coherent; they often recommend opposite taxes; and nothing in economics crowns a winner, because the choice rests on values — fairness, desert, what we owe each other — that the model simply does not contain.
+</p>
+<p>
+This is the discipline's honest boundary, worth stating plainly: economics is unusually powerful at the positive half — tracing a tax's consequences with real precision — and has no special authority over the normative half, whether those consequences are
+<em>
+good
+</em>
+. It's the same efficiency-versus-equity split we first drew in Chapter 5.
+<font color="#1a3a5c" face="sans-serif">
+<strong>
+</strong>
+</font>
+A good citizen uses the economics to get the consequences right, then argues fairness openly, as the genuine values question it is. And this course returns to the case
+<em>
+for
+</em>
+taxes and redistribution, at full strength, later on.
+</p>
+</div>
+<details class="etb-misc">
+<summary>
+<span class="etb-misc-badge">
+Common misconception
+</span>
+"A sales tax is the fairest tax — everyone pays the exact same rate."
+<span class="etb-misc-arrow">
+▸
+</span>
+</summary>
+<div class="etb-misc-body">
+<p>
+The "same rate" is real, but it's the same rate on
+<em>
+spending
+</em>
+, not on
+<em>
+income
+</em>
+— and those come apart. A household earning $30,000 spends nearly all of it, so an 8% sales tax costs close to 8% of its income. A household earning $1,000,000 spends a far smaller share (the rest is saved and invested), so the same 8% costs only a sliver of its income. Identical rate, very different bite: the tax is
+<em>
+regressive
+</em>
+in income terms. That's a positive fact about who bears it. Whether regressive is "unfair" is the separate, normative argument — but you can't have that argument honestly until you see that "same rate" and "same burden" are not the same thing.
+</p>
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A flat 8% sales tax — progressive, regressive, or proportional with respect to income?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Regressive. Lower-income households spend a larger share of their income, so the tax takes a larger share of
+<em>
+their
+</em>
+income than of a high earner's. (Classification is positive; whether that's fair is normative.)
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+An income tax whose rate rises from 10% to 37% as income climbs through brackets — which structure?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Progressive — a larger share of income is taken as income rises.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+A flat $500 fee charged to every adult regardless of income — which structure?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Steeply regressive. A fixed dollar amount is a far larger share of a low income than a high one ($500 ÷ income falls as income rises).
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Why can economics tell you who bears a tax but not whether the tax is fair?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Because "who bears it" is a positive question — a fact about how prices and quantities adjust, settled by supply, demand, and elasticity, with an answer two analysts of opposite politics will share. "Is it fair?" is normative: it turns on values — what people deserve, what we owe one another, how to weigh one person's loss against another's gain — and those values are nowhere in the model. Economics can sharpen the fairness debate enormously by getting the consequences right (who actually pays, how much is destroyed, who's helped), but it cannot resolve it, because no arrangement of curves contains a definition of justice. Treating the positive answer as if it were the normative one — "the model says this tax is good" — is a category error, and a common one. The benefit principle and ability-to-pay are two honest, conflicting answers, and choosing between them is a job for citizens, not curves.
+</p>
+</div>
+</details>
+</div>
+<!-- ⑥ ON THE EXAM -->
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+Part 1 · Taxes: the moves you can now make
+</p>
+<p class="etb-exam-sub">
+Three questions at the level the exam will actually ask: the tax wedge and its split, incidence from elasticity, and revenue and deadweight loss. Try each on paper first, then reveal the worked solution. The trying is where the learning happens.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+A
+</span>
+Split the wedge
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+B
+</span>
+Who's stuck
+</button>
+<button class="etb-exam-tab" data-i="c">
+<span class="etb-exam-tab-chip">
+C
+</span>
+Revenue &amp; DWL
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Type A · the wedge and the incidence split
+</p>
+<p class="etb-exam-q">
+A market has demand P = 100 − 3Q and supply P = 40 + Q, clearing at $55 and 15 units (shown below). The government places an $8 per-unit tax on the good. Find the new quantity, the price buyers pay, the price sellers keep, and how the $8 splits between the two sides.
+</p>
+<div class="etb-figure" style="margin:.5rem 0 .9rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A market clearing at 55 dollars and 15 units. An 8-dollar tax reduces quantity to 13 units, with buyers paying 61 dollars and sellers receiving 53 dollars. The deadweight loss triangle is highlighted." style="display:block;width:100%;height:auto;">
+<!-- Highlighted deadweight loss triangle -->
+<polygon points="206,124 206,164 230,154" fill="#c48b00" opacity="0.34">
+</polygon>
+<!-- Axes -->
+<line x1="70" y1="40" x2="70" y2="320" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="320" x2="570" y2="320" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Axis titles -->
+<text x="26" y="185" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 185)">
+Price ($)
+</text>
+<text x="320" y="352" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="10" fill="#777" text-anchor="end">
+<text x="60" y="127">
+61
+</text>
+<text x="60" y="157">
+55
+</text>
+<text x="60" y="167">
+53
+</text>
+</g>
+<!-- Demand: P = 100 - 3Q -->
+<line x1="138.8" y1="40" x2="362.8" y2="320" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="374" y="304" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Original supply: P = 40 + Q -->
+<line x1="70" y1="220.667" x2="503.6" y2="40" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="515" y="43" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- Supply including the $8 tax: P = 48 + Q -->
+<line x1="70" y1="180.667" x2="407.6" y2="40" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="420" y="43" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f7d7d">
+S+tax
+</text>
+<!-- New quantity guide -->
+<line x1="206" y1="124" x2="206" y2="320" stroke="#999" stroke-width="0.9" stroke-dasharray="3 3">
+</line>
+<!-- Buyer price guide -->
+<line x1="70" y1="124" x2="206" y2="124" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Seller price guide -->
+<line x1="70" y1="164" x2="206" y2="164" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Original equilibrium -->
+<circle cx="230" cy="154" r="4" fill="#1a3a5c" opacity="0.5">
+</circle>
+<!-- Buyer price point -->
+<circle cx="206" cy="124" r="4.5" fill="#a33030">
+</circle>
+<!-- Seller price point -->
+<circle cx="206" cy="164" r="4.5" fill="#0f7d7d">
+</circle>
+<!-- Buyer label -->
+<text x="214" y="70" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#a33030">
+buyers pay $61
+</text>
+<!-- Seller label -->
+<text x="214" y="245" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#0a4a4a">
+sellers keep $53
+</text>
+<!-- Quantity values -->
+<text x="206" y="335" font-family="Arial, sans-serif" font-size="10" fill="#777" text-anchor="middle">
+13
+</text>
+<text x="230" y="335" font-family="Arial, sans-serif" font-size="10" fill="#777" text-anchor="middle" opacity="0.6">
+15
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-title">
+The market with the $8 tax shifting supply up to S+tax.
+</span>
+</div>
+</div>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+The $8 tax lifts the price sellers need at every quantity: effective supply P = 40 + Q + 8 = 48 + Q.
+</li>
+<li>
+New quantity: 100 − 3Q = 48 + Q → 52 = 4Q → Q = 13.
+</li>
+<li>
+Price buyers pay (on demand): P = 100 − 3(13) = $61. Price sellers keep: $61 − $8 = $53.
+</li>
+<li>
+Split against the old $55 price: buyers bear 61 − 55 = $6; sellers bear 55 − 53 = $2. (Check: 6 + 2 = 8 ✓.)
+</li>
+</ol>
+<div class="etb-worked-answer">
+New quantity 13; buyers pay $61, sellers keep $53. Buyers bear $6 of the $8, sellers $2 — demand is the steeper (less elastic) curve here, so the stuck side, buyers, carries more, whatever the law says about who remits it.
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Type B · reading incidence off elasticity
+</p>
+<p class="etb-exam-q">
+No equations — reason it out. (i) A state taxes cigarettes: demand is very inelastic (addictive, few substitutes), and sellers can redeploy shelf space to other products (elastic supply). Who bears most of the tax? (ii) A tax falls on a luxury watch with many close substitutes (elastic demand), made in specialized workshops that can't easily retool (inelastic supply). Who bears most of it? Explain the rule you're using.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+The rule:
+</strong>
+the burden falls on whichever side is more
+<em>
+inelastic
+</em>
+— the side that can least escape. The elastic side has alternatives and walks away; the stuck side swallows the tax to keep trading.
+</p>
+<p>
+<strong>
+(i)
+</strong>
+Buyers (smokers) bear most of it. Their demand is inelastic — they keep buying even as the price rises — while elastic sellers can shift to other goods. The tax passes through to consumers as a higher price. (This is also why cigarette taxes raise revenue reliably: the stuck goose doesn't fly.)
+</p>
+<p>
+<strong>
+(ii)
+</strong>
+The sellers (the workshops) bear most of it. Buyers have elastic demand — plenty of substitute watches — so they escape by buying something else; the specialized producers can't redeploy, so the burden comes out of their pocket as a lower price received. Same rule, opposite side: whoever is more stuck, pays more.
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="c">
+<p class="etb-exam-type">
+Type C · revenue rectangle and deadweight-loss triangle
+</p>
+<p class="etb-exam-q">
+A market has demand P = 80 − Q and supply P = 20 + Q (equilibrium $50, 30 units). A $10 per-unit tax is imposed, cutting the quantity to 25. Calculate the tax revenue and the deadweight loss, and explain in one line why the revenue is not itself a loss to society.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<div class="etb-worked" style="margin:.3rem 0 0;">
+<div class="etb-worked-body">
+<ol class="etb-worked-steps">
+<li>
+<strong>
+Revenue (rectangle):
+</strong>
+tax per unit × quantity still sold = $10 × 25 = $250.
+</li>
+<li>
+<strong>
+Deadweight loss (triangle):
+</strong>
+base = lost trades = 30 − 25 = 5; height = the tax wedge = $10.
+</li>
+<li>
+DWL = ½ × 5 × 10 = $25.
+</li>
+</ol>
+<div class="etb-worked-answer">
+Revenue = $250, deadweight loss = $25. The revenue isn't a loss because it is a
+<em>
+transfer
+</em>
+— surplus moved from buyers and sellers to the government, which spends it; the value still exists. The deadweight loss is the surplus on the 5 trades that no longer happen, which is destroyed and captured by no one.
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+<!-- FRQ CAPSTONE (graph-bearing long form) -->
+<div class="etb-frq">
+<span class="etb-frq-badge">
+Checkpoint · free response
+</span>
+<p class="etb-frq-title">
+Put the moves together
+</p>
+<p class="etb-frq-meta">
+AP-style long free response · ~10 points · graph required · model answer and scoring below
+</p>
+<p class="etb-frq-scenario">
+A state legislature, looking for revenue, proposes a per-unit excise tax on soda. The market for soda is competitive, with demand P = 120 − 2Q and supply P = 30 + Q, where P is in cents per liter and Q is in millions of liters.
+</p>
+<ol class="etb-frq-parts">
+<li>
+Draw a correctly labeled supply-and-demand graph for soda, marking the equilibrium price (P
+<sub>
+1
+</sub>
+) and quantity (Q
+<sub>
+1
+</sub>
+).
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+The state imposes a 12-cent per-liter tax. On your graph, show the tax wedge. Calculate the new quantity, the price buyers pay, and the price sellers keep.
+<span class="etb-frq-pts">
+(3 pts)
+</span>
+</li>
+<li>
+State how the 12-cent tax splits between buyers and sellers. Which side is more inelastic here, and how do you know?
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Calculate the government's tax revenue and the deadweight loss.
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Soda is consumed across all income levels, and lower-income households spend a larger share of income on it. Is this tax progressive or regressive with respect to income? Explain why that classification is a
+<em>
+positive
+</em>
+claim, while calling the tax "unfair" would be a
+<em>
+normative
+</em>
+one.
+<span class="etb-frq-pts">
+(1 pt)
+</span>
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal a full-credit response
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+(a)
+</strong>
+Vertical axis Price (cents/liter), horizontal axis Quantity (millions of liters), downward D and upward S crossing at E
+<sub>
+1
+</sub>
+, with P
+<sub>
+1
+</sub>
+and Q
+<sub>
+1
+</sub>
+marked. Equilibrium: 120 − 2Q = 30 + Q → 90 = 3Q → Q
+<sub>
+1
+</sub>
+= 30, P
+<sub>
+1
+</sub>
+= 60. (See figure.)
+</p>
+<p>
+<strong>
+(b)
+</strong>
+The 12-cent tax lifts effective supply to P = 30 + Q + 12 = 42 + Q, drawn as S+tax parallel above S. New quantity: 120 − 2Q = 42 + Q → 78 = 3Q → Q = 26. Price buyers pay (on demand): 120 − 2(26) = 68 cents. Price sellers keep: 68 − 12 = 56 cents. The wedge is the 12-cent vertical gap between the buyer price (68) and the seller price (56) at Q = 26.
+</p>
+<p>
+<strong>
+(c)
+</strong>
+Buyers bear 68 − 60 = 8 cents; sellers bear 60 − 56 = 4 cents. Buyers bear more. Demand is the more inelastic side here — its curve is steeper (slope −2 versus supply's +1), so buyers respond less to the price change and can least escape, carrying the larger share.
+</p>
+<p>
+<strong>
+(d)
+</strong>
+Revenue = tax × quantity sold = 12 × 26 = 312 (million cents = $3.12 million). Deadweight loss = ½ × (30 − 26) × 12 = ½ × 4 × 12 = 24 (million cents = $0.24 million).
+</p>
+<p>
+<strong>
+(e)
+</strong>
+Regressive: because lower-income households spend a larger share of their income on soda, a tax on soda takes a larger share of
+<em>
+their
+</em>
+income than of a high earner's. That classification is positive — a factual statement about how the burden tracks income, which any analyst can check. Calling the tax "unfair" is normative: it is a value judgment about whether that distribution of burden is acceptable, which the model cannot settle.
+</p>
+<div class="etb-figure" style="margin-top:.8rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soda demand and supply cross at 60 cents and 30 million liters. A 12-cent tax reduces quantity to 26 million liters, with buyers paying 68 cents and sellers receiving 56 cents. Deadweight loss is shaded." style="display:block;width:100%;height:auto;">
+<!-- Deadweight loss -->
+<polygon points="267.2,146 267.2,218 296,194" fill="#c48b00" opacity="0.34">
+</polygon>
+<!-- Axes -->
+<line x1="80" y1="50" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="80" y1="360" x2="620" y2="360" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Axis titles -->
+<text x="350" y="404" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (millions of liters)
+</text>
+<text x="26" y="205" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 205)">
+Price (cents/liter)
+</text>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="70" y="150">
+68
+</text>
+<text x="70" y="198">
+60
+</text>
+<text x="70" y="222">
+56
+</text>
+</g>
+<!-- Demand: P = 120 - 2Q -->
+<line x1="209.6" y1="50" x2="395.6" y2="360" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="407" y="346" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Supply: P = 30 + Q -->
+<line x1="96.8" y1="360" x2="468.8" y2="50" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="480" y="51" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- Supply including tax: P = 42 + Q -->
+<line x1="80" y1="302" x2="382.4" y2="50" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="394" y="51" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f7d7d">
+S+tax
+</text>
+<!-- Quantity guide -->
+<line x1="267.2" y1="146" x2="267.2" y2="360" stroke="#999" stroke-width="0.9" stroke-dasharray="3 3">
+</line>
+<!-- Buyer price guide -->
+<line x1="80" y1="146" x2="267.2" y2="146" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Seller price guide -->
+<line x1="80" y1="218" x2="267.2" y2="218" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Original equilibrium -->
+<circle cx="296" cy="194" r="5" fill="#1a3a5c">
+</circle>
+<text x="315" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#1a3a5c">
+E₁ (60, 30)
+</text>
+<!-- Buyer and seller price points -->
+<circle cx="267.2" cy="146" r="4.5" fill="#a33030">
+</circle>
+<circle cx="267.2" cy="218" r="4.5" fill="#0f7d7d">
+</circle>
+<!-- Buyer price label -->
+<text x="125" y="125" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#a33030">
+buyers pay 68
+</text>
+<!-- Seller price label below the curves -->
+<text x="190" y="342" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#0a4a4a">
+sellers keep 56
+</text>
+<!-- Tax wedge label -->
+<text x="285" y="155" font-family="Arial, sans-serif" font-size="9.5" fill="#8a6d2f">
+12¢ wedge
+</text>
+<!-- Quantity values -->
+<text x="267.2" y="376" font-family="Arial, sans-serif" font-size="10" fill="#777" text-anchor="middle">
+26
+</text>
+<text x="296" y="376" font-family="Arial, sans-serif" font-size="10" fill="#777" text-anchor="middle" opacity="0.6">
+30
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Model graph
+</span>
+<span class="etb-figure-title">
+Equilibrium 60¢ / 30 (part a); the 12¢ tax shifts supply to S+tax, cutting quantity to 26 and opening a wedge — buyers pay 68¢, sellers keep 56¢ (part b) — with the deadweight-loss triangle shaded (part d).
+</span>
+</div>
+</div>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal the scoring rubric
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Axes labeled (Price vertical, Quantity horizontal) with a downward D and upward S.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Equilibrium marked at the crossing with P
+<sub>
+1
+</sub>
+= 60 and Q
+<sub>
+1
+</sub>
+= 30 (or shown on the axes).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) Supply shown shifting up by the tax (S+tax), opening a wedge — not a movement along S.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) Correct new quantity Q = 26 with work shown.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) Buyer price 68 AND seller price 56.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Split stated: buyers 8, sellers 4.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Identifies demand as more inelastic AND justifies it (steeper curve / smaller response).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) Tax revenue = 12 × 26 = 312 (with units).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) Deadweight loss = ½ × 4 × 12 = 24, with work shown.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(e) Regressive, AND explains the positive (classification) vs. normative (fairness) distinction.
+</li>
+</ul>
+<p style="font-family:sans-serif;font-size:12px;color:#8a98a6;margin:.75rem 0 0;">
+Ten independent points. A wrong number in (b) doesn't forfeit (c)–(d) if the later reasoning is correct given your own figures.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal what loses points
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-loses">
+<li>
+<span class="tag" style="background:#fdecec;color:#a33030;">
+Conceptual
+</span>
+In (c), claiming the side the law taxes "pays" the tax. Incidence is decided by elasticity, not the statute — here buyers bear more because demand is more inelastic, regardless of who remits the 12 cents.
+</li>
+<li>
+<span class="tag" style="background:#fbf0db;color:#8a6d2f;">
+Precision
+</span>
+In (d), forgetting the units (cents × millions of liters) or computing the DWL base as the new quantity (26) instead of the
+<em>
+lost
+</em>
+trades (30 − 26 = 4). The triangle's base is the quantity the tax killed.
+</li>
+<li>
+<span class="tag" style="background:#eef2f6;color:#3e4e60;">
+Exam craft
+</span>
+In (e), arguing whether the tax is fair instead of answering the question asked. The prompt wants the regressive classification (positive) and the positive-versus-normative distinction — sliding into your own fairness opinion earns nothing and can read as not understanding the line.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<!-- (5) CONCEPT 1 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 5 · The mirror
+</div>
+<h2>
+Subsidies and Who Captures Them
+</h2>
+<div class="etb-body">
+<p>
+Everything you learned about taxes applies to subsidies, just in reverse. In Concept 1, a tax drove a wedge that made buyers pay
+<em>
+more
+</em>
+than sellers received, and shrank the quantity. A
+<span data-tip="A per-unit government payment — a tax with the sign reversed.">
+subsidy
+</span>
+does the exact opposite: it drives a wedge that lets sellers receive
+<em>
+more
+</em>
+than buyers pay, with the government covering the gap, and the quantity
+<em>
+grows
+</em>
+. Where the tax wedge pushed the two prices apart with a gap the government
+<em>
+collected
+</em>
+, the subsidy wedge pushes them apart with a gap the government
+<em>
+pays
+</em>
+.
+</p>
+<p>
+We'll use it on the same market we've used all unit — demand P = 100 − 2Q, supply P = 40 + Q, which cleared at $60 and 20 units. A $15-per-unit subsidy means sellers now get $15 more than buyers hand over, so they're willing to supply at any buyer-price $15 below their old cost. The effective supply shifts
+<em>
+down
+</em>
+by $15 — the mirror of the tax, which shifted it up. The market grows to a larger quantity, buyers pay less, sellers receive more, and the government pays the difference on every unit.
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 15-dollar per-unit subsidy shifts supply down, increasing quantity from 20 to 25. Sellers receive 65 dollars while buyers pay 50 dollars. Government spending is shaded." style="display:block;width:100%;height:auto;">
+<!-- Government spending area -->
+<path d="M70 187.5H335V225H70Z" fill="#2a7a4f" opacity="0.13">
+</path>
+<!-- Axes -->
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="60" y="191">
+65
+</text>
+<text x="60" y="204">
+60
+</text>
+<text x="60" y="229">
+50
+</text>
+</g>
+<!-- Axis titles -->
+<text x="350" y="384" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity
+</text>
+<text x="26" y="200" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price ($)
+</text>
+<!-- Demand -->
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="610" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Original supply -->
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="610" y="120" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- Supply after subsidy -->
+<line x1="70" y1="287.5" x2="600" y2="162.5" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="610" y="158" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f7d7d">
+S−subsidy
+</text>
+<!-- Original equilibrium -->
+<circle cx="282" cy="200" r="4" fill="#1a3a5c" opacity="0.5">
+</circle>
+<!-- Label close to the original equilibrium -->
+<text x="274" y="178" font-family="Arial, sans-serif" font-size="9.5" fill="#1a3a5c" opacity="0.7" text-anchor="end">
+old E
+</text>
+<!-- New quantity guide -->
+<line x1="335" y1="187.5" x2="335" y2="350" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Seller price guide -->
+<line x1="70" y1="187.5" x2="335" y2="187.5" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Buyer price guide -->
+<line x1="70" y1="225" x2="335" y2="225" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Seller and buyer price points -->
+<circle cx="335" cy="187.5" r="4.5" fill="#0f7d7d">
+</circle>
+<circle cx="335" cy="225" r="4.5" fill="#a33030">
+</circle>
+<!-- Seller label above the curves -->
+<text x="347" y="150" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0a4a4a">
+sellers get $65
+</text>
+<!-- Buyer label below the curves -->
+<text x="347" y="292" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#a33030">
+buyers pay $50
+</text>
+<!-- Government spending label inside the shaded area -->
+<text x="95" y="212" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2a7a4f">
+government pays
+</text>
+<!-- Quantity values -->
+<text x="282" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle" opacity="0.6">
+20
+</text>
+<text x="335" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+25
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 7.3
+</span>
+<span class="etb-figure-title">
+A $15 subsidy on the same market. Quantity rises from 20 to 25; sellers receive $65, buyers pay $50. Compare Fig 7.1 — the wedge is identical, just flipped.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+the subsidy splits just like a tax. Here buyers gain $10 (60 → 50) and sellers gain $5 (60 → 65) — the same $10/$5 split as the tax in Concept 1, because the elasticities are the same. The side that bore more of the tax now captures more of the subsidy.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example
+</span>
+<span class="etb-worked-title">
+A subsidy's effect — mind the sign flip
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+Market: demand P = 100 − 2Q, supply P = 40 + Q (equilibrium $60, 20 units). Apply a $15-per-unit subsidy. Find the new quantity, the price buyers pay, the price sellers receive, and the government's cost.
+</p>
+<ol class="etb-worked-steps">
+<li>
+A subsidy
+<em>
+lowers
+</em>
+the price sellers need from buyers by $15 — so subtract from the supply intercept (the mirror of a tax, which adds): effective supply P = 40 + Q − 15 = 25 + Q.
+</li>
+<li>
+New quantity where demand meets subsidized supply: 100 − 2Q = 25 + Q → 75 = 3Q → Q = 25. (Quantity rose, as a subsidy should.)
+</li>
+<li>
+Price buyers pay (on demand): P = 100 − 2(25) = $50. Price sellers receive: buyers' $50 + $15 subsidy = $65. (Check on original supply: 40 + 25 = $65. ✓)
+</li>
+<li>
+Government's cost = subsidy × quantity = $15 × 25 = $375 (a rectangle the government pays
+<em>
+out
+</em>
+).
+</li>
+</ol>
+<div class="etb-worked-answer">
+Q = 25; buyers pay $50, sellers receive $65; government spends $375. The one trap: a subsidy
+<em>
+subtracts
+</em>
+from the supply price where a tax adds. Get the sign right and the rest is identical to the tax in Concept 1.
+</div>
+</div>
+</div>
+<div class="etb-body">
+<p>
+Concept 2 showed that it doesn't matter who signs the check on a tax; tax incidence is determined by elasticity. The same is true for subsidies:
+<strong>
+the more inelastic side captures the larger share of a subsidy
+</strong>
+— exactly the side that would have borne the larger share of a tax. E stands for "escape" as well as "elasticity." In this case, the party that cannot escape is stuck. Stuck means you can't walk away, and the side that can't walk away both eats the tax and pockets the subsidy. So the entire question "will this subsidy actually help the people it's aimed at?" reduces to one prior question:
+<em>
+which side here is stuck?
+</em>
+</p>
+<p>
+We're going to use the example of student loans in the higher ed market. Buyers in a college market have options: skip college, choose a trade, and lots of universities. The elasticity of demand is far more elastic than suppliers. Supply is inelastic because universities that can't or won't add seats quickly. In part, this is because their prestige is bound up in scarcity: you will often find that some suppliers don't want to increase supply because it runs contrary to their incentives. Buyers can spend the aid; sellers can't easily produce more in response. So the stuck side is the sellers, and the sellers capture the subsidy: when you pass subsidies to the students, the extra demand bids up the price, tuition rises, and much of the aid lands in the schools' budgets rather than lowering the real cost to students. Subsidize
+<em>
+buyers
+</em>
+— students, with loans — in a market where
+<em>
+supply is inelastic
+</em>
+—and watch as they get very little out of the deal. The intended beneficiary is not the actual beneficiary. Watch the same wedge, now in a steep-supply market:
+</p>
+</div>
+<div class="etb-figure">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A subsidy in a market with steep inelastic supply: of a 10 dollar subsidy, sellers capture 8 dollars as a higher price while buyers gain only 2 dollars." style="display:block;width:100%;height:auto;">
+<!-- Axes -->
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="60" y="166">
+90
+</text>
+<text x="60" y="226">
+80
+</text>
+</g>
+<!-- Axis titles -->
+<text x="350" y="384" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity (university seats)
+</text>
+<text x="26" y="200" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Price (tuition)
+</text>
+<!-- Quantity guides -->
+<line x1="300" y1="210" x2="300" y2="350" stroke="#cbd3da" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="345" y1="162" x2="345" y2="350" stroke="#cbd3da" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<g font-family="Arial, sans-serif" font-size="10" fill="#999" text-anchor="middle">
+<text x="300" y="365">
+Q₁
+</text>
+<text x="345" y="365">
+Q₂
+</text>
+</g>
+<!-- Demand -->
+<line x1="90" y1="154" x2="600" y2="290" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="610" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Steep original supply -->
+<line x1="169" y1="350" x2="360" y2="146" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f7d7d">
+<tspan x="110" y="280">
+S
+</tspan>
+<tspan x="110" y="296">
+steep = inelastic
+</tspan>
+</text>
+<!-- Supply after subsidy -->
+<line x1="225" y1="350" x2="360" y2="206" stroke="#0f7d7d" stroke-width="1.8" stroke-dasharray="6 3">
+</line>
+<text x="372" y="210" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f7d7d">
+S−subsidy
+</text>
+<!-- Price guides -->
+<line x1="70" y1="162" x2="345" y2="162" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<line x1="70" y1="222" x2="345" y2="222" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Original equilibrium -->
+<circle cx="300" cy="210" r="4" fill="#1a3a5c" opacity="0.55">
+</circle>
+<text x="293" y="190" font-family="Arial, sans-serif" font-size="9.5" fill="#1a3a5c" opacity="0.75" text-anchor="end">
+old E · $82
+</text>
+<!-- Seller and buyer points -->
+<circle cx="345" cy="162" r="4.5" fill="#0f7d7d">
+</circle>
+<circle cx="345" cy="222" r="4.5" fill="#a33030">
+</circle>
+<!-- Seller price label -->
+<text x="366" y="160" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0a4a4a">
+sellers get $90
+</text>
+<!-- Buyer price label -->
+<text x="357" y="270" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#a33030">
+buyers pay $80
+</text>
+<!-- Subsidy split explanation -->
+<text x="408" y="312" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#8a6d2f">
+$10 subsidy splits unevenly:
+</text>
+<text x="408" y="327" font-family="Arial, sans-serif" font-size="10.5" fill="#8a6d2f">
+$8 to sellers, only $2 to buyers
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Fig 7.4
+</span>
+<span class="etb-figure-title">
+A $10 subsidy where supply is steep (inelastic). The price sellers receive jumps from $82 to $90; buyers' price barely falls, $82 to $80.
+</span>
+<div class="etb-figure-notice">
+<strong>
+What to notice:
+</strong>
+of the $10 subsidy, sellers capture $8 and buyers get just $2. Steep (inelastic) supply means the stuck sellers pocket almost the whole benefit — the demand subsidy mostly inflates the price. This is the Bennett mechanism, drawn.
+</div>
+</div>
+</div>
+<div class="etb-worked">
+<div class="etb-worked-header">
+<span class="etb-worked-badge">
+Worked example (faded)
+</span>
+<span class="etb-worked-title">
+Splitting a subsidy by elasticity
+</span>
+</div>
+<div class="etb-worked-body">
+<p>
+In Fig 7.4, a $10 subsidy moves the price sellers receive from $82 to $90 and the price buyers pay from $82 to $80. The arithmetic is filled; you draw the conclusion.
+</p>
+<ol class="etb-worked-steps">
+<li>
+Seller capture = new seller price − old price = 90 − 82 = $8.
+</li>
+<li>
+Buyer benefit = old price − new buyer price = 82 − 80 = $2. (Check: 8 + 2 = $10, the whole subsidy. ✓)
+</li>
+</ol>
+<div class="etb-worked-answer">
+Because supply is ______ (inelastic/elastic), the ______ capture the lion's share — $8 of the $10 — while buyers get only $2.
+<em>
+(Answer: inelastic; sellers. When the stuck side is the seller, a subsidy aimed at buyers mostly raises the price and enriches sellers.)
+</em>
+</div>
+</div>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+<span>
+Solo: A subsidy is given to home
+<em>
+buyers
+</em>
+in a city where almost no new housing can be built (very inelastic supply). Who captures most of the subsidy, and what happens to house prices?
+</span>
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Sellers (existing homeowners) capture most of it; prices rise. With supply unable to grow, the extra demand bids up prices, so the subsidy mostly inflates home values rather than helping buyers afford homes.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+Solo: The same homebuyer subsidy, but now in a city that can build new housing freely (elastic supply). Who benefits now?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Buyers. With elastic supply, builders respond to the subsidy by adding homes rather than letting the price jump, so the subsidy reaches buyers as intended and prices stay close to before.
+</div>
+</details>
+<div class="etb-research">
+<div class="etb-research-header">
+<span class="etb-research-badge">
+Research study
+</span>
+<span class="etb-research-title">
+Was Bennett right? Mechanism vs. magnitude
+</span>
+</div>
+<div class="etb-research-body">
+<p>
+The mechanism above isn't in dispute — economists agree that subsidizing demand against inelastic supply pushes up price. What's genuinely contested is
+<em>
+how much
+</em>
+of the real-world tuition spiral the Bennett effect explains. A widely cited 2015 Federal Reserve Bank of New York study found that colleges raised posted tuition by roughly 55–65 cents for each additional dollar of subsidized loan or Pell aid, with the biggest effects at expensive private nonprofits — substantial pass-through, consistent with Bennett.
+</p>
+<p>
+But the honest picture is messier. A 2022 Richmond Fed analysis found the pass-through rate is
+<em>
+not
+</em>
+a fixed number — it was high in the late 1980s, near zero in the late 1990s and again in the late 2000s. Since then, several economists have simply concluded there is "no such thing as the passthrough rate." Several earlier studies found little or no link, and the full tuition increase is too large for aid alone to explain; competing causes include declining state funding, administrative growth, and rising demand for college. The defensible takeaway: the mechanism is real and the effect is sometimes large, but aid is one contributing factor among several, not the whole story. You need to know how the mechanism works. Hold the magnitude loosely, however.
+</p>
+</div>
+</div>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Someone proposes subsidizing demand for a good "because it's important." What single question tells you whether the subsidy will help buyers or just raise the price?
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Ask:
+<em>
+how elastic is supply?
+</em>
+If supply is elastic — sellers can readily produce more — the subsidy mostly expands quantity and reaches buyers as a lower price, doing roughly what its champions intend. If supply is inelastic — sellers can't or won't expand (fixed seats, limited land, capacity bottlenecks) — the extra demand bids up the price and the sellers capture most of the subsidy, leaving the intended buyers little better off and sometimes worse, now facing a higher sticker price. The intuition is the stuck-side rule: a subsidy is a wedge, and the inelastic side pockets it. So "it's good, so let's subsidize it" is incomplete; the right question is "subsidize
+<em>
+what
+</em>
+, in a market where supply can respond
+<em>
+how
+</em>
+?" A wrong answer focuses on how worthy the good is — but worthiness doesn't determine who captures the money. Elasticity does.
+</p>
+</div>
+</details>
+</div>
+<!-- (5) CONCEPT 3 -->
+<div class="etb-concept">
+<div class="etb-slbl">
+Major concept 6 · Always ask: what is keeping supply small?
+</div>
+<h2>
+The Case of Education
+</h2>
+<div class="etb-body">
+<p>
+Higher education is the sharpest test of everything in this chapter, because it is one of the clearest cases of a subsidy that ends up benefiting suppliers. When a good is expensive and important, the reflex is to intervene by subsidizing demand. But if the reason it's expensive is that
+<em>
+supply is constrained
+</em>
+, that intervention predictably backfires — it inflates the price and enriches incumbents, defeating its own purpose. The deeper economics points to a better solution: if the problem is that supply can't grow, the answer is to free supply to grow — to let the market do what markets do.
+</p>
+<p>
+Note that the case we are making is not that subsidies are bad. Rather, the case is that there are
+<em>
+predictable effects flowing from the imposition of a subsidy.
+</em>
+It may well be worth the distortions on net if we help people get to college, but a good economist will spot the potential problems: increased price, and increased (distorted) quantity.
+</p>
+<p>
+On the demand side, decades of expanding aid against a slow-moving supply of seats is exactly the Bennett setup. Those decades have made demanders grateful, but haven't helped them much: prices have gone up, and quantity has expanded dramatically.
+</p>
+<p>
+But look at the
+<em>
+supply
+</em>
+side and you find the market suppressed in at least two ways. Harvard receives enough money to vastly expand its offerings, but chooses not to. Why? Because the prestige of Harvard is in the limit to its number of spots. The Ivy Leagues command high prices because they are prestigious. This tendency to suppress output is what monopolists do in our last unit. The "free market" response to high prices is to let markets expand, not to subsidize demand.
+</p>
+<p>
+But there is another sense in which education suffers from a monopoly: for most families, which school a child attends is decided by their home address — a local monopoly, assigned, with no competition, no entry, no price signal, no rival down the street fighting for the student. Economics has a sharp prediction about any monopoly insulated from competition: it will be less responsive, less efficient, and slower to improve than it would be under rivalry. The stagnation many feel in assigned schooling is what the market model predicts when you remove competition.
+</p>
+<p>
+<span data-tip="Letting families choose among schools — vouchers, charters, open enrollment.">
+School choice
+</span>
+— vouchers, charters, open enrollment — is the proposal to let that market function: let families choose, let schools compete for them, let good ones grow and weak ones feel pressure to improve. Milton Friedman proposed it in 1955 on exactly this logic. The market prediction is not mainly that any one student's test scores will jump; it's that
+<em>
+competition disciplines producers
+</em>
+— that schools forced to compete for families will get better and use resources more carefully, just as competition does in other markets. That is the genuine, market-based alternative to subsidizing a suppressed system: don't pour more demand into a market you've prevented from working — let it work.
+</p>
+</div>
+<div class="etb-research">
+<div class="etb-research-header">
+<span class="etb-research-badge">
+Research study
+</span>
+<span class="etb-research-title">
+School choice: what the competition evidence actually shows
+</span>
+</div>
+<div class="etb-research-body">
+<p>
+The market prediction — competition pressures public schools to improve — has very real support. Caroline Hoxby's influential work found that public schools facing more competition raised student achievement
+<em>
+per dollar spent
+</em>
+— higher productivity under competitive pressure. A 2022 systematic review and meta-analysis (Jabbar and colleagues) pooling the competitive-effects literature found, overall,
+<em>
+small positive
+</em>
+effects of competition on student achievement, varying with program design and student population. To be clear: these are the effects on
+<em>
+public schools
+</em>
+when choice measures are introduced.
+</p>
+<p>
+But honesty requires the other side of the argument to get its due. The
+<em>
+direct
+</em>
+effect of vouchers on the students who use them is genuinely mixed — some studies positive, some null, and a few large programs (notably Louisiana's) showed
+<em>
+negative
+</em>
+short-run test-score effects. There are real concerns about sorting and segregation, too. So the evidence supports the
+<em>
+competitive
+</em>
+mechanism more than the simple claim "choice raises every score." The fair conclusion: school choice is no panacea, but the market's core prediction — that competition improves the incumbents — holds up modestly in the data.
+</p>
+<p>
+Note that this irritates both sides precisely because they would prefer to either crown choice as king, or demean it as demonic. In both cases, the data is far less exciting: it mostly suggests that choice makes less of a difference than most people suspect in the long-run, neither obliterating traditional schools, nor ushering in an era of educational utopia.
+</p>
+</div>
+</div>
+<div class="etb-body">
+<p>
+Step back and look at the whole chapter at once. A tax aimed at the rich landed on boat builders. Aid aimed at students landed, in part, in college budgets. Neither policy failed because anyone meant harm. Both failed the same test: they asked who deserved the burden or the help, and never asked who could escape it. Good intentions are not a defense against elasticity. Before you cheer any tax or any subsidy, ask the question the yacht tax never asked:
+<strong>
+who is stuck?
+</strong>
+</p>
+</div>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+If college tuition is high because the supply of seats can't grow, what does this chapter suggest is the more promising fix — subsidize demand further, or expand supply?
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Expand supply. If inelastic supply is the bottleneck, more demand subsidy just raises the price; the market-based answer is to let supply grow so the extra demand is met with more seats rather than higher prices.
+</div>
+</details>
+<details class="etb-check">
+<summary>
+<span class="etb-check-tag">
+Quick check
+</span>
+<span>
+What's the central
+<em>
+market
+</em>
+prediction for school choice — and what does the evidence actually support most strongly?
+</span>
+<span class="etb-check-arrow">
+▸
+</span>
+</summary>
+<div class="etb-check-a">
+Prediction: competition pressures schools to improve and use resources efficiently. The evidence most strongly supports the competitive effect (modest positive), while the direct effect on voucher users is mixed.
+</div>
+</details>
+<details class="etb-retrieval">
+<summary>
+<span class="etb-ret-badge">
+Retrieval practice
+</span>
+Explain how Bennett and school choice are two halves of one argument about letting markets work.
+<span class="etb-ret-arrow">
+▸
+</span>
+</summary>
+<div class="etb-ret-body">
+<p>
+Both are about what happens when you intervene in, or suppress, a market instead of letting it function. The Bennett side shows the cost of
+<em>
+intervening
+</em>
+the wrong way: subsidizing demand against inelastic supply inflates the price and is captured by sellers, so the intervention defeats its own goal. The school-choice side shows the cost of
+<em>
+suppressing
+</em>
+the market: assigning students by address removes competition, and economics predicts a monopoly with no rivalry will stagnate — which is what we observe. The unifying lesson is that prices and competition do real coordinating work, and policies that override them — by pumping subsidies into a constrained market, or by blocking competition entirely — tend to produce worse outcomes than letting the market operate. This isn't a claim that markets are flawless; it's the strongest version of the case
+<em>
+for
+</em>
+them, which Chapter 8 carries across borders and later units test against the cases where markets genuinely fail.
+<span class="etb-xref">
+Ch 15
+</span>
+</p>
+</div>
+</details>
+</div>
+<!-- (7) ON THE EXAM -->
+<div class="etb-exam">
+<div class="etb-exam-head">
+<span class="etb-exam-badge">
+On the exam
+</span>
+<p class="etb-exam-title">
+Part 2 · Subsidies: the moves you can now make
+</p>
+<p class="etb-exam-sub">
+Two questions at the level the exam will actually ask: application, not recall. Try each on paper first, then reveal the worked solution. The trying is where the learning happens.
+</p>
+</div>
+<div class="etb-exam-tabs">
+<button class="etb-exam-tab active" data-i="a">
+<span class="etb-exam-tab-chip">
+A
+</span>
+Predict the effect
+</button>
+<button class="etb-exam-tab" data-i="b">
+<span class="etb-exam-tab-chip">
+B
+</span>
+Who captures it
+</button>
+</div>
+<div class="etb-exam-panel active" data-i="a">
+<p class="etb-exam-type">
+Type A · comparative statics of a subsidy
+</p>
+<p class="etb-exam-q">
+A government introduces a per-unit subsidy paid to producers of rooftop solar panels. Identify how the subsidy shifts the relevant curve, then state what happens to the equilibrium quantity, the price buyers pay, and the price sellers receive — and explain why the government's budget is affected.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+A producer subsidy lowers the price sellers need from buyers at every quantity, so effective
+<em>
+supply shifts down
+</em>
+(equivalently, right) by the amount of the subsidy — the mirror of a tax, which shifts supply up. It is not a movement along supply, because the trigger isn't the panel's own price.
+</p>
+<p>
+Moving down the unchanged demand curve, equilibrium
+<em>
+quantity rises
+</em>
+, the price
+<em>
+buyers pay falls
+</em>
+, and the price
+<em>
+sellers receive rises
+</em>
+— the two prices split apart by exactly the subsidy. The government
+<em>
+pays
+</em>
+that wedge on every unit traded, so its budget falls by subsidy × quantity. The tell that it's a subsidy and not a demand increase: buyers pay
+<em>
+less
+</em>
+while quantity rises (a demand increase would raise both price and quantity).
+</p>
+</div>
+</details>
+</div>
+<div class="etb-exam-panel" data-i="b">
+<p class="etb-exam-type">
+Type B · incidence &amp; capture by elasticity
+</p>
+<p class="etb-exam-q">
+To make insulin more affordable, a state subsidizes
+<em>
+buyers
+</em>
+of insulin. Supply is highly inelastic in the short run. Predict who captures most of the subsidy and what happens to the price sellers receive. If the answer depends on something the prompt doesn't fix, say what.
+</p>
+<details class="etb-reveal">
+<summary>
+Show worked solution
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+Who the subsidy is formally "given to" does
+<strong>
+not
+</strong>
+determine who captures it — that's the trap. Capture follows elasticity: the more inelastic (stuck) side captures the larger share. Here supply is highly inelastic, so
+<em>
+sellers capture most of the subsidy
+</em>
+: the price they receive rises sharply, while the net price buyers pay falls only a little. A subsidy routed through buyers still ends up largely in sellers' pockets when sellers are the stuck side.
+</p>
+<p>
+The full-credit answer also names the dependency:
+<em>
+how much
+</em>
+buyers benefit depends on the relative elasticities of supply and demand, which set the split — in the limit of perfectly inelastic supply, buyers gain nothing and the entire subsidy raises the price. Asserting "buyers benefit because the subsidy goes to buyers" is the classic error.
+</p>
+</div>
+</details>
+</div>
+<!-- FRQ CAPSTONE -->
+<div class="etb-frq">
+<span class="etb-frq-badge">
+Capstone · free response
+</span>
+<p class="etb-frq-title">
+Put the moves together
+</p>
+<p class="etb-frq-meta">
+AP-style long free response · ~9 points · graph required · model answer and scoring below
+</p>
+<p class="etb-frq-scenario">
+A state wants to make college more affordable and introduces a per-student tuition subsidy, paid to students, in the market for university seats. In the short run the supply of seats is hard to expand.
+</p>
+<ol class="etb-frq-parts">
+<li>
+Draw a correctly labeled supply-and-demand graph for university seats, showing the initial equilibrium tuition (T
+<sub>
+1
+</sub>
+) and quantity of seats (Q
+<sub>
+1
+</sub>
+).
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Show the effect of the per-student subsidy on your graph, and state what happens to the equilibrium quantity, the tuition students pay, and the tuition schools receive.
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+<li>
+Suppose demand is P = 100 − 2Q and supply is P = 40 + Q, and the subsidy is $15 per seat. Calculate the new quantity, the price students pay, the price schools receive, and the total cost to the state. Show your work.
+<span class="etb-frq-pts">
+(3 pts)
+</span>
+</li>
+<li>
+Now suppose the supply of seats were far
+<em>
+more
+</em>
+inelastic than in part (c). Explain how the division of the $15 subsidy between students and schools would change, and why — and what that implies about using student aid to make college more affordable.
+<span class="etb-frq-pts">
+(2 pts)
+</span>
+</li>
+</ol>
+<details class="etb-reveal">
+<summary>
+Reveal a full-credit response
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<p>
+<strong>
+(a)
+</strong>
+A standard graph: vertical axis Tuition ($), horizontal axis Quantity of seats, downward-sloping D and upward-sloping S crossing at E
+<sub>
+1
+</sub>
+, with T
+<sub>
+1
+</sub>
+dropped to the price axis and Q
+<sub>
+1
+</sub>
+to the quantity axis. (See figure.)
+</p>
+<p>
+<strong>
+(b)
+</strong>
+The subsidy drives a wedge: effective supply shifts
+<em>
+down
+</em>
+by the subsidy. Equilibrium
+<em>
+quantity rises
+</em>
+(Q
+<sub>
+1
+</sub>
+→Q
+<sub>
+2
+</sub>
+), the tuition students
+<em>
+pay falls
+</em>
+, and the tuition schools
+<em>
+receive rises
+</em>
+— the two prices split apart by the subsidy, with the state paying the gap.
+</p>
+<p>
+<strong>
+(c)
+</strong>
+Subsidized supply P = 40 + Q − 15 = 25 + Q. Set Q
+<sub>
+d
+</sub>
+= Q
+<sub>
+s
+</sub>
+: 100 − 2Q = 25 + Q → 75 = 3Q → Q =
+<strong>
+25
+</strong>
+. Students pay P = 100 − 2(25) =
+<strong>
+$50
+</strong>
+; schools receive $50 + $15 =
+<strong>
+$65
+</strong>
+. State cost = $15 × 25 =
+<strong>
+$375
+</strong>
+.
+</p>
+<p>
+<strong>
+(d)
+</strong>
+The more inelastic supply is, the
+<em>
+larger
+</em>
+the share schools capture and the smaller the share students keep: the price schools receive rises more, and the net price students pay falls less. Intuition: stuck supply can't add seats in response to the aid, so the extra demand bids tuition up instead of expanding access — in the limit of perfectly inelastic supply, the entire $15 becomes higher tuition and students are no better off. Implication: where the supply of seats is fixed, student aid mostly inflates tuition and is captured by schools (the Bennett mechanism), so aid alone is a poor tool for affordability unless supply can also grow.
+</p>
+<div class="etb-figure" style="margin-top:.8rem;">
+<div class="etb-svgwrap">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 15 dollar per-seat subsidy raises quantity from 20 to 25, with schools receiving 65 dollars, students paying 50 dollars, and the state paying the shaded 375 dollar rectangle" style="display:block;width:100%;height:auto;">
+<!-- State spending -->
+<path d="M70 187.5H335V225H70Z" fill="#2a7a4f" opacity="0.13">
+</path>
+<!-- Axes -->
+<line x1="70" y1="50" x2="70" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<line x1="70" y1="350" x2="620" y2="350" stroke="#1a1a1a" stroke-width="1.5">
+</line>
+<!-- Price values -->
+<g font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="end">
+<text x="60" y="191">
+65
+</text>
+<text x="60" y="204">
+60
+</text>
+<text x="60" y="229">
+50
+</text>
+</g>
+<!-- Axis titles -->
+<text x="350" y="384" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle">
+Quantity of seats
+</text>
+<text x="26" y="200" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90 26 200)">
+Tuition ($)
+</text>
+<!-- Demand -->
+<line x1="70" y1="100" x2="600" y2="350" stroke="#a33030" stroke-width="2.5">
+</line>
+<text x="610" y="338" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a33030">
+D
+</text>
+<!-- Original supply -->
+<line x1="70" y1="250" x2="600" y2="125" stroke="#0f7d7d" stroke-width="2.5">
+</line>
+<text x="610" y="120" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f7d7d">
+S
+</text>
+<!-- Supply after subsidy -->
+<line x1="70" y1="287.5" x2="600" y2="162.5" stroke="#0f7d7d" stroke-width="2" stroke-dasharray="6 3">
+</line>
+<text x="610" y="158" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f7d7d">
+S−subsidy
+</text>
+<!-- Original equilibrium -->
+<circle cx="282" cy="200" r="4.5" fill="#1a3a5c">
+</circle>
+<!-- Label above the original equilibrium point -->
+<text font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1a3a5c">
+<tspan x="292" y="169">
+E₁
+</tspan>
+<tspan x="292" y="181">
+($60, 20)
+</tspan>
+</text>
+<!-- New quantity guide -->
+<line x1="335" y1="187.5" x2="335" y2="350" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- School price guide -->
+<line x1="70" y1="187.5" x2="335" y2="187.5" stroke="#0f7d7d" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- Student price guide -->
+<line x1="70" y1="225" x2="335" y2="225" stroke="#a33030" stroke-width="1" stroke-dasharray="4 3">
+</line>
+<!-- School and student price points -->
+<circle cx="335" cy="187.5" r="4.5" fill="#0f7d7d">
+</circle>
+<circle cx="335" cy="225" r="4.5" fill="#a33030">
+</circle>
+<!-- Price labels -->
+<text x="347" y="142" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0a4a4a">
+schools receive $65
+</text>
+<text x="347" y="292" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#a33030">
+students pay $50
+</text>
+<!-- State spending label -->
+<text x="95" y="212" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2a7a4f">
+state pays $375
+</text>
+<!-- Quantity values -->
+<text x="282" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle" opacity="0.6">
+20
+</text>
+<text x="335" y="365" font-family="Arial, sans-serif" font-size="10.5" fill="#777" text-anchor="middle">
+25
+</text>
+</svg>
+</div>
+<div class="etb-figure-cap">
+<span class="etb-figure-num">
+Model graph
+</span>
+<span class="etb-figure-title">
+The $15 subsidy shifts supply down (parts a–b); the new equilibrium is computed at quantity 25, students paying $50 and schools receiving $65 (part c); the shaded rectangle is the state's $375 cost.
+</span>
+</div>
+</div>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal the scoring rubric
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-rubric">
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Axes labeled (Tuition on vertical, Quantity of seats on horizontal) with a downward D and upward S.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(a) Initial equilibrium marked where D and S cross, with T
+<sub>
+1
+</sub>
+and Q
+<sub>
+1
+</sub>
+indicated.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) Subsidy shown as supply shifting
+<strong>
+down
+</strong>
+(a new curve, not a movement along S).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(b) States quantity
+<strong>
+rises
+</strong>
+, tuition paid
+<strong>
+falls
+</strong>
+, and tuition received
+<strong>
+rises
+</strong>
+.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Correct quantity Q = 25 with work shown (demand set equal to subsidized supply).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Correct prices: students pay $50, schools receive $65.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(c) Correct state cost $375 (subsidy × quantity).
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) States that more inelastic supply means schools capture a
+<strong>
+larger
+</strong>
+share / students a smaller share.
+</li>
+<li>
+<span class="pt">
+1 pt
+</span>
+(d) Explains
+<em>
+why
+</em>
+(stuck supply can't add seats, so the aid raises price) and draws the affordability implication.
+</li>
+</ul>
+<p style="font-family:sans-serif;font-size:12px;color:#8a98a6;margin:.75rem 0 0;">
+Nine independent points — each earned on its own. A wrong number in (c) doesn't cost you the (d) points if your elasticity logic is right.
+</p>
+</div>
+</details>
+<details class="etb-reveal">
+<summary>
+Reveal what loses points
+<span class="etb-reveal-arrow">
+▸
+</span>
+</summary>
+<div class="etb-reveal-body">
+<ul class="etb-loses">
+<li>
+<span class="tag" style="background:#fdecec;color:#a33030;">
+Conceptual
+</span>
+In (b), shifting
+<em>
+demand
+</em>
+instead of supply because the subsidy is "paid to students." A per-unit subsidy is modeled as a vertical shift of the curve by the subsidy amount — the side it's routed through doesn't change the geometry or who ends up capturing it.
+</li>
+<li>
+<span class="tag" style="background:#fbf0db;color:#8a6d2f;">
+Precision
+</span>
+In (c), writing "$65" with no equation set up. "Calculate" prompts require shown work; a correct number alone routinely earns nothing. And forgetting to add the subsidy back to recover the seller price — reporting $50 for both sides — drops the price point.
+</li>
+<li>
+<span class="tag" style="background:#eef2f6;color:#3e4e60;">
+Exam craft
+</span>
+In (d), asserting "schools capture more" without the mechanism. The "Explain" verb wants
+<em>
+why
+</em>
+— stuck supply can't expand, so the extra demand raises price rather than quantity — not just the direction of the result.
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<!-- ⑦ SYNTHESIS CARD -->
+<div class="etb-synth">
+<div class="etb-synth-eyebrow">
+Market thesis
+</div>
+<p class="etb-synth-thesis">
+A tax drives a wedge between what buyers pay and what sellers keep, and its burden falls on whoever can least escape. A subsidy is the same wedge with the sign flipped, and the stuck side pockets it.
+</p>
+<hr class="etb-synth-rule">
+<div class="etb-synth-lead">
+If economists ruled the world…
+</div>
+<p class="etb-synth-leadtext">
+they would judge every tax and every subsidy by what it actually does (who truly bears it or captures it, and how much value it quietly destroys), not by whose name the law prints on the check. Where a subsidy fights a supply bottleneck, they would free the supply side instead.
+</p>
+<div class="etb-synth-cards">
+<div class="etb-synth-card pos">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a8a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z">
+</path>
+<circle cx="12" cy="12" r="3">
+</circle>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Positive
+</div>
+<div class="etb-synth-card-sub">
+what economists agree on
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+A tax's burden lands on the more inelastic side, whatever the statute says — the law picks the check-writer, supply and demand pick the payer.
+</li>
+<li>
+Every tax raises revenue (a transfer) and destroys some value (a deadweight-loss triangle). A subsidy aimed at demand, where supply can't grow, mostly raises the price.
+</li>
+</ul>
+</div>
+<div class="etb-synth-card norm">
+<div class="etb-synth-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#b0883a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16">
+</path>
+<path d="M5 20h14">
+</path>
+<path d="M4 7h16">
+</path>
+<path d="M4 7l-2.5 5h5z">
+</path>
+<path d="M20 7l-2.5 5h5z">
+</path>
+</svg>
+<div>
+<div class="etb-synth-card-label">
+Normative
+</div>
+<div class="etb-synth-card-sub">
+what citizens must decide
+</div>
+</div>
+</div>
+<ul class="etb-synth-list">
+<li>
+Who
+<em>
+ought
+</em>
+to pay — those who benefit, or those most able to bear it? Both principles are coherent and often point opposite ways.
+</li>
+<li>
+Is a tax's revenue worth the value it destroys, and is the way its burden falls fair? Those are values questions the diagram can't decide.
+</li>
+<li>
+When a subsidy is captured as a higher price, is the help worth the windfall to sellers, and the bigger sticker price for the next buyer?
+</li>
+</ul>
+</div>
+</div>
+<hr class="etb-synth-rule">
+<div class="etb-synth-eyebrow">
+Takeaways
+</div>
+<div class="etb-synth-takeaways">
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+</path>
+</svg>
+In your life
+</div>
+<p>
+When a tax or price jump lands on something you can't easily give up, you're the stuck side — and you'll bear it, whatever the label promises.
+</p>
+</div>
+<div class="etb-synth-take">
+<div class="etb-synth-take-head">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;width:20px;height:20px;min-width:20px;vertical-align:middle;flex-shrink:0;">
+<!-- Briefcase body -->
+<path d="M4 7H20Q22 7 22 9V19Q22 21 20 21H4Q2 21 2 19V9Q2 7 4 7Z">
+</path>
+<!-- Handle -->
+<path d="M8 7V5Q8 3 10 3H14Q16 3 16 5V7">
+</path>
+</svg>
+In your work
+</div>
+<p>
+Pull any tax or subsidy apart into the money it moves and the value it destroys, and ask which side is stuck before predicting who pays or who gains.
+</p>
+</div>
+</div>
+<div class="etb-synth-arrow">
+<span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9l6 6 6-6">
+</path>
+</svg>
+</span>
+</div>
+</div>
+<!-- ⑧ LEARN MORE -->
+<div class="etb-learnmore">
+<div class="etb-lm-header">
+Learn more
+</div>
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=9gwTH4Yme8I" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/9gwTH4Yme8I/mqdefault.jpg" alt="Taxes on producers — the excise tax graph and who bears it">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Taxes on Producers (and Who Really Pays)
+</div>
+<div class="etb-yt-note">
+~5 min · the excise-tax graph, the wedge, and reading incidence off the diagram — exactly the computation in Concepts 1–3 · Pairs with Concepts 1–3 · ACDC Econ (Jacob Clifford)
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/taxes-subsidies-definition-tax-wedge" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/yrRysbDoyhw/mqdefault.jpg" alt="Commodity taxes, the tax wedge, and deadweight loss">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Commodity Taxes: Who Pays and the Lost Gains from Trade
+</div>
+<div class="etb-yt-note">
+~6 min · legal vs. economic incidence, the wedge, revenue, and deadweight loss · Pairs with Concepts 1 &amp; 3 · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://mru.org/courses/principles-economics-microeconomics/subsidies-definition-subsidy-wedge" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/LTFxRlACebk/mqdefault.jpg" alt="Subsidies and the subsidy wedge">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+Subsidies: the Wedge, and Who Really Gains
+</div>
+<div class="etb-yt-note">
+~6 min · the subsidy as a sign-flipped tax, and why inelastic suppliers capture most of it · Pairs with Concepts 1 &amp; 2 · Marginal Revolution University
+</div>
+</div>
+</div>
+<hr class="etb-yt-hr">
+<div class="etb-yt">
+<a class="etb-yt-thumb" href="https://www.youtube.com/watch?v=oYztfAf1Oyg" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/oYztfAf1Oyg/mqdefault.jpg" alt="School vouchers explained">
+<div class="etb-yt-play">
+</div>
+</a>
+<div>
+<div class="etb-yt-title">
+School Vouchers, Explained
+</div>
+<div class="etb-yt-note">
+~5 min · what school choice is and the arguments on each side · Pairs with Concept 3 · NPR
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.etb -->
+<script>
+(function () { var pg = document.getElementById('etb-pg'); if (pg) { window.addEventListener('scroll', function () { var d = document.documentElement; var pct = (d.scrollTop || document.body.scrollTop) / ((d.scrollHeight - d.clientHeight) || 1); pg.style.width = Math.min(100, pct * 100) + '%'; }, { passive: true }); } document.querySelectorAll('.etb-flip').forEach(function (c) { c.addEventListener('click', function () { c.classList.toggle('flipped'); }); c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('flipped'); } }); }); document.querySelectorAll('.etb-ak-item').forEach(function (el) { el.addEventListener('click', function (e) { e.stopPropagation(); var isOpen = el.classList.contains('ak-open'); document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); if (!isOpen) el.classList.add('ak-open'); }); }); document.addEventListener('click', function () { document.querySelectorAll('.etb-ak-item.ak-open').forEach(function (a) { a.classList.remove('ak-open'); }); });document.querySelectorAll('.etb-exam').forEach(function(box){var tabs=box.querySelectorAll('.etb-exam-tab');var panels=box.querySelectorAll('.etb-exam-panel');tabs.forEach(function(t){t.addEventListener('click',function(){var i=t.getAttribute('data-i');tabs.forEach(function(x){x.classList.toggle('active',x.getAttribute('data-i')===i);});panels.forEach(function(p){p.classList.toggle('active',p.getAttribute('data-i')===i);});});});});})();
+</script>
