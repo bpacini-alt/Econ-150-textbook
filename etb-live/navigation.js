@@ -32,10 +32,12 @@
     { file: "Chapter26.html", label: "Chapter 26" }
   ];
 
-  var current = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  // Cloudflare serves pages at clean addresses (/Chapter3, not /Chapter3.html), so compare names without ".html".
+  function pageName(name) { return (name || "index.html").toLowerCase().replace(/\.html$/, ""); }
+  var current = pageName(window.location.pathname.split("/").pop());
   var index = -1;
   chapters.forEach(function (chapter, i) {
-    if (chapter.file.toLowerCase() === current) index = i;
+    if (pageName(chapter.file) === current) index = i;
   });
   if (index < 0) return;
 
