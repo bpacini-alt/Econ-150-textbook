@@ -57,6 +57,7 @@ HEADER = """<!doctype html>
 """ + HEAD_END + "\n"
 
 FOOTER = "\n" + FOOT_START + """
+<script src="assets/report.js" data-book="Econ 150" defer></script>
 <script src="assets/etb-audio.js"></script>
 </body>
 </html>
@@ -76,6 +77,8 @@ def main():
     ASSETS.mkdir(exist_ok=True)
     for name in ("etb-audio.js", "etb-audio.css"):
         shutil.copyfile(PLAYER / name, ASSETS / name)
+    # The Report a problem button; feedback/report.js is the one place to edit it.
+    shutil.copyfile(ROOT / "feedback" / "report.js", ASSETS / "report.js")
 
     titles = {c["file"]: c["title"] for c in json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))["chapters"]}
     wrapped, skipped = 0, []

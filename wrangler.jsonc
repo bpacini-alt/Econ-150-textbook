@@ -1,8 +1,13 @@
-// Cloudflare Worker settings: publish the captured textbook pages from etb-live/.
+// Cloudflare Worker settings.
+// Serves the etb-live folder as the website. Requests to /api/* go to feedback/worker.js first,
+// which handles the Report a problem button (it needs the GITHUB_TOKEN secret, set in Cloudflare).
 {
   "name": "econ-150-textbook",
   "compatibility_date": "2026-09-01",
+  "main": "feedback/worker.js",
   "assets": {
-    "directory": "./etb-live"
+    "directory": "./etb-live",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
   }
 }

@@ -18,15 +18,16 @@ Those two documents are identical in both textbook repositories (`edcor-310-text
 
 ## How this book is built (Econ 150)
 
-The website is econ.benjaminpacini.com, served by Cloudflare directly from the `etb-live/` folder (see `wrangler.jsonc`).
+The website is econ.benjaminpacini.com, served by Cloudflare directly from the `etb-live/` folder (see `wrangler.jsonc`). Requests to `/api/*` go to `feedback/worker.js` instead.
 
 | Folder or file | What it is | Edit it? |
 |---|---|---|
 | `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The script rewrites everything outside them. |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
 | `etb-live/index.html` | The book's home page | Yes |
-| `etb-live/assets/` | Copies of the audio player placed by `wrap_pages.py` | **Never by hand.** Edit `audio/player/` and rerun the script. |
-| `build/wrap_pages.py` | Adds the page header and player to each chapter | Yes |
+| `etb-live/assets/` | Copies of the audio player and report button placed by `wrap_pages.py` | **Never by hand.** Edit `audio/player/` or `feedback/` and rerun the script. |
+| `build/wrap_pages.py` | Adds the page header, the audio player, and the Report a problem button to each chapter | Yes |
+| `feedback/` | The Report a problem button and the function that receives reports | Yes (see "Shared") |
 | `site/` | An old placeholder page. Cloudflare does not serve it. | No. Benjamin decides whether to remove it. |
 | `original/` | The October 2026 import from Google Drive, including older chapter versions and drafts | No. Archive only. |
 
@@ -35,6 +36,7 @@ After adding a chapter or changing the player, run `python3 build/wrap_pages.py`
 ## Shared between the two books
 
 - **Audio player:** `audio/player/etb-audio.js` and `audio/player/etb-audio.css` are the one place to edit the player, and both repositories must carry identical copies. Change both in matching pull requests. Never edit the copies the builds place in the published folder.
+- **Report a problem button:** `feedback/report.js` (the button and form) and `feedback/worker.js` (receives reports at `/api/report` and files each one as an issue in the private `bpacini-alt/textbook-feedback` repository) are shared the same way as the audio player: identical copies in both repositories, changed in matching pull requests. The builds copy `report.js` into the published folder; never edit that copy. The function needs a `GITHUB_TOKEN` secret, set in each Worker's settings in Cloudflare. It never goes in the repository.
 - **Covers:** the full-size EdTechBooks cover is archived at `etb-live/cover.png`. The web version, cleaned up for the new site, is `build/cover-web.png`.
 
 ## Known Cloudflare behavior
