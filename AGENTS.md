@@ -23,6 +23,7 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 | Folder or file | What it is | Edit it? |
 |---|---|---|
 | `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The script rewrites everything outside them. |
+| `etb-live/images/` | Chapter images, copied from EdTechBooks and kept at the same paths the pages use (`/images/content_images/…`) | Yes |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
 | `etb-live/index.html` | The book's home page | Yes |
 | `etb-live/assets/` | Copies of the audio player and report button placed by `wrap_pages.py` | **Never by hand.** Edit `audio/player/` or `feedback/` and rerun the script. |
