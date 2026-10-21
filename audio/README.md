@@ -1,6 +1,6 @@
 # Chapter audio
 
-**Status:** the player is finished for stage 1 (device voice) and tested on every Econ 150 chapter. It is not on any live chapter yet. It goes in when the books move to the new website. See "Adding the player to the website" below.
+**Status:** stage 1 (device voice) is live on every Econ 150 chapter on the new site. See "How the player gets onto the pages" below.
 
 This folder replaces the books' old audio version, which read the HTML along with the prose and often didn't work. The long-term plan is narration in Benjamin's own voice, generated with ElevenLabs. Until the chapters are polished, the same player reads each chapter with the student's own device voice. That costs nothing, needs no audio files, and always matches the current text.
 
@@ -9,12 +9,28 @@ This folder replaces the books' old audio version, which read the HTML along wit
 - **Stage 1 now:** the player reads chapters with the device's built-in voice. No audio files are generated while chapters are still being edited.
 - **Stage 2 later, one chapter at a time:** after a chapter's final edit pass, generate its narration in Benjamin's cloned voice with ElevenLabs.
 - **Recordings live in the book's GitHub repo** next to the chapters, and the website serves them from there.
-- **The player goes in when the books move to the new website**, added by the site's build step. Chapter files on EdTechBooks are not edited by hand.
+- **The player goes in on the new website**, added by a script rather than by hand. The EdTechBooks copies are left alone.
 - **One player for both books.** EDCOR 310 and Econ 150 use the same etb design system, and the player handles both. This repo and the EDCOR 310 repo carry identical copies of `player/`. A change to one should be copied to the other, or both books can load a single shared copy once the website exists.
 
-## Adding the player to the website
+## How the player gets onto the pages
 
-The player is two files: `player/etb-audio.js` and `player/etb-audio.css`. Nothing inside a chapter file needs to change. The website's build step adds the player when it turns each chapter into a full page.
+In this book the site serves the chapter files in `etb-live/` directly. `build/wrap_pages.py` turns each one into a complete page and adds the player:
+
+- a page header with the phone-width setting and a page title (the files from EdTechBooks had no header, so phones showed them as zoomed-out desktop pages);
+- the two lines that load the player;
+- the fix that keeps chapters from being wider than a phone screen.
+
+It also copies `audio/player/` into `etb-live/assets/`, which is the copy the site serves. The added lines sit between marker comments, the chapter's own HTML is not changed, and running the script again replaces its earlier lines instead of doubling them.
+
+**When to run it:** after adding a new chapter file to `etb-live/`, or after changing the player. Edit the player in `audio/player/`, never in `etb-live/assets/`, then run:
+
+```
+python3 build/wrap_pages.py
+```
+
+### For a site that builds full pages another way
+
+The steps below describe the same thing in general form, for EDCOR 310 or any future site. The player is two files: `player/etb-audio.js` and `player/etb-audio.css`. Nothing inside a chapter file needs to change.
 
 **1. Copy the two files into the site,** for example to `site/assets/etb-audio.js` and `site/assets/etb-audio.css`. If both books share one copy (for example on benjaminpacini.com), a fix to the player updates both books at once.
 
@@ -173,9 +189,9 @@ These were broken before the player existed, and the player doesn't affect them.
 
 ## Next steps
 
-1. Try the device-voice preview in Edge, Safari, and on a phone. Decide whether it's good enough for now.
+1. Try the live chapters in Edge, Safari, and on a phone. Decide whether the device voice is good enough for now.
 2. Settle the open questions below.
-3. When the site moves to Cloudflare, add the player as described in "Adding the player to the website."
+3. Done for Econ 150: the player is on every chapter of the new site.
 4. Later, per chapter: final edit pass, generate recordings, add them to the repo.
 
 ## Open questions
