@@ -32,10 +32,12 @@
     { file: "Chapter26.html", label: "Chapter 26" }
   ];
 
-  var current = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  // Cloudflare serves pages at clean addresses (/Chapter3, not /Chapter3.html), so compare names without ".html".
+  function pageName(name) { return (name || "index.html").toLowerCase().replace(/\.html$/, ""); }
+  var current = pageName(window.location.pathname.split("/").pop());
   var index = -1;
   chapters.forEach(function (chapter, i) {
-    if (chapter.file.toLowerCase() === current) index = i;
+    if (pageName(chapter.file) === current) index = i;
   });
   if (index < 0) return;
 
@@ -46,6 +48,7 @@
     style.textContent = [
       ".etb-nav{position:fixed;left:0;right:0;bottom:0;z-index:1000;background:rgba(255,255,255,.97);border-top:1px solid #dce3ea;box-shadow:0 -1px 5px rgba(26,58,92,.12);backdrop-filter:blur(8px);font-family:Arial,sans-serif}",
       "body{padding-bottom:60px!important}",
+      "body:has(.etb-nav) .etb-ap{bottom:51px}",  /* the audio player docks just above this bar instead of covering it */
       ".etb-nav-inner{max-width:740px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px}",
       ".etb-nav a,.etb-nav span{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 11px;border:1px solid #d6e0e8;border-radius:6px;color:#1a3a5c;background:#fff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}",
       ".etb-nav a:hover,.etb-nav a:focus{background:#eef4fb;border-color:#9aaebe;outline:none}",
