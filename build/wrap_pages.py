@@ -14,7 +14,8 @@ zoomed-out desktop pages. This script gives every page:
   - a one-line fix that keeps chapters from being wider than a phone screen
 
 It also copies the player from audio/player/ into etb-live/assets/, so
-audio/player/ stays the one place to edit the player.
+audio/player/ stays the one place to edit the player, and builds the Joy of
+Econ reading menu (etb-live/joy-of-econ.html) from menus/joy-of-econ.json.
 
 Run it from the repo root after adding a chapter or changing the player:
 
@@ -102,6 +103,16 @@ def main():
     print(f"Wrapped {wrapped} pages; player copied to {ASSETS.relative_to(ROOT)}/")
     for s in skipped:
         print("  skipped", s)
+
+    # The Joy of Econ reading menu: a complete page built from menus/joy-of-econ.json,
+    # so the loop above skips it as "already a full page".
+    import subprocess
+    import sys
+    subprocess.run(
+        [sys.executable, str(ROOT / "menus" / "build_menu.py"),
+         str(ROOT / "menus" / "joy-of-econ.json"), str(SITE / "joy-of-econ.html")],
+        check=True,
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1637 @@
+{
+ "course": {
+  "course": "Econ 150",
+  "menuTitle": "The Joy of Econ",
+  "bookTitle": "Principles of Microeconomics",
+  "bookHome": "/",
+  "contents": "/",
+  "accent": "#1b2430",
+  "accent2": "#a87d32",
+  "ring": "#c9a65f",
+  "requirement": "hour-per-unit",
+  "storageKey": "joy-of-econ-econ150-v1",
+  "stanceFilter": true,
+  "description": "The Joy of Econ reading menu for Econ 150: applications, debates, and economics pushed past the textbook, about an hour per unit.",
+  "reportScript": "assets/report.js"
+ },
+ "intro": {
+  "lede": "Each unit lays out a spread of readings and videos. Pick about an hour's worth from every unit. That's your batch. Your group divides up the rest and teaches it back to each other: one big jigsaw.",
+  "sections": [
+   {
+    "head": "How the times work.",
+    "body": "A number like “~25 min” is a stop point, not a full runtime. Several sources run an hour or more, and the minutes tell you how far to go. When it says ~25 min, stop around 25."
+   },
+   {
+    "head": "The tags.",
+    "body": "Two labels mark pieces that argue a position: Pro-market and Market-critique. Everything else aims to be analysis you can use whatever your politics. You don't need to cover every reading, and overlap is fine."
+   },
+   {
+    "head": "Content matters, medium does not.",
+    "body": "Many of these readings are available in print, on YouTube, on Spotify, and more. Use whatever format you like, as long as it's the same content: the same podcast in a different format counts."
+   },
+   {
+    "head": "The weeks.",
+    "body": "Weeks are listed only to help you find your way. You're welcome to choose readings from anywhere in the unit, regardless of week."
+   },
+   {
+    "head": "Your job.",
+    "body": "Complete one hour of reading for each unit. Build a slideshow with your favorite readings, your favorite points, and a brief summary. You will meet with your group and explain that material once per unit."
+   },
+   {
+    "head": "Pro tip.",
+    "body": "Start early and get together with your group before the exam. You will be happier, I promise."
+   },
+   {
+    "head": "On joy.",
+    "body": "This assignment really is meant to be a joy. One way to make sure it is? Begin early. Do it for the right reasons: to engage with something cool, not just to scrounge for a few points."
+   },
+   {
+    "head": "The vote.",
+    "body": "At the end of each unit I will ask you to rate each reading as S-tier, A-tier, or F-tier. Write down what you think of each reading as you go."
+   },
+   {
+    "head": "Audio encouraged.",
+    "body": "Feel free to listen while you walk to campus, or have a text reader read to you. You can even use AI on one condition: do the reading (or watch the video) before you engage with AI. Whatever you use, you should be able to explain the material to your group well and from your own understanding."
+   },
+   {
+    "head": "Extra credit, with diminishing returns, naturally.",
+    "body": "Your assigned hour earns full marks (10/10). Every additional hour adds extra credit, but each hour is worth half as much as the one before: 2 hours → 15/10, 3 hours → 17.5/10, 4 hours → 18.75/10, and so on, approaching but never quite reaching 20/10. The catch: extra listening counts only if you teach it to your group and it ends up in your slides. Reading it isn't enough."
+   },
+   {
+    "head": "Using this page.",
+    "body": "Press “I’ll read this” to track your minutes against the unit’s requirement, and “My group has it” for readings a groupmate has claimed. Your picks and notes are saved in this browser only. “Copy my list” gives you your readings, links, and notes to paste into your slides or prep check."
+   }
+  ]
+ },
+ "units": [
+  {
+   "id": "unit-1",
+   "label": "Unit 1",
+   "title": "The Case for the Market",
+   "meta": "Weeks 1–4 · Chapters 1–8",
+   "blurb": "Where economics begins: scarcity and marginal thinking, how prices coordinate a world no one runs, the gains from specializing and trading — and the first hard look at taxes, subsidies, and schools.",
+   "weeks": [
+    {
+     "id": "week-1",
+     "title": "Week 1",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Superabundance",
+       "url": "https://www.youtube.com/watch?v=6iC_hY4qhyk",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Are we running out — or getting richer than ever?",
+       "blurb": "A wide-ranging conversation on innovation, freedom, and time prices — how many hours of work it takes to afford something — and why resources can grow more abundant even as population does. The throughline of the whole course: scarcity is real, but human creativity keeps bending the curve.",
+       "source": "Full talk ~110 min — stop around 25 (time prices, scarcity vs. abundance, creativity).",
+       "id": "superabundance"
+      },
+      {
+       "title": "Sowell: Basic Economics",
+       "url": "https://www.youtube.com/watch?v=bOMksnSaAJ4",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Thomas Sowell on prices, incentives, and scarcity.",
+       "blurb": "Thomas Sowell, for the Hoover Institution, distills the market case to essentials: prices as information, incentives everywhere, and scarcity as the inescapable starting point. A clean statement of the pro-market foundations.",
+       "source": "Hoover Institution — short video (~10 min), watch the whole thing.",
+       "id": "sowell-basic-economics"
+      },
+      {
+       "title": "A Visitation Upon Jacob Marley, Esquire",
+       "url": "https://benjaminpacini.substack.com/p/a-visitation-upon-jacob-marley-esquire",
+       "minutes": 10,
+       "format": "read",
+       "hook": "Whatever a miser does with his money, someone else ends up eating.",
+       "blurb": "A Dickensian ghost story with a twist: instead of the moral spirits, Jacob Marley is visited by the Ghost of Economic Realities — armed with slide decks — who calmly proves that wealth cannot be hoarded. Spent, lent, invested, even burned or buried, it always ends up doing someone else some good. A comic dramatization of the invisible hand: self-interest, entirely against its will, serving the common good.",
+       "source": "Short story (~10 min) — read the whole thing. (Written by your instructor.)",
+       "id": "a-visitation-upon-jacob-marley-esquire"
+      },
+      {
+       "title": "In Search of the Real Adam Smith",
+       "url": "https://www.youtube.com/watch?v=W7X1wDfpgIE",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "The invisible hand's author was subtler than his reputation.",
+       "blurb": "Freakonomics goes looking for the actual Adam Smith — the moral philosopher who worried about sympathy and fairness as much as self-interest. A richer foundation than the caricature.",
+       "source": "Freakonomics episode — listen to a ~25-min segment.",
+       "id": "in-search-of-the-real-adam-smith"
+      },
+      {
+       "title": "Was Adam Smith Really a Right-Winger?",
+       "url": "https://www.youtube.com/watch?v=2gQyO_M8jAs",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "The left and right fight over who owns Adam Smith.",
+       "blurb": "A “Smithy tug of war”: economists and politicians turned Smith into the mascot of free markets, but many argue the right badly misread the man who also wrote The Theory of Moral Sentiments. A rich correction to the cardboard-cutout Smith. (Part 2 of Freakonomics’ Adam Smith series.)",
+       "source": "Freakonomics episode ~1h9m — stop around 25.",
+       "id": "was-adam-smith-really-a-right-winger"
+      },
+      {
+       "title": "Hans Rosling: The Best Stats You've Ever Seen",
+       "url": "https://www.youtube.com/watch?v=hVimVzgtD6w",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "The data that blows up “developed vs. developing.”",
+       "blurb": "Hans Rosling's landmark talk, using animated Gapminder data to show how health and wealth have climbed across the globe — and dismantling the tidy “developed vs. developing” split most of us still carry around. The data-literacy companion to the course's opening abundance theme: a lesson in reading the world as it actually is.",
+       "source": "TED talk (~20 min) — watch the whole thing.",
+       "id": "hans-rosling-the-best-stats-youve-ever-seen"
+      },
+      {
+       "title": "Friedman: Incentives for Immoral Behavior",
+       "url": "https://www.youtube.com/watch?v=L-7oMOxPjNE",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Systems, not just character, shape how people act.",
+       "blurb": "Milton Friedman on how the incentives built into institutions drive behavior — for good and ill.",
+       "source": "Short video — watch the whole thing.",
+       "id": "friedman-incentives-for-immoral-behavior"
+      },
+      {
+       "title": "Economics with BroPa: 20 Myths About Economics",
+       "url": "https://www.youtube.com/watch?v=fNtsE45R1js",
+       "minutes": 38,
+       "format": "watch",
+       "hook": "Twenty things people get wrong about economics.",
+       "blurb": "A myth-busting run through the misconceptions most people bring to their first economics class. A natural opener for how economists actually think.",
+       "source": "Economics with BroPa — watch the whole thing.",
+       "id": "economics-with-bropa-20-myths-about-economics"
+      },
+      {
+       "title": "Are We Running Out of Resources? (Horwitz)",
+       "url": "https://www.youtube.com/watch?v=AcWkN4ngR2Y",
+       "minutes": 4,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "The abundance case: why we keep not running out.",
+       "blurb": "Steve Horwitz on why human ingenuity and prices keep pushing resource limits back — a short companion to Superabundance.",
+       "source": "Short video — watch the whole thing.",
+       "id": "are-we-running-out-of-resources-horwitz"
+      },
+      {
+       "title": "The Story of Marginal Revolution (Cowen & Tabarrok)",
+       "url": "https://open.spotify.com/episode/1etIR5eEvpFKsWihW2cax1",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "Two economists on building the web's econ classroom.",
+       "blurb": "Tyler Cowen and Alex Tabarrok on how they think, teach, and blog economics — a look behind the curtain of a way of reasoning.",
+       "source": "Podcast episode (Spotify) — listen to a ~20-min segment.",
+       "id": "the-story-of-marginal-revolution-cowen-tabarrok"
+      },
+      {
+       "title": "Parent-onomics 101",
+       "url": "https://freakonomics.com/podcast/the-economists-guide-to-parenting/",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "What's the return on investment for raising a kid?",
+       "blurb": "A crew of economists — Justin Wolfers, Betsey Stevenson, Bryan Caplan, and the author of a book actually titled Parentonomics — apply their trade to raising kids: the ROI of “obsessive” parenting, why to invest only up to the point where the marginal return hits zero, and how to think clearly about the everyday tradeoffs of family life. Marginal utility and consumer choice, dressed up as bedtimes and treats.",
+       "source": "Freakonomics episode — listen to a selected ~20-minute segment.",
+       "id": "parent-onomics-101"
+      }
+     ]
+    },
+    {
+     "id": "week-2",
+     "title": "Week 2",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Munger on Price Gouging",
+       "url": "https://www.youtube.com/watch?v=8_z-GnhHyGg",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "Why prices spike after a hurricane — and what a ban does.",
+       "blurb": "The cleanest case in the course for how prices signal scarcity. When disaster strikes, a price spike is information — and anti-gouging rules, however well-meant, can turn that information off and manufacture shortages.",
+       "source": "Full podcast ~60 min — stop around 20 (the emergency-pricing segment).",
+       "id": "munger-on-price-gouging"
+      },
+      {
+       "title": "Exposing the Truth Behind Price Gouging",
+       "url": "https://www.youtube.com/watch?v=3e9yQZ9DzIw",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Another angle: the 'gouge' is a signal, not a sin.",
+       "blurb": "Learn Liberty's short case that surge pricing after a shock is information at work — and that bans backfire.",
+       "source": "Short video — watch the whole thing.",
+       "id": "exposing-the-truth-behind-price-gouging"
+      },
+      {
+       "title": "The Power of the Market",
+       "url": "https://www.youtube.com/watch?v=dngqR9gcDDw",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Friedman on how prices coordinate a world no one runs.",
+       "blurb": "Milton Friedman's opening case for the price system: how markets and voluntary exchange organize activity no one is directing, from a single pencil to Hong Kong's harbor. The classic statement of spontaneous order — and the series' best single hour on why prices matter.",
+       "source": "Free to Choose (1980) ~60 min — stop around 25 (the documentary half, before the debate).",
+       "id": "the-power-of-the-market"
+      },
+      {
+       "title": "Why \"Got Milk?\" Was a Lie",
+       "url": "https://www.youtube.com/watch?v=rfpNzJ5HrdU",
+       "minutes": 12,
+       "format": "watch",
+       "hook": "What advertising actually does to demand.",
+       "blurb": "The most famous ad campaign in America, and a short case in how marketing shifts the whole demand curve — changing not just what we buy, but what we want in the first place.",
+       "source": "Short video — watch the whole thing.",
+       "id": "why-got-milk-was-a-lie"
+      },
+      {
+       "title": "Do Price-Comparison Apps Make Gas More Expensive?",
+       "url": "https://open.spotify.com/episode/5FNh80tS1f3sjSikNpGwDY",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "When transparency backfires on competition.",
+       "blurb": "A counterintuitive result: apps that let everyone see rivals’ prices can help sellers coordinate higher prices instead of competing them down. A sharp lesson in how information changes market outcomes — sometimes against consumers.",
+       "source": "‘The Professor Is In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "do-price-comparison-apps-make-gas-more-expensive"
+      }
+     ]
+    },
+    {
+     "id": "week-3",
+     "title": "Week 3",
+     "notes": [],
+     "entries": [
+      {
+       "title": "The True Cost of War (Wolfers)",
+       "url": "https://open.spotify.com/episode/12wPNzAt38BRIDLrn4QOjz",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "Opportunity cost, made vivid by the price of conflict.",
+       "blurb": "Justin Wolfers works through how economists tally the real cost of war — not just dollars, but everything those resources could have been. A crisp, mainstream lesson in opportunity cost.",
+       "source": "'Diving In' podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "the-true-cost-of-war-wolfers"
+      },
+      {
+       "title": "I, Pencil",
+       "url": "https://www.youtube.com/watch?v=IYO3tOqDISE",
+       "minutes": 7,
+       "format": "watch",
+       "hook": "No one on Earth knows how to make a pencil.",
+       "blurb": "A single pencil narrates its own impossible origin story — the cedar, graphite, lacquer, and thousands of strangers who never met and yet cooperated to make it. A classic on dispersed knowledge, specialization, and the quiet order of markets.",
+       "source": "Short animated film — watch the whole thing.",
+       "id": "i-pencil"
+      },
+      {
+       "title": "How I Built a Toaster — From Scratch",
+       "url": "https://www.youtube.com/watch?v=5ODzO7Lz_pw",
+       "minutes": 11,
+       "format": "watch",
+       "hook": "One man, raw ore, and a $10 appliance.",
+       "blurb": "Thomas Thwaites tries to build a toaster entirely from scratch — smelting his own metal, making his own plastic — and discovers just how much civilization is hidden inside the cheapest thing on the shelf. A vivid, funny lesson in why self-sufficiency is nearly impossible.",
+       "source": "TED talk — short, watch the whole thing.",
+       "id": "how-i-built-a-toaster-from-scratch"
+      },
+      {
+       "title": "How to Think About Trade Deficits",
+       "url": "https://www.youtube.com/watch?v=K0WGMFjmX-M",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "A trade deficit isn't the scoreboard it looks like.",
+       "blurb": "Russ Roberts unpacks why a trade deficit is an accounting identity, not a national loss — the counter to 'we're losing at trade.'",
+       "source": "EconTalk — listen to a ~25-min segment.",
+       "id": "how-to-think-about-trade-deficits"
+      },
+      {
+       "title": "Can a Nation Plunder Its Way to Wealth? (Noah Smith)",
+       "url": "https://open.spotify.com/episode/6Fa86mnxY4amaz3aDAkmvY",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "Does conquest and extraction actually build lasting wealth?",
+       "blurb": "Noah Smith on why plunder and empire are worse engines of prosperity than production and trade.",
+       "source": "Podcast episode (Spotify) — listen to a ~20-min segment.",
+       "id": "can-a-nation-plunder-its-way-to-wealth-noah-smith"
+      },
+      {
+       "title": "Should Canada Answer Trump’s Tariffs?",
+       "url": "https://open.spotify.com/episode/3ixBuGX6yjEcNdKeDP8QfN",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "Retaliation, trade wars, and who really pays.",
+       "blurb": "Whether retaliating against tariffs makes economic sense — who bears the cost of a trade war, and when escalation backfires. A timely, concrete lesson in the economics of trade policy.",
+       "source": "‘The Professor Is In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "should-canada-answer-trumps-tariffs"
+      }
+     ]
+    },
+    {
+     "id": "week-4",
+     "title": "Week 4",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Free to Choose: What's Wrong With Our Schools?",
+       "url": "https://www.youtube.com/watch?v=tA9jALkw9_Q",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Milton Friedman's case for school choice.",
+       "blurb": "Friedman argues for vouchers and against government monopoly in education, then sits down with critics who push back hard. The anchor piece for the education capstone — and a good test of whether the market logic holds where it matters most.",
+       "source": "Free to Choose (1980) ~60 min — stop around 25 (documentary half).",
+       "id": "free-to-choose-whats-wrong-with-our-schools"
+      },
+      {
+       "title": "The Tyranny of Control",
+       "url": "https://www.youtube.com/watch?v=CWgNe8v6KFc",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "What protectionism and licensing quietly cost us.",
+       "blurb": "Friedman on the machinery of control — tariffs, licensing, the world of “approved” and “authorized” — and how established industries seek protection from competition. A natural companion to the taxes-and-subsidies week, and an early look at rent seeking before you meet the term.",
+       "source": "Free to Choose (1980) ~60 min — stop around 25 (documentary half).",
+       "id": "the-tyranny-of-control"
+      },
+      {
+       "title": "What Happens When Schools Ban Phones?",
+       "url": "https://open.spotify.com/episode/0xzuct308gqJoJ3JUsIhtq",
+       "minutes": 18,
+       "format": "listen",
+       "hook": "A data-driven look at a real policy experiment.",
+       "blurb": "What the evidence actually shows when schools lock away student phones — effects on attention, grades, and wellbeing. A neutral, empirical take that pairs with the education economics of this week.",
+       "source": "'Diving In' podcast (Spotify) — listen to a ~18-min segment.",
+       "id": "what-happens-when-schools-ban-phones"
+      },
+      {
+       "title": "Munger on Subsidies & Externalities",
+       "url": "https://www.youtube.com/watch?v=Neg0x08nDqY",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "A subsidy that fixes a problem vs. one that rewards friends.",
+       "blurb": "Not all subsidies are alike. Munger separates subsidies that genuinely correct an externality from those that are really just rent seeking dressed up as policy — a useful lens for reading almost any government program.",
+       "source": "Full podcast ~60 min — stop around 20.",
+       "id": "munger-on-subsidies-externalities"
+      },
+      {
+       "title": "Should Taxpayers Pay for R&D?",
+       "url": "https://www.youtube.com/watch?v=itXDJFVxJCA",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Public dollars for private research — investment or subsidy?",
+       "blurb": "A debate on whether government should fund research and development: is public R&D spending a smart bet on the positive spillovers of new knowledge, or just another subsidy picking winners? Jeffrey Miron and Aldo Musacchio weigh the externality case for funding against the case for letting markets decide — a concrete companion to the taxes-and-subsidies week.",
+       "source": "Debate podcast — listen to a selected ~25-minute segment.",
+       "id": "should-taxpayers-pay-for-r-d"
+      },
+      {
+       "title": "A Gas Tax Holiday Is Performative Nonsense",
+       "url": "https://open.spotify.com/episode/0up8rPwrRw9jBUTxIzWsFO",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "Why economists across the spectrum dislike gas-tax holidays.",
+       "blurb": "The economics of who actually pockets a gas-tax cut — tax incidence in the wild — and why most economists see gas-tax holidays as political theater. A clean, mainstream tax-policy case.",
+       "source": "'The Professor Is In' podcast (Spotify) — listen to a ~20-min segment.",
+       "id": "a-gas-tax-holiday-is-performative-nonsense"
+      },
+      {
+       "title": "The Rich Are Taxed Enough",
+       "url": "https://www.youtube.com/watch?v=irHgknaS2jA",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "How much should the wealthy pay?",
+       "blurb": "An Oxford-style debate on progressive taxation: are the rich already taxed enough, or should they pay more? A concrete, two-sided way into the taxes-and-policy week — weighing revenue, incentives, fairness, and growth without handing you a verdict.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "the-rich-are-taxed-enough"
+      },
+      {
+       "title": "How Should Teachers Be Taught?",
+       "url": "https://www.youtube.com/watch?v=4ZStIcVq224",
+       "minutes": 25,
+       "format": "watch",
+       "hook": "A Harvard panel on training teachers and building schools.",
+       "blurb": "A panel on how we prepare teachers and design schools — institutions, incentives, and quality in education. A longer, discussion-style companion to the school-choice debate for anyone who wants to go deeper on the education capstone.",
+       "source": "Full panel ~60 min — stop around 25 (a selected portion).",
+       "id": "how-should-teachers-be-taught"
+      },
+      {
+       "title": "Student Loans, Explained",
+       "url": "https://www.youtube.com/watch?v=ehn_F5Lsxdw",
+       "minutes": 4,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "The economics behind ballooning student debt.",
+       "blurb": "How subsidized lending, rising tuition, and incentives combine to inflate student debt — a companion to the college-cost pieces.",
+       "source": "Short video — watch the whole thing.",
+       "id": "student-loans-explained"
+      },
+      {
+       "title": "College & Housing Bubbles (Davies)",
+       "url": "https://www.youtube.com/watch?v=HO_BMxny34U",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "How subsidized credit inflates the things it's meant to help.",
+       "blurb": "Antony Davies traces how easy credit pushes up both college and housing prices — subsidy meeting supply.",
+       "source": "Short video — watch the whole thing.",
+       "id": "college-housing-bubbles-davies"
+      },
+      {
+       "title": "Education vs. Schooling: Is It the Same?",
+       "url": "https://www.youtube.com/watch?v=Omx5KrRVkMc",
+       "minutes": 3,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Real learning versus the credential.",
+       "blurb": "A short piece pulling apart human-capital learning from mere credentialing — the signaling debate, made concrete.",
+       "source": "Short video — watch the whole thing.",
+       "id": "education-vs-schooling-is-it-the-same"
+      },
+      {
+       "title": "Class Dismissed: The Economics of U.S. Higher Ed",
+       "url": "https://www.youtube.com/watch?v=vanBHSXtjMc",
+       "minutes": 15,
+       "format": "watch",
+       "hook": "A documentary look at what college actually costs and delivers.",
+       "blurb": "Reuters examines the economics of American higher education — costs, value, and who pays.",
+       "source": "Short video — watch the whole thing.",
+       "id": "class-dismissed-the-economics-of-u-s-higher-ed"
+      },
+      {
+       "title": "Why College Is So Expensive",
+       "url": "https://www.youtube.com/watch?v=R58Si78N9i4",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Runaway tuition, subsidies, and who really pays.",
+       "blurb": "The Gravel Institute on why U.S. college costs exploded — subsidized loans, administrative bloat, and the incentives that push tuition ever higher. A market-skeptical read on the economics of higher education.",
+       "source": "Gravel Institute — short video (~10 min), watch the whole thing.",
+       "id": "why-college-is-so-expensive"
+      },
+      {
+       "title": "The Economics of Education",
+       "url": "https://www.youtube.com/watch?v=8lPbkHVxenU",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "Is education an investment, a signal, or both?",
+       "blurb": "Human capital vs. signaling, the returns to schooling, and why we subsidize education at all — the economics behind the school-choice debate. A neutral primer to set up Friedman's voucher case and the teacher-training panel.",
+       "source": "Crash Course video (~10 min) — watch the whole thing.",
+       "id": "the-economics-of-education"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unit-2",
+   "label": "Unit 2",
+   "title": "The Firm in Perfect Competition",
+   "meta": "Weeks 5–7 · Chapters 9–14",
+   "blurb": "Inside the firm and the markets for what it uses: the real costs of making and selling, when to keep going or shut down, and how wages, rents, and returns work as prices for people and land.",
+   "weeks": [
+    {
+     "id": "week-5",
+     "title": "Week 5",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Uber, Airbnb & the Sharing Economy vs. Government",
+       "url": "https://www.youtube.com/watch?v=qvsPXKJe05Q",
+       "minutes": 3,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "How platforms route around old rules — and the fight that follows.",
+       "blurb": "A short piece on how transaction-cost-cutting platforms collide with regulations written for a different era.",
+       "source": "Short video — watch the whole thing.",
+       "id": "uber-airbnb-the-sharing-economy-vs-government"
+      },
+      {
+       "title": "What Victorian Bootmakers Can Teach Us About the Future of Work",
+       "url": "https://newsletter.platypuseconomics.com/p/what-victorian-bootmakers-can-teach",
+       "minutes": 25,
+       "format": "read",
+       "hook": "Creative destruction is usually reorganization before it is disappearance.",
+       "blurb": "A historical case for thinking more carefully about automation and jobs. Victorian mechanization changed tasks, firms, and skills before it simply “destroyed” work—a useful frame for today’s AI debate.",
+       "source": "Applied economics blog post — read the whole thing.",
+       "id": "what-victorian-bootmakers-can-teach-us-about-the-future-of-w"
+      },
+      {
+       "title": "A Crash Course in Reputation Markets",
+       "url": "https://www.youtube.com/watch?v=xQj8xqlxn9U",
+       "minutes": 37,
+       "format": "watch",
+       "hook": "How reputation does the work we think regulation does.",
+       "blurb": "A crash course on reputation markets from your instructor's BroPa channel: how ratings, reviews, and repeat business let strangers trust each other and solve information problems that would otherwise choke a market. Pairs with the transaction-costs material.",
+       "source": "Economics with BroPa — watch the whole thing.",
+       "id": "a-crash-course-in-reputation-markets"
+      }
+     ]
+    },
+    {
+     "id": "week-6",
+     "title": "Week 6",
+     "notes": [],
+     "entries": [
+      {
+       "title": "The Problem With Spirit Airlines' Business Model",
+       "url": "https://www.youtube.com/watch?v=ABRjwGo6Usg",
+       "minutes": 18,
+       "format": "watch",
+       "hook": "A real-time story of losses, exit, and survival.",
+       "blurb": "How an ultra-low-cost airline's entire model buckled under rising costs, heavy debt, and relentless competition. A textbook illustration — happening in real headlines — of short-run losses, the shutdown-vs-exit decision, and long-run competitive pressure.",
+       "source": "Short documentary video — watch the whole thing.",
+       "id": "the-problem-with-spirit-airlines-business-model"
+      },
+      {
+       "title": "Does the Minimum Wage Hurt Workers?",
+       "url": "https://www.learnliberty.org/videos/does-minimum-wage-hurt-workers/",
+       "minutes": 12,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A clear case against a higher wage floor.",
+       "blurb": "Antony Davies explains the standard competitive-market case against minimum wages, then applies it to productivity, job loss, and who is helped or harmed. A useful argument to test against the empirical work that follows.",
+       "source": "Short video — watch the whole thing.",
+       "id": "does-the-minimum-wage-hurt-workers"
+      },
+      {
+       "title": "Should We Raise the Minimum Wage?",
+       "url": "https://www.youtube.com/watch?v=bema1ayqe1s",
+       "minutes": 9,
+       "format": "watch",
+       "hook": "David Card on what the evidence can—and cannot—tell us.",
+       "blurb": "David Card discusses the modern empirical minimum-wage debate, including why the simple prediction of large job losses has been challenged. The point is not that minimum wages are costless, but that institutions and labor-market conditions matter.",
+       "source": "Conversation / interview — watch the whole thing.",
+       "id": "should-we-raise-the-minimum-wage"
+      },
+      {
+       "title": "Where Have All the Busboys Gone?",
+       "url": "https://www.econtalk.org/extra/where-have-all-the-busboys-gone/",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Seattle’s $15 wage experiment in the real world.",
+       "blurb": "Jacob Vigdor and Russ Roberts discuss Seattle’s minimum-wage evidence, including mixed effects, hours, prices, automation, and who benefits. This is a particularly good bridge between textbook theory and messy policy evaluation.",
+       "source": "EconTalk extra ~45 min — stop around 25.",
+       "id": "where-have-all-the-busboys-gone"
+      },
+      {
+       "title": "Abolish the Minimum Wage",
+       "url": "https://www.youtube.com/watch?v=84t4pTUDFGo",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Should there be a wage floor at all?",
+       "blurb": "An Oxford-style debate on whether the minimum wage should be abolished — the standard competitive-market case (a floor prices the least-skilled workers out of jobs) against the argument that a floor lifts living standards without the predicted job losses. The format puts the whole minimum-wage fight, both sides, in one room — a natural capstone to the Davies / Card / Vigdor set.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "abolish-the-minimum-wage"
+      },
+      {
+       "title": "Reich: Minimum Wage Myths",
+       "url": "https://www.youtube.com/watch?v=_mcHGGcZGFo",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Taking down the standard objections to a higher wage floor.",
+       "blurb": "Robert Reich runs through the familiar arguments against raising the minimum wage — job losses, ‘it’s just teenagers,’ inflation — and rebuts each, arguing a higher floor lifts working families and stops taxpayers from subsidizing employers who underpay. The pointed pro-worker answer to the Econ-101 case in this week’s cluster.",
+       "source": "Gravel Institute / Inequality Media — short video (~6 min), watch the whole thing.",
+       "id": "reich-minimum-wage-myths"
+      }
+     ]
+    },
+    {
+     "id": "week-7",
+     "title": "Week 7",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Claudia Goldin: What's \"Greedy Work\"?",
+       "url": "https://www.youtube.com/watch?v=XiraeTJEfhU",
+       "minutes": 25,
+       "format": "watch",
+       "hook": "A Nobel take on the gender pay gap.",
+       "blurb": "Nobel laureate Claudia Goldin explains much of the gender pay gap through \"greedy work\" — jobs that pay a steep premium for long, always-available hours — and what happens to earnings after couples have kids. Wages as prices, meeting the real constraints of a life.",
+       "source": "Full interview ~55 min — stop around 25.",
+       "id": "claudia-goldin-whats-greedy-work"
+      },
+      {
+       "title": "Who Protects the Worker?",
+       "url": "https://www.youtube.com/watch?v=b7Ch4rzINyY",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Unions, wages, and who really bargains for workers.",
+       "blurb": "Friedman argues that what protects workers most is employers competing for their labor — and examines how unions and government can help some workers at the expense of others. A market-side counterpart to Goldin's take on wages and constraints; read them together.",
+       "source": "Free to Choose (1980) ~60 min — stop around 25 (documentary half).",
+       "id": "who-protects-the-worker"
+      },
+      {
+       "title": "Caplan & Garett Jones on Immigration",
+       "url": "https://www.youtube.com/watch?v=_dN5xTrfECY",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Two economists on open borders — and the case against.",
+       "blurb": "Bryan Caplan, author of Open Borders, makes the economist's case that freer migration may be one of the largest available gains in world output; Garett Jones pushes back on the institutional and cultural risks of moving many people quickly. Moderated by Coleman Hughes — a civil, substantive debate on immigration as a question of labor supply and growth.",
+       "source": "Moderated debate — listen to a selected ~25-minute segment.",
+       "id": "caplan-garett-jones-on-immigration"
+      },
+      {
+       "title": "Let Anyone Take a Job Anywhere",
+       "url": "https://www.youtube.com/watch?v=EwRVNVT6xLY",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "An Oxford-style debate on open immigration.",
+       "blurb": "A formal debate on whether people should be free to work across borders — the labor-mobility case and its critics, in one room.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "let-anyone-take-a-job-anywhere"
+      },
+      {
+       "title": "The Myth of the Gender Pay Gap (Horwitz)",
+       "url": "https://www.youtube.com/watch?v=EwogDPh-Sow",
+       "minutes": 4,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Does the raw gap survive once you adjust for choices?",
+       "blurb": "Steve Horwitz argues the headline pay-gap number largely reflects differences in hours, fields, and choices — the market-side take to weigh against Goldin.",
+       "source": "Short video — watch the whole thing.",
+       "id": "the-myth-of-the-gender-pay-gap-horwitz"
+      },
+      {
+       "title": "Choice and Change: Closing the Gender Gap",
+       "url": "https://www.youtube.com/watch?v=MRTgW8VAOBU",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A choice-based account of the gap and how to narrow it.",
+       "blurb": "A Learn Liberty take framing the gender gap around constraints and choices rather than raw discrimination.",
+       "source": "Short video — watch the whole thing.",
+       "id": "choice-and-change-closing-the-gender-gap"
+      },
+      {
+       "title": "The Future of Work Is Care — Can Men Adapt?",
+       "url": "https://open.spotify.com/episode/3l1GCgHix3lTlZCUMPfQJ5",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "Care jobs are growing fastest. Who fills them?",
+       "blurb": "As the economy tilts toward care work — health, education, elder care — this asks whether the labor market, and men in particular, will adapt to where the jobs actually are. Labor markets, gender, and structural change.",
+       "source": "‘The Professor Is In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "the-future-of-work-is-care-can-men-adapt"
+      },
+      {
+       "title": "If AI Does Your Job, Who Gets Paid?",
+       "url": "https://open.spotify.com/episode/5DiapGf6ZRqMQWGk4Rermx",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "Automation, labor share, and where the money goes.",
+       "blurb": "As AI takes on more tasks, who captures the gains — workers, owners, or consumers? A grounded look at automation, the labor share, and how technology reshapes who gets paid. Pairs with the future-of-work pieces.",
+       "source": "'The Professor Is In' podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "if-ai-does-your-job-who-gets-paid"
+      },
+      {
+       "title": "Roland Fryer Refuses to Lie to Black America",
+       "url": "https://www.youtube.com/watch?v=cI_JV1Tns6c",
+       "minutes": 30,
+       "format": "listen",
+       "hook": "A fearless economist on race, schools, and policing.",
+       "blurb": "Freakonomics on Roland Fryer's controversial, data-driven work on discrimination, the achievement gap, and use of force — following the evidence wherever it leads.",
+       "source": "Freakonomics episode — listen to a ~30-min segment.",
+       "id": "roland-fryer-refuses-to-lie-to-black-america"
+      },
+      {
+       "title": "Glen Weyl on Radical Markets",
+       "url": "https://www.youtube.com/watch?v=BNBHU4KOiUw",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "What if you had to name a price for everything you own?",
+       "blurb": "A genuinely strange proposal: self-assessed property taxes, where you declare what your land or capital is worth, pay tax on that number — and must sell at it if someone offers. A challenging, abstract look at economic rent and who should hold what.",
+       "source": "Full podcast ~60 min — stop around 25. The more abstract, big-ideas option.",
+       "id": "glen-weyl-on-radical-markets"
+      },
+      {
+       "title": "The Great Shift From Workers to Owners",
+       "url": "https://newsletter.platypuseconomics.com/p/no-the-k-shaped-economy-isnt-over",
+       "minutes": 25,
+       "format": "read",
+       "hook": "Why labor’s share of income has become a live argument again.",
+       "blurb": "A data-rich account of labor share, capital income, superstar firms, bargaining power, globalization, and AI. It is especially useful because it makes distribution a question about institutions and ownership, not only wages.",
+       "source": "Applied economics blog post — read the whole thing.",
+       "id": "the-great-shift-from-workers-to-owners"
+      },
+      {
+       "title": "The Rise of Superstar Firms and the Fall of the Labor Share",
+       "url": "https://learn.mru.org/lessons/rise-superstar-firms-and-fall-labor-share",
+       "minutes": 15,
+       "format": "watch",
+       "hook": "David Autor on concentration, technology, and who gets the gains.",
+       "blurb": "David Autor presents the evidence on falling labor share and the rise of superstar firms, then distinguishes automation from weakened competition. Pair it with the Platypus labor-share piece and ask where the explanations converge or diverge.",
+       "source": "Marginal Revolution University video — watch the whole lesson.",
+       "id": "the-rise-of-superstar-firms-and-the-fall-of-the-labor-share"
+      },
+      {
+       "title": "Noah Smith on Worker Compensation, Co-determination, and Market Power",
+       "url": "https://www.econtalk.org/noah-smith-on-worker-compensation-co-determination-and-market-power/",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "A market critic’s case for taking worker power seriously.",
+       "blurb": "Noah Smith and Russ Roberts debate worker compensation, codetermination, labor-market power, and the idea that firms can be competitive in product markets while workers still have weak bargaining power. A strong counterweight to the cleanest market-first accounts.",
+       "source": "EconTalk episode — listen to a selected ~25-minute segment.",
+       "id": "noah-smith-on-worker-compensation-co-determination-and-marke"
+      },
+      {
+       "title": "Jason Furman on Productivity, Competition, and Growth",
+       "url": "https://conversationswithtyler.com/episodes/jason-furman/",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "A broad tour of the policy tradeoffs behind living standards.",
+       "blurb": "Jason Furman ranges across productivity, monopoly and concentration, public R&D, immigration, housing constraints, trade adjustment, occupational licensing, and debt. The questions are applied, and the answers don't line up on a single left-right axis.",
+       "source": "Conversation — listen to a selected ~25-minute segment.",
+       "id": "jason-furman-on-productivity-competition-and-growth"
+      },
+      {
+       "title": "The Universal Basic Income Is the Safety Net of the Future",
+       "url": "https://www.youtube.com/watch?v=EefzHbTArtY",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Can cash, incentives, and freedom be combined in one safety net?",
+       "blurb": "Charles Murray and Andrew Stern argue for a guaranteed income; Jared Bernstein and Jason Furman argue against it. The debate is useful because it puts poverty, work incentives, administrative simplicity, and the future of employment in the same frame.",
+       "source": "Oxford-style debate — listen to a selected ~25-minute segment.",
+       "id": "the-universal-basic-income-is-the-safety-net-of-the-future"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unit-3",
+   "label": "Unit 3",
+   "title": "The Critique of the Market",
+   "meta": "Weeks 8–10 · Chapters 15–20",
+   "blurb": "Where markets get complicated: bargaining power and the critiques of markets, costs and benefits that land on third parties, and everything that goes strange in the market for health.",
+   "weeks": [
+    {
+     "id": "week-8",
+     "title": "Week 8",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Joseph Stiglitz: Is Our Concept of Freedom All Wrong?",
+       "url": "https://www.youtube.com/watch?v=6NCIlo8tavQ",
+       "minutes": 25,
+       "format": "watch",
+       "hook": "Is freedom just being left alone?",
+       "blurb": "Nobel laureate Joseph Stiglitz challenges the \"leave me alone\" view of freedom, arguing that power, externalities, and inequality can shrink someone's real options — and that some rules expand freedom rather than restrict it. The course's sharpest philosophical counterweight to the market case.",
+       "source": "Full interview ~55 min — stop around 25.",
+       "id": "joseph-stiglitz-is-our-concept-of-freedom-all-wrong"
+      },
+      {
+       "title": "Who Protects the Consumer?",
+       "url": "https://www.youtube.com/watch?v=FkHOQyQbfiE",
+       "minutes": 25,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Does regulation protect you — or the regulated?",
+       "blurb": "Friedman's case that competition and reputation protect consumers more reliably than regulators — who can end up captured by the very industries they oversee. A pointed entry in the “limits and institutions of markets” debate; read it straight against Stiglitz.",
+       "source": "Free to Choose (1980) ~60 min — stop around 25 (documentary half).",
+       "id": "who-protects-the-consumer"
+      },
+      {
+       "title": "The Most Dangerous Monopoly: When Caution Kills (Davies)",
+       "url": "https://www.youtube.com/watch?v=DvxT7fryE3Q",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "The overlooked cost of regulation: the help that never arrives.",
+       "blurb": "Antony Davies on regulatory caution — how the drugs and devices delayed by 'better safe than sorry' carry their own body count.",
+       "source": "Short video — watch the whole thing.",
+       "id": "the-most-dangerous-monopoly-when-caution-kills-davies"
+      },
+      {
+       "title": "Foreign Aid and Remittance",
+       "url": "https://www.youtube.com/watch?v=tAvA_cOeeOI",
+       "minutes": 11,
+       "format": "watch",
+       "hook": "Does aid help — and how do migrant dollars stack up?",
+       "blurb": "A quick tour of whether foreign aid works, why it sometimes doesn't, and how remittances — the money migrants send home — now dwarf official aid as a poverty lever. A balanced primer on the economics of helping across borders.",
+       "source": "Crash Course video (~11 min) — watch the whole thing.",
+       "id": "foreign-aid-and-remittance"
+      },
+      {
+       "title": "To End Extreme Poverty, Give Cash — Not Advice",
+       "url": "https://www.youtube.com/watch?v=tt0HOe7gf7I",
+       "minutes": 13,
+       "format": "watch",
+       "hook": "What if we just gave poor people the money?",
+       "blurb": "Rory Stewart makes the evidence-based case that the most effective anti-poverty tool may be the simplest: hand poor people cash to spend as they judge best, rather than routing help through paternalistic programs and advice. A genuinely cross-partisan argument — it trusts poor people's own choices (a market-friendly instinct) while marshaling development-economics evidence on what actually moves the needle.",
+       "source": "TED talk (~13 min) — watch the whole thing.",
+       "id": "to-end-extreme-poverty-give-cash-not-advice"
+      },
+      {
+       "title": "How SNAP’s New Rules Leave Families Hungry",
+       "url": "https://open.spotify.com/episode/4sKK4mF20tbscKXIdfbFL8",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "When ‘eligible’ doesn’t mean ‘fed.’",
+       "blurb": "How recent changes to SNAP (food stamps) can push eligible families off benefits — the gap between who qualifies on paper and who actually gets help. Applied safety-net economics, from rule design to real households.",
+       "source": "‘The Professor Is In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "how-snaps-new-rules-leave-families-hungry"
+      },
+      {
+       "title": "The Economics of Charity",
+       "url": "https://www.youtube.com/watch?v=G9twL2e3w5Y",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "What field experiments reveal about why we give.",
+       "blurb": "John List has raised (and studied) millions in charitable donations through field experiments — and here he unpacks what actually moves people to give, from matching gifts to social pressure. Altruism, incentives, and public goods, tested in the wild.",
+       "source": "UChicago ‘Economics for Everyone’ (John List) — watch the whole thing.",
+       "id": "the-economics-of-charity"
+      },
+      {
+       "title": "Esther Duflo: Social Experiments to Fight Poverty",
+       "url": "https://www.youtube.com/watch?v=0zvrGiPkVcs",
+       "minutes": 16,
+       "format": "watch",
+       "hook": "Testing anti-poverty ideas like medicine tests drugs.",
+       "blurb": "Nobel laureate Esther Duflo on running randomized experiments to learn which anti-poverty programs actually work — bed nets, deworming, immunization incentives — instead of arguing from ideology. The evidence-first case that good intentions aren't enough; you have to measure.",
+       "source": "TED talk (~16 min) — watch the whole thing.",
+       "id": "esther-duflo-social-experiments-to-fight-poverty"
+      },
+      {
+       "title": "Chetty: Visualizing the American Dream",
+       "url": "https://www.youtube.com/watch?v=X2YzxpWKKz4",
+       "minutes": 30,
+       "format": "watch",
+       "hook": "Does your zip code decide how far you'll rise?",
+       "blurb": "Raj Chetty's deep dive, built on anonymized tax records for tens of millions of Americans: how the neighborhood a child grows up in — sometimes down to the block — along with the quality of their teachers and the college they attend shapes their odds of out-earning their parents (now roughly a coin flip, down from ~90% mid-century). The most complete public tour of his big-data findings on opportunity, and a data-driven test of whether the market actually delivers a fair shot.",
+       "source": "Talks at Google (~50 min) — stop around 30; the teacher, college, and neighborhood findings are the payoff, so go longer if you're hooked.",
+       "id": "chetty-visualizing-the-american-dream"
+      },
+      {
+       "title": "The Ever-Present Challenge of Escaping Poverty (Noah Smith)",
+       "url": "https://www.youtube.com/watch?v=WVrDjilEAY4",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Poverty is the default. Wealth is the thing that needs explaining.",
+       "blurb": "Noah Smith argues the real question isn’t why nations are poor but how any nation ever got rich — and that “industrial modernity” is what holds poverty, our elemental foe, at bay. Includes his pointed impatience with the degrowth movement.",
+       "source": "EconTalk episode ~1h9m — stop around 25 unless you’re hooked.",
+       "id": "the-ever-present-challenge-of-escaping-poverty-noah-smith"
+      },
+      {
+       "title": "Does Inequality Impair Upward Mobility?",
+       "url": "https://www.youtube.com/watch?v=3GHKp6tPsEY",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "A debate on whether the American Dream still works.",
+       "blurb": "An Oxford-style debate on whether income inequality actually blocks upward mobility — both sides marshaling the data on opportunity, growth, and the American Dream. A natural companion to Chetty's mobility findings.",
+       "source": "Debate (Open to Debate) — listen to a selected ~25-min segment.",
+       "id": "does-inequality-impair-upward-mobility"
+      },
+      {
+       "title": "The Underground Economy",
+       "url": "https://www.youtube.com/watch?v=joG6-QZc-fw",
+       "minutes": 11,
+       "format": "watch",
+       "hook": "The huge market that hides from the taxman.",
+       "blurb": "Black markets, off-the-books labor, and unreported income add up to a shadow economy that rivals whole national GDPs. A look at why activity slips outside formal markets — taxes, regulation, prohibition — and what that costs everyone.",
+       "source": "Crash Course video (~11 min) — watch the whole thing.",
+       "id": "the-underground-economy"
+      }
+     ]
+    },
+    {
+     "id": "week-9",
+     "title": "Week 9",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Two Parents Are Better Than One",
+       "url": "https://www.youtube.com/watch?v=MT7kWf_F43E",
+       "minutes": 30,
+       "format": "listen",
+       "hook": "A data look at family structure and mobility.",
+       "blurb": "A data-driven episode on why stable two-parent households tend to predict better outcomes for kids — and the uncomfortable questions that finding raises. As you listen, keep the unit's lens up: where's the spillover onto people who didn't choose it?",
+       "source": "Full episode ~50 min — stop around 30. Listen for the externality, not a verdict on families.",
+       "id": "two-parents-are-better-than-one"
+      },
+      {
+       "title": "Melissa Kearney: Strong Families as a Priority",
+       "url": "https://www.youtube.com/watch?v=HSppl3HeByg",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "The policy version of the same debate.",
+       "blurb": "Economist Melissa Kearney makes the policy case that family structure shapes economic mobility and inequality, while working hard to separate the evidence from blame or nostalgia. A more policy-oriented take on the same spillover question.",
+       "source": "Talk / interview — stop around 20. Focus on the spillover mechanism.",
+       "id": "melissa-kearney-strong-families-as-a-priority"
+      }
+     ]
+    },
+    {
+     "id": "week-10",
+     "title": "Week 10",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Giving Birth Costs a Lot. Hospitals Won't Tell You How Much",
+       "url": "https://www.youtube.com/watch?v=Tct38KwROdw",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "Price opacity, made painfully concrete.",
+       "blurb": "Having a baby can cost a little or a fortune — and hospitals often can't (or won't) tell you which in advance. A short, human case in how price opacity and third-party payment scramble the signals we rely on everywhere else.",
+       "source": "Short video — watch the whole thing.",
+       "id": "giving-birth-costs-a-lot-hospitals-wont-tell-you-how-much"
+      },
+      {
+       "title": "Why Do Hospitals Keep Running Out of Generic Drugs?",
+       "url": "https://www.npr.org/2024/10/25/1210942193/generic-drug-shortages",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "When prices are too low to keep the medicine coming.",
+       "blurb": "The strange paradox of modern medicine: some essential generic drugs keep running short precisely because their prices are too low to keep makers in the market. Thin margins, quiet exit, and fragile supply — the mirror image of opaque childbirth billing.",
+       "source": "Planet Money episode (NPR), ~26 min — the pricing mystery is the first ~15.",
+       "id": "why-do-hospitals-keep-running-out-of-generic-drugs"
+      },
+      {
+       "title": "Lomborg: How Much Does a Life Cost?",
+       "url": "https://www.youtube.com/watch?v=1bgY29Umcxw",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "Where would you spend a fixed budget to save lives?",
+       "blurb": "Bjorn Lomborg's case for cost-benefit prioritization: with limited resources, spend where you save or improve the most lives per dollar. A bridge from tidy policy incentives to the genuinely hard math of rationing.",
+       "source": "Talk / interview — stop around 20.",
+       "id": "lomborg-how-much-does-a-life-cost"
+      },
+      {
+       "title": "The Economics of Death",
+       "url": "https://www.youtube.com/watch?v=AecowUb79Xk",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "The tradeoffs we'd rather not price.",
+       "blurb": "The economics hiding at the end of life: the value of a statistical life, insurance, and the choices we make about care when resources are finite. A brisk Crash Course primer on pricing the unpriceable.",
+       "source": "Short video (~10 min) — watch the whole thing.",
+       "id": "the-economics-of-death"
+      },
+      {
+       "title": "Ezekiel Emanuel on Healthcare, Hospital Mergers, and Policy",
+       "url": "https://conversationswithtyler.com/episodes/ezekiel-emanuel/",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Why healthcare markets can be local, concentrated, and strangely expensive.",
+       "blurb": "Emanuel discusses hospital mergers, local monopolies, pricing power, insurance, medical incentives, and the difficult tradeoffs of healthcare policy. A concrete case of market power inside health care.",
+       "source": "Conversation — listen to a selected ~25-minute segment.",
+       "id": "ezekiel-emanuel-on-healthcare-hospital-mergers-and-policy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unit-4",
+   "label": "Unit 4",
+   "title": "The Firm in Imperfect Competition",
+   "meta": "Weeks 11–13 · Chapters 21–26",
+   "blurb": "The home stretch: power in markets and the quieter power of escaping competition through politics, the strategy of a few rivals watching each other, and the whole argument for markets — weighed against its limits.",
+   "weeks": [
+    {
+     "id": "week-11",
+     "title": "Week 11",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Is Deregulation Driving the Boom?",
+       "url": "https://www.youtube.com/watch?v=AsQ5lHg_CMM",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Does cutting red tape actually grow the economy?",
+       "blurb": "An Oxford-style debate on whether deregulation is fueling recent growth — weighing the efficiency gains against the risks regulation is meant to guard. A concrete case in the tradeoffs of market rules.",
+       "source": "Debate (Open to Debate) — listen to a selected ~25-min segment.",
+       "id": "is-deregulation-driving-the-boom"
+      },
+      {
+       "title": "How American Taxpayers Fund NFL Stadiums",
+       "url": "https://www.youtube.com/watch?v=xNRTjSmfAPg",
+       "minutes": 12,
+       "format": "watch",
+       "hook": "Rent seeking you can watch on a Sunday.",
+       "blurb": "Why do taxpayers keep funding billion-dollar stadiums that rarely deliver the promised local windfall? A sharp, concrete case of market power exercised through politics rather than value creation — the perfect companion to the rent-seeking explainer.",
+       "source": "Short video — watch the whole thing.",
+       "id": "how-american-taxpayers-fund-nfl-stadiums"
+      },
+      {
+       "title": "The Myth of the Rational Voter",
+       "url": "https://www.youtube.com/watch?v=XKANfuq_92U",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "Why democracies adopt bad economic policy.",
+       "blurb": "Bryan Caplan argues that voters share systematic economic biases — anti-market, anti-foreign, pessimistic — and that elections can faithfully deliver those errors. A behavioral, public-choice reminder that failures aren't only found in markets.",
+       "source": "Video / lecture — stop around 20.",
+       "id": "the-myth-of-the-rational-voter"
+      },
+      {
+       "title": "Public Choice: Why Politicians Don’t Cut Spending",
+       "url": "https://www.learnliberty.org/videos/public-choice-why-politicians-dont-cut-spending/",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Why small benefits can beat large costs in politics.",
+       "blurb": "Ben Powell gives a compact introduction to rational ignorance, concentrated benefits, and dispersed costs. Why does a policy survive when it costs society more than it benefits society?",
+       "source": "Short video — watch the whole thing.",
+       "id": "public-choice-why-politicians-dont-cut-spending"
+      },
+      {
+       "title": "The Problem of Political Ignorance",
+       "url": "https://www.youtube.com/watch?v=Jk62VObQEtI",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "Why not knowing much about politics can be rational.",
+       "blurb": "Ilya Somin argues that voters have little incentive to acquire detailed political information because the chance that one vote changes an election is tiny. A useful extension of public choice from special interests to ordinary citizens.",
+       "source": "Lecture / interview — watch ~20 min.",
+       "id": "the-problem-of-political-ignorance"
+      },
+      {
+       "title": "Why Government Fails, Explained (Davies)",
+       "url": "https://www.youtube.com/watch?v=xxmXeLEcs9s",
+       "minutes": 12,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Why well-meaning policy so often backfires.",
+       "blurb": "Antony Davies gives a compact public-choice account of why government programs routinely miss their goals — incentives, information, and the gap between intention and outcome.",
+       "source": "Short video — watch the whole thing.",
+       "id": "why-government-fails-explained-davies"
+      },
+      {
+       "title": "Unintended Consequences (Davies)",
+       "url": "https://www.youtube.com/watch?v=cbtq6Uqdlb0",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Why policies routinely produce the opposite of their aim.",
+       "blurb": "Antony Davies on how well-intended rules generate side effects that can swamp the intended benefit.",
+       "source": "Short video — watch the whole thing.",
+       "id": "unintended-consequences-davies"
+      },
+      {
+       "title": "Solo Flyers Pay More: Airline Price Discrimination",
+       "url": "https://open.spotify.com/episode/6ppuGaf2cyCPqxETMfFo2i",
+       "minutes": 12,
+       "format": "listen",
+       "hook": "Why an airline charges one traveler more than two.",
+       "blurb": "Delta, United, and American were quietly charging solo flyers more than pairs on some routes. The logic: flying alone signals a business traveler with inelastic, expense-account demand, so the airline separates you from price-sensitive leisure flyers and charges accordingly. Textbook price discrimination by elasticity.",
+       "source": "Podcast (Spotify) — listen to the middle segment (~12 min); the McKinsey and sports-bar segments are skippable.",
+       "id": "solo-flyers-pay-more-airline-price-discrimination"
+      }
+     ]
+    },
+    {
+     "id": "week-12",
+     "title": "Week 12",
+     "notes": [],
+     "entries": [
+      {
+       "title": "Matt Stoller on Modern Monopolies",
+       "url": "https://www.youtube.com/watch?v=PQ9dYOSeb10",
+       "minutes": 25,
+       "format": "listen",
+       "stance": "Market-critique",
+       "hook": "The case that Big Tech’s power is economic, political, and cultural.",
+       "blurb": "Matt Stoller argues that Google, Facebook, and Amazon have accumulated too much power over consumers, creators, competitors, and public information. It is a clear, market-critical read on Big Tech’s economic, political, and cultural power.",
+       "source": "EconTalk episode — listen to a selected ~25-minute segment.",
+       "id": "matt-stoller-on-modern-monopolies"
+      },
+      {
+       "title": "The Illusion of Choice (ft. Lina Khan)",
+       "url": "https://www.youtube.com/watch?v=twdgxIJZDns",
+       "minutes": 7,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Monopoly as a freedom problem, not just a price problem.",
+       "blurb": "Former FTC chair Lina Khan reframes concentration as a threat to freedom: when a few firms dominate, workers can’t switch jobs, consumers can’t switch products, and prices climb. The market-critical antitrust voice to set against the course’s monopoly skeptics — a natural partner to Stoller.",
+       "source": "Inequality Media (Reich) ft. Lina Khan — short video (~7 min), watch the whole thing.",
+       "id": "the-illusion-of-choice-ft-lina-khan"
+      }
+     ]
+    },
+    {
+     "id": "week-13",
+     "title": "Week 13",
+     "notes": [],
+     "entries": [
+      {
+       "title": "The Economics of Happiness",
+       "url": "https://www.youtube.com/watch?v=O-t8-Vq0HO0",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "Markets produce goods — but what are goods for?",
+       "blurb": "A short, sharp turn from GDP to well-being: how income and happiness actually relate, why the returns diminish, and what economic measurement quietly leaves out. A fitting pivot for the final unit.",
+       "source": "Short video (~10 min) — watch the whole thing.",
+       "id": "the-economics-of-happiness"
+      },
+      {
+       "title": "Acemoglu on Innovation & Shared Prosperity",
+       "url": "https://www.youtube.com/watch?v=6hegEENGKs0",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "New technology doesn't lift everyone automatically.",
+       "blurb": "Nobel laureate Daron Acemoglu argues that innovation doesn't automatically produce broad prosperity — institutions and choices decide who benefits. A capstone-scale reading on technology, power, and the conditions markets need to work for everyone.",
+       "source": "Full podcast ~65 min — stop around 25.",
+       "id": "acemoglu-on-innovation-shared-prosperity"
+      },
+      {
+       "title": "The Truth About Trump Accounts",
+       "url": "https://open.spotify.com/episode/3ylihGWkaYLlpgcP0tkmSg",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "What the newborn investment accounts actually do.",
+       "blurb": "A plain look at ‘Trump Accounts’ — the government-seeded investment accounts for newborns — and what the fine print means for savings, wealth-building, and who really benefits. Applied policy, minus the spin.",
+       "source": "‘Diving In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "the-truth-about-trump-accounts"
+      },
+      {
+       "title": "Trump Accounts: Your Questions Answered",
+       "url": "https://open.spotify.com/episode/0uSW20eQ6LER6mRgTDcmJ8",
+       "minutes": 15,
+       "format": "listen",
+       "hook": "The follow-up Q&A on the newborn accounts.",
+       "blurb": "A listener Q&A digging further into ‘Trump Accounts’ — eligibility, growth, and tradeoffs. Overlaps heavily with “The Truth About Trump Accounts,” so pick one.",
+       "source": "‘The Professor Is In’ podcast (Spotify) — listen to a ~15-min segment.",
+       "id": "trump-accounts-your-questions-answered"
+      },
+      {
+       "title": "If Economists Were in Charge",
+       "url": "https://freakonomics.com/podcast/what-would-the-world-look-like-if-economists-were-in-charge/",
+       "minutes": 20,
+       "format": "listen",
+       "hook": "Efficient, unpopular, and a little utopian.",
+       "blurb": "Freakonomics hands the keys to the economists: the policies they'd push (many efficient, many wildly unpopular), an Estonian prime minister who ran his country on Milton Friedman's playbook, and Levitt's incentive-driven potty-training as a parable for governing by economics. A playful, provocative capstone on the gap between what's efficient and what's electable.",
+       "source": "Freakonomics episode (~20 min) — a fitting capstone; worth the whole thing.",
+       "id": "if-economists-were-in-charge"
+      },
+      {
+       "title": "Why Do Candles Still Exist?",
+       "url": "https://www.youtube.com/watch?v=pl3js8eJsZQ",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "They should’ve died with the lightbulb. Instead: a $10 billion industry.",
+       "blurb": "Why do we still pay for tiny fires? A romp through nostalgia, hygge, self-care, and consumer psychology that turns a should-be-obsolete product into a case study in what people actually value — one source is literally a happiness researcher. A fun way into preferences, demand, and why “rational” obsolescence doesn’t happen.",
+       "source": "Freakonomics episode ~47m — stop around 25.",
+       "id": "why-do-candles-still-exist"
+      },
+      {
+       "title": "The Economics of Scaling",
+       "url": "https://www.youtube.com/watch?v=Q8CsSs8QNH8",
+       "minutes": 10,
+       "format": "watch",
+       "hook": "Why great pilot programs collapse when you scale them up.",
+       "blurb": "John List on the ‘voltage effect’ — why an intervention that shines in a small trial often fizzles at scale, and what must be true for good ideas to survive going big. A sharp, policy-relevant capstone on the gap between evidence and implementation.",
+       "source": "UChicago ‘Economics for Everyone’ (John List) — watch the whole thing.",
+       "id": "the-economics-of-scaling"
+      },
+      {
+       "title": "Is Economics a Junk Science?",
+       "url": "https://www.youtube.com/watch?v=TsfsoaNFyTQ",
+       "minutes": 15,
+       "format": "watch",
+       "hook": "How much should we actually trust economics?",
+       "blurb": "Economics Explained turns the tools on the discipline itself — where economics earns its scientific stripes and where it overreaches. A provocative synthesis piece on the limits of the field.",
+       "source": "Short video — watch the whole thing.",
+       "id": "is-economics-a-junk-science"
+      },
+      {
+       "title": "What's Really Driving Up the Debt? (Reich)",
+       "url": "https://www.youtube.com/watch?v=l12jl_KFElE",
+       "minutes": 2,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "A distributional take on where the debt came from.",
+       "blurb": "Robert Reich argues the national debt is driven less by 'spending' than by tax cuts for the wealthy and corporations — a market-critical framing of a fight usually posed as fiscal responsibility.",
+       "source": "Inequality Media (Reich) — short video (~2 min), watch the whole thing.",
+       "id": "whats-really-driving-up-the-debt-reich"
+      },
+      {
+       "title": "The Costs of Inequality",
+       "url": "https://www.youtube.com/watch?v=GYHT4zJsCdo",
+       "minutes": 16,
+       "format": "watch",
+       "hook": "Stiglitz on why distribution can affect the whole economy.",
+       "blurb": "Joseph Stiglitz argues that inequality is not only a moral or distributional concern: it can affect opportunity, political influence, demand, and economic performance. A strong counterweight to accounts that treat inequality as largely harmless if growth continues.",
+       "source": "Short talk ~16 min — watch the whole thing.",
+       "id": "the-costs-of-inequality"
+      },
+      {
+       "title": "Friedman: Why Soaking the Rich Won't Work",
+       "url": "https://www.youtube.com/watch?v=Wi-D24oCa10",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "The revenue you expect from taxing the rich rarely shows up.",
+       "blurb": "Milton Friedman's classic argument that very high tax rates on the wealthy change behavior and disappoint the revenue projections behind them.",
+       "source": "Short video — watch the whole thing.",
+       "id": "friedman-why-soaking-the-rich-wont-work"
+      },
+      {
+       "title": "Friedman: The Robin Hood Myth",
+       "url": "https://www.youtube.com/watch?v=5Wx5PYZIWcQ",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "Does taking from the rich actually help the poor?",
+       "blurb": "Milton Friedman challenges the assumption that redistribution reliably lifts the poor, versus growth and opportunity.",
+       "source": "Short video — watch the whole thing.",
+       "id": "friedman-the-robin-hood-myth"
+      },
+      {
+       "title": "5 Myths About Inequality (Davies)",
+       "url": "https://www.youtube.com/watch?v=Jtxuy-GJwCo",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A data-first, skeptical pass at common inequality claims.",
+       "blurb": "Antony Davies questions several widely repeated inequality statistics — the market-side counterweight to the critique cluster in this week.",
+       "source": "Short video — watch the whole thing.",
+       "id": "5-myths-about-inequality-davies"
+      },
+      {
+       "title": "Do We Have an Income Inequality Problem?",
+       "url": "https://www.youtube.com/watch?v=5ufXVXqXvYo",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A market-side reframing of the inequality debate.",
+       "blurb": "Reason asks whether measured income inequality is the problem it's made out to be, weighing mobility, consumption, and growth.",
+       "source": "Short video — watch the whole thing.",
+       "id": "do-we-have-an-income-inequality-problem"
+      },
+      {
+       "title": "The 10 Biggest Myths About Our Economy",
+       "url": "https://www.youtube.com/watch?v=HZ3j4hHMO5E",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Reich takes on the economy's most durable talking points.",
+       "blurb": "Robert Reich rapid-fires through ten claims he considers economic myths — on taxes, wages, deficits, and 'job creators' — and his rebuttals. A brisk market-critical inventory of the arguments the course keeps circling.",
+       "source": "Inequality Media (Reich) — short video (~10 min), watch the whole thing.",
+       "id": "the-10-biggest-myths-about-our-economy"
+      },
+      {
+       "title": "How Wealth Inequality Spiraled Out of Control (Reich)",
+       "url": "https://www.youtube.com/watch?v=wOI8RuhW7q0",
+       "minutes": 11,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "The full arc of who got the wealth, and why.",
+       "blurb": "Robert Reich lays out how American wealth concentrated — the top 1% now holding many times the wealth of the bottom half — and the policy choices that drove it there. A crisp, market-critical framing of distribution to sit in the synthesis unit.",
+       "source": "Inequality Media (Reich) — short video (~11 min), watch the whole thing.",
+       "id": "how-wealth-inequality-spiraled-out-of-control-reich"
+      },
+      {
+       "title": "Robert Reich's Deceptive Data Tricks",
+       "url": "https://www.youtube.com/watch?v=tAO7u10zGqE",
+       "minutes": 10,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A point-by-point rebuttal to Reich's inequality videos.",
+       "blurb": "Reason takes Robert Reich's popular inequality explainers apart, arguing the charts and framings mislead. Watch it straight against the Reich pieces in this unit — the clearest head-to-head in the menu.",
+       "source": "Short video — watch the whole thing.",
+       "id": "robert-reichs-deceptive-data-tricks"
+      },
+      {
+       "title": "Stiglitz on the Great Divide",
+       "url": "https://open.spotify.com/episode/5EOD5QJLab1NQcANSa9hIe",
+       "minutes": 20,
+       "format": "listen",
+       "stance": "Market-critique",
+       "hook": "How inequality became a feature, not a bug.",
+       "blurb": "Joseph Stiglitz on ‘the great divide’ — his case that American inequality is the product of political choices and rigged rules, not impersonal market forces, and that it drags on growth and democracy alike. A meaty left-leaning critique from a Nobel economist.",
+       "source": "Podcast episode (Spotify) — listen to a ~20-min segment.",
+       "id": "stiglitz-on-the-great-divide"
+      },
+      {
+       "title": "Is Inequality Inevitable?",
+       "url": "https://www.ted.com/talks/ted_ed_is_inequality_inevitable",
+       "minutes": 6,
+       "format": "watch",
+       "hook": "A visual primer on inequality and policy choices.",
+       "blurb": "This TED-Ed explainer introduces ways economists measure inequality and shows how policy choices can change its distribution. Short and visual: a good place to start before the more argumentative inequality pieces.",
+       "source": "TED-Ed lesson — watch the whole thing.",
+       "id": "is-inequality-inevitable"
+      },
+      {
+       "title": "Can Progressives Save Capitalism?",
+       "url": "https://opentodebate.org/joseph-stiglitz-and-katherine-mangu-ward-argue-whether-progressives-can-save-capitalism/",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Stiglitz and Mangu-Ward debate whether capitalism needs reform or defense.",
+       "blurb": "Joseph Stiglitz and Katherine Mangu-Ward offer sharply different but serious accounts of capitalism’s problems and possibilities. It asks you to weigh market dynamism against inequality, instability, and political power.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "can-progressives-save-capitalism"
+      },
+      {
+       "title": "Does Capitalism Mean Freedom? (Teachout)",
+       "url": "https://www.youtube.com/watch?v=pMALdj8u_do",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Is a free market the same thing as a free society?",
+       "blurb": "Zephyr Teachout, for the Gravel Institute, argues that concentrated economic power can shrink real freedom — a pointed companion to Stiglitz's case that markets and liberty aren't the same thing.",
+       "source": "Gravel Institute — short video (~6 min), watch the whole thing.",
+       "id": "does-capitalism-mean-freedom-teachout"
+      },
+      {
+       "title": "Is Capitalism Broken?",
+       "url": "https://www.youtube.com/watch?v=VtuuvyLEmG4",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "The whole case for and against the system, in one room.",
+       "blurb": "An Oxford-style debate that meets the final unit's biggest question head-on: is capitalism fundamentally broken, or the best engine of prosperity we have? Both sides argue inequality, growth, mobility, and reform in the same room — a clean capstone that makes you weigh the market case against its sharpest critiques rather than pick a team.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "is-capitalism-broken"
+      },
+      {
+       "title": "The Economics of Happiness (Aspen)",
+       "url": "https://www.youtube.com/watch?v=YCV8IPlP-GE",
+       "minutes": 20,
+       "format": "watch",
+       "hook": "Well-being, income, and what the data actually say.",
+       "blurb": "An Aspen Institute conversation on how economists measure happiness and what money can and can't buy.",
+       "source": "Talk — watch a ~20-min segment.",
+       "id": "the-economics-of-happiness-aspen"
+      },
+      {
+       "title": "Don't Abolish the Police — Privatize Them?",
+       "url": "https://www.youtube.com/watch?v=Cy2Xla_urNI",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A provocative libertarian thought experiment.",
+       "blurb": "Reason makes the deliberately provocative case for market-provided policing — a boundary-testing application of 'who provides public goods.'",
+       "source": "Short video — watch the whole thing.",
+       "id": "dont-abolish-the-police-privatize-them"
+      },
+      {
+       "title": "Paul Romer on Charter Cities",
+       "url": "https://open.spotify.com/episode/6Yad1v7eyMg5UxkNSPrXEi",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Can you build a new city with better institutions?",
+       "blurb": "Nobel laureate Paul Romer on charter cities — the idea that importing good rules into a new place could unlock growth.",
+       "source": "Podcast episode (Spotify) — listen to a ~25-min segment.",
+       "id": "paul-romer-on-charter-cities"
+      },
+      {
+       "title": "Is Capitalism Sustainable? (Munger)",
+       "url": "https://www.youtube.com/watch?v=_tRlt8BwB7w",
+       "minutes": 25,
+       "format": "listen",
+       "stance": "Pro-market",
+       "hook": "The market case that capitalism can keep delivering.",
+       "blurb": "Economist Michael Munger argues capitalism is sustainable — that markets, properly framed, can keep raising living standards without collapsing under their own contradictions. The market-friendly counterweight to the capitalism-in-crisis pieces in this unit.",
+       "source": "Institute for Humane Studies — lecture, listen to a ~25-min segment.",
+       "id": "is-capitalism-sustainable-munger"
+      },
+      {
+       "title": "Should We Worry About the National Debt?",
+       "url": "https://open.spotify.com/episode/0SboKfWy9dfDle0nAtnzcS",
+       "minutes": 18,
+       "format": "listen",
+       "hook": "A straight look at whether the debt is actually a crisis.",
+       "blurb": "A mainstream walk through what the national debt is, when it matters, and when the alarm is overblown — the analytical companion to the debt arguments elsewhere in this week.",
+       "source": "'Diving In' podcast (Spotify) — listen to a ~18-min segment.",
+       "id": "should-we-worry-about-the-national-debt"
+      },
+      {
+       "title": "Is It Time for the U.S. to Embrace Socialism?",
+       "url": "https://www.youtube.com/watch?v=C9Dp0_2MHqE",
+       "minutes": 25,
+       "format": "listen",
+       "hook": "Socialism vs. markets, head to head.",
+       "blurb": "A formal debate putting the socialist case (sociologist Vivek Chibber) directly against the market case (economist Michael Munger): should the U.S. embrace socialism? A clean capstone clash for the final unit — planning vs. markets, exploitation vs. exchange, and what “socialism” even means today. Read Chibber against the rent-seeking pieces elsewhere in the menu.",
+       "source": "Debate — listen to a selected ~25-minute segment.",
+       "id": "is-it-time-for-the-u-s-to-embrace-socialism"
+      },
+      {
+       "title": "Why Socialist Policies Fail (PragerU)",
+       "url": "https://www.youtube.com/watch?v=9jxKm-tl-5Q",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Pro-market",
+       "hook": "A former Obama chief economist makes the case against socialism.",
+       "blurb": "PragerU features a former Obama-administration economist arguing socialist policies don't deliver what they promise. Note: PragerU sits on the polemical end — a situated argument to weigh, not settled analysis.",
+       "source": "Short video — watch the whole thing.",
+       "id": "why-socialist-policies-fail-prageru"
+      },
+      {
+       "title": "How Capitalism Exploits Us — and What We Can Do About It",
+       "url": "https://www.youtube.com/watch?v=UYqrjPNh20U",
+       "minutes": 8,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "Richard Wolff’s case for worker cooperatives and economic democracy.",
+       "blurb": "Richard Wolff offers the clearest far-left argument in the menu: capitalism is structurally exploitative, and worker ownership is the alternative. Treat it as an openly one-sided argument rather than a neutral overview. It is a serious version of a view worth understanding.",
+       "source": "Short video — watch the whole thing.",
+       "id": "how-capitalism-exploits-us-and-what-we-can-do-about-it"
+      },
+      {
+       "title": "Is Capitalism Reducing Poverty? (Wolff)",
+       "url": "https://www.youtube.com/watch?v=Co4FES0ehyI",
+       "minutes": 6,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "The market-critical answer to the 'markets ended poverty' story.",
+       "blurb": "Richard Wolff, for the Gravel Institute, contests the popular claim that capitalism has slashed global poverty — questioning the measures, the mechanisms, and who gets credit. A direct rebuttal to the abundance narrative.",
+       "source": "Gravel Institute — short video (~6 min), watch the whole thing.",
+       "id": "is-capitalism-reducing-poverty-wolff"
+      },
+      {
+       "title": "The Dirty Secret of Capitalism",
+       "url": "https://www.youtube.com/watch?v=th3KE_H27bs",
+       "minutes": 18,
+       "format": "watch",
+       "stance": "Market-critique",
+       "hook": "A plutocrat's case against trickle-down.",
+       "blurb": "Nick Hanauer — a self-described plutocrat — argues that decades of trickle-down orthodoxy got the economy backwards: workers and their spending, not the wealthy, are the real engine of growth, which makes rising inequality a threat rather than a harmless byproduct. A pointed demand-side critique of the standard story, and a deliberate sparring partner for the market-friendly voices elsewhere in the course.",
+       "source": "TED talk (~18 min) — watch the whole thing.",
+       "id": "the-dirty-secret-of-capitalism"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "appendix": {
+  "title": "Chapter readings to add (these don't count toward Joy of Econ)",
+  "intro": "These re-teach concepts the textbook already covers, and they haven't been added to the textbook yet. Feel free to use them, but they don't count toward your Joy of Econ hour.",
+  "groups": [
+   {
+    "title": "Ch 1 · Economic thinking",
+    "items": [
+     {
+      "title": "Core Principles & Optimization",
+      "url": "https://www.youtube.com/watch?v=Eq6beyKDkMI",
+      "blurb": "The three ideas that make you think like an economist."
+     },
+     {
+      "title": "Economics Is a Toolkit, Not a Subject",
+      "url": "https://open.spotify.com/episode/2EE9Drcy3qJ40CIGg95ZNK",
+      "blurb": "A way of thinking, not a set of facts to memorize."
+     }
+    ]
+   },
+   {
+    "title": "Ch 1 · Empiricism / method",
+    "items": [
+     {
+      "title": "Experiments in Economics",
+      "url": "https://www.youtube.com/watch?v=r1m4AiME0Hg",
+      "blurb": "How economists prove cause, not just correlation."
+     }
+    ]
+   },
+   {
+    "title": "Ch 3 · The price system",
+    "items": [
+     {
+      "title": "What If There Were No Prices?",
+      "url": "https://www.youtube.com/watch?v=zkPGfTEZ_r4",
+      "blurb": "What the price system quietly does, shown by its absence."
+     }
+    ]
+   },
+   {
+    "title": "Ch 4 · Price controls",
+    "items": [
+     {
+      "title": "Why 90% of Economists Oppose Rent Control",
+      "url": "https://www.youtube.com/watch?v=yoT76zITRx8",
+      "blurb": "The rare policy question economists actually agree on."
+     }
+    ]
+   },
+   {
+    "title": "Ch 5 · Opportunity cost",
+    "items": [
+     {
+      "title": "The Broken Window Fallacy",
+      "url": "https://www.youtube.com/watch?v=erJEaFpS9ls",
+      "blurb": "The seen and the unseen: destruction doesn't create wealth."
+     }
+    ]
+   },
+   {
+    "title": "Ch 8 · Subsidies & education",
+    "items": [
+     {
+      "title": "The Economics of Education (List)",
+      "url": "https://www.youtube.com/watch?v=UN9JH_kw3mI",
+      "blurb": "What actually raises achievement --- a field experiment."
+     }
+    ]
+   },
+   {
+    "title": "Ch 9 · Firm costs & transaction costs",
+    "items": [
+     {
+      "title": "Munger on Transaction Costs & the Sharing Economy",
+      "url": "https://www.youtube.com/watch?v=IAHGdSiCKbE",
+      "blurb": "When does a middleman actually create value?"
+     }
+    ]
+   },
+   {
+    "title": "Ch 14 · Labor markets",
+    "items": [
+     {
+      "title": "The Economics of Diversity",
+      "url": "https://www.youtube.com/watch?v=WgPOxOCxwwM",
+      "blurb": "Why a firm might value diversity --- on the numbers."
+     },
+     {
+      "title": "The Economics of Immigration",
+      "url": "https://www.youtube.com/watch?v=4XQXiCLzyAw",
+      "blurb": "What immigration actually does to wages and growth."
+     },
+     {
+      "title": "Gender Disparities",
+      "url": "https://www.youtube.com/watch?v=LLHXszHnakU",
+      "blurb": "Where the pay gap comes from --- tested in the field."
+     },
+     {
+      "title": "The Economics of Discrimination",
+      "url": "https://www.youtube.com/watch?v=hdejXLyguWI",
+      "blurb": "What experiments reveal about unequal treatment."
+     }
+    ]
+   },
+   {
+    "title": "Ch 18 · Externalities",
+    "items": [
+     {
+      "title": "Environmental Econ",
+      "url": "https://www.youtube.com/watch?v=BlAfFgKQ5r8",
+      "blurb": "> The toolkit for fixing pollution: tax it, cap it, or ban it."
+     },
+     {
+      "title": "The Economics of the Environment",
+      "url": "https://www.youtube.com/watch?v=gZ7Qjam4XPw",
+      "blurb": "List's experimental take on pollution and public goods."
+     }
+    ]
+   },
+   {
+    "title": "Ch 20 · Healthcare & asymmetric info",
+    "items": [
+     {
+      "title": "The Economics of Healthcare",
+      "url": "https://www.youtube.com/watch?v=cbBKoyjFLUY",
+      "blurb": "Why healthcare doesn't behave like a normal market."
+     },
+     {
+      "title": "Adverse Selection",
+      "url": "https://www.youtube.com/watch?v=YbNLIv-jlIw",
+      "blurb": "When the buyer knows more than the seller --- and markets unravel."
+     },
+     {
+      "title": "The Economics of Insurance",
+      "url": "https://open.spotify.com/episode/44NXPJnrvPshFQaaj6iWVF",
+      "blurb": "How pooling risk works --- and where it breaks."
+     }
+    ]
+   },
+   {
+    "title": "Ch 22 · Rent-seeking & public choice",
+    "items": [
+     {
+      "title": "Rent Seeking: Taking Without Giving",
+      "url": "https://www.youtube.com/watch?v=iYaA_e0FMW4",
+      "blurb": "Getting rich by capturing a privilege, not creating value."
+     },
+     {
+      "title": "Introduction to Public Choice (Tabarrok)",
+      "url": "https://www.youtube.com/watch?v=Yw4xIlFUyMc",
+      "blurb": "Economics applied to politics, cleanly introduced."
+     }
+    ]
+   },
+   {
+    "title": "Ch 24 · Oligopoly & game theory",
+    "items": [
+     {
+      "title": "This Game Theory Problem Will Change How You See the World",
+      "url": "https://www.youtube.com/watch?v=mScpHTIi-kM",
+      "blurb": "> Why rational players can all end up worse off."
+     }
+    ]
+   },
+   {
+    "title": "Ch 25 · Behavioral economics",
+    "items": [
+     {
+      "title": "Behavioral Economics",
+      "url": "https://www.youtube.com/watch?v=0eyIz6q6UX0",
+      "blurb": "Where real people quietly break the standard model."
+     }
+    ]
+   },
+   {
+    "title": "Ch 26 · Synthesis / schools of thought",
+    "items": [
+     {
+      "title": "Economic Schools of Thought",
+      "url": "https://www.youtube.com/watch?v=tZvjh1dxz08",
+      "blurb": "Keynesians, classicals, Marxists --- who believes what, and why."
+     },
+     {
+      "title": "The Most Important Economic Schools of Thought",
+      "url": "https://www.youtube.com/watch?v=o6UXRZ2XwgU",
+      "blurb": "A tour of the major schools --- a second take."
+     }
+    ]
+   }
+  ]
+ }
+}
