@@ -3,134 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Econ 150: Principles of Microeconomics</title>
-<style>
-:root {
-  --paper: #f7f4ed;
-  --ink: #1d2733;
-  --muted: #66717c;
-  --navy: #19324a;
-  --gold: #b88a3b;
-  --line: #d9d2c5;
-  --card: #fffdf8;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.55;
-}
-main { max-width: 980px; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
-header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.25rem; }
-.kicker {
-  color: var(--gold);
-  font: 700 .78rem/1.2 Arial, sans-serif;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-h1 { color: var(--navy); font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 1.05; margin: .65rem 0 .75rem; }
-.subtitle { color: var(--muted); font-size: 1.25rem; max-width: 720px; margin: 0; }
-.byline { color: var(--muted); font: .9rem Arial, sans-serif; margin-top: 1.1rem; }
-.notice {
-  background: var(--navy);
-  color: #fff;
-  border-radius: 10px;
-  padding: 1rem 1.15rem;
-  margin: 0 0 2.5rem;
-  font: .95rem/1.5 Arial, sans-serif;
-}
-h2 { color: var(--navy); font-size: 1.65rem; margin: 2.4rem 0 1rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .85rem; }
-a.card {
-  display: block;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--gold);
-  border-radius: 8px;
-  color: var(--ink);
-  padding: 1rem 1.1rem;
-  text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-a.card:hover, a.card:focus {
-  box-shadow: 0 5px 18px rgba(25, 50, 74, .12);
-  transform: translateY(-2px);
-}
-.chapter { display: block; color: var(--muted); font: .75rem Arial, sans-serif; letter-spacing: .04em; margin-bottom: .25rem; text-transform: uppercase; }
-footer { border-top: 1px solid var(--line); color: var(--muted); font: .8rem/1.5 Arial, sans-serif; margin-top: 3rem; padding-top: 1.25rem; }
-</style>
+<title>Principles of Microeconomics</title>
+<meta name="description" content="The Science of Choice, Incentives, and Human Flourishing">
+<meta property="og:title" content="Principles of Microeconomics">
+<meta property="og:description" content="The Science of Choice, Incentives, and Human Flourishing">
+<meta property="og:image" content="https://econ.benjaminpacini.com/assets/cover.jpg">
+<link rel="stylesheet" href="/assets/book.css">
+<style>:root{--accent:#1b2430;--accent-hover:#2c3a4c;--numeral:#94702c;--badge-bg:#1b2430;--badge-fg:#e0b866;--kicker:#85601f;--tint:#f7f2e8;--tint-line:#e0cfa6;--watermark:#f5f0e6;}</style>
 </head>
 <body>
-<main>
-<header>
-  <div class="kicker">Econ 150 · Benjamin Pacini</div>
-  <h1>Principles of Microeconomics</h1>
-  <p class="subtitle">The Science of Choice, Incentives, and Human Flourishing</p>
-  <div class="byline">A living, open textbook for learning economics.</div>
+<header class="fm-top">
+  <div class="fm-top-in">
+    <div class="fm-crumbs">
+      <a class="fm-author" href="https://benjaminpacini.com/">Benjamin Pacini</a>
+      <span class="fm-slash" aria-hidden="true">/</span>
+      <a class="fm-book" href="/">Principles of Microeconomics</a>
+    </div>
+    <nav aria-label="Book"><a class="fm-contents-link" href="/contents/index.html">Contents</a></nav>
+  </div>
 </header>
-
-<div class="notice">
-  This is the first public version of the new Econ 150 home. The chapter files are now being served directly from the textbook repository; navigation, images, audio, and interactive elements will be polished in the next passes.
-</div>
-
-<h2>Start here</h2>
-<div class="grid">
-  <a class="card" href="introduction.html"><span class="chapter">Opening</span>Introduction: The Wealth of Nations</a>
-  <a class="card" href="Chapter0.html"><span class="chapter">Chapter 0</span>Algebra Review</a>
-</div>
-
-<h2>Reading tools</h2>
-<div class="grid">
-  <a class="card" href="joy-of-econ.html"><span class="chapter">Reading menu</span>Joy of Econ</a>
-</div>
-
-<h2>Unit I · The Case for the Market</h2>
-<div class="grid">
-  <a class="card" href="Chapter1.html"><span class="chapter">Chapter 1</span>Thinking Like An Economist</a>
-  <a class="card" href="Chapter2.html"><span class="chapter">Chapter 2</span>Consumer Choice</a>
-  <a class="card" href="Chapter3.html"><span class="chapter">Chapter 3</span>Supply and Demand I: The Price System</a>
-  <a class="card" href="Chapter4.html"><span class="chapter">Chapter 4</span>Supply and Demand II: Shifts, Shocks, and Price Controls</a>
-  <a class="card" href="Chapter5.html"><span class="chapter">Chapter 5</span>Trade, Specialization, and Efficiency</a>
-  <a class="card" href="Chapter6.html"><span class="chapter">Chapter 6</span>Welfare Analysis</a>
-  <a class="card" href="Chapter7.html"><span class="chapter">Chapter 7</span>Intervention Distortions I: Taxes, Subsidies, and Incidence</a>
-  <a class="card" href="Chapter8.html"><span class="chapter">Chapter 8</span>Gains from Trade: The Case for International Cooperation</a>
-</div>
-
-<h2>Unit II · The Firm in Perfect Competition</h2>
-<div class="grid">
-  <a class="card" href="Chapter9.html"><span class="chapter">Chapter 9</span>Firm Model I: Costs</a>
-  <a class="card" href="Chapter10.html"><span class="chapter">Chapter 10</span>Firm Model II: Short-Run Decisions</a>
-  <a class="card" href="Chapter11.html"><span class="chapter">Chapter 11</span>Firm Model III: Long-Run Decisions</a>
-  <a class="card" href="Chapter12.html"><span class="chapter">Chapter 12</span>Factor Markets</a>
-  <a class="card" href="Chapter13.html"><span class="chapter">Chapter 13</span>Labor Markets and Discrimination</a>
-  <a class="card" href="Chapter14.html"><span class="chapter">Chapter 14</span>Unit Capstone: The Free Market Prescription for Poverty</a>
-</div>
-
-<h2>Unit III · The Critique of the Market</h2>
-<div class="grid">
-  <a class="card" href="Chapter15.html"><span class="chapter">Chapter 15</span>Elasticity</a>
-  <a class="card" href="Chapter16.html"><span class="chapter">Chapter 16</span>Institutions</a>
-  <a class="card" href="Chapter17.html"><span class="chapter">Chapter 17</span>Market Failures I: The Tragedy of the Commons</a>
-  <a class="card" href="Chapter18.html"><span class="chapter">Chapter 18</span>Market Failures II: Externalities</a>
-  <a class="card" href="Chapter19.html"><span class="chapter">Chapter 19</span>Market Failures III: Taxes, Subsidies, and Incentives</a>
-  <a class="card" href="Chapter20.html"><span class="chapter">Chapter 20</span>Unit Capstone: The Economics of Healthcare</a>
-</div>
-
-<h2>Unit IV · The Firm in Imperfect Competition</h2>
-<div class="grid">
-  <a class="card" href="Chapter21.html"><span class="chapter">Chapter 21</span>Market Power I: Monopoly</a>
-  <a class="card" href="Chapter22.html"><span class="chapter">Chapter 22</span>Market Power II: Addressing Market Power</a>
-  <a class="card" href="Chapter23.html"><span class="chapter">Chapter 23</span>Imperfect Competition I: Monopolistic Competition</a>
-  <a class="card" href="Chapter24.html"><span class="chapter">Chapter 24</span>Imperfect Competition II: Oligopoly, Cartels, and Collusion</a>
-  <a class="card" href="Chapter25.html"><span class="chapter">Chapter 25</span>Behavioral Economics</a>
-  <a class="card" href="Chapter26.html"><span class="chapter">Chapter 26</span>The Case for (and Limits of) Markets</a>
-</div>
-
-<footer>
-  Published from the Econ 150 textbook repository. Draft homework pages are intentionally not linked from this student-facing landing page yet.
-</footer>
+<main class="fm-main">
+  <section class="fm-cover" aria-labelledby="fm-title">
+    <img class="fm-cover-img" src="/assets/cover.jpg" width="600" height="750" alt="Book cover: a satellite photo of the Korean peninsula at night. South Korea is full of light; North Korea is almost completely dark.">
+    <div class="fm-cover-text">
+      <p class="fm-kicker">Econ 150 · Brigham Young University–Idaho</p>
+      <h1 class="fm-cover-title" id="fm-title">Principles of Microeconomics</h1>
+      <p class="fm-cover-sub">The Science of Choice, Incentives, and Human Flourishing</p>
+      <p class="fm-byline">Benjamin Pacini, Ed.D.</p>
+    </div>
+    <div class="fm-actions">
+      <a class="fm-btn" href="/contents/index.html">Open the book</a>
+      <a class="fm-btn fm-btn-quiet" href="/introduction.html">Start with the Introduction</a>
+    </div>
+    <p class="fm-stats">26 chapters in 4 units · free and open</p>
+  </section>
 </main>
+<footer class="fm-foot">
+  <div class="fm-foot-in">
+    <p>© 2026 Benjamin Pacini.</p>
+    <p>Econ 150 · Brigham Young University–Idaho</p>
+  </div>
+</footer>
 </body>
 </html>

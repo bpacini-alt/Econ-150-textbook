@@ -25,7 +25,8 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 | `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The script rewrites everything outside them. |
 | `etb-live/images/` | Chapter images, copied from EdTechBooks and kept at the same paths the pages use (`/images/content_images/…`) | Yes |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
-| `etb-live/index.html` | The book's home page | Yes |
+| `etb-live/index.html`, `etb-live/contents/index.html` | The cover and the table of contents, **generated** by `build/build_front.py` | **Never by hand.** Edit the units and chapter titles in `build/build_front.py`; each chapter's subtitle comes from its own title card. |
+| `build/build_front.py` | Builds the cover, the contents page, `etb-live/assets/book.css`, and `etb-live/assets/cover.jpg` | Yes |
 | `etb-live/assets/` | Copies of the audio player and report button placed by `wrap_pages.py` | **Never by hand.** Edit `audio/player/` or `feedback/` and rerun the script. |
 | `build/wrap_pages.py` | Adds the page header, the audio player, and the Report a problem button to each chapter | Yes |
 | `feedback/` | The Report a problem button and the function that receives reports | Yes (see "Shared") |
@@ -35,6 +36,8 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 
 After adding a chapter, changing the player, or editing anything in `menus/`, run `python3 build/wrap_pages.py` from the repository root and commit the result in the same pull request.
 
+After adding or renaming a chapter, or changing a chapter's subtitle, run `python3 build/build_front.py` as well, so the contents page matches.
+
 ## Shared between the two books
 
 - **Audio player:** `audio/player/etb-audio.js` and `audio/player/etb-audio.css` are the one place to edit the player, and both repositories must carry identical copies. Change both in matching pull requests. Never edit the copies the builds place in the published folder.
@@ -42,6 +45,7 @@ After adding a chapter, changing the player, or editing anything in `menus/`, ru
   - **Where it goes:** Worker → **Settings** → the top-level **Variables and Secrets** section → **Add variable**, Type **Secret**, then **Deploy**. Not the "Variables and secrets" box inside the **Build** section: that one is only available while the site builds, and the button can't see it. A plain **Text** variable gets wiped by the next deploy, so it must be a Secret.
   - **The token:** a fine-grained GitHub token limited to `textbook-feedback`, with Issues: Read and write. It expires yearly. To renew, regenerate it on GitHub and click **Rotate** on the secret in both Workers. If the button says "That didn't send," a missing or expired token is the first thing to check (the function answers `not_configured` when it has none).
 - **Joy reading menus:** `menus/build_menu.py`, `menus/joy-menu.css`, and `menus/joy-menu.js` are identical in both repositories and change in matching pull requests. Each repository keeps its own menu data (`menus/joy-of-learning.json` in EDCOR 310, `menus/joy-of-econ.json` here in Econ 150). See `menus/README.md`.
+- **Front pages:** `frontmatter/frontmatter.py` draws both books' cover, contents, and About pages from one design. Both repositories carry identical copies; change it in matching pull requests. Each book passes its own titles, chapters, and colors from its build script (EDCOR 310: `build/build_site.py`; Econ 150: `build/build_front.py`). Never edit the generated pages by hand.
 - **Covers:** the full-size EdTechBooks cover is archived at `etb-live/cover.png`. The web version, cleaned up for the new site, is `build/cover-web.png`.
 
 ## Known Cloudflare behavior

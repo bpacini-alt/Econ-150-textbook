@@ -71,7 +71,7 @@
     nav.setAttribute("aria-label", "Textbook chapter navigation");
     nav.innerHTML = '<div class="etb-nav-inner">' +
       previous +
-      '<a class="etb-nav-home" href="index.html" aria-label="Return to textbook home">Home</a>' +
+      '<a class="etb-nav-home" href="/contents/index.html" aria-label="Table of contents">Contents</a>' +
       next +
       "</div>";
     document.body.insertBefore(nav, document.body.firstChild);
