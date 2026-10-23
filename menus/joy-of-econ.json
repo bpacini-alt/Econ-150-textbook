@@ -1,7 +1,7 @@
 {
   "course": {
     "course": "Econ 150",
-    "menuTitle": "The Joy of Econ",
+    "menuTitle": "Joy of Econ",
     "bookTitle": "Principles of Microeconomics",
     "bookHome": "/",
     "contents": "/",
@@ -10,6 +10,7 @@
     "ring": "#c9a65f",
     "requirement": "hour-per-unit",
     "storageKey": "joy-of-econ-econ150-v1",
+    "ratingsBook": "econ-150",
     "stanceFilter": true,
     "description": "The Joy of Econ reading menu for Econ 150: applications, debates, and economics pushed past the textbook, about an hour per unit.",
     "reportScript": "assets/report.js"

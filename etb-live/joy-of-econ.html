@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Joy of Econ · Econ 150</title>
-<meta name="description" content="The Joy of Econ reading menu for Econ 150: applications, debates, and economics pushed past the textbook, about an hour per unit.">
+<title>Joy of Econ · Econ 150</title>
+<meta name="description" content="Joy of Econ reading menu for Econ 150: applications, debates, and economics pushed past the textbook, about an hour per unit.">
 <style>:root{--acc:#1b2430;--acc2:#a87d32;--ring:#c9a65f;}</style>
 <style>
 /* Joy reading menus (Joy of Learning, Joy of Econ): shared styles.
@@ -167,7 +167,36 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
 .jm-hook { color: var(--ink); }
 .jm-source, .jm-alt, .jm-pairs { font-family: var(--sans); font-size: 13px; color: var(--muted); margin: 0 0 .35rem; }
 .jm-alt a, .jm-pairs a { font-weight: 600; }
-.jm-actions { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .75rem; }
+.jm-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: .75rem; }
+.jm-rating { margin-left: auto; position: relative; font-family: var(--sans); }
+.jm-rating-toggle {
+  border: 0; background: transparent; color: var(--faint); cursor: pointer;
+  font: 600 11px/1.2 var(--sans); padding: .15rem .2rem;
+}
+.jm-rating-toggle:hover, .jm-rating-toggle[aria-expanded="true"] { color: var(--acc); text-decoration: underline; }
+.jm-rating-panel {
+  display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center;
+  gap: .35rem .5rem; margin-top: .35rem;
+}
+.jm-rating-hint { color: var(--faint); font-size: 11px; white-space: nowrap; }
+.jm-rating-buttons { display: inline-flex; gap: .2rem; }
+.jm-rating-btn {
+  width: 1.55rem; height: 1.45rem; padding: 0; border-radius: 4px;
+  font-size: 11px; line-height: 1; color: var(--muted);
+}
+.jm-rating-btn:hover { border-color: var(--acc); color: var(--acc); }
+.jm-rating-btn[aria-pressed="true"] { background: var(--acc); border-color: var(--acc); color: #fff; }
+.jm-rating-summary {
+  flex-basis: 100%; display: inline-flex; align-items: center; justify-content: flex-end;
+  gap: .4rem; color: var(--faint); font-size: 10.5px; white-space: nowrap;
+}
+.jm-rating-chart { display: inline-flex; width: 5.5rem; height: .35rem; overflow: hidden; border-radius: 99px; background: var(--line); }
+.jm-rating-segment { height: 100%; min-width: 0; }
+.jm-rating-1 { background: var(--crit); }
+.jm-rating-2 { background: var(--acc2, var(--acc)); }
+.jm-rating-3 { background: var(--mine); }
+.jm-rating-4 { background: #c09135; }
+.jm-rating-yours { color: var(--text); }
 .jm-hidden { display: none !important; }
 
 /* Appendix */
@@ -211,7 +240,7 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
 <div class="jm-wrap" style="padding-top:2rem">
 <section class="jm-card" aria-labelledby="jm-title">
 <p class="jm-kicker">Econ 150 · Reading Menu</p>
-<h1 class="jm-title" id="jm-title">The Joy of Econ</h1>
+<h1 class="jm-title" id="jm-title">Joy of Econ</h1>
 <p class="jm-lede">Each unit lays out a spread of readings and videos. Pick about an hour&#x27;s worth from every unit. That&#x27;s your batch. Your group divides up the rest and teaches it back to each other: one big jigsaw.</p>
 <details class="jm-howto" open><summary>How this works</summary><div class="jm-howto-body">
 <p><strong>How the times work. </strong>A number like “~25 min” is a stop point, not a full runtime. Several sources run an hour or more, and the minutes tell you how far to go. When it says ~25 min, stop around 25.</p>
@@ -1075,9 +1104,9 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
 </section>
 </section>
 <details class="jm-appendix"><summary>Chapter readings to add (these don&#x27;t count toward Joy of Econ)</summary><p>These re-teach concepts the textbook already covers, and they haven&#x27;t been added to the textbook yet. Feel free to use them, but they don&#x27;t count toward your Joy of Econ hour.</p><h3>Ch 1 · Economic thinking</h3><ul><li><a href="https://www.youtube.com/watch?v=Eq6beyKDkMI" target="_blank" rel="noopener">Core Principles &amp; Optimization</a> — The three ideas that make you think like an economist.</li><li><a href="https://open.spotify.com/episode/2EE9Drcy3qJ40CIGg95ZNK" target="_blank" rel="noopener">Economics Is a Toolkit, Not a Subject</a> — A way of thinking, not a set of facts to memorize.</li></ul><h3>Ch 1 · Empiricism / method</h3><ul><li><a href="https://www.youtube.com/watch?v=r1m4AiME0Hg" target="_blank" rel="noopener">Experiments in Economics</a> — How economists prove cause, not just correlation.</li></ul><h3>Ch 3 · The price system</h3><ul><li><a href="https://www.youtube.com/watch?v=zkPGfTEZ_r4" target="_blank" rel="noopener">What If There Were No Prices?</a> — What the price system quietly does, shown by its absence.</li></ul><h3>Ch 4 · Price controls</h3><ul><li><a href="https://www.youtube.com/watch?v=yoT76zITRx8" target="_blank" rel="noopener">Why 90% of Economists Oppose Rent Control</a> — The rare policy question economists actually agree on.</li></ul><h3>Ch 5 · Opportunity cost</h3><ul><li><a href="https://www.youtube.com/watch?v=erJEaFpS9ls" target="_blank" rel="noopener">The Broken Window Fallacy</a> — The seen and the unseen: destruction doesn&#x27;t create wealth.</li></ul><h3>Ch 8 · Subsidies &amp; education</h3><ul><li><a href="https://www.youtube.com/watch?v=UN9JH_kw3mI" target="_blank" rel="noopener">The Economics of Education (List)</a> — What actually raises achievement --- a field experiment.</li></ul><h3>Ch 9 · Firm costs &amp; transaction costs</h3><ul><li><a href="https://www.youtube.com/watch?v=IAHGdSiCKbE" target="_blank" rel="noopener">Munger on Transaction Costs &amp; the Sharing Economy</a> — When does a middleman actually create value?</li></ul><h3>Ch 14 · Labor markets</h3><ul><li><a href="https://www.youtube.com/watch?v=WgPOxOCxwwM" target="_blank" rel="noopener">The Economics of Diversity</a> — Why a firm might value diversity --- on the numbers.</li><li><a href="https://www.youtube.com/watch?v=4XQXiCLzyAw" target="_blank" rel="noopener">The Economics of Immigration</a> — What immigration actually does to wages and growth.</li><li><a href="https://www.youtube.com/watch?v=LLHXszHnakU" target="_blank" rel="noopener">Gender Disparities</a> — Where the pay gap comes from --- tested in the field.</li><li><a href="https://www.youtube.com/watch?v=hdejXLyguWI" target="_blank" rel="noopener">The Economics of Discrimination</a> — What experiments reveal about unequal treatment.</li></ul><h3>Ch 18 · Externalities</h3><ul><li><a href="https://www.youtube.com/watch?v=BlAfFgKQ5r8" target="_blank" rel="noopener">Environmental Econ</a> — &gt; The toolkit for fixing pollution: tax it, cap it, or ban it.</li><li><a href="https://www.youtube.com/watch?v=gZ7Qjam4XPw" target="_blank" rel="noopener">The Economics of the Environment</a> — List&#x27;s experimental take on pollution and public goods.</li></ul><h3>Ch 20 · Healthcare &amp; asymmetric info</h3><ul><li><a href="https://www.youtube.com/watch?v=cbBKoyjFLUY" target="_blank" rel="noopener">The Economics of Healthcare</a> — Why healthcare doesn&#x27;t behave like a normal market.</li><li><a href="https://www.youtube.com/watch?v=YbNLIv-jlIw" target="_blank" rel="noopener">Adverse Selection</a> — When the buyer knows more than the seller --- and markets unravel.</li><li><a href="https://open.spotify.com/episode/44NXPJnrvPshFQaaj6iWVF" target="_blank" rel="noopener">The Economics of Insurance</a> — How pooling risk works --- and where it breaks.</li></ul><h3>Ch 22 · Rent-seeking &amp; public choice</h3><ul><li><a href="https://www.youtube.com/watch?v=iYaA_e0FMW4" target="_blank" rel="noopener">Rent Seeking: Taking Without Giving</a> — Getting rich by capturing a privilege, not creating value.</li><li><a href="https://www.youtube.com/watch?v=Yw4xIlFUyMc" target="_blank" rel="noopener">Introduction to Public Choice (Tabarrok)</a> — Economics applied to politics, cleanly introduced.</li></ul><h3>Ch 24 · Oligopoly &amp; game theory</h3><ul><li><a href="https://www.youtube.com/watch?v=mScpHTIi-kM" target="_blank" rel="noopener">This Game Theory Problem Will Change How You See the World</a> — &gt; Why rational players can all end up worse off.</li></ul><h3>Ch 25 · Behavioral economics</h3><ul><li><a href="https://www.youtube.com/watch?v=0eyIz6q6UX0" target="_blank" rel="noopener">Behavioral Economics</a> — Where real people quietly break the standard model.</li></ul><h3>Ch 26 · Synthesis / schools of thought</h3><ul><li><a href="https://www.youtube.com/watch?v=tZvjh1dxz08" target="_blank" rel="noopener">Economic Schools of Thought</a> — Keynesians, classicals, Marxists --- who believes what, and why.</li><li><a href="https://www.youtube.com/watch?v=o6UXRZ2XwgU" target="_blank" rel="noopener">The Most Important Economic Schools of Thought</a> — A tour of the major schools --- a second take.</li></ul></details>
-<p class="jm-foot">The Joy of Econ · Econ 150 · Your picks are saved in this browser only. They don't reach your instructor or your group.</p>
+<p class="jm-foot">Joy of Econ · Econ 150 · Your picks are saved in this browser only. They don't reach your instructor or your group.</p>
 </main>
-<script type="application/json" id="jm-config">{"storageKey": "joy-of-econ-econ150-v1", "menuTitle": "The Joy of Econ"}</script>
+<script type="application/json" id="jm-config">{"storageKey":"joy-of-econ-econ150-v1","menuTitle":"Joy of Econ","ratingsBook":"econ-150","ratingsEndpoint":"/api/ratings"}</script>
 <script>
 /* Joy reading menus (Joy of Learning, Joy of Econ): shared behavior.
    Identical copies live in both textbook repositories (menus/joy-menu.js).
@@ -1141,11 +1170,62 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
   }
 
   // ---------- per-entry controls ----------
-  function makeBtn(cls, label) {
-    var b = document.createElement("button");
-    b.type = "button"; b.className = "jm-btn " + cls; b.textContent = label;
-    return b;
+  function ratingName(n) {
+    return ({
+      1: "F-tier · Replace",
+      2: "B-tier · Reconsider",
+      3: "A-tier · Keep",
+      4: "S-tier · Life-changing · Celebrate"
+    })[n] || "";
   }
+  function parseRatingResponse(response) {
+    return response.text().then(function (raw) {
+      var data = {};
+      try { data = raw ? JSON.parse(raw) : {}; } catch (e) {
+        throw new Error("non-JSON response");
+      }
+      if (!response.ok || !data.ok) throw new Error(data.error || ("HTTP " + response.status));
+      return data;
+    });
+  }
+  function paintRatingButtons(buttons, value) {
+    buttons.forEach(function (button) {
+      button.setAttribute("aria-pressed", String(Number(button.dataset.rating) === Number(value)));
+    });
+  }
+  function renderRatingSummary(summaryEl, data) {
+    while (summaryEl.firstChild) summaryEl.removeChild(summaryEl.firstChild);
+    if (!data || !data.total) {
+      summaryEl.textContent = "No semester ratings yet.";
+      return;
+    }
+    var count = document.createElement("span");
+    count.textContent = data.total + (data.total === 1 ? " response" : " responses");
+    summaryEl.appendChild(count);
+    var chart = document.createElement("span");
+    chart.className = "jm-rating-chart";
+    var labels = [];
+    [1, 2, 3, 4].forEach(function (rating) {
+      var segment = document.createElement("span");
+      var n = Number(data.counts && data.counts[rating]) || 0;
+      var pct = Number(data.percentages && data.percentages[rating]) || 0;
+      segment.className = "jm-rating-segment jm-rating-" + rating;
+      segment.style.width = pct + "%";
+      segment.title = ratingName(rating) + ": " + n;
+      chart.appendChild(segment);
+      labels.push(rating + ": " + n);
+    });
+    chart.setAttribute("role", "img");
+    chart.setAttribute("aria-label", labels.join(", "));
+    summaryEl.appendChild(chart);
+    if (data.yourRating) {
+      var yours = document.createElement("span");
+      yours.className = "jm-rating-yours";
+      yours.textContent = "You: " + data.yourRating;
+      summaryEl.appendChild(yours);
+    }
+  }
+
   entries.forEach(function (el) {
     var id = el.dataset.id;
     var title = el.querySelector(".jm-entry-title a").textContent.trim();
@@ -1155,7 +1235,6 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
     mine.setAttribute("aria-label", "I’ll read this: " + title);
     group.setAttribute("aria-label", "My group has it: " + title);
     bar.appendChild(mine); bar.appendChild(group);
-    el.appendChild(bar);
 
     function paint() {
       var m = !!state.mine[id], g = !!state.group[id];
@@ -1173,8 +1252,87 @@ main.jm-wrap { padding-block: 1.25rem 4rem; }
       if (state.group[id]) delete state.group[id]; else state.group[id] = true;
       paint(); save(); applyFilters();
     });
-  });
 
+    // Ratings stay quiet until a student asks for them.
+    var rating = document.createElement("div"); rating.className = "jm-rating";
+    var toggle = makeBtn("jm-rating-toggle", "Bang for buck");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Rate the bang for buck for " + title);
+    toggle.title = "The question is not whether it was easy; it is how much you learned, grew, and enjoyed for the time it took.";
+    var panel = document.createElement("div"); panel.className = "jm-rating-panel jm-hidden";
+    var hint = document.createElement("span"); hint.className = "jm-rating-hint";
+    hint.textContent = "What did you get for the time?";
+    panel.appendChild(hint);
+    var ratingButtonsWrap = document.createElement("span"); ratingButtonsWrap.className = "jm-rating-buttons";
+    var ratingButtons = [];
+    [1, 2, 3, 4].forEach(function (ratingValue) {
+      var ratingButton = makeBtn("jm-rating-btn", String(ratingValue));
+      ratingButton.dataset.rating = String(ratingValue);
+      ratingButton.title = ratingName(ratingValue);
+      ratingButton.setAttribute("aria-label", ratingName(ratingValue));
+      ratingButton.setAttribute("aria-pressed", "false");
+      ratingButtons.push(ratingButton);
+      ratingButtonsWrap.appendChild(ratingButton);
+    });
+    panel.appendChild(ratingButtonsWrap);
+    var ratingSummaryEl = document.createElement("span"); ratingSummaryEl.className = "jm-rating-summary";
+    panel.appendChild(ratingSummaryEl);
+    rating.appendChild(toggle); rating.appendChild(panel); bar.appendChild(rating);
+
+    var summaryLoaded = false;
+    var ratingBusy = false;
+    function loadRatingSummary() {
+      ratingSummaryEl.textContent = "Loading…";
+      var url = (cfg.ratingsEndpoint || "/api/ratings")
+        + "?book=" + encodeURIComponent(cfg.ratingsBook)
+        + "&reading=" + encodeURIComponent(id);
+      fetch(url, { credentials: "same-origin", cache: "no-store" })
+        .then(parseRatingResponse)
+        .then(function (data) {
+          summaryLoaded = true;
+          renderRatingSummary(ratingSummaryEl, data);
+          paintRatingButtons(ratingButtons, data.yourRating);
+        })
+        .catch(function () {
+          ratingSummaryEl.textContent = "Ratings are unavailable right now.";
+        });
+    }
+    function saveRating(value) {
+      if (ratingBusy) return;
+      ratingBusy = true;
+      ratingButtons.forEach(function (button) { button.disabled = true; });
+      fetch(cfg.ratingsEndpoint || "/api/ratings", {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ book: cfg.ratingsBook, reading: id, rating: Number(value) })
+      })
+        .then(parseRatingResponse)
+        .then(function (data) {
+          summaryLoaded = true;
+          renderRatingSummary(ratingSummaryEl, data);
+          paintRatingButtons(ratingButtons, data.yourRating);
+          say("Saved. Thanks for the feedback.");
+        })
+        .catch(function () {
+          ratingSummaryEl.textContent = "Ratings are unavailable right now.";
+          say("Ratings are unavailable right now.");
+        })
+        .then(function () {
+          ratingBusy = false;
+          ratingButtons.forEach(function (button) { button.disabled = false; });
+        });
+    }
+    toggle.addEventListener("click", function () {
+      var open = toggle.getAttribute("aria-expanded") !== "true";
+      toggle.setAttribute("aria-expanded", String(open));
+      panel.classList.toggle("jm-hidden", !open);
+      if (open && !summaryLoaded) loadRatingSummary();
+    });
+    ratingButtons.forEach(function (button) {
+      button.addEventListener("click", function () { saveRating(button.dataset.rating); });
+    });
+  });
   // ---------- meters ----------
   var barText = document.getElementById("jm-meter-text");
   var barFill = document.getElementById("jm-meter-fill");
