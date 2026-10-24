@@ -11,7 +11,7 @@ Those two documents are identical in both textbook repositories (`edcor-310-text
 
 1. Start from the current `main`. Check open pull requests and the last few merges for the same task.
 2. Claim the work: open a draft pull request titled with the task as soon as you start.
-3. Every change goes through a branch and a pull request. Never push directly to `main`.
+3. Every collaborator change goes through a branch and a pull request. The private prose editor is the documented exception: Benjamin's Save and publish action commits chapter prose directly to `main`.
 4. Before you ask for review, open the pull request's **Files changed** tab and confirm it touches only the files you meant to change.
 5. Merging is Benjamin's approval. Don't merge, close, or overwrite someone else's pull request.
 6. Ask Benjamin before deleting files or branches.
@@ -22,7 +22,7 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 
 | Folder or file | What it is | Edit it? |
 |---|---|---|
-| `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The script rewrites everything outside them. |
+| `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The private editor changes the page prose and commits it directly. |
 | `etb-live/images/` | Chapter images, copied from EdTechBooks and kept at the same paths the pages use (`/images/content_images/…`) | Yes |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
 | `etb-live/index.html`, `etb-live/contents/index.html` | The cover and the table of contents, **generated** by `build/build_front.py` | **Never by hand.** Edit the units and chapter titles in `build/build_front.py`; each chapter's subtitle comes from its own title card. |
@@ -37,6 +37,22 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 After adding a chapter, changing the player, or editing anything in `menus/`, run `python3 build/wrap_pages.py` from the repository root and commit the result in the same pull request.
 
 After adding or renaming a chapter, or changing a chapter's subtitle, run `python3 build/build_front.py` as well, so the contents page matches.
+
+## Private prose editor
+
+# Private prose editor
+
+The book pages include an **Edit** link for the content pages listed in `etb-live/manifest.json`. The editor is served at `/editor/`; Cloudflare Access must protect `econ.benjaminpacini.com/editor/*`. The Worker also validates the Access JWT and allows only the three email addresses in `feedback/worker.js`.
+
+For each Worker, set these top-level Worker variables and secrets in Cloudflare:
+
+- Text variable `ACCESS_TEAM_DOMAIN`: the full Access team origin, such as `https://your-team.cloudflareaccess.com`.
+- Text variable `ACCESS_AUD`: the Application Audience tag for that book's `/editor/*` Access application.
+- Secret `EDITOR_GITHUB_TOKEN`: a fine-grained token with Contents: Read and write for this textbook repository only.
+
+The two repositories use the same `feedback/worker.js` and `editor/index.html`, but each has its own Access application audience and its own Worker secret. The token is never stored in Git or sent to the browser.
+
+The editor writes to `main` when Benjamin selects **Save and publish**. Econ 150's source page is also its published page, so one file is committed. Cloudflare deploys the commit through the repository's existing deployment connection.
 
 ## Shared between the two books
 
