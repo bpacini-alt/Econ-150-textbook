@@ -96,10 +96,19 @@ def main():
             skipped.append(page.name + " (already a full page)")
             continue
         title = titles.get(page.name, page.stem)
+        rendered = HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + FOOTER
+        if page.name in titles and body.strip():
+            edit_path = urllib.parse.quote("etb-live/" + page.name, safe="/")
+            edit_link = f'<a class="etb-author-edit" href="/editor/?book=econ-150&amp;path={edit_path}">Edit</a>'
+            edit_style = '<style>.etb-author-edit{position:fixed;right:14px;top:14px;z-index:2000;background:#1b2430;color:#fff;padding:7px 11px;border-radius:6px;font:600 12px Arial,sans-serif;text-decoration:none;opacity:.78}.etb-author-edit:hover{opacity:1}</style>\n'
+            rendered = rendered.replace("<body>\n", "<body>\n" + edit_style + edit_link + "\n", 1)
         with open(page, "w", encoding="utf-8", newline="") as f:
-            f.write(HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + FOOTER)
+            f.write(rendered)
         wrapped += 1
 
+    # Private prose editor; Access protects /editor/* and the Worker checks its JWT.
+    (SITE / "editor").mkdir(exist_ok=True)
+    shutil.copyfile(ROOT / "editor" / "index.html", SITE / "editor" / "index.html")
     print(f"Wrapped {wrapped} pages; player copied to {ASSETS.relative_to(ROOT)}/")
     for s in skipped:
         print("  skipped", s)
@@ -108,6 +117,7 @@ def main():
     # so the loop above skips it as "already a full page".
     import subprocess
     import sys
+import urllib.parse
     subprocess.run(
         [sys.executable, str(ROOT / "menus" / "build_menu.py"),
          str(ROOT / "menus" / "joy-of-econ.json"), str(SITE / "joy-of-econ.html")],
