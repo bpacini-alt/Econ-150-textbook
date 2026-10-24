@@ -85,7 +85,21 @@ UNITS = [
 ]
 
 # One or two sentences under each unit's name on the contents page. Empty until written.
-HOOKS = {"I": "", "II": "", "III": "", "IV": ""}
+HOOKS = {
+    "I": "Nobody is in charge of London's bread, and the shelves are full every morning anyway. "
+         "This unit is about how that happens, and why it leaves economists a little starry-eyed about prices.",
+    "II": "Airlines fly billions of people every year and still barely make money; Warren Buffett once joked that "
+          "a farsighted investor at Kitty Hawk would have shot Orville Wright down. That's competition doing its job, "
+          "rough on the airline and great for anyone buying a ticket. This unit follows a firm's costs to see how it "
+          "happens, and what the same pressure means for the people it hires.",
+    "III": "A student can walk away from a twelve-dollar sandwich. A patient can't walk away from insulin. "
+           "This unit looks at where markets start to struggle: when buyers can't leave, when nobody owns the lake, "
+           "when the cost lands on someone who never agreed to the deal, and in healthcare, where it all happens at once.",
+    "IV": "Some companies get big because millions of people keep choosing them. Others get big because they own "
+          "the only bridge into town, or because their lobbyists won them protection from competitors, which economists "
+          "call rent-seeking. This unit is about telling the two apart, and it ends with a question markets can't answer "
+          "for us: they're very good at getting us what we want, so what should we want?",
+}
 
 
 def subtitle(file):
