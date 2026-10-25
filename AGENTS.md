@@ -54,6 +54,8 @@ The two repositories use the same `feedback/worker.js` and `editor/index.html`, 
 
 The editor writes to `main` when Benjamin selects **Save and publish**. Econ 150's source page is also its published page, so one file is committed. Cloudflare deploys the commit through the repository's existing deployment connection.
 
+The editor changes only page text. It keeps every style, script, and link the page already has, and it refuses to publish if a save would remove any of them. (An earlier version stripped scripts inside the page, which would have broken interactive widgets; see the October 24, 2026 fix.)
+
 ## Shared between the two books
 
 - **Audio player:** `audio/player/etb-audio.js` and `audio/player/etb-audio.css` are the one place to edit the player, and both repositories must carry identical copies. Change both in matching pull requests. Never edit the copies the builds place in the published folder.
