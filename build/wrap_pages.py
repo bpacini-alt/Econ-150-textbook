@@ -29,6 +29,7 @@ HTML between the markers is never changed.
 import html
 import json
 import shutil
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -117,7 +118,6 @@ def main():
     # so the loop above skips it as "already a full page".
     import subprocess
     import sys
-import urllib.parse
     subprocess.run(
         [sys.executable, str(ROOT / "menus" / "build_menu.py"),
          str(ROOT / "menus" / "joy-of-econ.json"), str(SITE / "joy-of-econ.html")],
