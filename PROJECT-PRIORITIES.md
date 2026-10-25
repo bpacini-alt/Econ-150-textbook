@@ -96,6 +96,26 @@ Make each book clear, coherent, accessible, and trustworthy before adding substa
 
 **Why this is high priority:** Better presentation, trustworthy sourcing, and fewer points of friction benefit every student immediately and multiply the value of every later feature.
 
+### Priority 2 companion — AP Micro benchmark and economics interactive inventory
+
+**Status:** Research and inventory first; do not implement indiscriminately.
+
+Use [AP Microeconomics](https://apcentral.collegeboard.org/courses/ap-microeconomics) as the primary external quality benchmark for Econ 150 practice: review public multiple-choice and free-response examples, graphical reasoning, scoring guidelines, and misconceptions. First map AP topics and skills against actual Econ 150 course outcomes. Classify AP material as directly aligned, partially aligned, out of scope, or an important course-specific gap. Do not assume the course teaches all AP units. Respect College Board copyright and secure-question restrictions; write original public textbook questions unless reuse is authorized.
+
+Separately, curate the best existing economics **interactive graphs, manipulatives, simulations, and visual demonstrations**. This is distinct from the Precise Practice question bank. Investigate sources such as [EconGraphs](https://www.econgraphs.org/), [CORE Econ](https://www.core-econ.org/), and [AEA classroom experiments](https://www.aeaweb.org/resources/teachers/classroom-experiments). Evaluate each for chapter fit, conceptual clarity, misconceptions addressed, accessibility, embed/reuse rights, cost, and maintenance risk. Prefer linking or embedding excellent existing resources over rebuilding them.
+
+**Deliverables:** (1) AP Micro-to-Econ 150 alignment matrix; (2) curated interactive inventory with licensing and integration notes; (3) a shortlist of high-leverage pilots. Keep this work separate from Precise Practice module architecture.
+
+### Priority 2 companion — AP Psychology as an EDCOR 310 rigor benchmark
+
+**Status:** Research and alignment first; secondary reference, not the EDCOR instructional blueprint.
+
+Review the current [AP Psychology course framework](https://apcentral.collegeboard.org/courses/ap-psychology), public practice questions, scoring rubrics, and especially its **Article Analysis Question (AAQ)** and **Evidence-Based Question (EBQ)** formats. Use these as benchmarks for precise psychological vocabulary, conceptual discrimination, research literacy, interpretation of evidence, and rigorous argumentation. Map each candidate skill or topic to EDCOR 310 outcomes; do not import unrelated AP units or make EDCOR an AP test-preparation course.
+
+**EDCOR extension:** Convert relevant scientific reasoning into authentic classroom practice: diagnose a teaching/learning problem, evaluate the strength and limits of evidence, select and justify an instructional response, anticipate tradeoffs or unintended consequences, and reflect on professional judgment, leadership, and discipleship. The aim is not simply knowing psychology, but becoming a wiser, evidence-informed educator.
+
+**First deliverable:** Compare AP Psychology AAQ/EBQ examples with several EDCOR classroom decision-making cases and propose reusable higher-order practice patterns. Respect College Board copyright and restrictions on secure assessment materials.
+
 ### Priority 2 — Make every chapter practice-heavy
 
 Revise both books chapter by chapter so students regularly retrieve, predict, explain, apply, and receive feedback—not merely read and then answer a few questions at the end.
