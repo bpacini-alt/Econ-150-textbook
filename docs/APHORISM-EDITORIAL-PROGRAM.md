@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–4 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE). Not a textbook implementation or blanket approval of remaining candidates.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–5 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE). Not a textbook implementation or blanket approval of remaining candidates.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -264,7 +264,7 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 
 **Batch 3 carryover:** seven 'Not rated' entries stay unreviewed and unrejected; the EDCOR 25 candidate remains MAYBE.
 
-**Batch 5 — proposed (eight unrated entries):**
+**Batch 5 — reviewed (five REWRITE, three MAYBE; see author decisions below):**
 
 | # | Chapter | Proposed candidate | Rationale / provenance |
 | --- | --- | --- | --- |
@@ -278,6 +278,45 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 | 8 | EDCOR 18 | **Belonging grows when people are seen and needed.** | Earlier candidate; recognition and contribution build community. |
 
 **Holland provenance:** The EDCOR 26 Batch 4 lines are new paraphrases inspired by his talk, not verbatim Holland quotations. Preserve the source and wait for Benjamin's reflections before any publication.
+
+### Recorded author decisions — Batch 5 (October 25, 2026)
+
+**Five REWRITE, three MAYBE, zero YES.** Preserve exact text and note where the author gave a *direction* rather than a substitute sentence. An appreciative comment on an idea is not an approval when the marked response is REWRITE.
+
+| Chapter | Candidate reviewed | Decision | Editorial detail |
+| --- | --- | --- | --- |
+| ECON 5 | **self sufficient is poverty** | **REWRITE** | No replacement supplied in Batch 5. Revisit alongside Batch 4's distinct “Obama still hired a writer.” candidate. Keep the exact original for comparison; avoid an unconditional claim. |
+| ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | **REWRITE** | No replacement supplied; retain as developing short-run-shutdown explanation. Do not presume a new wording. |
+| ECON 17 | **The commons need rules, not necessarily a ruler.** | **MAYBE** | Ostrom and possible self-governance; remain under consideration, not approved. |
+| ECON 21 | **Market power begins where alternatives end.** | **MAYBE** | Market power hinges on available substitutes; remain under consideration, not approved. |
+| ECON 24 | **Your best move depends on theirs.** | **MAYBE** | Existing textbook heading, remains unchanged; not approved for new aphorism placement. |
+| EDCOR 11 | **What you already know decides what you can learn.** | **REWRITE** | Benjamin says 'cite the author, but I like this one.' Intellectual source: David P. Ausubel, Educational Psychology: A Cognitive View (1968), preface, p. vi. Chapter 11 ALREADY prints this line and cites Ausubel's maxim directly afterward. Keep authorial aphorism distinct from verbatim Ausubel quote; do not treat positive reaction as YES. |
+| EDCOR 16 | **Build confidence with evidence, not exhortation.** | **REWRITE** | Benjamin's exact tentative rewrite: “evidence is more effective than empty praise”. Keep both versions; not approved. Discuss how mastery evidence helps self-efficacy; don't imply all praise is ineffective. |
+| EDCOR 18 | **Belonging grows when people are seen and needed.** | **REWRITE** | Benjamin likes the idea but requests MORE EMPHASIS THAT BOTH PARTS ARE NECESSARY: being seen and being needed. No replacement wording supplied; keep open and do not fabricate author-approved text. |
+
+**Key author inputs to preserve verbatim:**
+
+- **EDCOR 11:** “cite the author, but I like this one”. Source identification: **David P. Ausubel**, *Educational Psychology: A Cognitive View* (1968), preface, p. vi. The current published EDCOR Chapter 11 already follows the line with Ausubel's longer dictum. [Scholarly source documenting exact provenance](https://pmc.ncbi.nlm.nih.gov/articles/PMC10130311/). Ausubel's original statement is **not** identical to Benjamin's aphorism; attribution should be 'inspired by' or an immediate explanation with his real quotation, not a misattributed verbatim quote.
+- **EDCOR 16:** “evidence is more effective than empty praise” — tentative author rewrite; use exactly this version in the evolving bank, do not silently capitalize or replace it.
+- **EDCOR 18:** “good, but emphasize that you need both parts” — direction specifically means **being seen AND being needed**. No final substitute aphorism selected.
+- **ECON 5 and ECON 10:** REWRITE, but no exact substitute supplied. Do not infer one or convert to NO. The earlier Econ 5 alternate “Obama still hired a writer.” remains separate.
+
+**Prior status preserved:** the seven Batch 3 items designated **Not rated** stay explicitly **Not rated**, and all earlier YES, MAYBE, NO and REWRITE decisions retain their exact historical meaning.
+
+### Batch 6 — proposed for review (8 candidates, none rated)
+
+| # | Chapter | Proposed line | Concept and source caution |
+| --- | --- | --- | --- |
+| 1 | ECON 1 | **Every yes is a no to something else.** | Working bank; original candidate. Opportunity cost and scarcity; every chosen use excludes some alternative. |
+| 2 | ECON 8 | **Trade turns somebody else's advantage into yours.** | Working bank; original candidate. Comparative advantage and cooperation; trade gains can coexist with losses for particular groups. |
+| 3 | ECON 13 | **A wage is a market price, not a person's worth.** | Working bank; original candidate. Factor-market price does not measure dignity; highlight discrimination/market constraints. |
+| 4 | ECON 19 | **Sometimes a tax makes the market work better.** | Working bank; original candidate. A well-designed corrective tax can internalize external costs; tax design and information problems matter. |
+| 5 | EDCOR 5 | **Significant doesn't mean certain.** | Working bank; original candidate. Statistical significance is not proof; errors, study design and replication matter. |
+| 6 | EDCOR 6 | **Real is not the same as important.** | Working bank; original candidate. Distinguish detectable effects from educationally meaningful magnitude. |
+| 7 | EDCOR 19 | **The classroom rewards something, whether you planned it or not.** | Working bank; original candidate. Consequences shape behavior, including unintended reinforcement. |
+| 8 | EDCOR 23 | **An IQ score is a prediction, not a prophecy.** | Working bank; original candidate. Scores predict some outcomes but neither fix destiny nor measure moral worth. |
+
+**Scope of targeted pre-review scan:** Checked the relevant eight current main-branch chapters for exact candidate duplication and their section structures. The lines above were **not** already present verbatim in the sampled current chapter HTML. This does not certify exhaustive review of every paragraph, citation or nearby alternative; do a substantive full-chapter reading before editorial placement. No textbook chapters may be modified by this PR.
 
 ## What this PR does NOT do
 
