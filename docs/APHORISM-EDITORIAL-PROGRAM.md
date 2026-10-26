@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1 and 2 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO). Not a textbook implementation or blanket approval of the remaining candidate bank.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–3 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated). Not a textbook implementation or blanket approval of the remaining candidate bank.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -195,7 +195,7 @@ When Benjamin has approved a chapter's few strongest lines:
 | EDCOR 11 | **Every mind constructs. The teacher chooses the materials.** | **NO** | Do not select for aphorism expansion. It is one of six existing Ch. 11 boxes; NO does not request deleting it. |
 | EDCOR 22 | **Memory is the residue of thought.** | **YES** | Daniel Willingham dictum; source verification and placement/qualification still required. |
 
-**Batch 3 — proposed for next YES/MAYBE/REWRITE/NO review (eight candidates, all unrated):**
+**Batch 3 — reviewed (one MAYBE, seven Not rated; see exact decisions below):**
 
 | # | Chapter | Proposed wording | Existing source and correction |
 | --- | --- | --- | --- |
@@ -209,6 +209,37 @@ When Benjamin has approved a chapter's few strongest lines:
 | 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
 
 **Editorial inventory rule:** A YES is preferred wording for a future full-chapter contextual pass; a MAYBE stays alive in the bank; a NO stays documented for provenance but is not re-presented as a recommended aphorism without a new rationale. Do not confuse a NO on an already-existing headline or box with authorization to delete that part of the textbook.
+
+
+### Recorded author decisions — Batch 3 (October 25, 2026)
+
+**One MAYBE; seven Not rated.** Preserve the exact "Not rated" status for the first seven. **Not rated means no decision was given; do not convert it to NO, MAYBE, or YES, do not assume rejection, and do not drop these options from the candidate bank.** The EDCOR 25 line is MAYBE, not approved.
+
+| Chapter | Wording presented | Author response |
+| --- | --- | --- |
+| ECON 9 | **Find the bottleneck.** | **Not rated** |
+| ECON 12 | **Land is fixed; space is not.** | **Not rated** |
+| ECON 15 | **Elasticity measures your exits.** | **Not rated** |
+| ECON 17 | **Everyone can care about the lake and still empty it.** | **Not rated** |
+| ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | **Not rated** |
+| EDCOR 15 | **Feeling seen is not the same as being measured.** | **Not rated** |
+| EDCOR 21 | **A behavior is a clue, not a diagnosis.** | **Not rated** |
+| EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | **MAYBE** |
+
+**Batch 4 — proposed, all unrated:**
+
+| # | Chapter | Candidate | Provenance and caution |
+| --- | --- | --- | --- |
+| 1 | EDCOR 26 | **You cannot kindle a fire you do not carry.** | New assistant condensation inspired by Holland's teaching remarks; not a direct quotation. Meaning: teacher intellectual conviction is communicable. |
+| 2 | EDCOR 26 | **Reuse the slides. Renew the conviction.** | New assistant condensation inspired by Holland's warning against recycled teaching; reuse of instructional materials can be good, but engagement should be fresh. |
+| 3 | EDCOR 11 | **Your brain thinks in examples, not definitions.** | Existing Chapter 11 aphorism; prototypes guide conceptual understanding and can create biases. |
+| 4 | EDCOR 11 | **To change a schema, roll out the red carpet. Then tug on it.** | Existing Chapter 11 aphorism; give old concept its best case then reveal limits and rebuild understanding. |
+| 5 | EDCOR 12 | **Students learn more than what we teach; they learn what we model.** | New proposal based on social learning theory; role models transmit habits and cues. |
+| 6 | ECON 5 | **Being the best at everything doesn't mean you should do everything.** | New comparative advantage proposal; opportunity costs matter more than absolute productivity. |
+| 7 | ECON 7 | **The law names the taxpayer. Elasticity decides who pays.** | New tax-incidence proposal; the legal payer is not necessarily the economic bearer. |
+| 8 | ECON 26 | **Markets can satisfy our desires. They cannot judge them.** | New closing-chapter proposal; market coordination is not a complete moral account of human flourishing. |
+
+The two Holland-inspired lines are new editorial suggestions, *not* President Holland's actual quoted words; source remains **[Angels and Astonishment (2019)](https://www.churchofjesuschrist.org/study/broadcasts/miscellaneous-events/2019/06/14holland?lang=eng)**. The talk is also on Benjamin's private stewardship-system to-read and listening lists. Recording a reading suggestion is not permission to revise EDCOR chapters.
 
 ## What this PR does NOT do
 

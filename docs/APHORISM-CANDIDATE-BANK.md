@@ -1,6 +1,6 @@
 # Cross-book aphorism candidate bank — 52 chapters
 
-**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven `YES`, one `REWRITE`**; Batch 2: **three `YES`, three `MAYBE`, two `NO`**. Both recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
+**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven `YES`, one `REWRITE`**; Batch 2: **three `YES`, three `MAYBE`, two `NO`**; Batch 3: **one `MAYBE`, seven `Not rated`**. All recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
 ## ECON 150 — Unit I
 
@@ -100,7 +100,8 @@
 | --- | --- | --- | --- | --- |
 | **1 — recorded** | Econ 3 price, 4 rationing, 6/14 pie, 9 costs, 11 profit; EDCOR 3 bomb, 24 visuals, 24 Tier 1 | October 25, 2026 | **YES 7; REWRITE 1 (Econ 9)** | Preserve exact wording below; no textbook implementation authorized. |
 | **2 — recorded** | EDCOR 26 Palmer, Econ 14 luggage, Econ 9 sunk costs, Econ 10 ATC/AVC, Econ 16 veto, EDCOR 20 fire, EDCOR 11 constructs, EDCOR 22 Willingham | October 25, 2026 | **YES 3; MAYBE 3; NO 2** | Preserve decisions verbatim below; no chapter changes. |
-| **3 — proposed** | Econ 9 bottleneck, 12 land/space, 15 exits, 17 commons, 18 externalities; EDCOR 15 personality, 21 behavior, 25 research/practice | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
+| **3 — recorded** | Econ 9 bottleneck, 12 land/space, 15 exits, 17 commons, 18 externalities; EDCOR 15 personality, 21 behavior, 25 research/practice | October 25, 2026 | **MAYBE 1 (EDCOR 25); Not rated 7** | The seven Not rated items remain without a decision. |
+| **4 — proposed** | EDCOR 26 Holland x2, EDCOR 11 prototypes/schema, EDCOR 12 modeling, ECON 5 comparative advantage, ECON 7 tax incidence, ECON 26 moral limits | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
 
 ### Batch 1 exact responses
 
@@ -153,6 +154,34 @@
 | 6 | EDCOR 15 | **Feeling seen is not the same as being measured.** | Already appears in chapter prose; A personality label may feel deeply apt without demonstrated psychometric validity. |
 | 7 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | Original candidate; Behavioral observations can guide inquiry but are not a substitute for careful assessment and appropriate professional roles. |
 | 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
+
+### Batch 3 exact responses
+
+- **ECON 9 — Not rated:** “Find the bottleneck.”
+- **ECON 12 — Not rated:** “Land is fixed; space is not.”
+- **ECON 15 — Not rated:** “Elasticity measures your exits.”
+- **ECON 17 — Not rated:** “Everyone can care about the lake and still empty it.”
+- **ECON 18 — Not rated:** “A deal can be voluntary and still leave someone else the bill.”
+- **EDCOR 15 — Not rated:** “Feeling seen is not the same as being measured.”
+- **EDCOR 21 — Not rated:** “A behavior is a clue, not a diagnosis.”
+- **EDCOR 25 — MAYBE:** “Updating your vocabulary isn't updating your practice.”
+
+**Interpretation:** "Not rated" is exactly no vote, **not** a polite rejection or a MAYBE. Carry all seven forward without inventing ratings. EDCOR 25 is MAYBE and remains under development. No chapter edits authorized.
+
+### Batch 4 proposed review targets
+
+| # | Chapter | Candidate | Origin / conceptual guardrail |
+| --- | --- | --- | --- |
+| 1 | EDCOR 26 | **You cannot kindle a fire you do not carry.** | New assistant condensation inspired by Holland's teaching remarks; not a direct quotation. Meaning: teacher intellectual conviction is communicable. |
+| 2 | EDCOR 26 | **Reuse the slides. Renew the conviction.** | New assistant condensation inspired by Holland's warning against recycled teaching; reuse of instructional materials can be good, but engagement should be fresh. |
+| 3 | EDCOR 11 | **Your brain thinks in examples, not definitions.** | Existing Chapter 11 aphorism; prototypes guide conceptual understanding and can create biases. |
+| 4 | EDCOR 11 | **To change a schema, roll out the red carpet. Then tug on it.** | Existing Chapter 11 aphorism; give old concept its best case then reveal limits and rebuild understanding. |
+| 5 | EDCOR 12 | **Students learn more than what we teach; they learn what we model.** | New proposal based on social learning theory; role models transmit habits and cues. |
+| 6 | ECON 5 | **Being the best at everything doesn't mean you should do everything.** | New comparative advantage proposal; opportunity costs matter more than absolute productivity. |
+| 7 | ECON 7 | **The law names the taxpayer. Elasticity decides who pays.** | New tax-incidence proposal; the legal payer is not necessarily the economic bearer. |
+| 8 | ECON 26 | **Markets can satisfy our desires. They cannot judge them.** | New closing-chapter proposal; market coordination is not a complete moral account of human flourishing. |
+
+**Holland source lead:** [Angels and Astonishment (2019)](https://www.churchofjesuschrist.org/study/broadcasts/miscellaneous-events/2019/06/14holland?lang=eng). Two Batch 4 proposals above are **new paraphrastic inventions**, not quotations; verify any words attributed to the speaker. User specifically wants to listen and find his own insights first.
 
 ## Research and audit follow-up
 
