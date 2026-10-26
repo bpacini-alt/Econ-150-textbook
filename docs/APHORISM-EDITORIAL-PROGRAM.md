@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–6 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated). “Nature via nurture” author-nominated but not YES. No textbook edits authorized.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–7 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated; Batch 7: three NO, two REWRITE, three MAYBE). “Nature via Nurture” is now MAYBE. No textbook edits authorized.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -337,7 +337,7 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 
 **“Nature via nurture” — EDCOR 9 (possibly echo in EDCOR 10).** Benjamin nominated this after Batch 6, but did not mark YES. **Current Chapter 9 already uses “Nature via Nurture” as its major-concept synthesis heading**, cites **Matt Ridley**, and discusses the mechanism, including a closing quotation from his 2003 book, *Nature via Nurture*. Sources: [Ridley's book page](https://www.mattridley.co.uk/books/nature-via-nurture-genes-experience-and-what-makes-us-human/); [academic review confirming his famous closing wording](https://journals.sagepub.com/doi/10.1177/147470490300100115). Concept: nature and nurture interact during development; both genetic determinism and environmental determinism oversimplify. This is an **existing-text promotion candidate**, not a new insertion. No duplicate box or textbook changes without later full-context review.
 
-### Batch 7 proposals — not reviewed
+### Batch 7 proposals — reviewed October 25, 2026 (see exact decisions below)
 
 | # | Chapter | Line | Source / guardrail |
 | --- | --- | --- | --- |
@@ -351,6 +351,40 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 | 8 | EDCOR 17 | **The hardest culture to see is the one you're standing in.** | Cultural assumptions; bank proposal, not present verbatim. |
 
 A targeted current-chapter scan checked whether any of these lines already appears verbatim. Only the EDCOR 9 Nature via Nurture phrase does. This is not a full prose/sourcing audit.
+
+### Recorded author decisions — Batch 7 (October 25, 2026)
+
+**Three NO, two REWRITE, three MAYBE.** Exact outcomes and free-text feedback are preserved. A REWRITE without substitute wording is not a YES and must not be filled in automatically; a MAYBE is not an approval.
+
+| Chapter | Original candidate | Rating | Author's added note / next editorial action |
+| --- | --- | --- | --- |
+| ECON 2 | **The next bite can be less delicious than the last.** | **NO** | Do not select for aphorism treatment; keep historical entry without editing existing textbook prose. |
+| ECON 20 | **Diagnose the failure before prescribing the cure.** | **NO** | Do not select; no textbook passage removed. |
+| ECON 22 | **Some firms win by serving customers. Others win by blocking rivals.** | **REWRITE** | No replacement words supplied. Preserve original and develop the distinction between serving demand, rent-seeking and politically protected barriers. |
+| ECON 25 | **The default makes a choice before you do.** | **NO** | Do not select; no textbook passage removed. |
+| EDCOR 4 | **Good intentions cannot substitute for good evidence.** | **MAYBE** | Remain an open candidate; no content change. |
+| EDCOR 9 | **Nature via Nurture** | **MAYBE** | Matt Ridley source lead, already the major-concept synthesis heading of live EDCOR 9. Maintain existing chapter wording and attribution; do not create duplicate aphorism. |
+| EDCOR 10 | **An unfinished mind is not a broken one.** | **REWRITE** | No replacement wording supplied; keep as provisional developmental metaphor. |
+| EDCOR 17 | **The hardest culture to see is the one you're standing in.** | **MAYBE** | Author's additional exact comment: “not terrible”. Preserve this mild/qualified reaction, not YES. |
+
+**The three NO decisions do not request deletion of existing chapter content.** The “Nature via Nurture” proposal moves from author-nominated/unrated to **MAYBE**, with its existing Ridley credit retained. The EDCOR 17 MAYBE has an explicit note: **“not terrible”**. Econ 22 and EDCOR 10 remain REWRITE with no new wording supplied.
+
+**Past unrated items remain exactly unrated:** Batch 3 contains seven Not rated and Batch 6 eight Not rated. No silent promotion/demotion.
+
+### Batch 8 — candidate slate (eight new lines; no ratings)
+
+| # | Chapter | Proposed line | Provenance, mechanism, qualification |
+| --- | --- | --- | --- |
+| 1 | ECON 6 | **Deadweight loss is a win-win that never happened.** | Working bank; unrealized mutually beneficial transactions, not all unrealized deals. |
+| 2 | ECON 12 | **An input is worth what it helps produce.** | Working bank; derived demand and marginal revenue product, **not** a person's moral worth or unqualified account of earnings. |
+| 3 | ECON 14 | **A ladder out of poverty shouldn't punish the next rung.** | Working bank; avoid steep welfare cliffs as earnings increase, recognizing real fiscal/program tradeoffs. |
+| 4 | ECON 23 | **A coffee shop can be unique and replaceable.** | Working bank; product differentiation and competition coexist. |
+| 5 | EDCOR 2 | **Knowing your bias doesn't make you immune to it.** | Working bank; awareness of cognitive bias alone does not reliably correct it. |
+| 6 | EDCOR 7 | **Support doesn't always mean removing the challenge.** | Working bank; meaningful support can include appropriately scaffolded challenges, but safety and real accommodations matter. |
+| 7 | EDCOR 8 | **Warmth and challenge are two dials, not one slider.** | Working bank; demanding expectations and caring relationships can coexist, avoid pretending this is a precise scientific law. |
+| 8 | EDCOR 13 | **Character is what students rehearse, not just what they recite.** | Working bank; character development requires practice and modeled behavior, not merely declarative knowledge. |
+
+**Batch 8 scan:** Compared these exact phrases against current main-branch HTML in all eight relevant chapters; none appears verbatim. This is a targeted duplication/structure check, **not** exhaustive sourcing or a full prose audit. Do not edit textbook chapters before separate review and approval.
 
 ## What this PR does NOT do
 
