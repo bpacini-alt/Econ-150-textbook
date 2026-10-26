@@ -116,6 +116,10 @@ Review the current [AP Psychology course framework](https://apcentral.collegeboa
 
 **First deliverable:** Compare AP Psychology AAQ/EBQ examples with several EDCOR classroom decision-making cases and propose reusable higher-order practice patterns. Respect College Board copyright and restrictions on secure assessment materials.
 
+### Priority 2 companion — Precise Practice design playbook and AI feedback pilot
+
+**High impact / strategic infrastructure.** Preserve the agreed instructional principles, foundational practice engines, question-type repertoire, mental anchors, aphorism handling, spiral review, and minimal homework-friendly learning indicators in [the Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md). Treat patterns as provisional until student-tested; do not require every engine on every page. **Next:** Audit existing Econ 11–12 and EDCOR exercise implementations; prototype Tier 2 blocked practice, then Tier 3 application/FRQ formats. Pilot a rubric-grounded, low-stakes AI aphorism feedback box against instructor-scored responses before deploying it broadly.
+
 ### Priority 2 — Make every chapter practice-heavy
 
 Revise both books chapter by chapter so students regularly retrieve, predict, explain, apply, and receive feedback—not merely read and then answer a few questions at the end.
