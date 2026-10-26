@@ -116,6 +116,10 @@ Review the current [AP Psychology course framework](https://apcentral.collegeboa
 
 **First deliverable:** Compare AP Psychology AAQ/EBQ examples with several EDCOR classroom decision-making cases and propose reusable higher-order practice patterns. Respect College Board copyright and restrictions on secure assessment materials.
 
+### Priority 2 companion — Separate Econ and EDCOR Tier 2 engines / Rule of Four fluency
+
+**Next prototype:** Revise Econ MRP homework as a single-screen, table-first calculation/hiring task with an optional aligned graph, plus a separate graph-to-table translation mode. Practice moving between representations, but **do not require table + graph on every item**; use combined views when making relationships explicit and hide answers for independent translation. Give EDCOR a distinct classroom-evidence and instructional-decision Tier 2 sequence while reusing technical components. Include 10+ validated variants, targeted additional practice, optional test-out, and a minimal vertical practice-progress display distinct from provisional understanding indicators. See [Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md).
+
 ### Priority 2 companion — Precise Practice design playbook and AI feedback pilot
 
 **High impact / strategic infrastructure.** Preserve the agreed instructional principles, foundational practice engines, question-type repertoire, mental anchors, aphorism handling, spiral review, and minimal homework-friendly learning indicators in [the Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md). Treat patterns as provisional until student-tested; do not require every engine on every page. **Next:** Audit existing Econ 11–12 and EDCOR exercise implementations; prototype Tier 2 blocked practice, then Tier 3 application/FRQ formats. Pilot a rubric-grounded, low-stakes AI aphorism feedback box against instructor-scored responses before deploying it broadly.
