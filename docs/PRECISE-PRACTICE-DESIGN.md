@@ -69,6 +69,58 @@ Aphorisms are **conceptual anchors, not merely vocabulary** and not a fifth engi
 
 **Pilot success criterion:** Reliable, actionable feedback that supports learning and accepts legitimate phrasing; not mere numerical agreement or student delight. Log costs and errors without unnecessary identifying data.
 
+
+## Three practice tiers (instructional demand, not mandatory sequence)
+
+| Tier | Aim | Representative tasks | Feedback/scaffolding |
+|---|---|---|---|
+| **1 — Foundational: knowledge, intuition, fluency** | Recognize, retrieve, discriminate, correct misconceptions, translate basic representations | Vocabulary Match, Definition Detective, Missing Piece, Spot the Concept, Rapid Sort, flash prediction, misconception flash practice, Graph Match | Fast low-friction batches; brief feedback; targeted new variants; optional test-out |
+| **2 — Intermediate: guided and blocked application** | Reliably perform the actual moves of the discipline | Read/label a graph, fill a table, numeric entry, interpret data, guided calculations, manipulate a curve, complete a partially worked example, straightforward concept application | Block by skill; worked examples and faded hints; immediate step-specific feedback; independent attempts after guidance |
+| **3 — Advanced: application and judgment** | Select, combine, justify, critique, and transfer ideas to unfamiliar real-world problems | AP Micro-style FRQs, AP Psychology Article Analysis Questions (AAQs), Evidence-Based Questions (EBQs), authentic classroom/economic cases, error analysis, missing-step problems, argument evaluation, evidence synthesis | Rubrics, model reasoning, targeted critique, consideration of assumptions/limits, optional AI-assisted formative explanation only after validation |
+
+**Important:** These tiers describe cognitive demands, not a fixed sequence or a requirement to complete every activity. Students may test out of foundational work; difficulty and support should follow prior knowledge. Tier 2 deserves focused prototyping before scaling Tier 3. EDCOR advanced questions must culminate in decisions for classroom instruction, not simply knowing psychology.
+
+### Tier 2 design priorities
+
+Build a reusable blocked-practice engine with consistent controls and optional scaffolding: (1) complete worked example; (2) partially completed problem; (3) independent version; (4) fresh transfer check. Candidate task families: graph reading and labeling, table completion, numerical calculations, equation completion, simple model manipulation, and direct classroom scenario diagnosis. Use targeted hints, clear assumptions, accessible non-drag alternatives, and concise feedback. Avoid assuming that every procedure needs all four stages.
+
+### Tier 3 design priorities
+
+- **AP Micro FRQ pattern:** interpret/construct a graph, compute, predict a change, explain a mechanism, and justify with economic reasoning. Align with actual Econ 150 outcomes, not every AP unit.
+- **AP Psychology AAQ pattern:** interpret a study's methods, variables, evidence, ethics, generalizability, and warranted implications.
+- **AP Psychology EBQ pattern:** make a claim, integrate evidence from multiple research summaries, explain reasoning, acknowledge uncertainty.
+- **EDCOR professional case:** diagnose classroom needs, choose an intervention, justify evidence, anticipate consequences, and reflect on limits and discipleship.
+- **Additional high-leverage formats:** authentic cases, error analysis, critique/evaluate an argument, identify missing assumptions or steps, compare competing explanations, and multistep decisions with incomplete information.
+
+## Broad item-format library — beyond traditional AP formats
+
+Separate **cognitive operation** from **UI format**. Research and prototype formats for their instructional leverage, not novelty:
+
+| Format | Best uses and cautions |
+|---|---|
+| Single-select MC; multiple response / select-all-that-apply | Precise misconceptions or complete sets; make distractors plausible and keys unambiguous |
+| Animated term matching; card sort / drag buckets | Efficient associations, discrimination, categorization; equivalent tap/keyboard controls |
+| Hotspot / click the region | Identify axes, graph features, diagram structures, evidence in a document; generous targets and accessible equivalents |
+| Region shading / area selection | Consumer surplus, producer surplus, deadweight loss, feasible sets; accurate geometry, clear boundaries and alternative non-pointer interaction |
+| Drag a point, curve, or label | Comparative statics, equilibrium, model manipulation; precise snap rules and keyboard support |
+| Graph construction / graph match | Reading, producing, and translating graphical relationships; correct D/S and D′/S′ labeling |
+| Table fill / spreadsheet-like entry | Marginal values, elasticities, experimental results; explicit units and tolerances |
+| Numeric input / equation completion | Calculations without multiple-choice cues; equivalent answer formats and error-specific feedback |
+| Ordering / sequencing | Causal chains, instructional processes; avoid false single-order assumptions |
+| Highlight an error / annotate evidence | Find incorrect reasoning, identify study evidence, diagnose a misconception |
+| Short text / own-words explanation | Retrieval, aphorism interpretation, mechanism explanation; rubric/self-check or validated AI feedback |
+| Compare cases / classify examples and nonexamples | Distinguish concepts and boundary conditions |
+| Prediction then reveal / interactive simulation | Intuition building; don't reveal answers before independent attempt |
+| Confidence estimate / self-evaluation | Metacognitive calibration; not a mastery claim |
+| FRQ / structured extended response | Multistep application and justification; rubric and model solution |
+| Branching scenario | Professional/economic decisions and consequences; avoid arbitrary game outcomes |
+
+**Quality bar for every format:** Explicit learning objective, correct model, short and readable prompt, plausible mistakes, instructional feedback, mobile/keyboard/screen-reader accessibility, clear evidence limits, and measurable benefit relative to student time. Hotspots and shading must not require fine motor precision or color discrimination.
+
+## Existing textbook exercise audit before broad implementation
+
+Inventory and evaluate what already exists. Initial Econ repository inspection identified substantial homework/skill-map prototypes in **Chapters 11 and 12**, including checkpoint practice and test-out; other chapters have expandable quick checks and retrieval prompts, and Chapters 3–4 contain embedded iframes. Locate the EDCOR experiments before drawing conclusions about reuse. Audit instructional value, accessibility, feedback, persistence, complexity, and consistency. Mark **keep / improve / adapt / retire**. Do not duplicate working infrastructure or treat raw HTML counts as proof of usability.
+
 ## Next steps
 
 1. Instructor review of this playbook and prototype examples.
