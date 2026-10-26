@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–5 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE). Not a textbook implementation or blanket approval of remaining candidates.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–6 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated). “Nature via nurture” author-nominated but not YES. No textbook edits authorized.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -303,7 +303,7 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 
 **Prior status preserved:** the seven Batch 3 items designated **Not rated** stay explicitly **Not rated**, and all earlier YES, MAYBE, NO and REWRITE decisions retain their exact historical meaning.
 
-### Batch 6 — proposed for review (8 candidates, none rated)
+### Batch 6 — reviewed (eight Not rated; exact decisions below)
 
 | # | Chapter | Proposed line | Concept and source caution |
 | --- | --- | --- | --- |
@@ -317,6 +317,40 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 | 8 | EDCOR 23 | **An IQ score is a prediction, not a prophecy.** | Working bank; original candidate. Scores predict some outcomes but neither fix destiny nor measure moral worth. |
 
 **Scope of targeted pre-review scan:** Checked the relevant eight current main-branch chapters for exact candidate duplication and their section structures. The lines above were **not** already present verbatim in the sampled current chapter HTML. This does not certify exhaustive review of every paragraph, citation or nearby alternative; do a substantive full-chapter reading before editorial placement. No textbook chapters may be modified by this PR.
+
+### Recorded author decisions — Batch 6 (October 25, 2026)
+
+**All eight are Not rated.** None should be interpreted as YES, MAYBE, REWRITE or NO. Preserve the earlier seven 'Not rated' choices from Batch 3 too; no textbook changes.
+
+| Chapter | Exact phrase | Author status |
+| --- | --- | --- |
+| ECON 1 | **Every yes is a no to something else.** | **Not rated** |
+| ECON 8 | **Trade turns somebody else's advantage into yours.** | **Not rated** |
+| ECON 13 | **A wage is a market price, not a person's worth.** | **Not rated** |
+| ECON 19 | **Sometimes a tax makes the market work better.** | **Not rated** |
+| EDCOR 5 | **Significant doesn't mean certain.** | **Not rated** |
+| EDCOR 6 | **Real is not the same as important.** | **Not rated** |
+| EDCOR 19 | **The classroom rewards something, whether you planned it or not.** | **Not rated** |
+| EDCOR 23 | **An IQ score is a prediction, not a prophecy.** | **Not rated** |
+
+### Additional author-nominated developmental candidate
+
+**“Nature via nurture” — EDCOR 9 (possibly echo in EDCOR 10).** Benjamin nominated this after Batch 6, but did not mark YES. **Current Chapter 9 already uses “Nature via Nurture” as its major-concept synthesis heading**, cites **Matt Ridley**, and discusses the mechanism, including a closing quotation from his 2003 book, *Nature via Nurture*. Sources: [Ridley's book page](https://www.mattridley.co.uk/books/nature-via-nurture-genes-experience-and-what-makes-us-human/); [academic review confirming his famous closing wording](https://journals.sagepub.com/doi/10.1177/147470490300100115). Concept: nature and nurture interact during development; both genetic determinism and environmental determinism oversimplify. This is an **existing-text promotion candidate**, not a new insertion. No duplicate box or textbook changes without later full-context review.
+
+### Batch 7 proposals — not reviewed
+
+| # | Chapter | Line | Source / guardrail |
+| --- | --- | --- | --- |
+| 1 | ECON 2 | **The next bite can be less delicious than the last.** | Diminishing marginal utility; proposal from bank, not present verbatim in chapter. |
+| 2 | ECON 20 | **Diagnose the failure before prescribing the cure.** | Healthcare's overlapping market failures; bank proposal, not present verbatim. |
+| 3 | ECON 22 | **Some firms win by serving customers. Others win by blocking rivals.** | Value creation versus policy-created barriers; bank proposal, not present verbatim. |
+| 4 | ECON 25 | **The default makes a choice before you do.** | Behavioral economics default effects; bank proposal, not present verbatim. |
+| 5 | EDCOR 4 | **Good intentions cannot substitute for good evidence.** | Evidence-based teaching, not efficacy-by-sincerity; bank proposal, not present verbatim. |
+| 6 | EDCOR 9 | **Nature via nurture** | Author-nominated idea; **already major-concept heading** in Chapter 9; Matt Ridley (2003) attribution already in prose; not rated. |
+| 7 | EDCOR 10 | **An unfinished mind is not a broken one.** | Developmental appropriateness; bank proposal, not present verbatim. |
+| 8 | EDCOR 17 | **The hardest culture to see is the one you're standing in.** | Cultural assumptions; bank proposal, not present verbatim. |
+
+A targeted current-chapter scan checked whether any of these lines already appears verbatim. Only the EDCOR 9 Nature via Nurture phrase does. This is not a full prose/sourcing audit.
 
 ## What this PR does NOT do
 

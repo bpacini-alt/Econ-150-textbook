@@ -1,6 +1,6 @@
 # Cross-book aphorism candidate bank — 52 chapters
 
-**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**. All recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
+**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**. All recorded explicitly below. “Nature via nurture” is nominated but not yet YES. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
 ## ECON 150 — Unit I
 
@@ -65,7 +65,7 @@
 
 | Chapter | Thick concept / tempting mistake | Lines to compare |
 | --- | --- | --- |
-| **9. Parenting** | Genetics/environment, attachment and school influences; *heritable = inevitable*. | “Nature and nurture write the story together”; “Heritable doesn't mean inevitable”; “Parents matter without explaining everything”; “You can't rewrite a child's genes. You can help shape the environment in which they grow”; Ridley *Nature via Nurture*. |
+| **9. Parenting** | Genetics/environment, attachment and school influences; *heritable = inevitable*. | “Nature and nurture write the story together”; “Heritable doesn't mean inevitable”; “Parents matter without explaining everything”; “You can't rewrite a child's genes. You can help shape the environment in which they grow”; Ridley *Nature via Nurture*.; **AUTHOR-NOMINATED (not YES)** “Nature via nurture” (Matt Ridley, 2003); already a major-concept synthesis heading with credit in Chapter 9; see batch log. |
 | **10. Child development** | Development changes behavior interpretation; play and challenge; *a child's behavior means what adult behavior would*. | “An unfinished mind is not a broken one”; “Before correcting the behavior, understand the development”; “Play is how children practice becoming capable”; “Teach the child you have, not the adult you expect them to become.” |
 | **11. Constructivism** | Schema, prior knowledge, prototypes and conceptual change; *constructing understanding requires unguided discovery*. | **EXISTING six aphorisms (preserve all):** “Your brain thinks in examples, not definitions”; “Your brain avoids thinking, so make the right decision once”; “What you already know decides what you can learn”; “Every mind constructs. The teacher chooses the materials”; “Build it right the first time”; “To change a schema, roll out the red carpet. Then tug on it.” **Ausubel, VERIFY** prior-knowledge dictum; additional misconception-buster: “Constructing knowledge doesn't mean discovering everything yourself.”; **BATCH 5 author note (not yet YES):** REWRITE of “What you already know decides what you can learn.” Benjamin: “cite the author, but I like this one”. David P. Ausubel (1968), *Educational Psychology: A Cognitive View*, preface p. vi (see source below). Already directly credited immediately after this aphorism in current chapter; leave chapter untouched. |
 | **12. Social learning** | Observational learning, efficacy, scaffolding; *students learn only the explicitly taught lesson*. | “The purpose of a scaffold is to make itself unnecessary”; “Students learn more than what we teach; they learn what we model”; “Help today should grow independence tomorrow”; “The teacher's example is a lesson before the teacher says a word.” |
@@ -103,7 +103,8 @@
 | **3 — recorded** | Econ 9 bottleneck, 12 land/space, 15 exits, 17 commons, 18 externalities; EDCOR 15 personality, 21 behavior, 25 research/practice | October 25, 2026 | **MAYBE 1 (EDCOR 25); Not rated 7** | The seven Not rated items remain without a decision. |
 | **4 — recorded** | EDCOR 26 Holland x2, EDCOR 11 prototypes/schema, EDCOR 12 modeling, ECON 5 comparative advantage, ECON 7 tax incidence, ECON 26 moral limits | October 25, 2026 | **YES 3; MAYBE 2; REWRITE 3** | Preserve exact author rewrites; no chapter changes. |
 | **5 — recorded** | ECON 5 self-sufficiency, 10 shutdown, 17 commons, 21 monopoly, 24 oligopoly; EDCOR 11 prior knowledge, 16 self-efficacy, 18 belonging | October 25, 2026 | **REWRITE 5; MAYBE 3** | Preserve Ausubel attribution and exact author wording/directions below; no chapter changes. |
-| **6 — proposed** | ECON 1 opportunity costs, 8 trade, 13 wages, 19 Pigouvian tax; EDCOR 5 significance, 6 effect size, 19 reinforcement, 23 IQ | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
+| **6 — recorded** | ECON 1 opportunity costs, 8 trade, 13 wages, 19 Pigouvian tax; EDCOR 5 significance, 6 effect size, 19 reinforcement, 23 IQ | October 25, 2026 | **Not rated 8** | All eight undecided, retain as-is. |
+| **7 — proposed** | ECON 2 utility, 20 healthcare, 22 barriers, 25 defaults; EDCOR 4 evidence, 9 nature/nurture, 10 development, 17 culture | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
 
 ### Batch 1 exact responses
 
@@ -246,6 +247,40 @@
 | 8 | EDCOR 23 | **An IQ score is a prediction, not a prophecy.** | Working bank; original candidate. Scores predict some outcomes but neither fix destiny nor measure moral worth. |
 
 **Scan status:** Each Batch 6 chapter's current main-branch section structure was inspected, and no selected phrase appeared verbatim in the corresponding chapter HTML. The full chapter context, adjacent prose and qualifications still require editorial review before placement.
+
+### Recorded author decisions — Batch 6 (October 25, 2026)
+
+**All eight are Not rated.** None should be interpreted as YES, MAYBE, REWRITE or NO. Preserve the earlier seven 'Not rated' choices from Batch 3 too; no textbook changes.
+
+| Chapter | Exact phrase | Author status |
+| --- | --- | --- |
+| ECON 1 | **Every yes is a no to something else.** | **Not rated** |
+| ECON 8 | **Trade turns somebody else's advantage into yours.** | **Not rated** |
+| ECON 13 | **A wage is a market price, not a person's worth.** | **Not rated** |
+| ECON 19 | **Sometimes a tax makes the market work better.** | **Not rated** |
+| EDCOR 5 | **Significant doesn't mean certain.** | **Not rated** |
+| EDCOR 6 | **Real is not the same as important.** | **Not rated** |
+| EDCOR 19 | **The classroom rewards something, whether you planned it or not.** | **Not rated** |
+| EDCOR 23 | **An IQ score is a prediction, not a prophecy.** | **Not rated** |
+
+### Additional author-nominated developmental candidate
+
+**“Nature via nurture” — EDCOR 9 (possibly echo in EDCOR 10).** Benjamin nominated this after Batch 6, but did not mark YES. **Current Chapter 9 already uses “Nature via Nurture” as its major-concept synthesis heading**, cites **Matt Ridley**, and discusses the mechanism, including a closing quotation from his 2003 book, *Nature via Nurture*. Sources: [Ridley's book page](https://www.mattridley.co.uk/books/nature-via-nurture-genes-experience-and-what-makes-us-human/); [academic review confirming his famous closing wording](https://journals.sagepub.com/doi/10.1177/147470490300100115). Concept: nature and nurture interact during development; both genetic determinism and environmental determinism oversimplify. This is an **existing-text promotion candidate**, not a new insertion. No duplicate box or textbook changes without later full-context review.
+
+### Batch 7 proposals — not reviewed
+
+| # | Chapter | Line | Source / guardrail |
+| --- | --- | --- | --- |
+| 1 | ECON 2 | **The next bite can be less delicious than the last.** | Diminishing marginal utility; proposal from bank, not present verbatim in chapter. |
+| 2 | ECON 20 | **Diagnose the failure before prescribing the cure.** | Healthcare's overlapping market failures; bank proposal, not present verbatim. |
+| 3 | ECON 22 | **Some firms win by serving customers. Others win by blocking rivals.** | Value creation versus policy-created barriers; bank proposal, not present verbatim. |
+| 4 | ECON 25 | **The default makes a choice before you do.** | Behavioral economics default effects; bank proposal, not present verbatim. |
+| 5 | EDCOR 4 | **Good intentions cannot substitute for good evidence.** | Evidence-based teaching, not efficacy-by-sincerity; bank proposal, not present verbatim. |
+| 6 | EDCOR 9 | **Nature via nurture** | Author-nominated idea; **already major-concept heading** in Chapter 9; Matt Ridley (2003) attribution already in prose; not rated. |
+| 7 | EDCOR 10 | **An unfinished mind is not a broken one.** | Developmental appropriateness; bank proposal, not present verbatim. |
+| 8 | EDCOR 17 | **The hardest culture to see is the one you're standing in.** | Cultural assumptions; bank proposal, not present verbatim. |
+
+A targeted current-chapter scan checked whether any of these lines already appears verbatim. Only the EDCOR 9 Nature via Nurture phrase does. This is not a full prose/sourcing audit.
 
 ## Research and audit follow-up
 
