@@ -121,6 +121,22 @@ Separate **cognitive operation** from **UI format**. Research and prototype form
 
 Inventory and evaluate what already exists. Initial Econ repository inspection identified substantial homework/skill-map prototypes in **Chapters 11 and 12**, including checkpoint practice and test-out; other chapters have expandable quick checks and retrieval prompts, and Chapters 3–4 contain embedded iframes. Locate the EDCOR experiments before drawing conclusions about reuse. Audit instructional value, accessibility, feedback, persistence, complexity, and consistency. Mark **keep / improve / adapt / retire**. Do not duplicate working infrastructure or treat raw HTML counts as proof of usability.
 
+## Tier 2 refinement (2026-10-26): representation-specific practice
+
+**Decision: Econ and EDCOR do not share one Tier 2 instructional engine.** Share UI components, item-bank infrastructure, accessibility and feedback patterns, but tailor the *cognitive moves* to course outcomes. Econ emphasizes reading/completing tables, graphs and equations, calculations, comparative statics and economic decisions. EDCOR emphasizes classroom/student-work observations, research evidence, instructional diagnosis, selection and justification of classroom action, and evaluation of consequences. Avoid forcing EDCOR into graph/table-first Econ practice.
+
+**Rule of Four is a fluency goal, not a screen-layout mandate.** Evidence on multiple external representations supports coordinating representations and cultivating translation and sense-making; it does not imply every question should simultaneously display story, table, graph and equation. Too many representations can introduce unnecessary cognitive load or reveal the answer. The research does not establish this exact three-mode UI as a uniquely optimal sequence.
+
+- **Connect (supported):** Show aligned table and graph together, with corresponding quantities/points deliberately highlighted. Explain *why* they represent the same mechanism.
+- **Translate (independent):** Supply one representation and require a second—table to graph **and** graph to table, story to graph, equation to table, etc. Keep the target representation hidden until students attempt it.
+- **Choose (strategic):** In more demanding tasks, select the appropriate representation for a purpose and justify the choice.
+
+**MRP Tier 2 prototype revision:** Keep the production table persistent in calculation mode; let students enter missing MP/MRP and select the last worthwhile hire directly. An optional worked connection view shows the matching MRP graph and highlights corresponding table/graph entries. A separate graph-to-table mode presents the graph as the source for reading values (not the pre-completed table). Do not show the graph as an answer key during independent calculation. Use ten or more checked parameter sets or authored variants, targeted fresh retries, optional hints, and a low-friction single-screen interface. The first ten variants are a content bank, not a requirement to do all ten.
+
+**Progress/evidence:** A small vertical bar tracks practice attempts or homework progress, separately from performance. Use **Not yet assessed**, **Practice recommended**, **Understanding demonstrated**, and a carefully qualified gold **Likely mastered** *only* for strong independent advanced FRQ-like transfer plus other evidence (ideally delayed). No current quick check establishes durable mastery. Offer short skills-based test-out on fresh cases, and keep homework submission distinct from understanding indicators.
+
+**Specific QA issues:** Check hiring decisions at MRP = wage; explicitly state price-taker/constant wage assumptions; keep discrete worker MRP points distinct from a continuous interpolated curve; verify chart scales and labels; provide accessible alternatives for graph manipulation; ensure entering and changing responses cannot double-count attempts. Compare novice and advanced students for comprehension, time, and delayed retention.
+
 ## Next steps
 
 1. Instructor review of this playbook and prototype examples.
