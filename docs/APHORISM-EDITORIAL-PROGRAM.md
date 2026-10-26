@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–3 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated). Not a textbook implementation or blanket approval of the remaining candidate bank.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–4 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE). Not a textbook implementation or blanket approval of remaining candidates.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -226,7 +226,7 @@ When Benjamin has approved a chapter's few strongest lines:
 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | **Not rated** |
 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | **MAYBE** |
 
-**Batch 4 — proposed, all unrated:**
+**Batch 4 — reviewed (three YES, two MAYBE, three REWRITE; see decisions below):**
 
 | # | Chapter | Candidate | Provenance and caution |
 | --- | --- | --- | --- |
@@ -240,6 +240,44 @@ When Benjamin has approved a chapter's few strongest lines:
 | 8 | ECON 26 | **Markets can satisfy our desires. They cannot judge them.** | New closing-chapter proposal; market coordination is not a complete moral account of human flourishing. |
 
 The two Holland-inspired lines are new editorial suggestions, *not* President Holland's actual quoted words; source remains **[Angels and Astonishment (2019)](https://www.churchofjesuschrist.org/study/broadcasts/miscellaneous-events/2019/06/14holland?lang=eng)**. The talk is also on Benjamin's private stewardship-system to-read and listening lists. Recording a reading suggestion is not permission to revise EDCOR chapters.
+
+### Recorded author decisions — Batch 4 (October 25, 2026)
+
+**Three YES, two MAYBE, three REWRITE.** These are editorial decisions, not authorization to change any chapter. Keep both original candidates and author rewrites for provenance.
+
+| Chapter | Original candidate | Decision | Exact author version / note |
+| --- | --- | --- | --- |
+| EDCOR 26 | **You cannot kindle a fire you do not carry.** | **MAYBE** | New Holland-inspired wording, NOT a quotation; refine after listening. |
+| EDCOR 26 | **Reuse the slides. Renew the conviction.** | **MAYBE** | New Holland-inspired wording, NOT a quotation; reuse materials while renewing engagement. |
+| EDCOR 11 | **Your brain thinks in examples, not definitions.** | **YES** | Already in Chapter 11; retain exact wording pending placement review. |
+| EDCOR 11 | **To change a schema, roll out the red carpet. Then tug on it.** | **YES** | Already in Chapter 11; retain exact wording pending placement review. |
+| EDCOR 12 | **Students learn more than what we teach; they learn what we model.** | **YES** | Social learning and implicit curriculum; read the full chapter before any addition. |
+| ECON 5 | **Being the best at everything doesn't mean you should do everything.** | **REWRITE** | Benjamin's alternatives: “Obama still hired a writer.” and “self sufficient is poverty”. BOTH provisional, not YES. Retain original and quiz version. |
+| ECON 7 | **The law names the taxpayer. Elasticity decides who pays.** | **REWRITE** | Benjamin's exact replacement: “the person that pays is the person who cannot escape, no matter who cuts the check”. Relative elasticity matters. |
+| ECON 26 | **Markets can satisfy our desires. They cannot judge them.** | **REWRITE** | Benjamin's exact replacement: “free markets were built for a good and moral people”. Treat as developing thesis, not externally attributed quotation. |
+
+**Exact author-supplied rewrite language (not approved as final):**
+
+- **ECON 5:** “Obama still hired a writer.” Alternate: “self sufficient is poverty”. Both preserved; the original proposed phrase and older study-guide version remain in the bank. Check the named example and avoid treating poverty as an inevitable outcome of every self-sufficient choice.
+- **ECON 7:** “the person that pays is the person who cannot escape, no matter who cuts the check”. Clarify relative elasticity and substitution rather than claiming one side can never escape.
+- **ECON 26:** “free markets were built for a good and moral people”. Treat the historical/normative premise carefully; not an authenticated quotation of John Adams or anyone else. Distinguish moral prerequisites for flourishing from a claim markets cannot function otherwise.
+
+**Batch 3 carryover:** seven 'Not rated' entries stay unreviewed and unrejected; the EDCOR 25 candidate remains MAYBE.
+
+**Batch 5 — proposed (eight unrated entries):**
+
+| # | Chapter | Proposed candidate | Rationale / provenance |
+| --- | --- | --- | --- |
+| 1 | ECON 5 | **self sufficient is poverty** | Benjamin's alternate comparative-advantage rewrite from Batch 4; provocative and provisional; exceptions matter. |
+| 2 | ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | Earlier working bank; price-taking firm's short-run shutdown rule and avoidable costs. |
+| 3 | ECON 17 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
+| 4 | ECON 21 | **Market power begins where alternatives end.** | Earlier bank; substitutes and competitive alternatives, not mere firm size. |
+| 5 | ECON 24 | **Your best move depends on theirs.** | Already a chapter heading; strategic interaction and opponent responses. |
+| 6 | EDCOR 11 | **What you already know decides what you can learn.** | Existing Chapter 11 aphorism; prior knowledge shapes, but does not make new learning impossible. |
+| 7 | EDCOR 16 | **Build confidence with evidence, not exhortation.** | Earlier candidate; mastery experiences and self-efficacy, with encouragement as a complement. |
+| 8 | EDCOR 18 | **Belonging grows when people are seen and needed.** | Earlier candidate; recognition and contribution build community. |
+
+**Holland provenance:** The EDCOR 26 Batch 4 lines are new paraphrases inspired by his talk, not verbatim Holland quotations. Preserve the source and wait for Benjamin's reflections before any publication.
 
 ## What this PR does NOT do
 

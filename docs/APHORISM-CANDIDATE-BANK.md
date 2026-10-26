@@ -1,6 +1,6 @@
 # Cross-book aphorism candidate bank — 52 chapters
 
-**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven `YES`, one `REWRITE`**; Batch 2: **three `YES`, three `MAYBE`, two `NO`**; Batch 3: **one `MAYBE`, seven `Not rated`**. All recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
+**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**. All recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
 ## ECON 150 — Unit I
 
@@ -10,9 +10,9 @@
 | **2. Consumer choice** | Subjective value and marginal utility; *total value dictates the next purchase*. | “The next one matters more than the last one”; “The last one you bought doesn't decide whether the next one is worth buying”; “Total value doesn't tell you what the next unit is worth”; “The next bite can be less delicious than the last.” |
 | **3. Price system** | Spontaneous coordination and dispersed knowledge; *greed or a central planner alone determines a price*. | **AUTHOR-POSITIVE; QUIZ** “A price is a signal wrapped in an incentive”; “A price is a meeting, not a mirror”; “A higher price isn't always greed; sometimes it's news”; “Nobody knows everything. Prices help everybody respond”; **EXISTING** Marshall's two-bladed scissors analogy, VERIFY source; separate three functions *signal, ration, incentive*. |
 | **4. Shifts, shocks, price controls** | Curve shifts versus movements; price adjustment and rationing; *a ceiling eliminates scarcity*. | **AUTHOR-PROPOSED** “You can ration with prices, lines, or luck, but you will still ration”; **STUDY GUIDE** “Rationing never disappears; only its currency changes”; “When prices can't move, scarcity finds another way”; “If the price can't rise, the line might”; “Controlling the price doesn't control the scarcity.” |
-| **5. Trade and specialization** | Comparative advantage is lower opportunity cost; *absolute best producer should do everything*. | “Your advantage isn't what you do best. It's what you give up least to do”; “Being the best at everything doesn't mean you should do everything”; “Self-sufficiency can be a recipe for poverty”; **QUIZ** “A good Obama still hires a writer” (dated example; revisit); Adam Smith division of labor, VERIFY. |
+| **5. Trade and specialization** | Comparative advantage is lower opportunity cost; *absolute best producer should do everything*. | “Your advantage isn't what you do best. It's what you give up least to do”; “Being the best at everything doesn't mean you should do everything”; “Self-sufficiency can be a recipe for poverty”; **QUIZ** “A good Obama still hires a writer” (dated example; revisit); Adam Smith division of labor, VERIFY.; **BATCH 4 REWRITE (not YES):** Benjamin: “Obama still hired a writer.”; alternate: “self sufficient is poverty”. Both preserved verbatim; verify example and qualify generalization. |
 | **6. Welfare** | Total surplus measures gains from trade; efficiency and equity are distinct; *the pie is fixed or equality is what efficiency measures*. | “Deadweight loss is a win-win that never happened”; “Some of the costliest losses are trades that never occur”; “Efficiency asks about the pie. Equity asks about the slices”; **AUTHOR EXPLORATORY** “Economists aren't anti-slice. They're pro-pie”; **QUIZ** “Efficiency maximizes total surplus; it prefers a bigger pie over equal slices.” |
-| **7. Taxes and subsidies** | Elasticity determines actual burden and who captures subsidy; *statutory taxpayer bears cost*. | “The side with fewer exits bears more of the tax”; “The law names the taxpayer. Elasticity decides who pays”; “A subsidy can raise the price of the thing it's meant to make affordable”; **QUIZ** “No one loves Pell grants like colleges” (Bennett hypothesis, disputed/conditional). |
+| **7. Taxes and subsidies** | Elasticity determines actual burden and who captures subsidy; *statutory taxpayer bears cost*. | “The side with fewer exits bears more of the tax”; “The law names the taxpayer. Elasticity decides who pays”; “A subsidy can raise the price of the thing it's meant to make affordable”; **QUIZ** “No one loves Pell grants like colleges” (Bennett hypothesis, disputed/conditional).; **BATCH 4 REWRITE (not YES):** Benjamin: “the person that pays is the person who cannot escape, no matter who cuts the check”. Clarify relative elasticity. |
 | **8. International trade** | Gains, adjustment costs, tariffs and distribution; *imports always impoverish us*. | “Trade turns somebody else's advantage into yours”; “Trade is a technology for turning what we make into what we want”; “A tariff doesn't bring jobs home for free”; “Trade can grow the pie without giving everyone a bigger slice”; *luggage* candidate as possible echo from Econ 14. |
 
 ## ECON 150 — Unit II
@@ -46,7 +46,7 @@
 | **23. Monopolistic competition** | Differentiation adds variety and pricing power; entry erodes returns; *competition implies identical cheap products*. | “Difference buys a markup. Entry takes the profit”; “A coffee shop can be unique and replaceable”; “Variety is valuable, but it isn't free”; “Competition can give us more choices without giving us lower costs.” |
 | **24. Oligopoly** | Strategic choices depend on rivals; private rationality may yield poor joint outcomes; *good individual moves always aggregate well*. | “Two smart competitors can make each other poorer”; “What is rational alone can be foolish together”; “Your best move depends on theirs” (**EXISTING heading**); “A cartel's promise is only as strong as the incentive not to break it.” |
 | **25. Behavioral economics** | Framing, defaults, loss aversion and welfare ambiguity; *choices are context-free expressions of stable preference*. | “The default makes a choice before you do”; **Kahneman/Tversky, VERIFY** “Losses loom larger than gains”; “A choice can be free without being free of influence”; “A nudge and a trap can use the same lever.” |
-| **26. Limits of markets** | Abundance and coordination versus the normative question of flourishing; *market satisfaction equals a good life*. | “Markets can satisfy our desires. They cannot judge them”; **EXISTING heading** “The Market as Mirror”; “A full shopping cart isn't necessarily a full life”; Herbert Simon's scarcity of attention in a world of plentiful information, VERIFY. |
+| **26. Limits of markets** | Abundance and coordination versus the normative question of flourishing; *market satisfaction equals a good life*. | “Markets can satisfy our desires. They cannot judge them”; **EXISTING heading** “The Market as Mirror”; “A full shopping cart isn't necessarily a full life”; Herbert Simon's scarcity of attention in a world of plentiful information, VERIFY.; **BATCH 4 REWRITE (not YES):** Benjamin: “free markets were built for a good and moral people”. This is a developing thesis, NOT an authenticated historical quote. |
 
 ## EDCOR 310 — Unit I
 
@@ -101,7 +101,8 @@
 | **1 — recorded** | Econ 3 price, 4 rationing, 6/14 pie, 9 costs, 11 profit; EDCOR 3 bomb, 24 visuals, 24 Tier 1 | October 25, 2026 | **YES 7; REWRITE 1 (Econ 9)** | Preserve exact wording below; no textbook implementation authorized. |
 | **2 — recorded** | EDCOR 26 Palmer, Econ 14 luggage, Econ 9 sunk costs, Econ 10 ATC/AVC, Econ 16 veto, EDCOR 20 fire, EDCOR 11 constructs, EDCOR 22 Willingham | October 25, 2026 | **YES 3; MAYBE 3; NO 2** | Preserve decisions verbatim below; no chapter changes. |
 | **3 — recorded** | Econ 9 bottleneck, 12 land/space, 15 exits, 17 commons, 18 externalities; EDCOR 15 personality, 21 behavior, 25 research/practice | October 25, 2026 | **MAYBE 1 (EDCOR 25); Not rated 7** | The seven Not rated items remain without a decision. |
-| **4 — proposed** | EDCOR 26 Holland x2, EDCOR 11 prototypes/schema, EDCOR 12 modeling, ECON 5 comparative advantage, ECON 7 tax incidence, ECON 26 moral limits | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
+| **4 — recorded** | EDCOR 26 Holland x2, EDCOR 11 prototypes/schema, EDCOR 12 modeling, ECON 5 comparative advantage, ECON 7 tax incidence, ECON 26 moral limits | October 25, 2026 | **YES 3; MAYBE 2; REWRITE 3** | Preserve exact author rewrites; no chapter changes. |
+| **5 — proposed** | ECON 5 self-sufficiency, 10 shutdown, 17 commons, 21 monopoly, 24 oligopoly; EDCOR 11 prior knowledge, 16 self-efficacy, 18 belonging | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
 
 ### Batch 1 exact responses
 
@@ -182,6 +183,34 @@
 | 8 | ECON 26 | **Markets can satisfy our desires. They cannot judge them.** | New closing-chapter proposal; market coordination is not a complete moral account of human flourishing. |
 
 **Holland source lead:** [Angels and Astonishment (2019)](https://www.churchofjesuschrist.org/study/broadcasts/miscellaneous-events/2019/06/14holland?lang=eng). Two Batch 4 proposals above are **new paraphrastic inventions**, not quotations; verify any words attributed to the speaker. User specifically wants to listen and find his own insights first.
+
+### Batch 4 exact responses
+
+| Chapter | Original candidate | Author decision / exact version |
+| --- | --- | --- |
+| EDCOR 26 | “You cannot kindle a fire you do not carry.” | **MAYBE** — New Holland-inspired wording, NOT a quotation; refine after listening. |
+| EDCOR 26 | “Reuse the slides. Renew the conviction.” | **MAYBE** — New Holland-inspired wording, NOT a quotation; reuse materials while renewing engagement. |
+| EDCOR 11 | “Your brain thinks in examples, not definitions.” | **YES** — Already in Chapter 11; retain exact wording pending placement review. |
+| EDCOR 11 | “To change a schema, roll out the red carpet. Then tug on it.” | **YES** — Already in Chapter 11; retain exact wording pending placement review. |
+| EDCOR 12 | “Students learn more than what we teach; they learn what we model.” | **YES** — Social learning and implicit curriculum; read the full chapter before any addition. |
+| ECON 5 | “Being the best at everything doesn't mean you should do everything.” | **REWRITE** — Benjamin's alternatives: “Obama still hired a writer.” and “self sufficient is poverty”. BOTH provisional, not YES. Retain original and quiz version. |
+| ECON 7 | “The law names the taxpayer. Elasticity decides who pays.” | **REWRITE** — Benjamin's exact replacement: “the person that pays is the person who cannot escape, no matter who cuts the check”. Relative elasticity matters. |
+| ECON 26 | “Markets can satisfy our desires. They cannot judge them.” | **REWRITE** — Benjamin's exact replacement: “free markets were built for a good and moral people”. Treat as developing thesis, not externally attributed quotation. |
+
+**Caveats:** Two author alternatives for Econ 5 remain distinct, not YES; the Econ 7 and Econ 26 rewrites are kept verbatim. The EDCOR 26 Holland-inspired aphorisms are not Holland quotations. All seven Batch 3 'Not rated' items remain without a decision. These are documentation-only decisions.
+
+### Batch 5 proposal — not yet reviewed
+
+| # | Chapter | Exact candidate | Concept, source and limitation |
+| --- | --- | --- | --- |
+| 1 | ECON 5 | **self sufficient is poverty** | Benjamin's alternate comparative-advantage rewrite from Batch 4; provocative and provisional; exceptions matter. |
+| 2 | ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | Earlier working bank; price-taking firm's short-run shutdown rule and avoidable costs. |
+| 3 | ECON 17 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
+| 4 | ECON 21 | **Market power begins where alternatives end.** | Earlier bank; substitutes and competitive alternatives, not mere firm size. |
+| 5 | ECON 24 | **Your best move depends on theirs.** | Already a chapter heading; strategic interaction and opponent responses. |
+| 6 | EDCOR 11 | **What you already know decides what you can learn.** | Existing Chapter 11 aphorism; prior knowledge shapes, but does not make new learning impossible. |
+| 7 | EDCOR 16 | **Build confidence with evidence, not exhortation.** | Earlier candidate; mastery experiences and self-efficacy, with encouragement as a complement. |
+| 8 | EDCOR 18 | **Belonging grows when people are seen and needed.** | Earlier candidate; recognition and contribution build community. |
 
 ## Research and audit follow-up
 
