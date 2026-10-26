@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batch 1 decisions recorded Oct 25, 2026 (seven YES, one REWRITE)**. Not a textbook implementation or blanket approval of the remaining candidate bank.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1 and 2 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO). Not a textbook implementation or blanket approval of the remaining candidate bank.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -164,7 +164,7 @@ When Benjamin has approved a chapter's few strongest lines:
 
 **Critical correction in ECON 9:** Benjamin changed *“Confront it and you might learn to tame it”* to **“Confront it and you might tame it.”** Keep the initial candidate as an historical alternative, but show the new wording first as the latest author rewrite. Do **not** treat it as YES.
 
-**Batch 2 — ready to solicit (eight additional lines; no review yet):**
+**Batch 2 — reviewed (October 25, 2026; see exact decisions below):**
 
 | # | Book / chapter | Exact candidate | Provenance / caution |
 | --- | --- | --- | --- |
@@ -177,7 +177,38 @@ When Benjamin has approved a chapter's few strongest lines:
 | 7 | EDCOR 11 | **Every mind constructs. The teacher chooses the materials.** | Existing approved chapter aphorism; descriptive constructivism need not imply discovery-only instruction. |
 | 8 | EDCOR 22 | **Memory is the residue of thought.** | Benjamin-positive Daniel Willingham formulation; verify quote and place relative to retrieval/spacing. |
 
-**Next after Batch 2:** ECON 9 "Find the bottleneck," ECON 12 "Land is fixed; space is not," ECON 17 commons/lake, EDCOR 25 updating vocabulary/practice, and the remaining existing EDCOR 11 phrases. Do not substitute a review batch for the chapter's full-text scan.
+**Next after Batch 2:** The eight Batch 3 review candidates and author decisions are set out below. Do not substitute a review batch for the chapter's full-text scan.
+
+
+### Recorded author decisions — Batch 2 (October 25, 2026)
+
+**Three YES, three MAYBE, two NO.** Preserve Benjamin's exact ratings; neither YES nor NO constitutes permission to edit the published chapters. **MAYBE** is not an approval. **NO** means do not elevate the line as an aphorism; where a line already appears in a chapter, leave it untouched unless a separate later editorial decision authorizes alteration.
+
+| Chapter | Exact wording reviewed | Decision | Context / safeguard |
+| --- | --- | --- | --- |
+| EDCOR 26 | **We teach who we are.** | **YES** | Parker Palmer formulation; verify exact quotation and scholarly citation before student-facing publication. |
+| ECON 14 | **The best way to make the world better is luggage.** | **YES** | Benjamin's wording; migration opportunity and policy trade-offs must be presented accurately; verify outside source. |
+| ECON 9 | **Rational people ignore sunk costs.** | **MAYBE** | Memorization guide; distinguish sunk costs from unavoidable future costs and relevant marginal costs. |
+| ECON 10 | **ATC keeps score; AVC decides whether to play.** | **MAYBE** | Memorization guide; short-run shutdown rule requires the textbook's price-taking assumptions. |
+| ECON 16 | **An objection is not a veto.** | **NO** | Do not choose for aphorism treatment. Existing section heading is not being deleted or changed. |
+| EDCOR 20 | **The Fire, Not the Pail.** | **MAYBE** | Already a chapter heading; leave existing language in place; source/meaning still need review. |
+| EDCOR 11 | **Every mind constructs. The teacher chooses the materials.** | **NO** | Do not select for aphorism expansion. It is one of six existing Ch. 11 boxes; NO does not request deleting it. |
+| EDCOR 22 | **Memory is the residue of thought.** | **YES** | Daniel Willingham dictum; source verification and placement/qualification still required. |
+
+**Batch 3 — proposed for next YES/MAYBE/REWRITE/NO review (eight candidates, all unrated):**
+
+| # | Chapter | Proposed wording | Existing source and correction |
+| --- | --- | --- | --- |
+| 1 | ECON 9 | **Find the bottleneck.** | Memorization guide; Constraints and marginal cost: adding more of the easy input may not help when another input is fixed. May link to the cost-monster rewrite. |
+| 2 | ECON 12 | **Land is fixed; space is not.** | Memorization guide; Land supply is fixed, but housing capacity and land uses are not; zoning and innovation affect the latter. |
+| 3 | ECON 15 | **Elasticity measures your exits.** | Original candidate; Responsiveness depends on substitutes, time and options. Corrects the idea that paying a high price proves enthusiasm. |
+| 4 | ECON 17 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
+| 5 | ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
+| 6 | EDCOR 15 | **Feeling seen is not the same as being measured.** | Already appears in chapter prose; A personality label may feel deeply apt without demonstrated psychometric validity. |
+| 7 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | Original candidate; Behavioral observations can guide inquiry but are not a substitute for careful assessment and appropriate professional roles. |
+| 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
+
+**Editorial inventory rule:** A YES is preferred wording for a future full-chapter contextual pass; a MAYBE stays alive in the bank; a NO stays documented for provenance but is not re-presented as a recommended aphorism without a new rationale. Do not confuse a NO on an already-existing headline or box with authorization to delete that part of the textbook.
 
 ## What this PR does NOT do
 

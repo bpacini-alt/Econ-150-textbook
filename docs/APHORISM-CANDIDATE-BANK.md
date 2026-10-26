@@ -1,6 +1,6 @@
 # Cross-book aphorism candidate bank — 52 chapters
 
-**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1 has **seven `YES` and one `REWRITE`**, recorded below. All other entries remain `UNREVIEWED` except preexisting `EXISTING`, quotation `VERIFY`, or historic `AUTHOR-POSITIVE` markers. A `YES` means author-endorsed wording for subsequent placement review, **not permission to edit chapters**. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
+**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven `YES`, one `REWRITE`**; Batch 2: **three `YES`, three `MAYBE`, two `NO`**. Both recorded explicitly below. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
 ## ECON 150 — Unit I
 
@@ -99,7 +99,8 @@
 | Batch | Chapters / candidates | Date | Author decisions | Next action |
 | --- | --- | --- | --- | --- |
 | **1 — recorded** | Econ 3 price, 4 rationing, 6/14 pie, 9 costs, 11 profit; EDCOR 3 bomb, 24 visuals, 24 Tier 1 | October 25, 2026 | **YES 7; REWRITE 1 (Econ 9)** | Preserve exact wording below; no textbook implementation authorized. |
-| **2 — awaiting Benjamin** | EDCOR 26 Palmer, Econ 14 luggage, Econ 9 sunk costs, Econ 10 ATC/AVC, Econ 16 veto, EDCOR 20 fire, EDCOR 11 constructs, EDCOR 22 Willingham | Not reviewed | — | Present eight candidates for YES/MAYBE/REWRITE/NO. |
+| **2 — recorded** | EDCOR 26 Palmer, Econ 14 luggage, Econ 9 sunk costs, Econ 10 ATC/AVC, Econ 16 veto, EDCOR 20 fire, EDCOR 11 constructs, EDCOR 22 Willingham | October 25, 2026 | **YES 3; MAYBE 3; NO 2** | Preserve decisions verbatim below; no chapter changes. |
+| **3 — proposed** | Econ 9 bottleneck, 12 land/space, 15 exits, 17 commons, 18 externalities; EDCOR 15 personality, 21 behavior, 25 research/practice | Not reviewed | — | Present eight for YES/MAYBE/REWRITE/NO. |
 
 ### Batch 1 exact responses
 
@@ -126,6 +127,32 @@
 | 6 | EDCOR 20 | “The Fire, Not the Pail.” | Existing heading; cultivation vs mere filling. Verify any external intellectual origin. |
 | 7 | EDCOR 11 | “Every mind constructs. The teacher chooses the materials.” | Existing aphorism; teaching matters even though students construct representations. |
 | 8 | EDCOR 22 | “Memory is the residue of thought.” | Daniel Willingham; active thinking is important but not the sole memory mechanism. |
+
+### Batch 2 exact responses
+
+- **EDCOR 26 — YES:** “We teach who we are.” — Parker Palmer formulation; verify exact quotation and scholarly citation before student-facing publication.
+- **ECON 14 — YES:** “The best way to make the world better is luggage.” — Benjamin's wording; migration opportunity and policy trade-offs must be presented accurately; verify outside source.
+- **ECON 9 — MAYBE:** “Rational people ignore sunk costs.” — Memorization guide; distinguish sunk costs from unavoidable future costs and relevant marginal costs.
+- **ECON 10 — MAYBE:** “ATC keeps score; AVC decides whether to play.” — Memorization guide; short-run shutdown rule requires the textbook's price-taking assumptions.
+- **ECON 16 — NO:** “An objection is not a veto.” — Do not choose for aphorism treatment. Existing section heading is not being deleted or changed.
+- **EDCOR 20 — MAYBE:** “The Fire, Not the Pail.” — Already a chapter heading; leave existing language in place; source/meaning still need review.
+- **EDCOR 11 — NO:** “Every mind constructs. The teacher chooses the materials.” — Do not select for aphorism expansion. It is one of six existing Ch. 11 boxes; NO does not request deleting it.
+- **EDCOR 22 — YES:** “Memory is the residue of thought.” — Daniel Willingham dictum; source verification and placement/qualification still required.
+
+**Important:** The **NO** ratings for Econ 16 “An objection is not a veto” and EDCOR 11 “Every mind constructs. The teacher chooses the materials” are decisions **against selecting the phrases as aphorisms**, not requests to remove existing chapter content. Keep them in this historical candidate bank and keep textbook pages untouched. The three MAYBE items stay open for refinement.
+
+### Batch 3 proposed review targets (not yet rated)
+
+| # | Chapter | Candidate | Source and misconception corrected |
+| --- | --- | --- | --- |
+| 1 | ECON 9 | **Find the bottleneck.** | Memorization guide; Constraints and marginal cost: adding more of the easy input may not help when another input is fixed. May link to the cost-monster rewrite. |
+| 2 | ECON 12 | **Land is fixed; space is not.** | Memorization guide; Land supply is fixed, but housing capacity and land uses are not; zoning and innovation affect the latter. |
+| 3 | ECON 15 | **Elasticity measures your exits.** | Original candidate; Responsiveness depends on substitutes, time and options. Corrects the idea that paying a high price proves enthusiasm. |
+| 4 | ECON 17 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
+| 5 | ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
+| 6 | EDCOR 15 | **Feeling seen is not the same as being measured.** | Already appears in chapter prose; A personality label may feel deeply apt without demonstrated psychometric validity. |
+| 7 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | Original candidate; Behavioral observations can guide inquiry but are not a substitute for careful assessment and appropriate professional roles. |
+| 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
 
 ## Research and audit follow-up
 
