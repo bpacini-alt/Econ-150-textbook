@@ -137,6 +137,20 @@ Inventory and evaluate what already exists. Initial Econ repository inspection i
 
 **Specific QA issues:** Check hiring decisions at MRP = wage; explicitly state price-taker/constant wage assumptions; keep discrete worker MRP points distinct from a continuous interpolated curve; verify chart scales and labels; provide accessible alternatives for graph manipulation; ensure entering and changing responses cannot double-count attempts. Compare novice and advanced students for comprehension, time, and delayed retention.
 
+### Three separable competencies culminating in economic thinking
+
+These are **different learning goals, not simply three navigation tabs**:
+
+1. **Read the representation:** Read relevant values, identify trends, and interpret axes, labels, and units correctly. Use fast, blocked reading practice from a graph or table without requiring calculations irrelevant to this objective.
+2. **Construct or translate:** Rebuild a table from a graph, produce a graph from data, translate equations and stories in both directions, and recognize what is preserved or lost. Practice each direction independently, initially with support then without. Validate graph precision.
+3. **Reason economically using the representation:** Decide, predict, explain mechanisms, compare alternatives, analyze changes, and qualify conclusions in an authentic new situation. This is the **destination**, not merely one more mechanical question type. Avoid giving students the decision rule so explicitly that the task becomes disguised reading comprehension.
+
+**Proposed test-out:** A short, fresh **integrated challenge** can demonstrate all three competencies and exempt a student from redundant introductory practice. For MRP, a novel labor/productivity situation asks students to read a source representation, create/complete a second representation, and *independently* make and justify a hiring decision under a wage or output-price change. Score the **three dimensions separately**: accuracy of reading; correctness of construction/translation; quality of economic inference and explanation. A student who can reason economically but slips on plotting receives targeted representational support; a student who can plot but cannot justify the decision receives economics application practice. Do not infer graph literacy solely from a text explanation or assign a pass because a single part is correct.
+
+This test-out is distinct from the gold **Likely mastered** tier: routine integrated transfer may satisfy homework practice; gold should require sustained, challenging independent FRQ-like reasoning and ideally additional evidence over time. Failure on a first diagnostic directs practice and does not penalize the student. Keep an accessible non-graph-input equivalent where required, without removing the skill being assessed.
+
+**Suggested student experience:** Let students opt into quick readiness check or targeted practice; suggest 1–2 only when the diagnostic shows gaps, then revisit 3 with a new scenario. Treat the integrated question as the destination and primary success criterion; do not force ten routine items on a student who already demonstrates the target skill.
+
 ## Next steps
 
 1. Instructor review of this playbook and prototype examples.
