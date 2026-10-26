@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review. Not a textbook implementation, not blanket approval of any candidate.  
+**Status:** Working editorial inventory for Benjamin's review; **Batch 1 decisions recorded Oct 25, 2026 (seven YES, one REWRITE)**. Not a textbook implementation or blanket approval of the remaining candidate bank.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -131,20 +131,53 @@ When Benjamin has approved a chapter's few strongest lines:
 4. Once a batch is settled, check each chapter's full text for duplication and placement; make a **separate book-content PR** with additions/removals visible and preview links. Benjamin merges when satisfied.
 5. At the end of each batch, record decisions, chapter placements, sourcing, remaining questions, and the next 5–10. Do not force all chapters to receive a certain number of boxes.
 
-**Suggested first review batch (8):**
+**Batch 1 proposal (reviewed Oct 25, 2026; see recorded decisions below):**
 
 | # | Chapter | Exact candidate | Why start here? |
 | --- | --- | --- | --- |
 | 1 | Econ 3 | A price is a signal wrapped in an incentive. | Existing quiz wording; author-enthusiastic. |
 | 2 | Econ 4 | You can ration with prices, lines, or luck, but you will still ration. | Author wording; misconception correction. |
 | 3 | Econ 6/14 | Economists aren't anti-slice. They're pro-pie. | Author idea, wording genuinely open. |
-| 4 | Econ 9 | **COST METAPHOR — wording unresolved** | Need a Christensen-grounded insight about confronting cost and innovating, not empty bravery. |
+| 4 | Econ 9 | Run from a cost and it hunts you. Confront it and you might tame it. | Benjamin's REWRITE; language still in development, Christensen grounding needed. |
 | 5 | Econ 11 | Profit is a flare. | Already in the book; likely preservation, not replacement. |
 | 6 | EDCOR 3 | The Bomb Worked! | Already the hook, subtitle, synthesis; preserve narrative and factual meaning. |
 | 7 | EDCOR 24 | We are all visual learners. | Author's high-priority productive paradox; must include caveat. |
 | 8 | EDCOR 24 | Good differentiated teaching starts with good teaching. | Existing canonical principle, Tier 1 first. |
 
-**Next candidates to follow:** EDCOR 26 “We teach who we are”; Econ 14 “The best way to make the world better is luggage”; Econ 9 sunk costs and bottleneck; EDCOR 11 existing six; Econ 16 “An objection is not a veto”; EDCOR 20 “The Fire, Not the Pail.”
+**Next candidates to follow:** See the eight-item Batch 2 proposal and recorded decisions below.
+
+
+### Recorded author decisions — Batch 1 (October 25, 2026)
+
+**Seven YES, one REWRITE.** These are editorial decisions on **specific wording**, not authorization to publish chapter edits. Source verification, placement, qualifications, and a separate previewable chapter PR still precede publication. The existing published phrases remain untouched.
+
+| Chapter | Exact author-selected wording | Decision | Implementation/qualification note |
+| --- | --- | --- | --- |
+| Econ 3 | **A price is a signal wrapped in an incentive.** | **YES** | Keep exact wording; price's rationing function remains an explanatory companion. |
+| Econ 4 | **You can ration with prices, lines, or luck, but you will still ration.** | **YES** | Keep exact wording; make clear markets ration scarce goods under price controls too. |
+| Econ 6 / 14 | **Economists aren't anti-slice. They're pro-pie.** | **YES** | Keep exact wording; distinguish efficiency from equity and avoid falsely claiming economists oppose distribution. |
+| Econ 9 | **Run from a cost and it hunts you. Confront it and you might tame it.** | **REWRITE** | Benjamin supplied this *exact* improved wording, replacing 'learn to tame it'. Not an editorial YES yet; refine the Christensen innovation mechanism, constraints, and exceptions. |
+| Econ 11 | **Profit is a flare.** | **YES** | Already in textbook; preserve exact wording. |
+| EDCOR 3 | **The Bomb Worked!** | **YES** | Already subtitle, hook, synthesis; preserve Dr. Dibble anecdote and context. |
+| EDCOR 24 | **We are all visual learners.** | **YES** | Preserve productive paradox; reject fixed learner types while explaining task-relevant visuals, accessibility and limits. |
+| EDCOR 24 | **Good differentiated teaching starts with good teaching.** | **YES** | Already in textbook; Tier 1 strong practice precedes targeted differentiation, without displacing accommodations. |
+
+**Critical correction in ECON 9:** Benjamin changed *“Confront it and you might learn to tame it”* to **“Confront it and you might tame it.”** Keep the initial candidate as an historical alternative, but show the new wording first as the latest author rewrite. Do **not** treat it as YES.
+
+**Batch 2 — ready to solicit (eight additional lines; no review yet):**
+
+| # | Book / chapter | Exact candidate | Provenance / caution |
+| --- | --- | --- | --- |
+| 1 | EDCOR 26 | **We teach who we are.** | Benjamin liked Parker Palmer; verify attribution and context. |
+| 2 | ECON 14 | **The best way to make the world better is luggage.** | Benjamin proposed; migration/mobility insight; source/qualification outstanding. |
+| 3 | ECON 9 | **Rational people ignore sunk costs.** | Memorization guide; distinguish sunk from future marginal costs. |
+| 4 | ECON 10 | **ATC keeps score; AVC decides whether to play.** | Memorization guide; applies to price-taking firm short-run decision under textbook assumptions. |
+| 5 | ECON 16 | **An Objection Is Not a Veto.** | Existing in chapter heading; legal/institutional limits matter. |
+| 6 | EDCOR 20 | **The Fire, Not the Pail.** | Existing chapter heading; read passage fully; phrase provenance to verify before external attribution. |
+| 7 | EDCOR 11 | **Every mind constructs. The teacher chooses the materials.** | Existing approved chapter aphorism; descriptive constructivism need not imply discovery-only instruction. |
+| 8 | EDCOR 22 | **Memory is the residue of thought.** | Benjamin-positive Daniel Willingham formulation; verify quote and place relative to retrieval/spacing. |
+
+**Next after Batch 2:** ECON 9 "Find the bottleneck," ECON 12 "Land is fixed; space is not," ECON 17 commons/lake, EDCOR 25 updating vocabulary/practice, and the remaining existing EDCOR 11 phrases. Do not substitute a review batch for the chapter's full-text scan.
 
 ## What this PR does NOT do
 

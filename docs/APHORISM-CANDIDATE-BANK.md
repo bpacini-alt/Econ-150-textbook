@@ -1,6 +1,6 @@
 # Cross-book aphorism candidate bank — 52 chapters
 
-**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** all entries `UNREVIEWED` except chapter-text lines labeled `EXISTING`, source quotations labeled `VERIFY`, and Benjamin's favored/proposed expressions labeled `AUTHOR-POSITIVE` (still not publication approval). The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
+**Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1 has **seven `YES` and one `REWRITE`**, recorded below. All other entries remain `UNREVIEWED` except preexisting `EXISTING`, quotation `VERIFY`, or historic `AUTHOR-POSITIVE` markers. A `YES` means author-endorsed wording for subsequent placement review, **not permission to edit chapters**. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
 ## ECON 150 — Unit I
 
@@ -19,7 +19,7 @@
 
 | Chapter | Thick concept / tempting mistake | Lines to compare |
 | --- | --- | --- |
-| **9. Costs** | Explicit/implicit/sunk costs, marginal production costs, bottlenecks, Christensen cost-as-opportunity, Baumol cost-as-tragedy, frugality-as-distraction; *cost is always merely a burden to avoid*. | “Cost is what scarcity looks like from the supply side”; **STUDY GUIDE** “Rational people ignore sunk costs”; **STUDY GUIDE** “Find the bottleneck”; **EXISTING heading** “Cost as Opportunity, Tragedy, and Distraction”; **OPEN METAPHOR** “Run from a cost and it hunts you. Confront it and you might learn to tame it”; “Today's cost may be tomorrow's innovation”; “The cost you ignore becomes your competitor's opportunity.” Need work: innovation is only sometimes feasible; confronting a cost does not automatically dominate avoiding it. |
+| **9. Costs** | Explicit/implicit/sunk costs, marginal production costs, bottlenecks, Christensen cost-as-opportunity, Baumol cost-as-tragedy, frugality-as-distraction; *cost is always merely a burden to avoid*. | “Cost is what scarcity looks like from the supply side”; **STUDY GUIDE** “Rational people ignore sunk costs”; **STUDY GUIDE** “Find the bottleneck”; **EXISTING heading** “Cost as Opportunity, Tragedy, and Distraction”; **BENJAMIN REWRITE — NOT YET YES** “Run from a cost and it hunts you. Confront it and you might tame it”; historic earlier alternative: “Confront it and you might learn to tame it”; “Today's cost may be tomorrow's innovation”; “The cost you ignore becomes your competitor's opportunity.” Need work: innovation is only sometimes feasible; confronting a cost does not automatically dominate avoiding it. |
 | **10. Short-run firms** | Price-taking firm chooses output at MR=MC, profits at ATC, shut down below AVC; *accounting losses mean close immediately*. | **STUDY GUIDE** “ATC keeps score; AVC decides whether to play”; “Sometimes staying open is the cheapest way to lose money”; **STUDY GUIDE** “The short run is not a calendar”; “A loss doesn't tell you whether to close; avoidable costs do”; “The next unit must earn its place.” |
 | **11. Long run** | Entry chases economic profits toward normal returns; zero economic profit still pays opportunity cost; *profit is durable or zero means failure*. | **EXISTING/STUDY GUIDE** “Profit is a flare”; “Profit invites imitation”; “Zero economic profit isn't zero income”; “Competition chases the profit until the profit runs away”; **STUDY GUIDE** “Temporary darkness is not departure” (shutdown versus exit). |
 | **12. Factor markets** | Derived demand, productivity, time/capital and rent; fixed land need not mean fixed homes; *land scarcity makes building irrelevant*. | **STUDY GUIDE** “Land is fixed; space is not”; “They are not making any more land, so let land move”; “Factor markets are where the future gets built”; “Capital is the price of time”; “An input is worth what it helps produce.” |
@@ -94,12 +94,38 @@
 | **25. Research/practice gap** | Evidence uptake needs actual changed teaching, not jargon; *knowing evidence is using evidence*. | “Updating your vocabulary isn't updating your practice”; “Evidence you can cite isn't necessarily evidence you use”; “A teacher can win the argument and still teach poorly”; “The most dangerous myth may be the one you've merely renamed.” |
 | **26. Grand adventure** | Moral formation, identity, teacher effects beyond scores; *only explicit curriculum has lasting force*. | **AUTHOR-POSITIVE, PARKER PALMER — VERIFY** “We teach who we are”; “Every classroom has two curricula: the one you plan and the one you live”; “What students become matters beyond what they score”; **EXISTING heading** “What Students Learn from Who You Are.” |
 
-## Batch review log (leave rows here as Benjamin responds)
+## Batch review log — decisions recorded explicitly
 
-| Batch | Chapters and candidate IDs | Date | Benjamin's YES / MAYBE / REWRITE / NO | Exact final draft/remaining action |
+| Batch | Chapters / candidates | Date | Author decisions | Next action |
 | --- | --- | --- | --- | --- |
-| **1 — proposed** | Econ 3 price; 4 rationing; 6 pie; 9 costs; 11 profit; EDCOR 3 bomb; 24 visuals; 24 Tier 1 | Not yet reviewed | — | Present in a message as 8 digestible mini-cards, ask for direct editorial reactions. |
-| **2 — suggested** | EDCOR 26 Palmer; Econ 14 luggage; Econ 9 sunk costs; EDCOR 11 prototypes; Econ 16 veto; EDCOR 20 fire; Econ 10 ATC/AVC; EDCOR 22 Willingham | Not yet reviewed | — | Reprioritize based on Batch 1. |
+| **1 — recorded** | Econ 3 price, 4 rationing, 6/14 pie, 9 costs, 11 profit; EDCOR 3 bomb, 24 visuals, 24 Tier 1 | October 25, 2026 | **YES 7; REWRITE 1 (Econ 9)** | Preserve exact wording below; no textbook implementation authorized. |
+| **2 — awaiting Benjamin** | EDCOR 26 Palmer, Econ 14 luggage, Econ 9 sunk costs, Econ 10 ATC/AVC, Econ 16 veto, EDCOR 20 fire, EDCOR 11 constructs, EDCOR 22 Willingham | Not reviewed | — | Present eight candidates for YES/MAYBE/REWRITE/NO. |
+
+### Batch 1 exact responses
+
+- **Econ 3 — YES:** “A price is a signal wrapped in an incentive.”
+- **Econ 4 — YES:** “You can ration with prices, lines, or luck, but you will still ration.”
+- **Econ 6 / 14 — YES:** “Economists aren't anti-slice. They're pro-pie.”
+- **Econ 9 — REWRITE:** “Run from a cost and it hunts you. Confront it and you might tame it.” (Benjamin's latest revision; still developing.)
+- **Econ 11 — YES:** “Profit is a flare.”
+- **EDCOR 3 — YES:** “The Bomb Worked!”
+- **EDCOR 24 — YES:** “We are all visual learners.”
+- **EDCOR 24 — YES:** “Good differentiated teaching starts with good teaching.”
+
+**Careful distinction:** The seven YES decisions are editorial approvals of the phrases for later context/placement review. The single REWRITE is **not** a YES. Neither status by itself authorizes publication. EDCOR Ch. 3, EDCOR Ch. 24 Tier 1 and Econ Ch. 11 already include their respective lines; no edit or duplicate callout should be made without full-text review.
+
+### Batch 2 proposed review targets
+
+| # | Chapter | Candidate | Source/context and misconception |
+| --- | --- | --- | --- |
+| 1 | EDCOR 26 | “We teach who we are.” | Palmer, verify wording; teacher's character and implicit curriculum. |
+| 2 | ECON 14 | “The best way to make the world better is luggage.” | Labor mobility can be very high leverage; avoid presenting policy as trade-off-free. |
+| 3 | ECON 9 | “Rational people ignore sunk costs.” | Study-guide line; only past *unrecoverable* costs irrelevant to marginal choice. |
+| 4 | ECON 10 | “ATC keeps score; AVC decides whether to play.” | Study-guide line; competitive-firm short run, accounting for avoidable costs. |
+| 5 | ECON 16 | “An Objection Is Not a Veto.” | Existing heading; property rights, local governance and genuine institutional vetoes. |
+| 6 | EDCOR 20 | “The Fire, Not the Pail.” | Existing heading; cultivation vs mere filling. Verify any external intellectual origin. |
+| 7 | EDCOR 11 | “Every mind constructs. The teacher chooses the materials.” | Existing aphorism; teaching matters even though students construct representations. |
+| 8 | EDCOR 22 | “Memory is the residue of thought.” | Daniel Willingham; active thinking is important but not the sole memory mechanism. |
 
 ## Research and audit follow-up
 
