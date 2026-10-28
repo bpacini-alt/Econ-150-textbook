@@ -96,6 +96,34 @@ Make each book clear, coherent, accessible, and trustworthy before adding substa
 
 **Why this is high priority:** Better presentation, trustworthy sourcing, and fewer points of friction benefit every student immediately and multiply the value of every later feature.
 
+### Priority 2 companion — AP Micro benchmark and economics interactive inventory
+
+**Status:** Research and inventory first; do not implement indiscriminately.
+
+Use [AP Microeconomics](https://apcentral.collegeboard.org/courses/ap-microeconomics) as the primary external quality benchmark for Econ 150 practice: review public multiple-choice and free-response examples, graphical reasoning, scoring guidelines, and misconceptions. First map AP topics and skills against actual Econ 150 course outcomes. Classify AP material as directly aligned, partially aligned, out of scope, or an important course-specific gap. Do not assume the course teaches all AP units. Respect College Board copyright and secure-question restrictions; write original public textbook questions unless reuse is authorized.
+
+Separately, curate the best existing economics **interactive graphs, manipulatives, simulations, and visual demonstrations**. This is distinct from the Precise Practice question bank. Investigate sources such as [EconGraphs](https://www.econgraphs.org/), [CORE Econ](https://www.core-econ.org/), and [AEA classroom experiments](https://www.aeaweb.org/resources/teachers/classroom-experiments). Evaluate each for chapter fit, conceptual clarity, misconceptions addressed, accessibility, embed/reuse rights, cost, and maintenance risk. Prefer linking or embedding excellent existing resources over rebuilding them.
+
+**Deliverables:** (1) AP Micro-to-Econ 150 alignment matrix; (2) curated interactive inventory with licensing and integration notes; (3) a shortlist of high-leverage pilots. Keep this work separate from Precise Practice module architecture.
+
+### Priority 2 companion — AP Psychology as an EDCOR 310 rigor benchmark
+
+**Status:** Research and alignment first; secondary reference, not the EDCOR instructional blueprint.
+
+Review the current [AP Psychology course framework](https://apcentral.collegeboard.org/courses/ap-psychology), public practice questions, scoring rubrics, and especially its **Article Analysis Question (AAQ)** and **Evidence-Based Question (EBQ)** formats. Use these as benchmarks for precise psychological vocabulary, conceptual discrimination, research literacy, interpretation of evidence, and rigorous argumentation. Map each candidate skill or topic to EDCOR 310 outcomes; do not import unrelated AP units or make EDCOR an AP test-preparation course.
+
+**EDCOR extension:** Convert relevant scientific reasoning into authentic classroom practice: diagnose a teaching/learning problem, evaluate the strength and limits of evidence, select and justify an instructional response, anticipate tradeoffs or unintended consequences, and reflect on professional judgment, leadership, and discipleship. The aim is not simply knowing psychology, but becoming a wiser, evidence-informed educator.
+
+**First deliverable:** Compare AP Psychology AAQ/EBQ examples with several EDCOR classroom decision-making cases and propose reusable higher-order practice patterns. Respect College Board copyright and restrictions on secure assessment materials.
+
+### Priority 2 companion — Separate Econ and EDCOR Tier 2 engines / Rule of Four fluency
+
+**Next prototype:** Revise Econ MRP homework as a single-screen, table-first calculation/hiring task with an optional aligned graph, plus a separate graph-to-table translation mode. Practice moving between representations, but **do not require table + graph on every item**; use combined views when making relationships explicit and hide answers for independent translation. Give EDCOR a distinct classroom-evidence and instructional-decision Tier 2 sequence while reusing technical components. Include 10+ validated variants, targeted additional practice, optional test-out, and a minimal vertical practice-progress display distinct from provisional understanding indicators. See [Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md).
+
+### Priority 2 companion — Precise Practice design playbook and AI feedback pilot
+
+**High impact / strategic infrastructure.** Preserve the agreed instructional principles, foundational practice engines, question-type repertoire, mental anchors, aphorism handling, spiral review, and minimal homework-friendly learning indicators in [the Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md). Treat patterns as provisional until student-tested; do not require every engine on every page. **Next:** Audit existing Econ 11–12 and EDCOR exercise implementations; prototype Tier 2 blocked practice, then Tier 3 application/FRQ formats. Pilot a rubric-grounded, low-stakes AI aphorism feedback box against instructor-scored responses before deploying it broadly.
+
 ### Priority 2 — Make every chapter practice-heavy
 
 Revise both books chapter by chapter so students regularly retrieve, predict, explain, apply, and receive feedback—not merely read and then answer a few questions at the end.
@@ -159,6 +187,21 @@ Begin with an inventory of the existing Ed Psych recorded lectures and other unl
 - Decide deliberately whether any unlisted videos should become public; public visibility should follow the content review, not precede it.
 
 **Why this matters:** Author-led video can make the books feel more personal and interactive while giving students another way to encounter difficult ideas. Its cost and value should be established by auditing the existing recordings before committing to a large new production effort.
+
+### Priority 4 companion — Pilot short-form chapter video series
+
+**Status:** Interesting and potentially high-value, but deferred until the higher-priority textbook work is in good shape. Pilot in a small number of chapters before committing to a full production workflow.
+
+Create a series of short, clear, chapter-linked videos that complement the main text rather than duplicate or replace it. Use a range of lengths—roughly 30 seconds, 2 minutes, and 7 minutes—so each video has one focused job: explain an interesting study, clarify a disputed claim, demonstrate an evidence-based practice, walk through a policy debate, or model how to think with a disciplinary tool.
+
+Possible recurring formats include:
+
+- **Econ 150:** *Study of the Day*, *Policy Debates*, and *How to Think Like an Economist*.
+- **EDCOR 310 / Joy of Learning:** *Tool Time* and *Ed Psych Bites*, including short “true, false, or in between” treatments of claims students encounter online and practical evidence-based teaching moves students can use tomorrow.
+
+Test the format in a few chapters, paying attention to student interest, completion, comprehension, production time, accessibility, and maintenance. Explore whether students can create candidate videos as part of meaningful coursework, with especially strong student-created pieces reviewed for possible inclusion in the books. Establish a repeatable workflow for captions, transcripts, chapter placement, permissions, and links before scaling.
+
+**Why this matters:** Short-form video can improve access, readability, engagement, and the sense that the books are alive and useful without making the main text harder to navigate. A small pilot can reveal whether the student value justifies the ongoing production and maintenance cost.
 
 ### Priority 5 — Add chapter audio
 
@@ -245,18 +288,11 @@ The default strategy should be to focus on the book, chapter, or feature with th
 
 These are broken now, so they count as Priority 0. Fix them in the GitHub copies when the chapters move to the new site. Leave the EdTechBooks copies alone for now.
 
-### Econ 150: Broken interactive widgets in Chapters 2 and 4
+### Found October 23, 2026 (high: fix now)
 
-Four interactive pieces don't run in the current chapter files:
-
-- **Chapter 2:** two graph widgets. One is the "Missing Market" widget (the chapter's first script); the other is the chapter's eighth script.
-- **Chapter 4:** Interactive practice 1 ("Predict the new equilibrium") and Interactive practice 2 ("Binding or not?").
-
-**Cause:** when EdTechBooks squashed each script onto a single line, a `//` comment ended up commenting out everything after it, so the browser stops with "Unexpected end of input."
-
-**How to fix:** in each affected script, change `//` comments to `/* … */` or restore the line breaks. Then load the chapter on the new site and confirm the widgets work.
-
-**Status:** fix on the new site; do not edit in EdTechBooks. Found during the audio-player work, which doesn't affect these widgets. A check of every EDCOR 310 chapter found no similar problems.
+1. **Missing shapes in figures (High).** Shapes with no width or height draw nothing. **Mostly fixed October 26** (EDCOR 310 and Econ 150 pull requests "Draw the missing figure shapes"): every static figure in both books now draws, including EDCOR 310 Chapter 6's band figure and the Hero's Journey legend. **Still open: Econ 150 Chapter 13** (its callback-rate, earnings-by-education, and pay-gap charts, 15 shapes). It was left alone because open drafts edit that chapter (Econ 150 #40 and #55). Fix it once those are merged or closed, the same way: size each shape from points already drawn in its figure, then render and compare with the caption. Chapter 11's two drag-the-curve homework graphs also contain size-less shapes, but the homework code redraws those graphs when the page loads, so they need no fix.
+2. **Unit names on title cards (decided and mostly done October 26).** Rule: a chapter's title-card label always matches its unit on the contents page. Econ 150's units are now The Case for the Market, The Logic of Competition, The Critique of the Market, and When Competition Breaks Down, with "The Closing Reckoning" as a subheading over Chapters 25–26. Pages before Chapter 1 read "Before Chapter 1", which replaced "Start here". EDCOR 310 uses its four contents-page names. **Still open: Chapters 13 and 14 in both books,** left alone while drafts edit them (EDCOR 310 #34, #53; Econ 150 #40, #55). Set their labels when those settle. Econ 150's subtitle stays "The Science of Choice, **Incentives**, and Human Flourishing" (Benjamin, October 26). **Benjamin: change the Canvas course card, which says "Tradeoffs", to match.**
+3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
 
 ## Deferred structural revisions
 
@@ -272,14 +308,6 @@ When we next revise the Econ 150 textbook's firm-behavior unit, change the chapt
 The reasoning is that students should first understand how firms turn inputs into output and make production decisions, then derive and interpret costs, and only afterward apply those ideas to short-run and long-run profit maximization.
 
 **Status:** Record for later; do not implement yet. When this becomes active work, create a GitHub issue to track the structural revision, then use a pull request for the actual chapter and navigation changes.
-
-### EDCOR 310: Fix the unit labels on chapter title cards
-
-The small label at the top of each chapter's title card (for example, "Unit 3 · The Developing Learner") doesn't match the book's four units. Chapters 1–8 say "Unit 1 · The Great Adventure" instead of "Unit 1 · Intro to Psychology," Chapter 14 says Unit 3 though it sits in Unit 2, and Chapters 16–24 say Units 4 and 5.
-
-**How to do it:** go chapter by chapter with Benjamin. Show what each label says now, ask what it should say, then make the changes in one batch.
-
-**Status:** Record for later; do not implement yet.
 
 ### Both books: Add recorded narration in Benjamin's voice (ElevenLabs)
 
@@ -388,14 +416,9 @@ The Joy of Learning and Joy of Econ menus moved from Word into `menus/` (see `me
 
 These are promising possibilities, but they are intentionally near the bottom of the backlog. They should not displace the current work on content quality, practice, accessibility, interactives, author-led video, audio, exports, or the series/front-matter system.
 
-### Found October 23, 2026
+### Unit opener art (recorded October 26, 2026)
 
-1. **Missing shapes in figures (Priority: High; fix Monday, October 26).** About 50 shapes in both books have no width or height, so they draw nothing: bars, shaded areas, and legend swatches simply aren't there. This is the bug fixed in Econ 150 Chapter 10 (Econ pull request #33), and it was already in the Drive originals.
-   - **Econ 150 (about 42):** Chapter 13 is the worst. Its callback-rate, earnings-by-education, and pay-gap charts show no bars at all (15 shapes). Also Chapters 0, 2, 4, 8, 11, 17, and 22, `introduction.html`, and `ittrdogupr.html` (the Chapter 9 homework draft).
-   - **EDCOR 310 (8):** Chapter 6's five-color band figure (5) and the legend swatches in A Hero's Journey (`sup1.html`, 3).
-   - **The fix:** work out each size from points already drawn in the same figure (axes, labels, lines, dots), the way Chapter 10 was fixed. Then render every figure and compare it with its caption. A shape with an `id`, or inside a practice widget, may be redrawn by code; check before editing it.
-2. **Econ 150 unit names on title cards (Benjamin decided October 23; fix Monday).** The contents page's unit names are the official ones: The Case for the Market, The Firm in Perfect Competition, The Critique of the Market, and The Firm in Imperfect Competition. Several chapter title cards use other names ("How Markets Coordinate," "The Logic of Competition," "Critique of Markets," "Market Power and Imperfect Competition"), and Chapters 25 and 26 carry their own labels. Make the cards match the contents page. Still open for Benjamin: the book's subtitle says "Choice, Incentives, and Human Flourishing," while the Canvas course card says "Choice, Tradeoffs, and Human Flourishing."
-3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
+A consistent opener image for each unit in both books (8 in all). Benjamin wants it eventually, as a lower priority. Neither book has unit images now.
 
 ### Found October 24, 2026
 
