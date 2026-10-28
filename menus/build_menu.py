@@ -47,7 +47,6 @@ def entry_html(e, scope_id, titles):
         '<button type="button" class="jm-btn jm-rating-btn" data-rating="3" aria-pressed="false" aria-label="A-tier · Keep" title="A-tier · Keep">3</button>'
         '<button type="button" class="jm-btn jm-rating-btn" data-rating="4" aria-pressed="false" aria-label="S-tier · Life-changing · Celebrate" title="S-tier · Life-changing · Celebrate">4</button>'
         '</span>'
-        '<span class="jm-rating-summary" aria-live="polite"></span>'
         '</span>'
     )
     out = [
@@ -61,6 +60,11 @@ def entry_html(e, scope_id, titles):
         plan,
         ratings,
         '<span class="jm-entry-chevron" aria-hidden="true">+</span>',
+        '<span class="jm-vote-tools" aria-label="Vote distribution controls">',
+        '<button type="button" class="jm-btn jm-view-votes" aria-label="Reveal votes for this reading">Reveal</button>',
+        '<span class="jm-rating-summary jm-hidden" aria-live="polite"></span>',
+        '</span>',
+
         '</summary>',
         '<div class="jm-entry-detail">',
     ]
@@ -77,6 +81,7 @@ def entry_html(e, scope_id, titles):
     if e.get("pairs"):
         links = " · ".join('<a href="#r-%s">%s</a>' % (esc(p), esc(titles[p])) for p in e["pairs"])
         out.append('<p class="jm-pairs">Pairs with: %s</p>' % links)
+
     out.append('</div>')
     out.append('</details>')
     return "\n".join(out)
@@ -194,7 +199,7 @@ def build(data):
 <p class="jm-kicker">{esc(c['course'])} · Reading Menu</p>
 <h1 class="jm-title" id="jm-title">{esc(c['menuTitle'])}</h1>
 <p class="jm-lede">{esc(data['intro']['lede'])}</p>
-<details class="jm-howto" open><summary>How this works</summary><div class="jm-howto-body">
+<details class="jm-howto"><summary>How this works</summary><div class="jm-howto-body">
 {howto}
 </div></details>
 </section>
@@ -220,6 +225,7 @@ def build(data):
 </section>
 {chr(10).join(units_html)}
 {appendix}
+<div class="jm-instructor-tools"><button type="button" class="jm-btn" id="jm-reveal-all" aria-label="Reveal all votes" title="Reveal all semester votes">Reveal all votes</button></div>
 <p class="jm-foot">{esc(c['menuTitle'])} · {esc(c['course'])} · Your picks are saved in this browser only. They don't reach your instructor or your group.</p>
 </main>
 <script type="application/json" id="jm-config">{json.dumps(config)}</script>
