@@ -44,6 +44,7 @@ THEME = {
 
 FRONT = [
     ("i", "Introduction: The Wealth of Nations", "introduction.html"),
+    ("ii", "How to Get the Most Out of This Book", "how-to-get-the-most-out-of-this-book.html"),
     ("0", "Algebra Review", "Chapter0.html"),
 ]
 
@@ -58,7 +59,7 @@ UNITS = [
         (7, "Intervention Distortions I: Taxes, Subsidies, and Incidence"),
         (8, "Gains from Trade: The Case for International Cooperation"),
     ]),
-    ("II", "The Firm in Perfect Competition", [
+    ("II", "The Logic of Competition", [
         (9, "Firm Model I: Costs"),
         (10, "Firm Model II: Short-Run Decisions"),
         (11, "Firm Model III: Long-Run Decisions"),
@@ -74,7 +75,7 @@ UNITS = [
         (19, "Market Failures III: Taxes, Subsidies, and Incentives"),
         (20, "Unit Capstone: The Economics of Healthcare"),
     ]),
-    ("IV", "The Firm in Imperfect Competition", [
+    ("IV", "When Competition Breaks Down", [
         (21, "Market Power I: Monopoly"),
         (22, "Market Power II: Addressing Market Power"),
         (23, "Imperfect Competition I: Monopolistic Competition"),
@@ -83,6 +84,9 @@ UNITS = [
         (26, "The Case for (and Limits of) Markets"),
     ]),
 ]
+
+# A small subheading inside a unit, shown on the contents page before the chapter it names.
+DIVIDERS = {25: "The Closing Reckoning"}
 
 # One or two sentences under each unit's name on the contents page. Empty until written.
 HOOKS = {
@@ -126,7 +130,8 @@ def main():
         units.append({
             "roman": roman, "kicker": f"Unit {i} · Chapters {min(nums)}–{max(nums)}", "title": title,
             "hook": HOOKS.get(roman, ""), "outcomes": [],
-            "chapters": [{"n": str(n), "t": t, "s": subtitle(f"Chapter{n}.html"), "m": "", "href": f"/Chapter{n}.html"}
+            "chapters": [{"n": str(n), "t": t, "s": subtitle(f"Chapter{n}.html"), "m": "", "href": f"/Chapter{n}.html",
+                          "divider": DIVIDERS.get(n, "")}
                          for n, t in chs],
         })
     book = dict(BOOK)
@@ -134,7 +139,6 @@ def main():
         "footer_html": [f"© 2026 {html.escape(BOOK['byline'].split(',')[0])}.", f"{BOOK['course']} · {BOOK['school']}"],
         "cover": {"src": "/assets/cover.jpg", "width": width, "height": height, "alt": BOOK["cover_alt"]},
         "theme": THEME,
-        "start": {"label": "Start with the Introduction", "href": "/introduction.html"},
         "stats": f"{n_chapters} chapters in {len(units)} units · free and open",
         "contents_sub": f"{n_chapters} chapters in {len(units)} units",
         "count": str(n_chapters),

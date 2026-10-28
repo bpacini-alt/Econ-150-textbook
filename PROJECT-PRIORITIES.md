@@ -44,7 +44,27 @@ The default behavior is **inspect, report, recommend, then act**:
 
 Safe reversible improvements—such as fixing links, clarifying documentation, standardizing names, or reorganizing clearly misplaced files—may be proposed as ordinary maintenance. Deletion is never assumed merely because a file is old.
 
+### Deferred branch cleanup
+
+Keep routine branch cleanup report-first and approval-gated. Enable automatic deletion of head branches after merged pull requests where appropriate, but do not delete arbitrary branches merely because they have no open pull request. During the Friday cleanup, inspect branches with no open PR and no known active use, then classify each as **safe to delete**, **needs review**, or **retain**. Before deleting any candidate, re-check for open-PR dependencies and preserve `main`, protected coordination/documentation branches—including `docs/collaborator-coordination-clean-20261021` and Econ 150's `docs/reading-times-note`—as well as any branch containing unique unmerged work or serving an active preview. Record the branch name and head commit SHA before deletion. **Status:** Deferred; do not implement branch deletion automatically yet.
+
 When Claude or another collaborator has recently worked in the repository, first inspect the current state and recent history before cleaning up. Do not mistake unfamiliarity for obsolescence, and do not delete work simply because it is not part of the current preferred workflow.
+
+### Priority 0.5 — Learn and apply GitHub security controls
+
+Before placing course-source material or AI-facing working files in GitHub, learn the repository controls that keep them safe while preserving useful collaboration:
+
+- Decide which repositories should be public and which should be private. The student-facing textbooks can remain public; raw course exports, unpublished slides, student information, credentials, and other working material should not go in them.
+- Protect `main` with pull requests, required checks, no force-push, and no deletion.
+- Use least-privilege access for TAs and AI agents: read access by default; write access only when an agent needs to propose changes through a branch and pull request; never share personal tokens or secrets.
+- Learn how to audit collaborators, deploy keys, Actions secrets, branch rules, and access logs.
+
+**Why this matters:** The repositories should be open enough for collaboration and review without turning unpublished course material or student data into public material.
+
+**Deferred course-source work:**
+
+- **EDCOR 310:** obtain a fresh Canvas LMS export in a later pass, keep it private, and use it alongside the reading calendar and slide decks to make the course easier to improve and maintain for future semesters.
+- **EDCOR 200:** before teaching it again, gather the current course materials into a separate private course archive/repository. This is a future planning item, not current implementation work.
 
 ## Strategic order of work
 
@@ -76,6 +96,34 @@ Make each book clear, coherent, accessible, and trustworthy before adding substa
 
 **Why this is high priority:** Better presentation, trustworthy sourcing, and fewer points of friction benefit every student immediately and multiply the value of every later feature.
 
+### Priority 2 companion — AP Micro benchmark and economics interactive inventory
+
+**Status:** Research and inventory first; do not implement indiscriminately.
+
+Use [AP Microeconomics](https://apcentral.collegeboard.org/courses/ap-microeconomics) as the primary external quality benchmark for Econ 150 practice: review public multiple-choice and free-response examples, graphical reasoning, scoring guidelines, and misconceptions. First map AP topics and skills against actual Econ 150 course outcomes. Classify AP material as directly aligned, partially aligned, out of scope, or an important course-specific gap. Do not assume the course teaches all AP units. Respect College Board copyright and secure-question restrictions; write original public textbook questions unless reuse is authorized.
+
+Separately, curate the best existing economics **interactive graphs, manipulatives, simulations, and visual demonstrations**. This is distinct from the Precise Practice question bank. Investigate sources such as [EconGraphs](https://www.econgraphs.org/), [CORE Econ](https://www.core-econ.org/), and [AEA classroom experiments](https://www.aeaweb.org/resources/teachers/classroom-experiments). Evaluate each for chapter fit, conceptual clarity, misconceptions addressed, accessibility, embed/reuse rights, cost, and maintenance risk. Prefer linking or embedding excellent existing resources over rebuilding them.
+
+**Deliverables:** (1) AP Micro-to-Econ 150 alignment matrix; (2) curated interactive inventory with licensing and integration notes; (3) a shortlist of high-leverage pilots. Keep this work separate from Precise Practice module architecture.
+
+### Priority 2 companion — AP Psychology as an EDCOR 310 rigor benchmark
+
+**Status:** Research and alignment first; secondary reference, not the EDCOR instructional blueprint.
+
+Review the current [AP Psychology course framework](https://apcentral.collegeboard.org/courses/ap-psychology), public practice questions, scoring rubrics, and especially its **Article Analysis Question (AAQ)** and **Evidence-Based Question (EBQ)** formats. Use these as benchmarks for precise psychological vocabulary, conceptual discrimination, research literacy, interpretation of evidence, and rigorous argumentation. Map each candidate skill or topic to EDCOR 310 outcomes; do not import unrelated AP units or make EDCOR an AP test-preparation course.
+
+**EDCOR extension:** Convert relevant scientific reasoning into authentic classroom practice: diagnose a teaching/learning problem, evaluate the strength and limits of evidence, select and justify an instructional response, anticipate tradeoffs or unintended consequences, and reflect on professional judgment, leadership, and discipleship. The aim is not simply knowing psychology, but becoming a wiser, evidence-informed educator.
+
+**First deliverable:** Compare AP Psychology AAQ/EBQ examples with several EDCOR classroom decision-making cases and propose reusable higher-order practice patterns. Respect College Board copyright and restrictions on secure assessment materials.
+
+### Priority 2 companion — Separate Econ and EDCOR Tier 2 engines / Rule of Four fluency
+
+**Next prototype:** Revise Econ MRP homework as a single-screen, table-first calculation/hiring task with an optional aligned graph, plus a separate graph-to-table translation mode. Practice moving between representations, but **do not require table + graph on every item**; use combined views when making relationships explicit and hide answers for independent translation. Give EDCOR a distinct classroom-evidence and instructional-decision Tier 2 sequence while reusing technical components. Include 10+ validated variants, targeted additional practice, optional test-out, and a minimal vertical practice-progress display distinct from provisional understanding indicators. See [Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md).
+
+### Priority 2 companion — Precise Practice design playbook and AI feedback pilot
+
+**High impact / strategic infrastructure.** Preserve the agreed instructional principles, foundational practice engines, question-type repertoire, mental anchors, aphorism handling, spiral review, and minimal homework-friendly learning indicators in [the Precise Practice design playbook](docs/PRECISE-PRACTICE-DESIGN.md). Treat patterns as provisional until student-tested; do not require every engine on every page. **Next:** Audit existing Econ 11–12 and EDCOR exercise implementations; prototype Tier 2 blocked practice, then Tier 3 application/FRQ formats. Pilot a rubric-grounded, low-stakes AI aphorism feedback box against instructor-scored responses before deploying it broadly.
+
 ### Priority 2 — Make every chapter practice-heavy
 
 Revise both books chapter by chapter so students regularly retrieve, predict, explain, apply, and receive feedback—not merely read and then answer a few questions at the end.
@@ -86,6 +134,27 @@ Revise both books chapter by chapter so students regularly retrieve, predict, ex
 - Provide answers, explanations, or feedback where appropriate so students can learn from the attempt.
 - Prefer a manageable number of high-quality tasks over busywork or question volume for its own sake.
 - Keep the practice aligned with the chapter's central ideas and learning outcomes.
+- For EDCOR 310, design the practice system before scaling up chapter-by-chapter implementation. The goal is not simply to imitate AP question formats: EDCOR 310 is meant to help students become disciples, leaders, and evidence-based practitioners. Write a short practice specification, create several representative examples, and identify a repeatable framework that gives the course an AP-like scaffold without reducing the course to test preparation. The design should include:
+  - a progression from retrieval and explanation to evidence interpretation, judgment, application to teaching and discipleship, and transfer to real practice;
+  - recurring task types and feedback expectations so students know what good practice looks like from chapter to chapter;
+  - prompts that surface misconceptions and require students to explain why an answer is right, not merely select it;
+  - opportunities to choose a meaningful application or presentation, adapting the strongest parts of the Joy of Econ choice-based, high-level assignment model where appropriate;
+  - a clear distinction between low-stakes learning practice, preparation for course assessments, and formative work that develops professional judgment;
+  - sample items from several chapters, plus a rubric or checklist for evaluating whether a proposed activity builds understanding, leadership, discipleship, or evidence-based practice.
+
+  A useful first draft of the recurring practice arc is a five-move framework:
+
+  1. **Understand the tool:** retrieve, define, explain, and distinguish the idea; identify relevant evidence and limits.
+  2. **Perform the tool:** use it in a relatively clear, blocked example with feedback.
+  3. **Choose the tool:** use mixed, spiral, and interleaved practice to decide which framework or strategy fits a new situation.
+  4. **Judge the use:** evaluate whether the tool is being used appropriately, proportionately, and in an evidence-aligned way. Ask what it helps us see, what it leaves out, and what unintended consequences might follow. For theories and frameworks, treat them as evidence-informed interpretive lenses—not definitive explanations or guaranteed prescriptions.
+  5. **Transfer and act:** adapt the tool to an unfamiliar classroom, leadership, discipleship, or professional situation; propose a modest next step and identify what evidence would show whether it helped.
+
+  The central distinction is: **choosing asks, “Is this the right tool?” Judging asks, “Is this a good use of the tool?”**
+
+  The framework should include a recurring **Evidence-Based Practice Response**: an AP-FRQ-like case with a short scenario, several directed tasks, and a rubric rewarding accurate reasoning, evidence, limits, judgment, and application. Students should not receive full credit merely for naming a framework; they should connect it to the case, judge its fit and limits, and recommend an action that can be observed and revised.
+
+  Treat this as a design hypothesis to test, not a decision that prevents a better framework.
 
 **Why this is high priority:** Practice is where students turn exposure into durable understanding. A practice-heavy chapter can improve learning more directly than adding another presentation feature.
 
@@ -103,7 +172,38 @@ Start with concepts where a visual or manipulable model is substantially better 
 
 **Why this comes before larger AI features:** A well-designed manipulative can directly improve conceptual understanding with modest technical complexity.
 
-### Priority 4 — Add chapter audio
+### Priority 4 — Add author-led video explanations
+
+Create a more prominent, purposeful role for videos made by the author so students can see Benjamin explain the ideas in the book and engage with the material in another format.
+
+Begin with an inventory of the existing Ed Psych recorded lectures and other unlisted videos:
+
+- Identify which videos fit specific chapters, sections, concepts, or review points.
+- Evaluate their relevance, clarity, length, production quality, and likely student value.
+- Prefer using existing recordings—and, where useful, cutting them into shorter chapter-specific segments—before creating substantial new material.
+- Identify the small number of missing explanations where new recording would genuinely add value.
+- Determine whether videos should be embedded directly in the chapter, placed in a prominent “Watch Benjamin explain this” feature, or both.
+- Develop a practical workflow for transcripts, captions, chapter links, and permissions.
+- Decide deliberately whether any unlisted videos should become public; public visibility should follow the content review, not precede it.
+
+**Why this matters:** Author-led video can make the books feel more personal and interactive while giving students another way to encounter difficult ideas. Its cost and value should be established by auditing the existing recordings before committing to a large new production effort.
+
+### Priority 4 companion — Pilot short-form chapter video series
+
+**Status:** Interesting and potentially high-value, but deferred until the higher-priority textbook work is in good shape. Pilot in a small number of chapters before committing to a full production workflow.
+
+Create a series of short, clear, chapter-linked videos that complement the main text rather than duplicate or replace it. Use a range of lengths—roughly 30 seconds, 2 minutes, and 7 minutes—so each video has one focused job: explain an interesting study, clarify a disputed claim, demonstrate an evidence-based practice, walk through a policy debate, or model how to think with a disciplinary tool.
+
+Possible recurring formats include:
+
+- **Econ 150:** *Study of the Day*, *Policy Debates*, and *How to Think Like an Economist*.
+- **EDCOR 310 / Joy of Learning:** *Tool Time* and *Ed Psych Bites*, including short “true, false, or in between” treatments of claims students encounter online and practical evidence-based teaching moves students can use tomorrow.
+
+Test the format in a few chapters, paying attention to student interest, completion, comprehension, production time, accessibility, and maintenance. Explore whether students can create candidate videos as part of meaningful coursework, with especially strong student-created pieces reviewed for possible inclusion in the books. Establish a repeatable workflow for captions, transcripts, chapter placement, permissions, and links before scaling.
+
+**Why this matters:** Short-form video can improve access, readability, engagement, and the sense that the books are alive and useful without making the main text harder to navigate. A small pilot can reveal whether the student value justifies the ongoing production and maintenance cost.
+
+### Priority 5 — Add chapter audio
 
 Continue the audio work already underway, beginning with the chapters where audio will most help students.
 
@@ -115,7 +215,7 @@ Continue the audio work already underway, beginning with the chapters where audi
 
 **Why this matters:** Audio improves access and gives students another way to review, but it should not outrank core content repair or the highest-value interactives.
 
-### Priority 5 — Build a reliable PDF export/compiler
+### Priority 6 — Build a reliable PDF export/compiler
 
 Create a polished way for students to download or print a coherent PDF of a book or selected chapters.
 
@@ -126,7 +226,7 @@ Create a polished way for students to download or print a coherent PDF of a book
 
 **Why this matters:** A dependable PDF gives students a familiar, portable, printable format and may be relatively high leverage if the existing publishing system supports it cleanly.
 
-### Priority 6 — Add an AI/notebook export workflow
+### Priority 7 — Add an AI/notebook export workflow
 
 Investigate an export that lets students use approved chapter materials in an AI notebook or study environment—for example, to summarize, ask questions, review vocabulary, and quiz themselves.
 
@@ -140,7 +240,7 @@ The first version should be simple and controlled:
 
 **Why this is not first:** It could be powerful, but its value depends on clean content, stable exports, and careful attention to student privacy, accuracy, and platform changes.
 
-### Priority 7 — Develop real-time policy analysis practice
+### Priority 8 — Develop real-time policy analysis practice
 
 Explore a later-stage system in which students analyze a policy in real time, using their notes while responding to probing questions.
 
@@ -163,10 +263,10 @@ Possible components include:
 | 1 | Polish and standardize each book | Very high | Medium | Main ongoing focus |
 | 2 | Practice-heavy chapters | Very high | Medium–high | Build into every chapter |
 | 3 | Small, high-yield interactives/manipulables | High | Medium | Build selectively |
-| 4 | Chapter audio | Medium–high | Medium | Continue in a repeatable workflow |
-| 5 | PDF compiler/export | Medium–high | Low–medium | Build once the pipeline is understood |
-| 6 | AI/notebook export | Potentially high | Medium–high | Prototype after content/export foundations |
-| 7 | Real-time policy analysis coach | Potentially very high | Very high | Strategic later project |
+| 4 | Author-led video explanations | High | Low–high, depending on reuse | Audit existing recordings first; build selectively |\n| 5 | Chapter audio | Medium–high | Medium | Continue in a repeatable workflow |
+| 6 | PDF compiler/export | Medium–high | Low–medium | Build once the pipeline is understood |
+| 7 | AI/notebook export | Potentially high | Medium–high | Prototype after content/export foundations |
+| 8 | Real-time policy analysis coach | Potentially very high | Very high | Strategic later project |
 
 This ranking is provisional. A concrete task can move upward if it solves an urgent student problem, unlocks several other projects, or is dramatically easier than expected.
 
@@ -188,18 +288,11 @@ The default strategy should be to focus on the book, chapter, or feature with th
 
 These are broken now, so they count as Priority 0. Fix them in the GitHub copies when the chapters move to the new site. Leave the EdTechBooks copies alone for now.
 
-### Econ 150: Broken interactive widgets in Chapters 2 and 4
+### Found October 23, 2026 (high: fix now)
 
-Four interactive pieces don't run in the current chapter files:
-
-- **Chapter 2:** two graph widgets. One is the "Missing Market" widget (the chapter's first script); the other is the chapter's eighth script.
-- **Chapter 4:** Interactive practice 1 ("Predict the new equilibrium") and Interactive practice 2 ("Binding or not?").
-
-**Cause:** when EdTechBooks squashed each script onto a single line, a `//` comment ended up commenting out everything after it, so the browser stops with "Unexpected end of input."
-
-**How to fix:** in each affected script, change `//` comments to `/* … */` or restore the line breaks. Then load the chapter on the new site and confirm the widgets work.
-
-**Status:** fix on the new site; do not edit in EdTechBooks. Found during the audio-player work, which doesn't affect these widgets. A check of every EDCOR 310 chapter found no similar problems.
+1. **Missing shapes in figures (High).** Shapes with no width or height draw nothing. **Mostly fixed October 26** (EDCOR 310 and Econ 150 pull requests "Draw the missing figure shapes"): every static figure in both books now draws, including EDCOR 310 Chapter 6's band figure and the Hero's Journey legend. **Still open: Econ 150 Chapter 13** (its callback-rate, earnings-by-education, and pay-gap charts, 15 shapes). It was left alone because open drafts edit that chapter (Econ 150 #40 and #55). Fix it once those are merged or closed, the same way: size each shape from points already drawn in its figure, then render and compare with the caption. Chapter 11's two drag-the-curve homework graphs also contain size-less shapes, but the homework code redraws those graphs when the page loads, so they need no fix.
+2. **Unit names on title cards (decided and mostly done October 26).** Rule: a chapter's title-card label always matches its unit on the contents page. Econ 150's units are now The Case for the Market, The Logic of Competition, The Critique of the Market, and When Competition Breaks Down, with "The Closing Reckoning" as a subheading over Chapters 25–26. Pages before Chapter 1 read "Before Chapter 1", which replaced "Start here". EDCOR 310 uses its four contents-page names. **Still open: Chapters 13 and 14 in both books,** left alone while drafts edit them (EDCOR 310 #34, #53; Econ 150 #40, #55). Set their labels when those settle. Econ 150's subtitle stays "The Science of Choice, **Incentives**, and Human Flourishing" (Benjamin, October 26). **Benjamin: change the Canvas course card, which says "Tradeoffs", to match.**
+3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
 
 ## Deferred structural revisions
 
@@ -216,14 +309,6 @@ The reasoning is that students should first understand how firms turn inputs int
 
 **Status:** Record for later; do not implement yet. When this becomes active work, create a GitHub issue to track the structural revision, then use a pull request for the actual chapter and navigation changes.
 
-### EDCOR 310: Fix the unit labels on chapter title cards
-
-The small label at the top of each chapter's title card (for example, "Unit 3 · The Developing Learner") doesn't match the book's four units. Chapters 1–8 say "Unit 1 · The Great Adventure" instead of "Unit 1 · Intro to Psychology," Chapter 14 says Unit 3 though it sits in Unit 2, and Chapters 16–24 say Units 4 and 5.
-
-**How to do it:** go chapter by chapter with Benjamin. Show what each label says now, ask what it should say, then make the changes in one batch.
-
-**Status:** Record for later; do not implement yet.
-
 ### Both books: Add recorded narration in Benjamin's voice (ElevenLabs)
 
 Right now every chapter is read aloud by the student's own device voice. That's a stopgap while chapters are still being edited, so no money is spent on audio that would have to be regenerated. Once editing is done, replace it with narration in Benjamin's cloned voice.
@@ -237,6 +322,22 @@ Right now every chapter is read aloud by the student's own device voice. That's 
 Full details, costs, and file-size limits are in `audio/README.md` under "Stage 2: recordings."
 
 **Status:** Record for later; do not start until the chapters are done being edited. Then go chapter by chapter, starting with the chapters students will be assigned first.
+
+### Both books: "Worth remembering" aphorism boxes (recorded October 24, 2026)
+
+**Benjamin's view:** a clever turn of phrase makes a real difference to what students remember. Each chapter's big ideas should get a short, memorable line, shown in a "Worth remembering" box right where the idea is taught, with a recap of all of them after the chapter synthesis.
+
+**The model:** EDCOR 310 Chapter 11 (Constructivism), added in EDCOR 310 pull request #35. It has six aphorisms, such as "Your brain thinks in examples, not definitions" and "To change a mind, change the schema," each with a one- or two-sentence follow-up, and a recap of all six at the end. The look is the `etb-aphorism` style, which for now lives only in Chapter 11's own style block.
+
+**How to do it:**
+
+1. Move the `etb-aphorism` styles somewhere both books can share, so every chapter uses one design.
+2. Go chapter by chapter with Benjamin. Draft three to six candidate aphorisms from each chapter's major concepts; Benjamin chooses and rewords them. They have to sound like him, and each one has to stay true to the evidence in the chapter.
+3. Place each box where its idea is taught and add the recap after the synthesis. Use the same wording in the slides and any other course materials, so students meet the same phrase every time.
+
+**Priority:** Medium. Useful for students, but a big lift across two books, because the wording has to be drafted and approved chapter by chapter.
+
+**Status:** Record for later; start when there is time. EDCOR 310 Chapter 11 is done (once #35 is merged).
 
 ### Loose ends from the move to the new sites (recorded October 20, 2026)
 
@@ -253,7 +354,7 @@ Small items found while moving both books off EdTechBooks. Most are quick. Items
    **Approved and checked October 20, 2026; deletion still to do (Benjamin).** Benjamin approved deleting every branch whose pull request is merged or closed. 26 qualify: 13 in each repository, listed in EDCOR 310 #16 and Econ 150 #15. Each one's last commit is already in `main` or belongs to a closed pull request. Claude's GitHub access in that session couldn't delete branches, so delete them from each repository's **Branches** page. Keep `main`, any branch with an open pull request, and `docs/collaborator-coordination-clean-20261021` (no pull request; ask Benjamin).
 6. **Econ 150 `site/` folder (Benjamin).** It holds an old placeholder page that Cloudflare does not serve. Keep or remove.
 7. **Protect `main` (Benjamin).** In each repository's Settings → Branches, add a rule for `main` that requires a pull request and blocks deletion and force-pushes.
-8. **Cloudflare preview builds (Benjamin).** Every branch shows a red X. Either turn off branch builds, or turn on preview links, so each pull request gets a test address to click before merging.
+8. **Cloudflare preview builds (Benjamin).** Every branch shows a red X. Either turn off branch builds, or turn on preview links, so each pull request gets a test address to click before merging. **Done, October 24, 2026:** preview links work in both books. Cloudflare comments a preview address on each pull request.
 9. **The professional website (Benjamin).** benjaminpacini.com is registered, and the old Google Site is archived in the `benjaminpacini-site` repository, but the new site isn't built or connected to Cloudflare yet. benpacini.com, the short version to redirect, is not registered yet.
 10. **Renew the report button's GitHub token (Benjamin), by October 2027.** See "Report a problem button" in `AGENTS.md`.
 11. **One image rule for each whole book.** An image with no width limit spills past the text column and gets cut off, worst on phones. EDCOR 310 Chapter 2 and Econ 150 Chapter 1 now carry their own fix (`:where(.etb) img{max-width:100%;height:auto}` at the start of the chapter's styles), but an image added to any other chapter will have the same problem. Move the rule into each book's page wrapper: `wrap_chapter_page()` in EDCOR 310's `build/build_site.py`, and the page header in Econ 150's `build/wrap_pages.py`. The Econ 150 change rewrites every chapter's header, so rerun the script and commit all the pages. Then remove the two per-chapter copies and check a few chapters with images at phone width.
@@ -268,7 +369,7 @@ Small items found while moving both books off EdTechBooks. Most are quick. Items
 
 The mockups are in Benjamin's Claude canvas "BenjaminPacini.com Landing Page": the hub, plus a cover page and a contents page for each book. Ask Benjamin for access; it is private.
 
-**Ready to build once preview links work (Priority 1: navigation and access)**
+**Ready to build (Priority 1: navigation and access)**
 
 *Status, October 23, 2026: items 1, 2, 4, and 5 are built (pull requests "Cover and contents pages (shared design)" in both repositories). Benjamin chose the two-page version, a cover and then a contents page, over a one-page front, and the plain white Econ look with navy and light brass accents over the darker Canvas-course colors. Still open: item 3 (the shared top bar on chapter pages), Econ 150's unit hooks and reading times, and EDCOR 310's "How to Get the Most Out of This Book" and Introduction.*
 
@@ -278,7 +379,7 @@ The mockups are in Benjamin's Claude canvas "BenjaminPacini.com Landing Page": t
 4. **Each book takes its accent color from its cover:** EDCOR 310 uses the cover's blue (#145d90). Econ 150 uses the cover's night navy (#1b2430) with gold numerals (#a87d32). Everything else follows the styles the chapters already use (Georgia, white title cards, the uppercase labels), as in EDCOR 310's `site/assets/book.css`.
 5. **Build the front matter from one template,** kept identical in both repositories and changed in matching pull requests, the same way as the audio player.
 
-**Do first:** loose end 8 (Cloudflare preview links), so Benjamin can look at the new pages before anything is merged.
+**Done:** loose end 8 (Cloudflare preview links). Benjamin can look at new pages before anything is merged.
 
 **Writing for Benjamin to do later (Priority 1: content)**
 
@@ -313,16 +414,37 @@ The Joy of Learning and Joy of Econ menus moved from Word into `menus/` (see `me
 
 ## Cool ideas for later
 
-These are promising possibilities, but they are intentionally near the bottom of the backlog. They should not displace the current work on content quality, practice, accessibility, interactives, audio, exports, or the series/front-matter system.
+These are promising possibilities, but they are intentionally near the bottom of the backlog. They should not displace the current work on content quality, practice, accessibility, interactives, author-led video, audio, exports, or the series/front-matter system.
 
-### Found October 23, 2026
+### Unit opener art (recorded October 26, 2026)
 
-1. **Missing shapes in figures (Priority: High; fix Monday, October 26).** About 50 shapes in both books have no width or height, so they draw nothing: bars, shaded areas, and legend swatches simply aren't there. This is the bug fixed in Econ 150 Chapter 10 (Econ pull request #33), and it was already in the Drive originals.
-   - **Econ 150 (about 42):** Chapter 13 is the worst. Its callback-rate, earnings-by-education, and pay-gap charts show no bars at all (15 shapes). Also Chapters 0, 2, 4, 8, 11, 17, and 22, `introduction.html`, and `ittrdogupr.html` (the Chapter 9 homework draft).
-   - **EDCOR 310 (8):** Chapter 6's five-color band figure (5) and the legend swatches in A Hero's Journey (`sup1.html`, 3).
-   - **The fix:** work out each size from points already drawn in the same figure (axes, labels, lines, dots), the way Chapter 10 was fixed. Then render every figure and compare it with its caption. A shape with an `id`, or inside a practice widget, may be redrawn by code; check before editing it.
-2. **Econ 150 unit names on title cards (Benjamin decided October 23; fix Monday).** The contents page's unit names are the official ones: The Case for the Market, The Firm in Perfect Competition, The Critique of the Market, and The Firm in Imperfect Competition. Several chapter title cards use other names ("How Markets Coordinate," "The Logic of Competition," "Critique of Markets," "Market Power and Imperfect Competition"), and Chapters 25 and 26 carry their own labels. Make the cards match the contents page. Still open for Benjamin: the book's subtitle says "Choice, Incentives, and Human Flourishing," while the Canvas course card says "Choice, Tradeoffs, and Human Flourishing."
-3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
+A consistent opener image for each unit in both books (8 in all). Benjamin wants it eventually, as a lower priority. Neither book has unit images now.
+
+### Found October 24, 2026
+
+1. **EDCOR 310: Add the forgetting curve (Benjamin asked October 24).** The book doesn't mention Ebbinghaus or the forgetting curve anywhere, though retrieval practice and spacing come up in nearly every chapter. The new course workbook's example Class Notes page is built around it, so students will meet it there first. Add it to Chapter 22 (Attention, Memory, and Cognitive Load): a short explanation, a simple figure showing memory falling quickly without review and the curve flattening with each review, and a sentence tying it to the workbook's warm-up and 48-hour check. Verify the claims against the original research and current replications before writing, since popular versions often overstate the exact percentages.
+
+### EDCOR 310: Supplemental essay, "The Intuitionist Approach to Education" (recorded October 24, 2026)
+
+**The idea:** a supplemental essay that takes Haidt's elephant and rider seriously and asks what follows for teachers if intuition drives most learning. The thesis is Benjamin's line: we used to think the rider's job was to steer the elephant; the rider's real job is building a better elephant. The goal is not a new method. It is showing that many methods we already know work trace back to schemas, using studied, everyday classroom examples.
+
+**Outline agreed so far:**
+
+1. Opening scene: a student marks "learning styles are a myth" correctly on the exam, then plans a lesson around visual learners two years later.
+2. The account: the elephant and rider, and why the elephant runs on schemas and prototypes. Treat "95 percent" as a premise, not a measured fact; the figure traces to a marketing estimate.
+3. What most teaching assumes: we teach the rider.
+4. Build the elephant right the first time (prototypes; examples and non-examples; fractions, the equal sign, triangles, the natural selection storybook).
+5. Retraining the elephant is a different job (conceptual change; red carpet, then tug; predict before the demo).
+6. The elephant is lazy, so shape the path (Willingham; AI and take-home work; in-class drills).
+7. Possible section: teachers have elephants too (apprenticeship of observation, expert blind spot).
+8. What's left for the rider: intuitionism favors explicit instruction and practice, not discovery for its own sake.
+9. Close.
+
+**Related:** Chapter 2 already covers the elephant and rider and Hendrick's argument, so the essay should extend Chapter 2, not repeat it. Chapter 11 now carries the six aphorisms the essay should reuse word for word.
+
+**Open questions for Benjamin:** who the audience is (EDCOR 310 students, or a broader "Psychology of…" post); whether the conference-talk examples belong in the essay; whether to include the "teachers have elephants too" section.
+
+**Status:** Snoozed. Pick up when Benjamin is ready to draft.
 
 ### Student sign-in and lightweight progress tracking
 

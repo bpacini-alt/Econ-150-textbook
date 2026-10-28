@@ -5,13 +5,15 @@ This file is for every collaborator, human or AI (Claude, ChatGPT/Codex). Read i
 - `REPOSITORY-HOUSEKEEPING.md`: how collaborators coordinate, and the cleanup rules
 - `PROJECT-PRIORITIES.md`: what matters most right now and what is deliberately deferred
 
-Those two documents are identical in both textbook repositories (`edcor-310-textbook` and `Econ-150-textbook`). Keep them that way: a change to one goes into the other in a matching pull request.
+`REPOSITORY-HOUSEKEEPING.md` is the same in both textbook repositories (`edcor-310-textbook` and `Econ-150-textbook`); change it in both, in matching pull requests.
+
+`PROJECT-PRIORITIES.md` is each book's own list of what it needs. The goal is that each book's file lists everything that book needs, not that the two files match. When an item applies to both books (the shared design and tools, decisions about the series, work planned for both), put it in both files, in matching pull requests. When it applies to only one book, put it only in that book's file. Expect the two files to differ more over time.
 
 ## The short version
 
 1. Start from the current `main`. Check open pull requests and the last few merges for the same task.
 2. Claim the work: open a draft pull request titled with the task as soon as you start.
-3. Every change goes through a branch and a pull request. Never push directly to `main`.
+3. Every collaborator change goes through a branch and a pull request. The private prose editor is the documented exception: Benjamin's Save and publish action commits chapter prose directly to `main`.
 4. Before you ask for review, open the pull request's **Files changed** tab and confirm it touches only the files you meant to change.
 5. Merging is Benjamin's approval. Don't merge, close, or overwrite someone else's pull request.
 6. Ask Benjamin before deleting files or branches.
@@ -22,7 +24,7 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 
 | Folder or file | What it is | Edit it? |
 |---|---|---|
-| `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The script rewrites everything outside them. |
+| `etb-live/` | The chapter pages as published. `build/wrap_pages.py` adds a page header and the audio player to each chapter, between marker comments | Yes, but only the chapter's own HTML, **between** the `ETB PAGE HEADER` and `ETB PAGE FOOTER` markers. The private editor changes the page prose and commits it directly. |
 | `etb-live/images/` | Chapter images, copied from EdTechBooks and kept at the same paths the pages use (`/images/content_images/…`) | Yes |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
 | `etb-live/index.html`, `etb-live/contents/index.html` | The cover and the table of contents, **generated** by `build/build_front.py` | **Never by hand.** Edit the units and chapter titles in `build/build_front.py`; each chapter's subtitle comes from its own title card. |
@@ -38,6 +40,24 @@ After adding a chapter, changing the player, or editing anything in `menus/`, ru
 
 After adding or renaming a chapter, or changing a chapter's subtitle, run `python3 build/build_front.py` as well, so the contents page matches.
 
+## Private prose editor
+
+# Private prose editor
+
+The book pages include an **Edit** link for the content pages listed in `etb-live/manifest.json`. The editor is served at `/editor/`; Cloudflare Access must protect `econ.benjaminpacini.com/editor/*`. The Worker also validates the Access JWT and allows only the three email addresses in `feedback/worker.js`.
+
+For each Worker, set these top-level Worker variables and secrets in Cloudflare:
+
+- Text variable `ACCESS_TEAM_DOMAIN`: the full Access team origin, such as `https://your-team.cloudflareaccess.com`.
+- Text variable `ACCESS_AUD`: the Application Audience tag for that book's `/editor/*` Access application.
+- Secret `EDITOR_GITHUB_TOKEN`: a fine-grained token with Contents: Read and write for this textbook repository only.
+
+The two repositories use the same `feedback/worker.js` and `editor/index.html`, but each has its own Access application audience and its own Worker secret. The token is never stored in Git or sent to the browser.
+
+The editor writes to `main` when Benjamin selects **Save and publish**. Econ 150's source page is also its published page, so one file is committed. Cloudflare deploys the commit through the repository's existing deployment connection.
+
+The editor changes only page text. It keeps every style, script, and link the page already has, and it refuses to publish if a save would remove any of them. (An earlier version stripped scripts inside the page, which would have broken interactive widgets; see the October 24, 2026 fix.)
+
 ## Shared between the two books
 
 - **Audio player:** `audio/player/etb-audio.js` and `audio/player/etb-audio.css` are the one place to edit the player, and both repositories must carry identical copies. Change both in matching pull requests. Never edit the copies the builds place in the published folder.
@@ -50,7 +70,7 @@ After adding or renaming a chapter, or changing a chapter's subtitle, run `pytho
 
 ## Known Cloudflare behavior
 
-Cloudflare's build check shows a red X on every branch and pull request. That comes from Cloudflare's preview-build settings, not from the changes. The build that matters runs on `main` after a merge. After merging, open the live site and check the pages you changed.
+Every pull request gets a Cloudflare preview. A few minutes after you push, Cloudflare's bot comments on the pull request with a preview address (for example `https://<branch-name>-science-of-learning.bpacini.workers.dev` for EDCOR 310, or `…-econ-150-textbook.bpacini.workers.dev` for Econ 150). Use it to check the pages you changed before asking Benjamin to merge, and give him the links. The live site updates after a merge to `main`; after merging, open the live site and check the pages you changed.
 
 ## Writing for students
 

@@ -3,6 +3,7 @@
 
   var chapters = [
     { file: "introduction.html", label: "Introduction" },
+    { file: "how-to-get-the-most-out-of-this-book.html", label: "How to Get the Most Out of This Book" },
     { file: "Chapter0.html", label: "Chapter 0" },
     { file: "Chapter1.html", label: "Chapter 1" },
     { file: "Chapter2.html", label: "Chapter 2" },
