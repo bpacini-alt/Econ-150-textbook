@@ -316,6 +316,38 @@ A targeted current-chapter scan checked whether any of these lines already appea
 | 8 | EDCOR 13 | **Character is what students rehearse, not just what they recite.** | Working bank; character development requires practice and modeled behavior, not merely declarative knowledge. |
 
 **Batch 8 scan:** Compared these exact phrases against current main-branch HTML in all eight relevant chapters; none appears verbatim. This is a targeted duplication/structure check, **not** exhaustive sourcing or a full prose audit. Do not edit textbook chapters before separate review and approval.
+## Author idea inbox — October 26, 2026 (EDCOR / Joy of Learning)
+
+**Status:** Three author-proposed, **unrated** concept anchors captured from conversation. **No YES, MAYBE, REWRITE, or NO vote yet.** This is a holding area, not a new numbered review batch. Preserve wording, story, and intended correction; sourcing and chapter placement remain to be developed. Do not change student-facing chapters or turn these into new boxes without a separate editorial decision.
+
+### 1. “Behavior is communication.”
+
+- **Author's explanation:** “That doesn't let the kid off the hook,” but the behavior is often happening for a reason, and the next question should be **what is going on here?**
+- **Intellectual mechanism:** Behavior may express a need, difficulty, function, learned response, stressor, or environmental mismatch. A careful teacher asks what happened before and after, what skills/supports are missing, and which consequences maintain the pattern.
+- **Corrects:** Taking every challenging behavior as mere defiance, moral failure, or an inexplicable act; also the opposite mistake of excusing harmful behavior merely because it communicates something.
+- **Working home:** **EDCOR 21** (ADHD/executive function/behavioral support), possibly **EDCOR 19** (behaviorism), **EDCOR 7** (mental health). Check actual chapter context first.
+- **Caution:** Not every action contains an intentional message. Seek understanding **and** maintain accountability, safety, boundaries, instruction, and support. Evidence/attribution to be researched before publication.
+
+### 2. “Nets are greater than poles.”
+
+- **Author's image, preserved:** Children are swimming in a lake; a couple are swept into a river toward a waterfall. A **net installed upstream** might prevent them from reaching danger, instead of only chasing individual children with a rescue pole after they have already been swept away. “Get to the kid before they get to the waterfall.”
+- **Intellectual mechanism:** Design environments and strong **Tier 1 / universal prevention** before problems escalate; systematic, upstream support can help more learners than relying exclusively on downstream, one-at-a-time rescue. Connect to preventive supports and MTSS when appropriate.
+- **Corrects:** Thinking educational support consists only of responding to acute crises or providing intensive remediation after preventable difficulties have accumulated.
+- **Working home:** **EDCOR 24** (strong teaching before differentiation), **EDCOR 7** (preventive student support), and **EDCOR 21** (behavior/executive function). Possibly a program-level recurrent metaphor rather than just one chapter.
+- **Caution:** This is a metaphor, **not a literal superiority proof**: both upstream prevention *and* timely individualized help may be necessary. The teacher's “net” must not become a barrier that excludes or stigmatizes the child. Clarify whether “poles” means reactive rescue specifically before final wording.
+
+### 3. “MTSS is a Gen Ed process.”
+
+- **Author's emphasis:** **MTSS is a general education process.** It's blunt, deliberately, because MTSS should not be mistaken for a special-education-only pipeline.
+- **Intellectual mechanism:** A schoolwide framework of strong core instruction and data-informed, graduated supports, with responsibility shared across general education, specialists and leadership. Supports happen at different intensities; access to general education remains foundational.
+- **Corrects:** Treating MTSS as the exclusive work of special education, merely a referral or labeling mechanism, or a replacement for effective universal instruction.
+- **Working home:** **EDCOR 24** (differentiation and good Tier 1 teaching) and perhaps **EDCOR 25** (research-to-practice systems). Check the actual chapters' MTSS coverage before inserting.
+- **Caution:** General education ownership does **not** mean specialists, special education services, accommodations, disability identification, or legally required individualized services have no role. Verify local/technical definitions and applicable current implementation guidance before published wording.
+
+**Potential thematic connection, not yet approved as one aphorism:** Behavior is a clue worth investigating; stronger upstream systems prevent many difficulties; and MTSS is the responsibility of general education, not just a downstream referral mechanism. The author has **not** decided whether to join or separate these in the eventual book. Another idea was briefly remembered but not articulated in the conversation; **do not invent it**.
+
+---
+
 ## Research and audit follow-up
 
 - Verify quotation accuracy and origin: Sowell, Willingham, Palmer, Box, Ausubel, Greene, Cohen, Marshall, Ostrom, Hayek, Smith, Bjork, Roberts/luggage, C. S. Lewis. Record URLs and specific page passages on approval, not unverified author associations.

@@ -45,7 +45,8 @@ THEME = {
 FRONT = [
     ("i", "Introduction: The Wealth of Nations", "introduction.html"),
     ("ii", "How to Get the Most Out of This Book", "how-to-get-the-most-out-of-this-book.html"),
-    ("0", "Algebra Review", "Chapter0.html"),
+    ("iii", "Algebra Review", "Chapter0.html"),
+    ("iv", "Joy of Econ", "joy-of-econ.html"),
 ]
 
 UNITS = [
@@ -144,8 +145,6 @@ def main():
         "count": str(n_chapters),
         "front": [{"n": n, "t": t, "s": subtitle(f), "m": "", "href": "/" + f} for n, t, f in FRONT],
         "units": units,
-        "back_title": "Readings",
-        "back": [{"n": "A", "t": "Joy of Econ", "s": "The reading menu", "href": "/joy-of-econ.html"}],
         "about": None,
     })
     for path, content in frontmatter.render(book).items():
