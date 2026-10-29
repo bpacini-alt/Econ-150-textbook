@@ -294,6 +294,20 @@ These are broken now, so they count as Priority 0. Fix them in the GitHub copies
 2. **Unit names on title cards (decided and mostly done October 26).** Rule: a chapter's title-card label always matches its unit on the contents page. Econ 150's units are now The Case for the Market, The Logic of Competition, The Critique of the Market, and When Competition Breaks Down, with "The Closing Reckoning" as a subheading over Chapters 25–26. Pages before Chapter 1 read "Before Chapter 1", which replaced "Start here". EDCOR 310 uses its four contents-page names. **Still open: Chapters 13 and 14 in both books,** left alone while drafts edit them (EDCOR 310 #34, #53; Econ 150 #40, #55). Set their labels when those settle. Econ 150's subtitle stays "The Science of Choice, **Incentives**, and Human Flourishing" (Benjamin, October 26). **Benjamin: change the Canvas course card, which says "Tradeoffs", to match.**
 3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
 
+### Waiting on Benjamin's review (recorded October 29, 2026)
+
+These items are paused on purpose. Each needs a careful read or a decision, not a quick merge. Leave the pull requests open. Don't close, rewrite, or work around them.
+
+1. **Econ 150 Chapters 13–14 editorial pass (pull request #40).** Softens the welfare-cliff example, adds "illustration, not a forecast" caveats to the growth figures, and updates the EITC, stablecoin, Saver's Match, and child-account details. It changes a lot of content, so Benjamin wants time to read it in the preview. It is up to date with `main` and merges cleanly.
+2. **Econ 150 Chapters 13–14 practice bank (pull request #55).** Provisional practice questions; review after #40. #40 and #55 both edit Chapter 14, so whichever merges second needs a merge from `main` first.
+3. **Econ 150 Chapter 16 redraft (reader report textbook-feedback#5).** A reader said the chapter reads like a draft. Benjamin plans to redraft it this week.
+
+**Both books:**
+
+- **Reading-check quizzes and Top Hat import (Econ 150 pull request #69, EDCOR 310 pull request #58).** A workflow for writing short "did you read it?" quizzes from each chapter and packaging them for import into Top Hat. Benjamin wants to understand it before deciding whether to adopt it.
+- **Tier 2 practice plan (Econ 150 pull request #63).** Adds the Econ Tier 2 pilot plan (read, construct, and reason with a marginal revenue product graph), the graph interaction types, and EDCOR's question families and "hidden curriculum" principle to `docs/PRECISE-PRACTICE-DESIGN.md`. It is a planning decision that sits under "Separate Econ and EDCOR Tier 2 engines" above.
+- **Read answers aloud after a pause** (under Deferred structural revisions below). Benjamin likes the direction but sees it as a bigger change to think through before approving wording and pause lengths.
+
 ## Deferred structural revisions
 
 ### Econ 150 — Reorder the firm-behavior sequence
@@ -353,7 +367,7 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 
 **Priority:** Medium. It matters for students who study by listening, but the wording and timing are a design decision, and the change has to land in both books at once.
 
-**Status:** Waiting for Benjamin to approve the wording and pause lengths.
+**Status:** On hold (October 29, 2026). Benjamin likes the direction but wants to think the change through before approving the wording and pause lengths.
 
 ### Loose ends from the move to the new sites (recorded October 20, 2026)
 
