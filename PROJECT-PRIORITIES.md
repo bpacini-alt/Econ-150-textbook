@@ -447,6 +447,14 @@ The Joy of Learning and Joy of Econ menus moved from Word into `menus/` (see `me
 
 These are promising possibilities, but they are intentionally near the bottom of the backlog. They should not displace the current work on content quality, practice, accessibility, interactives, author-led video, audio, exports, or the series/front-matter system.
 
+### Econ 150: Unit outcomes like EDCOR 310's (recorded October 29, 2026)
+
+EDCOR 310's contents page shows a collapsible "Unit outcomes" list under each unit, with each outcome tagged to the course learning outcomes it serves. Econ 150 should have the same. Benjamin's view: it makes the book look polished and gives students a clear map of each unit.
+
+**How to do it:** the shared front-page design (`frontmatter/frontmatter.py`) already draws outcomes. Econ's `build/build_front.py` currently passes an empty list (`"outcomes": []`). The work is mostly writing: draft three to five outcomes per unit, with Benjamin choosing and rewording them. Then add them to the Econ build and rebuild the contents page.
+
+**Priority:** Low. Nice to have, not urgent.
+
 ### Unit opener art (recorded October 26, 2026)
 
 A consistent opener image for each unit in both books (8 in all). Benjamin wants it eventually, as a lower priority. Neither book has unit images now.
