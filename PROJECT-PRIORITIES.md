@@ -294,6 +294,20 @@ These are broken now, so they count as Priority 0. Fix them in the GitHub copies
 2. **Unit names on title cards (decided and mostly done October 26).** Rule: a chapter's title-card label always matches its unit on the contents page. Econ 150's units are now The Case for the Market, The Logic of Competition, The Critique of the Market, and When Competition Breaks Down, with "The Closing Reckoning" as a subheading over Chapters 25–26. Pages before Chapter 1 read "Before Chapter 1", which replaced "Start here". EDCOR 310 uses its four contents-page names. **Still open: Chapters 13 and 14 in both books,** left alone while drafts edit them (EDCOR 310 #34, #53; Econ 150 #40, #55). Set their labels when those settle. Econ 150's subtitle stays "The Science of Choice, **Incentives**, and Human Flourishing" (Benjamin, October 26). **Benjamin: change the Canvas course card, which says "Tradeoffs", to match.**
 3. **Save the old Google Site's images (`benjaminpacini-site`).** The archive in `archive/google-site-2026-10-20/` has every page's HTML and every embedded Drive file, but not the pictures shown on the pages. About 40 pages still load their images from Google's servers, so the archive would lose them if the Google Site were deleted. Download the images into the archive, using a browser (Claude's shell can't reach Google Sites), and point the archived pages, or the manifest, at the local copies. **Don't delete the Google Site until this is done.**
 
+### Waiting on Benjamin's review (recorded October 29, 2026)
+
+These items are paused on purpose. Each needs a careful read or a decision, not a quick merge. Leave the pull requests open. Don't close, rewrite, or work around them.
+
+1. **Econ 150 Chapters 13–14 editorial pass (pull request #40).** Softens the welfare-cliff example, adds "illustration, not a forecast" caveats to the growth figures, and updates the EITC, stablecoin, Saver's Match, and child-account details. It changes a lot of content, so Benjamin wants time to read it in the preview. It is up to date with `main` and merges cleanly.
+2. **Econ 150 Chapters 13–14 practice bank (pull request #55).** Provisional practice questions; review after #40. #40 and #55 both edit Chapter 14, so whichever merges second needs a merge from `main` first.
+3. **Econ 150 Chapter 16 redraft (reader report textbook-feedback#5).** A reader said the chapter reads like a draft. Benjamin plans to redraft it this week.
+
+**Both books:**
+
+- **Reading-check quizzes and Top Hat import (Econ 150 pull request #69, EDCOR 310 pull request #58).** A workflow for writing short "did you read it?" quizzes from each chapter and packaging them for import into Top Hat. Benjamin wants to understand it before deciding whether to adopt it.
+- **Tier 2 practice plan (Econ 150 pull request #63).** Adds the Econ Tier 2 pilot plan (read, construct, and reason with a marginal revenue product graph), the graph interaction types, and EDCOR's question families and "hidden curriculum" principle to `docs/PRECISE-PRACTICE-DESIGN.md`. It is a planning decision that sits under "Separate Econ and EDCOR Tier 2 engines" above.
+- **Read answers aloud after a pause** (under Deferred structural revisions below). Benjamin likes the direction but sees it as a bigger change to think through before approving wording and pause lengths.
+
 ## Deferred structural revisions
 
 ### Econ 150 — Reorder the firm-behavior sequence
@@ -338,6 +352,22 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 **Priority:** Medium. Useful for students, but a big lift across two books, because the wording has to be drafted and approved chapter by chapter.
 
 **Status:** Record for later; start when there is time. EDCOR 310 Chapter 11 is done (once #35 is merged).
+
+### Both books: Read answers aloud after a pause (recorded October 28, 2026)
+
+**The problem:** the audio player never reads the answers to Retrieval Practice or Quick Checks, even when a student has opened them. Right now it reads a Retrieval Practice question and says "Pause and try answering on your own before you go on." For a Quick Check, it reads the question and then leaves four seconds of quiet. In both cases it moves on without giving the answer. A student who listens instead of reading never hears the answers (reader reports [textbook-feedback#24](https://github.com/bpacini-alt/textbook-feedback/issues/24), [#25](https://github.com/bpacini-alt/textbook-feedback/issues/25), and [#26](https://github.com/bpacini-alt/textbook-feedback/issues/26), all in Econ 150 Chapter 14).
+
+**Benjamin's direction:** keep the retrieval attempt, then give the answer. The narration should ask the student to try first, pause, and then read the answer. For example: "For this retrieval practice, pause and try to come up with the answer. I'll give it in five seconds. … The answer is …"
+
+**How to do it:**
+
+1. Do it in the player's reading rules (`audio/player/etb-audio.js`), not chapter by chapter, so every Retrieval Practice and Quick Check in both books works the same way. The recorded narration in Benjamin's voice (above) takes its script from these same rules, so it will pick this up too.
+2. Settle one standard wording for each kind of box, and how long each pause lasts. A definition or recall question may need about five seconds. A calculation needs longer, or a line telling the student to pause the audio and press play when ready.
+3. Change both books' copies of the player in matching pull requests, and update the table in `audio/README.md` that says answers aren't read.
+
+**Priority:** Medium. It matters for students who study by listening, but the wording and timing are a design decision, and the change has to land in both books at once.
+
+**Status:** On hold (October 29, 2026). Benjamin likes the direction but wants to think the change through before approving the wording and pause lengths.
 
 ### Loose ends from the move to the new sites (recorded October 20, 2026)
 
@@ -412,9 +442,18 @@ The Joy of Learning and Joy of Econ menus moved from Word into `menus/` (see `me
     - Nine YouTube videos, mostly John List's UChicago series, don't allow embedding. They play fine on YouTube. This matters only if the menus ever embed videos.
 16. **One rating scale (decided October 22, 2026).** Reading ratings use the Reading Return four-point scale: 4 · Celebrate (S-tier), 3 · Keep, 2 · Reconsider, 1 · Replace (F-tier). The Joy of Econ instructions now say so. Every menu reading has a permanent `id` the ratings can attach to.
 
+17. **Audit Joy reading times and clarify recommended stopping points (both books).** Make a pass through every Joy of Econ and Joy of Learning entry to distinguish (a) the source's actual length, (b) a realistic estimate of the student's total reading/listening/viewing time, and (c) the amount we recommend before switching to something else. Correct plainly wrong estimates—for example, never label a 15-minute video as 5 minutes. When a long podcast or video has a useful stopping point, say so directly (for example, “Feel free to listen to the first 30 minutes”) rather than hiding that advice inside an ambiguous “~25 minutes.” A time such as “~25 minutes” should clearly communicate a recommended stopping point based on diminishing returns, not a claim that the source ends there. Use consistent wording across both menus.
 ## Cool ideas for later
 
 These are promising possibilities, but they are intentionally near the bottom of the backlog. They should not displace the current work on content quality, practice, accessibility, interactives, author-led video, audio, exports, or the series/front-matter system.
+
+### Econ 150: Unit outcomes like EDCOR 310's (recorded October 29, 2026)
+
+EDCOR 310's contents page shows a collapsible "Unit outcomes" list under each unit, with each outcome tagged to the course learning outcomes it serves. Econ 150 should have the same. Benjamin's view: it makes the book look polished and gives students a clear map of each unit.
+
+**How to do it:** the shared front-page design (`frontmatter/frontmatter.py`) already draws outcomes. Econ's `build/build_front.py` currently passes an empty list (`"outcomes": []`). The work is mostly writing: draft three to five outcomes per unit, with Benjamin choosing and rewording them. Then add them to the Econ build and rebuild the contents page.
+
+**Priority:** Low. Nice to have, not urgent.
 
 ### Unit opener art (recorded October 26, 2026)
 
