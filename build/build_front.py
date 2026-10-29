@@ -145,8 +145,6 @@ def main():
         "count": str(n_chapters),
         "front": [{"n": n, "t": t, "s": subtitle(f), "m": "", "href": "/" + f} for n, t, f in FRONT],
         "units": units,
-        "back_title": "Readings",
-        "back": [{"n": "A", "t": "Joy of Econ", "s": "The reading menu", "href": "/joy-of-econ.html"}],
         "about": None,
     })
     for path, content in frontmatter.render(book).items():
