@@ -45,8 +45,8 @@ THEME = {
 FRONT = [
     ("i", "Introduction: The Wealth of Nations", "introduction.html"),
     ("ii", "How to Get the Most Out of This Book", "how-to-get-the-most-out-of-this-book.html"),
-    ("0", "Algebra Review", "Chapter0.html"),
-    ("J", "Joy of Econ", "joy-of-econ.html"),
+    ("iii", "Algebra Review", "Chapter0.html"),
+    ("iv", "Joy of Econ", "joy-of-econ.html"),
 ]
 
 UNITS = [
