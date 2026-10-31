@@ -35,7 +35,7 @@ function mount(el,config){
    const q=state.pending.item;
    h+='<div class="pp-ready-question">'+esc(q.q)+'</div>';
    if(state.stage==="question"){
-    h+=q.opts.map((a,i)=>'<button class="pp-ready-option" data-answer="'+i+'">'+esc(a)+'</button>').join("");
+    if(!state.pending.order){const indices=q.opts.map((_,i)=>i);for(let i=indices.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[indices[i],indices[j]]=[indices[j],indices[i]]}state.pending.order=indices;save()}h+=state.pending.order.map(i=>'<button class="pp-ready-option" data-answer="'+i+'">'+esc(q.opts[i])+'</button>').join("");
    }else{
     h+='<div class="pp-ready-good '+(state.pending.correct?"":"pp-ready-warn")+'"><b>'+(state.pending.correct?"Correct answer.":"Let's correct this one.")+'</b><p>'+esc(q.why)+'</p><p><b>Best answer:</b> '+esc(q.opts[q.a])+'</p></div>';
     if(state.pending.correct){h+='<fieldset class="pp-ready-reflect"><legend>Do you understand why? Could you explain it without looking?</legend><button data-confident="yes">Yes, I could explain it</button><button data-confident="no">Not yet — more practice</button></fieldset>'}
