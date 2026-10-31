@@ -53,12 +53,50 @@ HEADER = """<!doctype html>
 <style>
 /* Keeps hidden hover definitions from making the page wider than a phone screen. */
 .etb{{overflow-x:clip}}
+/* Pop-up definitions: open on tap and on keyboard focus too (see TIP_JS below). */
+[data-tip].tip-open::after,[data-tip]:focus-visible:not(.tip-hide)::after{{opacity:1}}
+[data-tip].tip-hide::after{{opacity:0 !important}}
+[data-tip]:focus-visible,.etb-ak-item:focus-visible{{outline:2px solid #2a7a4f;outline-offset:2px;border-radius:2px}}
 </style>
 </head>
 <body>
 """ + HEAD_END + "\n"
 
-FOOTER = "\n" + FOOT_START + """
+# Pop-up definitions ([data-tip]) and "Also know" terms (.etb-ak-item): tap a term to
+# open or close it, Tab to a term to open it, Escape to close it, and Enter or Space
+# to open an Also-know term. The click listener runs first (capture phase) and stops
+# the click there, so each chapter's older tap script doesn't toggle a second time.
+# EDCOR 310's build/build_site.py carries the same script.
+TIP_JS = """<script>
+(function () {
+  function closeAll(keep) {
+    document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { if (t !== keep) t.classList.remove('tip-open'); });
+  }
+  document.querySelectorAll('[data-tip], .etb-ak-item').forEach(function (t) {
+    if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '0');
+  });
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-tip]') : null;
+    if (!t) { closeAll(); return; }
+    e.stopPropagation();
+    var open = t.classList.contains('tip-open');
+    closeAll(t);
+    t.classList.toggle('tip-open', !open);
+    t.classList.toggle('tip-hide', open);
+  }, true);
+  document.addEventListener('keydown', function (e) {
+    var t = document.activeElement;
+    if (!t || !t.matches) return;
+    if (e.key === 'Escape' && t.matches('[data-tip]')) { t.classList.remove('tip-open'); t.classList.add('tip-hide'); }
+    if ((e.key === 'Enter' || e.key === ' ') && t.matches('.etb-ak-item')) { e.preventDefault(); t.click(); }
+  });
+  document.addEventListener('focusout', function (e) {
+    if (e.target.matches && e.target.matches('[data-tip]')) e.target.classList.remove('tip-hide', 'tip-open');
+  });
+})();
+</script>"""
+
+FOOTER = "\n" + FOOT_START + "\n" + TIP_JS + """
 <script src="assets/report.js" data-book="Econ 150" defer></script>
 <script src="assets/etb-audio.js"></script>
 </body>
