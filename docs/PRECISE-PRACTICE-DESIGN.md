@@ -1,8 +1,12 @@
 # Precise Practice — Design Playbook (working draft)
 
-**Status:** Agreed direction; patterns are provisional pending student testing. Applies to Econ 150 and EDCOR 310 with discipline-specific applications. **Do not turn this into a mandatory activity checklist.**
+**Status: Deliberate, thoughtful brainstorming.** Applies to Econ 150 and EDCOR 310, with discipline-specific possibilities.
 
-## Purpose and six principles
+This is a design notebook: a place to collect promising ideas, working hypotheses, prototype patterns, and questions worth testing. It is not a required chapter template, implementation protocol, scoring rubric, or promise that every chapter will use every engine, tier, question type, or sequence. The ideas below should become more settled only through instructor review, small pilots, student experience, accessibility checks, and evidence of learning.
+
+**Current pilot boundary:** The Econ 15 pilot with Tayleigh and the Econ 16 pilot Benjamin is testing are live experiments. Do not refactor, standardize, or otherwise alter them as part of this documentation work.
+
+## Purpose and working principles worth exploring
 
 We use questions to develop capable, thoughtful, principled people—not IQ, test-taking performance, or scores. Econ students should learn to think like economists; EDCOR students should become wise, evidence-informed educators and disciples able to make classroom decisions.
 
@@ -21,7 +25,7 @@ We use questions to develop capable, thoughtful, principled people—not IQ, tes
 
 **Spiral retrieval is shared infrastructure**, not a fifth required engine: brief opening review plus cumulative interleaved end practice where appropriate; tag concepts and return with varied representations and increased complexity. Align review spacing with homework/calendar rather than chapter order alone.
 
-## Foundational engine patterns
+## Candidate foundational engine patterns
 
 ### Vocabulary & Concepts
 - **Animated Match:** Six face-up term/meaning pairs; correct pairs briefly highlight/fade and disappear; remaining cards close gaps. Respect reduced-motion settings. Recognition is only the first step.
@@ -47,7 +51,7 @@ Match; classify/sort; flash prediction; example/nonexample; A/A−/F; missing-pi
 
 Aphorisms are **conceptual anchors, not merely vocabulary** and not a fifth engine. Revisit by recall, interpretation, discrimination, application, qualification, and (optionally) explanation in students' own words. Preserve the approved aphorism wording. E.g. 'Profit is a flare': signals possible opportunities for value creation relative to costs, attracts resources/competition, and is imperfect where market prices omit social effects. Allow legitimate alternative interpretations and caveats.
 
-## Student experience and implementation
+## Student experience and implementation questions
 
 - Six quick cognitive moves per batch is a promising default, not a universal dosage. Minimize repeated instructions and reading. One familiar scenario can support multiple moves; later vary contexts for transfer.
 - Prefer sort buckets and drag-and-drop where useful, with equivalent tap-to-place and keyboard/screen-reader paths. Keep subtle animation and reduced-motion support.
@@ -70,7 +74,7 @@ Aphorisms are **conceptual anchors, not merely vocabulary** and not a fifth engi
 **Pilot success criterion:** Reliable, actionable feedback that supports learning and accepts legitimate phrasing; not mere numerical agreement or student delight. Log costs and errors without unnecessary identifying data.
 
 
-## Three practice tiers (instructional demand, not mandatory sequence)
+## A possible three-tier architecture
 
 | Tier | Aim | Representative tasks | Feedback/scaffolding |
 |---|---|---|---|
@@ -80,11 +84,11 @@ Aphorisms are **conceptual anchors, not merely vocabulary** and not a fifth engi
 
 **Important:** These tiers describe cognitive demands, not a fixed sequence or a requirement to complete every activity. Students may test out of foundational work; difficulty and support should follow prior knowledge. Tier 2 deserves focused prototyping before scaling Tier 3. EDCOR advanced questions must culminate in decisions for classroom instruction, not simply knowing psychology.
 
-### Tier 2 design priorities
+### Tier 2 ideas worth prototyping
 
 Build a reusable blocked-practice engine with consistent controls and optional scaffolding: (1) complete worked example; (2) partially completed problem; (3) independent version; (4) fresh transfer check. Candidate task families: graph reading and labeling, table completion, numerical calculations, equation completion, simple model manipulation, and direct classroom scenario diagnosis. Use targeted hints, clear assumptions, accessible non-drag alternatives, and concise feedback. Avoid assuming that every procedure needs all four stages.
 
-### Tier 3 design priorities
+### Tier 3 ideas worth prototyping
 
 - **AP Micro FRQ pattern:** interpret/construct a graph, compute, predict a change, explain a mechanism, and justify with economic reasoning. Align with actual Econ 150 outcomes, not every AP unit.
 - **AP Psychology AAQ pattern:** interpret a study's methods, variables, evidence, ethics, generalizability, and warranted implications.
@@ -92,7 +96,7 @@ Build a reusable blocked-practice engine with consistent controls and optional s
 - **EDCOR professional case:** diagnose classroom needs, choose an intervention, justify evidence, anticipate consequences, and reflect on limits and discipleship.
 - **Additional high-leverage formats:** authentic cases, error analysis, critique/evaluate an argument, identify missing assumptions or steps, compare competing explanations, and multistep decisions with incomplete information.
 
-## Broad item-format library — beyond traditional AP formats
+## Candidate item-format library — ideas to test
 
 Separate **cognitive operation** from **UI format**. Research and prototype formats for their instructional leverage, not novelty:
 
@@ -115,15 +119,15 @@ Separate **cognitive operation** from **UI format**. Research and prototype form
 | FRQ / structured extended response | Multistep application and justification; rubric and model solution |
 | Branching scenario | Professional/economic decisions and consequences; avoid arbitrary game outcomes |
 
-**Quality bar for every format:** Explicit learning objective, correct model, short and readable prompt, plausible mistakes, instructional feedback, mobile/keyboard/screen-reader accessibility, clear evidence limits, and measurable benefit relative to student time. Hotspots and shading must not require fine motor precision or color discrimination.
+**Questions to ask about any format:** Explicit learning objective, correct model, short and readable prompt, plausible mistakes, instructional feedback, mobile/keyboard/screen-reader accessibility, clear evidence limits, and measurable benefit relative to student time. Hotspots and shading must not require fine motor precision or color discrimination.
 
-## Existing textbook exercise audit before broad implementation
+## Questions for auditing existing exercises
 
 Inventory and evaluate what already exists. Initial Econ repository inspection identified substantial homework/skill-map prototypes in **Chapters 11 and 12**, including checkpoint practice and test-out; other chapters have expandable quick checks and retrieval prompts, and Chapters 3–4 contain embedded iframes. Locate the EDCOR experiments before drawing conclusions about reuse. Audit instructional value, accessibility, feedback, persistence, complexity, and consistency. Mark **keep / improve / adapt / retire**. Do not duplicate working infrastructure or treat raw HTML counts as proof of usability.
 
-## Tier 2 refinement (2026-10-26): representation-specific practice
+## Working hypothesis: representation-specific practice
 
-**Decision: Econ and EDCOR do not share one Tier 2 instructional engine.** Share UI components, item-bank infrastructure, accessibility and feedback patterns, but tailor the *cognitive moves* to course outcomes. Econ emphasizes reading/completing tables, graphs and equations, calculations, comparative statics and economic decisions. EDCOR emphasizes classroom/student-work observations, research evidence, instructional diagnosis, selection and justification of classroom action, and evaluation of consequences. Avoid forcing EDCOR into graph/table-first Econ practice.
+**Current working hypothesis: Econ and EDCOR do not share one Tier 2 instructional engine.** Share UI components, item-bank infrastructure, accessibility and feedback patterns, but tailor the *cognitive moves* to course outcomes. Econ emphasizes reading/completing tables, graphs and equations, calculations, comparative statics and economic decisions. EDCOR emphasizes classroom/student-work observations, research evidence, instructional diagnosis, selection and justification of classroom action, and evaluation of consequences. Avoid forcing EDCOR into graph/table-first Econ practice.
 
 **Rule of Four is a fluency goal, not a screen-layout mandate.** Evidence on multiple external representations supports coordinating representations and cultivating translation and sense-making; it does not imply every question should simultaneously display story, table, graph and equation. Too many representations can introduce unnecessary cognitive load or reveal the answer. The research does not establish this exact three-mode UI as a uniquely optimal sequence.
 
@@ -137,7 +141,39 @@ Inventory and evaluate what already exists. Initial Econ repository inspection i
 
 **Specific QA issues:** Check hiring decisions at MRP = wage; explicitly state price-taker/constant wage assumptions; keep discrete worker MRP points distinct from a continuous interpolated curve; verify chart scales and labels; provide accessible alternatives for graph manipulation; ensure entering and changing responses cannot double-count attempts. Compare novice and advanced students for comprehension, time, and delayed retention.
 
-## Next steps
+## Current brainstorming: possible pilots
+
+These are concrete ideas worth testing, not commitments to build or standardize.
+
+### Econ: a possible MRP Tier 2 pilot
+
+One promising pilot would move through **Read → Construct → Reason economically**:
+read a discrete marginal revenue product graph; construct a table from a graph or a graph from a table; then make and justify a hiring decision as wages or output prices change.
+
+We might explore 10+ validated variants, targeted feedback, a small progress indicator for attempts rather than mastery, and a fresh integrated test-out. “Connect” views could show linked representations as optional scaffolding, while independent translation would hide the target representation until the student attempts it.
+
+### EDCOR: a possible hidden curriculum of effective learning
+
+Another promising direction is to let students repeatedly encounter retrieval, spacing, feedback, worked examples, useful representations, and evidence-informed judgment while learning course content. The goal would be to model and practice these ideas without turning them into slogans or a second lecture about study skills.
+
+Highlighting and rereading would be treated with nuance: they may help focus or organize attention, but by themselves they are generally weaker than retrieval and distributed practice for durable learning.
+
+### Possible EDCOR practice families
+
+Worth exploring:
+- noticing diagnostically relevant evidence in student work or classroom cases;
+- distinguishing forgetting, nonunderstanding, motivation, attention, and performance;
+- choosing and refining a teaching move;
+- sequencing a practice schedule, feedback cycle, or worked-example fade;
+- interpreting results while acknowledging limits and competing explanations.
+
+These should remain distinct from the Econ graph/table practice engine even if the two books share technical components.
+
+### Possible integrated test-out
+
+A future EDCOR test-out might present a fresh classroom situation and student evidence, then ask students to identify the evidence, construct an actionable learning plan, justify the choice, anticipate an outcome, and distinguish competing explanations. This is a hypothesis to test, not a required assessment format.
+
+## Possible next experiments
 
 1. Instructor review of this playbook and prototype examples.
 2. Pilot the aphorism AI feedback rubric on a small response corpus.
