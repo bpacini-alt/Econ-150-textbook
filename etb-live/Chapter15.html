@@ -118,6 +118,25 @@ That's the whole calculation — a division and a comparison. The only thing lef
 <!-- Keeps the "Also know" and hover definitions inside the page column so they aren't cut off at the edges. -->
 <style>.etb .etb-ak-pop{margin-left:var(--ak-shift,0px)}.etb .etb-ak-pop::before{left:calc(50% - var(--ak-shift,0px))}.etb [data-tip]::after{margin-left:var(--tip-shift,0px)}</style>
 <script>(function () { if (window.etbFitPops) return; window.etbFitPops = true; function limits(el) { var b = (el.closest('.etb') || document.documentElement).getBoundingClientRect(); var vw = document.documentElement.clientWidth; return [Math.max(b.left, 0) + 8, Math.min(b.right, vw) - 8]; } function shift(l, r, lim) { if (l < lim[0]) return lim[0] - l; if (r > lim[1]) return Math.max(lim[1] - r, lim[0] - l); return 0; } function fitPop(item) { var p = item.querySelector('.etb-ak-pop'); if (!p) return; p.style.setProperty('--ak-shift', '0px'); if (!item.classList.contains('ak-open')) return; var r = p.getBoundingClientRect(); p.style.setProperty('--ak-shift', shift(r.left, r.right, limits(item)) + 'px'); } function fitTip(el) { var cs = getComputedStyle(el, '::after'); var w = (parseFloat(cs.width) || 230) + (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0); var r = el.getBoundingClientRect(); var c = (r.left + r.right) / 2; el.style.setProperty('--tip-shift', shift(c - w / 2, c + w / 2, limits(el)) + 'px'); } function fitOpen() { document.querySelectorAll('.etb-ak-item').forEach(fitPop); } function onTip(e) { var t = e.target && e.target.closest && e.target.closest('[data-tip]'); if (t) fitTip(t); } document.addEventListener('click', function (e) { onTip(e); requestAnimationFrame(fitOpen); }, true); document.addEventListener('mouseover', onTip, true); document.addEventListener('focusin', onTip, true); window.addEventListener('resize', fitOpen);})();</script>
+<style id="etb-pp-pilot-css">
+.etb .pp-checkpoint,.etb .pp-econ-final{border:1px solid #cbdde6;border-top:3px solid #316f86;border-radius:12px;background:#fff;padding:17px 15px;margin:2rem 0;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.etb .pp-head{font-size:13px;font-weight:750;color:#225c76;margin:0 0 9px}.etb .pp-head span{font-size:11px;color:#677e88;font-weight:400;margin-left:8px}
+.etb .pp-frame{border:0;background:#fff;display:block;width:100%;min-height:300px}.etb .pp-link{font-size:12px;margin:7px 0 0}.etb .pp-link a{color:#236d87}
+.etb details.pp-checkpoint{padding:12px 15px}.etb details.pp-checkpoint summary{cursor:pointer;display:list-item;list-style:disclosure-closed;margin:0;outline-offset:5px}.etb details.pp-checkpoint[open] summary{list-style:disclosure-open;margin-bottom:10px}.etb details.pp-checkpoint summary .pp-open-hint{float:right}.etb details.pp-checkpoint[open] summary .pp-open-hint{display:none}.etb details.pp-checkpoint:not([open]) .pp-accordion-body{display:none}
+.etb .pp-econ-final{font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;background:#f5f9fa;border-top:1px solid #cbdde6}
+</style>
+<div class="etb-concept" id="elasticity-tier3-pilot">
+  <div class="etb-slbl">Tier 3 practice pilot</div>
+  <h2>Elasticity: Higher-Reasoning Multiple Choice</h2>
+  <p class="etb-deck">A live test of the precise-practice engine using the historical elasticity bank.</p>
+  <div class="etb-body"><p>These questions are being tested as Tier 3 items because they ask you to interpret elasticity, calculate proportional changes, and connect elasticity to revenue and market relationships. The bank is still under review.</p></div>
+  <details class="pp-checkpoint" aria-label="Elasticity Tier 3 practice">
+    <summary class="pp-head">Precise Practice · Tier 3<span>Randomized multiple choice</span> <span class="pp-open-hint">Open practice</span></summary>
+    <div class="pp-accordion-body"><iframe class="pp-frame" title="Elasticity Tier 3 practice" src="assets/chapter15-precise-practice.html?embed=1&amp;concept=1" loading="eager" height="460" sandbox="allow-scripts allow-same-origin"></iframe><p class="pp-link"><a href="assets/chapter15-precise-practice.html?concept=1">Open this pilot in its own page</a></p></div>
+  </details>
+  <div class="pp-econ-final"><strong>Pilot note:</strong> This is an experimental Tier 3 bank. It does not yet change the chapter's completion rules or unlock an FRQ.<p>Your homework isn't done until you understand. Do you understand and feel that you have practiced beyond mastery?</p></div>
+</div>
+<script id="pp-frame-sizing">(function(){addEventListener("message",function(e){if(e.origin!==location.origin||!e.data||e.data.kind!=="etb-precise-height")return;var frames=document.querySelectorAll("iframe.pp-frame");for(var i=0;i<frames.length;i++){if(frames[i].contentWindow===e.source){var h=Number(e.data.height);if(Number.isFinite(h)&&h>=300&&h<12000)frames[i].style.height=(h+10)+"px";break}}});})();</script>
 <!-- ETB PAGE FOOTER -->
 <script>
 (function () {
