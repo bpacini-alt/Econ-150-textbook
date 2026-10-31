@@ -369,6 +369,14 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 
 **Status:** On hold (October 29, 2026). Benjamin likes the direction but wants to think the change through before approving the wording and pause lengths.
 
+### Both books: Pop-up definitions can't be opened by keyboard (recorded October 30, 2026)
+
+**The problem:** the dotted-underlined terms in chapter text (`data-tip`) open on mouse hover or tap. Econ 150's `tip-open` script handles the tap. In both books, though, the terms can't be reached or opened from the keyboard, and screen readers don't get the definition. EDCOR 310 is worse off: only its Chapter 4 opens pop-ups on tap, so EDCOR is adding Econ 150's tap behavior first.
+
+**The fix:** in matching pull requests, make the terms focusable, open them with Enter, Space, or focus, and close them with Escape. Ideally this is done once in each book's build or a shared script, not page by page.
+
+**Priority:** Medium-low (Benjamin, October 30). Found by the Chapter Quality Manual pass on EDCOR 310's Chapter 16 draft. The matching item is in EDCOR 310's `PROJECT-PRIORITIES.md`.
+
 ### Loose ends from the move to the new sites (recorded October 20, 2026)
 
 Small items found while moving both books off EdTechBooks. Most are quick. Items marked **(Benjamin)** need his decision or his account first.
