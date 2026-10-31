@@ -136,6 +136,10 @@ Treat practice design as a high-impact but still exploratory workstream. Keep de
 
 Current working direction: explore student-choice practice with optional test-out, concept-level Tier 1/Tier 2/Tier 3 possibilities, and distinct Econ/EDCOR applications. Leave the Econ 15 Tayleigh pilot and Econ 16 Benjamin pilot untouched while they are being tested.
 
+**Additional promising idea to test:** Pair student-selected **blocked (focus on one skill)** practice with **interleaved (mix it up)** practice; help students move back and forth, reflect on their readiness, and seek help from the instructor/TAs if confusion persists. Distinguish varied question formats from genuine mixing of concepts. Keep self-reported confidence separate from evidence of understanding; do not change live pilots as part of documentation. See the design notebook for the full rationale.
+
+**Next agreed sequence (2026-10-31):** (1) create chapter-owned, shared question-bank data with stable IDs, feedback and reviewed exam-prep eligibility; (2) quality-audit and extract revised Chapter 16's questions; (3) build a dedicated AP-level quiz/exam-prep view drawing higher-demand, approved items from the *same* bank, with links to chapter foundations; (4) pilot and then scale. Keep mastery tracking, adaptive selection, sophisticated scheduling and cross-chapter spiral routing deferred. This is a documentation decision only, not a Chapter 16 implementation request.
+
 The immediate goal is not to standardize every chapter. It is to learn from a few careful pilots, then decide what deserves to scale.
 
 ### Priority 2 — Make every chapter practice-rich
