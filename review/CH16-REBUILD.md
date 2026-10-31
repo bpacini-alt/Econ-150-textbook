@@ -38,9 +38,9 @@ Checked October 31, 2026, by searching the whole book for references to Chapter 
 - [ ] **docs/APHORISM-CANDIDATE-BANK.md (low priority; Benjamin wants a better aphorism first):** records "An Objection Is Not a Veto" as an existing Ch 16 heading that "is not being deleted or changed." The heading left Ch 16 with the rebuild, and the idea now lives in Ch 12 without it. Add a note; optionally restore the phrase as a heading in Ch 12.
 
 **Optional**
-- [ ] **Chapter 17:** California's paper rivers could move to "Fences and Rules."
+- [x] **Chapter 17:** California's paper rivers moved to "Fences and Rules" as a Case study box, with the tradable-rights fix beside the fishing quotas. Done October 31, 2026.
 - [ ] **Chapter 26:** the Ch 16 box says Ch 26 "takes this question up directly." True today; Ch 26 could add a one-line link back to Ch 16's question.
-- [ ] **Ch 16 cadence pass:** a few lines still read as AI-cadence ("Prices supply neither," "The diagnosis decides the cure, so get the diagnosis right first").
+- [x] **Ch 16 cadence pass:** four lines rewritten (Lima, the two kinds of failure, and two in the "What is prosperity for?" box). Done October 31, 2026.
 
 **Checked, no change needed**
 - [x] **Chapter 12:** done in PR #106 (merged): wedding example, harm-vs-preference paragraph, laundromat case, gentrification box.
