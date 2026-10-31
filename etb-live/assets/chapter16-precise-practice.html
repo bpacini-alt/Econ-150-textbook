@@ -80,7 +80,7 @@ const check=document.querySelector("#extCheck");if(check)check.onclick=()=>{
  if(e.type==="predict")correct=EXTRA[S.c].predict[e.index%EXTRA[S.c].predict.length][2]===e.picks[0];
  if(e.type==="detect")correct=EXTRA[S.c].detectRounds[e.index%EXTRA[S.c].detectRounds.length].every((v,i)=>e.picks[i]===v[1]);
  if(e.type==="missing"||e.type==="repair"){const list=e.type==="missing"?EXTRA[S.c].missing:EXTRA[S.c].error;correct=e.picks[0]===list[e.index%list.length][2]}
- e.attempts[e.type+":"+(e.type==="sort"?e.index:e.type==="detect"?e.index%EXTRA[S.c].detectRounds.length:e.index%Math.max(1,(e.type==="predict"?EXTRA[S.c].predict.length:2)))]={correct,when:new Date().toISOString()};e.submitted=true;save();show()
+ e.attempts[e.type+":"+(e.type==="sort"?e.index:e.type==="detect"?e.index%EXTRA[S.c].detectRounds.length:e.index%Math.max(1,(e.type==="predict"?EXTRA[S.c].predict.length:2)))]={correct,when:new Date().toISOString()};e.submitted=true;S.counts=S.counts||{};S.counts[fk()]=(S.counts[fk()]||0)+1;save();show()
 };
 }
 
@@ -101,8 +101,8 @@ function show(){
  const options=formats(t);
  html+='<div class="practice-controls"><label for="pp-format">Practice style</label><select id="pp-format">'+options.map(o=>'<option value="'+o[0]+'" '+(choiceFormat()===o[0]?'selected':'')+'>'+esc(o[1])+'</option>').join("")+'</select></div>';
  html+='<p class="instruction">'+esc(instructions(fmt))+'</p>';
- const total=p.seen.length+Object.keys(ex.attempts||{}).length;
- html+='<div class="pp-progress-row"><div class="pp-bar"><span style="height:'+Math.min(100,total/10*100)+'%"></span></div><div class="tiny muted">'+total+' distinct practice prompts or boards attempted in this tier. This counts activity attempts, not demonstrated mastery.</div></div>';
+ const goal=[10,5,3][t];const total=(S.counts&&S.counts[fk()])||0;
+ html+='<div class="pp-progress-row"><div class="pp-bar"><span style="height:'+Math.min(100,total/goal*100)+'%"></span></div><div class="tiny muted">'+Math.min(total,goal)+' / '+goal+' suggested attempts. '+(total>=goal?'You can move on when ready; the chapter-end practice is the main goal.':'This bar is guidance, not mastery or a requirement.')</div></div>';
  if(fmt==="quick"){
  const item=arr[n];html+='<div class="card"><div class="eyebrow">'+(t===0?'Classify':'Apply')+' · '+(n+1)+'/'+arr.length+'</div><div class="prompt">'+esc(item.q)+'</div></div><div class="choicewrap">'+shuffledOptions(t===0?c.cats:item.opts,"quick-"+S.c+"-"+t+"-"+n).map(({option:q,original:i})=>'<button class="choice '+(choice===i?'chosen':'')+'" data-choice="'+i+'">'+esc(q)+'</button>').join("")+'</div>';
  if(checked){const ok=choice===item.a;html+='<div class="feedback '+(ok?'':'bad')+'"><b>'+(ok?'Correct.':'Review the distinction.')+'</b><p>'+esc(t===0?item.why:item.why)+'</p><div class="tiny">Best answer: '+esc(t===0?c.cats[item.a]:item.opts[item.a])+'</div></div>'}
@@ -122,7 +122,7 @@ function show(){
  document.querySelector("#pp-format").onchange=e=>setFormat(e.target.value);
  document.querySelectorAll("[data-choice]").forEach(b=>b.onclick=()=>{if(checked)return;choice=+b.dataset.choice;show()});
  const skip=document.querySelector("#skip");if(skip)skip.onclick=()=>{flash=false;nextTurn()};
- const check=document.querySelector("#check");if(check)check.onclick=()=>{if(checked){nextTurn();return}if(choice===null)return;const h=hist(S.c,t);if(!h.seen.includes(n))h.seen.push(n);if(choice===arr[n].a&&!h.right.includes(n))h.right.push(n);checked=true;save();show()};
+ const check=document.querySelector("#check");if(check)check.onclick=()=>{if(checked){nextTurn();return}if(choice===null)return;const h=hist(S.c,t);if(!h.seen.includes(n))h.seen.push(n);if(choice===arr[n].a&&!h.right.includes(n))h.right.push(n);checked=true;S.counts=S.counts||{};S.counts[fk()]=(S.counts[fk()]||0)+1;save();show()};
  const flip=document.querySelector("#flipcard");if(flip)flip.onclick=()=>{flash=!flash;show()};
  const essay=document.querySelector("#essay");if(essay){const k="essay_"+S.c+"_"+n;essay.oninput=e=>{S.drafts[k]=e.target.value;save()};document.querySelector("#rubric").onclick=()=>{S.reveals[k]=!S.reveals[k];const h=hist(S.c,t);if(!h.seen.includes(n))h.seen.push(n);save();show()}}
  if(["sort","detect","missing","repair","predict","matrix"].includes(fmt))extWire(c,t);
