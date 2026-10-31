@@ -173,6 +173,24 @@ These should remain distinct from the Econ graph/table practice engine even if t
 
 A future EDCOR test-out might present a fresh classroom situation and student evidence, then ask students to identify the evidence, construct an actionable learning plan, justify the choice, anticipate an outcome, and distinguish competing explanations. This is a hypothesis to test, not a required assessment format.
 
+## Working design insight: blocked practice, then interleaving (2026-10-31)
+
+**Core hypothesis to preserve for both books:** Give students abundant, approachable chances to practice *one specific distinction or procedure* with feedback, then offer mixed/interleaved practice where they must decide **which** idea or tool applies. Make the transition visible, optional, and responsive to students' needs. The current Econ Chapter 16 pilot's **Mix it up** versus focused practice-style choice is a promising interface; it is a pilot to evaluate, not a mandatory pattern or a validated algorithm.
+
+**Blocked practice (focus on one thing):** Students deliberately choose a target such as property-rights classification, definition precision (A/A−/F), recognizing public versus common goods, or correcting one common reasoning error. Keep enough fresh variations for repeated, successful discrimination and targeted correction. This can lower the initial burden of deciding *what kind of problem it is* while the student learns the underlying move.
+
+**Interleaved practice (mix it up):** Once some basic familiarity develops, mix concepts, problem types, representations, and plausible distractors so students must **identify the appropriate tool** before using it. Interleaving should be thoughtfully sequenced, not purely random; avoid repetitive streaks and irrelevant switching. Mix across different concepts as well as within a concept when enough material has been learned. A student may choose interleaving early, or return to blocked practice if mixed work exposes a gap.
+
+**Instructional distinction:** Rotating *interaction formats* (flashcards, sorting, missing piece) while testing the same concept is varied practice, not necessarily concept interleaving. Genuine interleaving requires discriminating among multiple relevant categories, procedures, or concepts without being told which one applies. This distinction matters for both the item bank and claims about learning benefits.
+
+**Student-facing language to test:** “Focus on one skill” and “Mix it up” may be clearer than technical vocabulary alone. Optionally label them **Blocked practice** and **Interleaved practice** in small explanatory text so EDCOR students learn the pedagogy they are experiencing. Avoid requiring students to learn jargon before they can use the practice. Brief explanations: “Focus: repeat one kind of problem until it feels more comfortable” and “Mix: choose among ideas and strategies in varied situations.”
+
+**Self-assessment and support:** Periodically ask “Can I explain this without hints?” or “Would I like more focused practice, mixed practice, or a harder challenge?” Encourage voluntary return to targeted items and suggest consulting the instructor or TAs when repeated attempts and explanations do not resolve confusion. **Feeling confident is not the same as verified mastery.** Use accuracy on fresh, different problems and delayed mixed review as additional evidence, while letting students decide what to practice next.
+
+**Research-informed caution:** Blocked practice can facilitate initial acquisition and fluency; interleaving often improves discrimination and longer-term retention in suitable domains, but results vary with task, prior knowledge, spacing, difficulty, and how students compare examples. Neither “always block until mastery” nor “interleaving is always superior” is an evidence-supported universal rule. Some students may benefit from comparisons early in learning. Prototype sensible transitions and monitor transfer, burden, and student experience rather than enforcing a fixed threshold.
+
+**Do not modify** the in-progress Econ 15 or Econ 16 pilot as part of recording this idea. Any later UI change should be evaluated separately.
+
 ## Possible next experiments
 
 1. Instructor review of this playbook and prototype examples.
