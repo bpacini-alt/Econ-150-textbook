@@ -112,7 +112,7 @@ function show(){
  document.querySelector("#challenge").onclick=()=>go(4);
 }
 
-function examPool(){return window.PRECISE_BANK_CH16.exam;}
+function examPool(){const bank=window.PRECISE_BANK_CH16.exam;return [0,1,8,2,3,9,4,5,10,6,7,11].map(i=>bank[i]);}
 function examState(){S.exam=S.exam||{count:8,index:0,answers:{},reveals:{}};return S.exam}
 function chapter(){
  const E=examState(),pool=examPool(),count=Math.min(E.count,pool.length),items=pool.slice(0,count),n=Math.max(0,Math.min(E.index,count-1)),q=items[n],key=q.id,answered=E.answers[key];
