@@ -45,7 +45,7 @@ h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&
 }else if(e.type==="predict"){
 const list=data.predict,item=list[n%list.length];
 h+='<div class="card"><div class="eyebrow">What changes? · '+(n%list.length+1)+' of '+list.length+'</div><div class="prompt">'+esc(item[0])+'</div></div>';
-h+='<div class="choicewrap">'+item[1].map((v,i)=>'<button data-extpick="'+i+'" '+(e.submitted?'disabled':'')+' class="choice '+(e.picks[0]===i?'chosen':'')+'">'+esc(v)+'</button>').join("")+'</div>';
+h+='<div class="choicewrap">'+shuffledOptions(item[1],"extra-"+S.c+"-"+e.type+"-"+n).map(({option:v,original:i})=>'<button data-extpick="'+i+'" '+(e.submitted?'disabled':'')+' class="choice '+(e.picks[0]===i?'chosen':'')+'">'+esc(v)+'</button>').join("")+'</div>';
 if(e.submitted)h+='<div class="feedback '+(e.picks[0]===item[2]?'':'bad')+'"><b>'+(e.picks[0]===item[2]?'Correct.':'Review what actually changed.')+'</b><p>'+esc(item[3])+'</p></div>';
 h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&e.picks[0]===undefined?'disabled':'')+'>'+(e.submitted?'Next situation':'Check prediction')+'</button></div>';
 }else if(e.type==="detect"){
@@ -56,7 +56,7 @@ h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&
 }else if(e.type==="missing"||e.type==="repair"){
 const list=e.type==="missing"?data.missing:data.error,item=list[n%list.length];
 h+='<div class="card"><div class="eyebrow">'+(e.type==="missing"?'Complete the thought':'Repair the reasoning')+' · '+(n%list.length+1)+' of '+list.length+'</div><div class="prompt">'+esc(item[0])+'</div></div>';
-h+='<div class="choicewrap">'+item[1].map((v,i)=>'<button data-extpick="'+i+'" '+(e.submitted?'disabled':'')+' class="choice '+(e.picks[0]===i?'chosen':'')+'">'+esc(v)+'</button>').join("")+'</div>';
+h+='<div class="choicewrap">'+shuffledOptions(item[1],"extra-"+S.c+"-"+e.type+"-"+n).map(({option:v,original:i})=>'<button data-extpick="'+i+'" '+(e.submitted?'disabled':'')+' class="choice '+(e.picks[0]===i?'chosen':'')+'">'+esc(v)+'</button>').join("")+'</div>';
 if(e.submitted)h+='<div class="feedback '+(e.picks[0]===item[2]?'':'bad')+'"><b>'+(e.picks[0]===item[2]?'Correct.':'Check the distinction.')+'</b><p>'+esc(item[3])+'</p><div class="tiny">Strong repair: '+esc(item[1][item[2]])+'</div></div>';
 h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&e.picks[0]===undefined?'disabled':'')+'>'+(e.submitted?'Another problem':'Check repair')+'</button></div>';
 }
@@ -84,25 +84,26 @@ const check=document.querySelector("#extCheck");if(check)check.onclick=()=>{
 }
 
 
-function formats(t){return t===0?[["mix","Mix it up"],["quick","Quick classification"],["sort","Rapid Sort"],["detect","Definition Detective"],["missing","Missing Piece"],["flash","Flip cards"]].concat(S.c===3?[["matrix","Four-goods matrix"]]:[]):t===1?[["mix","Mix it up"],["quick","Applied cases"],["repair","Fix the Error"],["predict","Change & Predict"]]:[["reason","Independent reasoning"]]}
+function formats(t){return t===0?[["mix","Mix it up"],["quick","Quick classification"],["sort","Rapid Sort"],["detect","Definition Detective"],["missing","Missing Piece"],["flash","Flip cards"]].concat(S.c===3?[["matrix","Four-goods matrix"]]:[]):t===1?[["mix","Mix it up"],["quick","Applied cases"],["repair","Fix the Error"],["predict","Change & Predict"]]:[["quick","AP-style multiple choice"]]}
 function fk(){return S.c+"_"+S.t}
 function choiceFormat(){S.formats=S.formats||{};return S.formats[fk()]||"mix"}
-function effectiveFormat(){const f=choiceFormat();if(f!=="mix")return f;const sequence=S.t===0?(S.c===3?["quick","matrix","sort","detect","missing","quick","flash"]:["quick","sort","quick","detect","missing","quick","flash"]):S.t===1?["quick","predict","repair","quick","predict"]:["reason"];S.turns=S.turns||{};return sequence[(S.turns[fk()]||0)%sequence.length]}
+function effectiveFormat(){const f=choiceFormat();if(f!=="mix")return f;const sequence=S.t===0?(S.c===3?["quick","matrix","sort","detect","missing","quick","flash"]:["quick","sort","quick","detect","missing","quick","flash"]):S.t===1?["quick","predict","repair","quick","predict"]:["quick"];S.turns=S.turns||{};return sequence[(S.turns[fk()]||0)%sequence.length]}
 function setFormat(f){S.formats=S.formats||{};S.formats[fk()]=f;choice=null;checked=false;flash=false;const e=extState();e.submitted=false;e.picks=[];save();show()}
 function nextTurn(){S.n++;S.turns=S.turns||{};S.turns[fk()]=(S.turns[fk()]||0)+1;choice=null;checked=false;const e=extState();e.submitted=false;e.picks=[];save();show()}
 function instructions(fmt){return ({quick:S.t===0?"Choose the best category for this situation, then check your answer.":"Choose the best economic explanation, then check your reasoning.",sort:"Sort all six situations into their best categories. Check the board when you finish.",detect:"Classify each explanation: A is complete, A− is incomplete, F is fundamentally wrong.",missing:"Choose the essential missing idea, then check the completed thought.",repair:"Find the mistake and choose the correction that fixes the economic reasoning.",matrix:"Use the rivalry-by-excludability grid to classify four new goods.",predict:"Notice what institution or condition changes, then predict the economic consequence.",flash:"Recall the meaning of the term before revealing its definition.",reason:"Explain the economic mechanism in your own words. Then use the self-check criteria."})[fmt]||""}
 
+function shuffledOptions(opts,key){S.orderMap=S.orderMap||{};if(!S.orderMap[key]||S.orderMap[key].length!==opts.length){let ids=opts.map((_,i)=>i);for(let i=ids.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ids[i],ids[j]]=[ids[j],ids[i]]}S.orderMap[key]=ids;save()}return S.orderMap[key].map(i=>({option:opts[i],original:i}))}
 function show(){
- const c=D[S.c],t=S.t,arr=t===0?c.foundation:t===1?c.applied:c.advanced,n=S.n%arr.length,p=hist(S.c,t),fmt=effectiveFormat(),ex=extState();
+ const c=D[S.c],t=S.t,arr=t===0?c.foundation:t===1?c.applied:window.PRECISE_BANK_CH16.exam.filter(q=>q.type==="mc"&&q.concepts.includes(S.c+1)).map(q=>({q:q.prompt,opts:q.choices,a:q.answer,why:q.feedback})),n=S.n%arr.length,p=hist(S.c,t),fmt=effectiveFormat(),ex=extState();
  if(["sort","detect","missing","repair","predict","matrix"].includes(fmt)&&ex.type!==fmt){ex.type=fmt;ex.submitted=false;ex.picks=[]}
- let html='<div class="eyebrow">Concept '+(S.c+1)+' of '+D.length+'</div><h2>'+esc(c.name)+'</h2><div class="modes">'+["1 · Foundations","2 · Application","3 · Reasoning"].map((m,i)=>'<button class="'+(i===t?'active':'')+'" data-tier="'+i+'">'+m+'</button>').join("")+'</div>';
+ let html='<div class="eyebrow">Concept '+(S.c+1)+' of '+D.length+'</div><h2>'+esc(c.name)+'</h2><div class="modes">'+["1 · Foundations","2 · Application","3 · AP-style MC"].map((m,i)=>'<button class="'+(i===t?'active':'')+'" data-tier="'+i+'">'+m+'</button>').join("")+'</div>';
  const options=formats(t);
  html+='<div class="practice-controls"><label for="pp-format">Practice style</label><select id="pp-format">'+options.map(o=>'<option value="'+o[0]+'" '+(choiceFormat()===o[0]?'selected':'')+'>'+esc(o[1])+'</option>').join("")+'</select></div>';
  html+='<p class="instruction">'+esc(instructions(fmt))+'</p>';
  const total=p.seen.length+Object.keys(ex.attempts||{}).length;
  html+='<div class="pp-progress-row"><div class="pp-bar"><span style="height:'+Math.min(100,total/10*100)+'%"></span></div><div class="tiny muted">'+total+' distinct practice prompts or boards attempted in this tier. This counts activity attempts, not demonstrated mastery.</div></div>';
  if(fmt==="quick"){
- const item=arr[n];html+='<div class="card"><div class="eyebrow">'+(t===0?'Classify':'Apply')+' · '+(n+1)+'/'+arr.length+'</div><div class="prompt">'+esc(item.q)+'</div></div><div class="choicewrap">'+(t===0?c.cats:item.opts).map((q,i)=>'<button class="choice '+(choice===i?'chosen':'')+'" data-choice="'+i+'">'+esc(q)+'</button>').join("")+'</div>';
+ const item=arr[n];html+='<div class="card"><div class="eyebrow">'+(t===0?'Classify':'Apply')+' · '+(n+1)+'/'+arr.length+'</div><div class="prompt">'+esc(item.q)+'</div></div><div class="choicewrap">'+shuffledOptions(t===0?c.cats:item.opts,"quick-"+S.c+"-"+t+"-"+n).map(({option:q,original:i})=>'<button class="choice '+(choice===i?'chosen':'')+'" data-choice="'+i+'">'+esc(q)+'</button>').join("")+'</div>';
  if(checked){const ok=choice===item.a;html+='<div class="feedback '+(ok?'':'bad')+'"><b>'+(ok?'Correct.':'Review the distinction.')+'</b><p>'+esc(t===0?item.why:item.why)+'</p><div class="tiny">Best answer: '+esc(t===0?c.cats[item.a]:item.opts[item.a])+'</div></div>'}
  html+='<div class="actions"><button class="primary" id="check" '+(choice===null&&!checked?'disabled':'')+'>'+(checked?'Next problem':'Check answer')+'</button><button id="skip">Try another</button></div>';
  }else if(fmt==="flash"){
