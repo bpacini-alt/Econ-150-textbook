@@ -27,11 +27,27 @@ About 9,000 words down to about 5,900. Title card read time changed from 38 to 2
 
 ## Changes needed in other chapters and tools
 
-- [ ] **Supplemental essay:** draft "What Is Prosperity For?" from the held material. Decide where essays live on the site, then link it from the Ch 16 box.
-- [x] **Chapter 12:** done in PR #106 (harm-vs-preference paragraph, the wedding example, and the laundromat case file).
-- [ ] **Chapter 17:** optional. California's paper rivers could move to "Fences and Rules." Ch 17's line "Recall the four-goods grid from the last chapter" stays true.
-- [ ] **Chapter 18:** no change needed. "Chapter 16 taught that markets need property rights, courts, contracts, and rule of law" stays true. Check that Ch 18's Coase section doesn't assume students saw Ch 16's Coase material (it introduces Coase on its own).
-- [ ] **Chapter 26:** the Ch 16 box promises that Ch 26 "takes this question up directly." Confirm that wording fits once the essay exists.
-- [ ] **Precise practice pilot** (`feat/ch16-precise-practice-pilot-20261030`): built on the old six concepts. The "rights versus objections" and standalone "transaction costs" checkpoints need re-cutting to the new four concepts, and the lake-management chapter challenge needs a matching update.
-- [ ] **Course quizzes and slides:** check any Econ 150 quiz items or session slides tied to Ch 16's Coase, veto, or Christianity material.
-- [ ] **Contents page:** no rerun needed; the chapter title and subtitle are unchanged.
+Checked October 31, 2026, by searching the whole book for references to Chapter 16.
+
+**Needs action**
+- [ ] **Supplemental essay:** draft "What Is Prosperity For?" from `review/ch16-rebuild/essay-material.html`. Decide where essays live on the site, then link it from the Ch 16 "What is prosperity for?" box.
+- [ ] **Chapter 0 (Algebra Review):** says total revenue is "a calculation you'll run constantly from Ch 16 on." Total revenue is taught in Ch 15 (elasticity), and Ch 16 never uses it. Change to Ch 15. (Pre-existing; not caused by the rebuild.)
+- [ ] **Precise practice pilot** (PR #100, `feat/ch16-precise-practice-pilot-20261030`): built on the old six concepts. Re-cut to the new four; drop the "rights versus objections" checkpoint (now Ch 12 material) and fold "transaction costs" into Corruption; update the lake-management chapter challenge.
+- [ ] **Course quizzes and slides (outside the repo):** check the Ch 16 session slides and any common-quiz or Top Hat items on Coase (now taught only in Ch 18), the veto/NIMBY material (now Ch 12), or the Christianity and Restorationist material (now the essay).
+- [ ] **PROJECT-PRIORITIES.md:** after merge, mark "Econ 150 Chapter 16 redraft (reader report textbook-feedback#5)" done and close textbook-feedback#5.
+- [ ] **docs/APHORISM-CANDIDATE-BANK.md:** records "An Objection Is Not a Veto" as an existing Ch 16 heading that "is not being deleted or changed." The heading left Ch 16 with the rebuild, and the idea now lives in Ch 12 without it. Add a note; optionally restore the phrase as a heading in Ch 12.
+
+**Optional**
+- [ ] **Chapter 17:** California's paper rivers could move to "Fences and Rules."
+- [ ] **Chapter 26:** the Ch 16 box says Ch 26 "takes this question up directly." True today; Ch 26 could add a one-line link back to Ch 16's question.
+- [ ] **Ch 16 cadence pass:** a few lines still read as AI-cadence ("Prices supply neither," "The diagnosis decides the cure, so get the diagnosis right first").
+
+**Checked, no change needed**
+- [x] **Chapter 12:** done in PR #106 (merged): wedding example, harm-vs-preference paragraph, laundromat case, gentrification box.
+- [x] **Chapter 11:** Ch 16's bridge points to Ch 11 for Munger and Uber; Ch 11 covers both.
+- [x] **Chapter 17:** "Recall the four-goods grid from the last chapter" stays true.
+- [x] **Chapter 18:** "Chapter 16 taught that markets need property rights, courts, contracts, and rule of law" stays true, and Ch 18 introduces Coase on its own.
+- [x] **Chapter 20:** the capstone table's "Institutions · Ch 16" row stays accurate.
+- [x] **Introduction:** the Ch 16 box cites the Liberal Synthesis, which the introduction names and defines.
+- [x] **Contents page:** no rerun needed; the title and subtitle are unchanged.
+- [ ] **Holding files:** `review/ch16-rebuild/ch12-candidate.html` has been used. Ask Benjamin before removing any holding file.
