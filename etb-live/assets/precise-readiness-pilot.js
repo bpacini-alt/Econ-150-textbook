@@ -3,9 +3,9 @@
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function mount(el,config){
  if(!el||!config.current.length||!config.prior.length)throw Error("Readiness requires current and prior banks");
- const storage="pp-readiness-"+config.book+"-16-v3";
+ const storage="pp-readiness-"+config.book+"-16-v4";
  let state;try{state=JSON.parse(localStorage.getItem(storage))}catch(e){}
- if(!state||state.version!==3)state={version:3,chosen:[config.prior[0].chapter],started:false,streak:0,attempts:0,stage:"question",round:0,cursors:{},pending:null,unlocked:false,done:false};
+ if(!state||state.version!==4)state={version:4,chosen:config.prior.map(x=>x.chapter),started:false,streak:0,attempts:0,stage:"question",round:0,cursors:{},pending:null,unlocked:false,done:false};
  const save=()=>{try{localStorage.setItem(storage,JSON.stringify(state))}catch(e){}};
  const selected=()=>config.prior.filter(b=>state.chosen.includes(b.chapter));
  function nextItem(){
@@ -21,9 +21,10 @@ function mount(el,config){
   let h='<div class="pp-ready-head"><strong>Final readiness check</strong><span>5 correct + understood</span></div>';
   h+='<p class="pp-ready-sub">Practice is always optional. To unlock the final reasoning task, mix Chapter 16 with earlier concepts and explain why your answers are right.</p>';
   if(!state.started){
-   h+='<details class="pp-ready-select" open><summary>Choose earlier chapters to spiral into your practice</summary><div class="pp-ready-checks">';
-   config.prior.forEach(b=>{h+='<label><input type="checkbox" data-ch="'+b.chapter+'" '+(state.chosen.includes(b.chapter)?"checked":"")+'><span>Chapter '+b.chapter+' · '+esc(b.title)+'</span></label>'});
-   h+='</div></details><p class="pp-ready-sub">Chapter 16 is always included. At least one earlier chapter is required for the final check. Questions are mixed, not grouped by topic.</p>';
+   h+='<details class="pp-ready-select"><summary>Spiral review · Choose chapters (all included by default)</summary><p class="pp-ready-sub">Keep everything selected for full review, or focus on fewer chapters.</p><div class="pp-ready-checks">';
+   const grouped=new Map();config.prior.forEach(b=>{const u=b.unit||1;if(!grouped.has(u))grouped.set(u,[]);grouped.get(u).push(b)});
+   [...grouped.entries()].sort((a,b)=>a[0]-b[0]).forEach(([unit,banks])=>{h+='<div class="pp-ready-unit"><b>Unit '+unit+'</b>';banks.sort((a,b)=>a.chapter-b.chapter).forEach(b=>{h+='<label><input type="checkbox" data-ch="'+b.chapter+'" '+(state.chosen.includes(b.chapter)?"checked":"")+'><span>Chapter '+b.chapter+' · '+esc(b.title)+'</span></label>'});h+='</div>'});
+   h+='</div></details><p class="pp-ready-sub">Chapter 16 is included. Select at least one prior chapter for the final mixed check; focused practice is available in concept checkpoints.</p>';
    h+='<button class="pp-ready-main" data-start '+(selected().length?"":"disabled")+'>Start mixed readiness check</button>';
   }else if(state.unlocked){
    h+='<div class="pp-ready-good"><strong>Ready for the final challenge.</strong><p>Five different questions answered correctly, with your own confirmation that you could explain each one. This is encouraging evidence, not proof of mastery.</p></div>';
