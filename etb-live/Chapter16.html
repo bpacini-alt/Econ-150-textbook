@@ -54,5 +54,5 @@
 </script>
 <script src="assets/report.js" data-book="Econ 150" defer></script>
 <script src="assets/etb-audio.js"></script>
-<script id="pp-frame-sizing">(function(){addEventListener("message",function(e){if(e.origin!==location.origin||!e.data||e.data.kind!=="etb-precise-height")return;var frames=document.querySelectorAll("iframe.pp-frame");for(var i=0;i<frames.length;i++){if(frames[i].contentWindow===e.source){var h=Number(e.data.height);if(Number.isFinite(h)&&h>=300&&h<12000)frames[i].style.height=(h+10)+"px";break}}});})();</script></body>
+<script id="pp-frame-sizing">(function(){addEventListener("message",function(e){if(e.origin!==location.origin||!e.data)return;if(e.data.kind==="etb-precise-go-frq"){var source=document.querySelector("#precise-chapter-challenge iframe");if(source&&source.contentWindow===e.source){var target=document.querySelector(".etb-frq");if(target)target.scrollIntoView({behavior:"smooth",block:"start"});}return;}if(e.data.kind!=="etb-precise-height")return;var frames=document.querySelectorAll("iframe.pp-frame");for(var i=0;i<frames.length;i++){if(frames[i].contentWindow===e.source){var h=Number(e.data.height);if(Number.isFinite(h)&&h>=300&&h<12000)frames[i].style.height=(h+10)+"px";break}}});})();</script></body>
 </html>
