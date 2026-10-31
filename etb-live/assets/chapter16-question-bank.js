@@ -959,15 +959,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A farmer and a buyer agree on the price of a parcel, but two families claim to own it. The transaction stalls. Which explanation best identifies the obstacle?",
       "choices": [
-        "The market has no demand for land.",
-        "An unresolved property entitlement makes legitimate transfer and financing risky.",
-        "The parcel has become non-rival.",
-        "The government should set a maximum land price."
+        "The parties' agreement proves legal transfer is possible, so the remaining barrier must be low demand.",
+        "Competing ownership claims make a credible transfer difficult despite the agreed price.",
+        "The obstacle is chiefly weak competition among buyers, not the title itself.",
+        "The deal can proceed securely if the buyer promises to accept any later court ruling."
       ],
       "answer": 1,
       "feedback": "The parties have found a price, but a market transaction also requires a credible claim to transfer the parcel. Clarifying title addresses an institutional problem.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-002",
@@ -978,15 +980,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A city eliminates permit fees, but the mayor still chooses which new firms may enter based on personal connections. Which conclusion is most defensible?",
       "choices": [
-        "The city now guarantees competitive entry.",
-        "A lower posted fee does not cure discretionary, extractive entry rules.",
-        "The city has eliminated all transaction costs.",
-        "Private ownership alone guarantees inclusive institutions."
+        "Removing official fees necessarily makes entry competitive, even if approvals stay discretionary.",
+        "Lower fees remove one cost, but selective permission still protects some firms from entry.",
+        "The main remaining obstacle is a lack of enforceable private titles rather than the approval rule.",
+        "Personal discretion matters only if an official actually collects a bribe."
       ],
       "answer": 1,
       "feedback": "Removing a fee may reduce one cost; arbitrary favoritism can still obstruct open entry and investment.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-003",
@@ -997,15 +1001,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A land registry is accurate, but courts enforce property claims only for politically connected owners. Which investment risk remains?",
       "choices": [
-        "Uncertainty about whether recognized rights will be enforced impartially.",
-        "Land is no longer scarce.",
-        "No one may sell land.",
-        "Every firm must be a natural monopoly."
+        "The court may decline to protect the registered owner's claim if the owner lacks political connections.",
+        "The registry cannot identify the owner because contracts are enforceable only selectively.",
+        "A clear registry by itself eliminates uncertainty for all lenders.",
+        "The remaining uncertainty is solely the cost of filing land records, not enforcement."
       ],
       "answer": 0,
       "feedback": "Clear records help identify title, while unequal enforcement can still undermine credible rights.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-004",
@@ -1016,15 +1022,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A port official demands a payment to process routine documents. One firm pays and ships early. What is the strongest evaluation of the payment's broader effects?",
       "choices": [
-        "Because one firm benefits, bribery must raise total output.",
-        "The payment is an ordinary purchase price unrelated to institutions.",
-        "It may help one firm immediately while encouraging delay, favoritism, and higher transaction costs overall.",
-        "Corruption proves that government has no legitimate role in markets."
+        "The faster shipment is evidence that the permit system's net social benefits exceed its costs.",
+        "The payment changes only the distribution of government revenue and not firm incentives.",
+        "One applicant may benefit while officials gain incentives to delay others or favor payers.",
+        "If the payment is unofficial, the firm cannot receive any genuine private benefit."
       ],
       "answer": 2,
       "feedback": "Separate the firm's private incentive from the institution-wide incentive for officials to create or exploit bottlenecks.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-005",
@@ -1034,15 +1042,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A town issues limited fishing permits for an overused lake. Which change follows most directly?",
       "choices": [
-        "Each caught fish becomes non-rival.",
-        "The ability to exclude users may improve, while catches still reduce the available stock.",
-        "The lake necessarily becomes a pure public good.",
-        "The permits eliminate every incentive to overfish."
+        "Permits can reduce physical rivalry by ensuring that each fish caught remains available to others.",
+        "Enforced permits can make access more excludable, while fish remain rival when harvested.",
+        "The defining effect is to make the fishery a public good financed by permit fees.",
+        "Without a catch limit, a permit system always prevents excessive harvesting."
       ],
       "answer": 1,
       "feedback": "Permits can alter excludability, not the physical rivalry of fish. Their effectiveness depends on rules and enforcement.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-006",
@@ -1051,17 +1061,19 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "type": "mc",
-      "prompt": "A coastal lighthouse emits a signal that every passing vessel can observe without reducing the light available to others. Which pairing is most accurate?",
+      "prompt": "A lighthouse shines toward a busy shipping channel. Its visible warning signal is available to every passing vessel, and one ship's use does not meaningfully diminish its usefulness to others. The operator cannot feasibly restrict who sees the signal. Which conclusion follows?",
       "choices": [
-        "Rival and excludable; ordinary private good.",
-        "Non-rival and difficult to exclude; financing may face free riding.",
-        "Rival and difficult to exclude; congestion is inevitable.",
-        "Non-rival and excludable; no coordination problem is possible."
+        "The signal is rival because additional ships require separate light, though access is hard to restrict.",
+        "The signal is non-rival and hard to exclude, so some beneficiaries may avoid paying.",
+        "The signal is excludable whenever the lighthouse has a private operator, even without access controls.",
+        "The signal is non-rival, but that alone establishes no financing concern because every user benefits."
       ],
       "answer": 1,
       "feedback": "The signal is non-rival and hard to exclude from use. Free riding may make selling access difficult.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Explicit feasible non-exclusion condition avoids assuming all lighthouses are always non-excludable."
     },
     {
       "id": "E16-EX-007",
@@ -1073,15 +1085,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "Two countries have similar resources and entrepreneurial talent. In one, newcomers can register land and enforce contracts cheaply; in the other, officials favor insiders. Which inference is warranted?",
       "choices": [
-        "Institutional differences plausibly affect investment and entry, though this comparison alone does not establish a precise causal effect.",
-        "Resources no longer matter in either country.",
-        "Higher growth in the first country is mathematically guaranteed.",
-        "The second country cannot have any markets."
+        "The contrast suggests a mechanism by which institutions could affect entry and investment, but cannot alone isolate their causal effect.",
+        "Similar resources and talent are sufficient controls to establish that institutional differences caused all later growth.",
+        "The countries must invest equally because productive opportunities are initially similar.",
+        "Political favoritism matters only for income distribution, not entry or expected returns."
       ],
       "answer": 0,
       "feedback": "Economic mechanisms support a plausible prediction, but cross-country comparisons do not independently establish causation.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-008",
@@ -1092,15 +1106,17 @@ window.PRECISE_BANK_CH16 = {
       "type": "mc",
       "prompt": "A town calls a public swimming pool a 'public good' because taxpayers built it. Why is this reasoning incomplete?",
       "choices": [
-        "Tax-financed goods must be non-rival.",
-        "Public-good classification depends on excludability and rivalry, not on who pays.",
-        "All swimming pools are necessarily non-excludable.",
-        "Government-owned goods cannot be scarce."
+        "Any taxpayer-funded good is public if everyone is entitled to apply for access.",
+        "Rivalry and feasible exclusion determine the classification, not the source of funding.",
+        "A swimming pool is necessarily nonexcludable if municipal employees operate it.",
+        "Government provision makes a facility non-rival until an admission fee is imposed."
       ],
       "answer": 1,
       "feedback": "Admissions can restrict access; limited space and congestion make use rival at least at capacity. Ownership and funding alone do not classify the good.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-009",
@@ -1119,7 +1135,9 @@ window.PRECISE_BANK_CH16 = {
       ],
       "feedback": "Strong answers separate title from enforcement, then explain how even willing trading partners can be blocked by unreliable rules.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Task has relevant integrated reasoning; human review should verify scoring specificity and overlap."
     },
     {
       "id": "E16-EX-010",
@@ -1137,7 +1155,9 @@ window.PRECISE_BANK_CH16 = {
       ],
       "feedback": "Distinguish private advantage from system-wide welfare and the possibility that officials create the delays they sell relief from.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Task has relevant integrated reasoning; human review should verify scoring specificity and overlap."
     },
     {
       "id": "E16-EX-011",
@@ -1155,7 +1175,9 @@ window.PRECISE_BANK_CH16 = {
       ],
       "feedback": "A strong answer does not conflate overuse of rival resources with underprovision of non-rival, non-excludable signals.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Task has relevant integrated reasoning; human review should verify scoring specificity and overlap."
     },
     {
       "id": "E16-EX-012",
@@ -1166,26 +1188,28 @@ window.PRECISE_BANK_CH16 = {
         4
       ],
       "type": "frq",
-      "prompt": "A harbor town has an eager investor, disputed land titles, a bribery-prone permit office, declining open-access fish stocks, and a navigation beacon used by every vessel. Organize these into distinct economic problems. Explain why one blanket diagnosis of 'market failure' is inadequate.",
+      "prompt": "A regional government considers two reforms: creating a verified digital registry of land titles and placing the management of a crowded open-access fishing lagoon under a private concession. The government claims that 'defining an owner solves both problems.' (a) Explain what the registry might improve and one institutional problem it cannot solve alone. (b) Explain how the concession might change excludability but not the rivalry of harvested fish. (c) Compare incentives and at least one trade-off of the two reforms. (d) Evaluate the government's claim with a qualified conclusion.",
       "rubric": [
-        "Separate property-rights/contract-enforcement concerns from corruption and incentive distortions.",
-        "Classify fish and beacon using both economic dimensions.",
-        "Explain at least two different mechanisms (e.g., uncertainty, rent-seeking, depletion, free riding).",
-        "Reach an integrated, qualified judgment rather than offering one universal remedy."
+        "Distinguish verification of title from enforceability and access to exchange; identify one remaining institutional requirement.",
+        "Explain that a concession may make access excludable while harvested fish remain rival and resource conservation is not automatic.",
+        "Compare changed incentives and identify a plausible trade-off such as access equity, monitoring cost, or enforcement.",
+        "Give a qualified evaluation rejecting both the claim that ownership is irrelevant and the claim that ownership alone guarantees efficient outcomes."
       ],
-      "feedback": "This is the integrated capstone: distinguish institutional failures and different kinds of collective-action problems using one scenario.",
+      "feedback": "A strong response connects clearly specified rights to incentives while distinguishing land-title verification from conservation rules for a rival common resource.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Original harbor-town capstone overlapped the chapter's existing Harbor Town FRQ; replaced with a distinct land-registry/fishery-concession comparison."
     },
     {
       "id": "E16-EX-013",
       "type": "mc",
       "prompt": "A market platform verifies sellers' identities but cannot ensure they deliver goods after payment. Which additional institution would most directly improve exchange?",
       "choices": [
-        "A rule forbidding new firms to enter",
-        "Credible, impartial contract enforcement",
-        "More attractive product photographs",
-        "A tax on buyers regardless of purchases"
+        "A reputation system eliminates the need for any enforcement if enough sellers receive favorable ratings.",
+        "Credible contract enforcement adds consequences when a verified seller fails to perform.",
+        "Allowing buyers to pay later removes the problem without introducing another risk.",
+        "Publishing ownership claims guarantees that every verified seller will deliver."
       ],
       "answer": 1,
       "feedback": "Verification helps identify counterparties; enforcement makes promises credible. Both support exchange.",
@@ -1194,17 +1218,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-014",
       "type": "mc",
       "prompt": "Two equally productive firms apply for permits. The incumbent receives approval automatically, while the newcomer must negotiate a discretionary payment. Which principle is most threatened?",
       "choices": [
-        "Open entry under predictable rules",
-        "Rivalry in consumption",
-        "Physical scarcity of permits",
-        "The transferability of fish"
+        "The firms face unequal entry conditions because discretionary approval privileges the incumbent.",
+        "The market chiefly suffers from weak enforcement of contracts between the applicants and their customers.",
+        "The problem is only a higher administrative fee, not how approvals are allocated.",
+        "Entry is competitive if both companies can submit applications regardless of unequal decisions."
       ],
       "answer": 0,
       "feedback": "Discretionary advantage changes the terms of entry, potentially protecting insiders regardless of productivity.",
@@ -1213,17 +1239,19 @@ window.PRECISE_BANK_CH16 = {
         3
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-015",
       "type": "mc",
       "prompt": "A digital marketplace permits anyone to list products, but sellers cannot establish legal ownership. Which conclusion best follows?",
       "choices": [
-        "Open entry alone cannot ensure legitimate transfer of disputed assets.",
-        "The lack of title makes all listed goods non-rival.",
-        "Prices necessarily become zero.",
-        "The platform eliminates transaction costs."
+        "Open listing access cannot establish the seller's authority to transfer the claimed asset.",
+        "Open entry guarantees that buyers can enforce ownership rights against third parties.",
+        "The main obstacle is insufficient demand rather than disputed entitlements.",
+        "An advertised price determines ownership once a buyer accepts it."
       ],
       "answer": 0,
       "feedback": "An open platform is not enough when sellers lack credible rights to transfer what they offer.",
@@ -1232,17 +1260,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-016",
       "type": "mc",
       "prompt": "An impartial court system exists, but changes in permit eligibility are announced only after applications close. What institutional improvement is most relevant?",
       "choices": [
-        "Make permits exclusive to current firms",
-        "Eliminate all property claims",
-        "Publish stable, prospective entry rules",
-        "Prevent contracts from being enforced"
+        "Raise eligibility requirements to ensure that fewer unsuccessful applicants waste resources.",
+        "Permit only incumbent firms so firms can invest under known rules.",
+        "Announce entry criteria before applications and apply them consistently.",
+        "Shift all entry decisions to the same courts that enforce private contracts."
       ],
       "answer": 2,
       "feedback": "Predictable rules allow firms to plan; impartial courts cannot undo every cost of arbitrary regulatory surprises.",
@@ -1251,17 +1281,19 @@ window.PRECISE_BANK_CH16 = {
         3
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-017",
       "type": "mc",
-      "prompt": "A farmer owns a field but cannot use a shared irrigation canal without a neighbor's easement. What does this illustrate?",
+      "prompt": "A farmer owns a field. A neighboring cooperative legally controls the only canal access to irrigate it, and no easement has been granted. What does this show about the farmer's rights?",
       "choices": [
-        "Ownership automatically includes every possible nearby resource.",
-        "Property is a bundle of specific rights, including rights held by other people.",
-        "The field has ceased to be rival.",
-        "The farmer's title must be invalid."
+        "Owning a field includes access to any neighboring infrastructure needed to farm it.",
+        "A landowner's rights are specific and may coexist with another person's enforceable easement.",
+        "The canal cannot be privately owned if two farms have historically used it.",
+        "A field title is invalid unless every adjacent parcel grants unrestricted access."
       ],
       "answer": 1,
       "feedback": "A valid land title does not erase distinct access rights that can belong to others.",
@@ -1269,17 +1301,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-018",
       "type": "mc",
-      "prompt": "A land-title system records the correct owner but does not permit land sales. Which distinction matters most?",
+      "prompt": "A land-title system accurately records who may occupy and use a parcel, but local rules prohibit its sale. Which ownership distinction matters most?",
       "choices": [
-        "Use versus transfer rights",
-        "Public versus common goods",
-        "Rivalry versus congestion",
-        "Private versus national defense"
+        "Recognized use rights do not necessarily include the right to transfer the land.",
+        "Without transfer, use of the land must also be prohibited.",
+        "An accurate title registry proves that transfers will be enforceable despite the restriction.",
+        "The restriction changes whether the land is excludable, rather than which ownership powers apply."
       ],
       "answer": 0,
       "feedback": "Knowing who owns a parcel does not necessarily mean that transfer is permitted.",
@@ -1287,17 +1321,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-019",
       "type": "mc",
       "prompt": "A factory's emissions damage a neighbor's crops. Both parties own their land. Which conclusion is most defensible?",
       "choices": [
-        "Property ownership makes all emissions legal.",
-        "Only the factory has any recognizable rights.",
-        "Property rights can be bounded by other claims, and the dispute requires defined entitlements or remedies.",
-        "The problem disappears if both owners are wealthy."
+        "The factory's title automatically authorizes any use that increases its profits.",
+        "The neighbor may claim damages only if the factory never held title.",
+        "The rights and remedies must account for the factory's use and the neighbor's harm; ownership is not unlimited.",
+        "The relevant entitlements can be determined from total production alone without legal rules."
       ],
       "answer": 2,
       "feedback": "Clear rights are essential precisely because ownership does not entail unrestricted harm to others.",
@@ -1306,17 +1342,19 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-020",
       "type": "mc",
       "prompt": "A buyer obtains a clear title but lenders still refuse collateral because courts rarely execute judgments. What is the remaining problem?",
       "choices": [
-        "Unreliable enforcement makes recorded rights less useful.",
-        "The land is automatically a public good.",
-        "The buyer has no right to use the property.",
-        "Clear title guarantees lending regardless of courts."
+        "Poor enforcement can make recorded collateral rights hard to realize after default.",
+        "Accurate title automatically makes foreclosure reliable even if courts will not act.",
+        "The main unresolved problem is simply whether buyers can find the property on a map.",
+        "Lenders' reluctance proves that the asset has no economic value."
       ],
       "answer": 0,
       "feedback": "Title clarifies the claim; enforceability helps make the claim credible to lenders.",
@@ -1325,17 +1363,19 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-021",
       "type": "mc",
-      "prompt": "After a permit office switches to a public queue, some applicants still report delays. Which evidence would most help determine whether corruption fell?",
+      "prompt": "A city introduces a public permit queue to reduce favoritism. Applications still experience delays, and the number of cases changes seasonally. Which information is most useful for assessing whether favoritism declined?",
       "choices": [
-        "A single applicant's satisfaction",
-        "Whether staff like the new software",
-        "Comparable records of processing times, exceptions, and connections before and after the change",
-        "The city's population alone"
+        "Compare a single recent applicant with a highly connected applicant from before the change.",
+        "Ask staff whether the public queue makes them feel more accountable.",
+        "Compare exception rates and processing outcomes across connected and unconnected applicants over time, while considering other changes.",
+        "Check whether total permit applications rose, without examining how cases were treated."
       ],
       "answer": 2,
       "feedback": "A transparent, comparable record can investigate favoritism; one anecdote cannot establish the system-wide effect.",
@@ -1343,17 +1383,19 @@ window.PRECISE_BANK_CH16 = {
         3
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Better distinction between changes in process times and actual favoritism; comparison should account for seasonal caseloads."
     },
     {
       "id": "E16-EX-022",
       "type": "mc",
       "prompt": "A company spends more on lobbying for an exclusive license than improving its product. Which economic mechanism best explains the concern?",
       "choices": [
-        "Rent-seeking directs resources toward obtaining privilege instead of creating value.",
-        "Non-rival consumption has increased.",
-        "Property rights have necessarily vanished.",
-        "All lobbying is criminal corruption."
+        "The firm may be rent-seeking: expending resources to secure privileges rather than compete on productivity.",
+        "The firm's lobbying expenditures show that the license will necessarily reduce prices.",
+        "Seeking special protection is economically equivalent to investing in a new production method.",
+        "The lobbying demonstrates corruption in every case, independent of legality or influence."
       ],
       "answer": 0,
       "feedback": "The issue is the incentive to gain through special protection rather than productivity; not all lobbying is illegal.",
@@ -1362,17 +1404,19 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-023",
       "type": "mc",
       "prompt": "A study finds that regions with stronger courts have higher investment. Which additional result would strengthen a causal interpretation?",
       "choices": [
-        "The relationship appears in a bar chart.",
-        "Investment and courts are both measured in dollars.",
-        "The highest-investment region has a courthouse.",
-        "A credible reform changes enforcement independently of other drivers, followed by a comparison of investment trends."
+        "The correlation also appears when regions are ranked by income, without additional controls.",
+        "The regions' investment is measured in the same year as court quality, ensuring a correct direction of causation.",
+        "The highest-investment regions report positive perceptions of their courts.",
+        "A plausibly independent enforcement reform allows comparison of investment changes with a credible comparison group."
       ],
       "answer": 3,
       "feedback": "A design that addresses confounding and timing offers more causal leverage than a raw cross-sectional association.",
@@ -1381,17 +1425,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-024",
       "type": "mc",
       "prompt": "A well-connected supplier receives a contract despite a higher bid and weaker quality. Which consequence is most plausible?",
       "choices": [
-        "Procurement always becomes cheaper.",
-        "Competitive pressure weakens and public spending may purchase less value.",
-        "The contract automatically becomes a public good.",
-        "The favored supplier must be more productive."
+        "A higher winning bid establishes that the supplier's quality-adjusted costs must be lowest.",
+        "Favoritism may reduce competitive discipline and the value obtained for public spending.",
+        "The outcome shows only a distributional change among suppliers, not any potential efficiency cost.",
+        "Competition must increase because other suppliers will respond with stronger bids regardless of future access."
       ],
       "answer": 1,
       "feedback": "Favored selection can distort competition and reduce value, though the magnitude requires evidence.",
@@ -1400,17 +1446,19 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-025",
       "type": "mc",
       "prompt": "An orchard owner wants to fund an insect-warning broadcast that all nearby farms can hear. Why might voluntary subscriptions underfund the service?",
       "choices": [
-        "One farm's listening prevents another from hearing.",
-        "The signal is necessarily excludable.",
-        "Nonpaying farms can benefit, creating an incentive to free ride.",
-        "The alert has no production cost."
+        "Each listener uses up part of the warning signal, reducing what others can hear.",
+        "Only farms that subscribe can possibly benefit if the message is openly broadcast.",
+        "Nonpaying farms can benefit from the warning, making private collection difficult.",
+        "A warning service has no marginal benefit after the first farm receives the message."
       ],
       "answer": 2,
       "feedback": "The signal is largely non-rival and hard to restrict, so beneficiaries may hope others pay.",
@@ -1418,17 +1466,19 @@ window.PRECISE_BANK_CH16 = {
         4
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-026",
       "type": "mc",
-      "prompt": "A private operator fences a previously open fishing pond but keeps the same fish population. Which claim is strongest?",
+      "prompt": "A previously open pond is fenced and access rules are now enforced, but the fish stock and method of harvesting are unchanged. Which statement best describes the effects?",
       "choices": [
-        "The fish become non-rival.",
-        "Excludability rises, while rivalry in caught fish remains.",
-        "The pond automatically becomes national defense.",
-        "No resource management problem can remain."
+        "Restricting entry changes the fact that one harvested fish leaves fewer fish for others.",
+        "Fencing makes access excludable, while harvesting fish remains rival.",
+        "Fencing makes the entire pond non-rival if permit numbers are held constant.",
+        "The pond cannot experience overuse once a private owner can exclude visitors, even without management."
       ],
       "answer": 1,
       "feedback": "Fencing changes access, not the depletion from catching individual fish.",
@@ -1437,17 +1487,19 @@ window.PRECISE_BANK_CH16 = {
         2
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-027",
       "type": "mc",
-      "prompt": "A city opens a fee-free parking garage, which fills at lunchtime. Calling its spaces a pure public good is mistaken primarily because…",
+      "prompt": "A city opens a fee-free parking garage and it fills at lunchtime. Why is it inaccurate to describe each parking space as a pure public good?",
       "choices": [
-        "each occupied space prevents simultaneous use of that space by another driver.",
-        "government always charges parking fees.",
-        "parking can never be excluded.",
-        "free parking means consumption has no opportunity cost."
+        "A space used by one driver cannot be occupied simultaneously by another, even when parking is free.",
+        "Because a city owns the garage, exclusion is automatically impossible, so the issue must be funding.",
+        "A zero posted fee means parking has no opportunity cost even when the garage is full.",
+        "Every user receives the same benefit from the garage regardless of crowding and waiting."
       ],
       "answer": 0,
       "feedback": "Rival parking capacity remains rival whether access is charged or free.",
@@ -1455,17 +1507,19 @@ window.PRECISE_BANK_CH16 = {
         4
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-028",
       "type": "mc",
       "prompt": "A village considers both stocking a depleted fishery and constructing a warning siren. Which policy comparison is best?",
       "choices": [
-        "Both problems arise only because ownership is private.",
-        "Both require identical pricing because they are equally rival.",
-        "Neither involves incentives.",
-        "Fishery rules must address depletion from use; the siren's financing must address free riding from broadly shared benefits."
+        "Both problems can be solved solely by producing more physical resources, without changing incentives.",
+        "The fishery and siren should both charge identical per-use prices because both are non-rival.",
+        "The fishery's chief issue is free riding on consumption; the siren's chief issue is depletion from use.",
+        "The fishery needs institutions that manage rival harvesting; siren financing must address benefits that are hard to exclude."
       ],
       "answer": 3,
       "feedback": "Common-resource overuse and public-good underprovision involve different mechanisms and need not have the same solution.",
@@ -1474,7 +1528,9 @@ window.PRECISE_BANK_CH16 = {
         1
       ],
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Reworked alternatives to test defensible competing economic explanations rather than implausible unrelated concepts."
     },
     {
       "id": "E16-EX-029",
@@ -1493,7 +1549,9 @@ window.PRECISE_BANK_CH16 = {
       ],
       "feedback": "A strong response separates title records, enforceable claims, and open entry, and explains causal channels rather than treating all regulation as equivalent.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Task has relevant integrated reasoning; human review should verify scoring specificity and overlap."
     },
     {
       "id": "E16-EX-030",
@@ -1511,7 +1569,9 @@ window.PRECISE_BANK_CH16 = {
       ],
       "feedback": "The essential distinction is between who can be excluded and whether an additional use reduces availability for others.",
       "reviewStatus": "draft",
-      "examPrepEligible": true
+      "examPrepEligible": true,
+      "editorialPass": "ai-assisted-review-2026-10-31",
+      "itemReviewNote": "Task has relevant integrated reasoning; human review should verify scoring specificity and overlap."
     }
   ]
 };
