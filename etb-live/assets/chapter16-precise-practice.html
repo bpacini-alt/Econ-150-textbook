@@ -30,9 +30,9 @@ if(!kinds.some(x=>x[0]===e.type)){e.type=kinds[0][0];e.index=0;e.picks=[];e.subm
 let h='<div class="pp-workarea">';
 const data=EXTRA[S.c];const n=e.index;
 if(e.type==="sort"){
- const list=Array.from({length:6},(_,i)=>c.foundation[(e.index*6+i)%c.foundation.length]),p=e.picks;
+ const list=c.sortRounds[e.index%c.sortRounds.length].map(i=>c.foundation[i]),p=e.picks;
  h+='<p><b>Sort all six situations</b> into their best-fitting categories. One board, six decisions.</p>';
- h+='<div class="sortboard">'+list.map((it,i)=>'<div class="sortrow"><div>'+esc(it.q)+'</div><select data-sort="'+i+'" '+(e.submitted?'disabled':'')+'><option value="">Choose a category…</option>'+c.cats.map((cat,j)=>'<option value="'+j+'" '+(String(p[i])===String(j)?'selected':'')+'>'+esc(cat)+'</option>').join("")+'</select>'+(e.submitted?'<div class="tiny '+(p[i]===it.a?'good':'needs')+'">'+(p[i]===it.a?'Correct':'Best: '+esc(c.cats[it.a]))+'</div>':'')+'</div>').join("")+'</div>';
+ h+='<div class="sortboard">'+list.map((it,i)=>'<div class="sortrow"><div>'+esc(it.q)+'</div><select data-sort="'+i+'" '+(e.submitted?'disabled':'')+'><option value="">Choose a category…</option>'+c.cats.map((cat,j)=>'<option value="'+j+'" '+(String(p[i])===String(j)?'selected':'')+'>'+esc(cat)+'</option>').join("")+'</select>'+(e.submitted?'<div class="tiny '+(p[i]===it.a?'good':'needs')+'">'+(p[i]===it.a?'Correct':'Best: '+esc(c.cats[it.a]))+' · '+esc(it.why)+'</div>':'')+'</div>').join("")+'</div>';
  h+='<p class="muted tiny">'+(e.submitted?list.filter((it,i)=>it.a===p[i]).length+' of 6 correctly categorized. '+esc(c.why):'Pick a category for each scenario before checking.')+'</p>';
  h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&p.filter(v=>v!==null&&v!==undefined).length<6?'disabled':'')+'>'+(e.submitted?'Try another round':'Check all six')+'</button></div>';
 }else if(e.type==="matrix"){
@@ -49,7 +49,7 @@ h+='<div class="choicewrap">'+item[1].map((v,i)=>'<button data-extpick="'+i+'" '
 if(e.submitted)h+='<div class="feedback '+(e.picks[0]===item[2]?'':'bad')+'"><b>'+(e.picks[0]===item[2]?'Correct.':'Review what actually changed.')+'</b><p>'+esc(item[3])+'</p></div>';
 h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&e.picks[0]===undefined?'disabled':'')+'>'+(e.submitted?'Next situation':'Check prediction')+'</button></div>';
 }else if(e.type==="detect"){
-const list=data.detect;
+const list=data.detectRounds[e.index%data.detectRounds.length];
 h+='<p><b>Definition Detective:</b> Classify each explanation. A = complete and correct; A− = true but missing a crucial element; F = fundamentally wrong.</p>';
 h+='<div class="sortboard">'+list.map((it,i)=>'<div class="sortrow"><div>'+esc(it[0])+'</div><select data-sort="'+i+'" '+(e.submitted?'disabled':'')+'><option value="">Choose A, A−, or F…</option>'+["A","A−","F"].map(x=>'<option '+(e.picks[i]===x?'selected':'')+' value="'+x+'">'+x+'</option>').join("")+'</select>'+(e.submitted?'<p class="tiny '+(e.picks[i]===it[1]?'good':'needs')+'"><b>'+it[1]+'</b>: '+esc(it[2])+'</p>':'')+'</div>').join("")+'</div>';
 h+='<div class="actions"><button class="primary" id="extCheck" '+(!e.submitted&&e.picks.filter(Boolean).length<3?'disabled':'')+'>'+(e.submitted?'Another set':'Check definitions')+'</button></div>';
@@ -74,12 +74,12 @@ document.querySelectorAll("[data-extpick]").forEach(b=>b.onclick=()=>{e.picks=[+
 const check=document.querySelector("#extCheck");if(check)check.onclick=()=>{
  if(e.submitted){e.index++;nextTurn();return}
  let correct=false;
- if(e.type==="sort")correct=Array.from({length:6},(_,i)=>c.foundation[(e.index*6+i)%c.foundation.length]).every((v,i)=>e.picks[i]===v.a);
+ if(e.type==="sort")correct=c.sortRounds[e.index%c.sortRounds.length].map(i=>c.foundation[i]).every((v,i)=>e.picks[i]===v.a);
  if(e.type==="matrix")correct=Array.from({length:4},(_,i)=>c.foundation[(e.index*4+i)%c.foundation.length]).every((v,i)=>e.picks[i]===v.a);
  if(e.type==="predict")correct=EXTRA[S.c].predict[e.index%EXTRA[S.c].predict.length][2]===e.picks[0];
- if(e.type==="detect")correct=EXTRA[S.c].detect.every((v,i)=>e.picks[i]===v[1]);
+ if(e.type==="detect")correct=EXTRA[S.c].detectRounds[e.index%EXTRA[S.c].detectRounds.length].every((v,i)=>e.picks[i]===v[1]);
  if(e.type==="missing"||e.type==="repair"){const list=e.type==="missing"?EXTRA[S.c].missing:EXTRA[S.c].error;correct=e.picks[0]===list[e.index%list.length][2]}
- e.attempts[e.type+":"+(e.type==="sort"?e.index:e.type==="detect"?e.index:e.index%Math.max(1,(e.type==="predict"?EXTRA[S.c].predict.length:2)))]={correct,when:new Date().toISOString()};e.submitted=true;save();show()
+ e.attempts[e.type+":"+(e.type==="sort"?e.index:e.type==="detect"?e.index%EXTRA[S.c].detectRounds.length:e.index%Math.max(1,(e.type==="predict"?EXTRA[S.c].predict.length:2)))]={correct,when:new Date().toISOString()};e.submitted=true;save();show()
 };
 }
 
@@ -100,10 +100,10 @@ function show(){
  html+='<div class="practice-controls"><label for="pp-format">Practice style</label><select id="pp-format">'+options.map(o=>'<option value="'+o[0]+'" '+(choiceFormat()===o[0]?'selected':'')+'>'+esc(o[1])+'</option>').join("")+'</select></div>';
  html+='<p class="instruction">'+esc(instructions(fmt))+'</p>';
  const total=p.seen.length+Object.keys(ex.attempts||{}).length;
- html+='<div class="pp-progress-row"><div class="pp-bar"><span style="height:'+Math.min(100,total/10*100)+'%"></span></div><div class="tiny muted">'+total+' distinct practice prompts or boards attempted in this tier. More are available. <b>This is not a mastery score.</b></div></div>';
+ html+='<div class="pp-progress-row"><div class="pp-bar"><span style="height:'+Math.min(100,total/10*100)+'%"></span></div><div class="tiny muted">'+total+' distinct practice prompts or boards attempted in this tier. This counts activity attempts, not demonstrated mastery.</div></div>';
  if(fmt==="quick"){
  const item=arr[n];html+='<div class="card"><div class="eyebrow">'+(t===0?'Classify':'Apply')+' · '+(n+1)+'/'+arr.length+'</div><div class="prompt">'+esc(item.q)+'</div></div><div class="choicewrap">'+(t===0?c.cats:item.opts).map((q,i)=>'<button class="choice '+(choice===i?'chosen':'')+'" data-choice="'+i+'">'+esc(q)+'</button>').join("")+'</div>';
- if(checked){const ok=choice===item.a;html+='<div class="feedback '+(ok?'':'bad')+'"><b>'+(ok?'Correct.':'Review the distinction.')+'</b><p>'+esc(t===0?c.why:item.why)+'</p><div class="tiny">Best answer: '+esc(t===0?c.cats[item.a]:item.opts[item.a])+'</div></div>'}
+ if(checked){const ok=choice===item.a;html+='<div class="feedback '+(ok?'':'bad')+'"><b>'+(ok?'Correct.':'Review the distinction.')+'</b><p>'+esc(t===0?item.why:item.why)+'</p><div class="tiny">Best answer: '+esc(t===0?c.cats[item.a]:item.opts[item.a])+'</div></div>'}
  html+='<div class="actions"><button class="primary" id="check" '+(choice===null&&!checked?'disabled':'')+'>'+(checked?'Next problem':'Check answer')+'</button><button id="skip">Try another</button></div>';
  }else if(fmt==="flash"){
  const item=c.cards[S.n%c.cards.length];html+='<button id="flipcard" class="pp-compact-flash"><b>'+esc(item[0])+'</b><div class="muted">'+(flash?esc(item[1]):'Think of the meaning, then tap to reveal')+'</div></button><div class="actions"><button class="primary" id="skip">Next term</button></div>';

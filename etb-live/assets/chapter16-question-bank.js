@@ -13,63 +13,83 @@ window.PRECISE_BANK_CH16 = {
       ],
       "foundation": [
         {
-          "q": "Clear title to farmland",
-          "a": 0
+          "id": "E16-C1-F01",
+          "q": "A recorded deed identifies who may sell a farm",
+          "a": 0,
+          "why": "Documented title helps a buyer verify a seller's ownership claim."
         },
         {
-          "q": "Courts compel payment for delivered goods",
-          "a": 1
+          "id": "E16-C1-F02",
+          "q": "A court orders payment for goods already delivered under contract",
+          "a": 1,
+          "why": "An enforceable promise makes the exchange more credible."
         },
         {
-          "q": "A newcomer may open a bakery",
-          "a": 2
+          "id": "E16-C1-F03",
+          "q": "A newcomer may open a bakery under the same rules as incumbents",
+          "a": 2,
+          "why": "New firms have access to the market rather than facing insider vetoes."
         },
         {
-          "q": "Permit criteria published in advance",
-          "a": 3
+          "id": "E16-C1-F04",
+          "q": "Permit requirements are published before applications open",
+          "a": 3,
+          "why": "Advance rules help firms plan and reduce arbitrary surprises."
         },
         {
-          "q": "A buyer knows who owns a house",
-          "a": 0
+          "id": "E16-C1-F05",
+          "q": "A buyer checks the land registry before purchasing a house",
+          "a": 0,
+          "why": "A registry clarifies who holds a claim to the asset."
         },
         {
-          "q": "A supplier can sue for nonpayment",
-          "a": 1
+          "id": "E16-C1-F06",
+          "q": "A supplier can obtain a remedy when a buyer refuses to pay",
+          "a": 1,
+          "why": "Legal remedies support contract performance."
         },
         {
-          "q": "New competitors get equal licensing access",
-          "a": 2
+          "id": "E16-C1-F07",
+          "q": "New competitors receive equal access to licenses",
+          "a": 2,
+          "why": "The opportunity to enter is not reserved for established firms."
         },
         {
-          "q": "Rules do not change secretly overnight",
-          "a": 3
+          "id": "E16-C1-F08",
+          "q": "Businesses receive notice before a new tax rule takes effect",
+          "a": 3,
+          "why": "Stable, disclosed rules help firms anticipate legal obligations."
         },
         {
-          "q": "A seller can legally transfer a vehicle",
-          "a": 0
+          "id": "E16-C1-F09",
+          "q": "A vehicle seller can document a legally transferable title",
+          "a": 0,
+          "why": "Credible transferable ownership supports voluntary sale."
         },
         {
-          "q": "Disputes go to impartial judges",
-          "a": 1
+          "id": "E16-C1-F10",
+          "q": "A neutral judge hears a dispute between an incumbent and newcomer",
+          "a": 1,
+          "why": "Impartial enforcement does not privilege the politically connected."
         }
       ],
       "why": "Property and enforcement make exchanges credible; predictable rules and open entry widen participation.",
       "cards": [
         [
           "Institutions",
-          "Rules that structure exchange"
+          "Formal and informal rules that structure how people interact and exchange."
         ],
         [
           "Rule of law",
-          "Predictable and impartial application"
+          "Rules applied predictably and impartially, with credible enforcement."
         ],
         [
           "Property rights",
-          "Defined claims over resources"
+          "Defined, recognized claims about how resources may be used and transferred."
         ],
         [
           "Open entry",
-          "Newcomers can compete"
+          "Opportunities for newcomers to compete under fair, accessible rules."
         ]
       ],
       "applied": [
@@ -128,6 +148,24 @@ window.PRECISE_BANK_CH16 = {
       "advanced": [
         "Assess the claim that markets require no rules. Explain which rules help and which can obstruct competition.",
         "Propose two institutional reforms to help a market whose contracts are routinely broken."
+      ],
+      "sortRounds": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          3,
+          8
+        ]
       ]
     },
     {
@@ -140,63 +178,83 @@ window.PRECISE_BANK_CH16 = {
       ],
       "foundation": [
         {
-          "q": "Plant vegetables on owned land",
-          "a": 0
+          "id": "E16-C2-F01",
+          "q": "A landowner grows vegetables on land they are entitled to cultivate",
+          "a": 0,
+          "why": "Cultivating permitted land is an exercise of use rights."
         },
         {
-          "q": "Keep trespassers off private land",
-          "a": 1
+          "id": "E16-C2-F02",
+          "q": "An owner lawfully bars unauthorized access to a locked workshop",
+          "a": 1,
+          "why": "Exclusion is the ability to restrict access."
         },
         {
-          "q": "Sell a farm to a neighbor",
-          "a": 2
+          "id": "E16-C2-F03",
+          "q": "A farmer sells legally transferable land to a neighbor",
+          "a": 2,
+          "why": "Transfer means moving ownership claims to another party."
         },
         {
-          "q": "Seek compensation for property damage",
-          "a": 3
+          "id": "E16-C2-F04",
+          "q": "A property owner seeks a legal remedy after unlawful damage",
+          "a": 3,
+          "why": "Enforcement protects a recognized claim through remedies."
         },
         {
-          "q": "Convert a workshop to a shop",
-          "a": 0
+          "id": "E16-C2-F05",
+          "q": "An owner changes an approved workshop into a permitted shop",
+          "a": 0,
+          "why": "Ordinary use can change within the limits of existing rights."
         },
         {
-          "q": "Stop an unauthorized use of one's reserved seat",
-          "a": 1
+          "id": "E16-C2-F06",
+          "q": "A tenant bars entry by someone who has no permission to enter",
+          "a": 1,
+          "why": "Even a tenant can hold defined exclusion rights."
         },
         {
-          "q": "Give a bicycle to a child",
-          "a": 2
+          "id": "E16-C2-F07",
+          "q": "A parent gives a bicycle they own to a child",
+          "a": 2,
+          "why": "Gifting a claim transfers ownership without a sale."
         },
         {
-          "q": "Take a trespass claim to court",
-          "a": 3
+          "id": "E16-C2-F08",
+          "q": "A landowner asks a court to enforce a recorded easement",
+          "a": 3,
+          "why": "Seeking a remedy is enforcement of an existing entitlement."
         },
         {
-          "q": "Rent out a room to another tenant",
-          "a": 2
+          "id": "E16-C2-F09",
+          "q": "A tenant with subletting permission leases a room to another tenant",
+          "a": 2,
+          "why": "The contract transfers a limited right of occupancy, not necessarily title."
         },
         {
-          "q": "License a book publisher",
-          "a": 2
+          "id": "E16-C2-F10",
+          "q": "An author licenses specified publishing rights to a company",
+          "a": 2,
+          "why": "A license grants defined rights for a specified use or term."
         }
       ],
       "why": "Rights are a bundle of powers, not merely physical possession.",
       "cards": [
         [
           "Use",
-          "Control ordinary uses of a resource"
+          "Exercise a legally recognized use of a resource, within its limits."
         ],
         [
           "Exclude",
-          "Keep unauthorized users out"
+          "Restrict unauthorized use or access."
         ],
         [
           "Transfer",
-          "Sell lease or give a claim"
+          "Sell, gift, license, or otherwise convey specified rights."
         ],
         [
           "Enforce",
-          "Obtain a remedy for a violated claim"
+          "Obtain a remedy when a recognized right is violated."
         ]
       ],
       "applied": [
@@ -255,6 +313,24 @@ window.PRECISE_BANK_CH16 = {
       "advanced": [
         "Design a clear set of shared-driveway rights for neighbors, including enforcement.",
         "Explain how secure ownership promotes investment and why rights still have limits."
+      ],
+      "sortRounds": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          3,
+          8
+        ]
       ]
     },
     {
@@ -266,71 +342,91 @@ window.PRECISE_BANK_CH16 = {
       ],
       "foundation": [
         {
-          "q": "Courts treat newcomers and insiders equally",
-          "a": 0
+          "id": "E16-C3-F01",
+          "q": "Courts apply contract rules equally to new and established firms",
+          "a": 0,
+          "why": "Impartial enforcement supports broadly accessible participation."
         },
         {
-          "q": "Exclusive contracts go only to donors",
-          "a": 1
+          "id": "E16-C3-F02",
+          "q": "Contracts are reserved for companies whose owners donate to officials",
+          "a": 1,
+          "why": "Political connections determine who receives valuable privileges."
         },
         {
-          "q": "A country reports high GDP but no institutional data",
-          "a": 2
+          "id": "E16-C3-F03",
+          "q": "A country's GDP rises, but no information about institutional rules is available",
+          "a": 2,
+          "why": "GDP alone cannot establish whether access and enforcement are broadly inclusive."
         },
         {
-          "q": "Published permits with independent appeals",
-          "a": 0
+          "id": "E16-C3-F04",
+          "q": "Permit rules are published and decisions can be appealed independently",
+          "a": 0,
+          "why": "Transparent rules and appeals constrain discriminatory decisions."
         },
         {
-          "q": "Inspectors demand secret payments",
-          "a": 1
+          "id": "E16-C3-F05",
+          "q": "Inspectors privately demand bribes before issuing routine approvals",
+          "a": 1,
+          "why": "Unofficial payments distort access and create opportunities for extraction."
         },
         {
-          "q": "A new port is announced without access rules",
-          "a": 2
+          "id": "E16-C3-F06",
+          "q": "A port is announced, but rules governing access have not been specified",
+          "a": 2,
+          "why": "Without access rules, there is insufficient evidence to classify the institution."
         },
         {
-          "q": "New firms may compete under identical rules",
-          "a": 0
+          "id": "E16-C3-F07",
+          "q": "New firms compete under the same entry requirements as incumbents",
+          "a": 0,
+          "why": "Broad entry opportunities are a feature of inclusive institutions."
         },
         {
-          "q": "Only relatives can win tenders",
-          "a": 1
+          "id": "E16-C3-F08",
+          "q": "Only officials' relatives are eligible to bid on public contracts",
+          "a": 1,
+          "why": "Eligibility is restricted to politically favored insiders."
         },
         {
-          "q": "A new trade agreement is announced but implementation is unknown",
-          "a": 2
+          "id": "E16-C3-F09",
+          "q": "A new trade agreement is announced without any implementation details",
+          "a": 2,
+          "why": "An announcement alone doesn't establish fair access or enforcement."
         },
         {
-          "q": "Regulators exempt their friends",
-          "a": 1
+          "id": "E16-C3-F10",
+          "q": "Regulators waive compliance rules only for their close friends",
+          "a": 1,
+          "why": "Selective exemptions give insiders advantages under unequal rules."
         }
       ],
       "why": "Inclusive institutions spread opportunities; extractive institutions reserve advantages for insiders. Some evidence is inconclusive.",
       "cards": [
         [
-          "Inclusive",
-          "Broad and impartial opportunity"
+          "Inclusive institutions",
+          "Rules and enforcement that enable broad participation and opportunity."
         ],
         [
-          "Extractive",
-          "Insiders capture privilege"
+          "Extractive institutions",
+          "Rules concentrating power or advantages among insiders."
         ],
         [
           "Rent seeking",
-          "Gaining advantages through rules rather than value creation"
+          "Spending resources to secure privileges or transfers through institutional influence."
         ],
         [
-          "Correlation",
-          "Association that does not prove cause"
+          "Corruption",
+          "Abuse of entrusted authority for private advantage."
         ],
         [
-          "Search",
-          "Finding possible partners and offers"
+          "Search costs",
+          "Resources spent finding potential partners or information."
         ],
         [
-          "Negotiation",
-          "Agreeing on terms"
+          "Negotiation costs",
+          "Resources spent bargaining and reaching agreements."
         ]
       ],
       "applied": [
@@ -450,6 +546,24 @@ window.PRECISE_BANK_CH16 = {
         "Evaluate the claim that small bribes always grease the wheels of commerce.",
         "Propose institutional reforms after a licensing office privileges political insiders.",
         "Compare bargaining over one factory and one fishery with citywide smog."
+      ],
+      "sortRounds": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       ]
     },
     {
@@ -462,71 +576,95 @@ window.PRECISE_BANK_CH16 = {
       ],
       "foundation": [
         {
-          "q": "Sandwich bought at a café",
-          "a": 0
+          "id": "E16-C4-F01",
+          "q": "A sandwich purchased for individual consumption",
+          "a": 0,
+          "why": "Eating the sandwich leaves less of it for others, and a seller can restrict access."
         },
         {
-          "q": "Uncongested subscription stream",
-          "a": 1
+          "id": "E16-C4-F02",
+          "q": "A password-protected video stream with ample server capacity",
+          "a": 1,
+          "why": "Access is controllable while another viewer adds little congestion."
         },
         {
-          "q": "Open-access lake fish",
-          "a": 2
+          "id": "E16-C4-F03",
+          "q": "Fish in an open-access lake",
+          "a": 2,
+          "why": "Each harvested fish reduces the stock, and excluding fishers is difficult."
         },
         {
-          "q": "National defense",
-          "a": 3
+          "id": "E16-C4-F04",
+          "q": "A national defense system protecting everyone in its territory",
+          "a": 3,
+          "why": "Its protection is broadly shared and exclusion is generally difficult."
         },
         {
-          "q": "Reserved airplane seat",
-          "a": 0
+          "id": "E16-C4-F05",
+          "q": "A reserved seat on a sold-out airplane",
+          "a": 0,
+          "why": "One passenger's seat is unavailable to another; a ticket restricts access."
         },
         {
-          "q": "Uncongested toll road",
-          "a": 1
+          "id": "E16-C4-F06",
+          "q": "An uncongested toll bridge with controlled entry",
+          "a": 1,
+          "why": "Extra drivers impose little congestion while toll gates allow exclusion."
         },
         {
-          "q": "Open-access groundwater",
-          "a": 2
+          "id": "E16-C4-F07",
+          "q": "Groundwater pumped from a difficult-to-police open aquifer",
+          "a": 2,
+          "why": "Withdrawals reduce the stock available to others and access is difficult to control."
         },
         {
-          "q": "Town-wide siren warning",
-          "a": 3
+          "id": "E16-C4-F08",
+          "q": "A region-wide tornado siren that anyone nearby can hear",
+          "a": 3,
+          "why": "Warnings are non-rival across listeners and difficult to restrict."
         },
         {
-          "q": "Apple at a grocery",
-          "a": 0
+          "id": "E16-C4-F09",
+          "q": "An apple sold at a grocery store",
+          "a": 0,
+          "why": "Consumption uses up the apple and the retailer controls access."
         },
         {
-          "q": "Password-protected digital course with spare capacity",
-          "a": 1
+          "id": "E16-C4-F10",
+          "q": "A subscription digital course with room for additional viewers",
+          "a": 1,
+          "why": "A login restricts access even when serving one more user adds little congestion."
         },
         {
-          "q": "Unrestricted ocean fishery",
-          "a": 2
+          "id": "E16-C4-F11",
+          "q": "Fish from an unrestricted coastal fishery",
+          "a": 2,
+          "why": "One catch reduces available fish and practical exclusion is difficult."
         },
         {
-          "q": "Clean air over a city",
-          "a": 3
+          "id": "E16-C4-F12",
+          "q": "A publicly audible emergency radio alert for a whole city",
+          "a": 3,
+          "why": "Additional listeners do not diminish the alert and nonpayers can still hear it."
         }
       ],
       "why": "Rivalry and excludability determine classification, not whether government pays.",
       "cards": [
         [
-          "Rival",
-          "One user's consumption reduces availability"
+          "Rivalry",
+          "One person's use reduces what remains available to others."
         ],
         [
-          "Excludable",
-          "Users can feasibly be denied access"
+          "Excludability",
+          "Ability to prevent some people from accessing a good."
         ],
         [
           "Common resource",
-          "Rival but difficult to exclude"
+          "Rival in use but difficult to exclude users."
         ],
         [
           "Public good",
-          "Non-rival and non-excludable"
+          "Non-rival and difficult to exclude users."
         ]
       ],
       "applied": [
@@ -596,7 +734,25 @@ window.PRECISE_BANK_CH16 = {
         "Compare catch limits and entrance fees for an overfished shared lake.",
         "Explain why socially valuable goods are not necessarily public goods."
       ],
-      "matrixIntro": "Place each example into the rivalry-by-excludability grid. Focus on how goods behave, not who pays for them."
+      "matrixIntro": "Place each example into the rivalry-by-excludability grid. Focus on how goods behave, not who pays for them.",
+      "sortRounds": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          3,
+          8
+        ]
+      ]
     }
   ],
   "extra": [
@@ -685,14 +841,50 @@ window.PRECISE_BANK_CH16 = {
           0,
           "Prices coordinate intentions, but credible enforcement can help parties trust promises."
         ]
+      ],
+      "detectRounds": [
+        [
+          [
+            "A market needs enforceable claims, reliable agreements, and rules for participation.",
+            "A",
+            "It identifies several foundational market institutions."
+          ],
+          [
+            "A market works when people can own and exchange goods.",
+            "A−",
+            "True, but it leaves out enforcement and other rules that make rights credible."
+          ],
+          [
+            "A market is defined by the complete absence of institutions and enforceable rules.",
+            "F",
+            "Exchange depends on institutions; markets are not an absence of rules."
+          ]
+        ],
+        [
+          [
+            "A market can coordinate buyers and sellers without perfectly predicting future profits.",
+            "A−",
+            "True, but does not explain the institutional foundations of credible trade."
+          ],
+          [
+            "Equal opportunity to register a firm and impartial enforcement help make entry genuinely open.",
+            "A",
+            "It combines entry conditions with reliable treatment of participants."
+          ],
+          [
+            "Market transactions are enforceable solely because buyers and sellers agree to a posted price.",
+            "F",
+            "Agreement on a price does not itself guarantee performance or dispute resolution."
+          ]
+        ]
       ]
     },
     {
       "detect": [
         [
-          "Ownership can include powers to use, exclude, transfer, and defend a claim.",
+          "Property rights can specify use, exclusion, transfer, and enforcement claims.",
           "A",
-          "Property is a bundle of rights."
+          "Rights are a bundle of entitlements, not unlimited control."
         ],
         [
           "Property rights allow someone to use a resource.",
@@ -772,24 +964,60 @@ window.PRECISE_BANK_CH16 = {
           0,
           "Specified rights help coordinate use without eliminating every physical or bargaining problem."
         ]
+      ],
+      "detectRounds": [
+        [
+          [
+            "Property rights can specify use, exclusion, transfer, and enforcement claims.",
+            "A",
+            "Rights are a bundle of entitlements, not unlimited control."
+          ],
+          [
+            "Property rights allow someone to use a resource.",
+            "A−",
+            "Correct but incomplete: exclusion, transfer, and enforceability also matter."
+          ],
+          [
+            "Property rights mean nobody else can ever impose any legal limit on an owner.",
+            "F",
+            "Ownership is subject to legitimate obligations and legal limits."
+          ]
+        ],
+        [
+          [
+            "A recorded title automatically permits every physical use of a parcel.",
+            "F",
+            "Valid claims may still be limited by easements, zoning, or other rights."
+          ],
+          [
+            "An owner may hold a right to use land without an unrestricted right to sell it.",
+            "A",
+            "The powers of use and transfer can be defined separately."
+          ],
+          [
+            "Property rights allow people to make some decisions about resources.",
+            "A−",
+            "True but incomplete; defined exclusion, transfer, and enforcement can also matter."
+          ]
+        ]
       ]
     },
     {
       "detect": [
         [
-          "Inclusive institutions tend to distribute entry and enforcement broadly.",
+          "Corruption is abuse of entrusted authority for private gain.",
           "A",
-          "This captures the institutional distinction."
+          "The definition names misuse of power and a private benefit."
         ],
         [
-          "Corruption lets insiders obtain special advantages.",
-          "A−",
-          "Often true, but the key mechanism also involves distorted rules, incentives, and lost productive opportunities."
-        ],
-        [
-          "Higher corruption always proves that a country will be richer.",
+          "Corruption occurs whenever someone gains an advantage from government policy.",
           "F",
-          "Corruption generally creates uncertainty and distortions; a correlation never proves this claim."
+          "Advantages can come from legitimate policy; corruption involves abuse of entrusted authority for private benefit."
+        ],
+        [
+          "Corruption involves giving an official a private benefit.",
+          "A−",
+          "Often true, but omits that the benefit involves abusing entrusted authority; a lawful salary is not corruption."
         ]
       ],
       "missing": [
@@ -859,6 +1087,42 @@ window.PRECISE_BANK_CH16 = {
           0,
           "Multiple institutional barriers can reinforce each other. Removing one does not remove the others."
         ]
+      ],
+      "detectRounds": [
+        [
+          [
+            "Corruption is abuse of entrusted authority for private gain.",
+            "A",
+            "The definition names misuse of power and a private benefit."
+          ],
+          [
+            "Corruption occurs whenever someone gains an advantage from government policy.",
+            "F",
+            "Advantages can come from legitimate policy; corruption involves abuse of entrusted authority for private benefit."
+          ],
+          [
+            "Corruption involves giving an official a private benefit.",
+            "A−",
+            "Often true, but omits that the benefit involves abusing entrusted authority; a lawful salary is not corruption."
+          ]
+        ],
+        [
+          [
+            "A firm earns a monopoly permit because the regulator is its owner's cousin.",
+            "A−",
+            "The situation suggests favoritism, but the explanation does not identify misuse of entrusted authority or its effects."
+          ],
+          [
+            "Publishing permit criteria and allowing independent appeals can restrain arbitrary favoritism.",
+            "A",
+            "Transparency and review can reduce official discretion to privilege insiders."
+          ],
+          [
+            "A correlation between corruption and income establishes that corruption causes every income difference.",
+            "F",
+            "Confounding and reverse causation remain possible."
+          ]
+        ]
       ]
     },
     {
@@ -869,9 +1133,9 @@ window.PRECISE_BANK_CH16 = {
           "It is defined by both properties."
         ],
         [
-          "A public good benefits many people.",
+          "A public good can benefit many people at the same time.",
           "A−",
-          "That may be true, but a public good is specifically non-rival and non-excludable."
+          "That can be true, but the definition additionally requires non-rivalry and difficulty of exclusion."
         ],
         [
           "Anything paid for by government is automatically a public good.",
@@ -945,6 +1209,42 @@ window.PRECISE_BANK_CH16 = {
           ],
           0,
           "The extent of rivalry can depend on congestion and capacity."
+        ]
+      ],
+      "detectRounds": [
+        [
+          [
+            "A common resource is rival and difficult to exclude users from.",
+            "A",
+            "It is defined by both properties."
+          ],
+          [
+            "A public good can benefit many people at the same time.",
+            "A−",
+            "That can be true, but the definition additionally requires non-rivalry and difficulty of exclusion."
+          ],
+          [
+            "Anything paid for by government is automatically a public good.",
+            "F",
+            "Funding source does not determine rivalry or excludability."
+          ]
+        ],
+        [
+          [
+            "Government funding is sufficient to make a resource a public good.",
+            "F",
+            "Classification depends on rivalry and excludability, not the purchaser."
+          ],
+          [
+            "A crowded toll road can be rival even though toll collection makes access excludable.",
+            "A",
+            "Congestion and access restrictions are separate dimensions."
+          ],
+          [
+            "A common resource is difficult to exclude users from.",
+            "A−",
+            "True, but incomplete without the additional requirement that use is rival."
+          ]
         ]
       ]
     }
