@@ -9,6 +9,10 @@
 <style>
 /* Keeps hidden hover definitions from making the page wider than a phone screen. */
 .etb{overflow-x:clip}
+/* Pop-up definitions: open on tap and on keyboard focus too (see TIP_JS below). */
+[data-tip].tip-open::after,[data-tip]:focus-visible:not(.tip-hide)::after{opacity:1}
+[data-tip].tip-hide::after{opacity:0 !important}
+[data-tip]:focus-visible,.etb-ak-item:focus-visible{outline:2px solid #2a7a4f;outline-offset:2px;border-radius:2px}
 </style>
 </head>
 <body>
@@ -115,6 +119,34 @@ That's the whole calculation — a division and a comparison. The only thing lef
 <style>.etb .etb-ak-pop{margin-left:var(--ak-shift,0px)}.etb .etb-ak-pop::before{left:calc(50% - var(--ak-shift,0px))}.etb [data-tip]::after{margin-left:var(--tip-shift,0px)}</style>
 <script>(function () { if (window.etbFitPops) return; window.etbFitPops = true; function limits(el) { var b = (el.closest('.etb') || document.documentElement).getBoundingClientRect(); var vw = document.documentElement.clientWidth; return [Math.max(b.left, 0) + 8, Math.min(b.right, vw) - 8]; } function shift(l, r, lim) { if (l < lim[0]) return lim[0] - l; if (r > lim[1]) return Math.max(lim[1] - r, lim[0] - l); return 0; } function fitPop(item) { var p = item.querySelector('.etb-ak-pop'); if (!p) return; p.style.setProperty('--ak-shift', '0px'); if (!item.classList.contains('ak-open')) return; var r = p.getBoundingClientRect(); p.style.setProperty('--ak-shift', shift(r.left, r.right, limits(item)) + 'px'); } function fitTip(el) { var cs = getComputedStyle(el, '::after'); var w = (parseFloat(cs.width) || 230) + (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0); var r = el.getBoundingClientRect(); var c = (r.left + r.right) / 2; el.style.setProperty('--tip-shift', shift(c - w / 2, c + w / 2, limits(el)) + 'px'); } function fitOpen() { document.querySelectorAll('.etb-ak-item').forEach(fitPop); } function onTip(e) { var t = e.target && e.target.closest && e.target.closest('[data-tip]'); if (t) fitTip(t); } document.addEventListener('click', function (e) { onTip(e); requestAnimationFrame(fitOpen); }, true); document.addEventListener('mouseover', onTip, true); document.addEventListener('focusin', onTip, true); window.addEventListener('resize', fitOpen);})();</script>
 <!-- ETB PAGE FOOTER -->
+<script>
+(function () {
+  function closeAll(keep) {
+    document.querySelectorAll('[data-tip].tip-open').forEach(function (t) { if (t !== keep) t.classList.remove('tip-open'); });
+  }
+  document.querySelectorAll('[data-tip], .etb-ak-item').forEach(function (t) {
+    if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '0');
+  });
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-tip]') : null;
+    if (!t) { closeAll(); return; }
+    e.stopPropagation();
+    var open = t.classList.contains('tip-open');
+    closeAll(t);
+    t.classList.toggle('tip-open', !open);
+    t.classList.toggle('tip-hide', open);
+  }, true);
+  document.addEventListener('keydown', function (e) {
+    var t = document.activeElement;
+    if (!t || !t.matches) return;
+    if (e.key === 'Escape' && t.matches('[data-tip]')) { t.classList.remove('tip-open'); t.classList.add('tip-hide'); }
+    if ((e.key === 'Enter' || e.key === ' ') && t.matches('.etb-ak-item')) { e.preventDefault(); t.click(); }
+  });
+  document.addEventListener('focusout', function (e) {
+    if (e.target.matches && e.target.matches('[data-tip]')) e.target.classList.remove('tip-hide', 'tip-open');
+  });
+})();
+</script>
 <script src="assets/report.js" data-book="Econ 150" defer></script>
 <script src="assets/etb-audio.js"></script>
 </body>

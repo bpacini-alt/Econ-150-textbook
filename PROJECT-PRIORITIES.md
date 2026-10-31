@@ -377,6 +377,8 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 
 **Priority:** Medium-low (Benjamin, October 30). Found by the Chapter Quality Manual pass on EDCOR 310's Chapter 16 draft. The matching item is in EDCOR 310's `PROJECT-PRIORITIES.md`.
 
+**Status: done October 30.** `build/wrap_pages.py` now adds a short script and styles to every page. Tap a term to open or close it, Tab to a term to open it, press Escape to close it, and press Enter or Space to open an "Also know" term. EDCOR 310's build carries the same script. Still open, low: screen readers announce the term but not its definition.
+
 ### Loose ends from the move to the new sites (recorded October 20, 2026)
 
 Small items found while moving both books off EdTechBooks. Most are quick. Items marked **(Benjamin)** need his decision or his account first.
