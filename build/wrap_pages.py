@@ -123,22 +123,8 @@ def unwrap(text):
 
 
 def page_rating_html(page_id):
-    title_id = f"page-rating-title-{page_id}"
     return f"""<!-- PAGE RATING START -->
-<section class="etb-page-rating" data-page-rating data-book="econ-150" data-page="{page_id}" aria-labelledby="{title_id}">
-  <h2 class="etb-page-rating-title" id="{title_id}">How useful was this page?</h2>
-  <p class="etb-page-rating-note">Your anonymous rating helps improve the book.</p>
-  <div class="etb-page-rating-controls" role="group" aria-label="Rate this page from 1 to 4">
-    <div class="etb-page-rating-buttons">
-      <button class="etb-page-rating-button" type="button" data-page-rating-value="1" aria-pressed="false" aria-label="1, not useful">1</button>
-      <button class="etb-page-rating-button" type="button" data-page-rating-value="2" aria-pressed="false" aria-label="2">2</button>
-      <button class="etb-page-rating-button" type="button" data-page-rating-value="3" aria-pressed="false" aria-label="3">3</button>
-      <button class="etb-page-rating-button" type="button" data-page-rating-value="4" aria-pressed="false" aria-label="4, very useful">4</button>
-    </div>
-    <span class="etb-page-rating-label">1 Not useful · 4 Very useful</span>
-    <span class="etb-page-rating-status" data-page-rating-status aria-live="polite"></span>
-  </div>
-</section>
+<div class="etb-page-rating-config" data-page-rating data-book="econ-150" data-page="{page_id}" hidden></div>
 <!-- /PAGE RATING -->"""
 
 
