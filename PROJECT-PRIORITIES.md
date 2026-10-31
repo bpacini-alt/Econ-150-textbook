@@ -315,6 +315,7 @@ These items are paused on purpose. Each needs a careful read or a decision, not 
 1. **Econ 150 Chapters 13–14 editorial pass (pull request #40).** Softens the welfare-cliff example, adds "illustration, not a forecast" caveats to the growth figures, and updates the EITC, stablecoin, Saver's Match, and child-account details. It changes a lot of content, so Benjamin wants time to read it in the preview. It is up to date with `main` and merges cleanly.
 2. **Econ 150 Chapters 13–14 practice bank (pull request #55).** Provisional practice questions; review after #40. #40 and #55 both edit Chapter 14, so whichever merges second needs a merge from `main` first.
 3. **Econ 150 Chapter 16 redraft (reader report textbook-feedback#5).** A reader said the chapter reads like a draft. Benjamin plans to redraft it this week.
+   **Done October 31, 2026** (Econ 150 #105, with the companion Chapter 12 changes in #106). Chapter 16 rebuilt from six concepts to four; textbook-feedback#5 closed. Follow-ups are tracked in `review/CH16-REBUILD.md`.
 
 **Both books:**
 

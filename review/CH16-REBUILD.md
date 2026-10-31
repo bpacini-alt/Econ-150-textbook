@@ -1,6 +1,6 @@
 # Chapter 16 rebuild (Institutions)
 
-**Status:** In progress, October 31, 2026. Branch `rebuild/ch16-institutions-20261031`.
+**Status:** Merged October 31, 2026 (#105, with Chapter 12 changes in #106). Follow-ups below. Branch `rebuild/ch16-institutions-20261031`.
 
 **Why:** Chapter 16 was doing too much. About a third of it repeated material taught elsewhere in the book (the introduction, Chapters 1, 11, 12, 18, and 26). The rebuild keeps what only Chapter 16 teaches and moves the rest.
 
@@ -30,12 +30,12 @@ About 9,000 words down to about 5,900. Title card read time changed from 38 to 2
 Checked October 31, 2026, by searching the whole book for references to Chapter 16.
 
 **Needs action**
-- [ ] **Supplemental essay:** draft "What Is Prosperity For?" from `review/ch16-rebuild/essay-material.html`. Decide where essays live on the site, then link it from the Ch 16 "What is prosperity for?" box.
-- [ ] **Chapter 0 (Algebra Review):** says total revenue is "a calculation you'll run constantly from Ch 16 on." Total revenue is taught in Ch 15 (elasticity), and Ch 16 never uses it. Change to Ch 15. (Pre-existing; not caused by the rebuild.)
-- [ ] **Precise practice pilot** (PR #100, `feat/ch16-precise-practice-pilot-20261030`): built on the old six concepts. Re-cut to the new four; drop the "rights versus objections" checkpoint (now Ch 12 material) and fold "transaction costs" into Corruption; update the lake-management chapter challenge.
-- [ ] **Course quizzes and slides (outside the repo):** check the Ch 16 session slides and any common-quiz or Top Hat items on Coase (now taught only in Ch 18), the veto/NIMBY material (now Ch 12), or the Christianity and Restorationist material (now the essay).
-- [ ] **PROJECT-PRIORITIES.md:** after merge, mark "Econ 150 Chapter 16 redraft (reader report textbook-feedback#5)" done and close textbook-feedback#5.
-- [ ] **docs/APHORISM-CANDIDATE-BANK.md:** records "An Objection Is Not a Veto" as an existing Ch 16 heading that "is not being deleted or changed." The heading left Ch 16 with the rebuild, and the idea now lives in Ch 12 without it. Add a note; optionally restore the phrase as a heading in Ch 12.
+- [ ] **Supplemental essay (low priority):** main points in `review/ch16-rebuild/essay-plan.md`; source material in `review/ch16-rebuild/essay-material.html`. Decide where essays live on the site, then link it from the Ch 16 "What is prosperity for?" box.
+- [x] **Chapter 0 (Algebra Review):** the total-revenue note said "from Ch 16 on"; now "from Ch 15 on" (elasticity). Done October 31, 2026.
+- [ ] **Precise practice pilot** (Benjamin is handling this elsewhere; PR #100, `feat/ch16-precise-practice-pilot-20261030`): built on the old six concepts. Re-cut to the new four; drop the "rights versus objections" checkpoint (now Ch 12 material) and fold "transaction costs" into Corruption; update the lake-management chapter challenge.
+- [ ] **Course quizzes and slides (outside the repo; Benjamin):** check the Ch 16 session slides and any common-quiz or Top Hat items on Coase (now taught only in Ch 18), the veto/NIMBY material (now Ch 12), or the Christianity and Restorationist material (now the essay).
+- [x] **PROJECT-PRIORITIES.md:** Chapter 16 redraft marked done; textbook-feedback#5 closed. October 31, 2026.
+- [ ] **docs/APHORISM-CANDIDATE-BANK.md (low priority; Benjamin wants a better aphorism first):** records "An Objection Is Not a Veto" as an existing Ch 16 heading that "is not being deleted or changed." The heading left Ch 16 with the rebuild, and the idea now lives in Ch 12 without it. Add a note; optionally restore the phrase as a heading in Ch 12.
 
 **Optional**
 - [ ] **Chapter 17:** California's paper rivers could move to "Fences and Rules."
