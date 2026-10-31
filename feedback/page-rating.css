@@ -1,0 +1,78 @@
+.etb-page-rating {
+  max-width: 740px;
+  margin: 3rem auto 2rem;
+  padding: 1rem 1.1rem 1.05rem;
+  border-top: 1px solid #d9e0e7;
+  border-bottom: 1px solid #d9e0e7;
+  background: #f7f9fb;
+  color: #26323f;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.etb-page-rating-title {
+  margin: 0 0 .25rem;
+  color: #1a3a5c;
+  font: 700 15px/1.3 Georgia, "Times New Roman", serif;
+}
+.etb-page-rating-note {
+  margin: 0 0 .7rem;
+  color: #637180;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.etb-page-rating-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35rem .45rem;
+}
+.etb-page-rating-buttons {
+  display: inline-flex;
+  gap: .25rem;
+}
+.etb-page-rating-button {
+  width: 2rem;
+  height: 1.85rem;
+  padding: 0;
+  border: 1px solid #b9c8d5;
+  border-radius: 4px;
+  background: #fff;
+  color: #1a3a5c;
+  font: 700 12px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+.etb-page-rating-button:hover,
+.etb-page-rating-button:focus-visible {
+  border-color: #1a3a5c;
+  background: #eef4fb;
+}
+.etb-page-rating-button[aria-pressed="true"] {
+  border-color: var(--page-rating-accent, #1a3a5c);
+  background: var(--page-rating-accent, #1a3a5c);
+  color: #fff;
+}
+.etb-page-rating-button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+.etb-page-rating-label {
+  color: #637180;
+  font-size: 11px;
+}
+.etb-page-rating-status {
+  min-width: 8rem;
+  color: #637180;
+  font-size: 11px;
+}
+@media (max-width: 560px) {
+  .etb-page-rating {
+    margin-top: 2rem;
+    padding: .9rem .8rem;
+  }
+  .etb-page-rating-controls {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .etb-page-rating-status {
+    min-width: 0;
+  }
+}

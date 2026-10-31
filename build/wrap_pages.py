@@ -41,6 +41,8 @@ SKIP = {"index.html"}  # already a complete page
 
 HEAD_END = "<!-- /ETB PAGE HEADER -->"
 FOOT_START = "<!-- ETB PAGE FOOTER -->"
+PAGE_RATING_START = "<!-- PAGE RATING START -->"
+PAGE_RATING_END = "<!-- /PAGE RATING -->"
 
 HEADER = """<!doctype html>
 <html lang="en">
@@ -50,6 +52,7 @@ HEADER = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <link rel="stylesheet" href="assets/etb-audio.css">
+<link rel="stylesheet" href="assets/page-rating.css">
 <style>
 /* Keeps hidden hover definitions from making the page wider than a phone screen. */
 .etb{{overflow-x:clip}}
@@ -98,6 +101,7 @@ TIP_JS = """<script>
 
 FOOTER = "\n" + FOOT_START + "\n" + TIP_JS + """
 <script src="assets/report.js" data-book="Econ 150" defer></script>
+<script src="assets/page-rating.js"></script>
 <script src="assets/etb-audio.js"></script>
 </body>
 </html>
@@ -110,7 +114,32 @@ def unwrap(text):
         text = text.split(HEAD_END + "\n", 1)[1]
     if FOOT_START in text:
         text = text.rsplit("\n" + FOOT_START, 1)[0]
+    if PAGE_RATING_START in text:
+        before, after = text.split(PAGE_RATING_START, 1)
+        text = before + after.split(PAGE_RATING_END, 1)[1]
     return text
+
+
+
+
+def page_rating_html(page_id):
+    title_id = f"page-rating-title-{page_id}"
+    return f"""<!-- PAGE RATING START -->
+<section class="etb-page-rating" data-page-rating data-book="econ-150" data-page="{page_id}" aria-labelledby="{title_id}">
+  <h2 class="etb-page-rating-title" id="{title_id}">How useful was this page?</h2>
+  <p class="etb-page-rating-note">Your anonymous rating helps improve the book.</p>
+  <div class="etb-page-rating-controls" role="group" aria-label="Rate this page from 1 to 4">
+    <div class="etb-page-rating-buttons">
+      <button class="etb-page-rating-button" type="button" data-page-rating-value="1" aria-pressed="false" aria-label="1, not useful">1</button>
+      <button class="etb-page-rating-button" type="button" data-page-rating-value="2" aria-pressed="false" aria-label="2">2</button>
+      <button class="etb-page-rating-button" type="button" data-page-rating-value="3" aria-pressed="false" aria-label="3">3</button>
+      <button class="etb-page-rating-button" type="button" data-page-rating-value="4" aria-pressed="false" aria-label="4, very useful">4</button>
+    </div>
+    <span class="etb-page-rating-label">1 Not useful · 4 Very useful</span>
+    <span class="etb-page-rating-status" data-page-rating-status aria-live="polite"></span>
+  </div>
+</section>
+<!-- /PAGE RATING -->"""
 
 
 def main():
@@ -119,6 +148,8 @@ def main():
         shutil.copyfile(PLAYER / name, ASSETS / name)
     # The Report a problem button; feedback/report.js is the one place to edit it.
     shutil.copyfile(ROOT / "feedback" / "report.js", ASSETS / "report.js")
+    shutil.copyfile(ROOT / "feedback" / "page-rating.js", ASSETS / "page-rating.js")
+    shutil.copyfile(ROOT / "feedback" / "page-rating.css", ASSETS / "page-rating.css")
 
     titles = {c["file"]: c["title"] for c in json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))["chapters"]}
     wrapped, skipped = 0, []
@@ -135,7 +166,8 @@ def main():
             skipped.append(page.name + " (already a full page)")
             continue
         title = titles.get(page.name, page.stem)
-        rendered = HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + FOOTER
+        rating = page_rating_html(page.stem.lower()) if title.startswith("Chapter ") else ""
+        rendered = HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + rating + FOOTER
         if page.name in titles and body.strip():
             edit_path = urllib.parse.quote("etb-live/" + page.name, safe="/")
             edit_link = f'<a class="etb-author-edit" href="/editor/?book=econ-150&amp;path={edit_path}">Edit</a>'
