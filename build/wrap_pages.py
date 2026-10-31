@@ -50,6 +50,7 @@ HEADER = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <link rel="stylesheet" href="assets/etb-audio.css">
+<link rel="stylesheet" href="assets/page-rating.css">
 <style>
 /* Keeps hidden hover definitions from making the page wider than a phone screen. */
 .etb{{overflow-x:clip}}
@@ -98,6 +99,7 @@ TIP_JS = """<script>
 
 FOOTER = "\n" + FOOT_START + "\n" + TIP_JS + """
 <script src="assets/report.js" data-book="Econ 150" defer></script>
+<script src="assets/page-rating.js"></script>
 <script src="assets/etb-audio.js"></script>
 </body>
 </html>
@@ -119,6 +121,8 @@ def main():
         shutil.copyfile(PLAYER / name, ASSETS / name)
     # The Report a problem button; feedback/report.js is the one place to edit it.
     shutil.copyfile(ROOT / "feedback" / "report.js", ASSETS / "report.js")
+    shutil.copyfile(ROOT / "feedback" / "page-rating.js", ASSETS / "page-rating.js")
+    shutil.copyfile(ROOT / "feedback" / "page-rating.css", ASSETS / "page-rating.css")
 
     titles = {c["file"]: c["title"] for c in json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))["chapters"]}
     wrapped, skipped = 0, []
@@ -135,7 +139,11 @@ def main():
             skipped.append(page.name + " (already a full page)")
             continue
         title = titles.get(page.name, page.stem)
-        rendered = HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + FOOTER
+        rating = ""
+        if title.startswith("Chapter "):
+            page_id = page.stem.lower()
+            rating = f'<!-- PAGE RATING START -->\n<div class="etb-page-rating-config" data-page-rating data-book="econ-150" data-page="{page_id}" hidden></div>\n<!-- /PAGE RATING -->'
+        rendered = HEADER.format(title=html.escape(f"{title} · {BOOK}")) + body + rating + FOOTER
         if page.name in titles and body.strip():
             edit_path = urllib.parse.quote("etb-live/" + page.name, safe="/")
             edit_link = f'<a class="etb-author-edit" href="/editor/?book=econ-150&amp;path={edit_path}">Edit</a>'
