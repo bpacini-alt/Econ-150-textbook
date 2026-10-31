@@ -4,15 +4,98 @@ window.PRECISE_BANK_CH15 = {
   "chapterTitle": "Elasticity",
   "concepts": [
     {
-      "name": "Elasticity",
+      "name": "Price Elasticity of Demand",
       "cats": [
-        "Price elasticity of demand",
-        "Total revenue",
-        "Cross-price and income elasticity",
-        "Price elasticity of supply"
+        "Calculate elasticity",
+        "Classify responsiveness",
+        "Interpret coefficients"
       ],
       "foundation": [],
-      "why": "This pilot tests the current practice engine with the historical elasticity bank in Tier 3 mode.",
+      "why": "Measure and interpret how quantity demanded responds to a change in the good's own price.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "Determinants of Elasticity",
+      "cats": [
+        "Substitutes and time",
+        "Necessities and scope",
+        "Escape routes"
+      ],
+      "foundation": [],
+      "why": "Explain why some buyers can adjust more easily than others.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "The Total Revenue Test",
+      "cats": [
+        "Price and revenue",
+        "Elastic demand",
+        "Inelastic or unit elastic demand"
+      ],
+      "foundation": [],
+      "why": "Use the movement of price, quantity, and total revenue to infer demand elasticity.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "Tax Incidence",
+      "cats": [
+        "Buyer burden",
+        "Seller burden",
+        "Tax wedge"
+      ],
+      "foundation": [],
+      "why": "Use relative elasticity to reason about who bears more of a tax.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "Price Elasticity of Supply",
+      "cats": [
+        "Calculate supply elasticity",
+        "Classify supply response",
+        "Time and adjustment"
+      ],
+      "foundation": [],
+      "why": "Measure and interpret how quantity supplied responds to price.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "Cross-Price and Income Elasticities",
+      "cats": [
+        "Substitutes and complements",
+        "Normal and inferior goods",
+        "Income response"
+      ],
+      "foundation": [],
+      "why": "Use cross-price and income elasticities to classify relationships among goods and buyers.",
+      "cards": [],
+      "applied": [],
+      "advanced": [],
+      "sortRounds": []
+    },
+    {
+      "name": "The Limits of Efficiency",
+      "cats": [
+        "Efficiency",
+        "Fairness",
+        "Policy tradeoffs"
+      ],
+      "foundation": [],
+      "why": "Consider what elasticity and efficiency can show—and what they cannot settle by themselves.",
       "cards": [],
       "applied": [],
       "advanced": [],
@@ -20,6 +103,48 @@ window.PRECISE_BANK_CH15 = {
     }
   ],
   "extra": [
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
+    {
+      "detect": [],
+      "missing": [],
+      "error": [],
+      "predict": [],
+      "detectRounds": []
+    },
     {
       "detect": [],
       "missing": [],
@@ -79,7 +204,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q03",
       "type": "mc",
       "concepts": [
-        1
+        2
       ],
       "prompt": "Marco is a competitive swimmer. He says he has to have his 16-ounce bottle of electrolyte drink every day to keep training. Based on this information, what can you conclude about his price elasticity of demand for the drink?",
       "choices": [
@@ -148,7 +273,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q06",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "Suppose you own a bookstore. You believe you can sell 60 copies per day of the latest best-selling novel when the price is $30. You consider lowering the price to $24 and believe this will increase the quantity sold to 70 books per day. Compute the price elasticity of demand using the midpoint formula and these data. Select the correct implication from your work.",
       "choices": [
@@ -315,7 +440,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q13",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "In recent years a number of cities have enacted taxes on soda and other sweetened beverages. If the policy goal of these city governments is to raise tax revenue to fund initiatives such as education programs, this would be most successful if the price elasticity of demand for these sweetened beverages is                               .",
       "choices": [
@@ -409,7 +534,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q17",
       "type": "mc",
       "concepts": [
-        1
+        2
       ],
       "prompt": "If the demand for a lifesaving drug were perfectly price inelastic and the price tripled, the quantity demanded would                               .",
       "choices": [
@@ -501,7 +626,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q21",
       "type": "mc",
       "concepts": [
-        1
+        2
       ],
       "prompt": "If the absolute value of the price elasticity of demand for ibuprofen equals 0.7, then                               .",
       "choices": [
@@ -570,7 +695,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g01.q24",
       "type": "mc",
       "concepts": [
-        1
+        2
       ],
       "prompt": "Of the following, which is the best example of a good with a perfectly inelastic demand?",
       "choices": [
@@ -639,7 +764,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q27",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "If a firm raised its price and discovered that its total revenue fell, then the demand for its product is                               .",
       "choices": [
@@ -662,7 +787,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q28",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "When demand is price elastic, a fall in price causes total revenue to rise because                               .",
       "choices": [
@@ -685,7 +810,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q29",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "Which of the following explains why a firm would be interested in knowing the price elasticity of demand for a good it sells?",
       "choices": [
@@ -708,7 +833,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q30",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "When demand is unit elastic, a change in price causes total revenue to stay the same because                               .",
       "choices": [
@@ -731,7 +856,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q31",
       "type": "mc",
       "concepts": [
-        1
+        4
       ],
       "prompt": "Suppose a city imposed a tax of 1.75 cents per ounce on sweetened beverages, and a large bottler indicated that its sales in that city fell by 35 percent after the tax took effect. If the price of the bottler’s sweetened beverages in that city increased by 28 percent following the implementation of the tax, then based on these figures total revenue                               .",
       "choices": [
@@ -754,7 +879,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q32",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "Suppose the price elasticity of demand for canned soup is estimated at −1.85. What happens to sales revenue if the price of canned soup rises?",
       "choices": [
@@ -777,7 +902,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q33",
       "type": "mc",
       "concepts": [
-        1
+        4
       ],
       "prompt": "Suppose a convenience store owner was worried that a new 1.75 cents per ounce tax on sweetened beverages would cause quantity demanded to fall by so much that he would be worse off passing the tax on to customers than absorbing it. If raising the price of sweetened beverages would cause the owner to receive less total revenue from their sale, the demand for sweetened beverages is                               .",
       "choices": [
@@ -800,7 +925,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q34",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "Assume that you own a small country inn. In an attempt to raise revenue you reduce your room rates by 25 percent. However, your revenue falls. What does this indicate about the demand for your inn’s rooms?",
       "choices": [
@@ -823,7 +948,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q35",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "The price elasticity of demand for rice is estimated at −0.35. What happens to sales revenue if the price of rice rises?",
       "choices": [
@@ -846,7 +971,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q36",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "Riverbend Academy is considering increasing its tuition to raise revenue. If the school believes that raising tuition will increase revenue, it is assuming that the demand for attending the school is                               .",
       "choices": [
@@ -869,7 +994,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g02.q37",
       "type": "mc",
       "concepts": [
-        1
+        3
       ],
       "prompt": "When Nolan’s Bakery raised the price of its breads by 8 percent, the quantity demanded fell by 14 percent. What was the effect on sales revenue?",
       "choices": [
@@ -892,7 +1017,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q38",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Consider the following pairs of items:\na. Printers and ink cartridges    b. Smartphones and phone cases    c. A tablet computer and a laptop computer    d. All-beef burger and black-bean burger    e. Dental floss and lawn mowers\nWhich of the pairs listed will have a negative cross-price elasticity?",
       "choices": [
@@ -915,7 +1040,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q39",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Consider the following pairs of items:\na. Printers and ink cartridges    b. Smartphones and phone cases    c. A tablet computer and a laptop computer    d. All-beef burger and black-bean burger    e. Dental floss and lawn mowers\nWhich of the pairs listed will have a positive cross-price elasticity?",
       "choices": [
@@ -938,7 +1063,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q40",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Which of the following pairs of goods is likely to have a negative cross-price elasticity of demand?",
       "choices": [
@@ -961,7 +1086,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q41",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Economists have estimated that the cross-price elasticity of demand between Sprite and 7UP is 0.65, the income elasticity for Sprite is 1.34, and the income elasticity for 7UP is 4.20. These elasticities mean that Sprite and 7UP are                               , and that Sprite and 7UP are                               .",
       "choices": [
@@ -984,7 +1109,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q42",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "When the price of pita chips rose by 12 percent, the quantity of pita chips sold fell 5 percent, and the sale of hummus fell 9 percent. This set of facts indicates that the cross-price elasticity between pita chips and hummus is                               , so the two are                               .",
       "choices": [
@@ -1007,7 +1132,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q43",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Last year Dana bought 45 pounds of ground beef when her household income was $50,000. This year her household income was only $38,000 and Dana bought 55 pounds of ground beef. Holding everything else constant, Dana’s income elasticity of demand for ground beef is                               .",
       "choices": [
@@ -1030,7 +1155,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q44",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "If a 6 percent increase in income leads to a 12 percent decrease in the quantity demanded for a product, this product is                               .",
       "choices": [
@@ -1053,7 +1178,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q45",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "If the cross-price elasticity of demand between Brisk Detergent and Glow Detergent is a relatively large positive number, then it indicates that                               .",
       "choices": [
@@ -1076,7 +1201,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q46",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "For people who live near a bus route, a light-rail station, or a commuter rail line, public transportation provides a substitute for driving their own cars. So, for these people, the cross-price elasticity of demand between gasoline and public transportation is                               .",
       "choices": [
@@ -1099,7 +1224,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q47",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Suppose public-health officials warn that, because of an outbreak of E. coli bacteria, no bagged spinach in the country can be assumed safe to eat and all of it should be discarded. Following this recommendation, sales of other leafy greens such as arugula increase. Based on this information                               .",
       "choices": [
@@ -1122,7 +1247,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q48",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Suppose the cross-price elasticity of demand between grapefruit juice and orange juice is approximately 5. What does this mean?",
       "choices": [
@@ -1145,7 +1270,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q49",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Suppose FlexFit lowers the price of its gym membership by 12 percent and, as a result, PowerHouse experiences an 18 percent decline in its gym memberships. What is the value of the cross-price elasticity between the two gym memberships?",
       "choices": [
@@ -1168,7 +1293,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q50",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Rosa, a college student working part-time, received a wage increase. An avid film buff, she increased her purchases of streaming subscriptions and reduced her purchases of DVDs. Based on this information                               .",
       "choices": [
@@ -1191,7 +1316,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q51",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Studies show that the income elasticity of demand for instant noodles is −0.38. What does this mean?",
       "choices": [
@@ -1214,7 +1339,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q52",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Last year Sefton purchased 50 pounds of potatoes to feed his family of five when his household income was $36,000. This year his household income fell to $24,000 and Sefton purchased 70 pounds of potatoes. All else constant, Sefton’s income elasticity of demand for potatoes is                               .",
       "choices": [
@@ -1237,7 +1362,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q53",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Calculate the income elasticity if a 10 percent increase in income leads to a 4 percent increase in the quantity demanded of organic produce.",
       "choices": [
@@ -1260,7 +1385,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g03.q54",
       "type": "mc",
       "concepts": [
-        1
+        6
       ],
       "prompt": "Income elasticity measures how a good’s quantity demanded responds to                               .",
       "choices": [
@@ -1283,7 +1408,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q55",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Suppose a 6 percent increase in price results in a 3 percent increase in the quantity supplied of a good. Calculate the price elasticity of supply and characterize the product.",
       "choices": [
@@ -1306,7 +1431,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q56",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Price elasticity of supply is used to gauge                               .",
       "choices": [
@@ -1329,7 +1454,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q57",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Suppose the value of the price elasticity of supply is 5. What does this mean?",
       "choices": [
@@ -1352,7 +1477,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q58",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Suppose the supply of scooters is price elastic. This means that                               .",
       "choices": [
@@ -1375,7 +1500,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q59",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "If the quantity of two-way radios supplied increases by 6 percent when the price increases by 15 percent, then                               .",
       "choices": [
@@ -1398,7 +1523,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q60",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Suppose that when the price of silk scarves increased by 8 percent, the quantity supplied increased by 14 percent. Based on this information the price elasticity of supply of silk scarves is                               .",
       "choices": [
@@ -1421,7 +1546,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q61",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "If a 10 percent decrease in the price of crab leads to an 18 percent decrease in the quantity of crab supplied, then the supply of crab is                               .",
       "choices": [
@@ -1444,7 +1569,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q62",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "If a 25 percent increase in the price of new pickup trucks leads to a 14 percent increase in the quantity of new pickup trucks supplied, then the supply of new pickup trucks is                               .",
       "choices": [
@@ -1467,7 +1592,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q63",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "If, for a given percentage increase in price, quantity supplied increases by a proportionately larger percentage, then supply is                               .",
       "choices": [
@@ -1490,7 +1615,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q64",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "The price elasticity of supply for patio umbrellas is 2.5. Suppose you are told that following a price increase, quantity supplied increased by 40 percent. What was the percentage change in price that brought this about?",
       "choices": [
@@ -1513,7 +1638,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q65",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Bringing oil to the market is a relatively long and costly process. The whole process from exploration to pumping significant amounts of oil can take years. What does this indicate about the price elasticity of the supply of oil?",
       "choices": [
@@ -1536,7 +1661,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q66",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "Suppose that the price of a money clip increases from $0.80 to $1.00 and the quantity supplied rises from 9,000 units to 11,000 units. Use the midpoint formula to calculate the price elasticity of supply.",
       "choices": [
@@ -1559,7 +1684,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q67",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "The price elasticity of the supply of teenage labor services is approximately 1.4. Suppose the minimum wage rises from $8.00 per hour to $9.60, which is a 20 percent increase. Approximately how much will the quantity of teenage labor supplied change?",
       "choices": [
@@ -1582,7 +1707,7 @@ window.PRECISE_BANK_CH15 = {
       "id": "econ-150.ch15.elasticity.practice.g04.q68",
       "type": "mc",
       "concepts": [
-        1
+        5
       ],
       "prompt": "An increase in the demand for herbal tea raises the price of herbal tea from $18 a pound to $24 a pound, an increase of 28.6%. As a result, quantity supplied increases by 40 percent. Using the midpoint formula, calculate the value of the price elasticity of supply.",
       "choices": [
