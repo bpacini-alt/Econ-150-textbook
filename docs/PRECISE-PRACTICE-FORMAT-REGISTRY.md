@@ -73,3 +73,14 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 ## Current design review — Definition Detective versus Missing Piece
 
 The current Missing Piece items have obvious semantic or grammatical cues and add little beyond standard selected response. Prefer removing the standalone format after instructor confirmation. An actually missing *causal step* can appear in Tier 2 as an ordinary application item, without a separate game. Definition Detective has a clearer distinctive function: discriminate **A = correct and sufficient**, **A− = true but missing a necessary element**, and **F = incorrect**. Use straightforward definitional triads in upper Tier 1; use explanation-quality and causal-overclaim discrimination in Tier 2. Avoid introducing ambiguity through subjective or contestable definitions. User confirmation and item testing are still needed before promoting Definition Detective.
+
+## Pilot 04 — Odd One Out
+
+**Status: Pilot, not approved (2026-10-31).** Econ Chapter 16 Tier 1 now offers two example sets per concept.
+
+- Four shuffled options: three share an important economic property, one violates it. Students select the exception and receive a brief *why* explanation after checking.
+- Do not give away the grouping rule in the prompt when the challenge is to discover it; use concrete, unambiguous contrasts. A correct answer should require distinguishing economic mechanisms, not word length or style.
+- Randomized displayed positions preserve the canonical answer key. A single checked set counts once toward the optional practice tracker.
+- Existing approved formats remain visible in Tier 1: Rapid Sort, Memory Match, Definition Detective. Odd One Out is visibly labeled Pilot.
+- **Other experimental games are hidden, not deleted.** Their engines and question banks remain in source for future review. Tier 2 currently shows its ordinary applied questions, Tier 3 AP-style MC. Former localStorage selections are ignored when not allowed in the current tier.
+- Approval criteria: review distractor plausibility, clarity of the common grouping property, repeat variety, actual browser behavior, and accessibility.
