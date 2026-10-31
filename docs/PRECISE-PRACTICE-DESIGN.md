@@ -208,6 +208,39 @@ A future EDCOR test-out might present a fresh classroom situation and student ev
 
 **Scope guard:** This section records the architecture and next priorities; it does not authorize replacing or modifying the existing Econ 15 or Econ 16 pilot chapter while instructor testing continues.
 
+## Foundational practice blueprint and stopping rule (2026-10-31)
+
+**Agreed addition to the two-step backward-design plan:** Design foundational practice for *skill coverage*, not arbitrary counts of items or question types. Decide what students need to know and do in each concept, what errors they need to discriminate, and which interaction types best support each skill. The formats are means, not quotas.
+
+### Step 1: skill-to-format coverage map
+
+For every concept, specify:
+1. **Knowledge targets:** terminology, conceptual distinctions, key relationships, and representations worth retrieving without hints.
+2. **Performances:** classify, retrieve, explain, calculate, interpret a graph or table, construct or translate a representation, choose an appropriate tool, or correct an error—**only where relevant**.
+3. **Misconceptions and transfer:** realistic traps and fresh scenarios that distinguish actual understanding from memorized phrasing.
+4. **Appropriate formats:** select from the format library (matching, flashcards, sorting, Definition Detective A/A−/F, Missing Piece, rapid predictions, error repair, graph/table reading or construction, calculations, explanations). Do **not** require a format merely because the engine supports it.
+5. **Evidence and feedback:** specify what a successful independent response looks like and how misses are corrected with another distinct example.
+
+### Step 2: foundational completion gates
+
+A concept's foundational bank is adequate for a strong pilot when:
+- Every **essential** knowledge and procedural skill is represented by at least one independently answered practice path; any essential representational skill (e.g., reading graphs, translating tables) is practiced in its appropriate representation.
+- Important confusable concepts and common misconceptions have **discrimination** opportunities, not just definition recall.
+- Every core skill has **several substantively different examples** with correct keys, meaningful feedback, and enough variation to make repeat practice useful. There is **no universal item minimum** and no requirement to implement each format.
+- The combination of activities tests both recognition and appropriate independent use where appropriate; reviewing the coverage map reveals **no material blind spots or redundant format-only padding**.
+- Human review verifies technical correctness, accessible interaction, plausible distractors, and concept alignment; a small student test uncovers no unresolved serious confusion.
+- The concept can hand students toward challenging Tier 2 and Tier 3 application without the foundational bank giving away the answers. Students may still choose any tier or skip ahead.
+
+**Stopping rule:** stop authoring foundational formats when the skill-to-format matrix is covered and tested to the agreed standard, *even if another clever format is possible*. Add an item or format only when it addresses a demonstrated learning gap, misconception, representational requirement, insufficient variety, or accessibility problem—not to increase counts.
+
+**Chapter 16 illustration (proposed coverage, not validation findings):**
+- Markets Are Built: institutional vocabulary, ownership/enforcement/entry distinctions, identify missing institutional conditions and causal effects.
+- Property Rights: recall and discriminate use/exclude/transfer/enforce, identify uncertain titles and rights, diagnose conflicts.
+- Corruption: inclusive/extractive discrimination, corruption vs ordinary costs, transaction-cost reasoning, interpreting correlations without causal overclaim.
+- Public Goods and Common Resources: rivalry/excludability, four-cell grid classification, context dependence (e.g. congestion), free riding vs depletion, provider-versus-property confusion. The *four-goods matrix* is an essential representation here; graph manipulation and numeric calculation are **not** compulsory elsewhere in this chapter.
+
+**Separate from assessment blueprint:** Chapter-end exam-level item targets and FRQ review measure independent integrated reasoning. Foundational coverage is judged by skill/representation coverage and instructional quality, not by a fixed number of question types or by the advanced-bank quota.
+
 ## Possible next experiments
 
 1. Instructor review of this playbook and prototype examples.
