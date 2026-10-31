@@ -1,4 +1,4 @@
-/* Chapter 16 question bank: content only; loaded by the shared practice view. */
+/* Reviewed schema; items remain draft for editorial validation. */
 window.PRECISE_BANK_CH16 = {
   "schemaVersion": 1,
   "chapter": 16,
@@ -75,20 +75,15 @@ window.PRECISE_BANK_CH16 = {
       ],
       "applied": [
         {
-          "q": "A town removes licensing hurdles but stops enforcing agreements. What is the best prediction?",
+          "q": "A town removes entry restrictions but stops enforcing private contracts. Which prediction best follows?",
           "opts": [
-            "Effects are ambiguous"
+            "Trade will necessarily rise because entry is now free.",
+            "Entry becomes easier, but unreliable enforcement can still discourage exchange.",
+            "No trade can occur under any circumstances.",
+            "Removing licensing rules automatically establishes secure property titles."
           ],
-          "a": null
-        },
-        {
-          "q": " both entry and enforcement matter",
-          "opts": [
-            "Trade must rise",
-            "All trade must stop",
-            "0"
-          ],
-          "a": null
+          "a": 1,
+          "why": "Open entry and credible enforcement are different institutional supports. Improving one while weakening another creates competing effects."
         },
         {
           "q": "A seller cannot prove title to land. The main problem is…",
@@ -178,8 +173,8 @@ window.PRECISE_BANK_CH16 = {
           "a": 3
         },
         {
-          "q": "Lease a room to a tenant",
-          "a": 0
+          "q": "Rent out a room to another tenant",
+          "a": 2
         },
         {
           "q": "License a book publisher",
@@ -247,21 +242,15 @@ window.PRECISE_BANK_CH16 = {
           "why": "Ownership bundles can differ."
         },
         {
-          "q": "Compensation is offered for a taking. Does it settle every issue?",
+          "q": "A city offers compensation to acquire private land for a road. Why might a dispute still remain?",
           "opts": [
-            "Yes automatically",
-            "No"
+            "Payment automatically settles all questions about rights.",
+            "The land immediately becomes non-rival.",
+            "Valuation, procedure, and the legitimacy of the taking can remain contested.",
+            "All property rights disappear whenever infrastructure is proposed."
           ],
-          "a": null
-        },
-        {
-          "q": " procedure and valuation still matter",
-          "opts": [
-            "Only if cash is used",
-            "1",
-            "Legal claims involve more than payment."
-          ],
-          "a": null
+          "a": 2,
+          "why": "Compensation may matter, but ownership disputes also involve legal process, valuation, and limits on state authority."
         }
       ],
       "advanced": [
@@ -310,7 +299,7 @@ window.PRECISE_BANK_CH16 = {
           "a": 1
         },
         {
-          "q": "A tax cut is promised without implementation details",
+          "q": "A new trade agreement is announced but implementation is unknown",
           "a": 2
         },
         {
@@ -445,6 +434,17 @@ window.PRECISE_BANK_CH16 = {
           ],
           "a": 1,
           "why": "Rights, numbers and costs determine feasibility."
+        },
+        {
+          "q": "A government publishes independent audits of permit awards. What mechanism could improve market entry?",
+          "opts": [
+            "Audits make land non-rival.",
+            "Audits guarantee every applicant a permit.",
+            "Audits reduce the ability to conceal favoritism and create incentives for more consistent rules.",
+            "Audits eliminate all administrative costs."
+          ],
+          "a": 2,
+          "why": "Transparency and independent review can make arbitrary privilege costlier without making policy perfect."
         }
       ],
       "advanced": [
@@ -580,6 +580,17 @@ window.PRECISE_BANK_CH16 = {
           ],
           "a": 2,
           "why": "Funding does not define the category."
+        },
+        {
+          "q": "A beach becomes crowded enough that each new visitor reduces others' enjoyment, although entry remains free. What changed?",
+          "opts": [
+            "The service became more rival, even though exclusion is still difficult.",
+            "The beach became perfectly excludable.",
+            "Congestion proves it is a pure public good.",
+            "The beach stopped being scarce."
+          ],
+          "a": 0,
+          "why": "Congestion affects rivalry, while open access concerns excludability."
         }
       ],
       "advanced": [
@@ -598,7 +609,7 @@ window.PRECISE_BANK_CH16 = {
         ],
         [
           "A market works when people can own and exchange goods.",
-          "A-",
+          "A−",
           "True, but it leaves out enforcement and other rules that make rights credible."
         ],
         [
@@ -661,7 +672,7 @@ window.PRECISE_BANK_CH16 = {
         ],
         [
           "Property rights allow someone to use a resource.",
-          "A-",
+          "A−",
           "Correct but incomplete: exclusion, transfer, and enforceability also matter."
         ],
         [
@@ -724,7 +735,7 @@ window.PRECISE_BANK_CH16 = {
         ],
         [
           "Corruption lets insiders obtain special advantages.",
-          "A-",
+          "A−",
           "Often true, but the key mechanism also involves distorted rules, incentives, and lost productive opportunities."
         ],
         [
@@ -787,7 +798,7 @@ window.PRECISE_BANK_CH16 = {
         ],
         [
           "A public good benefits many people.",
-          "A-",
+          "A−",
           "That may be true, but a public good is specifically non-rival and non-excludable."
         ],
         [
@@ -858,7 +869,9 @@ window.PRECISE_BANK_CH16 = {
         "The government should set a maximum land price."
       ],
       "answer": 1,
-      "feedback": "The parties have found a price, but a market transaction also requires a credible claim to transfer the parcel. Clarifying title addresses an institutional problem."
+      "feedback": "The parties have found a price, but a market transaction also requires a credible claim to transfer the parcel. Clarifying title addresses an institutional problem.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-002",
@@ -875,7 +888,9 @@ window.PRECISE_BANK_CH16 = {
         "Private ownership alone guarantees inclusive institutions."
       ],
       "answer": 1,
-      "feedback": "Removing a fee may reduce one cost; arbitrary favoritism can still obstruct open entry and investment."
+      "feedback": "Removing a fee may reduce one cost; arbitrary favoritism can still obstruct open entry and investment.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-003",
@@ -892,7 +907,9 @@ window.PRECISE_BANK_CH16 = {
         "Every firm must be a natural monopoly."
       ],
       "answer": 0,
-      "feedback": "Clear records help identify title, while unequal enforcement can still undermine credible rights."
+      "feedback": "Clear records help identify title, while unequal enforcement can still undermine credible rights.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-004",
@@ -909,7 +926,9 @@ window.PRECISE_BANK_CH16 = {
         "Corruption proves that government has no legitimate role in markets."
       ],
       "answer": 2,
-      "feedback": "Separate the firm's private incentive from the institution-wide incentive for officials to create or exploit bottlenecks."
+      "feedback": "Separate the firm's private incentive from the institution-wide incentive for officials to create or exploit bottlenecks.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-005",
@@ -925,7 +944,9 @@ window.PRECISE_BANK_CH16 = {
         "The permits eliminate every incentive to overfish."
       ],
       "answer": 1,
-      "feedback": "Permits can alter excludability, not the physical rivalry of fish. Their effectiveness depends on rules and enforcement."
+      "feedback": "Permits can alter excludability, not the physical rivalry of fish. Their effectiveness depends on rules and enforcement.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-006",
@@ -942,7 +963,9 @@ window.PRECISE_BANK_CH16 = {
         "Non-rival and excludable; no coordination problem is possible."
       ],
       "answer": 1,
-      "feedback": "The signal is non-rival and hard to exclude from use. Free riding may make selling access difficult."
+      "feedback": "The signal is non-rival and hard to exclude from use. Free riding may make selling access difficult.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-007",
@@ -960,7 +983,9 @@ window.PRECISE_BANK_CH16 = {
         "The second country cannot have any markets."
       ],
       "answer": 0,
-      "feedback": "Economic mechanisms support a plausible prediction, but cross-country comparisons do not independently establish causation."
+      "feedback": "Economic mechanisms support a plausible prediction, but cross-country comparisons do not independently establish causation.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-008",
@@ -977,7 +1002,9 @@ window.PRECISE_BANK_CH16 = {
         "Government-owned goods cannot be scarce."
       ],
       "answer": 1,
-      "feedback": "Admissions can restrict access; limited space and congestion make use rival at least at capacity. Ownership and funding alone do not classify the good."
+      "feedback": "Admissions can restrict access; limited space and congestion make use rival at least at capacity. Ownership and funding alone do not classify the good.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-009",
@@ -994,7 +1021,9 @@ window.PRECISE_BANK_CH16 = {
         "Distinguish institutional foundations of exchange from ordinary buyer/seller willingness.",
         "Offer a bounded conclusion rather than claiming no trade can occur."
       ],
-      "feedback": "Strong answers separate title from enforcement, then explain how even willing trading partners can be blocked by unreliable rules."
+      "feedback": "Strong answers separate title from enforcement, then explain how even willing trading partners can be blocked by unreliable rules.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-010",
@@ -1010,7 +1039,9 @@ window.PRECISE_BANK_CH16 = {
         "Explain why evidence from one completed permit cannot establish a net economic benefit.",
         "Identify a defensible mechanism or institutional comparison to evaluate the claim."
       ],
-      "feedback": "Distinguish private advantage from system-wide welfare and the possibility that officials create the delays they sell relief from."
+      "feedback": "Distinguish private advantage from system-wide welfare and the possibility that officials create the delays they sell relief from.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-011",
@@ -1026,7 +1057,9 @@ window.PRECISE_BANK_CH16 = {
         "Explain depletion/overuse versus free riding/underprovision.",
         "Distinguish classification from policy prescription and note a relevant condition or trade-off."
       ],
-      "feedback": "A strong answer does not conflate overuse of rival resources with underprovision of non-rival, non-excludable signals."
+      "feedback": "A strong answer does not conflate overuse of rival resources with underprovision of non-rival, non-excludable signals.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     },
     {
       "id": "E16-EX-012",
@@ -1044,7 +1077,345 @@ window.PRECISE_BANK_CH16 = {
         "Explain at least two different mechanisms (e.g., uncertainty, rent-seeking, depletion, free riding).",
         "Reach an integrated, qualified judgment rather than offering one universal remedy."
       ],
-      "feedback": "This is the integrated capstone: distinguish institutional failures and different kinds of collective-action problems using one scenario."
+      "feedback": "This is the integrated capstone: distinguish institutional failures and different kinds of collective-action problems using one scenario.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-013",
+      "type": "mc",
+      "prompt": "A market platform verifies sellers' identities but cannot ensure they deliver goods after payment. Which additional institution would most directly improve exchange?",
+      "choices": [
+        "A rule forbidding new firms to enter",
+        "Credible, impartial contract enforcement",
+        "More attractive product photographs",
+        "A tax on buyers regardless of purchases"
+      ],
+      "answer": 1,
+      "feedback": "Verification helps identify counterparties; enforcement makes promises credible. Both support exchange.",
+      "concepts": [
+        1,
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-014",
+      "type": "mc",
+      "prompt": "Two equally productive firms apply for permits. The incumbent receives approval automatically, while the newcomer must negotiate a discretionary payment. Which principle is most threatened?",
+      "choices": [
+        "Open entry under predictable rules",
+        "Rivalry in consumption",
+        "Physical scarcity of permits",
+        "The transferability of fish"
+      ],
+      "answer": 0,
+      "feedback": "Discretionary advantage changes the terms of entry, potentially protecting insiders regardless of productivity.",
+      "concepts": [
+        1,
+        3
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-015",
+      "type": "mc",
+      "prompt": "A digital marketplace permits anyone to list products, but sellers cannot establish legal ownership. Which conclusion best follows?",
+      "choices": [
+        "Open entry alone cannot ensure legitimate transfer of disputed assets.",
+        "The lack of title makes all listed goods non-rival.",
+        "Prices necessarily become zero.",
+        "The platform eliminates transaction costs."
+      ],
+      "answer": 0,
+      "feedback": "An open platform is not enough when sellers lack credible rights to transfer what they offer.",
+      "concepts": [
+        1,
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-016",
+      "type": "mc",
+      "prompt": "An impartial court system exists, but changes in permit eligibility are announced only after applications close. What institutional improvement is most relevant?",
+      "choices": [
+        "Make permits exclusive to current firms",
+        "Eliminate all property claims",
+        "Publish stable, prospective entry rules",
+        "Prevent contracts from being enforced"
+      ],
+      "answer": 2,
+      "feedback": "Predictable rules allow firms to plan; impartial courts cannot undo every cost of arbitrary regulatory surprises.",
+      "concepts": [
+        1,
+        3
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-017",
+      "type": "mc",
+      "prompt": "A farmer owns a field but cannot use a shared irrigation canal without a neighbor's easement. What does this illustrate?",
+      "choices": [
+        "Ownership automatically includes every possible nearby resource.",
+        "Property is a bundle of specific rights, including rights held by other people.",
+        "The field has ceased to be rival.",
+        "The farmer's title must be invalid."
+      ],
+      "answer": 1,
+      "feedback": "A valid land title does not erase distinct access rights that can belong to others.",
+      "concepts": [
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-018",
+      "type": "mc",
+      "prompt": "A land-title system records the correct owner but does not permit land sales. Which distinction matters most?",
+      "choices": [
+        "Use versus transfer rights",
+        "Public versus common goods",
+        "Rivalry versus congestion",
+        "Private versus national defense"
+      ],
+      "answer": 0,
+      "feedback": "Knowing who owns a parcel does not necessarily mean that transfer is permitted.",
+      "concepts": [
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-019",
+      "type": "mc",
+      "prompt": "A factory's emissions damage a neighbor's crops. Both parties own their land. Which conclusion is most defensible?",
+      "choices": [
+        "Property ownership makes all emissions legal.",
+        "Only the factory has any recognizable rights.",
+        "Property rights can be bounded by other claims, and the dispute requires defined entitlements or remedies.",
+        "The problem disappears if both owners are wealthy."
+      ],
+      "answer": 2,
+      "feedback": "Clear rights are essential precisely because ownership does not entail unrestricted harm to others.",
+      "concepts": [
+        2,
+        1
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-020",
+      "type": "mc",
+      "prompt": "A buyer obtains a clear title but lenders still refuse collateral because courts rarely execute judgments. What is the remaining problem?",
+      "choices": [
+        "Unreliable enforcement makes recorded rights less useful.",
+        "The land is automatically a public good.",
+        "The buyer has no right to use the property.",
+        "Clear title guarantees lending regardless of courts."
+      ],
+      "answer": 0,
+      "feedback": "Title clarifies the claim; enforceability helps make the claim credible to lenders.",
+      "concepts": [
+        2,
+        1
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-021",
+      "type": "mc",
+      "prompt": "After a permit office switches to a public queue, some applicants still report delays. Which evidence would most help determine whether corruption fell?",
+      "choices": [
+        "A single applicant's satisfaction",
+        "Whether staff like the new software",
+        "Comparable records of processing times, exceptions, and connections before and after the change",
+        "The city's population alone"
+      ],
+      "answer": 2,
+      "feedback": "A transparent, comparable record can investigate favoritism; one anecdote cannot establish the system-wide effect.",
+      "concepts": [
+        3
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-022",
+      "type": "mc",
+      "prompt": "A company spends more on lobbying for an exclusive license than improving its product. Which economic mechanism best explains the concern?",
+      "choices": [
+        "Rent-seeking directs resources toward obtaining privilege instead of creating value.",
+        "Non-rival consumption has increased.",
+        "Property rights have necessarily vanished.",
+        "All lobbying is criminal corruption."
+      ],
+      "answer": 0,
+      "feedback": "The issue is the incentive to gain through special protection rather than productivity; not all lobbying is illegal.",
+      "concepts": [
+        3,
+        1
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-023",
+      "type": "mc",
+      "prompt": "A study finds that regions with stronger courts have higher investment. Which additional result would strengthen a causal interpretation?",
+      "choices": [
+        "The relationship appears in a bar chart.",
+        "Investment and courts are both measured in dollars.",
+        "The highest-investment region has a courthouse.",
+        "A credible reform changes enforcement independently of other drivers, followed by a comparison of investment trends."
+      ],
+      "answer": 3,
+      "feedback": "A design that addresses confounding and timing offers more causal leverage than a raw cross-sectional association.",
+      "concepts": [
+        3,
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-024",
+      "type": "mc",
+      "prompt": "A well-connected supplier receives a contract despite a higher bid and weaker quality. Which consequence is most plausible?",
+      "choices": [
+        "Procurement always becomes cheaper.",
+        "Competitive pressure weakens and public spending may purchase less value.",
+        "The contract automatically becomes a public good.",
+        "The favored supplier must be more productive."
+      ],
+      "answer": 1,
+      "feedback": "Favored selection can distort competition and reduce value, though the magnitude requires evidence.",
+      "concepts": [
+        3,
+        1
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-025",
+      "type": "mc",
+      "prompt": "An orchard owner wants to fund an insect-warning broadcast that all nearby farms can hear. Why might voluntary subscriptions underfund the service?",
+      "choices": [
+        "One farm's listening prevents another from hearing.",
+        "The signal is necessarily excludable.",
+        "Nonpaying farms can benefit, creating an incentive to free ride.",
+        "The alert has no production cost."
+      ],
+      "answer": 2,
+      "feedback": "The signal is largely non-rival and hard to restrict, so beneficiaries may hope others pay.",
+      "concepts": [
+        4
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-026",
+      "type": "mc",
+      "prompt": "A private operator fences a previously open fishing pond but keeps the same fish population. Which claim is strongest?",
+      "choices": [
+        "The fish become non-rival.",
+        "Excludability rises, while rivalry in caught fish remains.",
+        "The pond automatically becomes national defense.",
+        "No resource management problem can remain."
+      ],
+      "answer": 1,
+      "feedback": "Fencing changes access, not the depletion from catching individual fish.",
+      "concepts": [
+        4,
+        2
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-027",
+      "type": "mc",
+      "prompt": "A city opens a fee-free parking garage, which fills at lunchtime. Calling its spaces a pure public good is mistaken primarily because…",
+      "choices": [
+        "each occupied space prevents simultaneous use of that space by another driver.",
+        "government always charges parking fees.",
+        "parking can never be excluded.",
+        "free parking means consumption has no opportunity cost."
+      ],
+      "answer": 0,
+      "feedback": "Rival parking capacity remains rival whether access is charged or free.",
+      "concepts": [
+        4
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-028",
+      "type": "mc",
+      "prompt": "A village considers both stocking a depleted fishery and constructing a warning siren. Which policy comparison is best?",
+      "choices": [
+        "Both problems arise only because ownership is private.",
+        "Both require identical pricing because they are equally rival.",
+        "Neither involves incentives.",
+        "Fishery rules must address depletion from use; the siren's financing must address free riding from broadly shared benefits."
+      ],
+      "answer": 3,
+      "feedback": "Common-resource overuse and public-good underprovision involve different mechanisms and need not have the same solution.",
+      "concepts": [
+        4,
+        1
+      ],
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-029",
+      "type": "frq",
+      "concepts": [
+        1,
+        2,
+        3
+      ],
+      "prompt": "A rural province digitizes its land records, then claims its markets will flourish. Yet lenders report selective court enforcement and entrepreneurs report that incumbent firms can veto new permits. (a) Explain what the registry improves. (b) Identify two distinct remaining institutional barriers. (c) Explain how each affects investment or entry. (d) Evaluate why a registry alone is insufficient.",
+      "rubric": [
+        "Explain how verifiable title reduces uncertainty about ownership or transfer.",
+        "Separate discriminatory enforcement from exclusionary entry requirements.",
+        "Trace a credible incentive or transaction-cost consequence of each barrier.",
+        "Qualify the causal claim; a registry is beneficial but not sufficient."
+      ],
+      "feedback": "A strong response separates title records, enforceable claims, and open entry, and explains causal channels rather than treating all regulation as equivalent.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
+    },
+    {
+      "id": "E16-EX-030",
+      "type": "frq",
+      "concepts": [
+        2,
+        4
+      ],
+      "prompt": "A private company proposes to charge every household for a regional storm-warning siren and also to sell exclusive permits for a nearby lake's fishery. (a) Classify the signal and fish using rivalry and excludability. (b) Explain why the same fee mechanism may not work equally well for both. (c) Predict what a strictly enforced fishing permit changes and what it does not change. (d) Describe one relevant assumption or trade-off.",
+      "rubric": [
+        "Classify warning signal as largely non-rival and hard to exclude, and open-access fish as rival and hard to exclude.",
+        "Explain free riding/underprovision versus rivalry/depletion.",
+        "Explain permits alter excludability or harvest incentives, not the physical rivalry of fish.",
+        "Note enforcement, information, distribution, ecological sustainability, or financing trade-offs."
+      ],
+      "feedback": "The essential distinction is between who can be excluded and whether an additional use reduces availability for others.",
+      "reviewStatus": "draft",
+      "examPrepEligible": true
     }
   ]
 };
