@@ -94,7 +94,7 @@ const check=document.querySelector("#extCheck");if(check)check.onclick=()=>{
 }
 
 
-function formats(t){return t===0?[["mix","Mix it up"],["quick","Quick classification"],["sort","Rapid Sort"],["detect","Definition Detective"],["missing","Missing Piece"],["flash","Flip cards · Pilot"],["memory","Memory Match · Pilot"]].concat(S.c===3?[["matrix","Four-goods matrix"]]:[]):t===1?[["mix","Mix it up"],["quick","Applied cases"],["repair","Fix the Error"],["predict","Change & Predict"]]:[["quick","AP-style multiple choice"]]}
+function formats(t){return t===0?[["mix","Mix it up"],["quick","Quick classification"],["sort","Rapid Sort"],["detect","Definition Detective"],["missing","Missing Piece"],["flash","Flip cards · Pilot"],["memory","Memory Match · Approved"]].concat(S.c===3?[["matrix","Four-goods matrix"]]:[]):t===1?[["mix","Mix it up"],["quick","Applied cases"],["repair","Fix the Error"],["predict","Change & Predict"]]:[["quick","AP-style multiple choice"]]}
 function fk(){return S.c+"_"+S.t}
 function choiceFormat(){S.formats=S.formats||{};return S.formats[fk()]||"mix"}
 function effectiveFormat(){const f=choiceFormat();if(f!=="mix")return f;const sequence=S.t===0?(S.c===3?["quick","matrix","sort","memory","detect","missing","quick","flash"]:["quick","sort","memory","detect","missing","quick","flash"]):S.t===1?["quick","predict","repair","quick","predict"]:["quick"];S.turns=S.turns||{};return sequence[(S.turns[fk()]||0)%sequence.length]}

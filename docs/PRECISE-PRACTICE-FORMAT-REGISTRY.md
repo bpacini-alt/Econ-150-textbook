@@ -22,9 +22,9 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 - **Engineering extraction task:** move the current drop implementation into a shared standalone renderer with a structured `{cards, categories, feedback}` contract; reuse in Econ and EDCOR rather than copying chapter-local markup.
 - **Accessibility/release gate:** test touch dragging, keyboard-only completion through the equivalent mode, focus visibility, screen-reader prompts, responsive layout, and feedback clarity. Instructor approval is not a claim of completed accessibility certification.
 
-## Pilot 02 — Memory Match
+## Approved interaction 02 — Memory Match
 
-**Status: Pilot (2026-10-31)**. Independent reusable engine: `etb-live/assets/precise-memory-match.js`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Pilot**.
+**Status: Approved interaction (2026-10-31; instructor-approved after unselect and animation refinements)**. Independent reusable engine: `etb-live/assets/precise-memory-match.js`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Pilot**.
 
 **Contract:** `PreciseMemoryMatch.mount(element, [[term, definition], ...], {onComplete, onAgain})`.
 
@@ -38,8 +38,8 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 ## Candidate formats — not automatically approved
 
 - Quick classification buttons (working, review for enough variability)
-- Definition Detective (A/A-minus/F) (working, editorial and usability review)
-- Missing Piece (working, editorial and usability review)
+- Definition Detective (A/A-minus/F) (**priority candidate**; Tier 1 for defining features, Tier 2 for evaluating explanations; A-minus must be true but incomplete)
+- Missing Piece (current fill-in-the-blank version **recommended for retirement**; retain worthwhile missing-step reasoning as ordinary Tier 2 questions, pending instructor agreement)
 - Four-goods matrix (content-specific, Econ)
 - Find & Fix the Error (working, editorial and usability review)
 - Change & Predict (working, editorial and usability review)
@@ -56,3 +56,7 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 3. Build configurable two-/three-bucket Tier 1 decks, with more nuanced four-bucket application only when justified; the current Econ 16 boards still have their original three/four categories.
 4. Verify browser rendering and input behaviors; use a standard JS syntax test and semantic bank lint before sharing preview links.
 5. Update the cross-textbook practice playbooks to link this registry when broader adoption is approved.
+
+## Current design review — Definition Detective versus Missing Piece
+
+The current Missing Piece items have obvious semantic or grammatical cues and add little beyond standard selected response. Prefer removing the standalone format after instructor confirmation. An actually missing *causal step* can appear in Tier 2 as an ordinary application item, without a separate game. Definition Detective has a clearer distinctive function: discriminate **A = correct and sufficient**, **A− = true but missing a necessary element**, and **F = incorrect**. Use straightforward definitional triads in upper Tier 1; use explanation-quality and causal-overclaim discrimination in Tier 2. Avoid introducing ambiguity through subjective or contestable definitions. User confirmation and item testing are still needed before promoting Definition Detective.
