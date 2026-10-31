@@ -191,6 +191,23 @@ A future EDCOR test-out might present a fresh classroom situation and student ev
 
 **Do not modify** the in-progress Econ 15 or Econ 16 pilot as part of recording this idea. Any later UI change should be evaluated separately.
 
+## Agreed next architecture: shared banks and exam-prep views (2026-10-31)
+
+**Decision:** Author one high-quality, reusable question bank per chapter, stored as data apart from chapter prose and presentation logic. A single practice renderer may use the same bank in an end-of-concept checkpoint or in a dedicated **Quiz / Exam Prep** view. Do not duplicate question wording across separate page-specific banks.
+
+**Build order (incremental, Chapter 16 first):**
+
+1. Define a minimal stable bank schema and validation: item ID, originating chapter/concept, tier, cognitive target, interaction type, prompt, correct response or scoring criteria, specific feedback, and an **exam-prep eligible** flag or designation. Keep exact labels and authoring workflow simple. Version and review content in GitHub.
+2. Extract and **quality-audit** Chapter 16's current items into its own bank: check alignment with the *revised four-concept chapter*, economic accuracy, realistic distractors, ambiguity, feedback, repeated or overly easy items, and support for advanced reasoning. Preserve student-facing functionality while refactoring; do not automatically promote every prototype item as validated.
+3. Build a small **Quiz / Exam Prep** page that pulls only approved higher-level items from this bank (generally Tier 2 challenging application and Tier 3 independent transfer, including rubric-backed FRQs). This is a practice tool, not a promise of exact graded exam questions. Include concept references or links back to foundational chapter checkpoints when students need a refresher.
+4. Pilot both views with students and revise before extending to another chapter. Expand bank coverage chapter-by-chapter rather than retrofitting the entire textbook at once.
+
+**Important distinctions:** AP-level *cognitive demand* is not synonymous with “every Tier 3 item,” and a difficult applied Tier 2 item may qualify. Exam-prep eligibility should be an editorially reviewed property, not a naive tier cutoff. Include multiple representations and independent reasoning as appropriate to the discipline. The chapter's existing FRQs can serve as useful candidates but require alignment and scoring review.
+
+**Not now / explicitly deferred:** individual mastery scoring, confidence-based mastery claims, personalized question scheduling, adaptive item selection, a sophisticated difficulty algorithm, spaced-repetition scheduling, cross-device history, and fully automatic spiral-bank routing. Future cross-chapter spiral review should reuse these banks by reference, not embed old banks into newer chapter HTML. These are future options, not prerequisites for the two near-term deliverables.
+
+**Scope guard:** This section records the architecture and next priorities; it does not authorize replacing or modifying the existing Econ 15 or Econ 16 pilot chapter while instructor testing continues.
+
 ## Possible next experiments
 
 1. Instructor review of this playbook and prototype examples.
