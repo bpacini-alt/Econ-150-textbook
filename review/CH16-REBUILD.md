@@ -28,7 +28,7 @@ About 9,000 words down to about 5,900. Title card read time changed from 38 to 2
 ## Changes needed in other chapters and tools
 
 - [ ] **Supplemental essay:** draft "What Is Prosperity For?" from the held material. Decide where essays live on the site, then link it from the Ch 16 box.
-- [ ] **Chapter 12:** decide whether to bring in the laundromat case file and the "an objection is not a veto" framing.
+- [x] **Chapter 12:** done in PR #106 (harm-vs-preference paragraph, the wedding example, and the laundromat case file).
 - [ ] **Chapter 17:** optional. California's paper rivers could move to "Fences and Rules." Ch 17's line "Recall the four-goods grid from the last chapter" stays true.
 - [ ] **Chapter 18:** no change needed. "Chapter 16 taught that markets need property rights, courts, contracts, and rule of law" stays true. Check that Ch 18's Coase section doesn't assume students saw Ch 16's Coase material (it introduces Coase on its own).
 - [ ] **Chapter 26:** the Ch 16 box promises that Ch 26 "takes this question up directly." Confirm that wording fits once the essay exists.
