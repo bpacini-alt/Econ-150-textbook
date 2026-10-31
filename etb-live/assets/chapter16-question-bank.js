@@ -1,4 +1,3 @@
-/* Reviewed schema; items remain draft for editorial validation. */
 window.PRECISE_BANK_CH16 = {
   "schemaVersion": 1,
   "chapter": 16,
@@ -596,7 +595,8 @@ window.PRECISE_BANK_CH16 = {
       "advanced": [
         "Compare catch limits and entrance fees for an overfished shared lake.",
         "Explain why socially valuable goods are not necessarily public goods."
-      ]
+      ],
+      "matrixIntro": "Place each example into the rivalry-by-excludability grid. Focus on how goods behave, not who pays for them."
     }
   ],
   "extra": [
@@ -661,6 +661,30 @@ window.PRECISE_BANK_CH16 = {
           0,
           "Private ownership and open competition are separate institutional features."
         ]
+      ],
+      "predict": [
+        [
+          "A city replaces unpredictable licensing decisions with published rules and an independent appeal. Which change is most plausible?",
+          [
+            "Entrants can plan with less uncertainty, although success is not guaranteed.",
+            "Property rights and contracts cease to matter.",
+            "Competition necessarily disappears.",
+            "Permits become public goods."
+          ],
+          0,
+          "Stable, reviewable rules reduce an institutional uncertainty without guaranteeing any particular outcome."
+        ],
+        [
+          "A market abolishes contract enforcement but keeps posted prices. What is the likely effect?",
+          [
+            "Exchange can become riskier because posted prices alone cannot guarantee performance.",
+            "Posted prices automatically create enforceable rights.",
+            "All goods become non-rival.",
+            "All transactions must stop immediately."
+          ],
+          0,
+          "Prices coordinate intentions, but credible enforcement can help parties trust promises."
+        ]
       ]
     },
     {
@@ -723,6 +747,30 @@ window.PRECISE_BANK_CH16 = {
           ],
           0,
           "A documented entitlement differs from dislike."
+        ]
+      ],
+      "predict": [
+        [
+          "A land-title registry becomes searchable online, while fraud penalties remain unenforced. Which outcome is most defensible?",
+          [
+            "Verification can get easier, but fraudulent transfer risks can remain.",
+            "Land becomes non-rival.",
+            "All mortgages are automatically safe.",
+            "The registry eliminates every dispute."
+          ],
+          0,
+          "Records and enforceable remedies are complementary, not identical."
+        ],
+        [
+          "Neighbors define and record access rights for a shared driveway. What is likely to change?",
+          [
+            "Uncertainty over permitted uses may decline, though disputes or congestion can persist.",
+            "Every owner loses their title.",
+            "The driveway becomes a pure public good.",
+            "Access must now be free to everyone."
+          ],
+          0,
+          "Specified rights help coordinate use without eliminating every physical or bargaining problem."
         ]
       ]
     },
@@ -787,6 +835,30 @@ window.PRECISE_BANK_CH16 = {
           0,
           "Correlations matter but warrant careful causal interpretation."
         ]
+      ],
+      "predict": [
+        [
+          "A licensing agency publishes audit trails for every exception to its rules. What mechanism may change?",
+          [
+            "Hidden favoritism becomes easier to detect, potentially reducing discretionary rent-seeking.",
+            "All permits become legally unnecessary.",
+            "The number of firms must double.",
+            "Transaction costs immediately become zero."
+          ],
+          0,
+          "More traceability can constrain abuses while leaving enforcement and implementation important."
+        ],
+        [
+          "A town removes unofficial payments but keeps a legal monopoly for the mayor's allies. What should we predict?",
+          [
+            "One form of corruption may fall, while exclusionary entry barriers remain.",
+            "Competitive entry is automatically restored.",
+            "Every firm's costs necessarily rise.",
+            "The monopoly becomes a common resource."
+          ],
+          0,
+          "Multiple institutional barriers can reinforce each other. Removing one does not remove the others."
+        ]
       ]
     },
     {
@@ -849,6 +921,30 @@ window.PRECISE_BANK_CH16 = {
           ],
           0,
           "Each bottle can be used up and access can be controlled."
+        ]
+      ],
+      "predict": [
+        [
+          "A city fences an open-access fishery and enforces permits. Which property changes most directly?",
+          [
+            "Excludability rises; catching fish remains rival.",
+            "Fish become non-rival.",
+            "The lake must become a public good.",
+            "Free riding in siren funding necessarily vanishes."
+          ],
+          0,
+          "Rights of access can be restricted separately from rivalry in consumption."
+        ],
+        [
+          "A public swimming pool approaches capacity on a hot day. What happens to rivalry?",
+          [
+            "An additional swimmer imposes more crowding, increasing rivalry.",
+            "Admission becomes impossible to restrict.",
+            "Water becomes a pure public good.",
+            "Congestion removes scarcity."
+          ],
+          0,
+          "The extent of rivalry can depend on congestion and capacity."
         ]
       ]
     }
