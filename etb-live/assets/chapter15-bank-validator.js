@@ -3,7 +3,7 @@
 "use strict";
 function check(bank){
  const errors=[],warn=[];const err=(where,msg)=>errors.push(where+": "+msg);
- if(!bank||bank.chapter!==16||!Array.isArray(bank.concepts)||bank.concepts.length!==4)err("bank","expected Chapter 15 and four concepts");
+ if(!bank||bank.chapter!==15||!Array.isArray(bank.concepts)||bank.concepts.length!==1)err("bank","expected Chapter 15 and one concept");
  const seen=new Set();
  (bank.concepts||[]).forEach((c,i)=>{
  const loc="concept "+(i+1);
@@ -19,9 +19,9 @@ function check(bank){
  (x.detectRounds||[]).forEach((round,j)=>{if(!Array.isArray(round)||round.length!==3||round.some(q=>!Array.isArray(q)||!["A","A−","F"].includes(q[1])||!q[2]))err(loc+" detective round "+j,"invalid detective triad");});
  for(const type of ["missing","error"])(x[type]||[]).forEach((q,j)=>{if(!Array.isArray(q)||q.length!==4||!Array.isArray(q[1])||q[1].length<3||!Number.isInteger(q[2])||q[2]<0||q[2]>=q[1].length||!q[3])err(loc+" "+type+" "+j,"invalid response, key or feedback")});
  });
- (bank.exam||[]).forEach((q,i)=>{const at="exam "+(i+1);if(!q.id||seen.has(q.id))err(at,"missing or duplicate stable ID");seen.add(q.id);if(!q.prompt||!q.prompt.trim())err(at,"empty prompt");if(!Array.isArray(q.concepts)||!q.concepts.length||q.concepts.some(n=>!Number.isInteger(n)||n<1||n>4))err(at,"invalid concept tags");if(q.type==="mc"){if(!Array.isArray(q.choices)||q.choices.length<3||q.choices.some(v=>!v||!v.trim())||!Number.isInteger(q.answer)||q.answer<0||q.answer>=q.choices.length||!q.feedback)err(at,"invalid MC choices, key or feedback")}else if(q.type==="frq"){if(!Array.isArray(q.rubric)||q.rubric.length<3||q.rubric.some(v=>!v)||!q.feedback)err(at,"incomplete FRQ rubric or feedback")}else err(at,"unknown type");if(q.reviewStatus!=="approved")warn.push(at+": not yet instructor-approved")});
+ (bank.exam||[]).forEach((q,i)=>{const at="exam "+(i+1);if(!q.id||seen.has(q.id))err(at,"missing or duplicate stable ID");seen.add(q.id);if(!q.prompt||!q.prompt.trim())err(at,"empty prompt");if(!Array.isArray(q.concepts)||!q.concepts.length||q.concepts.some(n=>!Number.isInteger(n)||n<1||n>1))err(at,"invalid concept tags");if(q.type==="mc"){if(!Array.isArray(q.choices)||q.choices.length<3||q.choices.some(v=>!v||!v.trim())||!Number.isInteger(q.answer)||q.answer<0||q.answer>=q.choices.length||!q.feedback)err(at,"invalid MC choices, key or feedback")}else if(q.type==="frq"){if(!Array.isArray(q.rubric)||q.rubric.length<3||q.rubric.some(v=>!v)||!q.feedback)err(at,"incomplete FRQ rubric or feedback")}else err(at,"unknown type");if(q.reviewStatus!=="approved")warn.push(at+": not yet instructor-approved")});
  return {ok:errors.length===0,errors,warnings:warn,counts:{concepts:(bank.concepts||[]).length,applied:(bank.concepts||[]).reduce((n,c)=>n+(c.applied||[]).length,0),exam:(bank.exam||[]).length}};
 }
-root.validatePreciseBank16=check;
+root.validatePreciseBank15=check;
 if(root.PRECISE_BANK_CH15){const result=check(root.PRECISE_BANK_CH15);if(!result.ok)throw new Error("Chapter 15 question bank validation failed: "+result.errors.join("; "));}
 })(typeof window!=="undefined"?window:globalThis);
