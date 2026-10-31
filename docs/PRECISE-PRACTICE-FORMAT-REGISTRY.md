@@ -24,7 +24,7 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 
 ## Approved interaction 02 — Memory Match
 
-**Status: Approved interaction (2026-10-31; instructor-approved after unselect and animation refinements)**. Independent reusable engine: `etb-live/assets/precise-memory-match.js`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Pilot**.
+**Status: Approved interaction (2026-10-31; instructor-approved after unselect and animation refinements)**. Independent reusable engine: `etb-live/assets/precise-memory-match.js`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Approved**.
 
 **Contract:** `PreciseMemoryMatch.mount(element, [[term, definition], ...], {onComplete, onAgain})`.
 
@@ -35,10 +35,23 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 - Question bank currently provides six carefully selected pairs per Econ 16 concept in `etb-live/assets/chapter16-question-bank.js`.
 - **Release criteria:** test button/focus behavior after disappearance, mismatch feedback, mobile layouts, timing and reduced-motion preferences, screen-reader status, ambiguity in definitions, and memory benefit beyond visual recognition. Consider rounds of four pairs for novice learners when appropriate; do not force six on every concept.
 
+## Approved interaction 03 — Definition Detective: Grade the Students
+
+**Status: Approved interaction (2026-10-31; instructor-approved UX, question wording not yet approved).** Canonical prototype: Econ Chapter 16, Tier 1 → Definition Detective, in `etb-live/assets/chapter16-precise-practice.html`.
+
+- Prominently display **the term being defined** above three named, simple stick-figure students (for example Bob, Maya, Leo).
+- Show a short explanation by each student; the learner acts as teacher and assigns **A = accurate and sufficient**, **A− = true but incomplete**, or **F = fundamentally mistaken** using three large, computer-scored grade buttons.
+- Shuffle the order of student answers per round without changing answer keys; names remain stable for that round and should not cue correctness.
+- Reveal a precise explanation after students submit all three grades, distinguishing *what is true*, *what is missing*, and *what is false*.
+- Reuse in high Tier 1 for important defining features; potentially introduce more subtle evaluation of explanations and causal claims in Tier 2, with a separately reviewed question bank.
+- **Known weakness, explicitly flagged by instructor:** Some current Chapter 16 definitions are hard to follow. Improve clarity, specificity, reading level, and the unambiguous A/A−/F distinctions **before content approval**. Do not confuse approval of the engine with approval of the current question text.
+- Future items need not guarantee exactly one of each grade; ensure grading remains fair and transparent, with plausible explanations rather than artificial wording.
+- General release remains contingent on mobile, keyboard, screen-reader and usability QA.
+
 ## Candidate formats — not automatically approved
 
 - Quick classification buttons (working, review for enough variability)
-- Definition Detective (A/A-minus/F) (**priority candidate**; Tier 1 for defining features, Tier 2 for evaluating explanations; A-minus must be true but incomplete)
+- Definition Detective (A/A-minus/F) (**approved interaction**; currently used in Tier 1 for defining features, with a possible Tier 2 expansion for evaluating explanations; individual definitions still require clarity and editorial review)
 - Missing Piece (current fill-in-the-blank version **recommended for retirement**; retain worthwhile missing-step reasoning as ordinary Tier 2 questions, pending instructor agreement)
 - Four-goods matrix (content-specific, Econ)
 - Find & Fix the Error (working, editorial and usability review)

@@ -25,7 +25,7 @@ function extDone(e){const attempts=e.attempts||{};return Object.keys(attempts).l
 function extRender(c,t){
 if(t>1)return "";
 const e=extState();
-const kinds=t===0?[["sort","Rapid Sort · Approved"],["detect","Definition Detective"],["missing","Find the Missing Piece"],["matrix","Four-goods matrix"]]:[["repair","Find & Fix the Error"],["predict","Change & Predict"]];
+const kinds=t===0?[["sort","Rapid Sort · Approved"],["detect","Definition Detective · Approved"],["missing","Find the Missing Piece"],["matrix","Four-goods matrix"]]:[["repair","Find & Fix the Error"],["predict","Change & Predict"]];
 if(!kinds.some(x=>x[0]===e.type)){e.type=kinds[0][0];e.index=0;e.picks=[];e.submitted=false}
 let h='<div class="pp-workarea">';
 const data=EXTRA[S.c];const n=e.index;
