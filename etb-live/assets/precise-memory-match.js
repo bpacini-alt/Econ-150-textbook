@@ -13,7 +13,7 @@ function mount(host,pairs,options){
  let picked=[],matched=new Set(),busy=false,turns=0,finished=false,timeout=null;
  function draw(){
   let h='<div class="ppm-head"><b>Memory Match</b><span>'+matched.size+' / '+chosen.length+' pairs found</span></div>';
-  h+='<p class="ppm-help">Choose a word, then its meaning. Matching cards turn green and leave the board.</p>';
+  h+='<p class="ppm-help">Choose a word, then its meaning. Tap a selected card again to unselect. Matches turn green and disappear.</p>';
   h+='<div class="ppm-grid" role="group" aria-label="Match terms to definitions">'+tiles.map(t=>{
    if(matched.has(t.pair))return '<span class="ppm-empty" aria-hidden="true"></span>';
    const active=picked.includes(t.id),success=busy&&picked.length===2&&tiles.filter(x=>picked.includes(x.id)).every(x=>x.pair===t.pair);
@@ -26,7 +26,8 @@ function mount(host,pairs,options){
   const restart=host.querySelector('[data-memory-again]');if(restart)restart.onclick=()=>{if(opt.onAgain)opt.onAgain();else mount(host,shuffle(pairs),opt)};
  }
  function choose(id){
-  if(busy||finished||picked.includes(id))return;
+  if(busy||finished)return;
+  if(picked.includes(id)){picked=picked.filter(x=>x!==id);draw();return;}
   const t=tiles.find(x=>x.id===id);
   if(!t||matched.has(t.pair))return;
   picked.push(id);
@@ -39,7 +40,7 @@ function mount(host,pairs,options){
     picked=[];busy=false;
     if(matched.size===chosen.length&&!finished){finished=true;if(typeof opt.onComplete==="function")opt.onComplete({pairs:chosen.length,turns})}
     draw();
-  },right?500:850);
+  },right?680:850);
  }
  draw();
  return {destroy(){if(timeout!==null)clearTimeout(timeout);host.innerHTML=""}};
