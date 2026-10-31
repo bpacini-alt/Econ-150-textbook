@@ -99,7 +99,7 @@ TIP_JS = """<script>
 
 FOOTER = "\n" + FOOT_START + "\n" + TIP_JS + """
 <script src="assets/report.js" data-book="Econ 150" defer></script>
-<script src="assets/page-rating.js"></script>
+<script src="assets/page-rating.js?v=20261031-2"></script>
 <script src="assets/etb-audio.js"></script>
 </body>
 </html>
