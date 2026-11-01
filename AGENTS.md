@@ -33,6 +33,7 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 | `build/wrap_pages.py` | Adds the page header, the audio player, and the Report a problem button to each chapter | Yes |
 | `feedback/` | The Report a problem button and the function that receives reports | Yes (see "Shared") |
 | `menus/` | The Joy of Econ reading menu: `joy-of-econ.json` holds every reading. `build/wrap_pages.py` turns it into `etb-live/joy-of-econ.html`, which is never edited by hand | Yes, the data file (see `menus/README.md` and "Shared") |
+| `etb-live/practice/` | Chapter practice: the Precise Practice engine and each chapter's bank, **generated** by `tools/embed_practice.py` in `bpacini-alt/practice-engines`, which also places the practice panels in the chapter page between `PRECISE PRACTICE` comments | **Never by hand.** Edit items in `practice-engines` and rerun its embed script. |
 | `site/` | An old placeholder page. Cloudflare does not serve it. | No. Benjamin decides whether to remove it. |
 | `original/` | The October 2026 import from Google Drive, including older chapter versions and drafts | No. Archive only. |
 
