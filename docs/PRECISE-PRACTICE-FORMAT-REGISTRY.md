@@ -84,3 +84,11 @@ The current Missing Piece items have obvious semantic or grammatical cues and ad
 - Existing approved formats remain visible in Tier 1: Rapid Sort, Memory Match, Definition Detective. Odd One Out is visibly labeled Pilot.
 - **Other experimental games are hidden, not deleted.** Their engines and question banks remain in source for future review. Tier 2 currently shows its ordinary applied questions, Tier 3 AP-style MC. Former localStorage selections are ignored when not allowed in the current tier.
 - Approval criteria: review distractor plausibility, clarity of the common grouping property, repeat variety, actual browser behavior, and accessibility.
+
+### Odd One Out wording standard — agreed 2026-10-31
+
+- **Avoid NOT/EXCEPT question stems** as a default, especially in large assessments. Negative wording can add construct-irrelevant reading demands.
+- **Keep the practice task** of identifying an exception when it builds conceptual categories, but state it positively and transparently: *“Three of these share an important property. Which is the odd one out?”* A tailored positive description of the shared property is appropriate when the goal is checking an already-taught distinction.
+- After students check, explicitly name the **shared principle** among the three and explain why the fourth differs. The feedback is a learning opportunity, not just a correctness message.
+- During editorial review, reject cases where the odd option is obvious from length, grammar, social desirability, or unrelated topic, or where more than one common grouping is defensible.
+- Keep **Odd One Out as Pilot** pending instructor approval; this is approval of a wording/design direction, not of the entire engine.
