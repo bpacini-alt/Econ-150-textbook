@@ -28,7 +28,9 @@ HTML between the markers is never changed.
 
 import html
 import json
+import re
 import shutil
+import sys
 import urllib.parse
 from pathlib import Path
 
@@ -112,7 +114,13 @@ def unwrap(text):
         text = text.split(HEAD_END + "\n", 1)[1]
     if FOOT_START in text:
         text = text.rsplit("\n" + FOOT_START, 1)[0]
+    # The page-rating block is added after the chapter on every run; drop the old one so it isn't doubled.
+    text = re.sub(r"<!-- PAGE RATING START -->.*?<!-- /PAGE RATING -->\s*$", "", text, flags=re.S)
     return text
+
+
+def tags(text, name):
+    return len(re.findall(r"<" + name + r"[\s>]", text, flags=re.I))
 
 
 def main():
@@ -149,6 +157,12 @@ def main():
             edit_link = f'<a class="etb-author-edit" href="/editor/?book=econ-150&amp;path={edit_path}">Edit</a>'
             edit_style = '<style>.etb-author-edit{position:fixed;right:14px;top:14px;z-index:2000;background:#1b2430;color:#fff;padding:7px 11px;border-radius:6px;font:600 12px Arial,sans-serif;text-decoration:none;opacity:.78}.etb-author-edit:hover{opacity:1}</style>\n'
             rendered = rendered.replace("<body>\n", "<body>\n" + edit_style + edit_link + "\n", 1)
+        # The header and footer are rebuilt from scratch, so anything added inside them by hand would be lost.
+        # Stop rather than drop a style or script; move it into the chapter, between the markers.
+        for name in ("style", "script", "link"):
+            if tags(rendered, name) < tags(text, name):
+                sys.exit(f"{page.name}: rebuilding would drop a <{name}> from outside the chapter's own HTML. "
+                         f"Move it between the ETB PAGE HEADER and ETB PAGE FOOTER markers, then rerun.")
         with open(page, "w", encoding="utf-8", newline="") as f:
             f.write(rendered)
         wrapped += 1
@@ -163,7 +177,6 @@ def main():
     # The Joy of Econ reading menu: a complete page built from menus/joy-of-econ.json,
     # so the loop above skips it as "already a full page".
     import subprocess
-    import sys
     subprocess.run(
         [sys.executable, str(ROOT / "menus" / "build_menu.py"),
          str(ROOT / "menus" / "joy-of-econ.json"), str(SITE / "joy-of-econ.html")],
