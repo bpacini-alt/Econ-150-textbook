@@ -173,6 +173,74 @@ These should remain distinct from the Econ graph/table practice engine even if t
 
 A future EDCOR test-out might present a fresh classroom situation and student evidence, then ask students to identify the evidence, construct an actionable learning plan, justify the choice, anticipate an outcome, and distinguish competing explanations. This is a hypothesis to test, not a required assessment format.
 
+## Working design insight: blocked practice, then interleaving (2026-10-31)
+
+**Core hypothesis to preserve for both books:** Give students abundant, approachable chances to practice *one specific distinction or procedure* with feedback, then offer mixed/interleaved practice where they must decide **which** idea or tool applies. Make the transition visible, optional, and responsive to students' needs. The current Econ Chapter 16 pilot's **Mix it up** versus focused practice-style choice is a promising interface; it is a pilot to evaluate, not a mandatory pattern or a validated algorithm.
+
+**Blocked practice (focus on one thing):** Students deliberately choose a target such as property-rights classification, definition precision (A/A−/F), recognizing public versus common goods, or correcting one common reasoning error. Keep enough fresh variations for repeated, successful discrimination and targeted correction. This can lower the initial burden of deciding *what kind of problem it is* while the student learns the underlying move.
+
+**Interleaved practice (mix it up):** Once some basic familiarity develops, mix concepts, problem types, representations, and plausible distractors so students must **identify the appropriate tool** before using it. Interleaving should be thoughtfully sequenced, not purely random; avoid repetitive streaks and irrelevant switching. Mix across different concepts as well as within a concept when enough material has been learned. A student may choose interleaving early, or return to blocked practice if mixed work exposes a gap.
+
+**Instructional distinction:** Rotating *interaction formats* (flashcards, sorting, missing piece) while testing the same concept is varied practice, not necessarily concept interleaving. Genuine interleaving requires discriminating among multiple relevant categories, procedures, or concepts without being told which one applies. This distinction matters for both the item bank and claims about learning benefits.
+
+**Student-facing language to test:** “Focus on one skill” and “Mix it up” may be clearer than technical vocabulary alone. Optionally label them **Blocked practice** and **Interleaved practice** in small explanatory text so EDCOR students learn the pedagogy they are experiencing. Avoid requiring students to learn jargon before they can use the practice. Brief explanations: “Focus: repeat one kind of problem until it feels more comfortable” and “Mix: choose among ideas and strategies in varied situations.”
+
+**Self-assessment and support:** Periodically ask “Can I explain this without hints?” or “Would I like more focused practice, mixed practice, or a harder challenge?” Encourage voluntary return to targeted items and suggest consulting the instructor or TAs when repeated attempts and explanations do not resolve confusion. **Feeling confident is not the same as verified mastery.** Use accuracy on fresh, different problems and delayed mixed review as additional evidence, while letting students decide what to practice next.
+
+**Research-informed caution:** Blocked practice can facilitate initial acquisition and fluency; interleaving often improves discrimination and longer-term retention in suitable domains, but results vary with task, prior knowledge, spacing, difficulty, and how students compare examples. Neither “always block until mastery” nor “interleaving is always superior” is an evidence-supported universal rule. Some students may benefit from comparisons early in learning. Prototype sensible transitions and monitor transfer, burden, and student experience rather than enforcing a fixed threshold.
+
+**Do not modify** the in-progress Econ 15 or Econ 16 pilot as part of recording this idea. Any later UI change should be evaluated separately.
+
+## Agreed next architecture: shared banks and exam-prep views (2026-10-31)
+
+**Decision:** Author one high-quality, reusable question bank per chapter, stored as data apart from chapter prose and presentation logic. A single practice renderer may use the same bank in an end-of-concept checkpoint or in a dedicated **Quiz / Exam Prep** view. Do not duplicate question wording across separate page-specific banks.
+
+**Build order (incremental, Chapter 16 first):**
+
+1. Define a minimal stable bank schema and validation: item ID, originating chapter/concept, tier, cognitive target, interaction type, prompt, correct response or scoring criteria, specific feedback, and an **exam-prep eligible** flag or designation. Keep exact labels and authoring workflow simple. Version and review content in GitHub.
+2. Extract and **quality-audit** Chapter 16's current items into its own bank: check alignment with the *revised four-concept chapter*, economic accuracy, realistic distractors, ambiguity, feedback, repeated or overly easy items, and support for advanced reasoning. Preserve student-facing functionality while refactoring; do not automatically promote every prototype item as validated.
+3. Build a small **Quiz / Exam Prep** page that pulls only approved higher-level items from this bank (generally Tier 2 challenging application and Tier 3 independent transfer, including rubric-backed FRQs). This is a practice tool, not a promise of exact graded exam questions. Include concept references or links back to foundational chapter checkpoints when students need a refresher.
+4. Pilot both views with students and revise before extending to another chapter. Expand bank coverage chapter-by-chapter rather than retrofitting the entire textbook at once.
+
+**Important distinctions:** AP-level *cognitive demand* is not synonymous with “every Tier 3 item,” and a difficult applied Tier 2 item may qualify. Exam-prep eligibility should be an editorially reviewed property, not a naive tier cutoff. Include multiple representations and independent reasoning as appropriate to the discipline. The chapter's existing FRQs can serve as useful candidates but require alignment and scoring review.
+
+**Not now / explicitly deferred:** individual mastery scoring, confidence-based mastery claims, personalized question scheduling, adaptive item selection, a sophisticated difficulty algorithm, spaced-repetition scheduling, cross-device history, and fully automatic spiral-bank routing. Future cross-chapter spiral review should reuse these banks by reference, not embed old banks into newer chapter HTML. These are future options, not prerequisites for the two near-term deliverables.
+
+**Scope guard:** This section records the architecture and next priorities; it does not authorize replacing or modifying the existing Econ 15 or Econ 16 pilot chapter while instructor testing continues.
+
+## Foundational practice blueprint and stopping rule (2026-10-31)
+
+**Agreed addition to the two-step backward-design plan:** Design foundational practice for *skill coverage*, not arbitrary counts of items or question types. Decide what students need to know and do in each concept, what errors they need to discriminate, and which interaction types best support each skill. The formats are means, not quotas.
+
+### Step 1: skill-to-format coverage map
+
+For every concept, specify:
+1. **Knowledge targets:** terminology, conceptual distinctions, key relationships, and representations worth retrieving without hints.
+2. **Performances:** classify, retrieve, explain, calculate, interpret a graph or table, construct or translate a representation, choose an appropriate tool, or correct an error—**only where relevant**.
+3. **Misconceptions and transfer:** realistic traps and fresh scenarios that distinguish actual understanding from memorized phrasing.
+4. **Appropriate formats:** select from the format library (matching, flashcards, sorting, Definition Detective A/A−/F, Missing Piece, rapid predictions, error repair, graph/table reading or construction, calculations, explanations). Do **not** require a format merely because the engine supports it.
+5. **Evidence and feedback:** specify what a successful independent response looks like and how misses are corrected with another distinct example.
+
+### Step 2: foundational completion gates
+
+A concept's foundational bank is adequate for a strong pilot when:
+- Every **essential** knowledge and procedural skill is represented by at least one independently answered practice path; any essential representational skill (e.g., reading graphs, translating tables) is practiced in its appropriate representation.
+- Important confusable concepts and common misconceptions have **discrimination** opportunities, not just definition recall.
+- Every core skill has **several substantively different examples** with correct keys, meaningful feedback, and enough variation to make repeat practice useful. There is **no universal item minimum** and no requirement to implement each format.
+- The combination of activities tests both recognition and appropriate independent use where appropriate; reviewing the coverage map reveals **no material blind spots or redundant format-only padding**.
+- Human review verifies technical correctness, accessible interaction, plausible distractors, and concept alignment; a small student test uncovers no unresolved serious confusion.
+- The concept can hand students toward challenging Tier 2 and Tier 3 application without the foundational bank giving away the answers. Students may still choose any tier or skip ahead.
+
+**Stopping rule:** stop authoring foundational formats when the skill-to-format matrix is covered and tested to the agreed standard, *even if another clever format is possible*. Add an item or format only when it addresses a demonstrated learning gap, misconception, representational requirement, insufficient variety, or accessibility problem—not to increase counts.
+
+**Chapter 16 illustration (proposed coverage, not validation findings):**
+- Markets Are Built: institutional vocabulary, ownership/enforcement/entry distinctions, identify missing institutional conditions and causal effects.
+- Property Rights: recall and discriminate use/exclude/transfer/enforce, identify uncertain titles and rights, diagnose conflicts.
+- Corruption: inclusive/extractive discrimination, corruption vs ordinary costs, transaction-cost reasoning, interpreting correlations without causal overclaim.
+- Public Goods and Common Resources: rivalry/excludability, four-cell grid classification, context dependence (e.g. congestion), free riding vs depletion, provider-versus-property confusion. The *four-goods matrix* is an essential representation here; graph manipulation and numeric calculation are **not** compulsory elsewhere in this chapter.
+
+**Separate from assessment blueprint:** Chapter-end exam-level item targets and FRQ review measure independent integrated reasoning. Foundational coverage is judged by skill/representation coverage and instructional quality, not by a fixed number of question types or by the advanced-bank quota.
+
 ## Possible next experiments
 
 1. Instructor review of this playbook and prototype examples.
