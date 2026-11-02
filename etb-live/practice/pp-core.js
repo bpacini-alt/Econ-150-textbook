@@ -43,14 +43,20 @@
   PP.register = (type, renderer) => { PP.renderers[type] = renderer; };
 
   /* Walk through a pool in a fresh shuffled order, reshuffling when used up,
-     so repeated rounds don't show items in the same sequence. */
+     so repeated rounds don't show items in the same sequence. A reshuffle in
+     the middle of a deal puts the items already dealt at the back of the new
+     deck, so one deal (a round, a board) never repeats an item. */
   PP.deal = (state, key, poolSize, count) => {
     state.decks = state.decks || {};
     let d = state.decks[key];
     if (!d || d.size !== poolSize) d = state.decks[key] = { size: poolSize, order: order(poolSize), pos: 0 };
     const out = [];
     for (let k = 0; k < Math.min(count, poolSize); k++) {
-      if (d.pos >= d.order.length) { d.order = order(poolSize); d.pos = 0; }
+      if (d.pos >= d.order.length) {
+        const fresh = order(poolSize);
+        d.order = fresh.filter((i) => !out.includes(i)).concat(fresh.filter((i) => out.includes(i)));
+        d.pos = 0;
+      }
       out.push(d.order[d.pos++]);
     }
     return out;
@@ -137,6 +143,7 @@
     match: "Match each term to its meaning. Matched pairs disappear.",
     detective: "You are the teacher. Grade each student: A is complete and correct, A− is true but missing something essential, F has a fundamental error.",
     quick: "Choose quickly, but read carefully. Use the arrow keys or tap a button.",
+    compare: "Choose which option has more elastic demand. Use the keys or tap A or B.",
     calc: "Work each problem, then check. Turn on the formula, hints, or a worked example whenever you want them.",
     choice: "Choose the best answer, then check your reasoning.",
     tiles: "Build the statement from the tiles. Use only the tiles that belong; order doesn't matter unless the prompt says so."
@@ -182,7 +189,7 @@
           list.map((a) => '<option value="' + esc(a.id) + '"' + (pick === a.id ? " selected" : "") + ">" + esc(a.title) + "</option>").join("") +
           "</select></div>";
       }
-      h += '<p class="pp-instruction"><b>' + esc(activity.title) + ".</b> " + esc(activity.instructions || DEFAULT_INSTRUCTIONS[activity.type] || "") + "</p>";
+      h += '<p class="pp-instruction"><b>' + esc(activity.title) + (/[.?!:]$/.test(activity.title) ? "" : ".") + "</b> " + esc(activity.instructions || DEFAULT_INSTRUCTIONS[activity.type] || "") + "</p>";
       h += '<div class="pp-progress"><div class="pp-bar"><span style="width:' + Math.min(100, (done / goal) * 100) + '%"></span></div><div class="pp-tiny pp-muted">' +
         Math.min(done, goal) + " / " + goal + " suggested. " + (done >= goal ? "Move on when you feel ready." : "A guide, not a grade.") + "</div></div>";
       h += '<div id="pp-activity" aria-live="polite"></div></div>';

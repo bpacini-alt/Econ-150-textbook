@@ -1,9 +1,11 @@
 /* Quick Practice / three-key fluency (approved interaction).
  * activity: {labels:[2 or 3 short answers], items:[{id, prompt, answer:index, why, label_misconceptions?}], round_size}
  * Two labels: Left/Right (or A/D). Three labels: Left/Down/Right (or A/S/D).
- * Immediate feedback, then an automatic advance (timing from the approved
- * prototype). No timer and no speed pressure. A round ends with a review of
- * anything missed.
+ * Immediate feedback. A correct answer advances automatically (timing from the
+ * approved prototype). A wrong answer stays on screen with its explanation
+ * until the student continues: Next, Enter, or any answer key (decided
+ * November 2, 2026; textbook-feedback#43). No timer and no speed pressure.
+ * A round ends with a review of anything missed.
  */
 (function (PP) {
   "use strict";
@@ -19,9 +21,24 @@
       const two = activity.labels.length === 2;
       const keys = two ? KEYS2 : KEYS3, caps = two ? CAPS2 : CAPS3;
       const size = Math.min(activity.round_size || 8, activity.items.length);
-      let timer = null, locked = false;
+      let timer = null, byKey = false;
       if (!st.round || st.done || st.round.some((k) => k >= activity.items.length)) newRound();
-      if (st.last != null) { st.last = null; st.pos++; if (st.pos >= st.round.length) st.done = true; }
+      // Coming back mid-feedback: a correct answer moves on as it would have; a
+      // missed one stays, so the explanation is still there to read.
+      if (st.last != null && st.last === activity.items[st.round[st.pos]].answer) {
+        st.last = null; st.pos++; if (st.pos >= st.round.length) st.done = true;
+      }
+
+      function waiting() {
+        return !st.done && st.last != null && st.last !== activity.items[st.round[st.pos]].answer;
+      }
+
+      function advance() {
+        if (timer) { clearTimeout(timer); timer = null; }
+        st.last = null; st.pos++;
+        if (st.pos >= st.round.length) st.done = true;
+        ctx.save(); draw();
+      }
 
       function newRound() {
         st.round = PP.deal(st, "items", activity.items.length, size);
@@ -44,15 +61,19 @@
         if (st.last != null) {
           const ok = st.last === it.answer;
           h += '<div class="pp-feedback' + (ok ? "" : " pp-bad") + '" role="status"><b>' + (ok ? "Correct." : "Not quite.") + "</b> " + esc(it.why) + "</div>";
+          // The Enter hint only for students already on a keyboard; on a phone it's noise.
+          if (!ok) h += '<div class="pp-actions" style="align-items:center"><button type="button" class="pp-primary" id="pp-next">Next</button>' +
+            (byKey ? '<span class="pp-tiny pp-muted">or press Enter</span>' : "") + "</div>";
         } else h += '<p class="pp-tiny pp-muted">Use the keys or tap an answer.</p>';
         host.innerHTML = h;
-        host.querySelectorAll("[data-k]").forEach((b) => (b.onclick = () => answer(Number(b.dataset.k))));
+        host.querySelectorAll("[data-k]").forEach((b) => (b.onclick = () => { byKey = false; answer(Number(b.dataset.k)); }));
+        const next = host.querySelector("#pp-next");
+        if (next) { next.onclick = advance; next.focus({ preventScroll: true }); }
         ctx.resized();
       }
 
       function answer(i) {
-        if (locked || st.done || st.last != null) return;
-        locked = true;
+        if (st.done || st.last != null) return;
         const it = activity.items[st.round[st.pos]];
         const ok = i === it.answer;
         st.last = i;
@@ -63,11 +84,7 @@
         });
         if (ok) st.right++; else st.missed.push(st.round[st.pos]);
         ctx.count(); ctx.save(); draw();
-        timer = setTimeout(() => {
-          st.last = null; st.pos++; locked = false;
-          if (st.pos >= st.round.length) st.done = true;
-          ctx.save(); draw();
-        }, ok ? 1050 : 1900);
+        if (ok) timer = setTimeout(advance, 1050);
       }
 
       function summary() {
@@ -90,8 +107,14 @@
         if (["INPUT", "TEXTAREA", "SELECT"].includes(tag)) return;
         const k = e.key.toLowerCase();
         const idx = keys.findIndex((pair) => pair.includes(k));
+        if (waiting()) {
+          // Enter or an answer key only moves on; it never answers the next item.
+          if (k !== "enter" && idx < 0) return;
+          e.preventDefault(); advance(); return;
+        }
         if (idx < 0 || st.done) return;
         e.preventDefault();
+        byKey = true;
         answer(idx);
       }
       document.addEventListener("keydown", onKey);
