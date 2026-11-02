@@ -9,7 +9,7 @@ This clean pilot is based on the **latest main Chapter 16**, which now has **fou
 3. Corruption — inclusive/extractive institutions; **transaction costs remain within this concept**, with relevant former transaction-cost Tier 2 cases retained as additional questions.
 4. Public Goods and Common Resources — rivalry/excludability, common-resource problems, free riders.
 
-At each checkpoint: Tier 1 rapid foundational practice, flashcards, Rapid Sort, Definition Detective, Missing Piece; Tier 2 applied case questions plus Find & Fix the Error; Tier 3 explanation prompts with self-checks.
+At each checkpoint: Tier 1 rapid foundational practice, flashcards, and concept-specific formats; Tier 2 applied case questions plus Find & Fix the Error; Tier 3 explanation prompts with self-checks. Concept 1 now begins Tier 1 with a fixed left/right Quick Sort: clean scenarios classified as market failure or institutional failure. Ambiguous cases remain in later applied practice.
 
 The final concept checkpoint leads to an optional **four-part chapter challenge**, a new scenario about a farm exchange and cold-storage cooperative, deliberately distinct from the chapter's existing harbor-town FRQ. This is self-review, not automatic FRQ scoring or an official test-out.
 
