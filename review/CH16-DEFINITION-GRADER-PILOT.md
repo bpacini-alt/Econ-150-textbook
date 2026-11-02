@@ -1,0 +1,1 @@
+Definition Detective student-grader pilot: three illustrated students answer a prominently displayed concept, and learners assign A, A-minus, or F through three grade buttons. Cards shuffle per round and original scoring explanations remain. This is a pilot, not yet instructor-approved. Browser and accessibility QA are still needed.
