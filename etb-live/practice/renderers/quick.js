@@ -1,25 +1,29 @@
-/* Quick Practice / three-key fluency (approved interaction).
- * activity: {labels:[2 or 3 short answers], items:[{id, prompt, answer:index, why, label_misconceptions?}], round_size}
- * Two labels: Left/Right (or A/D). Three labels: Left/Down/Right (or A/S/D).
- * Immediate feedback. A correct answer advances automatically (timing from the
- * approved prototype). A wrong answer stays on screen with its explanation
- * until the student continues: Next, Enter, or any answer key (decided
- * November 2, 2026; textbook-feedback#43). No timer and no speed pressure.
- * A round ends with a review of anything missed.
+/* Quick Practice / two-, three-, or four-key fluency.
+ * activity: {labels:[2 to 4 short answers], items:[{id, prompt, answer:index, why, label_misconceptions?}], round_size}
+ * Two labels: Left/Right (or A/D). Three: Left/Down/Right (or A/S/D).
+ * Four: Up/Down/Left/Right (or W/S/A/D), shown in a compass layout.
+ * Immediate feedback. A correct answer advances automatically. A wrong answer
+ * stays on screen with its explanation until the student continues: Next, Enter,
+ * or any answer key. No timer and no speed pressure. A round ends with a review.
  */
 (function (PP) {
   "use strict";
   const { esc } = PP.util;
   const KEYS3 = [["arrowleft", "a"], ["arrowdown", "s"], ["arrowright", "d"]];
   const KEYS2 = [["arrowleft", "a"], ["arrowright", "d"]];
+  const KEYS4 = [["arrowup", "w"], ["arrowdown", "s"], ["arrowleft", "a"], ["arrowright", "d"]];
   const CAPS3 = ["← or A", "↓ or S", "→ or D"];
   const CAPS2 = ["← or A", "→ or D"];
+  const CAPS4 = ["↑ or W", "↓ or S", "← or A", "→ or D"];
 
   PP.register("quick", {
     render(host, activity, ctx) {
       const st = ctx.state;
       const two = activity.labels.length === 2;
-      const keys = two ? KEYS2 : KEYS3, caps = two ? CAPS2 : CAPS3;
+      const four = activity.labels.length === 4;
+      const keys = two ? KEYS2 : four ? KEYS4 : KEYS3;
+      const caps = two ? CAPS2 : four ? CAPS4 : CAPS3;
+      const layout = two ? "pp-two" : four ? "pp-four" : "pp-three";
       const size = Math.min(activity.round_size || 8, activity.items.length);
       let timer = null, byKey = false;
       if (!st.round || st.done || st.round.some((k) => k >= activity.items.length)) newRound();
@@ -53,7 +57,7 @@
         let h = '<div class="pp-row" style="justify-content:space-between"><span class="pp-tiny pp-muted">' + (st.pos + 1) + " of " + st.round.length + "</span>" +
           '<span class="pp-tiny pp-muted">' + st.right + " correct</span></div>";
         h += '<div class="pp-quick-stage"><div class="pp-prompt">' + esc(it.prompt) + "</div></div>";
-        h += '<div class="pp-quick-keys ' + (two ? "pp-two" : "pp-three") + '" role="group" aria-label="Answers">' + activity.labels.map((lab, i) => {
+        h += '<div class="pp-quick-keys ' + layout + '" role="group" aria-label="' + (four ? "Four directional answers" : "Answers") + '">' + activity.labels.map((lab, i) => {
           let cls = "";
           if (st.last != null) { if (i === it.answer) cls = "pp-is-right"; else if (i === st.last) cls = "pp-is-wrong"; }
           return '<button type="button" class="' + cls + '" data-k="' + i + '"' + (st.last != null ? " disabled" : "") + "><span>" + esc(lab) + '</span><span class="pp-keycap">' + caps[i] + "</span></button>";
@@ -64,7 +68,7 @@
           // The Enter hint only for students already on a keyboard; on a phone it's noise.
           if (!ok) h += '<div class="pp-actions" style="align-items:center"><button type="button" class="pp-primary" id="pp-next">Next</button>' +
             (byKey ? '<span class="pp-tiny pp-muted">or press Enter</span>' : "") + "</div>";
-        } else h += '<p class="pp-tiny pp-muted">Use the keys or tap an answer.</p>';
+        } else h += '<p class="pp-tiny pp-muted">' + (four ? "Use an arrow key or tap a choice." : "Use the keys or tap an answer.") + "</p>";
         host.innerHTML = h;
         host.querySelectorAll("[data-k]").forEach((b) => (b.onclick = () => { byKey = false; answer(Number(b.dataset.k)); }));
         const next = host.querySelector("#pp-next");
