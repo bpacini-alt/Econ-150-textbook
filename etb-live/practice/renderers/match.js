@@ -43,9 +43,14 @@
         if (finished) {
           h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-again">New board</button>' +
             '<button type="button" id="ppm-review-btn" aria-expanded="' + reviewing + '" aria-controls="ppm-review">Review pairs</button></div>';
-          h += '<div class="pp-card" id="ppm-review"' + (reviewing ? "" : " hidden") + '><b>Pairs on this board</b><ul>' +
-            [...matched].map((p) => "<li>" + esc(activity.pairs[p].left) + " — " + esc(activity.pairs[p].right) + "</li>").join("") +
-            "</ul></div>";
+          // One row per pair, numbered in the order matched, term beside its match
+          // (stacked on phones). The ol numbers it for screen readers; "matches" joins the two.
+          h += '<div class="ppm-review" id="ppm-review"' + (reviewing ? "" : " hidden") + '>' +
+            '<p class="ppm-review-head"><b>Your pairs</b> <span class="pp-tiny pp-muted">in the order you matched them</span></p><ol class="ppm-pairs">' +
+            [...matched].map((p, i) => '<li><span class="ppm-num" aria-hidden="true">✓ ' + (i + 1) + "</span>" +
+              '<span class="ppm-left">' + esc(activity.pairs[p].left) + '</span><span class="ppm-arrow" aria-hidden="true">→</span>' +
+              '<span class="pp-sr"> matches </span><span class="ppm-right">' + esc(activity.pairs[p].right) + "</span></li>").join("") +
+            "</ol></div>";
         }
         host.innerHTML = h;
         host.querySelectorAll("[data-tile]").forEach((b) => (b.onclick = () => choose(b.dataset.tile)));
