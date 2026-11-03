@@ -26,7 +26,7 @@
         st.rows = PP.deal(st, "problems", deck.problems.length, prog[s]);
         st.entries = {}; st.classes = {}; st.results = {}; st.counted = {};
         const guided = s === 0;
-        st.show = { formula: guided, hints: guided, example: guided };
+        st.show = { formula: false, hints: false, example: false };
         ctx.save();
         ctx.shown("stage");
       }
