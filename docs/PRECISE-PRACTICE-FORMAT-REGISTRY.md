@@ -1,6 +1,6 @@
 # Precise Practice — reusable format registry
 
-Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable across Econ 150 and EDCOR 310 while separating interface approval from editorial and accessibility validation.
+Updated: 2026-11-03. **Purpose:** make approved exercise interactions reusable across Econ 150 and EDCOR 310 while separating interface approval from editorial and accessibility validation.
 
 ## Status labels
 
@@ -32,6 +32,7 @@ Updated: 2026-10-31. **Purpose:** make approved exercise interactions reusable a
 - Students select any two. Matching pairs turn green, briefly remain visible, then disappear; incorrect guesses clear after a short delay and remain available.
 - A compact pair counter shows progress. Completing the board is one counted Tier 1 practice activity, **not six individually graded questions**; a replay starts a fresh shuffle.
 - All cards are ordinary focusable buttons, keyboard-operable, with no sound or graded penalty.
+- **Review the pairs (decided 2026-11-03, from reader report textbook-feedback#45):** when a board is finished, offer a **Review pairs** button beside **New board**. It shows every pair from that board (term and its match, one line per pair) so students can take notes. The list stays hidden until the student asks for it; the finished board does not show it by default. This applies to every Memory Match in every chapter and both books, so it belongs in the shared engine (`renderers/match.js` in `bpacini-alt/practice-engines`), not in any one chapter's bank.
 - Question bank currently provides six carefully selected pairs per Econ 16 concept in `etb-live/assets/chapter16-question-bank.js`.
 - **Release criteria:** test button/focus behavior after disappearance, mismatch feedback, mobile layouts, timing and reduced-motion preferences, screen-reader status, ambiguity in definitions, and memory benefit beyond visual recognition. Consider rounds of four pairs for novice learners when appropriate; do not force six on every concept.
 
