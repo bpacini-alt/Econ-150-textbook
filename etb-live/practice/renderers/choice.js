@@ -10,14 +10,33 @@
     render(host, activity, ctx) {
       const st = ctx.state;
       const items = activity.items;
-      if (st.cur == null || st.cur >= items.length) newItem();
+      let advanceTimer = null;
+
+      function optionOrder(it) {
+        // Graph panels are a visual reference system: Panel A is always first,
+        // Panel B second, and so on. Ordinary answer choices still shuffle.
+        if (it.shuffle_options === false || (it.figure && it.figure.kind === "panels")) {
+          return it.options.map((_, i) => i);
+        }
+        return order(it.options.length);
+      }
 
       function newItem() {
+        if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
         st.cur = PP.deal(st, "items", items.length, 1)[0];
-        st.ord = order(items[st.cur].options.length);
+        st.ord = optionOrder(items[st.cur]);
         st.picked = null;
         st.checked = false;
         ctx.save();
+      }
+
+      if (st.cur == null || st.cur >= items.length) newItem();
+      else {
+        const expected = optionOrder(items[st.cur]);
+        if (!st.ord || st.ord.some((v, i) => v !== expected[i])) {
+          st.ord = expected;
+          ctx.save();
+        }
       }
 
       let markedFor = null;
@@ -49,7 +68,16 @@
               resp: { opt: st.picked, pos: st.ord.indexOf(st.picked) },
               misc: [it.option_misconceptions && it.option_misconceptions[st.picked]]
             });
-            ctx.count(); ctx.save(); draw(); return;
+            ctx.count(); ctx.save(); draw();
+            if (st.picked === it.answer) {
+              const itemIndex = st.cur;
+              advanceTimer = setTimeout(() => {
+                if (st.cur !== itemIndex || !st.checked) return;
+                newItem();
+                if (!ctx.roundDone()) draw();
+              }, 850);
+            }
+            return;
           }
           newItem();
           if (!ctx.roundDone()) draw();
@@ -57,6 +85,7 @@
         ctx.resized();
       }
       draw();
+      return () => { if (advanceTimer) clearTimeout(advanceTimer); };
     }
   });
 })(window.PP);

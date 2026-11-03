@@ -26,11 +26,16 @@
   PP.register("sort", {
     render(host, activity, ctx) {
       const st = ctx.state;
-      if (!st.round || st.round.some((i) => i >= activity.cards.length)) newRound();
       let selected = null;
       let drag = null;
+      let advanceTimer = null;
+      // After the declarations: newRound() reads advanceTimer.
+      if (!st.round || st.round.some((i) => i >= activity.cards.length)) newRound();
 
-      function newRound() { st.round = buildRound(activity); st.picks = {}; st.how = {}; st.checked = false; ctx.save(); }
+      function newRound() {
+        if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
+        st.round = buildRound(activity); st.picks = {}; st.how = {}; st.checked = false; ctx.save();
+      }
       let marked = false;
       const placed = () => st.round.filter((i) => st.picks[i] != null).length;
 
@@ -63,12 +68,13 @@
             st.round.filter((i) => st.picks[i] === j).map(cardButton).join("") + "</div>").join("") + "</div>";
           if (st.checked) h += '<div style="margin-top:10px">' + st.round.map(result).join("") + "</div>";
         }
+        const allRight = st.checked && st.round.every((i) => st.picks[i] === activity.cards[i].bin);
         if (st.checked) {
           const right = st.round.filter((i) => st.picks[i] === activity.cards[i].bin).length;
-          h += '<div class="pp-feedback' + (right === st.round.length ? "" : " pp-bad") + '" role="status"><b>' + right + " of " + st.round.length + " in the best category.</b></div>";
+          h += '<div class="pp-feedback' + (allRight ? "" : " pp-bad") + '" role="status"><b>' + right + " of " + st.round.length + " in the best category.</b></div>";
         }
         h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-go"' + (!st.checked && placed() < st.round.length ? " disabled" : "") + ">" +
-          (st.checked ? "New board" : "Check all " + st.round.length) + "</button></div>";
+          (st.checked ? (allRight ? "Next board" : "Continue to next board") : "Check all " + st.round.length) + "</button></div>";
         host.innerHTML = h;
         wire();
         ctx.resized();
@@ -116,7 +122,16 @@
                 extra: { board: st.round.length }
               });
             });
-            ctx.count(); ctx.save(); draw(); return;
+            ctx.count(); ctx.save(); draw();
+            if (st.round.every((i) => st.picks[i] === activity.cards[i].bin)) {
+              const round = st.round;
+              advanceTimer = setTimeout(() => {
+                if (!st.checked || st.round !== round) return;
+                newRound();
+                if (!ctx.roundDone()) draw();
+              }, 850);
+            }
+            return;
           }
           newRound();
           marked = false;
@@ -164,6 +179,7 @@
       }
 
       draw();
+      return () => { if (advanceTimer) clearTimeout(advanceTimer); };
     }
   });
 })(window.PP);
