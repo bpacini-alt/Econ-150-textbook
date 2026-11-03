@@ -135,6 +135,18 @@ button:disabled { cursor: default; opacity: .55; }
 .pp-quick-keys { display: grid; gap: 8px; margin-top: 12px; }
 .pp-quick-keys.pp-two { grid-template-columns: 1fr 1fr; }
 .pp-quick-keys.pp-three { grid-template-columns: 1fr 1fr 1fr; }
+.pp-quick-keys.pp-four {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(64px, auto));
+  grid-template-areas: ". up ." "left . right" ". down .";
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pp-quick-keys.pp-four button:nth-child(1) { grid-area: up; }
+.pp-quick-keys.pp-four button:nth-child(2) { grid-area: down; }
+.pp-quick-keys.pp-four button:nth-child(3) { grid-area: left; }
+.pp-quick-keys.pp-four button:nth-child(4) { grid-area: right; }
 .pp-quick-keys button { min-height: 64px; font-weight: 700; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
 .pp-keycap { font-size: 11px; font-weight: 600; color: var(--pp-muted); }
 .pp-quick-keys button.pp-is-right { border: 2px solid var(--pp-good); background: var(--pp-good-soft); }
