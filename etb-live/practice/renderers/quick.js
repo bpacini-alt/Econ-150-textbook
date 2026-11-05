@@ -101,7 +101,7 @@
           (st.missed.length ? "<p>Worth another look:</p>" : "<p>Clean round.</p>") + "</div>";
         if (st.missed.length) h += st.missed.map((k) => {
           const it = activity.items[k];
-          return '<div class="pp-result pp-no"><b>' + esc(it.prompt) + "</b> → " + esc(activity.labels[it.answer]) + ". " + esc(it.why) + "</div>";
+          return '<div class="pp-result pp-no"><b class="ppq-prompt">' + esc(it.prompt) + "</b> → " + esc(activity.labels[it.answer]) + ". " + esc(it.why) + "</div>";
         }).join("");
         h += '<p class="pp-tiny pp-muted">Quick rounds build fast, accurate recognition. Pair them with the calculation, sorting, and applied practice for deeper understanding.</p>';
         h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-again">New round</button>' +
@@ -113,7 +113,7 @@
           st.round.map((k) => {
             const it = activity.items[k], miss = st.missed.includes(k);
             return '<li class="pp-result ' + (miss ? "pp-no" : "pp-ok") + '"><span aria-hidden="true">' + (miss ? "✗ " : "✓ ") + "</span>" +
-              '<span class="pp-sr">' + (miss ? "Missed: " : "Correct: ") + "</span><b>" + esc(it.prompt) + "</b> → " +
+              '<span class="pp-sr">' + (miss ? "Missed: " : "Correct: ") + '</span><b class="ppq-prompt">' + esc(it.prompt) + "</b> → " +
               esc(activity.labels[it.answer]) + ". " + esc(it.why) + "</li>";
           }).join("") + "</ol></div>";
         host.innerHTML = h;
