@@ -5,6 +5,10 @@
  * Immediate feedback. A correct answer advances automatically. A wrong answer
  * stays on screen with its explanation until the student continues: Next, Enter,
  * or any answer key. No timer and no speed pressure. A round ends with a review.
+ * The finished round offers Review all beside New round: every item from the
+ * round, in the order answered, with its answer and explanation, missed ones in
+ * red and correct ones in green. It stays hidden until asked for, the same way
+ * as Review pairs in Memory Match (textbook-feedback#50, decided November 5, 2026).
  */
 (function (PP) {
   "use strict";
@@ -25,7 +29,7 @@
       const caps = two ? CAPS2 : four ? CAPS4 : CAPS3;
       const layout = two ? "pp-two" : four ? "pp-four" : "pp-three";
       const size = Math.min(activity.round_size || 8, activity.items.length);
-      let timer = null, byKey = false;
+      let timer = null, byKey = false, reviewing = false;
       if (!st.round || st.done || st.round.some((k) => k >= activity.items.length)) newRound();
       // Coming back mid-feedback: a correct answer moves on as it would have; a
       // missed one stays, so the explanation is still there to read.
@@ -47,6 +51,7 @@
       function newRound() {
         st.round = PP.deal(st, "items", activity.items.length, size);
         st.pos = 0; st.right = 0; st.missed = []; st.done = false; st.last = null;
+        reviewing = false;
         ctx.save();
       }
 
@@ -99,9 +104,28 @@
           return '<div class="pp-result pp-no"><b>' + esc(it.prompt) + "</b> → " + esc(activity.labels[it.answer]) + ". " + esc(it.why) + "</div>";
         }).join("");
         h += '<p class="pp-tiny pp-muted">Quick rounds build fast, accurate recognition. Pair them with the calculation, sorting, and applied practice for deeper understanding.</p>';
-        h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-again">New round</button></div>';
+        h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-again">New round</button>' +
+          '<button type="button" id="ppq-review-btn" aria-expanded="' + reviewing + '" aria-controls="ppq-review">Review all</button></div>';
+        // Every item in the order answered. The mark and the hidden word carry
+        // right or missed, so the meaning doesn't rest on color alone.
+        h += '<div class="ppq-review" id="ppq-review"' + (reviewing ? "" : " hidden") + '>' +
+          '<p class="ppm-review-head"><b>This round</b> <span class="pp-tiny pp-muted">in the order you answered</span></p><ol class="ppq-items">' +
+          st.round.map((k) => {
+            const it = activity.items[k], miss = st.missed.includes(k);
+            return '<li class="pp-result ' + (miss ? "pp-no" : "pp-ok") + '"><span aria-hidden="true">' + (miss ? "✗ " : "✓ ") + "</span>" +
+              '<span class="pp-sr">' + (miss ? "Missed: " : "Correct: ") + "</span><b>" + esc(it.prompt) + "</b> → " +
+              esc(activity.labels[it.answer]) + ". " + esc(it.why) + "</li>";
+          }).join("") + "</ol></div>";
         host.innerHTML = h;
         host.querySelector("#pp-again").onclick = () => { newRound(); if (!ctx.roundDone()) draw(); };
+        const review = host.querySelector("#ppq-review-btn");
+        review.onclick = () => {
+          // Toggle in place rather than redrawing, so focus stays on the button.
+          reviewing = !reviewing;
+          review.setAttribute("aria-expanded", reviewing);
+          host.querySelector("#ppq-review").hidden = !reviewing;
+          ctx.resized();
+        };
         ctx.resized();
       }
 
