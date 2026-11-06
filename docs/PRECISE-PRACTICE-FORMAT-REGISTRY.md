@@ -11,7 +11,7 @@ Updated: 2026-11-03. **Purpose:** make approved exercise interactions reusable a
 
 ## Approved interaction 01 — Drag-and-drop classification / categorization
 
-**Status: Approved interaction (2026-10-31)**. Canonical pilot: Econ 16, Precise Practice → Tier 1 → Rapid Sort; implementation currently inside `etb-live/assets/chapter16-precise-practice.html`.
+**Status: Approved interaction (2026-10-31)**. Canonical pilot: Econ 16, Precise Practice → Tier 1 → Rapid Sort; now built into the practice engine (`bpacini-alt/practice-engines`, `engine/renderers/sort.js`); the pilot page is archived in practice-engines `legacy/econ-150/ch16-pilot-2026-11/`.
 
 - Unsorted, draggable cards sit in a tray; each successfully placed card **leaves the tray** and appears in the student's chosen bin.
 - Students can rearrange cards or return them to the tray before submitting; a visual placement is **not** a correctness confirmation.
@@ -24,7 +24,7 @@ Updated: 2026-11-03. **Purpose:** make approved exercise interactions reusable a
 
 ## Approved interaction 02 — Memory Match
 
-**Status: Approved interaction (2026-10-31; instructor-approved after unselect and animation refinements)**. Independent reusable engine: `etb-live/assets/precise-memory-match.js`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Approved**.
+**Status: Approved interaction (2026-10-31; instructor-approved after unselect and animation refinements)**. Now the practice engine's `engine/renderers/match.js` in `bpacini-alt/practice-engines`. Canonical pilot: Econ 16, Tier 1 → **Memory Match · Approved**.
 
 **Contract:** `PreciseMemoryMatch.mount(element, [[term, definition], ...], {onComplete, onAgain})`.
 
@@ -33,12 +33,12 @@ Updated: 2026-11-03. **Purpose:** make approved exercise interactions reusable a
 - A compact pair counter shows progress. Completing the board is one counted Tier 1 practice activity, **not six individually graded questions**; a replay starts a fresh shuffle.
 - All cards are ordinary focusable buttons, keyboard-operable, with no sound or graded penalty.
 - **Review the pairs (decided 2026-11-03, from reader report textbook-feedback#45):** when a board is finished, offer a **Review pairs** button beside **New board**. It shows every pair from that board (term and its match, one line per pair) so students can take notes. The list stays hidden until the student asks for it; the finished board does not show it by default. This applies to every Memory Match in every chapter and both books, so it belongs in the shared engine (`renderers/match.js` in `bpacini-alt/practice-engines`), not in any one chapter's bank.
-- Question bank currently provides six carefully selected pairs per Econ 16 concept in `etb-live/assets/chapter16-question-bank.js`.
+- The Chapter 16 bank (`items/econ-150/ch16-practice.json` in practice-engines) has 16 pairs per concept, per that repository's bank-size standard. The original six-pair pilot bank is archived in practice-engines `legacy/econ-150/ch16-pilot-2026-11/`.
 - **Release criteria:** test button/focus behavior after disappearance, mismatch feedback, mobile layouts, timing and reduced-motion preferences, screen-reader status, ambiguity in definitions, and memory benefit beyond visual recognition. Consider rounds of four pairs for novice learners when appropriate; do not force six on every concept.
 
 ## Approved interaction 03 — Definition Detective: Grade the Students
 
-**Status: Approved interaction (2026-10-31; instructor-approved UX, question wording not yet approved).** Canonical prototype: Econ Chapter 16, Tier 1 → Definition Detective, in `etb-live/assets/chapter16-precise-practice.html`.
+**Status: Approved interaction (2026-10-31; instructor-approved UX, question wording not yet approved).** Canonical prototype: Econ Chapter 16, Tier 1 → Definition Detective, now `engine/renderers/detective.js` in practice-engines; the pilot page is archived in practice-engines `legacy/econ-150/ch16-pilot-2026-11/`.
 
 - Prominently display **the term being defined** above three named, simple stick-figure students (for example Bob, Maya, Leo).
 - Show a short explanation by each student; the learner acts as teacher and assigns **A = accurate and sufficient**, **A− = true but incomplete**, or **F = fundamentally mistaken** using three large, computer-scored grade buttons.
