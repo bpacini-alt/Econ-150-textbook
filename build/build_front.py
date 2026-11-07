@@ -71,8 +71,8 @@ UNITS = [
     ("III", "The Critique of the Market", [
         (15, "Elasticity"),
         (16, "Institutions"),
-        (17, "Market Failures I: The Tragedy of the Commons"),
-        (18, "Market Failures II: Externalities"),
+        (17, "Market Failures I: Externalities"),
+        (18, "Market Failures II: The Tragedy of the Commons"),
         (19, "Market Failures III: Taxes, Subsidies, and Incentives"),
         (20, "Unit Capstone: The Economics of Healthcare"),
     ]),
