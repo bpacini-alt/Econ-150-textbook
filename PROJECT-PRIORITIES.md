@@ -44,6 +44,16 @@ The default behavior is **inspect, report, recommend, then act**:
 
 Safe reversible improvements—such as fixing links, clarifying documentation, standardizing names, or reorganizing clearly misplaced files—may be proposed as ordinary maintenance. Deletion is never assumed merely because a file is old.
 
+### Archived exploratory PRs — preserve before closing (November 7, 2026)
+
+These PRs contain useful experiments, but they are not current merge candidates. Before closing them, preserve the following restart points. Any future implementation should begin from current `main`, not from the old branch.
+
+- **Econ PR #118 — Chapter 15 elasticity Tier 3 pilot.** This was a stacked, review-only pilot containing a Chapter 15 elasticity bank, 68 legacy elasticity items placed in Tier 3/AP-style practice, answer randomization, feedback, progress tracking, accordion embedding, a standalone page, and an end-of-practice reflection. The items were intentionally legacy and unreviewed. The pilot is superseded by the current Chapter 15/16 practice-engine work. **Do not merge as-is.** If precise practice is revived, use the current practice engine and review the item bank afresh.
+- **Econ PR #130 — “Catch the Politician” Hot Text prototype.** The reusable interaction and content guardrails are preserved in [the Catch the Politician engine note](docs/CATCH-THE-POLITICIAN-ENGINE.md). The six preliminary speeches are topic prototypes, not approved instructional content. Preserve the engine pattern—multi-select sentence catching, commit/retry/navigation, diagnostic feedback, accessibility, and nonpartisan framing—but develop examples in a future focused PR.
+- **Econ PR #137 — Chapter 15 price-and-quantity-effects bank update.** Most of the underlying Chapter 15 bank has since landed through the newer practice work. The distinctive idea worth preserving is the “Which effect wins?” sorter, plus the two applied review items. The PR depended on practice-engines #26 and had no completed QA. If that activity remains desirable, rebuild it as a small, focused PR from current `main`; do not merge the stale generated bank wholesale.
+
+Closing these PRs means “defer and preserve,” not “reject the ideas.”
+
 ### Completed priorities (recorded October 31, 2026)
 
 These items are complete on `main`. They remain documented here as a record, but are no longer active priorities.
