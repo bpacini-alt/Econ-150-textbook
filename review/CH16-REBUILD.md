@@ -38,15 +38,15 @@ Checked October 31, 2026, by searching the whole book for references to Chapter 
 - [ ] **docs/APHORISM-CANDIDATE-BANK.md (low priority; Benjamin wants a better aphorism first):** records "An Objection Is Not a Veto" as an existing Ch 16 heading that "is not being deleted or changed." The heading left Ch 16 with the rebuild, and the idea now lives in Ch 12 without it. Add a note; optionally restore the phrase as a heading in Ch 12.
 
 **Optional**
-- [x] **Chapter 17:** California's paper rivers moved to "Fences and Rules" as a Case study box, with the tradable-rights fix beside the fishing quotas. Done October 31, 2026.
+- [x] **Chapter 17 (now Chapter 18, the commons):** California's paper rivers moved to "Fences and Rules" as a Case study box, with the tradable-rights fix beside the fishing quotas. Done October 31, 2026.
 - [ ] **Chapter 26:** the Ch 16 box says Ch 26 "takes this question up directly." True today; Ch 26 could add a one-line link back to Ch 16's question.
 - [x] **Ch 16 cadence pass:** four lines rewritten (Lima, the two kinds of failure, and two in the "What is prosperity for?" box). Done October 31, 2026.
 
 **Checked, no change needed**
 - [x] **Chapter 12:** done in PR #106 (merged): wedding example, harm-vs-preference paragraph, laundromat case, gentrification box.
 - [x] **Chapter 11:** Ch 16's bridge points to Ch 11 for Munger and Uber; Ch 11 covers both.
-- [x] **Chapter 17:** "Recall the four-goods grid from the last chapter" stays true.
-- [x] **Chapter 18:** "Chapter 16 taught that markets need property rights, courts, contracts, and rule of law" stays true, and Ch 18 introduces Coase on its own.
+- [x] **Chapters 17–18 swapped (November 7, 2026):** Externalities is now Chapter 17 and the commons is Chapter 18. The commons chapter now opens by revisiting Ch 16's four-goods grid, and Ch 16's forward references were updated to match.
+- [x] **Chapter 17 (externalities):** "Chapter 16 taught that markets need property rights, courts, contracts, and rule of law" stays true, and the chapter introduces Coase on its own.
 - [x] **Chapter 20:** the capstone table's "Institutions · Ch 16" row stays accurate.
 - [x] **Introduction:** the Ch 16 box cites the Liberal Synthesis, which the introduction names and defines.
 - [x] **Contents page:** no rerun needed; the title and subtitle are unchanged.
