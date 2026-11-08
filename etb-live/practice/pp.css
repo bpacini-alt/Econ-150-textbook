@@ -125,7 +125,9 @@ button:disabled { cursor: default; opacity: .55; }
 
 /* Definition Detective */
 .pp-term { font-size: 22px; font-weight: 800; padding: 10px 14px; border-radius: 10px; background: var(--pp-accent-soft); display: inline-block; margin: 6px 0 10px; }
-.pp-students { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+/* Three students side by side in one row; stacked on phones. */
+.pp-students { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 560px) { .pp-students { grid-template-columns: 1fr; } }
 .pp-student { border: 1px solid var(--pp-line); border-radius: 12px; padding: 12px; background: #fff; display: flex; flex-direction: column; gap: 8px; }
 .pp-student-id { display: flex; align-items: center; gap: 8px; color: #33556a; }
 .pp-student-answer { margin: 0; flex: 1; }
