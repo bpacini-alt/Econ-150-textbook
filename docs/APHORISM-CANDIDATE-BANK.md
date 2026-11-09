@@ -370,6 +370,33 @@ A targeted current-chapter scan checked whether any of these lines already appea
 
 **Potential thematic connection, not yet approved as one aphorism:** Behavior is a clue worth investigating; stronger upstream systems prevent many difficulties; and MTSS is the responsibility of general education, not just a downstream referral mechanism. The author has **not** decided whether to join or separate these in the eventual book. Another idea was briefly remembered but not articulated in the conversation; **do not invent it**.
 
+## Author idea inbox — November 9, 2026 (EDCOR / memory)
+
+**Status:** Three related but distinct author-proposed, unrated ideas from a reflection on an essay in a Faulkner collection. The essay title, edition, and page are not yet identified. The wording below is Benjamin's formulation or working phrasing; do not present it as a direct Faulkner quotation without checking the source. No wording or placement is approved for a chapter.
+
+### 1. “My wedding ring remembers my wedding for me.”
+
+- **Author's image:** A meaningful object can cue a memory and keep an important experience present. The wider idea includes rituals, routines, and tokens that help us remember what matters and act on it.
+- **Intellectual mechanism:** External cues can support retrieval and prospective memory: remembering an experience, commitment, or intended action when the cue appears. The meaning is associated with the person's memory; the object does not literally store the full experience or guarantee accurate recall.
+- **Working home:** **EDCOR 22, Memory**, especially its treatment of retrieval; possible application in **EDCOR 21, Executive Function & ADHD**, which already discusses predictable routines, visual cues, and external memory systems. Compare the full current chapters before choosing a home.
+- **Caution:** Keep the ring line as a vivid image, not a universal claim that tokens reliably produce memory or action. The line is a candidate, not approved wording.
+
+### 2. “If you think you are thinking, what you are thinking is thinking might merely be remembering.”
+
+- **Author's working formulation:** Sometimes an experience that feels like fresh reasoning may be the mind retrieving a familiar answer or pattern. Benjamin connects this to Daniel Willingham's account of how people avoid unnecessary mental effort; verify the relevant source and distinguish a paraphrase from a quotation before publication.
+- **Working home:** **EDCOR 22, Memory**, potentially near the discussion of retrieval practice and the difference between familiarity and durable learning. The existing chapter already warns that rereading can feel familiar without producing long-term retention; compare this candidate with the existing **“Memory is the residue of thought”** model.
+- **Caution:** Do not imply that remembering is not thinking. Retrieval is a central cognitive process; the useful distinction is between recognizing or retrieving a familiar answer and doing the reasoning a new problem requires. The current sentence is deliberately preserved as a rough draft, not polished or approved.
+
+### 3. Routines, rituals, and tokens help us remember and do what matters.
+
+- **Author's larger synthesis:** Build routines that make important actions easier to carry out without repeatedly relying on willpower. “Routines eat willpower for breakfast” is a working expression of this point; no attribution or final wording has been established.
+- **Possible home:** **EDCOR 21** may be the better fit for practical routines and executive-function supports; **EDCOR 22** may fit if the focus is prospective memory and retrieval cues. The current Chapter 21 already treats routines as reducing working-memory demands, so this may be an existing idea to refine or reinforce rather than a new chapter slot.
+- **Caution:** Routine is a support, not a guarantee; useful routines need to fit the person and remain adaptable. Keep this broader principle distinct from the ring's specific memory-cue image unless Benjamin later chooses to combine them.
+
+### Adjacent reflection — not an EDCOR claim
+
+Benjamin connected the essay's treatment of memory and tokens to the Waters of Mormon as a name that could preserve the memory of a conversion to Christ. He also recalled Nathaniel Givens's interpretation that the Book of Mormon may take its name from the conversion event at the Waters of Mormon, or that Mormon's name may itself recall that event. Benjamin explicitly treats this as an appealing possibility, **not an established historical claim**. Keep it outside EDCOR aphorism placement unless separately researched and deliberately chosen as an illustration.
+
 ---
 
 ## Research and audit follow-up
