@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–7 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated; Batch 7: three NO, two REWRITE, three MAYBE). “Nature via Nurture” is now MAYBE. No textbook edits authorized.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–7 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated; Batch 7: three NO, two REWRITE, three MAYBE). “Nature via Nurture” was MAYBE in the earlier inventory. On November 9, 2026, Benjamin explicitly approved the exact chapter placements recorded in the [decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-9-2026); all other candidates in this harvest are To Review, not No.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -386,12 +386,12 @@ A targeted current-chapter scan checked whether any of these lines already appea
 
 **Batch 8 scan:** Compared these exact phrases against current main-branch HTML in all eight relevant chapters; none appears verbatim. This is a targeted duplication/structure check, **not** exhaustive sourcing or a full prose audit. Do not edit textbook chapters before separate review and approval.
 
-## What this PR does NOT do
+## Current placement boundaries
 
-- Does **not** edit student-facing chapters, chapter hooks, existing callouts, quiz files, stylesheets, build artifacts, or course slides.
-- Does **not** claim Benjamin approved all lines or external attributions are verified.
-- Does **not** require inclusion of four per chapter; four is an **ideation bank**, not a publication quota.
-- Does **not** change the shared AGENTS.md, PROJECT-PRIORITIES.md, or REPOSITORY-HOUSEKEEPING.md conventions across repositories.
-- Does **not** resolve overlapping editorial/practice work currently in draft PRs for Chapters 13–14 in both books.
+- The November 9 approval is limited to the exact lines listed in the [decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-9-2026); it does not approve nearby alternatives.
+- Every borrowed or adapted line must identify its source and distinguish direct quotation from paraphrase or author-written synthesis. The Galbraith sentence is a short direct excerpt; the luggage sentence is a separate refrain with uncertain origin, not Galbraith's wording.
+- All remaining unselected candidates from this harvest are **To Review**, not No. Preserve earlier batch decisions as historical records.
+- Keep the per-chapter ceiling at two or three strong aphorisms; the candidate bank is not a quota.
+- Placement changes are submitted in separate reviewable pull requests. Benjamin merges.
 
-**Maintaining one working bank:** This documentation is deliberately housed in the Econ 150 repository beside the cross-book Precise Practice design. The EDCOR chapter references link to the EDCOR repository. A future small companion pointer in EDCOR can be added in its own coordinated PR if wanted; avoid maintaining two diverging copied inventories.
+**Maintaining one working bank:** This documentation is deliberately housed in the Econ 150 repository beside the cross-book Precise Practice design. The EDCOR chapter references link to the EDCOR repository; its chapter bank records the current EDCOR wording and review pile.

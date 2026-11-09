@@ -2,6 +2,30 @@
 
 **Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**; Batch 7: **three NO, two REWRITE, three MAYBE**. All recorded explicitly below. “Nature via Nurture” is now MAYBE. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
+## Decision update — November 9, 2026
+
+Benjamin approved the exact lines below for placement in this reviewable pass. This dated list is the exception to the older rule that a “YES” means wording approval only; it records explicit chapter-placement approval for these lines. Older batch statuses remain historical and unchanged.
+
+| Placement | Approved wording | Source / attribution |
+| --- | --- | --- |
+| **ECON 4** | “You can ration with prices, lines, or luck, but you will still ration.” | Author-written summary of the current chapter and study material. |
+| **ECON 6 and 14** | “Economists aren’t anti-slice. They’re pro-pie.” | Author-written line; use in both chapters with the existing distinction between total surplus and distribution. |
+| **ECON 10** | “ATC keeps score; AVC decides whether to play.” | Study-guide mnemonic; author wording. |
+| **ECON 14** | “The best way to make the world better is luggage.” | Paired with a short Galbraith excerpt. The luggage refrain's origin is uncertain; Benjamin recalls Cowen and Tabarrok, and a similar version appears in an interview with Alex Tabarrok. See the [source verification addendum](APHORISM-SOURCE-FIRST-QUARRY.md). |
+| **ECON 15** | “Elasticity = escape.” | Cowen and Tabarrok textbook mnemonic; the book passage is echoed in their [podcast transcript](https://www.mercatus.org/marginal-revolution-podcast/favorite-models-spence-monopolies-harberger-incidence-solow-growth). |
+
+## To Review — November 9, 2026
+
+- **ECON 14 — future chapter work:** Consider including Galbraith's full migration passage from the [Oxford Reference entry](https://www.oxfordreference.com/display/10.1093/acref/9780191866692.001.0001/q-oro-ed6-00018844), with its original context and a verified edition/page citation. This is flagged for a later pass and is **not** included in this placement change.
+
+To Review means pending, not rejected. Apply this status to the remaining unselected candidates from this harvest; preserve all earlier explicit YES / MAYBE / REWRITE / NO / Not rated decisions.
+
+- **ECON 4:** “Rationing never disappears; only its currency changes,” plus the other alternative price-control lines.
+- **ECON 6:** Other efficiency/equity formulations in the candidate row.
+- **ECON 14:** “Working should never be the losing choice”; “A ladder out of poverty shouldn't punish the next rung”; “Poverty is how little people have; inequality is how far apart they are”; the welfare-cliff candidate.
+- **Other chapters:** The deadweight-loss-of-Christmas gift line; “Land is fixed; space is not”; existing heading/motif candidates “Empiricism: reality gets the final vote,” “Cost as Opportunity, Tragedy, and Distraction,” and “The Market as Mirror.”
+- **EDCOR 15:** “Feeling seen is not the same as being measured.” It remains in the live chapter while pending review. Other unselected EDCOR candidates, including “Nature via Nurture,” “The Water We Swim In,” and “The Fire, Not the Pail,” remain To Review.
+
 ## ECON 150 — Unit I
 
 | Chapter | Thick concept / tempting mistake | Existing, sourced, and original lines to compare (retain alternatives) |
