@@ -3,7 +3,7 @@
   "book": "econ-150",
   "chapter": 17,
   "status": "prototype",
-  "purpose": "Four schematic stimuli for a future graph-classification activity. They isolate whether an externality comes from production or consumption and whether it is positive or negative. No equilibrium quantities, prices, policies, or welfare areas are shown.",
+  "purpose": "Eight schematic stimuli for a future graph-classification activity, with two examples from each category. They isolate whether an externality comes from production or consumption and whether it is positive or negative. No equilibrium quantities, prices, policies, or welfare areas are shown.",
   "graphs": [
     {
       "id": "A",
@@ -319,6 +319,322 @@
         "source": "consumption",
         "label": "Positive consumption",
         "reason": "Consumption creates a spillover benefit. Social benefit is above private benefit, so MSB lies above MPB."
+      }
+    },
+    {
+      "id": "E",
+      "figure": {
+        "kind": "graph",
+        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MPB above MSB.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                10,
+                8
+              ]
+            ],
+            "label": "MPC = MSC",
+            "label_at": [
+              8,
+              6.8
+            ],
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                9
+              ],
+              [
+                10,
+                4
+              ]
+            ],
+            "label": "MPB",
+            "label_at": [
+              8,
+              5
+            ],
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                7
+              ],
+              [
+                10,
+                2
+              ]
+            ],
+            "label": "MSB",
+            "label_at": [
+              8,
+              3
+            ],
+            "role": "tax"
+          }
+        ]
+      },
+      "answer": {
+        "sign": "negative",
+        "source": "consumption",
+        "label": "Negative consumption",
+        "reason": "Consumption creates spillover harm: MSB is below MPB."
+      }
+    },
+    {
+      "id": "F",
+      "figure": {
+        "kind": "graph",
+        "alt": "Two upward-sloping cost curves, MPC above MSC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                8
+              ],
+              [
+                10,
+                2
+              ]
+            ],
+            "label": "MPB = MSB",
+            "label_at": [
+              8,
+              3.2
+            ],
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                4
+              ],
+              [
+                10,
+                9
+              ]
+            ],
+            "label": "MPC",
+            "label_at": [
+              8,
+              8
+            ],
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                10,
+                7
+              ]
+            ],
+            "label": "MSC",
+            "label_at": [
+              8,
+              6
+            ],
+            "role": "tax"
+          }
+        ]
+      },
+      "answer": {
+        "sign": "positive",
+        "source": "production",
+        "label": "Positive production",
+        "reason": "Production creates a spillover benefit: MSC is below MPC."
+      }
+    },
+    {
+      "id": "G",
+      "figure": {
+        "kind": "graph",
+        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MSB above MPB.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                10,
+                8
+              ]
+            ],
+            "label": "MPC = MSC",
+            "label_at": [
+              8,
+              6.8
+            ],
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                7
+              ],
+              [
+                10,
+                2
+              ]
+            ],
+            "label": "MPB",
+            "label_at": [
+              8,
+              3
+            ],
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                9
+              ],
+              [
+                10,
+                4
+              ]
+            ],
+            "label": "MSB",
+            "label_at": [
+              8,
+              5
+            ],
+            "role": "tax"
+          }
+        ]
+      },
+      "answer": {
+        "sign": "positive",
+        "source": "consumption",
+        "label": "Positive consumption",
+        "reason": "Consumption creates spillover benefit: MSB is above MPB."
+      }
+    },
+    {
+      "id": "H",
+      "figure": {
+        "kind": "graph",
+        "alt": "Two upward-sloping cost curves, MSC above MPC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                8
+              ],
+              [
+                10,
+                2
+              ]
+            ],
+            "label": "MPB = MSB",
+            "label_at": [
+              8,
+              3.2
+            ],
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                10,
+                7
+              ]
+            ],
+            "label": "MPC",
+            "label_at": [
+              8,
+              6
+            ],
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                4
+              ],
+              [
+                10,
+                9
+              ]
+            ],
+            "label": "MSC",
+            "label_at": [
+              8,
+              8
+            ],
+            "role": "tax"
+          }
+        ]
+      },
+      "answer": {
+        "sign": "negative",
+        "source": "production",
+        "label": "Negative production",
+        "reason": "Production creates spillover harm: MSC is above MPC."
       }
     }
   ],
