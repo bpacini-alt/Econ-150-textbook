@@ -147,6 +147,19 @@ When Benjamin has approved a chapter's few strongest lines:
 **Next candidates to follow:** See the eight-item Batch 2 proposal and recorded decisions below.
 
 
+### Include every current aphorism in the review (recorded November 9, 2026)
+
+Benjamin wants every aphorism now in either book to go through this review process, including lines already published in chapters. A line being live doesn't mean it has been looked at here. Each review should cover the chapter's Worth Remembering boxes and its end-of-chapter recap.
+
+Start with the four lines that came in with the Chapter 17 and 18 rewrites of November 9, 2026, which have not been through a batch review:
+
+- EDCOR 17: "Tradition is just peer pressure from dead people."
+- EDCOR 17: "Peer culture is a design problem, not a discipline problem."
+- EDCOR 18: "Students will form tribes. Give them one worth belonging to."
+- EDCOR 18: "Every student should be seen, and every student should be needed."
+
+Benjamin isn't sure one of these has enough power yet, and he will say which.
+
 ### Recorded author decisions — Batch 1 (October 25, 2026)
 
 **Seven YES, one REWRITE.** These are editorial decisions on **specific wording**, not authorization to publish chapter edits. Source verification, placement, qualifications, and a separate previewable chapter PR still precede publication. The existing published phrases remain untouched.
