@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 17: Externality graph stimuli</title>
+<link rel="stylesheet" href="/practice/pp.css">
+<style>
+:root{color-scheme:light;--navy:#1a3a5c;--green:#2a7a4f;--ink:#1a1a1a;--muted:#5c6670;--line:#dce2e8}
+*{box-sizing:border-box}
+body{margin:0;background:#f4f6f8;color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:32px 20px 56px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:750}
+h1{font:700 clamp(28px,4vw,38px)/1.15 Georgia,"Times New Roman",serif;margin:8px 0 12px;color:var(--navy)}
+.intro{max-width:780px;margin:0;color:#34404a}
+.status{display:inline-block;margin-top:16px;padding:4px 9px;border:1px solid #d8c483;border-radius:999px;background:#fff9e8;color:#654d0d;font-size:12px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:26px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 16px 12px;box-shadow:0 2px 8px rgba(26,58,92,.045);min-width:0}
+.card h2{font-size:16px;margin:0 0 8px;color:var(--navy)}
+.pp-figure{margin:0}
+.pp-fig-grid{display:grid;grid-template-columns:repeat(var(--pp-fig-cols,1),minmax(0,1fr));gap:8px}
+.pp-fig-panel{min-width:0}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-top:18px}
+summary{font-weight:700;color:var(--navy);cursor:pointer}
+.key-rules{margin:10px 0 12px;padding-left:22px}
+.key-list{margin:0;padding-left:24px}
+.key-list li{margin:8px 0}
+.error{color:#9c2d2d;background:#fff1f1;padding:12px;border-radius:8px}
+@media(max-width:680px){main{padding:22px 14px 40px}.grid{grid-template-columns:1fr;gap:12px}.card{padding:12px}}
+</style>
+<script>
+window.PP = window.PP || {};
+window.PP.util = window.PP.util || {};
+window.PP.util.esc = function(value) {
+  return String(value).replace(/[&<>"']/g, function(ch) {
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];
+  });
+};
+</script>
+<script src="/practice/figure.js"></script>
+</head>
+<body>
+<main>
+<div class="eyebrow">Econ 150 · Chapter 17 · prototype</div>
+<h1>Four externality graphs</h1>
+<p class="intro">For each graph, classify the spillover in two ways: is it positive or negative, and does it come from production or consumption? These are schematic graphs; the curve labels and their positions carry the evidence.</p>
+<div class="status">Graph stimuli only · matching interaction not built yet</div>
+<section class="grid" id="graphs" aria-label="Four externality graph stimuli"></section>
+<p class="note">The graphs omit equilibrium quantities, numerical prices, policy wedges, and welfare areas so this first set isolates the type of externality.</p>
+<details>
+<summary>Show instructor key and classification rules</summary>
+<ul class="key-rules">
+<li>Production: compare MSC with MPC. MSC above MPC means negative; MSC below MPC means positive.</li>
+<li>Consumption: compare MSB with MPB. MSB above MPB means positive; MSB below MPB means negative.</li>
+</ul>
+<ol class="key-list" id="answer-key"></ol>
+</details>
+<div id="load-error" aria-live="polite"></div>
+</main>
+<script>
+function esc(value){return window.PP.util.esc(value);}
+fetch("./externality-type-graphs.json").then(function(response){if(!response.ok)throw new Error("Could not load graph data.");return response.json();}).then(function(data){
+  var holder=document.getElementById("graphs"), key=document.getElementById("answer-key");
+  data.graphs.forEach(function(item){
+    var card=document.createElement("article");
+    card.className="card";
+    card.innerHTML="<h2>Graph "+esc(item.id)+"</h2>"+window.PP.figure(item.figure);
+    holder.appendChild(card);
+    var row=document.createElement("li");
+    row.innerHTML="<strong>"+esc(item.answer.label)+":</strong> "+esc(item.answer.reason);
+    key.appendChild(row);
+  });
+}).catch(function(error){
+  var box=document.getElementById("load-error");
+  box.className="error";
+  box.textContent=error.message;
+});
+</script>
+</body>
+</html>
