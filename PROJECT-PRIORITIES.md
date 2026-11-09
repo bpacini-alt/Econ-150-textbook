@@ -166,6 +166,28 @@ Current working direction: explore student-choice practice with optional test-ou
 
 The immediate goal is not to standardize every chapter. It is to learn from a few careful pilots, then decide what deserves to scale.
 
+### Priority 2 companion — Standard retrieval practice (both books, recorded November 9, 2026)
+
+**Benjamin's direction:** This is important to tackle in both books. Optimize for quality of recall: students recall over and over again. Keep it simple, clear, and direct.
+
+**The problem:** Many Retrieval Practice boxes are really quick application checks. Those are useful, but they serve a different purpose from recalling an idea from memory.
+
+**The work:**
+
+1. Create one standard form for both books. Benjamin approves it after seeing it in one chapter from each book.
+2. Apply it to every chapter in both books.
+3. Keep good application questions, labeled as Quick Checks, so they aren't lost.
+4. Build in repeated recall, so students meet the same ideas again later in the chapter and in later chapters.
+
+**Starting draft of the form (not yet approved):**
+
+- **Name it:** "What is the word for ___?"
+- **Explain it:** "Explain in your own words the meaning of ___."
+- Students answer from memory first, then open the answer.
+- Each prompt asks for one idea.
+
+**Related:** The audio player item under "Known problems" (try first, pause, then hear the answer) should use the same form.
+
 ### Priority 2 — Make every chapter practice-rich
 
 Over time, make chapters more active and practice-rich through retrieval, explanation, application, feedback, and transfer. The exact design remains an open question; see the [Precise Practice design notebook](docs/PRECISE-PRACTICE-DESIGN.md) for deliberate brainstorming and prototype ideas.
