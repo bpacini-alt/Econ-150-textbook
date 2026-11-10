@@ -6,8 +6,8 @@
  * curve is solid, and a shift has an arrow from old to new.
  *
  * Spec (one graph):
- *   {kind:"graph", alt, title?, x:{label, max, min?}, y:{label, max, min?},
- *    lines:[{points:[[x,y],...], label?, label_at?:[x,y], role?, style?}],
+ *   {kind:"graph", alt, title?, label_mode?:"edge", x:{label, max, min?}, y:{label, max, min?},
+ *    lines:[{points:[[x,y],...], label?, label_at?:[x,y], label_dx?:px, label_dy?:px, label_anchor?:"start"|"middle"|"end", role?, style?}],
  *    points:[{at:[x,y], label?}],
  *    guides:[{at:[x,y], x_label?, y_label?}],   dotted drops to both axes
  *    areas:[{polygon:[[x,y],...], label?, role?}],
@@ -20,14 +20,16 @@
 (function (PP) {
   "use strict";
   const { esc } = PP.util;
-  const L = 46, R = 22, T = 30, B = 44;
+  const L = 46, B = 44;
   const COLORS = { demand: "#1a3a5c", supply: "#a33030", tax: "#b7791f", neutral: "#33556a" };
   const AREA = { neutral: "rgba(25,117,155,.16)", dwl: "rgba(163,48,48,.18)", buyer: "rgba(26,58,92,.16)", seller: "rgba(183,121,31,.2)" };
 
   // Full size for graphs with numbers to read; a smaller canvas (so the same
   // font sizes stay readable two to a row on a phone) for shape-only panels.
   function one(g, idPrefix, compact) {
-    const W = compact ? 210 : 360, H = compact ? 180 : 270;
+    const edgeLabels = g.label_mode === "edge";
+    const W = compact ? 210 : (edgeLabels ? 450 : 360), H = compact ? 180 : 270;
+    const T = 30, R = edgeLabels ? 112 : 22;
     const xmin = g.x.min || 0, ymin = g.y.min || 0;
     const sx = (x) => L + ((x - xmin) / (g.x.max - xmin)) * (W - L - R);
     const sy = (y) => H - B - ((y - ymin) / (g.y.max - ymin)) * (H - T - B);
@@ -56,9 +58,16 @@
       s += '<polyline points="' + ln.points.map(([x, y]) => fmt(sx(x)) + "," + fmt(sy(y))).join(" ") + '" fill="none" stroke="' + c + '" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"' + (ln.style === "dotted" ? ' stroke-dasharray="2 7"' : "") + "></polyline>";
       if (ln.label) {
         const at = ln.label_at || ln.points[ln.points.length - 1];
-        // Keep the label inside the canvas: flip it to the left of the end if it would run off.
-        const lx = sx(at[0]) + 6, fits = lx + ln.label.length * 9 <= W - 2;
-        s += '<text x="' + fmt(fits ? lx : sx(at[0]) - 10) + '" y="' + fmt(sy(at[1]) - (fits ? 6 : 10)) + '"' + (fits ? "" : ' text-anchor="end"') + ' font-size="15" font-weight="700" fill="' + c + '">' + esc(ln.label) + "</text>";
+        if (edgeLabels) {
+          s += '<text x="' + fmt(sx(at[0]) + 4) + '" y="' + fmt(sy(at[1]) + 3) + '" text-anchor="start" font-size="12" font-weight="700" fill="' + c + '">' + esc(ln.label) + "</text>";
+        } else {
+          // Explicit pixel offsets and anchoring keep labels beside individual curves.
+          const defaultX = sx(at[0]) + 6, fits = defaultX + ln.label.length * 9 <= W - 2;
+          const dx = Number.isFinite(ln.label_dx) ? ln.label_dx : (fits ? 6 : -10);
+          const dy = Number.isFinite(ln.label_dy) ? ln.label_dy : (fits ? -6 : -10);
+          const anchor = ["start", "middle", "end"].includes(ln.label_anchor) ? ln.label_anchor : (fits ? "start" : "end");
+          s += '<text x="' + fmt(sx(at[0]) + dx) + '" y="' + fmt(sy(at[1]) + dy) + '" text-anchor="' + anchor + '" font-size="15" font-weight="700" fill="' + c + '">' + esc(ln.label) + "</text>";
+        }
       }
     }
     for (const a of g.arrows || []) {
