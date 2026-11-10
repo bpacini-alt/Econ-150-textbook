@@ -3,7 +3,7 @@
   "book": "econ-150",
   "chapter": 17,
   "status": "prototype",
-  "purpose": "Eight schematic graph stimuli for review of a scaffolded Chapter 17 activity. There are two examples per type. The proposed ladder separates the meaning of positive/negative from graph source, combines the classifications, then asks students to explain the social/private curve relationship and market outcome.",
+  "purpose": "Twelve schematic graph stimuli for review of a scaffolded Chapter 17 activity, with three examples from each externality type. The proposed ladder separates the meaning of positive/negative from graph source, combines the classifications, then asks students to explain the social/private curve relationship and market outcome.",
   "graphs": [
     {
       "id": "A",
@@ -563,6 +563,286 @@
         "reason": "A production spillover harms others. MSC (S2) lies above MPC (S1), so the market produces too much.",
         "curve_evidence": "MSC (S2) lies above MPC (S1).",
         "market_outcome": "The market produces too much."
+      }
+    },
+    {
+      "id": "I",
+      "figure": {
+        "kind": "graph",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) slope down in parallel; D2 lies above D1.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                1.5
+              ],
+              [
+                10,
+                8.5
+              ]
+            ],
+            "label": "S / MPC = MSC",
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                7.5
+              ],
+              [
+                10,
+                2.5
+              ]
+            ],
+            "label": "D1 / MPB",
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                9
+              ],
+              [
+                10,
+                4
+              ]
+            ],
+            "label": "D2 / MSB",
+            "role": "tax"
+          }
+        ],
+        "label_mode": "edge"
+      },
+      "answer": {
+        "sign": "positive",
+        "source": "consumption",
+        "label": "Positive consumption",
+        "curve_evidence": "MSB (D2) lies above MPB (D1).",
+        "market_outcome": "The market consumes too little.",
+        "reason": "A consumption spillover benefits others. MSB (D2) lies above MPB (D1). The market consumes too little."
+      }
+    },
+    {
+      "id": "J",
+      "figure": {
+        "kind": "graph",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) slope up in parallel; S2 lies below S1.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                8.5
+              ],
+              [
+                10,
+                1.5
+              ]
+            ],
+            "label": "D / MPB = MSB",
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                3
+              ],
+              [
+                10,
+                8
+              ]
+            ],
+            "label": "S1 / MPC",
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                1.5
+              ],
+              [
+                10,
+                6.5
+              ]
+            ],
+            "label": "S2 / MSC",
+            "role": "tax"
+          }
+        ],
+        "label_mode": "edge"
+      },
+      "answer": {
+        "sign": "positive",
+        "source": "production",
+        "label": "Positive production",
+        "curve_evidence": "MSC (S2) lies below MPC (S1).",
+        "market_outcome": "The market produces too little.",
+        "reason": "A production spillover benefits others. MSC (S2) lies below MPC (S1). The market produces too little."
+      }
+    },
+    {
+      "id": "K",
+      "figure": {
+        "kind": "graph",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) slope down in parallel; D1 lies above D2.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                1.5
+              ],
+              [
+                10,
+                8.5
+              ]
+            ],
+            "label": "S / MPC = MSC",
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                8.5
+              ],
+              [
+                10,
+                3.5
+              ]
+            ],
+            "label": "D1 / MPB",
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                6.5
+              ],
+              [
+                10,
+                1.5
+              ]
+            ],
+            "label": "D2 / MSB",
+            "role": "tax"
+          }
+        ],
+        "label_mode": "edge"
+      },
+      "answer": {
+        "sign": "negative",
+        "source": "consumption",
+        "label": "Negative consumption",
+        "curve_evidence": "MSB (D2) lies below MPB (D1).",
+        "market_outcome": "The market consumes too much.",
+        "reason": "A consumption spillover harms others. MSB (D2) lies below MPB (D1). The market consumes too much."
+      }
+    },
+    {
+      "id": "L",
+      "figure": {
+        "kind": "graph",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) slope up in parallel; S2 lies above S1.",
+        "x": {
+          "label": "Quantity",
+          "min": 0,
+          "max": 10
+        },
+        "y": {
+          "label": "Price per unit",
+          "min": 0,
+          "max": 10
+        },
+        "lines": [
+          {
+            "points": [
+              [
+                0,
+                9
+              ],
+              [
+                10,
+                2
+              ]
+            ],
+            "label": "D / MPB = MSB",
+            "role": "demand"
+          },
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                10,
+                6.5
+              ]
+            ],
+            "label": "S1 / MPC",
+            "role": "supply"
+          },
+          {
+            "points": [
+              [
+                0,
+                4
+              ],
+              [
+                10,
+                8.5
+              ]
+            ],
+            "label": "S2 / MSC",
+            "role": "tax"
+          }
+        ],
+        "label_mode": "edge"
+      },
+      "answer": {
+        "sign": "negative",
+        "source": "production",
+        "label": "Negative production",
+        "curve_evidence": "MSC (S2) lies above MPC (S1).",
+        "market_outcome": "The market produces too much.",
+        "reason": "A production spillover harms others. MSC (S2) lies above MPC (S1). The market produces too much."
       }
     }
   ],
