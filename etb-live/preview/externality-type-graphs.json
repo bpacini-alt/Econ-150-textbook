@@ -33,14 +33,7 @@
               ]
             ],
             "label": "D / MPB = MSB",
-            "label_at": [
-              8.5,
-              2.2
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -54,14 +47,7 @@
               ]
             ],
             "label": "S1 / MPC",
-            "label_at": [
-              8.5,
-              8.1
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -75,16 +61,10 @@
               ]
             ],
             "label": "S2 / MSC",
-            "label_at": [
-              8.5,
-              6.1
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "positive",
@@ -123,14 +103,7 @@
               ]
             ],
             "label": "S / MPC = MSC",
-            "label_at": [
-              8.5,
-              7.8
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -144,14 +117,7 @@
               ]
             ],
             "label": "D1 / MPB",
-            "label_at": [
-              8.5,
-              3.9000000000000004
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -165,16 +131,10 @@
               ]
             ],
             "label": "D2 / MSB",
-            "label_at": [
-              8.5,
-              1.9000000000000004
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "negative",
@@ -213,14 +173,7 @@
               ]
             ],
             "label": "D / MPB = MSB",
-            "label_at": [
-              8.5,
-              2.2
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -234,14 +187,7 @@
               ]
             ],
             "label": "S1 / MPC",
-            "label_at": [
-              8.5,
-              6.1
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -255,16 +201,10 @@
               ]
             ],
             "label": "S2 / MSC",
-            "label_at": [
-              8.5,
-              8.1
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "negative",
@@ -303,14 +243,7 @@
               ]
             ],
             "label": "S / MPC = MSC",
-            "label_at": [
-              8.5,
-              7.8
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -324,14 +257,7 @@
               ]
             ],
             "label": "D1 / MPB",
-            "label_at": [
-              8.5,
-              1.9000000000000004
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -345,16 +271,10 @@
               ]
             ],
             "label": "D2 / MSB",
-            "label_at": [
-              8.5,
-              3.9000000000000004
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "positive",
@@ -393,14 +313,7 @@
               ]
             ],
             "label": "S / MPC = MSC",
-            "label_at": [
-              8.5,
-              7.1
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -414,14 +327,7 @@
               ]
             ],
             "label": "D1 / MPB",
-            "label_at": [
-              8.5,
-              4.75
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -435,16 +341,10 @@
               ]
             ],
             "label": "D2 / MSB",
-            "label_at": [
-              8.5,
-              2.75
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "negative",
@@ -483,14 +383,7 @@
               ]
             ],
             "label": "D / MPB = MSB",
-            "label_at": [
-              8.5,
-              2.9000000000000004
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -504,14 +397,7 @@
               ]
             ],
             "label": "S1 / MPC",
-            "label_at": [
-              8.5,
-              8.25
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -525,16 +411,10 @@
               ]
             ],
             "label": "S2 / MSC",
-            "label_at": [
-              8.5,
-              6.25
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "positive",
@@ -573,14 +453,7 @@
               ]
             ],
             "label": "S / MPC = MSC",
-            "label_at": [
-              8.5,
-              7.1
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -594,14 +467,7 @@
               ]
             ],
             "label": "D1 / MPB",
-            "label_at": [
-              8.5,
-              2.75
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -615,16 +481,10 @@
               ]
             ],
             "label": "D2 / MSB",
-            "label_at": [
-              8.5,
-              4.75
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "positive",
@@ -663,14 +523,7 @@
               ]
             ],
             "label": "D / MPB = MSB",
-            "label_at": [
-              8.5,
-              2.9000000000000004
-            ],
-            "role": "demand",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": 18
+            "role": "demand"
           },
           {
             "points": [
@@ -684,14 +537,7 @@
               ]
             ],
             "label": "S1 / MPC",
-            "label_at": [
-              8.5,
-              6.25
-            ],
-            "role": "supply",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "supply"
           },
           {
             "points": [
@@ -705,16 +551,10 @@
               ]
             ],
             "label": "S2 / MSC",
-            "label_at": [
-              8.5,
-              8.25
-            ],
-            "role": "tax",
-            "label_anchor": "end",
-            "label_dx": -10,
-            "label_dy": -18
+            "role": "tax"
           }
-        ]
+        ],
+        "label_mode": "legend"
       },
       "answer": {
         "sign": "negative",
