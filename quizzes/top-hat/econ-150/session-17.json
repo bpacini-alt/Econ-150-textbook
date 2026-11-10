@@ -9,21 +9,36 @@
       "slot": "vocab",
       "source": "Ch 17 essential vocabulary",
       "stem": "What is the word for a cost or benefit that falls on someone outside the deal between a buyer and a seller?",
-      "choices": ["Opportunity cost", "Deadweight loss", "Externality", "Transaction cost"],
+      "choices": [
+        "Opportunity cost",
+        "Deadweight loss",
+        "Externality",
+        "Transaction cost"
+      ],
       "answer": 2
     },
     {
       "slot": "vocab",
       "source": "Ch 17 essential vocabulary (MSC)",
       "stem": "What is the term for the full cost to society of making one more unit, counting both the producer's own cost and the harm to others?",
-      "choices": ["Marginal private cost", "Marginal social cost", "Marginal external cost", "Average total cost"],
+      "choices": [
+        "Marginal private cost",
+        "Marginal social cost",
+        "Marginal external cost",
+        "Average total cost"
+      ],
       "answer": 1
     },
     {
       "slot": "vocab",
       "source": "Ch 17 four types of externalities (new example)",
       "stem": "Your neighbor keeps bees to sell honey, and the bees also pollinate the fruit trees in your yard. What kind of externality is this?",
-      "choices": ["Negative production externality", "Positive consumption externality", "Negative consumption externality", "Positive production externality"],
+      "choices": [
+        "Negative production externality",
+        "Positive consumption externality",
+        "Negative consumption externality",
+        "Positive production externality"
+      ],
       "answer": 3
     },
     {
@@ -52,9 +67,14 @@
     },
     {
       "slot": "anchor",
-      "source": "Parallel to Market Failures common quiz Group 6.1 #20-21 (paper mills); Ch 17 DWL shortcut and 'DWL is not the damage' misconception",
-      "stem": "Runoff from a chemical plant does $15 of damage downstream for every ton the plant makes. The market produces 120 tons a week, but the efficient quantity is 90 tons. What is the deadweight loss each week?",
-      "choices": ["$450", "$225", "$1,800", "$1,350"],
+      "source": "Parallel to Market Failures common quiz Group 6.1 #10-11 (D2 - D1 measures external benefit; market underproduces by Qv - Qu)",
+      "stem": "Homeowners who plant shade trees also cool and brighten the street for their neighbors. In one town, homeowners plant 300 trees a year on their own, but counting the benefit to neighbors, the efficient number is 380. On a graph with private demand D1 and social benefit D2, which statement is correct?",
+      "choices": [
+        "The market overproduces by 80 trees, and the external benefit of each tree is D2 + D1",
+        "The market underproduces by 80 trees, and the external benefit of each tree is D2 − D1",
+        "The market underproduces by 80 trees, and the external benefit of each tree is the height of D2",
+        "The market overproduces by 80 trees, and the external cost of each tree is D2 − D1"
+      ],
       "answer": 1
     },
     {
@@ -97,7 +117,10 @@
       "slot": "prep",
       "source": "Fixed final question; credit for either answer (set in Top Hat after import)",
       "stem": "Did you fully prepare for class today?",
-      "choices": ["Yes", "No"],
+      "choices": [
+        "Yes",
+        "No"
+      ],
       "answer": 0
     }
   ]
