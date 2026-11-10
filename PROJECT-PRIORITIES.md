@@ -357,6 +357,7 @@ These items are paused on purpose. Each needs a careful read or a decision, not 
 **Both books:**
 
 - **Practice and assessment documentation (Econ #69/#63; EDCOR #58).** These are being reorganized into one deliberate-brainstorming design notebook plus a separate candidate reading-check workflow. Leave the Econ 15 Tayleigh and Econ 16 Benjamin pilots unchanged.
+  **Update November 10, 2026:** the reading-check workflow is no longer a candidate. Benjamin set a ten-question class quiz standard for Top Hat in both courses (`READING-CHECK-QUIZ-QTI-WORKFLOW.md`, builder in `quizzes/top-hat/`). First pilot: Econ 150 Session 17.
 - **Read answers aloud after a pause** (under Deferred structural revisions below). Benjamin likes the direction but sees it as a bigger change to think through before approving wording and pause lengths.
 
 ## Deferred structural revisions
