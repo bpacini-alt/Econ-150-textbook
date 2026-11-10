@@ -3,7 +3,7 @@
   "book": "econ-150",
   "chapter": 17,
   "status": "prototype",
-  "purpose": "Eight schematic stimuli for a future graph-classification activity, with two examples from each category. They isolate whether an externality comes from production or consumption and whether it is positive or negative. No equilibrium quantities, prices, policies, or welfare areas are shown.",
+  "purpose": "Eight schematic graph stimuli for review of a scaffolded Chapter 17 activity. There are two examples per type. The proposed ladder separates the meaning of positive/negative from graph source, combines the classifications, then asks students to explain the social/private curve relationship and market outcome.",
   "graphs": [
     {
       "id": "A",
@@ -90,7 +90,9 @@
         "sign": "positive",
         "source": "production",
         "label": "Positive production",
-        "reason": "Production creates a spillover benefit. That lowers social cost relative to private cost, so MSC lies below MPC."
+        "reason": "A production spillover benefits others. MSC (S2) lies below MPC (S1), so the market produces too little.",
+        "curve_evidence": "MSC (S2) lies below MPC (S1).",
+        "market_outcome": "The market produces too little."
       }
     },
     {
@@ -178,7 +180,9 @@
         "sign": "negative",
         "source": "consumption",
         "label": "Negative consumption",
-        "reason": "Consumption creates a spillover harm. Social benefit is below private benefit, so MSB lies below MPB."
+        "reason": "A consumption spillover harms others. MSB (D2) lies below MPB (D1), so the market consumes too much.",
+        "curve_evidence": "MSB (D2) lies below MPB (D1).",
+        "market_outcome": "The market consumes too much."
       }
     },
     {
@@ -266,7 +270,9 @@
         "sign": "negative",
         "source": "production",
         "label": "Negative production",
-        "reason": "Production creates a spillover harm. Social cost is above private cost, so MSC lies above MPC."
+        "reason": "A production spillover harms others. MSC (S2) lies above MPC (S1), so the market produces too much.",
+        "curve_evidence": "MSC (S2) lies above MPC (S1).",
+        "market_outcome": "The market produces too much."
       }
     },
     {
@@ -354,7 +360,9 @@
         "sign": "positive",
         "source": "consumption",
         "label": "Positive consumption",
-        "reason": "Consumption creates a spillover benefit. Social benefit is above private benefit, so MSB lies above MPB."
+        "reason": "A consumption spillover benefits others. MSB (D2) lies above MPB (D1), so the market consumes too little.",
+        "curve_evidence": "MSB (D2) lies above MPB (D1).",
+        "market_outcome": "The market consumes too little."
       }
     },
     {
@@ -442,7 +450,9 @@
         "sign": "negative",
         "source": "consumption",
         "label": "Negative consumption",
-        "reason": "Consumption creates spillover harm: MSB is below MPB."
+        "reason": "A consumption spillover harms others. MSB (D2) lies below MPB (D1), so the market consumes too much.",
+        "curve_evidence": "MSB (D2) lies below MPB (D1).",
+        "market_outcome": "The market consumes too much."
       }
     },
     {
@@ -530,7 +540,9 @@
         "sign": "positive",
         "source": "production",
         "label": "Positive production",
-        "reason": "Production creates a spillover benefit: MSC is below MPC."
+        "reason": "A production spillover benefits others. MSC (S2) lies below MPC (S1), so the market produces too little.",
+        "curve_evidence": "MSC (S2) lies below MPC (S1).",
+        "market_outcome": "The market produces too little."
       }
     },
     {
@@ -618,7 +630,9 @@
         "sign": "positive",
         "source": "consumption",
         "label": "Positive consumption",
-        "reason": "Consumption creates spillover benefit: MSB is above MPB."
+        "reason": "A consumption spillover benefits others. MSB (D2) lies above MPB (D1), so the market consumes too little.",
+        "curve_evidence": "MSB (D2) lies above MPB (D1).",
+        "market_outcome": "The market consumes too little."
       }
     },
     {
@@ -706,7 +720,9 @@
         "sign": "negative",
         "source": "production",
         "label": "Negative production",
-        "reason": "Production creates spillover harm: MSC is above MPC."
+        "reason": "A production spillover harms others. MSC (S2) lies above MPC (S1), so the market produces too much.",
+        "curve_evidence": "MSC (S2) lies above MPC (S1).",
+        "market_outcome": "The market produces too much."
       }
     }
   ],
