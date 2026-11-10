@@ -64,7 +64,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "positive",
@@ -134,7 +134,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "negative",
@@ -204,7 +204,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "negative",
@@ -274,7 +274,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "positive",
@@ -344,7 +344,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "negative",
@@ -414,7 +414,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "positive",
@@ -484,7 +484,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "positive",
@@ -554,7 +554,7 @@
             "role": "tax"
           }
         ],
-        "label_mode": "legend"
+        "label_mode": "edge"
       },
       "answer": {
         "sign": "negative",

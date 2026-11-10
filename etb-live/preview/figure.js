@@ -7,7 +7,7 @@
  * curve is solid, and a shift has an arrow from old to new.
  *
  * Spec (one graph):
- *   {kind:"graph", alt, title?, label_mode?:"legend", x:{label, max, min?}, y:{label, max, min?},
+ *   {kind:"graph", alt, title?, label_mode?:"edge", x:{label, max, min?}, y:{label, max, min?},
  *    lines:[{points:[[x,y],...], label?, label_at?:[x,y], label_dx?:px, label_dy?:px, label_anchor?:"start"|"middle"|"end", role?, style?}],
  *    points:[{at:[x,y], label?}],
  *    guides:[{at:[x,y], x_label?, y_label?}],   dotted drops to both axes
@@ -21,16 +21,16 @@
 (function (PP) {
   "use strict";
   const { esc } = PP.util;
-  const L = 46, R = 22, B = 44;
+  const L = 46, B = 44;
   const COLORS = { demand: "#1a3a5c", supply: "#a33030", tax: "#b7791f", neutral: "#33556a" };
   const AREA = { neutral: "rgba(25,117,155,.16)", dwl: "rgba(163,48,48,.18)", buyer: "rgba(26,58,92,.16)", seller: "rgba(183,121,31,.2)" };
 
   // Full size for graphs with numbers to read; a smaller canvas (so the same
   // font sizes stay readable two to a row on a phone) for shape-only panels.
   function one(g, idPrefix, compact) {
-    const legend = g.label_mode === "legend";
-    const W = compact ? 210 : 360, H = compact ? (legend ? 200 : 180) : (legend ? 300 : 270);
-    const T = legend ? 50 : 30;
+    const edgeLabels = g.label_mode === "edge";
+    const W = compact ? 210 : (edgeLabels ? 450 : 360), H = compact ? 180 : 270;
+    const T = 30, R = edgeLabels ? 112 : 22;
     const xmin = g.x.min || 0, ymin = g.y.min || 0;
     const sx = (x) => L + ((x - xmin) / (g.x.max - xmin)) * (W - L - R);
     const sy = (y) => H - B - ((y - ymin) / (g.y.max - ymin)) * (H - T - B);
@@ -54,30 +54,21 @@
       if (gd.x_label) s += '<text x="' + fmt(sx(x)) + '" y="' + (H - B + 18) + '" text-anchor="middle" font-size="14" fill="#21313e">' + esc(gd.x_label) + "</text>";
       if (gd.y_label) s += '<text x="' + (L - 6) + '" y="' + fmt(sy(y) + 5) + '" text-anchor="end" font-size="14" fill="#21313e">' + esc(gd.y_label) + "</text>";
     }
-    const legendItems = [];
     for (const ln of g.lines || []) {
       const c = COLORS[ln.role] || COLORS.neutral;
       s += '<polyline points="' + ln.points.map(([x, y]) => fmt(sx(x)) + "," + fmt(sy(y))).join(" ") + '" fill="none" stroke="' + c + '" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"' + (ln.style === "dotted" ? ' stroke-dasharray="2 7"' : "") + "></polyline>";
       if (ln.label) {
-        if (legend) {
-          legendItems.push({ label: ln.label, color: c });
+        const at = ln.label_at || ln.points[ln.points.length - 1];
+        if (edgeLabels) {
+          s += '<text x="' + fmt(sx(at[0]) + 4) + '" y="' + fmt(sy(at[1]) + 3) + '" text-anchor="start" font-size="12" font-weight="700" fill="' + c + '">' + esc(ln.label) + "</text>";
         } else {
-          const at = ln.label_at || ln.points[ln.points.length - 1];
-          // Explicit pixel offsets and anchoring keep longer labels beside, not on, a curve.
+          // Explicit pixel offsets and anchoring keep labels beside individual curves.
           const defaultX = sx(at[0]) + 6, fits = defaultX + ln.label.length * 9 <= W - 2;
           const dx = Number.isFinite(ln.label_dx) ? ln.label_dx : (fits ? 6 : -10);
           const dy = Number.isFinite(ln.label_dy) ? ln.label_dy : (fits ? -6 : -10);
           const anchor = ["start", "middle", "end"].includes(ln.label_anchor) ? ln.label_anchor : (fits ? "start" : "end");
           s += '<text x="' + fmt(sx(at[0]) + dx) + '" y="' + fmt(sy(at[1]) + dy) + '" text-anchor="' + anchor + '" font-size="15" font-weight="700" fill="' + c + '">' + esc(ln.label) + "</text>";
         }
-      }
-    }
-    if (legend && legendItems.length) {
-      let lx = L;
-      for (const item of legendItems) {
-        s += '<line x1="' + lx + '" y1="20" x2="' + (lx + 12) + '" y2="20" stroke="' + item.color + '" stroke-width="3"></line>';
-        s += '<text x="' + (lx + 16) + '" y="24" font-size="12" font-weight="700" fill="' + item.color + '">' + esc(item.label) + "</text>";
-        lx += 24 + item.label.length * 7.7;
       }
     }
     for (const a of g.arrows || []) {
