@@ -9,7 +9,7 @@
       "id": "A",
       "figure": {
         "kind": "graph",
-        "alt": "Two upward-sloping cost curves, MPC above MSC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) are parallel; S1 lies above S2.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -32,12 +32,15 @@
                 1
               ]
             ],
-            "label": "MPB = MSB",
+            "label": "D / MPB = MSB",
             "label_at": [
-              8,
-              2.6
+              8.5,
+              2.2
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -50,12 +53,15 @@
                 9
               ]
             ],
-            "label": "MPC",
+            "label": "S1 / MPC",
             "label_at": [
-              8,
-              7.8
+              8.5,
+              8.1
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -68,12 +74,15 @@
                 7
               ]
             ],
-            "label": "MSC",
+            "label": "S2 / MSC",
             "label_at": [
-              8,
-              5.8
+              8.5,
+              6.1
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           }
         ]
       },
@@ -88,7 +97,7 @@
       "id": "B",
       "figure": {
         "kind": "graph",
-        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MPB above MSB.",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) are parallel; D1 lies above D2.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -111,12 +120,15 @@
                 9
               ]
             ],
-            "label": "MPC = MSC",
+            "label": "S / MPC = MSC",
             "label_at": [
-              8,
-              7.4
+              8.5,
+              7.8
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -129,12 +141,15 @@
                 3
               ]
             ],
-            "label": "MPB",
+            "label": "D1 / MPB",
             "label_at": [
-              8,
-              4.2
+              8.5,
+              3.9000000000000004
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -147,12 +162,15 @@
                 1
               ]
             ],
-            "label": "MSB",
+            "label": "D2 / MSB",
             "label_at": [
-              8,
-              2.2
+              8.5,
+              1.9000000000000004
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           }
         ]
       },
@@ -167,7 +185,7 @@
       "id": "C",
       "figure": {
         "kind": "graph",
-        "alt": "Two upward-sloping cost curves, MSC above MPC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) are parallel; S2 lies above S1.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -190,12 +208,15 @@
                 1
               ]
             ],
-            "label": "MPB = MSB",
+            "label": "D / MPB = MSB",
             "label_at": [
-              8,
-              2.6
+              8.5,
+              2.2
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -208,12 +229,15 @@
                 7
               ]
             ],
-            "label": "MPC",
+            "label": "S1 / MPC",
             "label_at": [
-              8,
-              5.8
+              8.5,
+              6.1
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -226,12 +250,15 @@
                 9
               ]
             ],
-            "label": "MSC",
+            "label": "S2 / MSC",
             "label_at": [
-              8,
-              7.8
+              8.5,
+              8.1
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           }
         ]
       },
@@ -246,7 +273,7 @@
       "id": "D",
       "figure": {
         "kind": "graph",
-        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MSB above MPB.",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) are parallel; D2 lies above D1.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -269,12 +296,15 @@
                 9
               ]
             ],
-            "label": "MPC = MSC",
+            "label": "S / MPC = MSC",
             "label_at": [
-              8,
-              7.4
+              8.5,
+              7.8
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -287,12 +317,15 @@
                 1
               ]
             ],
-            "label": "MPB",
+            "label": "D1 / MPB",
             "label_at": [
-              8,
-              2.2
+              8.5,
+              1.9000000000000004
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -305,12 +338,15 @@
                 3
               ]
             ],
-            "label": "MSB",
+            "label": "D2 / MSB",
             "label_at": [
-              8,
-              4.2
+              8.5,
+              3.9000000000000004
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           }
         ]
       },
@@ -325,7 +361,7 @@
       "id": "E",
       "figure": {
         "kind": "graph",
-        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MPB above MSB.",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) are parallel; D1 lies above D2.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -348,12 +384,15 @@
                 8
               ]
             ],
-            "label": "MPC = MSC",
+            "label": "S / MPC = MSC",
             "label_at": [
-              8,
-              6.8
+              8.5,
+              7.1
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -366,12 +405,15 @@
                 4
               ]
             ],
-            "label": "MPB",
+            "label": "D1 / MPB",
             "label_at": [
-              8,
-              5
+              8.5,
+              4.75
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -384,12 +426,15 @@
                 2
               ]
             ],
-            "label": "MSB",
+            "label": "D2 / MSB",
             "label_at": [
-              8,
-              3
+              8.5,
+              2.75
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           }
         ]
       },
@@ -404,7 +449,7 @@
       "id": "F",
       "figure": {
         "kind": "graph",
-        "alt": "Two upward-sloping cost curves, MPC above MSC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) are parallel; S1 lies above S2.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -427,12 +472,15 @@
                 2
               ]
             ],
-            "label": "MPB = MSB",
+            "label": "D / MPB = MSB",
             "label_at": [
-              8,
-              3.2
+              8.5,
+              2.9000000000000004
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -445,12 +493,15 @@
                 9
               ]
             ],
-            "label": "MPC",
+            "label": "S1 / MPC",
             "label_at": [
-              8,
-              8
+              8.5,
+              8.25
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -463,12 +514,15 @@
                 7
               ]
             ],
-            "label": "MSC",
+            "label": "S2 / MSC",
             "label_at": [
-              8,
-              6
+              8.5,
+              6.25
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           }
         ]
       },
@@ -483,7 +537,7 @@
       "id": "G",
       "figure": {
         "kind": "graph",
-        "alt": "One upward-sloping cost curve labeled MPC = MSC, and two downward-sloping benefit curves, MSB above MPB.",
+        "alt": "Supply curve S is MPC = MSC. Demand-benefit curves D1 (MPB) and D2 (MSB) are parallel; D2 lies above D1.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -506,12 +560,15 @@
                 8
               ]
             ],
-            "label": "MPC = MSC",
+            "label": "S / MPC = MSC",
             "label_at": [
-              8,
-              6.8
+              8.5,
+              7.1
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -524,12 +581,15 @@
                 2
               ]
             ],
-            "label": "MPB",
+            "label": "D1 / MPB",
             "label_at": [
-              8,
-              3
+              8.5,
+              2.75
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -542,12 +602,15 @@
                 4
               ]
             ],
-            "label": "MSB",
+            "label": "D2 / MSB",
             "label_at": [
-              8,
-              5
+              8.5,
+              4.75
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           }
         ]
       },
@@ -562,7 +625,7 @@
       "id": "H",
       "figure": {
         "kind": "graph",
-        "alt": "Two upward-sloping cost curves, MSC above MPC, and one downward-sloping benefit curve labeled MPB = MSB.",
+        "alt": "Demand curve D is MPB = MSB. Supply-cost curves S1 (MPC) and S2 (MSC) are parallel; S2 lies above S1.",
         "x": {
           "label": "Quantity",
           "min": 0,
@@ -585,12 +648,15 @@
                 2
               ]
             ],
-            "label": "MPB = MSB",
+            "label": "D / MPB = MSB",
             "label_at": [
-              8,
-              3.2
+              8.5,
+              2.9000000000000004
             ],
-            "role": "demand"
+            "role": "demand",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": 18
           },
           {
             "points": [
@@ -603,12 +669,15 @@
                 7
               ]
             ],
-            "label": "MPC",
+            "label": "S1 / MPC",
             "label_at": [
-              8,
-              6
+              8.5,
+              6.25
             ],
-            "role": "supply"
+            "role": "supply",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           },
           {
             "points": [
@@ -621,12 +690,15 @@
                 9
               ]
             ],
-            "label": "MSC",
+            "label": "S2 / MSC",
             "label_at": [
-              8,
-              8
+              8.5,
+              8.25
             ],
-            "role": "tax"
+            "role": "tax",
+            "label_anchor": "end",
+            "label_dx": -10,
+            "label_dy": -18
           }
         ]
       },
@@ -641,15 +713,15 @@
   "classification_rules": [
     {
       "source": "production",
-      "curve_pair": "MSC and MPC",
-      "negative": "MSC above MPC",
-      "positive": "MSC below MPC"
+      "curve_pair": "S1 (MPC) and S2 (MSC)",
+      "negative": "S2 above S1",
+      "positive": "S2 below S1"
     },
     {
       "source": "consumption",
-      "curve_pair": "MSB and MPB",
-      "negative": "MSB below MPB",
-      "positive": "MSB above MPB"
+      "curve_pair": "D1 (MPB) and D2 (MSB)",
+      "negative": "D2 below D1",
+      "positive": "D2 above D1"
     }
   ]
 }
