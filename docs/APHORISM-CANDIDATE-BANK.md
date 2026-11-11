@@ -2,6 +2,93 @@
 
 **Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**; Batch 7: **three NO, two REWRITE, three MAYBE**. All recorded explicitly below. “Nature via Nurture” is now MAYBE. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
+## Decision update — November 9, 2026
+
+Benjamin approved the exact lines below for placement in this reviewable pass. This dated list is the exception to the older rule that a “YES” means wording approval only; it records explicit chapter-placement approval for these lines. Older batch statuses remain historical and unchanged.
+
+| Placement | Approved wording | Source / attribution |
+| --- | --- | --- |
+| **ECON 4** | “You can ration with prices, lines, or luck, but you will still ration.” | Author-written summary of the current chapter and study material. |
+| **ECON 6 and 14** | “Economists aren’t anti-slice. They’re pro-pie.” | Author-written line; use in both chapters with the existing distinction between total surplus and distribution. |
+| **ECON 10** | “ATC keeps score; AVC decides whether to play.” | Study-guide mnemonic; author wording. |
+| **ECON 14** | “The best way to make the world better is luggage.” | Paired with a short Galbraith excerpt. The luggage refrain's origin is uncertain; Benjamin recalls Cowen and Tabarrok, and a similar version appears in an interview with Alex Tabarrok. See the [source verification addendum](APHORISM-SOURCE-FIRST-QUARRY.md). |
+| **ECON 15** | “Elasticity = escape.” | Cowen and Tabarrok textbook mnemonic; the book passage is echoed in their [podcast transcript](https://www.mercatus.org/marginal-revolution-podcast/favorite-models-spence-monopolies-harberger-incidence-solow-growth). |
+
+## To Review — November 9, 2026
+
+- **ECON 14 — future chapter work:** Consider including Galbraith's full migration passage from the [Oxford Reference entry](https://www.oxfordreference.com/display/10.1093/acref/9780191866692.001.0001/q-oro-ed6-00018844), with its original context and a verified edition/page citation. This is flagged for a later pass and is **not** included in this placement change.
+
+To Review means pending, not rejected. Apply this status to the remaining unselected candidates from this harvest; preserve all earlier explicit YES / MAYBE / REWRITE / NO / Not rated decisions.
+
+- **ECON 4:** “Rationing never disappears; only its currency changes,” plus the other alternative price-control lines.
+- **ECON 6:** Other efficiency/equity formulations in the candidate row.
+- **ECON 14:** “Working should never be the losing choice”; “A ladder out of poverty shouldn't punish the next rung”; “Poverty is how little people have; inequality is how far apart they are”; the welfare-cliff candidate.
+- **Other chapters:** The deadweight-loss-of-Christmas gift line; “Land is fixed; space is not”; existing heading/motif candidates “Empiricism: reality gets the final vote,” “Cost as Opportunity, Tragedy, and Distraction,” and “The Market as Mirror.”
+- **EDCOR 15:** “Feeling seen is not the same as being measured.” It remains in the live chapter while pending review. Other unselected EDCOR candidates, including “Nature via Nurture,” “The Water We Swim In,” and “The Fire, Not the Pail,” remain To Review.
+
+## Chapter-by-chapter progress tracker — started November 10, 2026
+
+**Goal:** review all 52 numbered chapters one at a time, aiming for one or two well-fitting aphorisms per chapter, with three as the ceiling. Count and review existing aphorisms before creating more. The target is not a quota: keep searching when a chapter lacks a strong line, and do not force a slogan into a poor fit. Choose the next unreviewed chapter at random unless Benjamin names a chapter or an open PR needs to finish first.
+
+**A chapter is done when** the current chapter and its relevant memorization quiz or study-guide items have been reviewed; the main idea, likely misconception, and exact prose location are recorded; wording ownership and source are checked; the chosen line fits the chapter and its limits; the aphorism appears in prose after the idea is introduced with the **Key aphorism** label; any optional **About the Aphorism** accordion sits separately nearby; and Benjamin has approved the preview and merged the PR.
+
+**Progress snapshot:** 0/52 chapters are marked done under this process. Nine chapter placements or revisions are already in aphorism PRs (#126 and #155), one ECON 17 candidate has a context-fit review and is queued behind PR #159, and 42 chapters have not yet had the chapter-by-chapter pass. “In PR” is active work, not completion. Counts below are selected lines or known existing sets, not a completed audit of every live chapter.
+
+| Chapter | Selected / known work | Status and next step |
+| --- | --- | --- |
+| ECON 1 · Thinking like an economist | — | Not started |
+| ECON 2 · Consumer choice | — | Not started |
+| ECON 3 · Price system | — | Not started |
+| ECON 4 · Shifts, shocks, price controls | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 5 · Trade and specialization | — | Not started |
+| ECON 6 · Welfare | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 7 · Taxes and subsidies | — | Not started |
+| ECON 8 · International trade | — | Not started |
+| ECON 9 · Costs | — | Not started |
+| ECON 10 · Short-run firms | 1 approved line in PR #155 | Preview and author review pending; label update included |
+| ECON 11 · Long run | — | Not started |
+| ECON 12 · Factor markets | — | Not started |
+| ECON 13 · Labor and discrimination | — | Not started |
+| ECON 14 · Poverty | 2 approved aphorisms in PR #155 | Preview and author review pending |
+| ECON 15 · Elasticity | 1 approved aphorism in PR #155 | Preview and author review pending; label update included |
+| ECON 16 · Institutions | — | Not started |
+| ECON 17 · Externalities | 1 user-selected line: “If you're going to tax a good, you may as well tax a bad!” | Fit checked in the corrective-tax section. The chapter already says “Tax bads, not goods” in its synthesis; avoid duplication. Source note is in the quarry. Page edit queued behind PR #159, which changes Chapter17.html. |
+| ECON 18 · Commons | — | Not started |
+| ECON 19 · Pigouvian correction | — | Not started |
+| ECON 20 · Healthcare | — | Not started |
+| ECON 21 · Monopoly | — | Not started |
+| ECON 22 · Market power remedies | — | Not started |
+| ECON 23 · Monopolistic competition | — | Not started |
+| ECON 24 · Oligopoly | — | Not started |
+| ECON 25 · Behavioral economics | — | Not started |
+| ECON 26 · Limits of markets | — | Not started |
+| EDCOR 1 · Purpose | — | Not started |
+| EDCOR 2 · Biases | — | Not started |
+| EDCOR 3 · Empiricism | — | Not started |
+| EDCOR 4 · Evidence-based practice | — | Not started |
+| EDCOR 5 · Statistical significance | — | Not started |
+| EDCOR 6 · Practical significance | — | Not started |
+| EDCOR 7 · Mental health | — | Not started |
+| EDCOR 8 · Positive psychology | — | Not started |
+| EDCOR 9 · Parenting | — | Not started |
+| EDCOR 10 · Child development | — | Not started |
+| EDCOR 11 · Constructivism | 3 revised aphorisms in PR #126 | Preview and author review pending; at the three-card ceiling |
+| EDCOR 12 · Social learning | 1 approved aphorism in PR #126 | Preview and author review pending |
+| EDCOR 13 · Adolescent development | — | Not started |
+| EDCOR 14 · Identity | — | Not started |
+| EDCOR 15 · Personality | “Feeling seen is not the same as being measured” remains To Review | Not started; full chapter-fit review pending |
+| EDCOR 16 · Agency | — | Not started |
+| EDCOR 17 · Culture | — | Not started |
+| EDCOR 18 · Belonging | — | Not started |
+| EDCOR 19 · Extrinsic motivation | — | Not started |
+| EDCOR 20 · Intrinsic motivation | — | Not started |
+| EDCOR 21 · Executive function & ADHD | — | Not started |
+| EDCOR 22 · Memory & cognitive load | — | Not started |
+| EDCOR 23 · IQ | — | Not started |
+| EDCOR 24 · Learner differences | 1 approved aphorism in PR #126; an existing green principle card also needs counting | Preview and author review pending |
+| EDCOR 25 · Research/practice gap | — | Not started |
+| EDCOR 26 · Grand adventure | 1 approved aphorism in PR #126 | Preview and author review pending |
+
 ## ECON 150 — Unit I
 
 | Chapter | Thick concept / tempting mistake | Existing, sourced, and original lines to compare (retain alternatives) |
@@ -32,8 +119,8 @@
 | --- | --- | --- |
 | **15. Elasticity** | Responsiveness, substitutes, necessity, time and tax incidence; *willingness to pay always equals desire*. | “Elasticity measures your exits”; “Having to buy something doesn't mean you're happy to pay for it”; “The fewer alternatives you have, the harder it is to walk away”; Alex Tabarrok's **escape** framing, VERIFY. |
 | **16. Institutions** | Rules enable exchange and determine economic rights; *markets thrive without institutions*. | “Markets are built by rules, not by their absence”; **North, VERIFY** “rules of the game”; “A market without rules isn't necessarily a free market”; **EXISTING heading** “An Objection Is Not a Veto.” |
-| **17. Commons** | Individually sensible extraction can be collectively destructive; communities can govern; *bad outcomes require bad motives*. | “Everyone can care about the lake and still empty it”; “A commons needs governance, not necessarily government”; “The commons need rules, not necessarily a ruler”; “What belongs to everyone can be used up by anyone”; Ostrom's anti-panacea argument, VERIFY wording. |
-| **18. Externalities** | Participants may impose third-party costs/benefits; *voluntary trade is always socially efficient*. | “A deal can be voluntary and still leave someone else the bill”; “Two people can agree—and make a third person pay”; “The price may not include everyone who pays”; Coase on bargaining and transaction costs, source lead. |
+| **17. Externalities** | Participants may impose third-party costs or benefits; *voluntary trade is always socially efficient*. | “A deal can be voluntary and still leave someone else the bill”; “Two people can agree—and make a third person pay”; “The price may not include everyone who pays”; **Benjamin-selected (Nov. 10; exact attribution open):** “If you're going to tax a good, you may as well tax a bad!” See the source-first quarry and progress tracker for fit, duplication, and attribution notes. |
+| **18. Commons** | Individually sensible extraction can be collectively destructive; communities can govern; *bad outcomes require bad motives*. | “Everyone can care about the lake and still empty it”; “A commons needs governance, not necessarily government”; “The commons need rules, not necessarily a ruler”; “What belongs to everyone can be used up by anyone”; Ostrom's anti-panacea argument, VERIFY wording. |
 | **19. Pigouvian correction** | Align private/social incentives, prices versus mandates and policy knowledge limits; *every tax is efficiency-reducing or governments know the right tax*. | “Put a price on the harm, and let people find the least costly fix”; “Price the harm, not the behavior”; “Sometimes a tax makes the market work better”; “A corrective price is only as good as the harm it measures.” |
 | **20. Healthcare** | Asymmetric information, adverse selection, moral hazard, uncertainty and imperfect policies; *one elegant cure fixes every failure*. | “Diagnose the failure before prescribing the cure”; “Healthcare isn't one market failure. It's several at once”; “An emergency patient is not a bargain hunter”; “Insurance protects us from big bills but changes the price of the next decision.” |
 
@@ -67,7 +154,7 @@
 | --- | --- | --- |
 | **9. Parenting** | Genetics/environment, attachment and school influences; *heritable = inevitable*. | “Nature and nurture write the story together”; “Heritable doesn't mean inevitable”; “Parents matter without explaining everything”; “You can't rewrite a child's genes. You can help shape the environment in which they grow”; Ridley *Nature via Nurture*.; **AUTHOR-NOMINATED (not YES)** “Nature via nurture” (Matt Ridley, 2003); already a major-concept synthesis heading with credit in Chapter 9; see batch log.; **BATCH 7 MAYBE “Nature via Nurture” (existing Chapter 9 heading citing Matt Ridley; do not duplicate).** |
 | **10. Child development** | Development changes behavior interpretation; play and challenge; *a child's behavior means what adult behavior would*. | “An unfinished mind is not a broken one”; “Before correcting the behavior, understand the development”; “Play is how children practice becoming capable”; “Teach the child you have, not the adult you expect them to become.”; **BATCH 7 REWRITE “An unfinished mind is not a broken one.” No new wording provided.** |
-| **11. Constructivism** | Schema, prior knowledge, prototypes and conceptual change; *constructing understanding requires unguided discovery*. | **EXISTING six aphorisms (preserve all):** “Your brain thinks in examples, not definitions”; “Your brain avoids thinking, so make the right decision once”; “What you already know decides what you can learn”; “Every mind constructs. The teacher chooses the materials”; “Build it right the first time”; “To change a schema, roll out the red carpet. Then tug on it.” **Ausubel, VERIFY** prior-knowledge dictum; additional misconception-buster: “Constructing knowledge doesn't mean discovering everything yourself.”; **BATCH 5 author note (not yet YES):** REWRITE of “What you already know decides what you can learn.” Benjamin: “cite the author, but I like this one”. David P. Ausubel (1968), *Educational Psychology: A Cognitive View*, preface p. vi (see source below). Already directly credited immediately after this aphorism in current chapter; leave chapter untouched. |
+| **11. Constructivism** | Schema, prior knowledge, prototypes and conceptual change; *constructing understanding requires unguided discovery*. | **Current in PR #126 — three approved aphorisms:** “We build our understanding; teachers choose the materials”; “Your brain is associative; it thinks in examples, not definitions”; “To change a schema, roll out the red carpet. Then yank on it.” Earlier alternatives (“Your brain avoids thinking, so make the right decision once”; “What you already know decides what you can learn”; “Build it right the first time”) remain in historical notes, not in the current three-card set. Ausubel's prior-knowledge dictum remains a source lead if a related idea is reconsidered. |
 | **12. Social learning** | Observational learning, efficacy, scaffolding; *students learn only the explicitly taught lesson*. | “The purpose of a scaffold is to make itself unnecessary”; “Students learn more than what we teach; they learn what we model”; “Help today should grow independence tomorrow”; “The teacher's example is a lesson before the teacher says a word.” |
 | **13. Adolescent development** | Social cognition, moral intuitions and argument; *teaching moral words guarantees conduct*. | “Character is what students rehearse, not just what they recite”; “Knowing the right answer isn't the same as wanting to do right”; “Moral lessons are caught as well as taught”; “The morality students copy may be the lesson you never planned”; Haidt on intuitions/reasoning, VERIFY. |
 | **14. Identity** | Exploration, social reflection, commitments and contribution; *identity is found wholly inward*. | “You don't find yourself by looking only at yourself”; “The teacher is one of the mirrors a student looks into”; “Commitment can reveal who you are becoming”; “You can't discover yourself without encountering a world beyond yourself.” |
@@ -144,7 +231,7 @@
 - **EDCOR 11 — NO:** “Every mind constructs. The teacher chooses the materials.” — Do not select for aphorism expansion. It is one of six existing Ch. 11 boxes; NO does not request deleting it.
 - **EDCOR 22 — YES:** “Memory is the residue of thought.” — Daniel Willingham dictum; source verification and placement/qualification still required.
 
-**Important:** The **NO** ratings for Econ 16 “An objection is not a veto” and EDCOR 11 “Every mind constructs. The teacher chooses the materials” are decisions **against selecting the phrases as aphorisms**, not requests to remove existing chapter content. Keep them in this historical candidate bank and keep textbook pages untouched. The three MAYBE items stay open for refinement.
+**Important:** The **NO** ratings for Econ 16 “An objection is not a veto” and EDCOR 11 “Every mind constructs. The teacher chooses the materials” are decisions **against selecting those exact phrases as aphorisms**, not requests to remove existing chapter content. EDCOR 11 later received the different exact wording “We build our understanding; teachers choose the materials,” now in PR #126. Keep them in this historical candidate bank and keep textbook pages untouched. The three MAYBE items stay open for refinement.
 
 ### Batch 3 proposed review targets (not yet rated)
 
@@ -153,8 +240,8 @@
 | 1 | ECON 9 | **Find the bottleneck.** | Memorization guide; Constraints and marginal cost: adding more of the easy input may not help when another input is fixed. May link to the cost-monster rewrite. |
 | 2 | ECON 12 | **Land is fixed; space is not.** | Memorization guide; Land supply is fixed, but housing capacity and land uses are not; zoning and innovation affect the latter. |
 | 3 | ECON 15 | **Elasticity measures your exits.** | Original candidate; Responsiveness depends on substitutes, time and options. Corrects the idea that paying a high price proves enthusiasm. |
-| 4 | ECON 17 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
-| 5 | ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
+| 4 | ECON 18 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
+| 5 | ECON 17 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
 | 6 | EDCOR 15 | **Feeling seen is not the same as being measured.** | Already appears in chapter prose; A personality label may feel deeply apt without demonstrated psychometric validity. |
 | 7 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | Original candidate; Behavioral observations can guide inquiry but are not a substitute for careful assessment and appropriate professional roles. |
 | 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
@@ -164,8 +251,8 @@
 - **ECON 9 — Not rated:** “Find the bottleneck.”
 - **ECON 12 — Not rated:** “Land is fixed; space is not.”
 - **ECON 15 — Not rated:** “Elasticity measures your exits.”
-- **ECON 17 — Not rated:** “Everyone can care about the lake and still empty it.”
-- **ECON 18 — Not rated:** “A deal can be voluntary and still leave someone else the bill.”
+- **ECON 18 — Not rated:** “Everyone can care about the lake and still empty it.”
+- **ECON 17 — Not rated:** “A deal can be voluntary and still leave someone else the bill.”
 - **EDCOR 15 — Not rated:** “Feeling seen is not the same as being measured.”
 - **EDCOR 21 — Not rated:** “A behavior is a clue, not a diagnosis.”
 - **EDCOR 25 — MAYBE:** “Updating your vocabulary isn't updating your practice.”
@@ -208,7 +295,7 @@
 | --- | --- | --- | --- |
 | 1 | ECON 5 | **self sufficient is poverty** | Benjamin's alternate comparative-advantage rewrite from Batch 4; provocative and provisional; exceptions matter. |
 | 2 | ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | Earlier working bank; price-taking firm's short-run shutdown rule and avoidable costs. |
-| 3 | ECON 17 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
+| 3 | ECON 18 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
 | 4 | ECON 21 | **Market power begins where alternatives end.** | Earlier bank; substitutes and competitive alternatives, not mere firm size. |
 | 5 | ECON 24 | **Your best move depends on theirs.** | Already a chapter heading; strategic interaction and opponent responses. |
 | 6 | EDCOR 11 | **What you already know decides what you can learn.** | Existing Chapter 11 aphorism; prior knowledge shapes, but does not make new learning impossible. |
@@ -221,7 +308,7 @@
 | --- | --- | --- |
 | ECON 5 | “self sufficient is poverty” | **REWRITE** — No replacement supplied in Batch 5. Revisit alongside Batch 4's distinct “Obama still hired a writer.” candidate. Keep the exact original for comparison; avoid an unconditional claim. |
 | ECON 10 | “Sometimes staying open is the cheapest way to lose money.” | **REWRITE** — No replacement supplied; retain as developing short-run-shutdown explanation. Do not presume a new wording. |
-| ECON 17 | “The commons need rules, not necessarily a ruler.” | **MAYBE** — Ostrom and possible self-governance; remain under consideration, not approved. |
+| ECON 18 | “The commons need rules, not necessarily a ruler.” | **MAYBE** — Ostrom and possible self-governance; remain under consideration, not approved. |
 | ECON 21 | “Market power begins where alternatives end.” | **MAYBE** — Market power hinges on available substitutes; remain under consideration, not approved. |
 | ECON 24 | “Your best move depends on theirs.” | **MAYBE** — Existing textbook heading, remains unchanged; not approved for new aphorism placement. |
 | EDCOR 11 | “What you already know decides what you can learn.” | **REWRITE** — Benjamin says 'cite the author, but I like this one.' Intellectual source: David P. Ausubel, Educational Psychology: A Cognitive View (1968), preface, p. vi. Chapter 11 ALREADY prints this line and cites Ausubel's maxim directly afterward. Keep authorial aphorism distinct from verbatim Ausubel quote; do not treat positive reaction as YES. |
@@ -230,7 +317,7 @@
 
 **Attribution work (EDCOR 11):** “What you already know decides what you can learn” is Benjamin's compressed aphorism, not Ausubel's literal wording. The influential source is **David P. Ausubel, *Educational Psychology: A Cognitive View* (1968), preface p. vi**, directly quoted and credited in the current Chapter 11 immediately after Benjamin's line. [Scholarly source](https://pmc.ncbi.nlm.nih.gov/articles/PMC10130311/). Preserve the author's request to cite Ausubel; a later chapter pass can confirm/reference the bibliography without inventing attribution.
 
-**Do not conflate REWRITE and approval:** Econ 5 and Econ 10 received no new wording. EDCOR 16 received the tentative exact wording **“evidence is more effective than empty praise”**. EDCOR 18 received a structural request to emphasize **both** being seen **and** being needed, not a replacement sentence. Three MAYBE choices are Econ 17, Econ 21, and Econ 24.
+**Do not conflate REWRITE and approval:** Econ 5 and Econ 10 received no new wording. EDCOR 16 received the tentative exact wording **“evidence is more effective than empty praise”**. EDCOR 18 received a structural request to emphasize **both** being seen **and** being needed, not a replacement sentence. Three MAYBE choices are Econ 18, Econ 21, and Econ 24.
 
 **Unrated carryover:** All seven Batch 3 'Not rated' candidates remain unreviewed, not rejected.
 
@@ -345,6 +432,33 @@ A targeted current-chapter scan checked whether any of these lines already appea
 - **Caution:** General education ownership does **not** mean specialists, special education services, accommodations, disability identification, or legally required individualized services have no role. Verify local/technical definitions and applicable current implementation guidance before published wording.
 
 **Potential thematic connection, not yet approved as one aphorism:** Behavior is a clue worth investigating; stronger upstream systems prevent many difficulties; and MTSS is the responsibility of general education, not just a downstream referral mechanism. The author has **not** decided whether to join or separate these in the eventual book. Another idea was briefly remembered but not articulated in the conversation; **do not invent it**.
+
+## Author idea inbox — November 9, 2026 (EDCOR / memory)
+
+**Status:** Three related but distinct author-proposed, unrated ideas from a reflection on an essay in a Faulkner collection. The essay title, edition, and page are not yet identified. The wording below is Benjamin's formulation or working phrasing; do not present it as a direct Faulkner quotation without checking the source. No wording or placement is approved for a chapter.
+
+### 1. “My wedding ring remembers my wedding for me.”
+
+- **Author's image:** A meaningful object can cue a memory and keep an important experience present. The wider idea includes rituals, routines, and tokens that help us remember what matters and act on it.
+- **Intellectual mechanism:** External cues can support retrieval and prospective memory: remembering an experience, commitment, or intended action when the cue appears. The meaning is associated with the person's memory; the object does not literally store the full experience or guarantee accurate recall.
+- **Working home:** **EDCOR 22, Memory**, especially its treatment of retrieval; possible application in **EDCOR 21, Executive Function & ADHD**, which already discusses predictable routines, visual cues, and external memory systems. Compare the full current chapters before choosing a home.
+- **Caution:** Keep the ring line as a vivid image, not a universal claim that tokens reliably produce memory or action. The line is a candidate, not approved wording.
+
+### 2. “If you think you are thinking, what you are thinking is thinking might merely be remembering.”
+
+- **Author's working formulation:** Sometimes an experience that feels like fresh reasoning may be the mind retrieving a familiar answer or pattern. Benjamin connects this to Daniel Willingham's account of how people avoid unnecessary mental effort; verify the relevant source and distinguish a paraphrase from a quotation before publication.
+- **Working home:** **EDCOR 22, Memory**, potentially near the discussion of retrieval practice and the difference between familiarity and durable learning. The existing chapter already warns that rereading can feel familiar without producing long-term retention; compare this candidate with the existing **“Memory is the residue of thought”** model.
+- **Caution:** Do not imply that remembering is not thinking. Retrieval is a central cognitive process; the useful distinction is between recognizing or retrieving a familiar answer and doing the reasoning a new problem requires. The current sentence is deliberately preserved as a rough draft, not polished or approved.
+
+### 3. Routines, rituals, and tokens help us remember and do what matters.
+
+- **Author's larger synthesis:** Build routines that make important actions easier to carry out without repeatedly relying on willpower. “Routines eat willpower for breakfast” is a working expression of this point; no attribution or final wording has been established.
+- **Possible home:** **EDCOR 21** may be the better fit for practical routines and executive-function supports; **EDCOR 22** may fit if the focus is prospective memory and retrieval cues. The current Chapter 21 already treats routines as reducing working-memory demands, so this may be an existing idea to refine or reinforce rather than a new chapter slot.
+- **Caution:** Routine is a support, not a guarantee; useful routines need to fit the person and remain adaptable. Keep this broader principle distinct from the ring's specific memory-cue image unless Benjamin later chooses to combine them.
+
+### Adjacent reflection — not an EDCOR claim
+
+Benjamin connected the essay's treatment of memory and tokens to the Waters of Mormon as a name that could preserve the memory of a conversion to Christ. He also recalled Nathaniel Givens's interpretation that the Book of Mormon may take its name from the conversion event at the Waters of Mormon, or that Mormon's name may itself recall that event. Benjamin explicitly treats this as an appealing possibility, **not an established historical claim**. Keep it outside EDCOR aphorism placement unless separately researched and deliberately chosen as an illustration.
 
 ---
 

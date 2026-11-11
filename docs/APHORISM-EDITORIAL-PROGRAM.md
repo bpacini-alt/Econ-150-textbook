@@ -1,6 +1,6 @@
 # Aphorism editorial program — both textbooks
 
-**Status:** Working editorial inventory for Benjamin's review; **Batches 1–7 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated; Batch 7: three NO, two REWRITE, three MAYBE). “Nature via Nurture” is now MAYBE. No textbook edits authorized.  
+**Status:** Working editorial inventory for Benjamin's review; **Batches 1–7 decisions recorded October 25, 2026** (Batch 1: seven YES, one REWRITE; Batch 2: three YES, three MAYBE, two NO; Batch 3: one MAYBE, seven Not rated; Batch 4: three YES, two MAYBE, three REWRITE; Batch 5: five REWRITE, three MAYBE; Batch 6: eight Not rated; Batch 7: three NO, two REWRITE, three MAYBE). “Nature via Nurture” was MAYBE in the earlier inventory. On November 9, 2026, Benjamin explicitly approved the exact chapter placements recorded in the [decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-9-2026); all other candidates in this harvest are To Review, not No.  
 **Applies to:** Econ 150 / Joy of Economics and EDCOR 310 / The Science (Joy) of Learning.  
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
@@ -11,7 +11,7 @@ An aphorism is **an insight packaged in a nugget**, not a slogan selected for so
 
 The two most useful models raised by Benjamin are Thomas Sowell's trade-off dictum and Daniel Willingham's "Memory is the residue of thought." Each compresses a substantial account of how the world works; neither is a substitute for the explanation. The chapter's central claim comes **before** the catchy sentence.
 
-This is not a mandate to shoehorn a box into every section. Collect 3–6 proposals for a chapter during ideation (some chapters may have more), then retain only the few exceptional, nonduplicative lines that deserve students' attention. It is better to have no new aphorism than a shallow one. Keep lines already written by Benjamin, especially proven language in the published chapters and memorization quizzes, in the candidate pool.
+This is not a mandate to shoehorn a box into every section. Compare existing chapter language and sourced candidates first. During a chapter pass, develop only enough alternatives to test fit; recommend one or two, with a third only when it adds a genuinely distinct idea. Keep only the strongest lines for students. It is better to have no new aphorism than a shallow one. Keep lines already written by Benjamin, especially proven language in the published chapters and memorization quizzes, in the candidate pool.
 
 ## The five-layer entry for a strong aphorism
 
@@ -50,7 +50,7 @@ Categories often overlap: *foundational*, *counterintuitive*, *misconception-cor
 | Econ 11 | **Profit is a flare.** | **In text**, major-concept heading and explanation; also memorization guide. Profit can signal an opportunity and induce entry; profits do not automatically measure full social value. |
 | Econ 14 (echo 8) | **The best way to make the world better is luggage.** | **Author-proposed adapted saying, source check.** Labor mobility/geographic opportunity. Russ Roberts / migration researchers discussed as intellectual leads; do not treat as proof that all immigration policy trade-offs vanish. |
 | EDCOR 3 | **The Bomb Worked!** / "The bomb worked." | **In text**: chapter subtitle, Dr. Dibble classroom story, and chapter synthesis. Science can yield successful real-world predictions despite simplified or imperfect assumptions. Preserve story, speaker context, and catastrophic moral gravity; not an endorsement of nuclear weapons. |
-| EDCOR 11 | **Your brain thinks in examples, not definitions.** | **In text** and existing "Worth remembering" series; retain with its prototype explanation. |
+| EDCOR 11 | **We build our understanding; teachers choose the materials.** / **Your brain is associative; it thinks in examples, not definitions.** / **To change a schema, roll out the red carpet. Then yank on it.** | **Approved exact wording in PR #126.** These are the current three-card set and recap; the prototype explanation distinguishes associative example-based thinking from definitions. |
 | EDCOR 24 | **We are all visual learners.** | **Author-positive, proposed.** *Everyone* can benefit from appropriate words+visuals; does not revive modality-matching learning styles; movement breaks work by other mechanisms. |
 | EDCOR 24 | **Good differentiated teaching starts with good teaching.** | **Author-positive and in text** ("A principle worth keeping"). Tier 1 first, then genuinely needed individualized/specialized instruction and accommodations. |
 | EDCOR 26 | **We teach who we are.** | **Author-positive; Parker Palmer formulation, source check.** Values and identity are communicated through conduct as well as explicit curriculum. |
@@ -93,7 +93,7 @@ The entries below are **intellectual search leads**; only a few are quoted in th
 | Adam Smith; David Ricardo; Paul Samuelson | Division of labor; comparative advantage; counterintuitive mutual gains | Econ 5, 8, 24 |
 | F. A. Hayek; Alfred Marshall | Dispersed knowledge, price coordination; supply/demand scissors | Econ 3, 11 |
 | Douglass North; Elinor Ostrom | Institutions as rules; commons governance without one universal institutional fix | Econ 16–17 |
-| Ronald Coase; A. C. Pigou; Kenneth Arrow | Transaction costs and externalities; corrective incentives; healthcare uncertainty | Econ 18–20 |
+| Ronald Coase; A. C. Pigou; Kenneth Arrow | Transaction costs and externalities; corrective incentives; healthcare uncertainty | Econ 17–20 |
 | Joseph Schumpeter; James Buchanan; Gary Becker; Arthur Okun | Creative destruction; policy-created rents; discrimination costs; redistribution trade-offs | Econ 11, 13, 14, 22 |
 | Daniel Willingham; David Ausubel | Thought and memory; prior knowledge | EDCOR 11, 22 |
 | Robert and Elizabeth Bjork | Desirable difficulties; learning versus short-run performance | EDCOR 1, 22 |
@@ -114,16 +114,29 @@ Examples where the aphorism overturns a tempting intuition:
 - **Learning:** constructive learning requires unguided discovery; fixed learning styles should be matched; an active, entertaining lesson must cause learning; short-run fluent performance proves durable understanding; statistical significance proves importance; heritable means immutable; every difficult child needs discipline; kindness means making everything easy; an affirming personality label is scientifically valid; teaching is value-neutral.
 - **Visual reveal (EDCOR 24):** contrast (1) empty/text-only explanation, (2) overloaded decorative slide, (3) words plus *one* task-relevant explanatory visual. “We are all visual learners” = a provocative rejection of permanent learner *types*, **not** a literal claim that vision is always the best modality or that students with visual impairments should be excluded. Movement/brain breaks have a different proposed mechanism than dual coding or multimedia instruction.
 
-## Selection and classroom implementation (later PRs, not this PR)
+## Selection and classroom implementation
+
+### Current process — one chapter at a time
+
+1. Choose one chapter. Randomize among chapters not yet reviewed to keep the work varied, unless Benjamin names a chapter or an open PR on that chapter should take precedence.
+2. Read the live chapter for its purpose, main ideas, misconception risks, existing aphorisms, and the prose surrounding each possible placement. Confirm the current chapter number and title from the live book, not from an older candidate-bank outline.
+3. Scan the candidate bank, chapter memorization quizzes and study-guide items, and relevant sources. Start with excellent wording already in use before inventing a substitute.
+4. Assess chapter fit explicitly: Does the line compress a main idea of this chapter? Is it accurate on its own? Does it correct a likely misconception? Is it distinct from the chapter's existing headings, synthesis, and other aphorisms? Does the surrounding prose give it the needed limits?
+5. Check ownership and attribution. Separate exact quotation, adapted slogan, paraphrase, and Benjamin-authored wording. Record a source and page or stable link when known; leave attribution open when it is not verified.
+6. Bring Benjamin a short recommendation for this chapter: the existing line(s) worth keeping, any one or two strongest additions, the exact fit/location, and unresolved source or qualification questions. Do not put candidates from several chapters in one review batch.
+7. After approval, place the exact line in the prose after its idea is introduced, never at the chapter opening. Use the existing card structure with **Key aphorism** as its label and one short explanatory line. Put a collapsed **About the Aphorism** accordion farther along the nearby prose when sourcing or context deserves more room; keep the accordion separate from the card.
+8. Preview the chapter, confirm the placement and source notes, then update the tracker. Mark **Done** only after Benjamin approves the preview and merges the PR. If existing lines already fill the target, review them for fit rather than adding more.
+
+The tracker is the [52-chapter progress ledger](APHORISM-CANDIDATE-BANK.md#chapter-by-chapter-progress-tracker--started-november-10-2026). Its statuses distinguish unreviewed candidates, active PR work, placement holds, and completed chapters. An open PR is not a completed chapter.
 
 When Benjamin has approved a chapter's few strongest lines:
 
-- Add the approved **exact wording** in a small **“Worth remembering”** box at the point where the idea is taught, followed by one or two explanatory sentences; recap after chapter synthesis. EDCOR 11 is the current reference implementation; shared CSS needs separate technical work across both repositories.
+- Add the approved **exact wording** in the live Chapter 11 card structure: a label, aphorism line, and short explanatory subtext. For this placement pass, label new cards **Key aphorism**. Place them in the prose after the idea has been introduced, never in a chapter-opening title block or before the relevant explanation. If more sourcing or interpretation is needed, add a separate collapsed **About the Aphorism** accordion farther along the relevant prose; keep it nearby, not stacked with the card. Recaps may follow chapter synthesis when they reinforce the prose without adding new aphorisms.
 - Repeat the same words in memorization quizzes, slides, and practice rather than silently rephrasing them.
 - Practice more than verbatim recall: retrieve; interpret; discriminate correct/incorrect applications; explain the mechanism; identify limits; apply to a novel case; return after spacing. See [Precise Practice](PRECISE-PRACTICE-DESIGN.md). These are anchors, **not** a fifth foundational practice engine.
 - AI feedback for explanations remains **provisional** and gated on instructor-scored rubric calibration; never present a numerical score as certified understanding without evidence.
 
-### Review workflow — eight *candidates*, not eight pages of prose
+### Historical review workflow — eight *candidates*, not eight pages of prose
 
 1. In each round, select **5–10 strong individual aphorisms** (default 8), drawn from both books. Start with promising existing wording before replacing it. For each: chapter/link, exact proposed line, underlying concept, misconception, source/ownership, qualification, and one transfer/example.
 2. Benjamin labels **YES / MAYBE / REWRITE / NO** (and may supply his own better phrase). **YES** means *editorially chosen for further placement review*, not automatically permission to publish. Record the exact preferred wording, not merely a status.
@@ -215,8 +228,8 @@ Benjamin isn't sure one of these has enough power yet, and he will say which.
 | 1 | ECON 9 | **Find the bottleneck.** | Memorization guide; Constraints and marginal cost: adding more of the easy input may not help when another input is fixed. May link to the cost-monster rewrite. |
 | 2 | ECON 12 | **Land is fixed; space is not.** | Memorization guide; Land supply is fixed, but housing capacity and land uses are not; zoning and innovation affect the latter. |
 | 3 | ECON 15 | **Elasticity measures your exits.** | Original candidate; Responsiveness depends on substitutes, time and options. Corrects the idea that paying a high price proves enthusiasm. |
-| 4 | ECON 17 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
-| 5 | ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
+| 4 | ECON 18 | **Everyone can care about the lake and still empty it.** | Original candidate; Common-pool resource depletion can arise from misaligned incentives, not just bad motives; cooperative rules can help. |
+| 5 | ECON 17 | **A deal can be voluntary and still leave someone else the bill.** | Original candidate; Externalities: third parties may bear costs even when buyer and seller freely agree. |
 | 6 | EDCOR 15 | **Feeling seen is not the same as being measured.** | Already appears in chapter prose; A personality label may feel deeply apt without demonstrated psychometric validity. |
 | 7 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | Original candidate; Behavioral observations can guide inquiry but are not a substitute for careful assessment and appropriate professional roles. |
 | 8 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | Original candidate; Learning scientific terminology or citing research does not mean classroom behavior actually changed. |
@@ -233,8 +246,8 @@ Benjamin isn't sure one of these has enough power yet, and he will say which.
 | ECON 9 | **Find the bottleneck.** | **Not rated** |
 | ECON 12 | **Land is fixed; space is not.** | **Not rated** |
 | ECON 15 | **Elasticity measures your exits.** | **Not rated** |
-| ECON 17 | **Everyone can care about the lake and still empty it.** | **Not rated** |
-| ECON 18 | **A deal can be voluntary and still leave someone else the bill.** | **Not rated** |
+| ECON 18 | **Everyone can care about the lake and still empty it.** | **Not rated** |
+| ECON 17 | **A deal can be voluntary and still leave someone else the bill.** | **Not rated** |
 | EDCOR 15 | **Feeling seen is not the same as being measured.** | **Not rated** |
 | EDCOR 21 | **A behavior is a clue, not a diagnosis.** | **Not rated** |
 | EDCOR 25 | **Updating your vocabulary isn't updating your practice.** | **MAYBE** |
@@ -283,7 +296,7 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 | --- | --- | --- | --- |
 | 1 | ECON 5 | **self sufficient is poverty** | Benjamin's alternate comparative-advantage rewrite from Batch 4; provocative and provisional; exceptions matter. |
 | 2 | ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | Earlier working bank; price-taking firm's short-run shutdown rule and avoidable costs. |
-| 3 | ECON 17 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
+| 3 | ECON 18 | **The commons need rules, not necessarily a ruler.** | Earlier bank; Ostrom intellectual lead; governance can be community-crafted. |
 | 4 | ECON 21 | **Market power begins where alternatives end.** | Earlier bank; substitutes and competitive alternatives, not mere firm size. |
 | 5 | ECON 24 | **Your best move depends on theirs.** | Already a chapter heading; strategic interaction and opponent responses. |
 | 6 | EDCOR 11 | **What you already know decides what you can learn.** | Existing Chapter 11 aphorism; prior knowledge shapes, but does not make new learning impossible. |
@@ -300,7 +313,7 @@ The two Holland-inspired lines are new editorial suggestions, *not* President Ho
 | --- | --- | --- | --- |
 | ECON 5 | **self sufficient is poverty** | **REWRITE** | No replacement supplied in Batch 5. Revisit alongside Batch 4's distinct “Obama still hired a writer.” candidate. Keep the exact original for comparison; avoid an unconditional claim. |
 | ECON 10 | **Sometimes staying open is the cheapest way to lose money.** | **REWRITE** | No replacement supplied; retain as developing short-run-shutdown explanation. Do not presume a new wording. |
-| ECON 17 | **The commons need rules, not necessarily a ruler.** | **MAYBE** | Ostrom and possible self-governance; remain under consideration, not approved. |
+| ECON 18 | **The commons need rules, not necessarily a ruler.** | **MAYBE** | Ostrom and possible self-governance; remain under consideration, not approved. |
 | ECON 21 | **Market power begins where alternatives end.** | **MAYBE** | Market power hinges on available substitutes; remain under consideration, not approved. |
 | ECON 24 | **Your best move depends on theirs.** | **MAYBE** | Existing textbook heading, remains unchanged; not approved for new aphorism placement. |
 | EDCOR 11 | **What you already know decides what you can learn.** | **REWRITE** | Benjamin says 'cite the author, but I like this one.' Intellectual source: David P. Ausubel, Educational Psychology: A Cognitive View (1968), preface, p. vi. Chapter 11 ALREADY prints this line and cites Ausubel's maxim directly afterward. Keep authorial aphorism distinct from verbatim Ausubel quote; do not treat positive reaction as YES. |
@@ -399,12 +412,12 @@ A targeted current-chapter scan checked whether any of these lines already appea
 
 **Batch 8 scan:** Compared these exact phrases against current main-branch HTML in all eight relevant chapters; none appears verbatim. This is a targeted duplication/structure check, **not** exhaustive sourcing or a full prose audit. Do not edit textbook chapters before separate review and approval.
 
-## What this PR does NOT do
+## Current placement boundaries
 
-- Does **not** edit student-facing chapters, chapter hooks, existing callouts, quiz files, stylesheets, build artifacts, or course slides.
-- Does **not** claim Benjamin approved all lines or external attributions are verified.
-- Does **not** require inclusion of four per chapter; four is an **ideation bank**, not a publication quota.
-- Does **not** change the shared AGENTS.md, PROJECT-PRIORITIES.md, or REPOSITORY-HOUSEKEEPING.md conventions across repositories.
-- Does **not** resolve overlapping editorial/practice work currently in draft PRs for Chapters 13–14 in both books.
+- The November 9 approval is limited to the exact lines listed in the [decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-9-2026); it does not approve nearby alternatives.
+- Every borrowed or adapted line must identify its source and distinguish direct quotation from paraphrase or author-written synthesis. The Galbraith sentence is a short direct excerpt; the luggage sentence is a separate refrain with uncertain origin, not Galbraith's wording.
+- All remaining unselected candidates from this harvest are **To Review**, not No. Preserve earlier batch decisions as historical records.
+- Aim for one or two strong, well-fitting aphorisms per chapter, with three as the maximum. Count existing cards during the chapter pass; do not force additions to meet a quota.
+- Placement changes are submitted in separate reviewable pull requests. Benjamin merges.
 
-**Maintaining one working bank:** This documentation is deliberately housed in the Econ 150 repository beside the cross-book Precise Practice design. The EDCOR chapter references link to the EDCOR repository. A future small companion pointer in EDCOR can be added in its own coordinated PR if wanted; avoid maintaining two diverging copied inventories.
+**Maintaining one working bank:** This documentation is deliberately housed in the Econ 150 repository beside the cross-book Precise Practice design. The EDCOR chapter references link to the EDCOR repository; its chapter bank records the current EDCOR wording and review pile.
