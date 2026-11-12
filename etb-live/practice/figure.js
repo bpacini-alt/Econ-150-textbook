@@ -14,14 +14,14 @@
  *    arrows:[{from:[x,y], to:[x,y]}],
  *    notes:[{at:[x,y], text}]}
  * or several side by side: {kind:"panels", alt, panels:[graph, ...]}
- * role: demand | supply | tax | neutral (sets color); style: solid | dotted
+ * role: demand | supply | tax | neutral | mark (sets color; mark is for labeled segments students pick from); style: solid | dotted
  * "alt" is required: it is the figure's text for screen readers.
  */
 (function (PP) {
   "use strict";
   const { esc } = PP.util;
   const L = 46, B = 44;
-  const COLORS = { demand: "#1a3a5c", supply: "#a33030", tax: "#b7791f", neutral: "#33556a" };
+  const COLORS = { demand: "#1a3a5c", supply: "#a33030", tax: "#b7791f", neutral: "#33556a", mark: "#7a3e9d" };
   const AREA = { neutral: "rgba(25,117,155,.16)", dwl: "rgba(163,48,48,.18)", buyer: "rgba(26,58,92,.16)", seller: "rgba(183,121,31,.2)" };
 
   // Full size for graphs with numbers to read; a smaller canvas (so the same
