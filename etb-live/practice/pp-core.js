@@ -62,6 +62,41 @@
     return out;
   };
 
+  /* Deal a round from a pool whose items each have an answer, with an even
+     mix of answers and no more than maxRun of the same answer in a row. Plain
+     shuffles make long streaks common (in a round of 8 from a 16/16 two-key
+     pool, a run of 5 or more about 12% of the time), and streaks invite
+     guessing from the pattern instead of reading the item. Each answer keeps
+     its own deck, so items still cycle through the whole pool. */
+  PP.dealBalanced = (state, key, answers, count, maxRun) => {
+    const byAns = new Map();
+    answers.forEach((a, i) => { if (!byAns.has(a)) byAns.set(a, []); byAns.get(a).push(i); });
+    const labels = Array.from(byAns.keys());
+    const quota = new Map(labels.map((l) => [l, 0]));
+    let left = Math.min(count, answers.length);
+    while (left > 0) {
+      let moved = false;
+      for (const l of shuffle(labels)) {
+        if (left > 0 && quota.get(l) < byAns.get(l).length) { quota.set(l, quota.get(l) + 1); left--; moved = true; }
+      }
+      if (!moved) break;
+    }
+    const remaining = new Map(labels.map((l) => [l, PP.deal(state, key + "#" + l, byAns.get(l).length, quota.get(l)).map((j) => byAns.get(l)[j])]));
+    const out = [];
+    let runLabel = null, run = 0;
+    for (;;) {
+      const live = labels.filter((l) => remaining.get(l).length);
+      if (!live.length) break;
+      let pool = live.filter((l) => !(l === runLabel && run >= (maxRun || 3)));
+      if (!pool.length) pool = live;
+      let r = Math.random() * pool.reduce((n, l) => n + remaining.get(l).length, 0), pick = pool[pool.length - 1];
+      for (const l of pool) { r -= remaining.get(l).length; if (r < 0) { pick = l; break; } }
+      out.push(remaining.get(pick).shift());
+      run = pick === runLabel ? run + 1 : 1; runLabel = pick;
+    }
+    return out;
+  };
+
   /* ---------- storage ---------- */
   function makeStore(key) {
     let data = {};

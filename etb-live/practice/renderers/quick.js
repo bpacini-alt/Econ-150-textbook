@@ -49,7 +49,7 @@
       }
 
       function newRound() {
-        st.round = PP.deal(st, "items", activity.items.length, size);
+        st.round = PP.dealBalanced(st, "items", activity.items.map((it) => it.answer), size, 3);
         st.pos = 0; st.right = 0; st.missed = []; st.done = false; st.last = null;
         reviewing = false;
         ctx.save();
