@@ -167,14 +167,17 @@
 
     function current() {
       const list = activitiesFor(cs.tier);
-      const pick = cs.style[cs.tier] || (list.length > 1 ? "mix" : list[0].id);
-      if (pick === "mix") return { mix: true, activity: list[(cs.mixTurn[cs.tier] || 0) % list.length], list };
-      return { mix: false, activity: list.find((a) => a.id === pick) || list[0], list };
+      /* concept.ladder lists tiers whose activities are ordered steps: start on the
+         first step instead of "Mix it up", and number the steps in the picker. */
+      const ladder = (concept.ladder || []).includes(cs.tier);
+      const pick = cs.style[cs.tier] || (list.length > 1 && !ladder ? "mix" : list[0].id);
+      if (pick === "mix") return { mix: true, activity: list[(cs.mixTurn[cs.tier] || 0) % list.length], list, ladder };
+      return { mix: false, activity: list.find((a) => a.id === pick) || list[0], list, ladder };
     }
 
     function render() {
       if (cleanup) { try { cleanup(); } catch (e) {} cleanup = null; }
-      const { mix, activity, list } = current();
+      const { mix, activity, list, ladder } = current();
       const goal = goals[cs.tier] || 5;
       const done = cs.counts[cs.tier] || 0;
       const pick = mix ? "mix" : activity.id;
@@ -185,8 +188,9 @@
         '<button type="button" data-tier="' + t + '" aria-pressed="' + (t === cs.tier) + '">' + '<span class="pp-tier-n">Tier ' + t + "</span>" + esc(TIER_LABELS[t]) + "</button>").join("") + "</div>";
       if (list.length > 1) {
         h += '<div class="pp-controls"><label for="pp-style">Practice style</label><select id="pp-style">' +
-          '<option value="mix"' + (pick === "mix" ? " selected" : "") + ">Mix it up</option>" +
-          list.map((a) => '<option value="' + esc(a.id) + '"' + (pick === a.id ? " selected" : "") + ">" + esc(a.title) + "</option>").join("") +
+          (ladder ? "" : '<option value="mix"' + (pick === "mix" ? " selected" : "") + ">Mix it up</option>") +
+          list.map((a, i) => '<option value="' + esc(a.id) + '"' + (pick === a.id ? " selected" : "") + ">" + (ladder ? "Step " + (i + 1) + ": " : "") + esc(a.title) + "</option>").join("") +
+          (ladder ? '<option value="mix"' + (pick === "mix" ? " selected" : "") + ">Mix them all</option>" : "") +
           "</select></div>";
       }
       h += '<p class="pp-instruction"><b>' + esc(activity.title) + (/[.?!:]$/.test(activity.title) ? "" : ".") + "</b> " + esc(activity.instructions || DEFAULT_INSTRUCTIONS[activity.type] || "") + "</p>";

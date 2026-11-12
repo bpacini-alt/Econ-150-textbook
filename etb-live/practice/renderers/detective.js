@@ -1,5 +1,6 @@
 /* Definition Detective: Grade the Students (approved interaction).
  * activity.rounds: [{id, term, answers:[{text, grade:"A"|"A-"|"F", why, misconception?}, x3]}]
+ * activity.lead (optional): the line above each term; defaults to "Grade these students’ definitions of:".
  * The learner grades three named students. Grades are stored as "A", "A-",
  * "F" (machine-safe) and shown as A, A−, F. Order is shuffled per round;
  * names stay fixed for the round and never cue the answer.
@@ -29,7 +30,7 @@
 
       function draw() {
         const r = activity.rounds[st.cur];
-        let h = '<div class="pp-tiny pp-muted">Grade these students’ definitions of:</div><div class="pp-term">' + esc(r.term) + "</div>";
+        let h = '<div class="pp-tiny pp-muted">' + esc(activity.lead || "Grade these students’ definitions of:") + '</div><div class="pp-term">' + esc(r.term) + "</div>";
         h += '<div class="pp-students">' + st.ord.map((ai, k) => {
           const a = r.answers[ai];
           return '<div class="pp-student"><div class="pp-student-id">' + AVATAR + "<b>" + esc(st.names[k]) + '</b></div><p class="pp-student-answer">' + esc(a.text) + "</p>" +
