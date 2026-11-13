@@ -51,7 +51,7 @@ button:disabled { cursor: default; opacity: .55; }
 
 /* Tier tabs and style picker */
 .pp-tiers { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-.pp-tiers button { flex: 1 1 90px; font-weight: 650; line-height: 1.25; }
+.pp-tiers button { flex: 1 1 70px; font-weight: 650; line-height: 1.25; }
 .pp-tier-n { display: block; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
 .pp-tiers button[aria-pressed="true"] { background: var(--pp-accent-soft); border: 2px solid #27718b; }
 .pp-controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 6px 0 4px; }

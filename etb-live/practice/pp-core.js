@@ -183,17 +183,20 @@
     choice: "Choose the best answer, then check your reasoning.",
     tiles: "Build the statement from the tiles. Use only the tiles that belong; order doesn't matter unless the prompt says so."
   };
-  const TIER_LABELS = { 1: "Foundations", 2: "Apply", 3: "AP-style" };
+  const TIER_LABELS = { 1: "Foundations", 2: "Apply", 3: "AP-style", 4: "Review" };
 
   /* ---------- concept checkpoint ---------- */
   function mountCheckpoint(rootEl, bank, conceptIndex, store) {
     const concept = bank.concepts.find((c) => Number(c.number) === conceptIndex + 1);
     if (!concept) { rootEl.innerHTML = '<div class="pp-panel">This checkpoint isn’t available.</div>'; return; }
     const goals = (bank.settings && bank.settings.goals) || { 1: 10, 2: 5, 3: 3 };
+    /* A bank can rename a tier (settings.tier_labels). Tier 4 appears only in banks
+       that have Tier 4 activities, such as a review bank's missed-exam twins. */
+    const tierLabel = (t) => (bank.settings && bank.settings.tier_labels && bank.settings.tier_labels[t]) || TIER_LABELS[t];
     const S = store.data;
     S.concepts = S.concepts || {};
     const cs = S.concepts[concept.id] = S.concepts[concept.id] || { tier: null, style: {}, counts: {}, mixTurn: {}, act: {} };
-    const tiers = [1, 2, 3].filter((t) => concept.activities.some((a) => a.tier === t && PP.renderers[a.type]));
+    const tiers = [1, 2, 3, 4].filter((t) => concept.activities.some((a) => a.tier === t && PP.renderers[a.type]));
     if (!tiers.includes(cs.tier)) cs.tier = tiers[0];
     let cleanup = null;
     const marks = {};
@@ -220,7 +223,7 @@
       h += '<div class="pp-eyebrow">Concept ' + esc(concept.number) + ' practice</div>';
       h += '<div class="pp-title">' + esc(concept.name) + "</div>";
       h += '<div class="pp-tiers" role="group" aria-label="Practice level">' + tiers.map((t) =>
-        '<button type="button" data-tier="' + t + '" aria-pressed="' + (t === cs.tier) + '">' + '<span class="pp-tier-n">Tier ' + t + "</span>" + esc(TIER_LABELS[t]) + "</button>").join("") + "</div>";
+        '<button type="button" data-tier="' + t + '" aria-pressed="' + (t === cs.tier) + '">' + '<span class="pp-tier-n">Tier ' + t + "</span>" + esc(tierLabel(t)) + "</button>").join("") + "</div>";
       if (list.length > 1) {
         h += '<div class="pp-controls"><label for="pp-style">Practice style</label><select id="pp-style">' +
           (ladder ? "" : '<option value="mix"' + (pick === "mix" ? " selected" : "") + ">Mix it up</option>") +
