@@ -80,10 +80,15 @@
         ctx.resized();
       }
 
+      // Every result names its card, so a student can tell which card a
+      // "Best fit" note is about (textbook-feedback#66). A missed card also
+      // shows where the student put it.
       function result(i) {
-        const c = activity.cards[i], ok = st.picks[i] === c.bin;
-        return '<div class="pp-result ' + (ok ? "pp-ok" : "pp-no") + '"><b>' + (ok ? "Right: " : "Best fit: " + esc(activity.bins[c.bin]) + ". ") + "</b>" +
-          (ok ? esc(c.text) + ". " : "") + esc(c.why) + "</div>";
+        const c = activity.cards[i], pick = st.picks[i], ok = pick === c.bin;
+        const yours = pick != null && activity.bins[pick] != null ? " (you chose " + esc(activity.bins[pick]) + ")" : "";
+        return '<div class="pp-result ' + (ok ? "pp-ok" : "pp-no") + '"><span aria-hidden="true">' + (ok ? "✓ " : "✗ ") + "</span>" +
+          '<b class="pp-sort-card">' + esc(c.text) + "</b> → " + (ok ? "Right: " + esc(activity.bins[c.bin]) + ". " : "Best fit: " + esc(activity.bins[c.bin]) + yours + ". ") +
+          esc(c.why) + "</div>";
       }
 
       function place(i, zone, how) {
