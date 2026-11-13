@@ -1,7 +1,8 @@
 """Build the book's front pages into etb-live/:
 
   etb-live/index.html            the cover
-  etb-live/contents/index.html   the table of contents
+  etb-live/contents/index.html   the table of contents (with a "This semester" box while SEMESTER is set)
+  etb-live/review.html           this semester's reviews, at /review
   etb-live/assets/book.css       styles for those pages
   etb-live/assets/cover.jpg      the web-sized cover image
 
@@ -106,6 +107,56 @@ HOOKS = {
           "for us: they're very good at getting us what we want, so what should we want?",
 }
 
+# ---------- This semester's reviews ----------
+# The review page lives at /review (etb-live/review.html), an address that never changes,
+# so links in Canvas and syllabi keep working from term to term. Each term, rename SEMESTER
+# and list the reviews you've turned on. At the end of a term, set SEMESTER to None: the
+# "This semester" box leaves the contents page and /review says nothing is posted. The
+# review pages themselves stay in the repository, ready to turn back on.
+SEMESTER = "Fall 2026"
+REVIEWS = [
+    ("Unit 2", "The Firm in Perfect Competition", "/unit-2-review",
+     "Three ideas from the Unit 2 exam, with practice that builds from the basics up to the questions the class missed most."),
+]
+
+
+def semester_box():
+    """The "This semester" box at the top of the contents page."""
+    return f"""  <section class="fm-panel fm-now" id="this-semester" aria-labelledby="now-h">
+    <style>
+      .fm-now {{ background: var(--tint); border: 1px solid var(--tint-line); }}
+      .fm-now p {{ margin: 6px 0 12px; font-family: var(--sans); font-size: 15px; color: #3d434c; }}
+    </style>
+    <p class="fm-label">This semester</p>
+    <h2 class="fm-panel-title" id="now-h">{html.escape(SEMESTER)} Reviews</h2>
+    <p>Practice for the ideas students found hardest on this semester's exams.</p>
+    <a class="fm-btn" href="/review">Go to the reviews</a>
+  </section>
+"""
+
+
+def review_page(book):
+    """etb-live/review.html: this term's reviews, or a note that none are posted."""
+    if SEMESTER and REVIEWS:
+        rows = frontmatter._rows([{"n": unit.split()[-1], "t": f"{unit}: {title}", "s": blurb, "href": href, "m": ""}
+                                  for unit, title, href, blurb in REVIEWS])
+        body = f"""  <section class="fm-panel" aria-labelledby="rv-h">
+    <p class="fm-label">{html.escape(SEMESTER)}</p>
+    <h1 class="fm-panel-title" id="rv-h">Reviews</h1>
+    <p class="fm-hook">Each review takes one exam's hardest ideas and gives you practice that starts easy and builds up. None of it is graded, and your progress saves in your browser.</p>
+    <ol class="fm-rows">
+{rows}
+    </ol>
+  </section>"""
+    else:
+        body = """  <section class="fm-panel" aria-labelledby="rv-h">
+    <p class="fm-label">Reviews</p>
+    <h1 class="fm-panel-title" id="rv-h">No reviews are posted right now</h1>
+    <p class="fm-hook">Check back during the semester. In the meantime, every chapter has its own practice.</p>
+    <p><a class="fm-btn" href="/contents/index.html">Go to the contents</a></p>
+  </section>"""
+    return frontmatter._page(book, f"Reviews · {book['title']}", f"This semester's exam reviews for {book['title']}", body)
+
 
 def subtitle(file):
     page = (SITE / file).read_text(encoding="utf-8")
@@ -147,7 +198,13 @@ def main():
         "units": units,
         "about": None,
     })
-    for path, content in frontmatter.render(book).items():
+    pages = frontmatter.render(book)
+    if SEMESTER:
+        # Econ 150 only, so it's added here rather than in the shared front-matter design.
+        card_end = pages["contents/index.html"].index("</section>") + len("</section>")
+        pages["contents/index.html"] = pages["contents/index.html"][:card_end] + "\n\n" + semester_box() + pages["contents/index.html"][card_end:]
+    pages["review.html"] = review_page(book)
+    for path, content in pages.items():
         out = SITE / path
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(content, encoding="utf-8")

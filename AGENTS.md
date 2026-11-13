@@ -28,7 +28,8 @@ The website is econ.benjaminpacini.com, served by Cloudflare directly from the `
 | `etb-live/images/` | Chapter images, copied from EdTechBooks and kept at the same paths the pages use (`/images/content_images/…`) | Yes |
 | `etb-live/navigation.js` | The Previous / Home / Next bar | Yes |
 | `etb-live/index.html`, `etb-live/contents/index.html` | The cover and the table of contents, **generated** by `build/build_front.py` | **Never by hand.** Edit the units and chapter titles in `build/build_front.py`; each chapter's subtitle comes from its own title card. |
-| `build/build_front.py` | Builds the cover, the contents page, `etb-live/assets/book.css`, and `etb-live/assets/cover.jpg` | Yes |
+| `build/build_front.py` | Builds the cover, the contents page, `etb-live/assets/book.css`, `etb-live/assets/cover.jpg`, and the semester review page `etb-live/review.html` | Yes |
+| `etb-live/review.html` | This semester's exam reviews, at `/review`. **Generated** by `build/build_front.py` from its `SEMESTER` and `REVIEWS` settings, which also put a "This semester" box on the contents page. At the end of a term, set `SEMESTER = None` and rerun: the box disappears and `/review` says nothing is posted. The review pages (`unit-2-review*.html`, built with `practice-engines/tools/embed_review_page.py`) stay in the repository for next time. | **Never by hand.** Edit `SEMESTER` and `REVIEWS` in `build/build_front.py`. |
 | `etb-live/assets/` | Copies of the audio player and report button placed by `wrap_pages.py` | **Never by hand.** Edit `audio/player/` or `feedback/` and rerun the script. |
 | `build/wrap_pages.py` | Adds the page header, the audio player, and the Report a problem button to each chapter | Yes |
 | `feedback/` | The Report a problem button and the function that receives reports | Yes (see "Shared") |
