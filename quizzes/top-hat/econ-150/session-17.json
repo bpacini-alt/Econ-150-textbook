@@ -1,0 +1,127 @@
+{
+  "course": "Econ 150",
+  "session": 17,
+  "chapter": 17,
+  "title": "Econ 150 Session 17 Quiz: Externalities",
+  "slug": "econ150_session17_ch17_externalities",
+  "items": [
+    {
+      "slot": "vocab",
+      "source": "Ch 17 essential vocabulary",
+      "stem": "What is the word for a cost or benefit that falls on someone outside the deal between a buyer and a seller?",
+      "choices": [
+        "Opportunity cost",
+        "Deadweight loss",
+        "Externality",
+        "Transaction cost"
+      ],
+      "answer": 2
+    },
+    {
+      "slot": "vocab",
+      "source": "Ch 17 essential vocabulary (MSC)",
+      "stem": "What is the term for the full cost to society of making one more unit, counting both the producer's own cost and the harm to others?",
+      "choices": [
+        "Marginal private cost",
+        "Marginal social cost",
+        "Marginal external cost",
+        "Average total cost"
+      ],
+      "answer": 1
+    },
+    {
+      "slot": "vocab",
+      "source": "Ch 17 four types of externalities (new example)",
+      "stem": "Your neighbor keeps bees to sell honey, and the bees also pollinate the fruit trees in your yard. What kind of externality is this?",
+      "choices": [
+        "Negative production externality",
+        "Positive consumption externality",
+        "Negative consumption externality",
+        "Positive production externality"
+      ],
+      "answer": 3
+    },
+    {
+      "slot": "reading",
+      "source": "Ch 17 'Not zero: pollution, crime, even homicide'",
+      "stem": "The chapter points out that highway speed limits could be set at 20 miles per hour. What point does it use this example to make?",
+      "choices": [
+        "Preventing the last bit of harm has real costs, so the best level of harm is rarely zero",
+        "Drivers ignore the delay they add for others, so roads end up more crowded than they should be",
+        "Safety rules usually cost more than they save, so they should be kept to a minimum",
+        "Buyers and sellers can usually fix externalities on their own without any help"
+      ],
+      "answer": 0
+    },
+    {
+      "slot": "reading",
+      "source": "Ch 17 opening",
+      "stem": "In the chapter's opening, a buyer and a seller both say yes to a trade. What goes wrong when that trade has an externality?",
+      "choices": [
+        "The buyer pays more for the good than it is really worth to them",
+        "The seller hides some of the good's true costs from the buyer",
+        "Someone affected by the trade never got a say in it",
+        "The government sets a price that is too low for the seller"
+      ],
+      "answer": 2
+    },
+    {
+      "slot": "anchor",
+      "source": "Parallel to Market Failures common quiz Group 6.1 #10-11 (D2 - D1 measures external benefit; market underproduces by Qv - Qu)",
+      "stem": "Homeowners who plant shade trees also cool and brighten the street for their neighbors. In one town, homeowners plant 300 trees a year on their own, but counting the benefit to neighbors, the efficient number is 380. On a graph with private demand D1 and social benefit D2, which statement is correct?",
+      "choices": [
+        "The market overproduces by 80 trees, and the external benefit of each tree is D2 + D1",
+        "The market underproduces by 80 trees, and the external benefit of each tree is D2 − D1",
+        "The market underproduces by 80 trees, and the external benefit of each tree is the height of D2",
+        "The market overproduces by 80 trees, and the external cost of each tree is D2 − D1"
+      ],
+      "answer": 1
+    },
+    {
+      "slot": "retrieval",
+      "source": "Ch 15 Elasticity; parallel to Elasticity quiz Group 2 #27 and #31 (total revenue test)",
+      "stem": "A movie theater raises ticket prices by 10 percent, and ticket sales fall by 25 percent. What happened to the theater's total revenue, and what does that tell you about demand?",
+      "choices": [
+        "Revenue rose, so demand is elastic",
+        "Revenue fell, so demand is inelastic",
+        "Revenue rose, so demand is inelastic",
+        "Revenue fell, so demand is elastic"
+      ],
+      "answer": 3
+    },
+    {
+      "slot": "retrieval",
+      "source": "Ch 7 Taxes (Unit 1); parallel to Government Intervention and Efficiency quiz",
+      "stem": "Back in Chapter 7, why does a tax on a good create deadweight loss?",
+      "choices": [
+        "Some trades that would have helped both buyer and seller no longer happen",
+        "The government tends to spend the tax money less carefully than buyers would",
+        "Sellers pass the entire tax on to buyers in the form of higher prices",
+        "Buyers pay a higher price on every unit they still choose to buy"
+      ],
+      "answer": 0
+    },
+    {
+      "slot": "retrieval",
+      "source": "Ch 9 Costs (Unit 2); Unit 2 memorization quiz 'marginal curve rule'; parallel to Production and Costs quiz #62; exam's most-missed idea",
+      "stem": "A firm's average total cost is $18. The next unit it makes has a marginal cost of $14. If the firm makes that unit, what happens to its average total cost?",
+      "choices": [
+        "It rises, because making more output always raises total cost",
+        "It stays the same, because fixed costs don't change with output",
+        "It falls, because the new unit costs less than the current average",
+        "It rises, because marginal cost goes up as a firm produces more"
+      ],
+      "answer": 2
+    },
+    {
+      "slot": "prep",
+      "source": "Fixed final question; credit for either answer (set in Top Hat after import)",
+      "stem": "Did you fully prepare for class today?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0
+    }
+  ]
+}
