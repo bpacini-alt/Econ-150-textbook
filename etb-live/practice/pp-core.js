@@ -34,7 +34,13 @@
   /* Parse a typed number: accepts commas, %, $, a Unicode minus, and spaces. */
   const parseNumber = (raw) => {
     if (raw == null) return NaN;
-    const s = String(raw).trim().replace(/[−–—]/g, "-").replace(/[,$%\s]/g, "");
+    const s = String(raw).trim().replace(/[−–—]/g, "-").replace(/[,$%\s]/g, "").replace(/[⁄∕÷]/g, "/");
+    // A simple fraction such as 5/2 or -2/3 (opportunity costs are often written this way).
+    const f = /^([-+]?)(\d+\.?\d*|\.\d+)\/(\d+\.?\d*|\.\d+)$/.exec(s);
+    if (f) {
+      const den = Number(f[3]);
+      return den === 0 ? NaN : (f[1] === "-" ? -1 : 1) * Number(f[2]) / den;
+    }
     if (!/^[-+]?(\d+\.?\d*|\.\d+)$/.test(s)) return NaN;
     return Number(s);
   };
