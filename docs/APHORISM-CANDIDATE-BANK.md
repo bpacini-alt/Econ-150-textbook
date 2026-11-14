@@ -20,9 +20,9 @@ These decisions record candidate wording and source status; they do not mark the
 
 | Chapter | Decision | Wording / placement note |
 | --- | --- | --- |
-| **ECON 17** | **YES — wording** | “Tax a good, tax a bad!” is the approved concise wording. Author-written. Placement remains open: the current synthesis already says “Tax bads, not goods,” so review the prose location and avoid duplicating that summary. |
+| **ECON 17** | **YES — wording** | “If you're going to tax a good, you may as well tax a bad!” is the approved concise wording. Author-written. Placement remains open: the current synthesis already says “Tax bads, not goods,” so review the prose location and avoid duplicating that summary. |
 | **EDCOR 22** | **YES — wording; source verified** | “Memory is the residue of thought.” — Daniel Willingham. The source is the [American Educator article](https://www.aft.org/ae/winter2008-2009/willingham). The line already appears in Chapter 22 prose; consider formatting that existing occurrence as a **Key aphorism** rather than repeating it. This confirms the earlier Batch 2 YES and supersedes its source-check-pending note. |
-| **EDCOR 4** | **REWRITE requested** | “Good intentions cannot substitute for good evidence” remains open; Benjamin wants a slimmer, sharper version. No replacement wording is approved yet. |
+| **EDCOR 4** | **To Review — borrowed candidate; source verified** | Sowell: “Good intentions tell you nothing about the actual consequences.” ([“Intellectuals and Society: Part II,” Jan. 6, 2010](https://patriotpost.us/opinion/4601-intellectuals-and-society-part-ii-2010-01-06)). The quote concerns ideas and their consequences; applying it to teaching is a chapter-fit inference. Compare it with the author-written line, which still needs a slimmer, sharper rewrite. Nothing is approved for placement yet. |
 | **ECON 9, ECON 12, EDCOR 21** | **To Review** | The current suggestions are not advancing for catchiness. Keep them open as To Review, not NO decisions. |
 
 ## To Review — November 9, 2026
@@ -64,7 +64,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | ECON 14 · Poverty | 2 approved aphorisms in merged PR #155 | Chapter-by-chapter audit remains pending |
 | ECON 15 · Elasticity | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending; label update included |
 | ECON 16 · Institutions | — | Not started |
-| ECON 17 · Externalities | 1 approved wording: “Tax a good, tax a bad!” | Placement pending. The chapter synthesis already says “Tax bads, not goods”; review the prose location and avoid duplication. PR #159 was a preview-only practice page, not a Chapter 17 content change. |
+| ECON 17 · Externalities | 1 approved wording: “If you're going to tax a good, you may as well tax a bad!” | Placement pending. The chapter synthesis already says “Tax bads, not goods”; review the prose location and avoid duplication. PR #159 was a preview-only practice page, not a Chapter 17 content change. |
 | ECON 18 · Commons | — | Not started |
 | ECON 19 · Pigouvian correction | — | Not started |
 | ECON 20 · Healthcare | — | Not started |
@@ -77,7 +77,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 1 · Purpose | — | Not started |
 | EDCOR 2 · Biases | — | Not started |
 | EDCOR 3 · Empiricism | — | Not started |
-| EDCOR 4 · Evidence-based practice | Candidate under rewrite: “Good intentions cannot substitute for good evidence” | No replacement wording approved yet; chapter-fit review pending |
+| EDCOR 4 · Evidence-based practice | Sowell quotation candidate; author-written alternative still under rewrite | Quote source verified; compare chapter fit and wording before approval; chapter audit pending |
 | EDCOR 5 · Statistical significance | — | Not started |
 | EDCOR 6 · Practical significance | — | Not started |
 | EDCOR 7 · Mental health | — | Not started |
@@ -154,7 +154,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | **1. Purpose** | Purpose, becoming and rigorous thought; *rigor equals suffering or workload*. | “The difficulty is not what you get through. It is what makes you”; “Rigor is about thinking, not suffering”; “A difficult assignment isn't necessarily a demanding one”; “The goal of education isn't the task. It's the person the task helps form”; Bjork desirable-difficulties distinction, VERIFY. |
 | **2. Biases** | Thinking is systematically fallible; education cultivates intuitions and habits, not facts alone; *knowing biases makes you immune*. | “The rider learns the reasons. The elephant learns the habits”; “Knowing your bias doesn't make you immune to it”; “Teaching the right answer isn't the same as cultivating the right instinct”; C. S. Lewis's *irrigating deserts* image, VERIFY. |
 | **3. Empiricism** | Evidence, falsifiability, model simplification and limits of purely factual claims; *imperfect assumptions invalidate the scientific endeavor*. | **EXISTING subtitle, opening story, and synthesis** “The Bomb Worked!” (Dr. Dibble anecdote); “A theory that cannot lose cannot learn”; **Box, VERIFY** “All models are wrong, but some are useful”; “The experiment gets a vote your intuition doesn't”; “The best theory survives contact with reality.” |
-| **4. Evidence-based practice** | Study design and evidentiary standards, professional judgment and values; *an inspiring case study or sincere intention proves efficacy*. | “Evidence guides judgment; it cannot replace it”; “Good intentions cannot substitute for good evidence”; “A good teacher can be sincerely wrong”; “An inspiring story isn't necessarily a fair test.”; **BATCH 7 MAYBE “Good intentions cannot substitute for good evidence.”** |
+| **4. Evidence-based practice** | Study design and evidentiary standards, professional judgment and values; *an inspiring case study or sincere intention proves efficacy*. | **THOMAS SOWELL, SOURCE VERIFIED:** “Good intentions tell you nothing about the actual consequences.” ([“Intellectuals and Society: Part II,” Jan. 6, 2010](https://patriotpost.us/opinion/4601-intellectuals-and-society-part-ii-2010-01-06)); the original context concerns ideas and their societal consequences, so applying it to teaching is an inference to assess. Author-written candidate “Good intentions cannot substitute for good evidence” remains open for a sharper rewrite; “Evidence guides judgment; it cannot replace it”; “A good teacher can be sincerely wrong”; “An inspiring story isn't necessarily a fair test.”; **BATCH 7 MAYBE “Good intentions cannot substitute for good evidence.”** |
 | **5. Statistical significance** | Error, null hypothesis, p values and replication; *significant = certainly true*. | “A statistically significant result can still be wrong”; “Significant doesn't mean certain”; **Cohen, VERIFY** “The earth is round (p < .05)”; “A verdict is only as trustworthy as the trial that produced it.” |
 | **6. Practical significance** | Effect sizes, costs and magnitude, personal and practical stakes; *measurable = important*. | “Real is not the same as important”; “Statistically significant isn't necessarily significant”; “Don't just ask whether it works. Ask how much, for whom, and at what cost”; “A tiny effect can make a big headline.” |
 | **7. Mental health** | Evidence without false certainty; compassion plus coping, avoid inappropriate overprotection; *good support removes all discomfort*. | “Preserve the goal; redesign the path”; “Support doesn't always mean removing the challenge”; “Help students face manageable difficulty, not face it alone”; “Relief today can strengthen avoidance tomorrow” (context-dependent; needs caution). |
