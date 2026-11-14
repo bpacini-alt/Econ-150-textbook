@@ -14,6 +14,17 @@ Benjamin approved the exact lines below for placement in this reviewable pass. T
 | **ECON 14** | “The best way to make the world better is luggage.” | Paired with a short Galbraith excerpt. The luggage refrain's origin is uncertain; Benjamin recalls Cowen and Tabarrok, and a similar version appears in an interview with Alex Tabarrok. See the [source verification addendum](APHORISM-SOURCE-FIRST-QUARRY.md). |
 | **ECON 15** | “Elasticity = escape.” | Cowen and Tabarrok textbook mnemonic; the book passage is echoed in their [podcast transcript](https://www.mercatus.org/marginal-revolution-podcast/favorite-models-spence-monopolies-harberger-incidence-solow-growth). |
 
+## Decision update — November 14, 2026
+
+These decisions record candidate wording and source status; they do not mark the full chapter reviews complete.
+
+| Chapter | Decision | Wording / placement note |
+| --- | --- | --- |
+| **ECON 17** | **YES — wording** | “Tax a good, tax a bad!” is the approved concise wording. Author-written. Placement remains open: the current synthesis already says “Tax bads, not goods,” so review the prose location and avoid duplicating that summary. |
+| **EDCOR 22** | **YES — wording; source verified** | “Memory is the residue of thought.” — Daniel Willingham. The source is the [American Educator article](https://www.aft.org/ae/winter2008-2009/willingham). The line already appears in Chapter 22 prose; consider formatting that existing occurrence as a **Key aphorism** rather than repeating it. This confirms the earlier Batch 2 YES and supersedes its source-check-pending note. |
+| **EDCOR 4** | **REWRITE requested** | “Good intentions cannot substitute for good evidence” remains open; Benjamin wants a slimmer, sharper version. No replacement wording is approved yet. |
+| **ECON 9, ECON 12, EDCOR 21** | **To Review** | The current suggestions are not advancing for catchiness. Keep them open as To Review, not NO decisions. |
+
 ## To Review — November 9, 2026
 
 - **ECON 14 — future chapter work:** Consider including Galbraith's full migration passage from the [Oxford Reference entry](https://www.oxfordreference.com/display/10.1093/acref/9780191866692.001.0001/q-oro-ed6-00018844), with its original context and a verified edition/page citation. This is flagged for a later pass and is **not** included in this placement change.
@@ -25,6 +36,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 - **ECON 14:** “Working should never be the losing choice”; “A ladder out of poverty shouldn't punish the next rung”; “Poverty is how little people have; inequality is how far apart they are”; the welfare-cliff candidate.
 - **Other chapters:** The deadweight-loss-of-Christmas gift line; “Land is fixed; space is not”; existing heading/motif candidates “Empiricism: reality gets the final vote,” “Cost as Opportunity, Tragedy, and Distraction,” and “The Market as Mirror.”
 - **EDCOR 15:** “Feeling seen is not the same as being measured.” It remains in the live chapter while pending review. Other unselected EDCOR candidates, including “Nature via Nurture,” “The Water We Swim In,” and “The Fire, Not the Pail,” remain To Review.
+- **ECON 9, ECON 12, EDCOR 21:** “Rational people ignore sunk costs,” “Land is fixed; space is not,” and “Kids do well if they can” remain To Review. Benjamin found the current wording insufficiently catchy to advance; these are not NO decisions.
 
 ## Chapter-by-chapter progress tracker — started November 10, 2026
 
@@ -32,27 +44,27 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 
 **A chapter is done when** the current chapter and its relevant memorization quiz or study-guide items have been reviewed; the main idea, likely misconception, and exact prose location are recorded; wording ownership and source are checked; the chosen line fits the chapter and its limits; the aphorism appears in prose after the idea is introduced with the **Key aphorism** label; any optional **About the Aphorism** accordion sits separately nearby; and Benjamin has approved the preview and merged the PR.
 
-**Progress snapshot:** 0/52 chapters are marked done under this process. Nine chapter placements or revisions are already in aphorism PRs (#126 and #155), one ECON 17 candidate has a context-fit review and is queued behind PR #159, and 42 chapters have not yet had the chapter-by-chapter pass. “In PR” is active work, not completion. Counts below are selected lines or known existing sets, not a completed audit of every live chapter.
+**Progress snapshot:** 0/52 chapters have completed the full chapter-by-chapter audit. Aphorism placements for nine chapters landed in merged PRs #126 and #155; EDCOR Chapter 11’s shortened first line landed in merged PR #134. ECON 17 has approved wording but no placement yet. Candidate decisions are tracked separately from chapter completion.
 
 | Chapter | Selected / known work | Status and next step |
 | --- | --- | --- |
 | ECON 1 · Thinking like an economist | — | Not started |
 | ECON 2 · Consumer choice | — | Not started |
 | ECON 3 · Price system | — | Not started |
-| ECON 4 · Shifts, shocks, price controls | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 4 · Shifts, shocks, price controls | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending |
 | ECON 5 · Trade and specialization | — | Not started |
-| ECON 6 · Welfare | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 6 · Welfare | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending |
 | ECON 7 · Taxes and subsidies | — | Not started |
 | ECON 8 · International trade | — | Not started |
-| ECON 9 · Costs | — | Not started |
-| ECON 10 · Short-run firms | 1 approved line in PR #155 | Preview and author review pending; label update included |
+| ECON 9 · Costs | “Rational people ignore sunk costs” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
+| ECON 10 · Short-run firms | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending; label update included |
 | ECON 11 · Long run | — | Not started |
-| ECON 12 · Factor markets | — | Not started |
+| ECON 12 · Factor markets | “Land is fixed; space is not” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
 | ECON 13 · Labor and discrimination | — | Not started |
-| ECON 14 · Poverty | 2 approved aphorisms in PR #155 | Preview and author review pending |
-| ECON 15 · Elasticity | 1 approved aphorism in PR #155 | Preview and author review pending; label update included |
+| ECON 14 · Poverty | 2 approved aphorisms in merged PR #155 | Chapter-by-chapter audit remains pending |
+| ECON 15 · Elasticity | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending; label update included |
 | ECON 16 · Institutions | — | Not started |
-| ECON 17 · Externalities | 1 user-selected line: “If you're going to tax a good, you may as well tax a bad!” | Fit checked in the corrective-tax section. The chapter already says “Tax bads, not goods” in its synthesis; avoid duplication. Source note is in the quarry. Page edit queued behind PR #159, which changes Chapter17.html. |
+| ECON 17 · Externalities | 1 approved wording: “Tax a good, tax a bad!” | Placement pending. The chapter synthesis already says “Tax bads, not goods”; review the prose location and avoid duplication. PR #159 was a preview-only practice page, not a Chapter 17 content change. |
 | ECON 18 · Commons | — | Not started |
 | ECON 19 · Pigouvian correction | — | Not started |
 | ECON 20 · Healthcare | — | Not started |
@@ -65,15 +77,15 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 1 · Purpose | — | Not started |
 | EDCOR 2 · Biases | — | Not started |
 | EDCOR 3 · Empiricism | — | Not started |
-| EDCOR 4 · Evidence-based practice | — | Not started |
+| EDCOR 4 · Evidence-based practice | Candidate under rewrite: “Good intentions cannot substitute for good evidence” | No replacement wording approved yet; chapter-fit review pending |
 | EDCOR 5 · Statistical significance | — | Not started |
 | EDCOR 6 · Practical significance | — | Not started |
 | EDCOR 7 · Mental health | — | Not started |
 | EDCOR 8 · Positive psychology | — | Not started |
 | EDCOR 9 · Parenting | — | Not started |
 | EDCOR 10 · Child development | — | Not started |
-| EDCOR 11 · Constructivism | 3 revised aphorisms in PR #126 | Preview and author review pending; at the three-card ceiling |
-| EDCOR 12 · Social learning | 1 approved aphorism in PR #126 | Preview and author review pending |
+| EDCOR 11 · Constructivism | 3 aphorisms in merged PR #126; first line shortened in merged PR #134 | Chapter text updated; chapter-by-chapter audit pending; at the three-card ceiling |
+| EDCOR 12 · Social learning | 1 approved aphorism in merged PR #126 | Chapter-by-chapter audit remains pending |
 | EDCOR 13 · Adolescent development | — | Not started |
 | EDCOR 14 · Identity | — | Not started |
 | EDCOR 15 · Personality | “Feeling seen is not the same as being measured” remains To Review | Not started; full chapter-fit review pending |
@@ -82,12 +94,12 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 18 · Belonging | — | Not started |
 | EDCOR 19 · Extrinsic motivation | — | Not started |
 | EDCOR 20 · Intrinsic motivation | — | Not started |
-| EDCOR 21 · Executive function & ADHD | — | Not started |
-| EDCOR 22 · Memory & cognitive load | — | Not started |
+| EDCOR 21 · Executive function & ADHD | “Kids do well if they can” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
+| EDCOR 22 · Memory & cognitive load | Approved Willingham line already appears in chapter prose: “Memory is the residue of thought.” | Source verified; consider Key aphorism formatting of the existing occurrence without duplication; chapter audit pending |
 | EDCOR 23 · IQ | — | Not started |
-| EDCOR 24 · Learner differences | 1 approved aphorism in PR #126; an existing green principle card also needs counting | Preview and author review pending |
+| EDCOR 24 · Learner differences | 1 approved aphorism in merged PR #126; an existing green principle card still needs counting | Chapter-by-chapter audit remains pending |
 | EDCOR 25 · Research/practice gap | — | Not started |
-| EDCOR 26 · Grand adventure | 1 approved aphorism in PR #126 | Preview and author review pending |
+| EDCOR 26 · Grand adventure | 1 approved aphorism in merged PR #126 | Chapter-by-chapter audit remains pending |
 
 ## ECON 150 — Unit I
 
