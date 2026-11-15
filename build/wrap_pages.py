@@ -53,6 +53,7 @@ HEADER = """<!doctype html>
 <title>{title}</title>
 <link rel="stylesheet" href="assets/etb-audio.css">
 <link rel="stylesheet" href="assets/page-rating.css">
+<link rel="stylesheet" href="assets/etb-aphorism.css">
 <style>
 /* Keeps hidden hover definitions from making the page wider than a phone screen. */
 .etb{{overflow-x:clip}}
@@ -131,6 +132,8 @@ def main():
     shutil.copyfile(ROOT / "feedback" / "report.js", ASSETS / "report.js")
     shutil.copyfile(ROOT / "feedback" / "page-rating.js", ASSETS / "page-rating.js")
     shutil.copyfile(ROOT / "feedback" / "page-rating.css", ASSETS / "page-rating.css")
+    # Key aphorism boxes; aphorism/etb-aphorism.css is the one place to style them (shared with EDCOR 310).
+    shutil.copyfile(ROOT / "aphorism" / "etb-aphorism.css", ASSETS / "etb-aphorism.css")
 
     titles = {c["file"]: c["title"] for c in json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))["chapters"]}
     wrapped, skipped = 0, []
@@ -182,6 +185,8 @@ def main():
          str(ROOT / "menus" / "joy-of-econ.json"), str(SITE / "joy-of-econ.html")],
         check=True,
     )
+    # Warnings only: aphorism labels, recaps that don't match their cards, and leftover per-chapter aphorism styles.
+    subprocess.run([sys.executable, str(ROOT / "aphorism" / "check_aphorisms.py"), str(SITE)], check=False)
 
 
 if __name__ == "__main__":

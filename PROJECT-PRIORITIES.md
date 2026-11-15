@@ -414,6 +414,8 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 
 ### Both books: "Worth remembering" aphorism boxes (recorded October 24, 2026)
 
+**Update, November 15, 2026 (Benjamin):** the label is **Key aphorism** everywhere (**Key aphorisms** for a recap list of several). Step 1 is done in both books: the box styles live in `aphorism/etb-aphorism.css`, shared and linked by each build, and `aphorism/check_aphorisms.py` warns about wrong labels, recaps that don't match their cards, and leftover per-chapter styles. (In Econ 150, the five chapters' aphorism styles had been pasted into the generated page header, so the next `wrap_pages.py` run would have dropped them; they now come from the shared file.) The cross-book program in `docs/` is the record of approved lines. Benjamin will review all current aphorisms with Claude next.
+
 **Benjamin's view:** a clever turn of phrase makes a real difference to what students remember. Each chapter's big ideas should get a short, memorable line, shown in a "Worth remembering" box right where the idea is taught, with a recap of all of them after the chapter synthesis.
 
 **The model:** EDCOR 310 Chapter 11 (Constructivism), added in EDCOR 310 pull request #35. It has six aphorisms, such as "Your brain thinks in examples, not definitions" and "To change a mind, change the schema," each with a one- or two-sentence follow-up, and a recap of all six at the end. The look is the `etb-aphorism` style, which for now lives only in Chapter 11's own style block.
