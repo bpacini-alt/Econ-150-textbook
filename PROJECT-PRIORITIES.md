@@ -130,6 +130,8 @@ At a later stage, establish a consistent, maintainable sourcing system for both 
 - how to record enough source information to make future updates and corrections practical.
 
 **Why this is deferred:** The books already need better sourcing, but a durable references strategy is a systems decision. It is worth doing once the chapter structure, research boxes, and citation patterns are stable enough to reveal what the books actually need.
+
+**Decision for now (Benjamin, November 15, 2026), both books:** add a "Sources behind the chapter" list to a chapter when it is rebuilt or substantially revised, as a collapsed (click-to-open) section at the end of the chapter. Don't go back to add source lists to chapters that aren't being revised. The model is EDCOR 310 Chapter 19 (EDCOR 310 pull request #136).
 - Integrate the chapter-fit readings removed from the student-facing Joy of Econ menu into the relevant Econ 150 chapters. Use the [Joy of Econ chapter-addition backlog](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/menus/joy-of-econ-chapter-additions.md) and classify each item as **add**, **companion**, or **discard**. This is a mid-level quality pass to complete alongside normal chapter revisions.
 
 **Why this is high priority:** Better presentation, trustworthy sourcing, and fewer points of friction benefit every student immediately and multiply the value of every later feature.
