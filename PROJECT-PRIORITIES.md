@@ -130,6 +130,8 @@ At a later stage, establish a consistent, maintainable sourcing system for both 
 - how to record enough source information to make future updates and corrections practical.
 
 **Why this is deferred:** The books already need better sourcing, but a durable references strategy is a systems decision. It is worth doing once the chapter structure, research boxes, and citation patterns are stable enough to reveal what the books actually need.
+
+**Decision for now (Benjamin, November 15, 2026), both books:** add a "Sources behind the chapter" list to a chapter when it is rebuilt or substantially revised, as a collapsed (click-to-open) section at the end of the chapter. Don't go back to add source lists to chapters that aren't being revised. The model is EDCOR 310 Chapter 19 (EDCOR 310 pull request #136).
 - Integrate the chapter-fit readings removed from the student-facing Joy of Econ menu into the relevant Econ 150 chapters. Use the [Joy of Econ chapter-addition backlog](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/menus/joy-of-econ-chapter-additions.md) and classify each item as **add**, **companion**, or **discard**. This is a mid-level quality pass to complete alongside normal chapter revisions.
 
 **Why this is high priority:** Better presentation, trustworthy sourcing, and fewer points of friction benefit every student immediately and multiply the value of every later feature.
@@ -411,6 +413,8 @@ Full details, costs, and file-size limits are in `audio/README.md` under "Stage 
 **Status:** Record for later; do not start until the chapters are done being edited. Then go chapter by chapter, starting with the chapters students will be assigned first.
 
 ### Both books: "Worth remembering" aphorism boxes (recorded October 24, 2026)
+
+**Update, November 15, 2026 (Benjamin):** the label is **Key aphorism** everywhere (**Key aphorisms** for a recap list of several). Step 1 is done in both books: the box styles live in `aphorism/etb-aphorism.css`, shared and linked by each build, and `aphorism/check_aphorisms.py` warns about wrong labels, recaps that don't match their cards, and leftover per-chapter styles. (In Econ 150, the five chapters' aphorism styles had been pasted into the generated page header, so the next `wrap_pages.py` run would have dropped them; they now come from the shared file.) The cross-book program in `docs/` is the record of approved lines. Benjamin will review all current aphorisms with Claude next.
 
 **Benjamin's view:** a clever turn of phrase makes a real difference to what students remember. Each chapter's big ideas should get a short, memorable line, shown in a "Worth remembering" box right where the idea is taught, with a recap of all of them after the chapter synthesis.
 
