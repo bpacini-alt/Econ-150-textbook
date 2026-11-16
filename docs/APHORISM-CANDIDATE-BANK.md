@@ -25,6 +25,18 @@ These decisions record candidate wording and source status; they do not mark the
 | **EDCOR 4** | **YES — wording; paraphrase** | “Judge outcomes, not intentions.” Credit as a paraphrase of Thomas Sowell’s line that policies and practices should be judged by their actual consequences, not their rhetoric. Source: [“Is the Civil War Over?” (July 14, 2015)](https://townhall.com/columnists/thomassowell/2015/07/14/is-the-civil-war-over-n2024855). This is not a direct quotation; chapter placement and explanatory context remain for the review pass. |
 | **ECON 9, ECON 12, EDCOR 21** | **To Review** | The current suggestions are not advancing for catchiness. Keep them open as To Review, not NO decisions. |
 
+
+## Willingham placement discussion — November 16, 2026
+
+These decisions record candidate status and possible placement; they do not authorize chapter edits. Benjamin wants to avoid adding aphorisms where the returns are low.
+
+| Candidate | Status | Placement |
+| --- | --- | --- |
+| **“The mind is not designed for thinking; it’s designed to save us from having to think.”** | Placement approved; exact source wording still needs checking. | **EDCOR 22, Learning Strategies.** Sharpen or replace the existing opening prose; do not add a redundant card. |
+| **“Thinking well requires knowing facts.”** | Placement approved; exact source wording still needs checking. | **EDCOR 1, Domain-Specific Knowledge.** The live chapter already says “Thinking well requires knowing a great deal”; decide whether to feature the Willingham wording or revise the existing prose to avoid repetition. |
+| **“Practice until you are perfect and you will be perfect only briefly.”** | **LIKED; placement open.** Exact source passage still needs checking. | EDCOR 22’s **Spaced Practice** section is the leading fit. Compare it with EDCOR 1’s **Mastery Learning** section and weigh it against the other EDCOR 22 candidates before deciding whether it earns a separate card. |
+
+
 ## To Review — November 9, 2026
 
 - **ECON 14 — future chapter work:** Consider including Galbraith's full migration passage from the [Oxford Reference entry](https://www.oxfordreference.com/display/10.1093/acref/9780191866692.001.0001/q-oro-ed6-00018844), with its original context and a verified edition/page citation. This is flagged for a later pass and is **not** included in this placement change.
