@@ -14,6 +14,35 @@ Benjamin approved the exact lines below for placement in this reviewable pass. T
 | **ECON 14** | “The best way to make the world better is luggage.” | Paired with a short Galbraith excerpt. The luggage refrain's origin is uncertain; Benjamin recalls Cowen and Tabarrok, and a similar version appears in an interview with Alex Tabarrok. See the [source verification addendum](APHORISM-SOURCE-FIRST-QUARRY.md). |
 | **ECON 15** | “Elasticity = escape.” | Cowen and Tabarrok textbook mnemonic; the book passage is echoed in their [podcast transcript](https://www.mercatus.org/marginal-revolution-podcast/favorite-models-spence-monopolies-harberger-incidence-solow-growth). |
 
+## Decision update — November 14, 2026
+
+These decisions record candidate wording and source status; they do not mark the full chapter reviews complete.
+
+| Chapter | Decision | Wording / placement note |
+| --- | --- | --- |
+| **ECON 17** | **YES — wording** | “If you're going to tax a good, you may as well tax a bad!” is the approved concise wording. Author-written. Placement remains open: the current synthesis already says “Tax bads, not goods,” so review the prose location and avoid duplicating that summary. |
+| **EDCOR 22** | **YES — wording; source verified** | “Memory is the residue of thought.” — Daniel Willingham. The source is the [American Educator article](https://www.aft.org/ae/winter2008-2009/willingham). The line already appears in Chapter 22 prose; consider formatting that existing occurrence as a **Key aphorism** rather than repeating it. This confirms the earlier Batch 2 YES and supersedes its source-check-pending note. |
+| **EDCOR 4** | **YES — wording; paraphrase** | “Judge outcomes, not intentions.” Credit as a paraphrase of Thomas Sowell’s line that policies and practices should be judged by their actual consequences, not their rhetoric. Source: [“Is the Civil War Over?” (July 14, 2015)](https://townhall.com/columnists/thomassowell/2015/07/14/is-the-civil-war-over-n2024855). This is not a direct quotation; chapter placement and explanatory context remain for the review pass. |
+| **ECON 9, ECON 12, EDCOR 21** | **To Review** | The current suggestions are not advancing for catchiness. Keep them open as To Review, not NO decisions. |
+
+
+## Willingham placement discussion — November 16, 2026
+
+These decisions record candidate status and possible placement; they do not authorize chapter edits. Benjamin wants to avoid adding aphorisms where the returns are low.
+
+| Candidate | Status | Placement |
+| --- | --- | --- |
+| **“The mind is not designed for thinking; it’s designed to save us from having to think.”** | Placement approved; exact source wording still needs checking. | **EDCOR 22, Learning Strategies.** Sharpen or replace the existing opening prose; do not add a redundant card. |
+| **“Thinking well requires knowing facts.”** | Placement approved; exact source wording still needs checking. | **EDCOR 1, Domain-Specific Knowledge.** The live chapter already says “Thinking well requires knowing a great deal”; decide whether to feature the Willingham wording or revise the existing prose to avoid repetition. |
+| **“Practice until you are perfect and you will be perfect only briefly.”** | **LIKED; placement open.** Exact source passage still needs checking. | EDCOR 22’s **Spaced Practice** section is the leading fit. Compare it with EDCOR 1’s **Mastery Learning** section and weigh it against the other EDCOR 22 candidates before deciding whether it earns a separate card. |
+
+| **“Judge the effectiveness of a method by the results, not by how it feels to do it.”** | Verified direct quote from Willingham, *Outsmart Your Brain*, introduction; Benjamin currently leans toward EDCOR 4. | **EDCOR 4, Evidence-Based Practice** is the leading location; its use there applies the quote’s original study-method context to teaching methods. Avoid duplicating it in EDCOR 22, whose Learning Strategies prose and research side-quest already state the feeling/performance mismatch. |
+| **“The best learning strategies don’t always feel like the best learning strategies.”** | Benjamin’s rough alternate wording for the same strategy-feeling idea, not a separate concept. | EDCOR 22 already states this idea; retain the wording for comparison, not as an additional card. |
+| **“Familiarity feels like truth.”** | Benjamin likes this for EDCOR 2; a paraphrase, not Willingham’s exact wording. | **EDCOR 2, Cognitive Biases** is the preferred home, near the discussion of familiarity and the illusion of rereading. Any explanatory subtext should make clear that familiarity can make a claim seem truer without improving its evidence. |
+| **“Judge outcomes, not intentions.”** | Approved Thomas Sowell paraphrase; prose only, not an aphorism card. | If retained in EDCOR 4, keep it in ordinary prose. It does not currently appear in the live chapter; this note does not add it to the chapter. |
+
+
+
 ## To Review — November 9, 2026
 
 - **ECON 14 — future chapter work:** Consider including Galbraith's full migration passage from the [Oxford Reference entry](https://www.oxfordreference.com/display/10.1093/acref/9780191866692.001.0001/q-oro-ed6-00018844), with its original context and a verified edition/page citation. This is flagged for a later pass and is **not** included in this placement change.
@@ -25,6 +54,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 - **ECON 14:** “Working should never be the losing choice”; “A ladder out of poverty shouldn't punish the next rung”; “Poverty is how little people have; inequality is how far apart they are”; the welfare-cliff candidate.
 - **Other chapters:** The deadweight-loss-of-Christmas gift line; “Land is fixed; space is not”; existing heading/motif candidates “Empiricism: reality gets the final vote,” “Cost as Opportunity, Tragedy, and Distraction,” and “The Market as Mirror.”
 - **EDCOR 15:** “Feeling seen is not the same as being measured.” It remains in the live chapter while pending review. Other unselected EDCOR candidates, including “Nature via Nurture,” “The Water We Swim In,” and “The Fire, Not the Pail,” remain To Review.
+- **ECON 9, ECON 12, EDCOR 21:** “Rational people ignore sunk costs,” “Land is fixed; space is not,” and “Kids do well if they can” remain To Review. Benjamin found the current wording insufficiently catchy to advance; these are not NO decisions.
 
 ## Chapter-by-chapter progress tracker — started November 10, 2026
 
@@ -32,27 +62,27 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 
 **A chapter is done when** the current chapter and its relevant memorization quiz or study-guide items have been reviewed; the main idea, likely misconception, and exact prose location are recorded; wording ownership and source are checked; the chosen line fits the chapter and its limits; the aphorism appears in prose after the idea is introduced with the **Key aphorism** label; any optional **About the Aphorism** accordion sits separately nearby; and Benjamin has approved the preview and merged the PR.
 
-**Progress snapshot:** 0/52 chapters are marked done under this process. Nine chapter placements or revisions are already in aphorism PRs (#126 and #155), one ECON 17 candidate has a context-fit review and is queued behind PR #159, and 42 chapters have not yet had the chapter-by-chapter pass. “In PR” is active work, not completion. Counts below are selected lines or known existing sets, not a completed audit of every live chapter.
+**Progress snapshot:** 0/52 chapters have completed the full chapter-by-chapter audit. Aphorism placements for nine chapters landed in merged PRs #126 and #155; EDCOR Chapter 11’s shortened first line landed in merged PR #134. ECON 17 has approved wording but no placement yet. Candidate decisions are tracked separately from chapter completion.
 
 | Chapter | Selected / known work | Status and next step |
 | --- | --- | --- |
 | ECON 1 · Thinking like an economist | — | Not started |
 | ECON 2 · Consumer choice | — | Not started |
 | ECON 3 · Price system | — | Not started |
-| ECON 4 · Shifts, shocks, price controls | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 4 · Shifts, shocks, price controls | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending |
 | ECON 5 · Trade and specialization | — | Not started |
-| ECON 6 · Welfare | 1 approved line in PR #155 | Preview and author review pending |
+| ECON 6 · Welfare | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending |
 | ECON 7 · Taxes and subsidies | — | Not started |
 | ECON 8 · International trade | — | Not started |
-| ECON 9 · Costs | — | Not started |
-| ECON 10 · Short-run firms | 1 approved line in PR #155 | Preview and author review pending; label update included |
+| ECON 9 · Costs | “Rational people ignore sunk costs” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
+| ECON 10 · Short-run firms | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending; label update included |
 | ECON 11 · Long run | — | Not started |
-| ECON 12 · Factor markets | — | Not started |
+| ECON 12 · Factor markets | “Land is fixed; space is not” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
 | ECON 13 · Labor and discrimination | — | Not started |
-| ECON 14 · Poverty | 2 approved aphorisms in PR #155 | Preview and author review pending |
-| ECON 15 · Elasticity | 1 approved aphorism in PR #155 | Preview and author review pending; label update included |
+| ECON 14 · Poverty | 2 approved aphorisms in merged PR #155 | Chapter-by-chapter audit remains pending |
+| ECON 15 · Elasticity | 1 approved aphorism in merged PR #155 | Chapter-by-chapter audit remains pending; label update included |
 | ECON 16 · Institutions | — | Not started |
-| ECON 17 · Externalities | 1 user-selected line: “If you're going to tax a good, you may as well tax a bad!” | Fit checked in the corrective-tax section. The chapter already says “Tax bads, not goods” in its synthesis; avoid duplication. Source note is in the quarry. Page edit queued behind PR #159, which changes Chapter17.html. |
+| ECON 17 · Externalities | 1 approved wording: “If you're going to tax a good, you may as well tax a bad!” | Placement pending. The chapter synthesis already says “Tax bads, not goods”; review the prose location and avoid duplication. PR #159 was a preview-only practice page, not a Chapter 17 content change. |
 | ECON 18 · Commons | — | Not started |
 | ECON 19 · Pigouvian correction | — | Not started |
 | ECON 20 · Healthcare | — | Not started |
@@ -65,15 +95,15 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 1 · Purpose | — | Not started |
 | EDCOR 2 · Biases | — | Not started |
 | EDCOR 3 · Empiricism | — | Not started |
-| EDCOR 4 · Evidence-based practice | — | Not started |
+| EDCOR 4 · Evidence-based practice | “Judge outcomes, not intentions.” — approved paraphrase of Thomas Sowell | Wording approved; chapter placement and full chapter audit pending |
 | EDCOR 5 · Statistical significance | — | Not started |
 | EDCOR 6 · Practical significance | — | Not started |
 | EDCOR 7 · Mental health | — | Not started |
 | EDCOR 8 · Positive psychology | — | Not started |
 | EDCOR 9 · Parenting | — | Not started |
 | EDCOR 10 · Child development | — | Not started |
-| EDCOR 11 · Constructivism | 3 revised aphorisms in PR #126 | Preview and author review pending; at the three-card ceiling |
-| EDCOR 12 · Social learning | 1 approved aphorism in PR #126 | Preview and author review pending |
+| EDCOR 11 · Constructivism | 3 aphorisms in merged PR #126; first line shortened in merged PR #134 | Chapter text updated; chapter-by-chapter audit pending; at the three-card ceiling |
+| EDCOR 12 · Social learning | 1 approved aphorism in merged PR #126 | Chapter-by-chapter audit remains pending |
 | EDCOR 13 · Adolescent development | — | Not started |
 | EDCOR 14 · Identity | — | Not started |
 | EDCOR 15 · Personality | “Feeling seen is not the same as being measured” remains To Review | Not started; full chapter-fit review pending |
@@ -82,12 +112,12 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 18 · Belonging | — | Not started |
 | EDCOR 19 · Extrinsic motivation | — | Not started |
 | EDCOR 20 · Intrinsic motivation | — | Not started |
-| EDCOR 21 · Executive function & ADHD | — | Not started |
-| EDCOR 22 · Memory & cognitive load | — | Not started |
+| EDCOR 21 · Executive function & ADHD | “Kids do well if they can” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
+| EDCOR 22 · Memory & cognitive load | Approved Willingham line already appears in chapter prose: “Memory is the residue of thought.” | Source verified; consider Key aphorism formatting of the existing occurrence without duplication; chapter audit pending |
 | EDCOR 23 · IQ | — | Not started |
-| EDCOR 24 · Learner differences | 1 approved aphorism in PR #126; an existing green principle card also needs counting | Preview and author review pending |
+| EDCOR 24 · Learner differences | 1 approved aphorism in merged PR #126; an existing green principle card still needs counting | Chapter-by-chapter audit remains pending |
 | EDCOR 25 · Research/practice gap | — | Not started |
-| EDCOR 26 · Grand adventure | 1 approved aphorism in PR #126 | Preview and author review pending |
+| EDCOR 26 · Grand adventure | 1 approved aphorism in merged PR #126 | Chapter-by-chapter audit remains pending |
 
 ## ECON 150 — Unit I
 
@@ -142,7 +172,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | **1. Purpose** | Purpose, becoming and rigorous thought; *rigor equals suffering or workload*. | “The difficulty is not what you get through. It is what makes you”; “Rigor is about thinking, not suffering”; “A difficult assignment isn't necessarily a demanding one”; “The goal of education isn't the task. It's the person the task helps form”; Bjork desirable-difficulties distinction, VERIFY. |
 | **2. Biases** | Thinking is systematically fallible; education cultivates intuitions and habits, not facts alone; *knowing biases makes you immune*. | “The rider learns the reasons. The elephant learns the habits”; “Knowing your bias doesn't make you immune to it”; “Teaching the right answer isn't the same as cultivating the right instinct”; C. S. Lewis's *irrigating deserts* image, VERIFY. |
 | **3. Empiricism** | Evidence, falsifiability, model simplification and limits of purely factual claims; *imperfect assumptions invalidate the scientific endeavor*. | **EXISTING subtitle, opening story, and synthesis** “The Bomb Worked!” (Dr. Dibble anecdote); “A theory that cannot lose cannot learn”; **Box, VERIFY** “All models are wrong, but some are useful”; “The experiment gets a vote your intuition doesn't”; “The best theory survives contact with reality.” |
-| **4. Evidence-based practice** | Study design and evidentiary standards, professional judgment and values; *an inspiring case study or sincere intention proves efficacy*. | “Evidence guides judgment; it cannot replace it”; “Good intentions cannot substitute for good evidence”; “A good teacher can be sincerely wrong”; “An inspiring story isn't necessarily a fair test.”; **BATCH 7 MAYBE “Good intentions cannot substitute for good evidence.”** |
+| **4. Evidence-based practice** | Study design and evidentiary standards, professional judgment and values; *an inspiring case study or sincere intention proves efficacy*. | **BENJAMIN YES — PARAPHRASE OF THOMAS SOWELL:** “Judge outcomes, not intentions.” Adapted from Sowell’s statement that policies and practices should be judged by their actual consequences, not their rhetoric ([“Is the Civil War Over?,” July 14, 2015](https://townhall.com/columnists/thomassowell/2015/07/14/is-the-civil-war-over-n2024855)). This is not verbatim; the original column addresses race-policy debates, and applying the principle to teaching is an adaptation. The earlier author-written “Good intentions cannot substitute for good evidence” remains in review history, not as an active alternative. |
 | **5. Statistical significance** | Error, null hypothesis, p values and replication; *significant = certainly true*. | “A statistically significant result can still be wrong”; “Significant doesn't mean certain”; **Cohen, VERIFY** “The earth is round (p < .05)”; “A verdict is only as trustworthy as the trial that produced it.” |
 | **6. Practical significance** | Effect sizes, costs and magnitude, personal and practical stakes; *measurable = important*. | “Real is not the same as important”; “Statistically significant isn't necessarily significant”; “Don't just ask whether it works. Ask how much, for whom, and at what cost”; “A tiny effect can make a big headline.” |
 | **7. Mental health** | Evidence without false certainty; compassion plus coping, avoid inappropriate overprotection; *good support removes all discomfort*. | “Preserve the goal; redesign the path”; “Support doesn't always mean removing the challenge”; “Help students face manageable difficulty, not face it alone”; “Relief today can strengthen avoidance tomorrow” (context-dependent; needs caution). |
