@@ -62,7 +62,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 
 **A chapter is done when** the current chapter and its relevant memorization quiz or study-guide items have been reviewed; the main idea, likely misconception, and exact prose location are recorded; wording ownership and source are checked; the chosen line fits the chapter and its limits; the aphorism appears in prose after the idea is introduced with the **Key aphorism** label; any optional **About the Aphorism** accordion sits separately nearby; and Benjamin has approved the preview and merged the PR.
 
-**Progress snapshot:** 0/52 chapters have completed the full chapter-by-chapter audit. Aphorism placements for nine chapters landed in merged PRs #126 and #155; EDCOR Chapter 11’s shortened first line landed in merged PR #134. ECON 17 has approved wording but no placement yet. Candidate decisions are tracked separately from chapter completion.
+**Progress snapshot:** 0/52 chapters have completed the full chapter-by-chapter audit. Aphorism placements for nine chapters landed in merged PRs #126 and #155; EDCOR Chapter 11’s shortened first line landed in merged PR #134. ECON 17 has approved wording but no placement yet. EDCOR 17, 19, and 20 aphorisms landed in merged PRs #136, #137, and #140. Candidate decisions are tracked separately from chapter completion.
 
 | Chapter | Selected / known work | Status and next step |
 | --- | --- | --- |
@@ -108,10 +108,10 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 14 · Identity | — | Not started |
 | EDCOR 15 · Personality | “Feeling seen is not the same as being measured” remains To Review | Not started; full chapter-fit review pending |
 | EDCOR 16 · Agency | — | Not started |
-| EDCOR 17 · Culture | — | Not started |
+| EDCOR 17 · Culture | 2 aphorisms in chapter: “Tradition is just peer pressure from dead people.” and “Peer culture is a design problem, not a discipline problem.” Kept by Benjamin November 15, 2026; recap matched to the card in merged PR #140 | Chapter-by-chapter audit remains pending |
 | EDCOR 18 · Belonging | — | Not started |
-| EDCOR 19 · Extrinsic motivation | — | Not started |
-| EDCOR 20 · Intrinsic motivation | — | Not started |
+| EDCOR 19 · Extrinsic motivation | 3 approved aphorisms in merged PR #136: “You are going to use behaviorism, so use it skillfully.”; “Attention is a reward. Spend it on purpose.”; “The goal isn’t students who obey, but students who choose well.” (adapted from Elder Dale G. Renlund, “Choose You This Day,” October 2018) | Chapter-by-chapter audit remains pending; at the three-card ceiling |
+| EDCOR 20 · Intrinsic motivation | 2 approved aphorisms in merged PR #137: “First, do no (motivational) harm.” (with an About the Aphorism box on the Hippocratic origin) and Maria Montessori, “The greatest sign of success for a teacher … is to be able to say, ‘The children are now working as if I did not exist.’” (*The Absorbent Mind*, 1949) | Chapter-by-chapter audit remains pending. Unselected candidates (Pink, Deci, Canning & Harackiewicz) are To Review in EDCOR’s `docs/APHORISM-BANK.md` |
 | EDCOR 21 · Executive function & ADHD | “Kids do well if they can” remains To Review | Current wording not advancing for catchiness; chapter audit not started |
 | EDCOR 22 · Memory & cognitive load | Approved Willingham line already appears in chapter prose: “Memory is the residue of thought.” | Source verified; consider Key aphorism formatting of the existing occurrence without duplication; chapter audit pending |
 | EDCOR 23 · IQ | — | Not started |
