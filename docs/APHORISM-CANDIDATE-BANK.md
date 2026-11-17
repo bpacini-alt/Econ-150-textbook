@@ -36,6 +36,12 @@ These decisions record candidate status and possible placement; they do not auth
 | **“Thinking well requires knowing facts.”** | Placement approved; exact source wording still needs checking. | **EDCOR 1, Domain-Specific Knowledge.** The live chapter already says “Thinking well requires knowing a great deal”; decide whether to feature the Willingham wording or revise the existing prose to avoid repetition. |
 | **“Practice until you are perfect and you will be perfect only briefly.”** | **LIKED; placement open.** Exact source passage still needs checking. | EDCOR 22’s **Spaced Practice** section is the leading fit. Compare it with EDCOR 1’s **Mastery Learning** section and weigh it against the other EDCOR 22 candidates before deciding whether it earns a separate card. |
 
+| **“Judge the effectiveness of a method by the results, not by how it feels to do it.”** | Verified direct quote from Willingham, *Outsmart Your Brain*, introduction; Benjamin currently leans toward EDCOR 4. | **EDCOR 4, Evidence-Based Practice** is the leading location; its use there applies the quote’s original study-method context to teaching methods. Avoid duplicating it in EDCOR 22, whose Learning Strategies prose and research side-quest already state the feeling/performance mismatch. |
+| **“The best learning strategies don’t always feel like the best learning strategies.”** | Benjamin’s rough alternate wording for the same strategy-feeling idea, not a separate concept. | EDCOR 22 already states this idea; retain the wording for comparison, not as an additional card. |
+| **“Familiarity feels like truth.”** | Benjamin likes this for EDCOR 2; a paraphrase, not Willingham’s exact wording. | **EDCOR 2, Cognitive Biases** is the preferred home, near the discussion of familiarity and the illusion of rereading. Any explanatory subtext should make clear that familiarity can make a claim seem truer without improving its evidence. |
+| **“Judge outcomes, not intentions.”** | Approved Thomas Sowell paraphrase; prose only, not an aphorism card. | If retained in EDCOR 4, keep it in ordinary prose. It does not currently appear in the live chapter; this note does not add it to the chapter. |
+
+
 
 ## To Review — November 9, 2026
 
