@@ -18,6 +18,7 @@
   function buildDeck(activity) {
     const byBin = activity.bins.map((_, b) => shuffle(activity.cards.map((c, i) => c.bin === b ? i : -1).filter((i) => i >= 0)));
     const counts = byBin.map((items) => items.length);
+    const remainingByBin = counts.slice();
     const rounds = [];
     let remaining = counts.reduce((a, b) => a + b, 0);
     const size = Math.min(activity.round_size || 6, activity.cards.length);
@@ -27,11 +28,13 @@
       const round = [];
       const used = counts.map(() => 0);
       while (round.length < target) {
-        const available = counts.map((n, b) => b).filter((b) => used[b] < counts[b]);
+        const available = remainingByBin.map((n, b) => b).filter((b) => remainingByBin[b] > 0);
         const least = Math.min(...available.map((b) => used[b]));
-        const tied = shuffle(available.filter((b) => used[b] === least));
-        const bin = tied[0];
+        const tied = available.filter((b) => used[b] === least);
+        const mostRemaining = Math.max(...tied.map((b) => remainingByBin[b]));
+        const bin = shuffle(tied.filter((b) => remainingByBin[b] === mostRemaining))[0];
         round.push(byBin[bin].pop());
+        remainingByBin[bin] -= 1;
         used[bin] += 1;
       }
       rounds.push(shuffle(round));
