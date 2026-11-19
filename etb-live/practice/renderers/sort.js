@@ -11,21 +11,63 @@
   "use strict";
   const { esc, shuffle } = PP.util;
 
-  function buildRound(activity) {
+  function signature(activity) {
+    return JSON.stringify([activity.round_size || 6, activity.cards.map((c) => [c.id, c.text, c.bin])]);
+  }
+
+  function buildDeck(activity) {
+    const byBin = activity.bins.map((_, b) => shuffle(activity.cards.map((c, i) => c.bin === b ? i : -1).filter((i) => i >= 0)));
+    const counts = byBin.map((items) => items.length);
+    const remainingByBin = counts.slice();
+    const rounds = [];
+    let remaining = counts.reduce((a, b) => a + b, 0);
     const size = Math.min(activity.round_size || 6, activity.cards.length);
-    const all = shuffle(activity.cards.map((_, i) => i));
-    const chosen = [];
-    activity.bins.forEach((_, b) => {
-      const k = all.find((i) => activity.cards[i].bin === b && !chosen.includes(i));
-      if (k != null && chosen.length < size) chosen.push(k);
-    });
-    for (const i of all) { if (chosen.length >= size) break; if (!chosen.includes(i)) chosen.push(i); }
-    return shuffle(chosen);
+
+    while (remaining > 0) {
+      const target = Math.min(size, remaining);
+      const round = [];
+      const used = counts.map(() => 0);
+      while (round.length < target) {
+        const available = remainingByBin.map((n, b) => b).filter((b) => remainingByBin[b] > 0);
+        const least = Math.min(...available.map((b) => used[b]));
+        const tied = available.filter((b) => used[b] === least);
+        const mostRemaining = Math.max(...tied.map((b) => remainingByBin[b]));
+        const bin = shuffle(tied.filter((b) => remainingByBin[b] === mostRemaining))[0];
+        round.push(byBin[bin].pop());
+        remainingByBin[bin] -= 1;
+        used[bin] += 1;
+      }
+      rounds.push(shuffle(round));
+      remaining -= target;
+    }
+    return rounds.flat();
+  }
+
+  function nextRound(activity, st) {
+    const key = signature(activity);
+    if (!st.sortDeck || st.sortDeck.signature !== key) {
+      st.sortDeck = { signature: key, order: buildDeck(activity), pos: 0 };
+      st.round = null;
+    }
+    let deck = st.sortDeck;
+    if (deck.pos >= deck.order.length) {
+      deck.order = buildDeck(activity);
+      deck.pos = 0;
+    }
+    const size = Math.min(activity.round_size || 6, activity.cards.length);
+    const round = deck.order.slice(deck.pos, deck.pos + size);
+    deck.pos += round.length;
+    return round;
   }
 
   PP.register("sort", {
     render(host, activity, ctx) {
       const st = ctx.state;
+      const expected = signature(activity);
+      if (!st.sortDeck || st.sortDeck.signature !== expected) {
+        st.sortDeck = { signature: expected, order: buildDeck(activity), pos: 0 };
+        st.round = null;
+      }
       let selected = null;
       let drag = null;
       let advanceTimer = null;
@@ -34,7 +76,7 @@
 
       function newRound() {
         if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
-        st.round = buildRound(activity); st.picks = {}; st.how = {}; st.checked = false; ctx.save();
+        st.round = nextRound(activity, st); st.picks = {}; st.how = {}; st.checked = false; ctx.save();
       }
       let marked = false;
       const placed = () => st.round.filter((i) => st.picks[i] != null).length;
