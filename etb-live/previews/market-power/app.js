@@ -115,7 +115,7 @@
     const cut=r.oldp-r.newp,earlier=r.q-1;
     const labels=['Compare the offers','See both effects','Find marginal revenue'];
     const titles=[mono?'A lower price attracts one more buyer.':'One more buyer at the same price.',
-      mono?'The extra buyer adds revenue. The price cut gives some up.':'The extra buyer adds revenue. The price stays the same.',
+      mono?'The price cut changes revenue in two ways.':'The extra buyer adds revenue at the same price.',
       r.mr<0?'More tickets, less total revenue.':r.mr===0?'One more ticket adds no net revenue.':'How much extra revenue did the sale add?'];
     const explanation=mono?
       'At '+dollars(r.oldp)+', '+earlier+' '+(earlier===1?'person buys':'people buy')+'. At '+dollars(r.newp)+', '+r.q+' people buy. Everyone pays the same price.':
@@ -128,9 +128,9 @@
       h+='<p class="mr-rule">'+(mono?'Notice that Offer B charges the lower price for <strong>every ticket</strong>.':'Both offers charge the same price for every ticket.')+'</p>';
     }
     if(sale.phase===1){
-      h+='<div class="mr-effects"><div class="mr-effect mr-effect-add"><span>Extra buyer</span><strong>'+change(r.gain)+'</strong><p>The extra ticket brings in '+dollars(r.gain)+'.</p></div>'+
-        '<div class="mr-effect mr-effect-subtract"><span>'+(mono?'Price cut for the other '+(earlier===1?'buyer':'buyers'):'Other buyers')+'</span><strong>'+(r.loss?'−'+dollars(r.loss):'$0')+'</strong><p>'+
-        (mono?(earlier===1?'The first buyer pays '+dollars(cut)+' less.':earlier+' other buyers each pay '+dollars(cut)+' less.'):'The price stays at '+dollars(r.newp)+', so no revenue is lost.')+'</p></div></div>';
+      h+='<div class="mr-effects"><div class="mr-effect mr-effect-subtract"><span>'+(mono?'Price cut for the other '+(earlier===1?'buyer':'buyers'):'Other buyers')+'</span><strong>'+(r.loss?'−'+dollars(r.loss):'$0')+'</strong><p>'+
+        (mono?(earlier===1?'The first buyer pays '+dollars(cut)+' less.':earlier+' other buyers each pay '+dollars(cut)+' less.'):'The price stays at '+dollars(r.newp)+', so no revenue is lost.')+'</p></div>'+
+        '<div class="mr-effect mr-effect-add"><span>Extra buyer</span><strong>'+change(r.gain)+'</strong><p>The extra ticket brings in '+dollars(r.gain)+'.</p></div></div>';
     }
     if(sale.phase===2){
       h+='<div class="mr-result" role="status"><p>Marginal revenue = change in total revenue</p><div class="mr-subtraction">'+dollars(r.after)+' <span>−</span> '+dollars(r.before)+' <span>=</span> <strong>'+change(r.mr)+'</strong></div>'+
