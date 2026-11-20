@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Market power · Interactive previews</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="runtime/pp.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main class="mp-page">
+  <header class="mp-header">
+    <div class="pp-eyebrow">The Joy of Economics · Chapter 21 · Prototype</div>
+    <h1>Seeing market power</h1>
+    <p>Two short ways to connect a firm's demand, price, and revenue.</p>
+  </header>
+  <nav class="mp-nav" aria-label="Interactive previews">
+    <a href="#graphs" id="nav-graphs">1. Recognize the graph</a>
+    <a href="#revenue" id="nav-revenue">2. Sell one more</a>
+  </nav>
+  <section id="graphs" aria-labelledby="graphs-title" class="pp-panel">
+    <div class="pp-eyebrow">Quick Practice</div>
+    <h2 id="graphs-title">Which firm model?</h2>
+    <p class="mp-intro">Compare two models: a single-price monopoly and a price-taking competitive firm. Every graph shows <strong>one firm</strong>.</p>
+    <details class="mp-support"><summary>See the two models first</summary><div id="model-examples"></div><p>A monopoly faces downward-sloping demand, with MR below demand. A price-taking firm's demand is horizontal: P = D = MR.</p></details>
+    <div id="graph-activity"></div>
+  </section>
+  <section id="revenue" aria-labelledby="revenue-title" class="pp-panel" hidden>
+    <div class="pp-eyebrow">Explore the mechanism</div>
+    <h2 id="revenue-title">What does one more unit add?</h2>
+    <p class="mp-intro">Watch total revenue change. Then compare the same sale for a price-taking firm.</p>
+    <div class="mp-models" role="group" aria-label="Firm model">
+      <button type="button" data-model="monopoly" aria-pressed="true">Single-price monopoly</button>
+      <button type="button" data-model="competitive" aria-pressed="false">Price-taking firm</button>
+    </div>
+    <div id="revenue-activity"></div>
+  </section>
+  <footer class="mp-footer">A small preview for reviewing the interactions. Progress stays in this open page.</footer>
+</main>
+<script src="runtime/pp-core.js"></script>
+<script src="runtime/figure.js"></script>
+<script src="runtime/quick.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

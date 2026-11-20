@@ -1,0 +1,9 @@
+{
+  "source": "bpacini-alt/practice-engines",
+  "engine_sha256": {
+    "pp.css": "ef8571be5a42cbd9330db31231019aa55a8f3f53678747763d675c745783af24",
+    "pp-core.js": "3cd1eb818e875936974c40ba6e2bbec81cfbf9d9518f483c72ef49ed978facd2",
+    "figure.js": "0bcc02645aba2d198da03a7732adac66f44d8fdcb7cf3c9e53d669ef68958b59",
+    "renderers/quick.js": "f989d74b587aa94c416b53f7a5576b134bee0c8699f7af6bf492c586f0bbe1a5"
+  }
+}
