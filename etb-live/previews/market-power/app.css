@@ -18,3 +18,79 @@ h2{font-size:25px;letter-spacing:-.02em;margin:4px 0 10px;line-height:1.25}.mp-i
 .mp-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}.mp-table th,.mp-table td{text-align:right;border-bottom:1px solid var(--pp-line);padding:7px 4px}.mp-table th:first-child,.mp-table td:first-child{text-align:left}.mp-chart{max-width:490px;margin:auto}.mp-chart .pp-figure{border:0;padding:0}.mp-graph-note{font-size:13px;color:var(--pp-muted)}
 .mp-footer{font-size:12px;color:var(--pp-muted);text-align:center;margin:20px 4px 0}.mp-empty{padding:18px;background:var(--pp-bg);border-radius:10px}
 @media(max-width:520px){.mp-page{padding:16px 10px 32px}.mp-header h1{font-size:30px}.mp-nav{gap:6px}.mp-nav a{font-size:13px;padding:10px 6px}#model-examples{grid-template-columns:1fr}.mp-before-after{gap:8px;padding:10px}.mp-before-after .mp-amount{font-size:23px}.mp-equation{gap:5px;padding:14px 4px}.mp-equation strong{font-size:23px}.mp-equation span{font-size:11px}.mp-choice-row{gap:6px}#graph-activity .pp-quick-stage{min-height:250px;padding:0}.mp-models button{padding:9px 6px;font-size:13px}.mp-unit strong{font-size:19px}}
+
+/* Guided revenue walkthrough. Every new rule is scoped to the second preview. */
+#revenue .mr-model{font-size:12px;font-weight:750;color:var(--pp-accent);margin:0 0 10px}
+#revenue .mr-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0 0 20px;gap:6px}
+#revenue .mr-steps li{display:flex;align-items:center;gap:6px;padding:8px 6px;border-bottom:2px solid var(--pp-line);color:var(--pp-muted);font-size:12px;line-height:1.3}
+#revenue .mr-steps li span{display:grid;place-items:center;flex-shrink:0;width:21px;height:21px;border-radius:50%;background:var(--pp-bg);font-weight:750}
+#revenue .mr-steps li[aria-current]{color:var(--pp-accent);font-weight:750;border-color:var(--pp-accent)}
+#revenue .mr-steps li[aria-current] span{background:var(--pp-accent);color:white}
+#revenue .mr-stage-heading h3{font-size:20px;margin:0 0 7px;line-height:1.3;letter-spacing:-.015em}
+#revenue .mr-stage-heading p{font-size:14px;margin:0 0 16px;color:var(--pp-muted);max-width:60ch}
+#revenue .mr-offers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:stretch}
+#revenue .mr-offer{padding:18px 16px 0;border:1px solid var(--pp-line-strong);border-radius:12px;background:var(--pp-bg);display:flex;flex-direction:column;min-width:0}
+#revenue .mr-alternative{background:white;border:2px solid var(--pp-accent)}
+#revenue .mr-offer h4{margin:0 0 9px;color:var(--pp-muted);font-size:12px;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
+#revenue .mr-price{font-size:35px;font-weight:780;line-height:1.05;letter-spacing:-.04em}
+#revenue .mr-price>span{font-weight:500;font-size:13px;letter-spacing:0;margin-left:7px;color:var(--pp-muted)}
+#revenue .mr-quantity{margin:7px 0 12px;font-size:14px;font-weight:650}
+#revenue .mr-tickets{display:grid;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:6px;margin:0 0 14px;flex:1;align-content:start}
+#revenue .mr-ticket{border:1px solid var(--pp-line-strong);border-radius:7px;padding:9px 5px;text-align:center;background:white;min-width:0;min-height:77px;display:flex;flex-direction:column;justify-content:center}
+#revenue .mr-ticket>span{font-size:12px;color:var(--pp-muted)}
+#revenue .mr-ticket>b{font-size:23px;line-height:1.35}
+#revenue .mr-ticket>small{font-size:12px;line-height:1.35;font-weight:650}
+#revenue .mr-no-sale{border-style:dashed;background:transparent;color:var(--pp-muted)}
+#revenue .mr-no-sale>b{font-size:13px;font-weight:500;padding:7px 0}
+#revenue .mr-subtract{border-color:var(--pp-bad);background:var(--pp-bad-soft)}
+#revenue .mr-subtract>small{color:var(--pp-bad)}
+#revenue .mr-add{border-color:var(--pp-good);background:var(--pp-good-soft)}
+#revenue .mr-add>small{color:var(--pp-good)}
+#revenue .mr-total{border-top:1px solid var(--pp-line-strong);padding:12px 0 13px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:0 8px}
+#revenue .mr-total>span{font-size:13px;font-weight:650}
+#revenue .mr-total>strong{font-size:27px;font-variant-numeric:tabular-nums;grid-column:2;grid-row:1 / span 2}
+#revenue .mr-total>small{font-size:12px;color:var(--pp-muted)}
+#revenue .mr-rule{font-size:14px;margin:14px 0;color:var(--pp-muted)}
+#revenue .mr-effects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+#revenue .mr-effect{padding:12px;border-radius:9px;border-left:3px solid;min-width:0}
+#revenue .mr-effect>span{font-size:12px;font-weight:750;display:block;line-height:1.35;min-height:32px}
+#revenue .mr-effect>strong{font-size:28px;font-weight:780;display:block;margin:3px 0}
+#revenue .mr-effect p{font-size:13px;margin:0;line-height:1.45}
+#revenue .mr-effect-add{border-color:var(--pp-good);background:var(--pp-good-soft)}
+#revenue .mr-effect-add>strong{color:var(--pp-good)}
+#revenue .mr-effect-subtract{border-color:var(--pp-bad);background:var(--pp-bad-soft)}
+#revenue .mr-effect-subtract>strong{color:var(--pp-bad)}
+#revenue .mr-result{margin:16px 0 12px;padding:17px 12px;border:1px solid var(--pp-line-strong);border-radius:10px;text-align:center;background:var(--pp-bg)}
+#revenue .mr-result>p:first-child{font-size:14px;font-weight:650;margin:0 0 7px}
+#revenue .mr-subtraction{font-size:32px;font-weight:650;letter-spacing:-.04em;line-height:1.4;font-variant-numeric:tabular-nums}
+#revenue .mr-subtraction>span{font-weight:400;color:var(--pp-muted)}
+#revenue .mr-subtraction>strong{font-weight:800;color:var(--pp-accent)}
+#revenue .mr-result .mr-mechanism{font-size:13px;line-height:1.5;color:var(--pp-muted);margin:8px 0 0;letter-spacing:0}
+#revenue .mr-distinction{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;text-align:center}
+#revenue .mr-distinction>div{border-radius:9px;border:1px solid var(--pp-line);padding:12px 8px;display:flex;flex-direction:column;align-items:center}
+#revenue .mr-distinction span{font-size:13px;font-weight:650;min-height:39px;display:flex;align-items:center;justify-content:center;line-height:1.4}
+#revenue .mr-distinction strong{font-size:32px;line-height:1.3}
+#revenue .mr-distinction small{font-size:12px;color:var(--pp-muted)}
+#revenue .mr-meaning{font-size:14px;text-align:center;max-width:54ch;margin:12px auto 18px}
+#revenue .mr-actions{margin-top:18px}
+#revenue .mr-actions>.pp-primary{flex:1;font-weight:750}
+#revenue .mr-followups{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:17px 0 10px;font-size:13px}
+@media(max-width:520px){
+  #revenue .mr-steps{margin-bottom:16px;gap:4px}
+  #revenue .mr-steps li{flex-direction:column;text-align:center;padding:6px 2px;font-size:11px}
+  #revenue .mr-offers{gap:8px}
+  #revenue .mr-offer{padding:13px 9px 0}
+  #revenue .mr-price{font-size:30px}
+  #revenue .mr-price>span{display:block;margin:4px 0 0;font-size:12px}
+  #revenue .mr-quantity{font-size:13px;margin-top:7px}
+  #revenue .mr-tickets{grid-template-columns:1fr;gap:5px}
+  #revenue .mr-total{grid-template-columns:1fr;text-align:center;gap:2px;padding:10px 0}
+  #revenue .mr-total>strong{grid-column:auto;grid-row:auto;font-size:26px;order:1}
+  #revenue .mr-total>small{order:2}
+  #revenue .mr-effects{gap:8px}
+  #revenue .mr-effect{padding:10px 8px}
+  #revenue .mr-effect>strong{font-size:25px}
+  #revenue .mr-subtraction{font-size:27px}
+  #revenue .mr-distinction strong{font-size:29px}
+  #revenue .mr-actions>button{width:100%}
+}

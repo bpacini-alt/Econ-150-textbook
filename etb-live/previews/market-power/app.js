@@ -4,15 +4,15 @@
  */
 (function () {
   "use strict";
-  const {esc, shuffle} = PP.util;
+  const {esc} = PP.util;
   const data = window.MP_DATA;
   PP.configureData(data);
   const graphHost = document.getElementById("graph-activity");
   const revenueHost = document.getElementById("revenue-activity");
   const attempts = {}, shown = {};
   const graphState = {};
-  let cleanup = null, active = "", saleStart = performance.now();
-  let sale = {model:"monopoly", step:0, selected:null, revealed:false, graphOpen:false, tableOpen:false, order:[]};
+  let cleanup = null, active = "";
+  let sale = {model:"monopoly", step:0, phase:0, graphOpen:false, tableOpen:false};
   const activity = {id:"mp-graph-recognition", type:"quick", tier:1, labels:["Monopoly firm","Price-taking firm"], round_size:8, items:data.graphs};
   const dollars = n => (n<0?"−$":"$")+Math.abs(n);
   const change = n => n>0?"+$"+n:n<0?"−$"+Math.abs(n):"$0";
@@ -61,14 +61,29 @@
   document.getElementById("model-examples").innerHTML = data.examples.map(f=>PP.figure(f)).join("");
 
   function currentSale(){return data.sales[sale.model][sale.step];}
-  function prepareSale(){sale.selected=null;sale.revealed=false;sale.order=shuffle([0,1,2]);saleStart=performance.now();}
+  function prepareSale(){sale.phase=0;sale.graphOpen=false;sale.tableOpen=false;}
 
-  function units(row) {
-    return '<div class="mp-units" aria-label="Revenue from each unit after the sale">'+Array.from({length:row.q},(_,i)=>{
-      const isNew=i===row.q-1,cut=row.oldp-row.newp;
-      return '<div class="mp-unit '+(isNew?"mp-new":cut?"mp-repriced":"")+'"><small>'+(isNew?"New unit":"Earlier unit "+(i+1))+"</small><strong>"+dollars(row.newp)+"</strong>"+
-        '<small class="'+(isNew?"mp-gain":cut?"mp-loss":"")+'">'+(isNew?"Adds "+dollars(row.gain):cut?"Loses "+dollars(cut):"Same price")+"</small></div>";
-    }).join("")+"</div>";
+  function ticketStrip(row, alternative) {
+    const showChanges=alternative && sale.phase>=1;
+    const cut=row.oldp-row.newp;
+    return '<div class="mr-tickets" aria-label="'+(alternative?'Tickets at the alternative price':'Tickets at the starting price')+'">'+
+      Array.from({length:row.q},(_,i)=>{
+        const extra=i===row.q-1;
+        if(extra && !alternative)return '<div class="mr-ticket mr-no-sale"><span>Extra buyer</span><b>No purchase</b></div>';
+        const difference=showChanges?(extra?'Adds '+dollars(row.gain):cut?'Brings '+dollars(cut)+' less':'Same revenue'):'';
+        const cls=showChanges?(extra?' mr-add':cut?' mr-subtract':''):'';
+        return '<div class="mr-ticket'+cls+'"><span>'+(extra?'Extra buyer':'Buyer '+(i+1))+'</span><b>'+dollars(alternative?row.newp:row.oldp)+'</b>'+
+          (showChanges?'<small>'+difference+'</small>':'')+'</div>';
+      }).join('')+'</div>';
+  }
+
+  function offerCard(row,alternative) {
+    const quantity=alternative?row.q:row.q-1,price=alternative?row.newp:row.oldp;
+    return '<section class="mr-offer'+(alternative?' mr-alternative':'')+'" aria-labelledby="offer-'+(alternative?'b':'a')+'">'+
+      '<h4 id="offer-'+(alternative?'b':'a')+'">'+(alternative?'Offer B':'Offer A')+'</h4>'+
+      '<div class="mr-price">'+dollars(price)+'<span>per ticket</span></div>'+
+      '<p class="mr-quantity">'+quantity+' buyer'+(quantity===1?'':'s')+'</p>'+ticketStrip(row,alternative)+
+      '<div class="mr-total"><span>Total revenue</span><strong>'+dollars(alternative?row.after:row.before)+'</strong><small>'+quantity+' × '+dollars(price)+'</small></div></section>';
   }
 
   function revenueGraph(row) {
@@ -95,71 +110,67 @@
     return '<table class="mp-table"><caption class="pp-sr">Completed sales and total revenue</caption><thead><tr><th scope="col">Units</th><th scope="col">Price</th><th scope="col">Total revenue</th><th scope="col">MR</th></tr></thead><tbody>'+rows.map(r=>'<tr><th scope="row">'+r.q+"</th><td>"+dollars(r.newp)+"</td><td>"+dollars(r.after)+"</td><td>"+change(r.mr)+"</td></tr>").join("")+"</tbody></table>";
   }
 
-  function reveal(row,pick,position) {
-    if (sale.revealed) return;
-    sale.revealed=true;sale.selected=pick;
-    const option=row.options[pick];
-    record(row,{correct:option.value===row.mr,resp:{opt:pick,pos:position},misc:[option.tag],extra:{model:sale.model,from_quantity:row.q-1,to_quantity:row.q}},"mp-revenue-prediction","choice",2,saleStart);
-    drawSale();
-    revenueHost.querySelector("#sale-next, #sale-reset").focus({preventScroll:true});
-  }
-
   function drawSale() {
-    const r=currentSale(),mono=sale.model==="monopoly",last=sale.step===data.sales[sale.model].length-1;
-    let h='<div class="mp-sale-head"><h3>From '+(r.q-1)+" to "+r.q+' units</h3><span>Sale '+(sale.step+1)+" of 6</span></div>";
-    h+='<div class="mp-offer"><p><strong>So far:</strong> '+(r.q-1)+" unit"+(r.q>2?"s":"")+" at "+dollars(r.oldp)+" each = "+dollars(r.before)+" in total revenue.</p><p><strong>Next offer:</strong> "+
-      (mono?"Sell "+r.q+" units at "+dollars(r.newp)+" each. The lower price applies to all "+r.q+" units.":"Sell "+r.q+" units at the same market price of "+dollars(r.newp)+" each.")+"</p></div>";
-    if (!sale.revealed) {
-      h+='<div class="mp-prediction"><h4>How much will total revenue change?</h4><div class="mp-choice-row" role="group" aria-label="Predicted marginal revenue">'+sale.order.map((opt,pos)=>
-        '<button type="button" class="pp-choice" data-predict="'+opt+'" data-pos="'+pos+'" aria-pressed="'+(sale.selected===opt)+'">'+change(r.options[opt].value)+"</button>"
-      ).join("")+'</div><div class="pp-actions"><button class="pp-primary" type="button" id="sale-check"'+(sale.selected===null?" disabled":"")+'>Check prediction</button><button type="button" class="pp-link" id="sale-watch">Just show me the sale</button></div></div>';
-    } else {
-      if (sale.selected!==null) {
-        const right=r.options[sale.selected].value===r.mr;
-        let why=right?"Correct.":"The change is "+change(r.mr)+".";
-        if(!right)why+=r.options[sale.selected].value===r.after?" You chose the new total revenue; MR is the change from the previous total.":mono?" Count the price cut on earlier units as well as the revenue from the new unit.":" A price-taking firm keeps the same price on its earlier units.";
-        h+='<div class="pp-feedback'+(right?"":" pp-bad")+'" role="status">'+esc(why)+"</div>";
-      }
-      h+=units(r);
-      h+='<div class="mp-equation" aria-label="Revenue change calculation"><div><strong class="mp-positive">'+change(r.gain)+'</strong><span>From the new unit</span></div><span class="mp-op">−</span><div><strong class="'+(r.loss?"mp-negative":"")+'">'+dollars(r.loss)+'</strong><span>Lost on earlier units</span></div><span class="mp-op">=</span><div><strong>'+change(r.mr)+'</strong><span>Marginal revenue</span></div></div>';
-      h+='<div class="mp-before-after"><div><span class="mp-label">Total revenue before</span><div class="mp-amount">'+dollars(r.before)+'</div></div><span class="mp-arrow" aria-hidden="true">→</span><div><span class="mp-label">Total revenue after</span><div class="mp-amount">'+dollars(r.after)+"</div></div></div>";
-      h+='<p class="mp-takeaway">Price is <strong>'+dollars(r.newp)+'</strong> per unit. Total revenue '+(r.mr>0?"rises by <strong>"+dollars(r.mr):r.mr<0?"falls by <strong>"+dollars(-r.mr):"changes by <strong>$0")+"</strong>.</p>";
-      if(r.mr<0)h+='<p>The price cuts on earlier units cost more than the new unit brings in. Selling more can reduce total revenue.</p>';
-      if(r.mr===0)h+='<p>The new unit\u2019s revenue exactly offsets the price cuts on earlier units.</p>';
-      if(!mono)h+='<p>No earlier unit loses revenue, so <strong>MR = price</strong>.</p>';
-      h+='<div class="pp-actions">'+(!last?'<button type="button" class="pp-primary" id="sale-next">Sell one more →</button>':'<button type="button" class="pp-primary" id="sale-switch">Try the '+(mono?"price-taking firm":"monopoly")+'</button>')+'<button type="button" id="sale-reset">Start over</button></div>';
-      h+='<details class="mp-support" id="sale-graph"'+(sale.graphOpen?" open":"")+'><summary>Connect it to a graph</summary>'+revenueGraph(r)+"</details>";
-      h+='<details class="mp-support" id="sale-table"'+(sale.tableOpen?" open":"")+'><summary>See the revenue table</summary>'+revenueTable(r)+"</details>";
+    const r=currentSale(),mono=sale.model==='monopoly',last=sale.step===data.sales[sale.model].length-1;
+    const cut=r.oldp-r.newp,earlier=r.q-1;
+    const labels=['Compare the offers','See both effects','Find marginal revenue'];
+    const titles=[mono?'A lower price attracts one more buyer.':'One more buyer at the same price.',
+      mono?'The extra buyer adds revenue. The price cut gives some up.':'The extra buyer adds revenue. The price stays the same.',
+      r.mr<0?'More tickets, less total revenue.':r.mr===0?'One more ticket adds no net revenue.':'How much extra revenue did the sale add?'];
+    const explanation=mono?
+      'At '+dollars(r.oldp)+', '+earlier+' '+(earlier===1?'person buys':'people buy')+'. At '+dollars(r.newp)+', '+r.q+' people buy. Everyone pays the same price.':
+      'A price-taking seller can sell '+r.q+' tickets at the same '+dollars(r.newp)+' market price.';
+    let h='<p class="mr-model">'+(mono?'Single-price monopoly':'Price-taking firm')+'</p>';
+    h+='<ol class="mr-steps" aria-label="Walkthrough steps">'+labels.map((label,i)=>'<li'+(i===sale.phase?' aria-current="step"':'')+'><span>'+(i+1)+'</span>'+label+'</li>').join('')+'</ol>';
+    h+='<div class="mr-stage-heading" aria-live="polite" aria-atomic="true"><h3>'+titles[sale.phase]+'</h3><p>'+explanation+'</p></div>';
+    h+='<div class="mr-offers">'+offerCard(r,false)+offerCard(r,true)+'</div>';
+    if(sale.phase===0){
+      h+='<p class="mr-rule">'+(mono?'Notice that Offer B charges the lower price for <strong>every ticket</strong>.':'Both offers charge the same price for every ticket.')+'</p>';
+    }
+    if(sale.phase===1){
+      h+='<div class="mr-effects"><div class="mr-effect mr-effect-add"><span>Extra buyer</span><strong>'+change(r.gain)+'</strong><p>The extra ticket brings in '+dollars(r.gain)+'.</p></div>'+
+        '<div class="mr-effect mr-effect-subtract"><span>'+(mono?'Price cut for the other '+(earlier===1?'buyer':'buyers'):'Other buyers')+'</span><strong>'+(r.loss?'−'+dollars(r.loss):'$0')+'</strong><p>'+
+        (mono?(earlier===1?'The first buyer pays '+dollars(cut)+' less.':earlier+' other buyers each pay '+dollars(cut)+' less.'):'The price stays at '+dollars(r.newp)+', so no revenue is lost.')+'</p></div></div>';
+    }
+    if(sale.phase===2){
+      h+='<div class="mr-result" role="status"><p>Marginal revenue = change in total revenue</p><div class="mr-subtraction">'+dollars(r.after)+' <span>−</span> '+dollars(r.before)+' <span>=</span> <strong>'+change(r.mr)+'</strong></div>'+
+        '<p class="mr-mechanism">'+change(r.gain)+' from the extra buyer '+(r.loss?'− '+dollars(r.loss)+' from the price cut':'− $0 lost on the other tickets')+' = '+change(r.mr)+'.</p></div>';
+      h+='<div class="mr-distinction"><div><span>Price of each ticket</span><strong>'+dollars(r.newp)+'</strong></div><div><span>Extra revenue from one more ticket</span><strong>'+change(r.mr)+'</strong><small>Marginal revenue</small></div></div>';
+      h+='<p class="mr-meaning">'+(mono?(r.mr<0?'The price cut costs more revenue than the extra buyer brings in.':r.mr===0?'The extra buyer\u2019s payment exactly offsets the revenue lost to the price cut.':'The extra buyer pays '+dollars(r.newp)+', but total revenue rises by only '+dollars(r.mr)+'.'):'The extra buyer pays '+dollars(r.newp)+', and total revenue rises by '+dollars(r.mr)+'. Here, MR = price.')+'</p>';
+    }
+    h+='<div class="pp-actions mr-actions">';
+    if(sale.phase<2)h+='<button type="button" class="pp-primary" id="sale-forward">'+(sale.phase===0?'Show the gain and the loss':'Find the extra revenue')+' →</button>';
+    else if(!last)h+='<button type="button" class="pp-primary" id="sale-next">Try '+r.q+' → '+(r.q+1)+' tickets</button>';
+    else h+='<button type="button" class="pp-primary" id="sale-reset">Start with 1 → 2 tickets</button>';
+    if(sale.phase>0)h+='<button type="button" id="sale-back">Back one step</button>';
+    h+='</div>';
+    if(sale.phase===2){
+      h+='<div class="mr-followups"><button type="button" class="pp-link" id="sale-switch">'+(mono?'Compare with a price-taking firm':'Return to the monopoly')+'</button><button type="button" class="pp-link" id="sale-replay">Replay this example</button></div>';
+      h+='<details class="mp-support" id="sale-graph"'+(sale.graphOpen?' open':'')+'><summary>Connect it to a graph</summary>'+revenueGraph(r)+'</details>';
+      h+='<details class="mp-support" id="sale-table"'+(sale.tableOpen?' open':'')+'><summary>See the revenue table</summary>'+revenueTable(r)+'</details>';
     }
     revenueHost.innerHTML=h;
-    revenueHost.querySelectorAll("[data-predict]").forEach(b=>b.onclick=()=>{
-      sale.selected=Number(b.dataset.predict);
-      revenueHost.querySelectorAll("[data-predict]").forEach(x=>x.setAttribute("aria-pressed",x===b));
-      revenueHost.querySelector("#sale-check").disabled=false;
-    });
-    const check=revenueHost.querySelector("#sale-check");
-    if(check)check.onclick=()=>reveal(r,sale.selected,sale.order.indexOf(sale.selected));
-    const watch=revenueHost.querySelector("#sale-watch");
-    if(watch)watch.onclick=()=>{sale.selected=null;sale.revealed=true;drawSale();revenueHost.querySelector("#sale-next, #sale-reset").focus({preventScroll:true});};
-    const next=revenueHost.querySelector("#sale-next");
-    if(next)next.onclick=()=>{sale.step++;prepareSale();drawSale();revenueHost.querySelector("[data-predict]").focus({preventScroll:true});};
-    const reset=revenueHost.querySelector("#sale-reset");
-    if(reset)reset.onclick=()=>{sale.step=0;prepareSale();drawSale();revenueHost.querySelector("[data-predict]").focus({preventScroll:true});};
-    const switcher=revenueHost.querySelector("#sale-switch");
-    if(switcher)switcher.onclick=()=>setModel(mono?"competitive":"monopoly");
-    for(const [id,key] of [["sale-graph","graphOpen"],["sale-table","tableOpen"]]){
-      const d=revenueHost.querySelector("#"+id);if(d)d.ontoggle=()=>{sale[key]=d.open;};
+    const actions={
+      'sale-forward':()=>{sale.phase++;drawSale();focusAction();},
+      'sale-back':()=>{sale.phase--;drawSale();focusAction();},
+      'sale-next':()=>{sale.step++;prepareSale();drawSale();focusAction();},
+      'sale-reset':()=>{sale.step=0;prepareSale();drawSale();focusAction();},
+      'sale-replay':()=>{prepareSale();drawSale();focusAction();},
+      'sale-switch':()=>{sale.model=mono?'competitive':'monopoly';prepareSale();drawSale();focusAction();}
+    };
+    for(const [id,action] of Object.entries(actions)){const button=revenueHost.querySelector('#'+id);if(button)button.onclick=action;}
+    for(const [id,key] of [['sale-graph','graphOpen'],['sale-table','tableOpen']]){
+      const d=revenueHost.querySelector('#'+id);if(d)d.ontoggle=()=>{sale[key]=d.open;};
     }
   }
 
-  function setModel(model){
-    sale.model=model;sale.step=0;prepareSale();
-    document.querySelectorAll("[data-model]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.model===model));
-    drawSale();
+  function focusAction(){
+    const button=revenueHost.querySelector('.mr-actions button');
+    if(button)button.focus({preventScroll:true});
   }
-  document.querySelectorAll("[data-model]").forEach(b=>b.onclick=()=>setModel(b.dataset.model));
+
   function route(){
-    const target=location.hash==="#revenue"?"revenue":"graphs";
+    const target=location.hash==="#graphs"?"graphs":location.hash==="#revenue"?"revenue":document.body.dataset.start||"graphs";
     if(target===active)return;
     if(cleanup){cleanup();cleanup=null;}
     active=target;
