@@ -131,6 +131,28 @@
     PP.resized = send;
   }
 
+  /* Keep the new question on screen after the panel changes size by itself.
+     In "Mix it up", the next question can be a different activity: a short one
+     after a tall graph shrinks the iframe, and the reader is left looking at the
+     page below the practice. Once the host has resized the iframe (this window
+     gets a resize event), scroll just enough to show el. "nearest" does nothing
+     when el is already visible. A timer covers the case where the height didn't
+     change and no resize comes. */
+  let revealEl = null, revealTimer = null;
+  function reveal() {
+    const el = revealEl;
+    revealEl = null;
+    clearTimeout(revealTimer);
+    if (el && el.isConnected && el.scrollIntoView) { el.style.scrollMarginTop = "16px"; el.scrollIntoView({ block: "nearest" }); }
+  }
+  PP.revealAfterResize = (el) => {
+    if (!embedded || !el) return;
+    revealEl = el;
+    clearTimeout(revealTimer);
+    revealTimer = setTimeout(reveal, 400);
+  };
+  root.addEventListener("resize", () => { if (revealEl) requestAnimationFrame(reveal); });
+
   /* ---------- interaction data (standard: docs/INTERACTION-DATA.md) ----------
    * Every scored response produces one "pp-event/1" object. Events always go
    * to an in-memory buffer (PP.data.events, used by QA and ?pp_debug=1).
@@ -254,7 +276,11 @@
         save: () => store.save(),
         count: () => { cs.counts[cs.tier] = (cs.counts[cs.tier] || 0) + 1; store.save(); updateProgress(); },
         roundDone: () => {
-          if (mix) { cs.mixTurn[cs.tier] = (cs.mixTurn[cs.tier] || 0) + 1; store.save(); render(); return true; }
+          if (mix) {
+            cs.mixTurn[cs.tier] = (cs.mixTurn[cs.tier] || 0) + 1; store.save(); render();
+            PP.revealAfterResize(rootEl.querySelector(".pp-instruction"));
+            return true;
+          }
           return false;
         },
         rerender: () => render(),
