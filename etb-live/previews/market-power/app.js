@@ -19,7 +19,7 @@
 
   function record(unit, fields, act, type, tier, since) {
     const attempt = attempts[unit.id] = (attempts[unit.id]||0)+1;
-    PP.recordEvent({concept:2,act,type,tier,mode:"chosen",unit:unit.id,unit_v:unit._v,attempt,
+    PP.recordEvent({concept:act===activity.id?1:2,act,type,tier,mode:"chosen",unit:unit.id,unit_v:unit._v,attempt,
       ms:Math.round(performance.now()-since),correct:!!fields.correct,resp:fields.resp||{},
       misc:(fields.misc||[]).filter(Boolean),extra:fields.extra});
   }
