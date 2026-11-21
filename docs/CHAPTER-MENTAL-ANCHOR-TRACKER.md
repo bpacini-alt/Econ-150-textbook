@@ -1,7 +1,7 @@
 # Chapter Mental Anchor Tracker
 
 **Scope:** Joy of Economics and Joy of Learning, one chapter-level anchor inventory for both books.  
-**Starting inventory:** 0 chapter-specific anchor ideas recorded; 0 images approved as of November 20, 2026.
+**Current draft:** 10 premises proposed (five per book); 0 concepts selected and 0 images approved as of November 20, 2026.
 
 ## Purpose
 
@@ -15,9 +15,9 @@ The Economics list includes its published Chapters 1–26 and the separate Chapt
 
 | Book | Inventory rows | Anchor ideas proposed | Concepts selected | Images approved |
 | --- | ---: | ---: | ---: | ---: |
-| Joy of Economics | 27 (26 main chapters + Chapter 0) | 0 | 0 | 0 |
-| Joy of Learning | 26 | 0 | 0 | 0 |
-| **Total** | **53** | **0** | **0** | **0** |
+| Joy of Economics | 27 (26 main chapters + Chapter 0) | 5 | 0 | 0 |
+| Joy of Learning | 26 | 5 | 0 | 0 |
+| **Total** | **53** | **10** | **0** | **0** |
 
 Earlier exploratory illustrations, including the Economics lemon/hood samples, are style references only. They are not assigned to a chapter and do not count as approved images.
 
@@ -48,9 +48,9 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [0 · Algebra Review](../etb-live/Chapter0.html) — opening review page | — | Not started | Not started | — | — |
 | [1 · Thinking Like an Economist](../etb-live/Chapter1.html) | — | Not started | Not started | — | — |
 | [2 · Consumer Choice](../etb-live/Chapter2.html) | — | Not started | Not started | — | — |
-| [3 · Supply and Demand I: The Price System](../etb-live/Chapter3.html) | — | Not started | Not started | — | — |
+| [3 · Supply and Demand I: The Price System](../etb-live/Chapter3.html) | One Price, Many Decisions: A single market price lets buyers and sellers adjust independently without a central order-giver. | Proposed | Not started | “What Prices Know” · Econ main `44ac046` | — |
 | [4 · Supply and Demand II: Shifts, Shocks, and Price Controls](../etb-live/Chapter4.html) | — | Not started | Not started | — | — |
-| [5 · Trade, Specialization, and Efficiency](../etb-live/Chapter5.html) | — | Not started | Not started | — | — |
+| [5 · Trade, Specialization, and Efficiency](../etb-live/Chapter5.html) | The Two-Task Swap: People can gain by specializing where their opportunity cost is lower and trading, even if one person is more productive at both tasks. | Proposed | Not started | “Specialization and Comparative Advantage”; “Gains from Trade” · Econ main `44ac046` | — |
 | [6 · Welfare Analysis](../etb-live/Chapter6.html) | — | Not started | Not started | — | — |
 | [7 · Intervention Distortions I: Taxes, Subsidies, and Incidence](../etb-live/Chapter7.html) | — | Not started | Not started | — | — |
 | [8 · Gains from Trade: The Case for International Cooperation](../etb-live/Chapter8.html) | — | Not started | Not started | — | — |
@@ -62,11 +62,11 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [14 · Unit Capstone: The Free Market Prescription for Poverty](../etb-live/Chapter14.html) | — | Not started | Not started | — | — |
 | [15 · Elasticity](../etb-live/Chapter15.html) | — | Not started | Not started | — | — |
 | [16 · Institutions](../etb-live/Chapter16.html) | — | Not started | Not started | — | — |
-| [17 · Market Failures I: Externalities](../etb-live/Chapter17.html) | — | Not started | Not started | — | — |
-| [18 · Market Failures II: The Tragedy of the Commons](../etb-live/Chapter18.html) | — | Not started | Not started | — | — |
+| [17 · Market Failures I: Externalities](../etb-live/Chapter17.html) | The Deal’s Third Neighbor: A transaction between two people can impose an unpriced cost or benefit on someone outside the deal. | Proposed | Not started | “Externalities” · Econ main `44ac046` | — |
+| [18 · Market Failures II: The Tragedy of the Commons](../etb-live/Chapter18.html) | The Fish Left for the Next Boat: In an open-access fishery, each skipper has reason to catch fish now because restraint leaves them for another boat; individually rational use depletes the shared stock. | Proposed | Not started | “The Commons Trap”; “Ostrom’s Third Way” · Econ main `44ac046` | — |
 | [19 · Market Failures III: Taxes, Subsidies, and Incentives](../etb-live/Chapter19.html) | — | Not started | Not started | — | — |
 | [20 · Unit Capstone: The Economics of Healthcare](../etb-live/Chapter20.html) | — | Not started | Not started | — | — |
-| [21 · Market Power I: Monopoly](../etb-live/Chapter21.html) | — | Not started | Not started | — | — |
+| [21 · Market Power I: Monopoly](../etb-live/Chapter21.html) | The Only Bridge: A seller gains market power when buyers lack close substitutes; control of the only practical route allows the seller to influence price by restricting output. | Proposed | Not started | “Monopoly and Market Power” · Econ main `44ac046` | — |
 | [22 · Market Power II: Addressing Market Power](../etb-live/Chapter22.html) | — | Not started | Not started | — | — |
 | [23 · Imperfect Competition I: Monopolistic Competition](../etb-live/Chapter23.html) | — | Not started | Not started | — | — |
 | [24 · Imperfect Competition II: Oligopoly, Cartels, and Collusion](../etb-live/Chapter24.html) | — | Not started | Not started | — | — |
@@ -80,7 +80,7 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [1 · The Purpose of Education](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter1.html) | — | Not started | Not started | — | — |
 | [2 · Cognitive Biases](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter2.html) | — | Not started | Not started | — | — |
 | [3 · An Introduction to Empiricism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter3.html) | — | Not started | Not started | — | — |
-| [4 · Evidence-Based Practice](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter4.html) | — | Not started | Not started | — | — |
+| [4 · Evidence-Based Practice](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter4.html) | Research Informs the Lesson: The best available research should inform a teacher’s professional judgment without replacing attention to the students and setting in front of them. | Proposed | Not started | “Evidence-Based Practice”; “From Evidence to Action” · Learning main `56aabcc` | — |
 | [5 · Statistical Significance](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter5.html) | — | Not started | Not started | — | — |
 | [6 · Practical Significance](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter6.html) | — | Not started | Not started | — | — |
 | [7 · Mental Health](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter7.html) | — | Not started | Not started | — | — |
@@ -88,17 +88,17 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [9 · Parenting](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter9.html) | — | Not started | Not started | — | — |
 | [10 · Child Development](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter10.html) | — | Not started | Not started | — | — |
 | [11 · Constructivism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter11.html) | — | Not started | Not started | — | — |
-| [12 · Social Learning Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html) | — | Not started | Not started | — | — |
+| [12 · Social Learning Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html) | Watch, Then Try: A learner can acquire a behavior by observing a model and trying it, without needing direct reward or punishment first. | Proposed | Not started | “Observational Learning” · Learning main `56aabcc` | — |
 | [13 · Adolescent Development and Moral Foundations](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter13.html) | — | Not started | Not started | — | — |
 | [14 · Identity and Identity Formation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter14.html) | — | Not started | Not started | — | — |
 | [15 · Personality Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter15.html) | — | Not started | Not started | — | — |
 | [16 · Agency and Self-Belief](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter16.html) | — | Not started | Not started | — | — |
 | [17 · Anthropology & Culture](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter17.html) | — | Not started | Not started | — | — |
 | [18 · Belonging, Social Structure & Tribalism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter18.html) | — | Not started | Not started | — | — |
-| [19 · Extrinsic Motivation & Behaviorism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter19.html) | — | Not started | Not started | — | — |
-| [20 · Intrinsic Motivation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html) | — | Not started | Not started | — | — |
+| [19 · Extrinsic Motivation & Behaviorism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter19.html) | The Attention Loop: Teacher responses and routines shape behavior; attention can reinforce the very behavior a teacher is trying to reduce. | Proposed | Not started | “Behavior charts and trackers, explained”; “Operant Conditioning” · Learning main `56aabcc` | — |
+| [20 · Intrinsic Motivation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html) | The Unassigned Calculator: A learner can persist through repeated setbacks when a task connects to curiosity and ownership, even without a grade or reward. | Proposed | Not started | “Intrinsic Motivation”; “Supporting Student Motivation” · Learning main `56aabcc` | — |
 | [21 · Executive Function and ADHD](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter21.html) | — | Not started | Not started | — | — |
-| [22 · Attention, Memory, and Cognitive Load](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html) | — | Not started | Not started | — | — |
+| [22 · Attention, Memory, and Cognitive Load](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html) | The Four-Slot Workbench: Attention selects what enters thought, while working memory can hold only a small amount at once; distractions and clutter crowd out learning. | Proposed | Not started | “Selective Attention”; “Memory”; “Cognitive Load Theory” · Learning main `56aabcc` | — |
 | [23 · Intelligence & IQ](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter23.html) | — | Not started | Not started | — | — |
 | [24 · Learner Differences](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter24.html) | — | Not started | Not started | — | — |
 | [25 · The Research-to-Practice Gap](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter25.html) | — | Not started | Not started | — | — |
@@ -135,6 +135,32 @@ When a chapter's idea status moves beyond **Not started**, put enough informatio
 - **Image status:** Not started, Candidate shown, Revision requested, Approved, or Not applicable.
 - **Approved image:** Exact Library filename and link, only after explicit approval.
 - **Reproduction notes:** Final prompt and book style notes, stored with the approved Library item.
+
+## Premises proposed for review
+
+These are concept proposals only. None is selected yet, and no image has been generated.
+
+### Joy of Economics — Batch 1 (three chapters)
+
+- **Chapter 3 · One Price, Many Decisions:** A price carries local information through a simple chain of buyers and producers, letting each adjust without a central planner. **Guardrail:** Coordination does not mean every market outcome is fair or automatically ideal. **Source:** [Chapter 3](../etb-live/Chapter3.html), “What Prices Know,” Econ main `44ac046`.
+- **Chapter 5 · The Two-Task Swap:** Two producers specialize where each gives up less, then trade so both can have more than if they produced alone. **Guardrail:** Comparative advantage is about opportunity cost, not who is best at everything. **Source:** [Chapter 5](../etb-live/Chapter5.html), “Specialization and Comparative Advantage” and “Gains from Trade,” Econ main `44ac046`.
+- **Chapter 17 · The Deal’s Third Neighbor:** A buyer and seller make a deal while someone outside it bears a cost or receives a benefit the price leaves out. **Guardrail:** An externality is a spillover to someone outside the transaction, not simply any consequence. **Source:** [Chapter 17](../etb-live/Chapter17.html), “Externalities,” Econ main `44ac046`.
+
+### Joy of Economics — Batch 2 (two chapters)
+
+- **Chapter 18 · The Fish Left for the Next Boat:** Each fisher has reason to catch fish now because any fish left behind may be caught by someone else; open-access use drains the shared lake. **Guardrail:** The problem is the incentive structure, not selfish villains; users can create rules that change it. **Source:** [Chapter 18](../etb-live/Chapter18.html), “The Commons Trap” and “Ostrom’s Third Way,” Econ main `44ac046`.
+- **Chapter 21 · The Only Bridge:** A seller controls the only practical route to a good, so buyers lack close substitutes and the seller can influence price by limiting output. **Guardrail:** A firm’s size alone does not make it a monopoly, and a monopolist still faces demand. **Source:** [Chapter 21](../etb-live/Chapter21.html), “Monopoly and Market Power,” Econ main `44ac046`.
+
+### Joy of Learning — Batch 1 (three chapters)
+
+- **Chapter 4 · Research Informs the Lesson:** A teacher rethinks a reading strategy when research shows a familiar method is misdirecting students, while still using professional judgment for the students in front of them. **Guardrail:** Evidence-based practice informs judgment; it is not mechanical rule-following. **Source:** [Chapter 4](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter4.html), “Evidence-Based Practice” and “From Evidence to Action,” Learning main `56aabcc`.
+- **Chapter 12 · Watch, Then Try:** A learner watches someone model a skill and then tries it, showing that learning can happen without direct reinforcement first. **Guardrail:** Keep this focused on observational learning; the chapter also treats self-efficacy, social contagion, and guided learning. **Source:** [Chapter 12](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html), “Observational Learning,” Learning main `56aabcc`.
+- **Chapter 19 · The Attention Loop:** A teacher responds to one student while others watch, revealing how attention and consequences can shape behavior—including behavior the teacher hopes to reduce. **Guardrail:** Behaviorism is a useful account of observable learning, not the whole story of learning or motivation. **Source:** [Chapter 19](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter19.html), “Behavior charts and trackers, explained” and “Operant Conditioning,” Learning main `56aabcc`.
+
+### Joy of Learning — Batch 2 (two chapters)
+
+- **Chapter 20 · The Unassigned Calculator:** A student spends a weekend building and debugging a calculator because the project matters to them, not because anyone assigned, graded, or rewarded it. **Guardrail:** Intrinsic motivation can include frustrating work; it is not just fun or ease. **Source:** [Chapter 20](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html), “Intrinsic Motivation” and “Supporting Student Motivation,” Learning main `56aabcc`.
+- **Chapter 22 · The Four-Slot Workbench:** A student’s active mental workspace has room for only a few pieces at a time, so clutter and competing stimuli can crowd the lesson out. **Guardrail:** Treat the “four” as an approximate working-memory finding, not a fixed score or a measure of a student’s overall ability. **Source:** [Chapter 22](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html), “Selective Attention,” “Memory,” and “Cognitive Load Theory,” Learning main `56aabcc`.
 
 ## Chapter sources
 
