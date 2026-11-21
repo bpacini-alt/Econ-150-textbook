@@ -1,6 +1,6 @@
 /* Preview orchestration only. Shared engines are copied without modifications.
  * Graph classification delegates scoring, keys, balancing, and review to quick.js.
- * Revenue predictions use the existing choice event contract (authored indices).
+ * Revenue entries use the existing Calculation Lab parser and calc event contract.
  */
 (function () {
   "use strict";
@@ -61,17 +61,21 @@
   document.getElementById("model-examples").innerHTML = data.examples.map(f=>PP.figure(f)).join("");
 
   function currentSale(){return data.sales[sale.model][sale.step];}
-  function prepareSale(){sale.phase=0;sale.graphOpen=false;sale.tableOpen=false;}
+  function prepareSale(){
+    sale.phase=0;sale.graphOpen=false;sale.tableOpen=false;
+    sale.entries=Array.from({length:3},()=>({raw:'',correct:false,feedback:'',hint:false,shownAt:performance.now()}));
+  }
 
   function ticketStrip(row, alternative) {
-    const showChanges=alternative && sale.phase>=1;
+    const showChanges=alternative && sale.entries[0].correct;
     const cut=row.oldp-row.newp;
     return '<div class="mr-tickets" aria-label="'+(alternative?'Tickets at the alternative price':'Tickets at the starting price')+'">'+
       Array.from({length:row.q},(_,i)=>{
         const extra=i===row.q-1;
         if(extra && !alternative)return '<div class="mr-ticket mr-no-sale"><span>Extra buyer</span><b>No purchase</b></div>';
-        const difference=showChanges?(extra?'Adds '+dollars(row.gain):cut?'Brings '+dollars(cut)+' less':'Same revenue'):'';
-        const cls=showChanges?(extra?' mr-add':cut?' mr-subtract':''):'';
+        const revealLoss=sale.entries[1].correct;
+        const difference=showChanges?(extra?'Adds '+dollars(row.gain):revealLoss?(cut?'Brings '+dollars(cut)+' less':'Same revenue'):''):'';
+        const cls=showChanges?(extra?' mr-add':sale.entries[1].correct&&cut?' mr-subtract':''):'';
         return '<div class="mr-ticket'+cls+'"><span>'+(extra?'Extra buyer':'Buyer '+(i+1))+'</span><b>'+dollars(alternative?row.newp:row.oldp)+'</b>'+
           (showChanges?'<small>'+difference+'</small>':'')+'</div>';
       }).join('')+'</div>';
@@ -83,7 +87,7 @@
       '<h4 id="offer-'+(alternative?'b':'a')+'">'+(alternative?'Offer B':'Offer A')+'</h4>'+
       '<div class="mr-price">'+dollars(price)+'<span>per ticket</span></div>'+
       '<p class="mr-quantity">'+quantity+' buyer'+(quantity===1?'':'s')+'</p>'+ticketStrip(row,alternative)+
-      '<div class="mr-total"><span>Total revenue</span><strong>'+dollars(alternative?row.after:row.before)+'</strong><small>'+quantity+' × '+dollars(price)+'</small></div></section>';
+      '<div class="mr-total"><span>Total revenue</span><strong>'+(alternative&&!sale.entries[2].correct?'?':dollars(alternative?row.after:row.before))+'</strong><small>'+quantity+' × '+dollars(price)+'</small></div></section>';
   }
 
   function revenueGraph(row) {
@@ -110,53 +114,76 @@
     return '<table class="mp-table"><caption class="pp-sr">Completed sales and total revenue</caption><thead><tr><th scope="col">Units</th><th scope="col">Price</th><th scope="col">Total revenue</th><th scope="col">MR</th></tr></thead><tbody>'+rows.map(r=>'<tr><th scope="row">'+r.q+"</th><td>"+dollars(r.newp)+"</td><td>"+dollars(r.after)+"</td><td>"+change(r.mr)+"</td></tr>").join("")+"</tbody></table>";
   }
 
+  function questionPanel(row) {
+    const task=row.tasks[sale.phase],entry=sale.entries[sale.phase];
+    const done=entry.correct;
+    const last=sale.step===data.sales[sale.model].length-1;
+    let h='<form class="mr-question" id="sale-question" novalidate><h3 id="mr-question-label">'+esc(task.prompt)+'</h3>';
+    h+='<p id="mr-input-help">'+(sale.phase===1?'Enter the amount lost as a positive number.':sale.phase===2?'Enter the change in revenue. Use a minus sign if revenue falls.':'Use the ticket prices below.')+'</p>';
+    h+='<div class="mr-entry-row"><div class="mr-input-wrap"><span aria-hidden="true">$</span><input id="mr-answer" type="text" inputmode="'+(sale.phase===2?'text':'decimal')+'" autocomplete="off" spellcheck="false" maxlength="24" aria-labelledby="mr-question-label" aria-describedby="mr-input-help mr-answer-feedback" aria-invalid="'+(!done&&entry.feedback?'true':'false')+'" value="'+esc(entry.raw)+'"'+(done?' disabled':'')+'></div>';
+    if(!done)h+='<button type="submit" class="pp-primary">Check answer</button>';
+    else if(sale.phase<2)h+='<button type="button" class="pp-primary" id="sale-continue">Next question →</button>';
+    else h+='<button type="button" class="pp-primary" id="'+(last?'sale-reset':'sale-next')+'">'+(last?'Start with 1 → 2 tickets':'Try '+row.q+' → '+(row.q+1)+' tickets')+'</button>';
+    h+='</div><div id="mr-answer-feedback" class="'+(entry.feedback?'pp-feedback'+(done?'':' pp-bad'):'')+'" role="status" aria-live="polite">'+esc(entry.feedback)+'</div>';
+    if(!done)h+='<details class="mr-hint" id="mr-hint"'+(entry.hint?' open':'')+'><summary>Need a hint?</summary><p>'+esc(task.hint)+'</p></details>';
+    if(sale.phase>0)h+='<button type="button" class="pp-link mr-back" id="sale-back">Back one question</button>';
+    return h+'</form>';
+  }
+
+  function checkAnswer() {
+    const row=currentSale(),task=row.tasks[sale.phase],entry=sale.entries[sale.phase];
+    if(entry.correct)return;
+    const value=PP.util.parseNumber(entry.raw);
+    if(!Number.isFinite(value)){
+      entry.feedback='Enter a number, such as 8 or −2.';
+      drawSale();focusAnswer(true);return;
+    }
+    const correct=Math.abs(value-task.answer)<1e-9;
+    const error=(task.common_errors||[]).find(e=>Math.abs(value-e.value)<1e-9);
+    entry.correct=correct;
+    entry.feedback=correct?'Correct. '+task.why:error?error.feedback:'Try again. '+task.hint;
+    record(task,{correct,resp:{raw:PP.clip(entry.raw,24),value,cls:null,error:error?error.label:null},misc:[error?error.misconception:null],
+      extra:{stage:1,supports:{formula:false,hints:entry.hint,example:false},sequence_step:sale.phase+1,model:sale.model,from_quantity:row.q-1,to_quantity:row.q}},
+      'mp-revenue-calculation','calc',2,entry.shownAt);
+    drawSale();
+    if(correct)focusAction();else focusAnswer(true);
+  }
+
   function drawSale() {
-    const r=currentSale(),mono=sale.model==='monopoly',last=sale.step===data.sales[sale.model].length-1;
-    const cut=r.oldp-r.newp,earlier=r.q-1;
-    const labels=['Compare the offers','See both effects','Find marginal revenue'];
-    const titles=[mono?'A lower price attracts one more buyer.':'One more buyer at the same price.',
-      mono?'The price cut changes revenue in two ways.':'The extra buyer adds revenue at the same price.',
-      r.mr<0?'More tickets, less total revenue.':r.mr===0?'One more ticket adds no net revenue.':'How much extra revenue did the sale add?'];
+    const r=currentSale(),mono=sale.model==='monopoly';
+    const complete=sale.entries[2].correct;
+    const labels=['Extra buyer','Other tickets','Marginal revenue'];
     const explanation=mono?
-      'At '+dollars(r.oldp)+', '+earlier+' '+(earlier===1?'person buys':'people buy')+'. At '+dollars(r.newp)+', '+r.q+' people buy. Everyone pays the same price.':
-      'A price-taking seller can sell '+r.q+' tickets at the same '+dollars(r.newp)+' market price.';
+      'At '+dollars(r.oldp)+', '+(r.q-1)+' '+(r.q===2?'person buys':'people buy')+'. At '+dollars(r.newp)+', '+r.q+' people buy. Everyone pays the same price.':
+      'This price-taking seller can sell another ticket at the same '+dollars(r.newp)+' market price.';
     let h='<p class="mr-model">'+(mono?'Single-price monopoly':'Price-taking firm')+'</p>';
-    h+='<ol class="mr-steps" aria-label="Walkthrough steps">'+labels.map((label,i)=>'<li'+(i===sale.phase?' aria-current="step"':'')+'><span>'+(i+1)+'</span>'+label+'</li>').join('')+'</ol>';
-    h+='<div class="mr-stage-heading" aria-live="polite" aria-atomic="true"><h3>'+titles[sale.phase]+'</h3><p>'+explanation+'</p></div>';
+    h+='<ol class="mr-steps" aria-label="Questions">'+labels.map((label,i)=>'<li'+(i===sale.phase?' aria-current="step"':'')+'><span>'+(i+1)+'</span>'+label+'</li>').join('')+'</ol>';
+    h+=questionPanel(r);
+    h+='<p class="mr-evidence-intro">'+explanation+'</p>';
+    if(sale.phase>0)h+='<div class="mr-known" aria-label="Your checked answers"><span>Extra buyer: <strong>'+change(r.gain)+'</strong></span>'+
+      (sale.phase>1?'<span>Lost on other tickets: <strong>'+dollars(r.loss)+'</strong></span>':'')+'</div>';
     h+='<div class="mr-offers">'+offerCard(r,false)+offerCard(r,true)+'</div>';
-    if(sale.phase===0){
-      h+='<p class="mr-rule">'+(mono?'Notice that Offer B charges the lower price for <strong>every ticket</strong>.':'Both offers charge the same price for every ticket.')+'</p>';
-    }
-    if(sale.phase===1){
-      h+='<div class="mr-effects"><div class="mr-effect mr-effect-subtract"><span>'+(mono?'Price cut for the other '+(earlier===1?'buyer':'buyers'):'Other buyers')+'</span><strong>'+(r.loss?'−'+dollars(r.loss):'$0')+'</strong><p>'+
-        (mono?(earlier===1?'The first buyer pays '+dollars(cut)+' less.':earlier+' other buyers each pay '+dollars(cut)+' less.'):'The price stays at '+dollars(r.newp)+', so no revenue is lost.')+'</p></div>'+
-        '<div class="mr-effect mr-effect-add"><span>Extra buyer</span><strong>'+change(r.gain)+'</strong><p>The extra ticket brings in '+dollars(r.gain)+'.</p></div></div>';
-    }
-    if(sale.phase===2){
-      h+='<div class="mr-result" role="status"><p>Marginal revenue = change in total revenue</p><div class="mr-subtraction">'+dollars(r.after)+' <span>−</span> '+dollars(r.before)+' <span>=</span> <strong>'+change(r.mr)+'</strong></div>'+
-        '<p class="mr-mechanism">'+change(r.gain)+' from the extra buyer '+(r.loss?'− '+dollars(r.loss)+' from the price cut':'− $0 lost on the other tickets')+' = '+change(r.mr)+'.</p></div>';
+    if(complete && sale.phase===2){
+      h+='<div class="mr-result"><p>Marginal revenue = change in total revenue</p><div class="mr-subtraction">'+dollars(r.after)+' <span>−</span> '+dollars(r.before)+' <span>=</span> <strong>'+change(r.mr)+'</strong></div></div>';
       h+='<div class="mr-distinction"><div><span>Price of each ticket</span><strong>'+dollars(r.newp)+'</strong></div><div><span>Extra revenue from one more ticket</span><strong>'+change(r.mr)+'</strong><small>Marginal revenue</small></div></div>';
       h+='<p class="mr-meaning">'+(mono?(r.mr<0?'The price cut costs more revenue than the extra buyer brings in.':r.mr===0?'The extra buyer\u2019s payment exactly offsets the revenue lost to the price cut.':'The extra buyer pays '+dollars(r.newp)+', but total revenue rises by only '+dollars(r.mr)+'.'):'The extra buyer pays '+dollars(r.newp)+', and total revenue rises by '+dollars(r.mr)+'. Here, MR = price.')+'</p>';
-    }
-    h+='<div class="pp-actions mr-actions">';
-    if(sale.phase<2)h+='<button type="button" class="pp-primary" id="sale-forward">'+(sale.phase===0?'Show the gain and the loss':'Find the extra revenue')+' →</button>';
-    else if(!last)h+='<button type="button" class="pp-primary" id="sale-next">Try '+r.q+' → '+(r.q+1)+' tickets</button>';
-    else h+='<button type="button" class="pp-primary" id="sale-reset">Start with 1 → 2 tickets</button>';
-    if(sale.phase>0)h+='<button type="button" id="sale-back">Back one step</button>';
-    h+='</div>';
-    if(sale.phase===2){
-      h+='<div class="mr-followups"><button type="button" class="pp-link" id="sale-switch">'+(mono?'Compare with a price-taking firm':'Return to the monopoly')+'</button><button type="button" class="pp-link" id="sale-replay">Replay this example</button></div>';
+      h+='<div class="mr-followups"><button type="button" class="pp-link" id="sale-switch">'+(mono?'Compare with a price-taking firm':'Return to the monopoly')+'</button><button type="button" class="pp-link" id="sale-replay">Try this example again</button></div>';
       h+='<details class="mp-support" id="sale-graph"'+(sale.graphOpen?' open':'')+'><summary>Connect it to a graph</summary>'+revenueGraph(r)+'</details>';
       h+='<details class="mp-support" id="sale-table"'+(sale.tableOpen?' open':'')+'><summary>See the revenue table</summary>'+revenueTable(r)+'</details>';
     }
     revenueHost.innerHTML=h;
+    const input=revenueHost.querySelector('#mr-answer');
+    input.oninput=()=>{sale.entries[sale.phase].raw=input.value;};
+    revenueHost.querySelector('#sale-question').onsubmit=e=>{e.preventDefault();checkAnswer();};
+    const hint=revenueHost.querySelector('#mr-hint');
+    if(hint)hint.ontoggle=()=>{sale.entries[sale.phase].hint=hint.open;};
     const actions={
-      'sale-forward':()=>{sale.phase++;drawSale();focusAction();},
+      'sale-continue':()=>{sale.phase++;drawSale();focusAnswer();},
       'sale-back':()=>{sale.phase--;drawSale();focusAction();},
-      'sale-next':()=>{sale.step++;prepareSale();drawSale();focusAction();},
-      'sale-reset':()=>{sale.step=0;prepareSale();drawSale();focusAction();},
-      'sale-replay':()=>{prepareSale();drawSale();focusAction();},
-      'sale-switch':()=>{sale.model=mono?'competitive':'monopoly';prepareSale();drawSale();focusAction();}
+      'sale-next':()=>{sale.step++;prepareSale();drawSale();focusAnswer();},
+      'sale-reset':()=>{sale.step=0;prepareSale();drawSale();focusAnswer();},
+      'sale-replay':()=>{prepareSale();drawSale();focusAnswer();},
+      'sale-switch':()=>{sale.model=mono?'competitive':'monopoly';prepareSale();drawSale();focusAnswer();}
     };
     for(const [id,action] of Object.entries(actions)){const button=revenueHost.querySelector('#'+id);if(button)button.onclick=action;}
     for(const [id,key] of [['sale-graph','graphOpen'],['sale-table','tableOpen']]){
@@ -164,8 +191,12 @@
     }
   }
 
+  function focusAnswer(select){
+    const input=revenueHost.querySelector('#mr-answer');
+    if(input&&!input.disabled){input.focus({preventScroll:true});if(select)input.select();}else focusAction();
+  }
   function focusAction(){
-    const button=revenueHost.querySelector('.mr-actions button');
+    const button=revenueHost.querySelector('.mr-entry-row button');
     if(button)button.focus({preventScroll:true});
   }
 
