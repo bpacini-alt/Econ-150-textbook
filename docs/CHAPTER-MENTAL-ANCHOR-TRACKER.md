@@ -1,7 +1,7 @@
 # Chapter Mental Anchor Tracker
 
 **Scope:** Joy of Economics and Joy of Learning, one chapter-level anchor inventory for both books.  
-**Current draft:** 10 premises proposed (five per book); 0 concepts selected and 0 images approved as of November 20, 2026.
+**Initial inventory snapshot (November 20):** 10 premises proposed (five per book); 0 concepts selected and 0 images approved as of November 20, 2026.
 
 ## Purpose
 
@@ -11,7 +11,7 @@ This is a working inventory, not evidence that a chapter has already been review
 
 The Economics list includes its published Chapters 1–26 and the separate Chapter 0 Algebra Review page. The Economics table of contents counts 26 main chapters; Chapter 0 is included here as a distinct opening page so we can decide whether it merits its own anchor.
 
-## Progress
+## Initial inventory counts (November 20)
 
 | Book | Inventory rows | Anchor ideas proposed | Concepts selected | Images approved |
 | --- | ---: | ---: | ---: | ---: |
@@ -87,7 +87,7 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [8 · Positive Psychology](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter8.html) | — | Not started | Not started | — | — |
 | [9 · Parenting](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter9.html) | — | Not started | Not started | — | — |
 | [10 · Child Development](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter10.html) | — | Not started | Not started | — | — |
-| [11 · Constructivism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter11.html) | — | Not started | Not started | — | — |
+| [11 · Constructivism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter11.html) | Baseball study retained here: relevant prior knowledge shapes comprehension and recall. Story placement confirmed; possible tabletop-field image remains under development. | In progress | Not started | “Prior Knowledge”; “Knowing baseball beat reading well”; background-knowledge video · Learning main `ae52d77` | — |
 | [12 · Social Learning Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html) | Watch, Then Try: A learner can acquire a behavior by observing a model and trying it, without needing direct reward or punishment first. | Proposed | Not started | “Observational Learning” · Learning main `56aabcc` | — |
 | [13 · Adolescent Development and Moral Foundations](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter13.html) | — | Not started | Not started | — | — |
 | [14 · Identity and Identity Formation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter14.html) | — | Not started | Not started | — | — |
@@ -100,7 +100,7 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [21 · Executive Function and ADHD](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter21.html) | — | Not started | Not started | — | — |
 | [22 · Attention, Memory, and Cognitive Load](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html) | The Four-Slot Workbench: Attention selects what enters thought, while working memory can hold only a small amount at once; distractions and clutter crowd out learning. | Proposed | Not started | “Selective Attention”; “Memory”; “Cognitive Load Theory” · Learning main `56aabcc` | — |
 | [23 · Intelligence & IQ](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter23.html) | — | Not started | Not started | — | — |
-| [24 · Learner Differences](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter24.html) | — | Not started | Not started | — | — |
+| [24 · Learner Differences](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter24.html) | Anchor search reopened. Baseball belongs in Chapter 11; Chapter 24 may make a brief readiness-gap callback. New story/research candidates are unselected; see the November 21 decision log. | In progress | Not started | “Universal Design for Learning”; “The Instructional Hierarchy”; “Contextual Differences” · Learning main `ae52d77` | — |
 | [25 · The Research-to-Practice Gap](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter25.html) | — | Not started | Not started | — | — |
 | [26 · The Grand Adventure, Reprise](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter26.html) | — | Not started | Not started | — | — |
 
@@ -138,7 +138,7 @@ When a chapter's idea status moves beyond **Not started**, put enough informatio
 
 ## Premises proposed for review
 
-These are concept proposals only. None is selected yet, and no image has been generated.
+These are the original November 20 concept proposals. Later placement decisions and research candidates are recorded in the decision log below.
 
 ### Joy of Economics — Batch 1 (three chapters)
 
@@ -161,6 +161,24 @@ These are concept proposals only. None is selected yet, and no image has been ge
 
 - **Chapter 20 · The Unassigned Calculator:** A student spends a weekend building and debugging a calculator because the project matters to them, not because anyone assigned, graded, or rewarded it. **Guardrail:** Intrinsic motivation can include frustrating work; it is not just fun or ease. **Source:** [Chapter 20](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html), “Intrinsic Motivation” and “Supporting Student Motivation,” Learning main `56aabcc`.
 - **Chapter 22 · The Four-Slot Workbench:** A student’s active mental workspace has room for only a few pieces at a time, so clutter and competing stimuli can crowd the lesson out. **Guardrail:** Treat the “four” as an approximate working-memory finding, not a fixed score or a measure of a student’s overall ability. **Source:** [Chapter 22](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html), “Selective Attention,” “Memory,” and “Cognitive Load Theory,” Learning main `56aabcc`.
+
+## Decision log — November 21, 2026
+
+### Learning Chapters 11 and 24: baseball placement confirmed
+
+- **Benjamin's decision:** Keep Recht and Leslie's (1988) baseball study in **Chapter 11, Constructivism**. It already appears in the Prior Knowledge section, the research box “Knowing baseball beat reading well,” and the background-knowledge video/research notes. Do not relocate it or repeat the full vignette in Chapter 24.
+- **Chapter 11 image status:** No image has been generated or approved for this story. A student reconstructing a passage with wooden players on a model baseball field remains a possible scene; placement approval is separate from approval of an image.
+- **Chapter 24:** Find a stronger, distinct anchor for Learner Differences. The “Background knowledge as a readiness gap” note may briefly refer back to Chapter 11. No Chapter 24 story or image is selected.
+- **Source reviewed:** Learning main `ae52d77fd1c39324389749e4e294da9829640e51`, `etb-live/chapter11.html` (“Prior Knowledge”) and `etb-live/chapter24.html` (“Background knowledge as a readiness gap”).
+- **Interpretation guardrail:** The baseball task measured recall and reenactment. It does not establish a kinesthetic learning style or show that background knowledge replaces reading instruction.
+
+### Learning Chapter 24: research shortlist, not selected
+
+These are proposed additions to the chapter, not stories already in its text. Their concepts fit existing sections; each would need a short sourced vignette if selected.
+
+1. **The explanation that became unnecessary — expertise reversal.** Kalyuga, Chandler, and Sweller (1998) found across three experiments that the best diagram/text design changed with expertise: integrated explanations helped less-expert learners, while eliminating redundant text helped more-expert learners. Fits the Instructional Hierarchy/readiness discussion. A circuit-training scene would be an illustration of the finding, not a claim to reproduce the experimental setup. **Guardrail:** Adjust support to demonstrated knowledge; do not assign permanent learner types. The broader novice/expert principle overlaps Chapter 2 and cognitive-load theory in Chapter 22, although this specific study is not named there. [Primary study](https://journals.sagepub.com/doi/10.1518/001872098779480587).
+2. **The midnight curb ramp — access designed by the people who need it.** Berkeley disability activists used asphalt to create unauthorized curb ramps while official installation lagged. Strong historical-story candidate for Universal Design for Learning and removing barriers. Possible scene: a wheelchair user directing or trying a new ramp as a fellow activist finishes its edge under a streetlight. **Guardrail:** Distinguish the documented asphalt work from dramatic sledgehammer/nitroglycerin lore; universal access does not eliminate individualized supports. [UC Berkeley archival history](https://revolution.berkeley.edu/projects/place-every-body/).
+3. **The concert-ticket algebra problem — interest as a useful difference.** Walkington and Sherman's 2012 primary report describes a randomized study of 145 Algebra I students: changing story contexts to match students' interests supported performance, including writing algebraic expressions. Possible scene: a student working out concert-ticket revenue with the same underlying algebra as a conventional construction-cost problem. Fits “Interest as the Most Actionable Variable.” **Guardrail:** Context personalization is not learning-style matching; the study does not isolate interest from topic familiarity. This has thematic overlap with Chapter 20's motivation discussion. [Author-hosted primary report](https://www.smu.edu/-/media/site/simmons/research/rme/docs/cw/icls_submission_2012_final.pdf).
 
 ## Chapter sources
 
