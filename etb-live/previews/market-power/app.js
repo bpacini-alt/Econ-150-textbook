@@ -63,7 +63,7 @@
   function currentSale(){return data.sales[sale.model][sale.step];}
   function prepareSale(){
     sale.phase=0;sale.graphOpen=false;sale.tableOpen=false;
-    sale.entries=Array.from({length:3},()=>({raw:'',correct:false,feedback:'',hint:false,shownAt:performance.now()}));
+    sale.entries=Array.from({length:3},()=>({raw:'',correct:false,feedback:'',hint:false,shownAt:null}));
   }
 
   function ticketStrip(row, alternative) {
@@ -116,6 +116,7 @@
 
   function questionPanel(row) {
     const task=row.tasks[sale.phase],entry=sale.entries[sale.phase];
+    if(entry.shownAt===null)entry.shownAt=performance.now();
     const done=entry.correct;
     const last=sale.step===data.sales[sale.model].length-1;
     let h='<form class="mr-question" id="sale-question" novalidate><h3 id="mr-question-label">'+esc(task.prompt)+'</h3>';
@@ -133,18 +134,20 @@
   function checkAnswer() {
     const row=currentSale(),task=row.tasks[sale.phase],entry=sale.entries[sale.phase];
     if(entry.correct)return;
-    const value=PP.util.parseNumber(entry.raw);
+    const raw=entry.raw;
+    const value=PP.util.parseNumber(raw);
     if(!Number.isFinite(value)){
-      entry.feedback='Enter a number, such as 8 or −2.';
+      entry.feedback='Enter a number in the answer box.';
       drawSale();focusAnswer(true);return;
     }
     const correct=Math.abs(value-task.answer)<1e-9;
     const error=(task.common_errors||[]).find(e=>Math.abs(value-e.value)<1e-9);
     entry.correct=correct;
     entry.feedback=correct?'Correct. '+task.why:error?error.feedback:'Try again. '+task.hint;
-    record(task,{correct,resp:{raw:PP.clip(entry.raw,24),value,cls:null,error:error?error.label:null},misc:[error?error.misconception:null],
+    record(task,{correct,resp:{raw:PP.clip(raw,24),value,cls:null,error:error?error.label:null},misc:[error?error.misconception:null],
       extra:{stage:1,supports:{formula:false,hints:entry.hint,example:false},sequence_step:sale.phase+1,model:sale.model,from_quantity:row.q-1,to_quantity:row.q}},
       'mp-revenue-calculation','calc',2,entry.shownAt);
+    if(correct)entry.raw=String(value);
     drawSale();
     if(correct)focusAction();else focusAnswer(true);
   }
@@ -176,7 +179,7 @@
     input.oninput=()=>{sale.entries[sale.phase].raw=input.value;};
     revenueHost.querySelector('#sale-question').onsubmit=e=>{e.preventDefault();checkAnswer();};
     const hint=revenueHost.querySelector('#mr-hint');
-    if(hint)hint.ontoggle=()=>{sale.entries[sale.phase].hint=hint.open;};
+    if(hint){const entry=sale.entries[sale.phase];hint.ontoggle=()=>{entry.hint=hint.open;};}
     const actions={
       'sale-continue':()=>{sale.phase++;drawSale();focusAnswer();},
       'sale-back':()=>{sale.phase--;drawSale();focusAction();},
