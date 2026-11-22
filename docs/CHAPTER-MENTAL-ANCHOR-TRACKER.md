@@ -13,17 +13,19 @@ The Economics list includes its published Chapters 1–26 and the separate Chapt
 
 ## Approved images recorded November 21, 2026
 
-Benjamin approved these five exact images during this chapter-anchor review. This is the current approval record for this batch; the November 20 counts below are the historical starting inventory.
+Benjamin approved these seven exact images across the chapter-anchor batches recorded here. The November 20 counts below remain the historical starting inventory.
 
 | Book / chapter | Approved image | Publication / merge route |
 | --- | --- | --- |
+| Econ 21 | `ch21-standard-oil-monopoly.png` | Included in this chapter-anchor PR |
+| Econ 22 | `ch22-bell-system-natural-monopoly.png` | Included in this chapter-anchor PR |
 | Econ 23 | `ch23-monopolistic-competition-cafes.png` | Published via [PR #203](https://github.com/bpacini-alt/Econ-150-textbook/pull/203) |
-| Econ 24 | `ch24-oligopoly-gas-stations.png` | Included with this tracker in the new Econ merge PR |
+| Econ 24 | `ch24-oligopoly-gas-stations.png` | Published via [PR #204](https://github.com/bpacini-alt/Econ-150-textbook/pull/204) |
 | Learning 11 | `ch11-baseball-prior-knowledge.png` | [Combined Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 | Learning 23 | `ch23-intelligence-test-recruits.png` | Published via [PR #154](https://github.com/bpacini-alt/edcor-310-textbook/pull/154) |
 | Learning 24 | `ch24-curb-cut-access.png` | [Combined Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157); relaxed smile/thumbs-up revision explicitly approved |
 
-The new merge PRs consolidate the approved assets. The earlier Chapter 11-only draft [Learning #156](https://github.com/bpacini-alt/edcor-310-textbook/pull/156) and tracker-only draft [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) are superseded; use the new combined PRs for this batch.
+Econ PR #204 published the Chapters 23–24 images and the current tracker. This PR adds Chapters 21–22. The earlier Chapter 11-only draft [Learning #156](https://github.com/bpacini-alt/edcor-310-textbook/pull/156) and tracker-only draft [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) remain superseded.
 
 ## Initial inventory counts (November 20)
 
@@ -80,8 +82,8 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [18 · Market Failures II: The Tragedy of the Commons](../etb-live/Chapter18.html) | The Fish Left for the Next Boat: In an open-access fishery, each skipper has reason to catch fish now because restraint leaves them for another boat; individually rational use depletes the shared stock. | Proposed | Not started | “The Commons Trap”; “Ostrom’s Third Way” · Econ main `44ac046` | — |
 | [19 · Market Failures III: Taxes, Subsidies, and Incentives](../etb-live/Chapter19.html) | — | Not started | Not started | — | — |
 | [20 · Unit Capstone: The Economics of Healthcare](../etb-live/Chapter20.html) | — | Not started | Not started | — | — |
-| [21 · Market Power I: Monopoly](../etb-live/Chapter21.html) | The Only Bridge: A seller gains market power when buyers lack close substitutes; control of the only practical route allows the seller to influence price by restricting output. | Proposed | Not started | “Monopoly and Market Power” · Econ main `44ac046` | — |
-| [22 · Market Power II: Addressing Market Power](../etb-live/Chapter22.html) | — | Not started | Not started | — | — |
+| [21 · Market Power I: Monopoly](../etb-live/Chapter21.html) | Standard Oil’s dominant refinery and rail network: durable control over alternatives can let a firm restrict output and raise price. | Selected | Approved | “Monopoly and Market Power”; “The Inefficiency of Monopoly” · Econ main `3567087` | [Approved Standard Oil image](../etb-live/images/chapter-anchors/ch21-standard-oil-monopoly.png) |
+| [22 · Market Power II: Addressing Market Power](../etb-live/Chapter22.html) | The Bell System: one high-fixed-cost network can be cheaper than competing networks, while concentration creates market power and a regulatory dilemma. | Selected | Approved | “Natural Monopoly and the Regulator’s Dilemma” · Econ main `3567087` | [Approved Bell System image](../etb-live/images/chapter-anchors/ch22-bell-system-natural-monopoly.png) |
 | [23 · Imperfect Competition I: Monopolistic Competition](../etb-live/Chapter23.html) | Another café opens: differentiated sellers compete while entry limits economic profit. | Selected | Approved | Opening café story · published via Econ PR #203 | [Approved café image](../etb-live/images/chapter-anchors/ch23-monopolistic-competition-cafes.png) |
 | [24 · Imperfect Competition II: Oligopoly, Cartels, and Collusion](../etb-live/Chapter24.html) | Your best move depends on theirs: gas-station owners watch and respond to rival prices, 3.40 and 3.30. | Selected | Approved | Opening gas-station story; “Strategic Behavior” · Econ main `789d967` | [Approved gas-station image](../etb-live/images/chapter-anchors/ch24-oligopoly-gas-stations.png) |
 | [25 · Behavioral Economics](../etb-live/Chapter25.html) | — | Not started | Not started | — | — |
@@ -193,6 +195,12 @@ These are researched possibilities for new chapter content. Benjamin subsequentl
 1. **The explanation that became unnecessary — expertise reversal.** Kalyuga, Chandler, and Sweller (1998) found across three experiments that the best diagram/text design changed with expertise: integrated explanations helped less-expert learners, while eliminating redundant text helped more-expert learners. Fits the Instructional Hierarchy/readiness discussion. A circuit-training scene would be an illustration of the finding, not a claim to reproduce the experimental setup. **Guardrail:** Adjust support to demonstrated knowledge; do not assign permanent learner types. The broader novice/expert principle overlaps Chapter 2 and cognitive-load theory in Chapter 22, although this specific study is not named there. [Primary study](https://journals.sagepub.com/doi/10.1518/001872098779480587).
 2. **The midnight curb ramp — access designed by the people who need it.** Berkeley disability activists used asphalt to create unauthorized curb ramps while official installation lagged. Strong historical-story candidate for Universal Design for Learning and removing barriers. Possible scene: a wheelchair user directing or trying a new ramp as a fellow activist finishes its edge under a streetlight. **Guardrail:** Distinguish the documented asphalt work from dramatic sledgehammer/nitroglycerin lore; universal access does not eliminate individualized supports. [UC Berkeley archival history](https://revolution.berkeley.edu/projects/place-every-body/).
 3. **The concert-ticket algebra problem — interest as a useful difference.** Walkington and Sherman's 2012 primary report describes a randomized study of 145 Algebra I students: changing story contexts to match students' interests supported performance, including writing algebraic expressions. Possible scene: a student working out concert-ticket revenue with the same underlying algebra as a conventional construction-cost problem. Fits “Interest as the Most Actionable Variable.” **Guardrail:** Context personalization is not learning-style matching; the study does not isolate interest from topic familiarity. This has thematic overlap with Chapter 20's motivation discussion. [Author-hosted primary report](https://www.smu.edu/-/media/site/simmons/research/rme/docs/cw/icls_submission_2012_final.pdf).
+
+### Econ Chapters 21–22: Standard Oil and the Bell System
+- Benjamin explicitly approved the Standard Oil and Bell System illustrations. Both are placed after the chapter title card and before the opening hook, with responsive image sizing, descriptive alt text, and concept captions.
+- **Chapter 21:** The refinery and tank-car network make Standard Oil a concrete example of durable monopoly power. The picture is illustrative, not a literal map or a claim that Standard Oil owned every oil producer. Source: etb-live/Chapter21.html, “Monopoly and Market Power” and “The Inefficiency of Monopoly.”
+- **Chapter 22:** The Bell System is labeled by its historical name. “Ma Bell” was a popular nickname for the integrated system associated with AT&T and the regional Bell operating companies. AT&T divested its local operating companies in 1984 and continued its long-distance business; in 2005, former regional Bell company SBC acquired AT&T Corp. and adopted the AT&T name. Sources: [AT&T brand history](https://about.att.com/innovation/intellectualproperty/ip_brands/ip_history.html) and the [Federal Judicial Center’s history of the breakup](https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell). Source chapter: etb-live/Chapter22.html, “Natural Monopoly and the Regulator’s Dilemma.”
+- **Reviewed ref:** Econ main 35670873.
 
 ## Chapter sources
 
