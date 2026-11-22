@@ -11,9 +11,18 @@ This is a working inventory, not evidence that a chapter has already been review
 
 The Economics list includes its published Chapters 1–26 and the separate Chapter 0 Algebra Review page. The Economics table of contents counts 26 main chapters; Chapter 0 is included here as a distinct opening page so we can decide whether it merits its own anchor.
 
+## Approved Learning opening images — November 22, 2026
+
+Benjamin approved both exact v2 illustrations: “Both approved! You can give me a PR to place them!” [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) places the images with alt text and captions in both the source and regenerated published pages. Publication awaits that book PR's merge.
+
+| Page | Approved image | Revision / reproduction note |
+| --- | --- | --- |
+| Opening study guide, before Chapter 1 | [Highlighter and blank page](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/etb-live/images/chapter-anchors/intro-highlighter-retrieval.png) | Rescaled book, recall paper, marker and pen; [source and prompts](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/docs/chapter-anchors/intro-highlighter-retrieval.md) |
+| Learning 2 | [Elephant and rider](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/etb-live/images/chapter-anchors/ch02-elephant-rider.png) | Plain-clothed fable treatment and softer scenery; [source and prompts](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/docs/chapter-anchors/ch02-elephant-rider.md) |
+
 ## Approved opening-chapter images — November 21, 2026
 
-Benjamin approved the broken-window image unchanged and the diamond–water image after the foreground bottle was resized to an ordinary single-serving scale. Both exact approved PNGs are included with accessible chapter figures in this PR; publication awaits Benjamin's merge.
+Benjamin approved the broken-window image unchanged and the diamond–water image after the foreground bottle was resized to an ordinary single-serving scale. Both exact approved PNGs were published with accessible chapter figures via [Econ PR #206](https://github.com/bpacini-alt/Econ-150-textbook/pull/206).
 
 | Chapter | Approved image | Placement / source note |
 | --- | --- | --- |
@@ -102,8 +111,9 @@ For each row, update the current anchor, the two separate statuses, the source h
 
 | Chapter and source | Anchor name / central idea | Idea status | Image status | Source heading / reviewed ref | Approved image (repository or Library) |
 | --- | --- | --- | --- | --- | --- |
-| [1 · The Purpose of Education](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter1.html) | — | Not started | Not started | — | — |
-| [2 · Cognitive Biases](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter2.html) | — | Not started | Not started | — | — |
+| [Opening study guide · How to Get the Most Out of This Book!](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/how-to-get-the-most-out-of-this-book.html) | The highlighter and the blank page: recognition does not establish usable recall. | Selected | Approved | “The curious case of the highlighter — How Learning Works” · Learning main `52460a0` | [Approved highlighter image](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/etb-live/images/chapter-anchors/intro-highlighter-retrieval.png); [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) |
+| [1 · The Purpose of Education](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter1.html) | Hercules departs and returns: challenge can form a stronger, better, braver learner. | Selected | Approved | Existing opening and return illustrations · published via [Learning PR #155](https://github.com/bpacini-alt/edcor-310-textbook/pull/155) | [Departure](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-departure.webp) · [Return](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) |
+| [2 · Cognitive Biases](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter2.html) | The elephant and the rider: deliberate reasoning can overestimate its control over intuitive responses. | Selected | Approved | “The Rider believes it steers — Dual-Process Theory” · Learning main `52460a0` | [Approved elephant–rider image](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/etb-live/images/chapter-anchors/ch02-elephant-rider.png); [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) |
 | [3 · An Introduction to Empiricism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter3.html) | — | Not started | Not started | — | — |
 | [4 · Evidence-Based Practice](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter4.html) | Research Informs the Lesson: The best available research should inform a teacher’s professional judgment without replacing attention to the students and setting in front of them. | Proposed | Not started | “Evidence-Based Practice”; “From Evidence to Action” · Learning main `56aabcc` | — |
 | [5 · Statistical Significance](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter5.html) | — | Not started | Not started | — | — |
@@ -222,3 +232,11 @@ These are researched possibilities for new chapter content. Benjamin subsequentl
 - **Chapter 1:** Benjamin chose Bastiat's broken-window parable and approved the exact image unchanged: “The window is perfect. Approved as is.” The neighboring tailor's unbought suit makes the opportunity cost concrete. [Source and reproduction note](chapter-anchors/econ-ch01-broken-window.md).
 - **Chapter 2:** Benjamin selected the diamond–water shop-window scene over the hot-dog and kidney-donation drafts. The front water bottle was reduced to ordinary single-serving proportions; Benjamin approved that exact revision: “Yep, that's perfect. Approved.” The approved price cards remain **$1** and **$5,000**; they are illustrative prices. [Source and reproduction notes](chapter-anchors/econ-ch02-diamond-water.md).
 - **Scope:** These figures illustrate existing chapter passages. The discarded Chapter 2 drafts are not approved book assets. Chapter 1's giant-nail parable was not selected. Keep the approval status separate from whether this PR has merged.
+
+
+## Decision log — November 22, 2026: Learning openings
+
+- **Study-guide image approved:** Use the v2 highlighter scene after its proportion correction. Exact approved PNG blob: `07f305008e20926948f4faa34cf4a43fb8935d58`. The mostly blank recall sheet must remain visible; the caption explains how retrieval can make the highlighted material usable.
+- **Learning 2 image approved:** Use the v2 elephant-and-rider scene, replacing the contemporary tourist outfit with simple fable clothing and softening the scenery. Exact approved PNG blob: `b655073b6c7f714e7a8bd617b321071470a897ce`. The rider points left while the calm elephant walks right. Avoid treating intuition as inherently bad or reason as useless.
+- **Placement route:** [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162), head `1ab0fe01057ce05d673790be32dcf6229eb96b55`; its [local opening-approval index](https://github.com/bpacini-alt/edcor-310-textbook/blob/1ab0fe01057ce05d673790be32dcf6229eb96b55/docs/chapter-anchors/anchor-index.md) links back to this cross-book inventory. Image approval and publication remain separate statuses.
+- **Opening status reconciled:** Learning 1's Hercules departure/return pair was already published through PR #155; the ledger now reflects those existing illustrations. Econ 1–2 were merged through PR #206. These status corrections do not add or regenerate those assets.
