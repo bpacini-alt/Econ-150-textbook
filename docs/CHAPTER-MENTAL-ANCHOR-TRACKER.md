@@ -3,6 +3,8 @@
 **Scope:** Joy of Economics and Joy of Learning, one chapter-level anchor inventory for both books.  
 **Initial inventory snapshot (November 20):** 10 premises proposed (five per book); 0 concepts selected and 0 images approved as of November 20, 2026.
 
+For a new chat, read the [shared workflow](CHAPTER-ANCHOR-WORKFLOW.md) and [current handoff](CHAPTER-ANCHOR-HANDOFF.md) before continuing. The handoff distinguishes published artwork, pending PRs, and provisional directions.
+
 ## Purpose
 
 Track a memorable visual anchor for each chapter: a simple scene that helps a student recall the chapter's central model or relationship. The tracker records ideas as we develop them and keeps chapter-concept approval separate from approval of a specific image.
@@ -13,7 +15,7 @@ The Economics list includes its published Chapters 1–26 and the separate Chapt
 
 ## Approved Learning opening images — November 22, 2026
 
-Benjamin approved both exact v2 illustrations: “Both approved! You can give me a PR to place them!” [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) places the images with alt text and captions in both the source and regenerated published pages. Publication awaits that book PR's merge.
+Benjamin approved both exact v2 illustrations: “Both approved! You can give me a PR to place them!” [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) published the images with alt text and captions in both the source and regenerated pages. Its shared-tracker companion [Econ #208](https://github.com/bpacini-alt/Econ-150-textbook/pull/208) has also merged.
 
 | Page | Approved image | Revision / reproduction note |
 | --- | --- | --- |
@@ -35,15 +37,15 @@ Benjamin approved these seven exact images across the chapter-anchor batches rec
 
 | Book / chapter | Approved image | Publication / merge route |
 | --- | --- | --- |
-| Econ 21 | `ch21-standard-oil-monopoly.png` | Included in this chapter-anchor PR |
-| Econ 22 | `ch22-bell-system-natural-monopoly.png` | Included in this chapter-anchor PR |
+| Econ 21 | `ch21-standard-oil-monopoly.png` | Published via [PR #207](https://github.com/bpacini-alt/Econ-150-textbook/pull/207) |
+| Econ 22 | `ch22-bell-system-natural-monopoly.png` | Published via [PR #207](https://github.com/bpacini-alt/Econ-150-textbook/pull/207) |
 | Econ 23 | `ch23-monopolistic-competition-cafes.png` | Published via [PR #203](https://github.com/bpacini-alt/Econ-150-textbook/pull/203) |
 | Econ 24 | `ch24-oligopoly-gas-stations.png` | Published via [PR #204](https://github.com/bpacini-alt/Econ-150-textbook/pull/204) |
 | Learning 11 | `ch11-baseball-prior-knowledge.png` | [Combined Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 | Learning 23 | `ch23-intelligence-test-recruits.png` | Published via [PR #154](https://github.com/bpacini-alt/edcor-310-textbook/pull/154) |
 | Learning 24 | `ch24-curb-cut-access.png` | [Combined Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157); relaxed smile/thumbs-up revision explicitly approved |
 
-Econ PR #204 published the Chapters 23–24 images and the current tracker. This PR adds Chapters 21–22. The earlier Chapter 11-only draft [Learning #156](https://github.com/bpacini-alt/edcor-310-textbook/pull/156) and tracker-only draft [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) remain superseded.
+Econ PR #204 published the Chapters 23–24 images and the tracker; PR #207 published Chapters 21–22. The earlier Chapter 11-only draft [Learning #156](https://github.com/bpacini-alt/edcor-310-textbook/pull/156) and tracker-only draft [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) remain superseded.
 
 ## Initial inventory counts (November 20)
 
@@ -56,6 +58,8 @@ Econ PR #204 published the Chapters 23–24 images and the current tracker. This
 Earlier exploratory illustrations, including the Economics lemon/hood samples, are style references only. They are not assigned to a chapter and do not count as approved images.
 
 ## Workflow
+
+The [shared workflow](CHAPTER-ANCHOR-WORKFLOW.md) contains the full art direction, approval rules, source/published build paths, verification steps, and PR delivery requirements. The summary here supports the ledger.
 
 1. Read the chapter's central explanation and nearby examples. Record the current source file, section heading, and the branch or commit reviewed.
 2. Propose a short anchor name and a one-sentence statement of the chapter idea. Describe the scene, how its parts map to the idea, and one misconception it must avoid.
@@ -104,8 +108,8 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [22 · Market Power II: Addressing Market Power](../etb-live/Chapter22.html) | The Bell System: one high-fixed-cost network can be cheaper than competing networks, while concentration creates market power and a regulatory dilemma. | Selected | Approved | “Natural Monopoly and the Regulator’s Dilemma” · Econ main `3567087` | [Approved Bell System image](../etb-live/images/chapter-anchors/ch22-bell-system-natural-monopoly.png) |
 | [23 · Imperfect Competition I: Monopolistic Competition](../etb-live/Chapter23.html) | Another café opens: differentiated sellers compete while entry limits economic profit. | Selected | Approved | Opening café story · published via Econ PR #203 | [Approved café image](../etb-live/images/chapter-anchors/ch23-monopolistic-competition-cafes.png) |
 | [24 · Imperfect Competition II: Oligopoly, Cartels, and Collusion](../etb-live/Chapter24.html) | Your best move depends on theirs: gas-station owners watch and respond to rival prices, 3.40 and 3.30. | Selected | Approved | Opening gas-station story; “Strategic Behavior” · Econ main `789d967` | [Approved gas-station image](../etb-live/images/chapter-anchors/ch24-oligopoly-gas-stations.png) |
-| [25 · Behavioral Economics](../etb-live/Chapter25.html) | — | Not started | Not started | — | — |
-| [26 · The Case for (and Limits of) Markets](../etb-live/Chapter26.html) | — | Not started | Not started | — | — |
+| [25 · Behavioral Economics](../etb-live/Chapter25.html) | Organ-donation defaults / a checkbox decision. Provisional working direction. | Selected | Not started | Thread direction preserved in [handoff](CHAPTER-ANCHOR-HANDOFF.md); re-read the chapter before the next brief. | — |
+| [26 · The Case for (and Limits of) Markets](../etb-live/Chapter26.html) | Midas with a gold phone: wealth and human connection, deliberately echoing Chapter 1 or the introduction. Provisional working direction. | Selected | Not started | Thread direction preserved in [handoff](CHAPTER-ANCHOR-HANDOFF.md); composition remains to be refined. | — |
 
 ### Joy of Learning
 
@@ -123,7 +127,7 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [9 · Parenting](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter9.html) | — | Not started | Not started | — | — |
 | [10 · Child Development](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter10.html) | — | Not started | Not started | — | — |
 | [11 · Constructivism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter11.html) | The baseball diamond on the desk: relevant prior knowledge shapes comprehension and recall. | Selected | Approved | “Prior Knowledge”; existing baseball study · [Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) | [Approved baseball image](https://github.com/bpacini-alt/edcor-310-textbook/blob/4ed340cf64b871bccb07b2cd9ffe747ca38bfd2c/etb-live/images/chapter-anchors/ch11-baseball-prior-knowledge.png) |
-| [12 · Social Learning Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html) | Watch, Then Try: A learner can acquire a behavior by observing a model and trying it, without needing direct reward or punishment first. | Proposed | Not started | “Observational Learning” · Learning main `56aabcc` | — |
+| [12 · Social Learning Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter12.html) | Bobo doll: observing a model can shape later behavior. | Selected | Approved | Existing observational-learning figure, verified on Learning main `f754587` · [PR #155](https://github.com/bpacini-alt/edcor-310-textbook/pull/155) | [Approved Bobo image](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch12-bobo-observational-learning.webp) |
 | [13 · Adolescent Development and Moral Foundations](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter13.html) | — | Not started | Not started | — | — |
 | [14 · Identity and Identity Formation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter14.html) | — | Not started | Not started | — | — |
 | [15 · Personality Theory](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter15.html) | — | Not started | Not started | — | — |
@@ -131,13 +135,13 @@ For each row, update the current anchor, the two separate statuses, the source h
 | [17 · Anthropology & Culture](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter17.html) | — | Not started | Not started | — | — |
 | [18 · Belonging, Social Structure & Tribalism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter18.html) | — | Not started | Not started | — | — |
 | [19 · Extrinsic Motivation & Behaviorism](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter19.html) | The Attention Loop: Teacher responses and routines shape behavior; attention can reinforce the very behavior a teacher is trying to reduce. | Proposed | Not started | “Behavior charts and trackers, explained”; “Operant Conditioning” · Learning main `56aabcc` | — |
-| [20 · Intrinsic Motivation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html) | The Unassigned Calculator: A learner can persist through repeated setbacks when a task connects to curiosity and ownership, even without a grade or reward. | Proposed | Not started | “Intrinsic Motivation”; “Supporting Student Motivation” · Learning main `56aabcc` | — |
+| [20 · Intrinsic Motivation](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter20.html) | The candle problem: let readers attempt the puzzle before showing how the box becomes a candle shelf. | Selected | Approved | Puzzle/solution pair published via [PR #161](https://github.com/bpacini-alt/edcor-310-textbook/pull/161); opening placement via [PR #163](https://github.com/bpacini-alt/edcor-310-textbook/pull/163) | [Puzzle](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-unsolved.webp) · [Solution](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-solution.webp) |
 | [21 · Executive Function and ADHD](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter21.html) | — | Not started | Not started | — | — |
 | [22 · Attention, Memory, and Cognitive Load](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter22.html) | The Four-Slot Workbench: Attention selects what enters thought, while working memory can hold only a small amount at once; distractions and clutter crowd out learning. | Proposed | Not started | “Selective Attention”; “Memory”; “Cognitive Load Theory” · Learning main `56aabcc` | — |
 | [23 · Intelligence & IQ](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter23.html) | One test, many futures: a recruit takes an intelligence test among rows of fellow recruits. | Selected | Approved | Opening Army-testing story · published via Learning PR #154 | [Approved Army-test image](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch23-intelligence-test-recruits.png) |
 | [24 · Learner Differences](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter24.html) | Change the barrier: two Berkeley activists collaborate on an asphalt curb ramp. Approved revision gives the wheelchair user a relaxed smile and thumbs-up. | Selected | Approved | “Universal Design for Learning”; sourced curb-ramp vignette · [Learning PR #157](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) | [Approved curb-ramp image](https://github.com/bpacini-alt/edcor-310-textbook/blob/4ed340cf64b871bccb07b2cd9ffe747ca38bfd2c/etb-live/images/chapter-anchors/ch24-curb-cut-access.png) |
-| [25 · The Research-to-Practice Gap](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter25.html) | — | Not started | Not started | — | — |
-| [26 · The Grand Adventure, Reprise](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter26.html) | — | Not started | Not started | — | — |
+| [25 · The Research-to-Practice Gap](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter25.html) | Semmelweis and a handwashing basin. Provisional working direction. | Selected | Not started | Thread direction preserved in [handoff](CHAPTER-ANCHOR-HANDOFF.md); verify history and chapter fit before generating. | — |
+| [26 · The Grand Adventure, Reprise](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/chapter26.html) | An original returning hero, stronger, better, braver, possibly becoming a guide; deliberate echo of Learning 1. Provisional working direction. | Selected | Not started | Thread direction preserved in [handoff](CHAPTER-ANCHOR-HANDOFF.md); no literal Bilbo image selected. | — |
 
 ## Status guide
 
@@ -209,7 +213,7 @@ These are the original November 20 concept proposals. Later placement decisions 
 
 ### Learning Chapter 24: research shortlist — curb cut selected
 
-These are researched possibilities for new chapter content. Benjamin subsequently selected item 2, the curb-cut story. Its concept fits existing sections and still needs a short sourced vignette; items 1 and 3 remain unselected alternatives.
+These are researched possibilities for new chapter content. Benjamin subsequently selected item 2, the curb-cut story. Its sourced vignette and image were subsequently published via Learning PR #157; items 1 and 3 remain unselected alternatives.
 
 1. **The explanation that became unnecessary — expertise reversal.** Kalyuga, Chandler, and Sweller (1998) found across three experiments that the best diagram/text design changed with expertise: integrated explanations helped less-expert learners, while eliminating redundant text helped more-expert learners. Fits the Instructional Hierarchy/readiness discussion. A circuit-training scene would be an illustration of the finding, not a claim to reproduce the experimental setup. **Guardrail:** Adjust support to demonstrated knowledge; do not assign permanent learner types. The broader novice/expert principle overlaps Chapter 2 and cognitive-load theory in Chapter 22, although this specific study is not named there. [Primary study](https://journals.sagepub.com/doi/10.1518/001872098779480587).
 2. **The midnight curb ramp — access designed by the people who need it.** Berkeley disability activists used asphalt to create unauthorized curb ramps while official installation lagged. Strong historical-story candidate for Universal Design for Learning and removing barriers. Possible scene: a wheelchair user directing or trying a new ramp as a fellow activist finishes its edge under a streetlight. **Guardrail:** Distinguish the documented asphalt work from dramatic sledgehammer/nitroglycerin lore; universal access does not eliminate individualized supports. [UC Berkeley archival history](https://revolution.berkeley.edu/projects/place-every-body/).
@@ -240,3 +244,12 @@ These are researched possibilities for new chapter content. Benjamin subsequentl
 - **Learning 2 image approved:** Use the v2 elephant-and-rider scene, replacing the contemporary tourist outfit with simple fable clothing and softening the scenery. Exact approved PNG blob: `b655073b6c7f714e7a8bd617b321071470a897ce`. The rider points left while the calm elephant walks right. Avoid treating intuition as inherently bad or reason as useless.
 - **Placement route:** [Learning PR #162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162), head `9c0e73644f3cb8a4559defed1388633c2a1b9991`; its [local opening-approval index](https://github.com/bpacini-alt/edcor-310-textbook/blob/9c0e73644f3cb8a4559defed1388633c2a1b9991/docs/chapter-anchors/anchor-index.md) links back to this cross-book inventory. Image approval and publication remain separate statuses.
 - **Opening status reconciled:** Learning 1's Hercules departure/return pair was already published through PR #155; the ledger now reflects those existing illustrations. Econ 1–2 were merged through PR #206. These status corrections do not add or regenerate those assets.
+
+
+## Handoff reconciliation — November 22, 2026
+
+- All reviewed image-placement batches are merged at the handoff snapshot. Learning #162 and Econ #208 are complete; the candle pair is published through Learning #161, with its unsolved image moved into the Chapter 20 opening by #163.
+- Learning 12's existing Bobo figure and Learning 20's candle pair now appear as approved in the current ledger. The original “Watch, Then Try” and “Unassigned Calculator” proposals above remain historical proposals, not competing current image assignments.
+- Learning #160 revised Chapter 22, including a forgetting-curve figure; it did not select or approve the older Four-Slot Workbench mental-anchor proposal. Re-read the current chapter if that proposal is revisited.
+- Chapters 25–26 in both books retain their provisional directions from this conversation; no exact images for those directions are approved. Both Chapter 26 scenes should intentionally echo their book's beginning.
+- The next agreed batch is Chapter 3 in each book: read the actual chapters, hunt for stories/research, and present descriptions before generating. See the [handoff](CHAPTER-ANCHOR-HANDOFF.md) for the new-chat starter and current asset inventory.
