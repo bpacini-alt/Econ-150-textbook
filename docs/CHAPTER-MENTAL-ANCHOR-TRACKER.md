@@ -11,6 +11,15 @@ This is a working inventory, not evidence that a chapter has already been review
 
 The Economics list includes its published Chapters 1–26 and the separate Chapter 0 Algebra Review page. The Economics table of contents counts 26 main chapters; Chapter 0 is included here as a distinct opening page so we can decide whether it merits its own anchor.
 
+## Approved opening-chapter images — November 21, 2026
+
+Benjamin approved the broken-window image unchanged and the diamond–water image after the foreground bottle was resized to an ordinary single-serving scale. Both exact approved PNGs are included with accessible chapter figures in this PR; publication awaits Benjamin's merge.
+
+| Chapter | Approved image | Placement / source note |
+| --- | --- | --- |
+| Econ 1 | [Broken window](../etb-live/images/chapter-anchors/ch01-broken-window.png) | “Opportunity Cost — Seeing the unseen”; [approval and prompt](chapter-anchors/econ-ch01-broken-window.md) |
+| Econ 2 | [Diamond–water](../etb-live/images/chapter-anchors/ch02-diamond-water.png) | “Marginal Thinking — The Diamond-Water Paradox”; [approval and prompts](chapter-anchors/econ-ch02-diamond-water.md) |
+
 ## Approved images recorded November 21, 2026
 
 Benjamin approved these five exact images during this chapter-anchor review. This is the current approval record for this batch; the November 20 counts below are the historical starting inventory.
@@ -60,8 +69,8 @@ For each row, update the current anchor, the two separate statuses, the source h
 | Chapter and source | Anchor name / central idea | Idea status | Image status | Source heading / reviewed ref | Approved image (repository or Library) |
 | --- | --- | --- | --- | --- | --- |
 | [0 · Algebra Review](../etb-live/Chapter0.html) — opening review page | — | Not started | Not started | — | — |
-| [1 · Thinking Like an Economist](../etb-live/Chapter1.html) | — | Not started | Not started | — | — |
-| [2 · Consumer Choice](../etb-live/Chapter2.html) | — | Not started | Not started | — | — |
+| [1 · Thinking Like an Economist](../etb-live/Chapter1.html) | The broken window and the unbought suit: visible repair spending displaces a forgone purchase. | Selected | Approved | “Opportunity Cost — Seeing the unseen” · Econ main `3567087` | [Approved broken-window image](../etb-live/images/chapter-anchors/ch01-broken-window.png) |
+| [2 · Consumer Choice](../etb-live/Chapter2.html) | The diamond–water paradox: marginal value differs from total usefulness. | Selected | Approved | “Marginal Thinking — The Diamond-Water Paradox” · Econ main `3567087` | [Approved diamond–water image](../etb-live/images/chapter-anchors/ch02-diamond-water.png) |
 | [3 · Supply and Demand I: The Price System](../etb-live/Chapter3.html) | One Price, Many Decisions: A single market price lets buyers and sellers adjust independently without a central order-giver. | Proposed | Not started | “What Prices Know” · Econ main `44ac046` | — |
 | [4 · Supply and Demand II: Shifts, Shocks, and Price Controls](../etb-live/Chapter4.html) | — | Not started | Not started | — | — |
 | [5 · Trade, Specialization, and Efficiency](../etb-live/Chapter5.html) | The Two-Task Swap: People can gain by specializing where their opportunity cost is lower and trading, even if one person is more productive at both tasks. | Proposed | Not started | “Specialization and Comparative Advantage”; “Gains from Trade” · Econ main `44ac046` | — |
@@ -198,3 +207,10 @@ These are researched possibilities for new chapter content. Benjamin subsequentl
 
 - Joy of Economics chapter titles and numbering: `build/build_front.py`; chapter pages: `etb-live/ChapterN.html`.
 - Joy of Learning chapter titles and numbering: `etb-live/manifest.json`; chapter pages: `etb-live/chapterN.html`.
+
+
+### Econ Chapters 1–2: opening anchors approved
+
+- **Chapter 1:** Benjamin chose Bastiat's broken-window parable and approved the exact image unchanged: “The window is perfect. Approved as is.” The neighboring tailor's unbought suit makes the opportunity cost concrete. [Source and reproduction note](chapter-anchors/econ-ch01-broken-window.md).
+- **Chapter 2:** Benjamin selected the diamond–water shop-window scene over the hot-dog and kidney-donation drafts. The front water bottle was reduced to ordinary single-serving proportions; Benjamin approved that exact revision: “Yep, that's perfect. Approved.” The approved price cards remain **$1** and **$5,000**; they are illustrative prices. [Source and reproduction notes](chapter-anchors/econ-ch02-diamond-water.md).
+- **Scope:** These figures illustrate existing chapter passages. The discarded Chapter 2 drafts are not approved book assets. Chapter 1's giant-nail parable was not selected. Keep the approval status separate from whether this PR has merged.
