@@ -12,7 +12,9 @@
  *    guides:[{at:[x,y], x_label?, y_label?}],   dotted drops to both axes
  *    areas:[{polygon:[[x,y],...], label?, role?}],
  *    arrows:[{from:[x,y], to:[x,y]}],
- *    notes:[{at:[x,y], text}]}
+ *    notes:[{at:[x,y], text, anchor?:"start"|"middle"|"end", bold?, role?}],
+ *    interactive?: true}   graph students click (renderers/graphclick.js): the SVG
+ *                          becomes focusable and carries its plot frame in data-* attributes
  * or several side by side: {kind:"panels", alt, panels:[graph, ...]}
  * role: demand | supply | tax | neutral | mark (sets color; mark is for labeled segments students pick from); style: solid | dotted
  * "alt" is required: it is the figure's text for screen readers.
@@ -78,11 +80,16 @@
       if (p.label) s += '<text x="' + fmt(sx(p.at[0]) + 8) + '" y="' + fmt(sy(p.at[1]) - 8) + '" font-size="15" font-weight="700" fill="#21313e">' + esc(p.label) + "</text>";
     }
     for (const n of g.notes || []) {
-      s += '<text x="' + fmt(sx(n.at[0])) + '" y="' + fmt(sy(n.at[1])) + '" font-size="14" fill="#21313e">' + esc(n.text) + "</text>";
+      const anchor = ["middle", "end"].includes(n.anchor) ? ' text-anchor="' + n.anchor + '"' : "";
+      s += '<text x="' + fmt(sx(n.at[0])) + '" y="' + fmt(sy(n.at[1])) + '"' + anchor + ' font-size="14"' + (n.bold ? ' font-weight="700"' : "") + ' fill="' + (COLORS[n.role] || "#21313e") + '">' + esc(n.text) + "</text>";
     }
     const defs = '<defs><marker id="' + idPrefix + 'ax" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#333"></path></marker>' +
       '<marker id="' + idPrefix + 'ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#21313e"></path></marker></defs>';
-    return '<svg viewBox="0 0 ' + W + " " + H + '" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="width:100%;height:auto;display:block;font-family:system-ui,sans-serif">' + defs + s + "</svg>";
+    const attrs = g.interactive
+      ? ' role="application" tabindex="0" aria-label="Interactive graph" data-x-min="' + xmin + '" data-x-max="' + g.x.max + '" data-y-min="' + ymin + '" data-y-max="' + g.y.max +
+        '" data-plot-left="' + L + '" data-plot-right="' + (W - R) + '" data-plot-top="' + T + '" data-plot-bottom="' + (H - B) + '"'
+      : ' aria-hidden="true" focusable="false"';
+    return '<svg viewBox="0 0 ' + W + " " + H + '" xmlns="http://www.w3.org/2000/svg"' + attrs + ' style="width:100%;height:auto;display:block;font-family:system-ui,sans-serif">' + defs + s + "</svg>";
   }
 
   let counter = 0;
@@ -93,6 +100,7 @@
     const compact = graphs.length > 1 && graphs.every((g) => !(g.guides || []).length && !(g.notes || []).length);
     const cols = Math.min(graphs.length, 2);
     const inner = graphs.map((g) => '<div class="pp-fig-panel">' + (g.title ? '<div class="pp-fig-cap">' + esc(g.title) + "</div>" : "") + one(g, "ppf" + (++counter) + "-", compact) + "</div>").join("");
-    return '<figure class="pp-figure" role="img" aria-label="' + esc(spec.alt) + '"><div class="pp-fig-grid' + (compact ? " pp-fig-compact" : "") + '" style="--pp-fig-cols:' + cols + '">' + inner + "</div></figure>";
+    const role = graphs.some((g) => g.interactive) ? "group" : "img";
+    return '<figure class="pp-figure" role="' + role + '" aria-label="' + esc(spec.alt) + '"><div class="pp-fig-grid' + (compact ? " pp-fig-compact" : "") + '" style="--pp-fig-cols:' + cols + '">' + inner + "</div></figure>";
   };
 })(window.PP);
