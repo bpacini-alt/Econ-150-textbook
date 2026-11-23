@@ -6,11 +6,11 @@
 
 **Current target authority:** Benjamin set the two-per-chapter goal on November 18, 2026. This tracker governs current coverage planning and supersedes older one-or-two guidance in the editorial archive; those files remain the record of prior wording, sources, and decisions.
 
-## Chapters 20–26 placement status — November 22, 2026
+## Chapters 20–26 placement status — November 23, 2026
 
 **Updated November 23, 2026.** This table supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `b689b65390347a646232052be5f5934afe42e16a`; Learning `f719a864d44e20b873c41adad19af51639240d44`. [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216) and [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171) are merged, so Chamberlin, Hawking, Boring, and Boser–McDaniels count as published.
 
-Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places it with product variety and adds a matching Chamberlin/Levitt recap. This single addition remains pending merge. See the [approval and source record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026). Learning 26 is the only remaining aphorism slot in this range.
+Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places it with product variety and adds a matching Chamberlin/Levitt recap. Benjamin also approved Packer as a distinct third card in Learning 24 and paired D&C 88:78 with D&C 50:22 in Learning 26; both are in [Learning #173](https://github.com/bpacini-alt/edcor-310-textbook/pull/173). These three additions across the two PRs remain pending merge. See the [Learning approval and source record](APHORISM-CANDIDATE-BANK.md#learning-24-and-26-approvals--november-23-2026) and the [Levitt record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026).
 
 | Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
 | --- | ---: | ---: | ---: | --- |
@@ -25,11 +25,11 @@ Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](
 | EDCOR 21 | 2 | 0 | 2 | None; Greene and systems. |
 | EDCOR 22 | 2 | 0 | 2 | None; Willingham pair. |
 | EDCOR 23 | 2 | 0 | 2 | None; Boring and Hawking. |
-| EDCOR 24 | 2 | 0 | 2 | None; visual learning and good teaching. |
+| EDCOR 24 | 2 | 1 | 3 | None needed to reach two; Packer adds a distinct relational-attention idea. |
 | EDCOR 25 | 2 | 0 | 2 | None; Boser–McDaniels and Feynman. |
-| EDCOR 26 | 1 | 0 | 1 | One companion to Palmer; not yet selected. |
+| EDCOR 26 | 1 | 1 | 2 | None after merge; Palmer plus paired D&C passages. |
 
-**Range totals:** 29 published cards; **30 after Econ #218 merges**, with 27/28 minimum slots filled. Only one Learning 26 companion remains. A third card does not fill another chapter’s gap. These are selection/placement counts, not a claim that every chapter has completed a full editorial audit.
+**Range totals:** 29 published cards; **32 after Econ #218 and Learning #173 merge**, with all 28/28 minimum slots filled. Learning 24 has an optional distinct third card. These are selection/placement counts, not a claim that every chapter has completed a full editorial audit.
 
 ### Chapter-anchor image status for the same range
 
