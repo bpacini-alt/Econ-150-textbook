@@ -6,6 +6,10 @@
 
 **Current target authority:** Benjamin set the two-per-chapter goal on November 18, 2026. This tracker governs current coverage planning and supersedes older one-or-two guidance in the editorial archive; those files remain the record of prior wording, sources, and decisions.
 
+## Selection planning update — November 22, 2026
+
+The [new decision record](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) contains approved wordings and selected quotations for Econ 20 (2), 21 (2), 22 (3), 24 (2), 25 (2), 26 (3), and EDCOR 25 (1). Both Thaler excerpts for Econ 25 were approved and verified in the November 22 follow-up. Econ 23 is on hold. Benjamin is working on a Nash line for Econ 24 as an optional third. Selection is distinct from publication: **this update adds no live cards**, and the November 18 counts below remain a dated historical snapshot rather than a new live-page recount. Refresh the live counts during placement work.
+
 ## Goal and current progress
 
 Plan for **two approved, well-fitting aphorisms per chapter**, with a **third allowed when it adds a distinct useful idea**. The ceiling is three.

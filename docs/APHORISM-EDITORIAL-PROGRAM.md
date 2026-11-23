@@ -5,6 +5,10 @@
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
 
+## Latest chapter decisions — November 22, 2026
+
+The [November 22 decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) records 15 selected wordings/quotations across Econ 20, 21, 22, 24, 25, 26 and EDCOR 25, including both Thaler excerpts approved in the November 22 follow-up. Their wording, context, and Benjamin's distinction between learning from a rational model and becoming that model are recorded there. Econ 23 is on hold; Benjamin is working on the Nash-equilibrium formulation for Econ 24. These decisions supersede older ratings only for the listed exact selections. No placement or completed chapter audit is claimed by this documentation update.
+
 ## Why we are doing this
 
 An aphorism is **an insight packaged in a nugget**, not a slogan selected for sound. We want compact, durable reasoning tools: a sentence students can unpack, apply outside the chapter, and use to correct a tempting misconception. The saying is valuable *because* of the argument it carries. It should often be useful in life, work, professional teaching, civic life, or personal decision-making.

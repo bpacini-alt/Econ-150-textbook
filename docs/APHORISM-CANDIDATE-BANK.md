@@ -2,6 +2,59 @@
 
 **Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**; Batch 7: **three NO, two REWRITE, three MAYBE**. All recorded explicitly below. “Nature via Nurture” is now MAYBE. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
+## Decision update — November 22, 2026
+
+**Scope:** Benjamin reviewed Econ 20–26, starting with Econ 20 and continuing one chapter at a time. The decisions below supersede older candidate ratings only for these exact selections. They record approved wording and selected quotations for subsequent chapter placement; they do not claim that cards have been published or that chapter audits are complete. Chapter 23 remains on hold. In a follow-up on November 22, Benjamin approved both Thaler excerpts, requested verification and the framing recorded below, and took the Nash-equilibrium wording work himself.
+
+### Approved wording
+
+| Chapter / slot | Exact approved wording | Ownership and implementation note |
+| --- | --- | --- |
+| **ECON 20 A** | “Free markets struggle when the ambulance shows up.” | Benjamin's original wording. Tie to urgent care: patients cannot readily shop, postpone the purchase, or assess quality. Do not generalize this to every healthcare transaction. |
+| **ECON 20 B** | “There are no solutions. There are only trade-offs.” | Thomas Sowell; the fuller quotation form recommended immediately before Benjamin approved A and B. His initial condensed proposal already appears in Chapter 1. Preserve the deliberate return to that principle, and explain that improvements remain possible. [Sowell's own account](https://capitalismmagazine.com/2004/02/housing-hurdles-the-solution/) |
+| **ECON 21 A** | “The problem with monopoly isn’t bigness; it’s restricted output.” | Benjamin's refinement of existing chapter prose. |
+| **ECON 21 B** | “What holds monopolies accountable? The demand curve.” | Benjamin explicitly chose his original question-and-answer wording over the assistant's alternative. Explain that demand constrains monopoly; it does not force the competitive quantity or price. |
+| **ECON 22 A** | “Durable power derives from barriers to entry.” | Benjamin's original wording. |
+| **ECON 22 B** | “Rent-seekers shrink the pie fighting for a bigger slice.” | Assistant draft explicitly approved by Benjamin. Explain the real resources dissipated pursuing protected rents, beyond the basic monopoly deadweight-loss triangle. |
+| **ECON 24 A** | “The biggest threat to the cartel is the cartel.” | Benjamin's original wording. Explain the members' incentive to cheat; this does not assert that enforcement and outside competition never matter. |
+| **ECON 26 A** | “Markets can get us what we want. They cannot teach us what to want.” | Existing chapter wording, explicitly approved. The second sentence concerns judging which desires are worth cultivating; markets and advertising can influence desires. |
+| **ECON 26 B** | “Free markets help create material abundance. The good life grows from the things of the soul.” | Assistant refinement of Benjamin's abundance / good-life proposal, approved in the following response. Preserve “the things of the soul.” |
+
+### Expert quotations selected for inclusion
+
+Benjamin also selected the following six quotations, including both Thaler excerpts in the November 22 follow-up. These are intended additions to the named chapters, with exact prose position and any explanatory/source accordion still to be prepared in the chapter pass.
+
+| Home | Selected quotation / source-safe excerpt | Source and quotation treatment |
+| --- | --- | --- |
+| **ECON 22 C — Stigler** | “as a rule, regulation is acquired by the industry and is designed and operated primarily for its benefit” | George Stigler, “The Theory of Economic Regulation” (1971), p. 3. Benjamin approved a shortened rendering with parenthetical changes identifying the industry as beneficiary. This continuous original excerpt avoids those changes; identify the industry in the attribution or explanation. Preserve the user's intended meaning and do not present reordered words as verbatim. [Original paper](https://publics22.classes.ryansafner.com/readings/Stigler-1971.pdf) |
+| **ECON 24 B — Smith** | “People of the same trade seldom meet together … but the conversation ends in a conspiracy against the public” | Adam Smith, The Wealth of Nations, I.x, Part II. This is the shortened excerpt shown in the review. The source says **against the public**, resolving the conversational shorthand “of the public.” Keep the ellipsis visible. [Original text](https://www.econlib.org/library/Smith/smWN.html?chapter_num=13#book-reader) |
+| **ECON 26 C — Simon** | “a wealth of information creates a poverty of attention” | Herbert Simon, “Designing Organizations for an Information-Rich World” (1971), pp. 40–41. A continuous excerpt; sentence capitalization may be handled transparently in the eventual card. Place with the attention economy, distinct from the other two closing-chapter ideas. [Original essay](https://gwern.net/doc/design/1971-simon.pdf) |
+| **ECON 25 A — Thaler** | “We don’t think people are dumb. We think the world is hard.” | **YES — November 22 follow-up; wording and context verified.** Richard Thaler, Freakonomics Radio episode 340, interview with Stephen J. Dubner, July 11, 2018. This is a continuous excerpt after omitting an introductory “So,” with initial capitalization. He discusses the difficulty of retirement decisions and helping people pursue their own goals, using GPS as his analogy; it is not an argument for overriding people's choices. The full original transcript was directly readable on this follow-up. [Original interview](https://freakonomics.com/podcast/people-arent-dumb-the-world-is-hard-2/) |
+| **ECON 25 B — Thaler** | “Homo Economicus will evolve into Homo Sapiens” | **YES — November 22 follow-up; exact continuous excerpt and context verified.** Richard H. Thaler, “From Homo Economicus to Homo Sapiens,” Journal of Economic Perspectives 14(1), 133–141 (2000), DOI 10.1257/jep.14.1.133. The publisher abstract contains these words; the conclusion on p. 140 repeats them. He predicts that descriptive economic models will represent real people more accurately. This is an excerpt from a longer sentence, not a claim about biological evolution or a prescription that people become the model. The AEA abstract and original conclusion were readable on this follow-up. [Publisher record and abstract](https://www.aeaweb.org/articles?id=10.1257/jep.14.1.133) · [Original paper, p. 140](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.14.1.133) |
+| **EDCOR 25 — Feynman** | “The first principle is that you must not fool yourself—and you are the easiest person to fool.” | Richard Feynman, “Cargo Cult Science,” Caltech commencement address (1974). Fit to the chapter's discussion of sophisticated resistance to evidence, not a claim that educational research as a whole is invalid. [Caltech transcript](https://calteches.library.caltech.edu/51/2/CargoCult.htm) |
+
+**Selection counts:** Econ 20: 2; Econ 21: 2; Econ 22: 3; Econ 24: 2; Econ 25: 2; Econ 26: 3; EDCOR 25: 1. These are **15 wording/quotation selections**, not new live cards. Econ 22 and 26 are at the three-selection ceiling. Smith fills Econ 24's second slot; a Nash line would be an optional third. Do not drop an approved quotation silently to make room for a new candidate.
+
+### Holds and remaining research
+
+- **ECON 23 — HOLD.** Benjamin said to wait and discuss it later. Neither his explanatory “price of variety” sentence nor the assistant's shorter alternative is approved for placement.
+- **ECON 24 — BENJAMIN WORKING / To Review.** In the follow-up Benjamin took the Nash-equilibrium wording work himself. Leave the following assistant alternatives as unapproved history and do not advance them on his behalf. Benjamin does not favor “Your best move depends on theirs” as the new aphorism, and requested a Nash-equilibrium direction. Leave existing chapter prose/caption untouched. Original drafts for discussion: **“Stable doesn’t mean best.”** and **“Nobody can do better by changing alone.”** Both are unapproved assistant formulations, not John Nash quotations. Explain equilibrium as no profitable unilateral strategy change while others' strategies are held fixed; in a prisoner's dilemma the players may prefer a coordinated alternative. Do not imply all Nash equilibria are inefficient, that firms' joint profits equal social welfare, or that Nash's definition establishes dynamic convergence. [Nash and Shapley's definition, p. 106](https://sites.math.rutgers.edu/~zeilberg/akherim/PokerPapers/NashShapely1951.pdf)
+- **ECON 25 — two Thaler excerpts now approved.** The follow-up supersedes their earlier To Review status. Benjamin's rationalicus joke, “The nudger is human, too,” and the earlier nudge quotation were not separately selected. The earlier direct-open HTTP 403 issues are superseded by successful inspection of the original interview, AEA abstract, and the article's conclusion on this follow-up.
+- The previously recorded NO decisions on the healthcare diagnosis line and the default-choice line remain unchanged. Preserve older alternatives as history. Chapter publication and completion statuses will change only when the separate placement work is actually done.
+
+### Econ 25 framing — approved direction, November 22 follow-up
+
+Benjamin's direction: a good homo sapiens can learn from homo economicus, but becoming homo economicus is not the end goal. Preserve this distinction alongside both quotations.
+
+- **Thaler's descriptive claim:** improve our economic models so that they describe real human decision-making more accurately.
+- **The book's practical lesson:** people can learn disciplined comparison, opportunity-cost reasoning, and consistency in pursuing their goals, while recognizing cognitive limits and using helpful decision structures.
+- **The book's normative boundary:** a rational-choice model does not, by itself, select worthy purposes or provide a complete ideal of a person. Rational choice can include generosity and commitments to other people; do not equate all rationality with selfishness or treat care and generosity as irrational.
+- This framing is Benjamin's editorial direction. Any new explanatory paragraph is book prose, **not another Thaler quotation or an automatically approved third card**.
+
+**Proposed explanatory prose — draft, exact words not yet approved:**
+
+> Homo economicus has something to teach homo sapiens: count the costs, compare alternatives, and think beyond the next temptation. Those habits can help us pursue what matters to us more consistently. But a model of consistent choice cannot tell us what is worth choosing. Thaler's prediction is that our models will become more human. Our aim is to help human beings choose more wisely, without mistaking the model for the whole person.
+
 ## Decision update — November 9, 2026
 
 Benjamin approved the exact lines below for placement in this reviewable pass. This dated list is the exception to the older rule that a “YES” means wording approval only; it records explicit chapter-placement approval for these lines. Older batch statuses remain historical and unchanged.
@@ -86,13 +139,13 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | ECON 17 · Externalities | 1 approved wording: “If you're going to tax a good, you may as well tax a bad!” | Placement pending. The chapter synthesis already says “Tax bads, not goods”; review the prose location and avoid duplication. PR #159 was a preview-only practice page, not a Chapter 17 content change. |
 | ECON 18 · Commons | — | Not started |
 | ECON 19 · Pigouvian correction | — | Not started |
-| ECON 20 · Healthcare | — | Not started |
-| ECON 21 · Monopoly | — | Not started |
-| ECON 22 · Market power remedies | — | Not started |
-| ECON 23 · Monopolistic competition | — | Not started |
-| ECON 24 · Oligopoly | — | Not started |
-| ECON 25 · Behavioral economics | — | Not started |
-| ECON 26 · Limits of markets | — | Not started |
+| ECON 20 · Healthcare | 2 approved wordings: ambulance / Sowell trade-offs | Wording approved November 22; exact placement and chapter audit pending |
+| ECON 21 · Monopoly | 2 approved wordings: restricted output / Benjamin's demand-curve question | Wording approved November 22; preserve the original question-and-answer B |
+| ECON 22 · Market power remedies | 3 selections: barriers to entry / rent-seekers shrinking the pie / Stigler | Selected November 22; quotation treatment and placement pending; three-selection ceiling |
+| ECON 23 · Monopolistic competition | HOLD — Benjamin will return to it | November 22: no new wording selected |
+| ECON 24 · Oligopoly | 2 selections: cartel's internal threat / Adam Smith on conspiracy against the public | November 22 follow-up: Benjamin is working on Nash-equilibrium wording as an optional third; old best-move proposal not favored |
+| ECON 25 · Behavioral economics | 2 approved Thaler excerpts: complex world / Homo Economicus evolving into Homo Sapiens | November 22 follow-up: wording and context verified; framing direction recorded; exact explanatory prose and placement pending |
+| ECON 26 · Limits of markets | 3 selections: wants / material abundance and soul / Simon on attention | Selected November 22; exact placement and chapter audit pending; three-selection ceiling |
 | EDCOR 1 · Purpose | — | Not started |
 | EDCOR 2 · Biases | — | Not started |
 | EDCOR 3 · Empiricism | — | Not started |
@@ -117,7 +170,7 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 22 · Memory & cognitive load | 2 Willingham aphorisms in merged EDCOR PR #150: “The brain is not designed for thinking. It’s designed to save you from having to think.” and “Memory is the residue of thought.” (existing occurrence formatted, with an About box). In the text only: “Practice until you are perfect and you will be perfect only briefly.” and “Feeling familiar isn’t the same as knowing it.” | Chapter-by-chapter audit remains pending |
 | EDCOR 23 · IQ | — | Not started |
 | EDCOR 24 · Learner differences | 1 approved aphorism in merged PR #126; an existing green principle card still needs counting | Chapter-by-chapter audit remains pending |
-| EDCOR 25 · Research/practice gap | — | Not started |
+| EDCOR 25 · Research/practice gap | Feynman quotation selected for inclusion | November 22: exact prose placement and full chapter audit pending; vocabulary/practice candidate remains MAYBE |
 | EDCOR 26 · Grand adventure | 1 approved aphorism in merged PR #126 | Chapter-by-chapter audit remains pending |
 
 ## ECON 150 — Unit I
