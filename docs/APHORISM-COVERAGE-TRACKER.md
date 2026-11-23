@@ -19,7 +19,7 @@ The [approved-wording record](APHORISM-CANDIDATE-BANK.md#placement-pass--novembe
 | ECON 22 | 0 | 3 | 3 | None; entry barriers, Stigler, rent-seeking. |
 | ECON 23 | 0 | 0 | 0 | Two; Benjamin’s HOLD remains in force. |
 | ECON 24 | 0 | 3 | 3 | None; Dixit–Nalebuff, Smith, cartel. Earlier Nash drafts are unselected history. |
-| ECON 25 | 0 | 2 | 2 | None; both verified Thaler excerpts plus explanatory prose, not a third card. |
+| ECON 25 | 0 | 2 | 2 | None; two verified Thaler excerpts; the model/person distinction appears in the Homo Economicus card’s source context, not a third card. |
 | ECON 26 | 0 | 3 | 3 | None; wants, Simon, abundance / soul. |
 | EDCOR 20 | 2 | 0 | 2 | None; existing motivational-harm and Montessori pair. |
 | EDCOR 21 | 2 | 0 | 2 | None; existing Greene and systems pair. |
