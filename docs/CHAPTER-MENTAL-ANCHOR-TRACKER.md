@@ -77,7 +77,7 @@ The [shared workflow](CHAPTER-ANCHOR-WORKFLOW.md) contains the full art directio
 
 ## Opening-placement standard — November 23, 2026
 
-Benjamin approved a common opening layout for every approved chapter-anchor entry with a title card: place the anchor figure immediately after the card and before the opening hook. The pre-chapter study-guide anchor follows its title card as well. Keep ordinary charts, diagrams, and evidence figures beside the passages they explain.
+Benjamin approved a common opening layout for every approved chapter-anchor entry with a title card: place the anchor figure immediately after the card and before the opening hook. The pre-chapter study-guide anchor follows its title card as well. Keep ordinary charts, diagrams, and evidence figures beside the passages they explain. The coordinated implementations are in Learning [PR #175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [PR #223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223).
 
 For a deliberate task/reveal pair, only the unsolved task opens the page. Keep the solution or reveal beside its explanation so the reader can attempt the task first. Learning 20’s candle task and Learning 22’s pass-counting task follow this sequence. Learning 19’s approved hallway-routine opener is already positioned correctly in pending PR #174.
 
@@ -151,7 +151,7 @@ For each row, update the current anchor, the two separate statuses, the source h
 
 ## Decision log — November 23, 2026: chapter-anchor opening placement
 
-- **Standard:** Every approved chapter-anchor image with a title card now opens immediately after that card and before the hook. The titled pre-chapter study guide follows the same rule.
+- **Standard:** Every approved chapter-anchor image with a title card now opens immediately after that card and before the hook. The titled pre-chapter study guide follows the same rule. Implementation is under review in Learning [PR #175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [PR #223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223).
 - **Moved in this implementation:** Econ 1, 2, and 26; Learning study guide, 1, 2, 11, 18, 21, 24, 25, and 26.
 - **Already in the standard position:** Econ 20–25; Learning 12, 20’s unsolved candle task, 22’s pass-counting task, and 23.
 - **Sequence exceptions:** Learning 20’s candle solution remains with its answer; Learning 22’s gorilla reveal remains after the attempt and beside the explanation.

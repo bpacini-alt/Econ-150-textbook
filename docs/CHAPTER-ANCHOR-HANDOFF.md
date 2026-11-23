@@ -34,8 +34,10 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 | Book / chapter | Approved image | Placement PR |
 | --- | --- | --- |
 | Learning 19 | Preschool hallway routine: predictable cues and rehearsed actions help a class move safely together | [PR #174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) |
+| Learning placement standard | Move published anchors to the common opening position; update Learning pages and generated site | [PR #175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) |
+| Econ placement standard | Move approved anchors in Chapters 1, 2, and 26 to the common opening position | [PR #223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) |
 
-The approved image in Learning [#174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) already sits after the Chapter 19 title card. This standardization PR moves the previously published anchors into the same opening position.
+The approved image in Learning [#174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) already sits after the Chapter 19 title card. The coordinated Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) PRs move previously published anchors into the same opening position and record the shared standard.
 
 Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. Econ [#210](https://github.com/bpacini-alt/Econ-150-textbook/pull/210) is an open handoff-only PR prepared before Learning #168 merged; it is not an image placement. Recheck these branches before acting on them. Do not close or delete them without Benjamin's instruction.
 
@@ -83,7 +85,7 @@ Recent source/prompt notes: [Econ 1](https://github.com/bpacini-alt/Econ-150-tex
 
 ## Agreed next work
 
-- The cross-book placement-standard PRs update every published anchor page and the workflow; review both previews before merging.
+- Review the coordinated Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) placement-standard previews before merging.
 - Learning 19's approved opener remains a separate open PR (#174) and already follows the standard.
 - Econ 3 and Learning 3 remain the next anchor-development batch after this placement work.
 
@@ -98,7 +100,7 @@ These concepts have progressed since the older planning notes:
 
 ## Suggested new-chat prompt
 
-> Continue Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the current GitHub chapter-anchor workflow, handoff, tracker, both repositories' AGENTS.md files, current main commits, and open PRs. The cross-book chapter-anchor opening standard is in review; check the coordinated Learning and Econ placement PRs and the Learning 19 opener PR #174. Econ 20 (#217) and Econ 25 (#222) are published. Learning Chapters 20–26 and Econ Chapters 21–24 and 26 already have approved, published anchors. Preserve the exact-image approval and publication states separately.
+> Continue Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the current GitHub chapter-anchor workflow, handoff, tracker, both repositories' AGENTS.md files, current main commits, and open PRs. The cross-book chapter-anchor opening standard is in review in Learning #175 and Econ #223; also check the Learning 19 opener PR #174. Econ 20 (#217) and Econ 25 (#222) are published. Learning Chapters 20–26 and Econ Chapters 21–24 and 26 already have approved, published anchors. Preserve the exact-image approval and publication states separately.
 
 ## Keep this handoff useful
 
