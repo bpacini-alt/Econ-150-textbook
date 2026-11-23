@@ -7,7 +7,9 @@
 
 ## Latest approval — November 23, 2026
 
-Benjamin approved Levitt as Econ 23’s second aphorism. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places the exact quotation with Concept 4’s product-variety argument, preserves Chamberlin in Concept 1, and adds a matching two-line recap after the synthesis. The [approval and source record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026) supersedes Levitt’s earlier candidate-only status. This completes Econ 23’s two-card selection target once merged. The earlier Econ #216 / Learning #171 follow-up is now merged. Only Learning 26 still needs a companion to Palmer in Chapters 20–26; the [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-2026-placement-status--november-22-2026) distinguishes publication from this pending card.
+Benjamin approved Levitt as Econ 23’s second aphorism. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places the exact quotation with Concept 4’s product-variety argument, preserves Chamberlin in Concept 1, and adds a matching two-line recap after the synthesis. The [approval and source record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026) supersedes Levitt’s earlier candidate-only status. Econ #218 is merged, so both Econ 23 cards and their matching recap are published. The earlier Econ #216 / Learning #171 follow-up is now merged. Only Learning 26 still needs a companion to Palmer in Chapters 20–26; the [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-2026-placement-status--november-22-2026) now verifies 30 published cards and image coverage in 13/14 chapters. No approved content placement in this pass remains pending merge.
+
+**Historical decision log below:** earlier pending-merge and open-slot notes record the state at approval time. The November 23 coverage audit above supersedes those publication notes; unselected candidates keep their earlier ratings.
 
 ## Latest chapter decisions — November 22, 2026
 
