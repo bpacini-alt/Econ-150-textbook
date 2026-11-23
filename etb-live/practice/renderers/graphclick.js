@@ -198,7 +198,8 @@
         if (!st.done) {
           h += '<div class="pp-gc-ask">' + (multi ? '<span class="pp-gc-step">Step ' + (st.step + 1) + " of " + it.steps.length + "</span> " : "") + esc(s.ask) + "</div>";
         }
-        h += "</div>" + PP.figure(figureFor(it, st.step));
+        // Capped width keeps the feedback close to the graph on wide screens.
+        h += '</div><div class="pp-gc-fig">' + PP.figure(figureFor(it, st.step)) + "</div>";
         if (!st.done && s.kind === "choose") {
           if (!st.ord) st.ord = s.shuffle_options === false ? s.options.map((_, i) => i) : order(s.options.length);
           h += '<div class="pp-choices" role="group" aria-label="Answer choices">' + st.ord.map((i) =>
