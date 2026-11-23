@@ -8,7 +8,7 @@
 
 ## Selection planning update — November 22, 2026
 
-The [new decision record](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) contains approved wordings and selected quotations for Econ 20 (2), 21 (2), 22 (3), 24 (2), 26 (3), and EDCOR 25 (1). Econ 23 is on hold and Econ 25 awaits a Thaler choice. A Nash line for Econ 24 remains an optional third. Selection is distinct from publication: **this update adds no live cards**, and the November 18 counts below remain a dated historical snapshot rather than a new live-page recount. Refresh the live counts during placement work.
+The [new decision record](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) contains approved wordings and selected quotations for Econ 20 (2), 21 (2), 22 (3), 24 (2), 25 (2), 26 (3), and EDCOR 25 (1). Both Thaler excerpts for Econ 25 were approved and verified in the November 22 follow-up. Econ 23 is on hold. Benjamin is working on a Nash line for Econ 24 as an optional third. Selection is distinct from publication: **this update adds no live cards**, and the November 18 counts below remain a dated historical snapshot rather than a new live-page recount. Refresh the live counts during placement work.
 
 ## Goal and current progress
 

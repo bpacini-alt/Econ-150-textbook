@@ -7,7 +7,7 @@
 
 ## Latest chapter decisions — November 22, 2026
 
-The [November 22 decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) records 13 selected wordings/quotations across Econ 20, 21, 22, 24, 26 and EDCOR 25. Econ 23 is on hold; a Nash-equilibrium formulation for Econ 24 and a Thaler selection for Econ 25 remain open. These decisions supersede older ratings only for the listed exact selections. No placement or completed chapter audit is claimed by this documentation update.
+The [November 22 decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) records 15 selected wordings/quotations across Econ 20, 21, 22, 24, 25, 26 and EDCOR 25, including both Thaler excerpts approved in the November 22 follow-up. Their wording, context, and Benjamin's distinction between learning from a rational model and becoming that model are recorded there. Econ 23 is on hold; Benjamin is working on the Nash-equilibrium formulation for Econ 24. These decisions supersede older ratings only for the listed exact selections. No placement or completed chapter audit is claimed by this documentation update.
 
 ## Why we are doing this
 
