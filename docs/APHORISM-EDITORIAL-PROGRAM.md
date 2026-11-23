@@ -7,7 +7,7 @@
 
 ## Latest chapter decisions — November 22, 2026
 
-The [November 22 decision update](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) records 15 selected wordings/quotations across Econ 20, 21, 22, 24, 25, 26 and EDCOR 25, including both Thaler excerpts approved in the November 22 follow-up. Their wording, context, and Benjamin's distinction between learning from a rational model and becoming that model are recorded there. Econ 23 is on hold; Benjamin is working on the Nash-equilibrium formulation for Econ 24. These decisions supersede older ratings only for the listed exact selections. No placement or completed chapter audit is claimed by this documentation update.
+The [November 22 placement record](APHORISM-CANDIDATE-BANK.md#placement-pass--november-22-2026) contains **16 approved selections**: 15 Econ cards across Chapters 20, 21, 22, 24, 25, 26 and Feynman in Learning 25. Benjamin’s latest approval adds the Dixit–Nalebuff perspective-taking quotation as Econ 24’s third card and closes the former Nash-wording slot. The placement PRs include source context and the requested Econ 25 framing. Econ 23 remains on hold. These cards are pending merge; the [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-2026-placement-status--november-22-2026) distinguishes published cards from proposed additions.
 
 ## Why we are doing this
 

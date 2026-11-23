@@ -6,11 +6,46 @@
 
 **Current target authority:** Benjamin set the two-per-chapter goal on November 18, 2026. This tracker governs current coverage planning and supersedes older one-or-two guidance in the editorial archive; those files remain the record of prior wording, sources, and decisions.
 
-## Selection planning update — November 22, 2026
+## Chapters 20–26 placement status — November 22, 2026
 
-The [new decision record](APHORISM-CANDIDATE-BANK.md#decision-update--november-22-2026) contains approved wordings and selected quotations for Econ 20 (2), 21 (2), 22 (3), 24 (2), 25 (2), 26 (3), and EDCOR 25 (1). Both Thaler excerpts for Econ 25 were approved and verified in the November 22 follow-up. Econ 23 is on hold. Benjamin is working on a Nash line for Econ 24 as an optional third. Selection is distinct from publication: **this update adds no live cards**, and the November 18 counts below remain a dated historical snapshot rather than a new live-page recount. Refresh the live counts during placement work.
+The table below supersedes the November 18 snapshot **for these 14 chapters**. Current-main counts were checked after merging approved image PRs [Econ #213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213) and [Learning #169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169). Econ base: `6865269d3c720a6af336a6b12a2866d4a0b704c7`; Learning base: `17717ff9487584b6077e4a0a0e5553324d3a756a`. Existing Learning 21/22 pairs are included; their zeroes in the old full-book ledger are stale.
 
-## Goal and current progress
+The [approved-wording record](APHORISM-CANDIDATE-BANK.md#placement-pass--november-22-2026) now contains 16 additions. **Econ #215 places 15; Learning #170 places Feynman’s one.** These additions remain in PRs until merged. Three is the ceiling; an extra card in one chapter does not fill another chapter’s gap.
+
+| Chapter | Published cards at inspected main | Cards added in PR | Total after merge | Still needed to reach two / decision |
+| --- | ---: | ---: | ---: | --- |
+| ECON 20 | 0 | 2 | 2 | None; ambulance and Sowell. |
+| ECON 21 | 0 | 2 | 2 | None; demand curve and restricted output. |
+| ECON 22 | 0 | 3 | 3 | None; entry barriers, Stigler, rent-seeking. |
+| ECON 23 | 0 | 0 | 0 | Two; Benjamin’s HOLD remains in force. |
+| ECON 24 | 0 | 3 | 3 | None; Dixit–Nalebuff, Smith, cartel. Earlier Nash drafts are unselected history. |
+| ECON 25 | 0 | 2 | 2 | None; two verified Thaler excerpts; the model/person distinction appears in the Homo Economicus card’s source context, not a third card. |
+| ECON 26 | 0 | 3 | 3 | None; wants, Simon, abundance / soul. |
+| EDCOR 20 | 2 | 0 | 2 | None; existing motivational-harm and Montessori pair. |
+| EDCOR 21 | 2 | 0 | 2 | None; existing Greene and systems pair. |
+| EDCOR 22 | 2 | 0 | 2 | None; existing Willingham pair. |
+| EDCOR 23 | 0 | 0 | 0 | Two; no new wording approved. |
+| EDCOR 24 | 2 | 0 | 2 | None; existing visual-learning and good-teaching pair. |
+| EDCOR 25 | 0 | 1 | 1 | One companion to Feynman; not yet selected. |
+| EDCOR 26 | 1 | 0 | 1 | One companion to Palmer; not yet selected. |
+
+**Range totals after both merges:** 25 cards, with 22/28 minimum slots filled. Six minimum slots remain: Econ 23 (2), Learning 23 (2), Learning 25 (1), Learning 26 (1). Counts are implementation coverage, not a claim that all 14 chapters have completed a full editorial audit.
+
+### Chapter-anchor image status for the same range
+
+| Chapter | Econ image | Learning image |
+| --- | --- | --- |
+| 20 | Open; select a healthcare anchor. | Published: candle problem, unsolved/solution pair. |
+| 21 | Published: Standard Oil refinery. | Published: Fryer rewards the steps / executive-function support; merged #169. |
+| 22 | Published: Bell System / natural monopoly. | Published: selective-attention pair; merged #166. |
+| 23 | Published: differentiated cafés. | Published: Army IQ test. |
+| 24 | Published: competing gas stations. | Published: curb cut. |
+| 25 | Open; organ-donation defaults remain a working concept. | Published: Semmelweis; merged #169. |
+| 26 | Published: Midas with a gold phone; merged #213. | Published: Hercules returns, deliberate opening callback; merged #169. |
+
+**Images: 12/14 chapters covered.** Only Econ 20 and 25 need anchors. The image authority remains the [chapter mental-anchor tracker](CHAPTER-MENTAL-ANCHOR-TRACKER.md); this table is a dated cross-book handoff. No images were generated or changed in this aphorism pass.
+
+## Historical full-book snapshot — November 18, 2026
 
 Plan for **two approved, well-fitting aphorisms per chapter**, with a **third allowed when it adds a distinct useful idea**. The ceiling is three.
 
@@ -22,7 +57,7 @@ Plan for **two approved, well-fitting aphorisms per chapter**, with a **third al
 
 The count scans each current `etb-live` chapter page for labeled **Key aphorism** cards. It excludes lines mentioned in prose and approved wording that has not been placed. The target-slot percentage measures how many of the planned two-per-chapter slots currently have a live card; it is not an approval percentage.
 
-## Chapter ledger
+## Historical chapter ledger — November 18, 2026
 
 | Chapter | Live cards | Gap to 2 | Review status | Current note / next step |
 | --- | ---: | ---: | --- | --- |
