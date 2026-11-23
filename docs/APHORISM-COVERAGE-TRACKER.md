@@ -10,7 +10,7 @@
 
 The table below supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `92961e2713aa4f8cc8c140a97239b109616c81b4`; Learning `a1c7248261d529419f35336582bc602a7baac8a2`. The earlier placement PRs [Econ #215](https://github.com/bpacini-alt/Econ-150-textbook/pull/215) and [Learning #170](https://github.com/bpacini-alt/edcor-310-textbook/pull/170) are now merged. Their cards count as published.
 
-Benjamin approved the first card for each Chapter 23: Chamberlin in [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216), Hawking in [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171). These two additions remain pending merge. See the [approval and source record](APHORISM-CANDIDATE-BANK.md#chapter-23-approvals--november-22-2026). Econ 23’s old HOLD is lifted for Chamberlin only; Levitt remains a candidate. A second card remains open in each Chapter 23.
+The current follow-up contains **four additions pending merge**: Chamberlin in [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216), plus Hawking and Boring in Learning 23 and Boser–McDaniels in Learning 25 in [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171). See the [latest approval and source record](APHORISM-CANDIDATE-BANK.md#boring-and-bosermcdaniels-approvals--november-22-2026). Econ 23’s old HOLD is lifted for Chamberlin only; Levitt remains a candidate. Learning 23 and 25 now have their two selected cards and matching recaps.
 
 | Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
 | --- | ---: | ---: | ---: | --- |
@@ -24,12 +24,12 @@ Benjamin approved the first card for each Chapter 23: Chamberlin in [Econ #216](
 | EDCOR 20 | 2 | 0 | 2 | None; motivational harm and Montessori. |
 | EDCOR 21 | 2 | 0 | 2 | None; Greene and systems. |
 | EDCOR 22 | 2 | 0 | 2 | None; Willingham pair. |
-| EDCOR 23 | 0 | 1 | 1 | One companion to Hawking; not yet selected. |
+| EDCOR 23 | 0 | 2 | 2 | None; Boring on measurement and Hawking on IQ boasting. |
 | EDCOR 24 | 2 | 0 | 2 | None; visual learning and good teaching. |
-| EDCOR 25 | 1 | 0 | 1 | One companion to Feynman; not yet selected. |
+| EDCOR 25 | 1 | 1 | 2 | None; Boser–McDaniels on implementation and Feynman on self-deception. |
 | EDCOR 26 | 1 | 0 | 1 | One companion to Palmer; not yet selected. |
 
-**Range totals:** 25 published cards; **27 after the two Chapter 23 PRs merge**, with 24/28 minimum slots filled. Four minimum slots then remain: Econ 23 (1), Learning 23 (1), Learning 25 (1), Learning 26 (1). Three is the ceiling; a third card does not fill another chapter’s gap. Counts are implementation coverage, not a claim that all chapters have completed a full editorial audit.
+**Range totals:** 25 published cards; **29 after Econ #216 and Learning #171 merge**, with 26/28 minimum slots filled. Two minimum slots then remain: Econ 23 (1) and Learning 26 (1). Three is the ceiling; a third card does not fill another chapter’s gap. Counts are implementation coverage, not a claim that all chapters have completed a full editorial audit.
 
 ### Chapter-anchor image status for the same range
 
