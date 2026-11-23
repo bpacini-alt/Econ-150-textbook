@@ -1,7 +1,7 @@
 # Chapter Anchor Handoff
 
 **Snapshot:** November 22, 2026.  
-**Verified main commits:** Econ `0b3ce8ef65297dbc2853de1739ca22fa8ee3fefd`; Learning `f7545879f1287b9b714a87ed91ee00beb5ed8f2b`.
+**Verified main commits:** Econ `0b9d3a017048b3ca7d6680f503eea0933c738840`; Learning `772e43195579a2734f1744fbc443e4bec8e39daa`.
 
 This is enough context to resume in a new chat. Recheck current branches, chapter text, and PR status when resuming; this snapshot is not a permanent statement of repository state.
 
@@ -16,13 +16,26 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 
 ## Current publication state
 
-**All image-placement PRs from the reviewed batches are merged at this snapshot. There are no pending image-placement PRs.**
+**Published on main at this snapshot:** 18 approved image files across 15 chapter/front-matter pages. The new Chapter 22 attention pair is included below. Five additional chapter placements have approved artwork and are awaiting merge through three open image PRs.
 
 - Learning [#162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162): approved highlighter and elephant–rider v2 images, source notes, and generated pages — merged.
 - Econ [#208](https://github.com/bpacini-alt/Econ-150-textbook/pull/208): shared tracker update for those Learning approvals — merged.
 - Learning [#161](https://github.com/bpacini-alt/edcor-310-textbook/pull/161): candle-problem image pair — merged.
 - Learning [#163](https://github.com/bpacini-alt/edcor-310-textbook/pull/163): moved the unsolved candle image to Chapter 20's opening — merged.
 - Learning [#160](https://github.com/bpacini-alt/edcor-310-textbook/pull/160): Chapter 22 text/forgetting-curve revision — merged; this does not approve the old proposed Four-Slot Workbench mental anchor.
+- Learning [#166](https://github.com/bpacini-alt/edcor-310-textbook/pull/166): Chapter 22 pass-counting opener and gorilla reveal — merged.
+
+### Approved placements awaiting merge
+
+| Book / chapter | Approved image | Placement PR |
+| --- | --- | --- |
+| Learning 18 | Eagles and Rattlers at Robbers Cave | [#168](https://github.com/bpacini-alt/edcor-310-textbook/pull/168) |
+| Learning 21 | Roland Fryer rewards the steps | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
+| Learning 25 | Semmelweis handwashing | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
+| Learning 26 | Hercules callback; reuses the Chapter 1 return image | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
+| Econ 26 | Midas and the golden phone | [#213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213) |
+
+Learning [#167](https://github.com/bpacini-alt/edcor-310-textbook/pull/167) is a Chapter 19 generated-page rebuild, not an image placement.
 
 Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. They are superseded as routes to the current cross-book inventory; do not mistake them for waiting image placements. Do not close or delete them without Benjamin's instruction. Unrelated practice prototypes and editorial PRs are separate work.
 
@@ -42,12 +55,13 @@ Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and
 | Learning 11 | Baseball prior-knowledge study | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch11-baseball-prior-knowledge.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 | Learning 12 | Bobo doll / observational learning | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch12-bobo-observational-learning.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/155) |
 | Learning 20 | Candle puzzle and solution pair; puzzle moved into opening | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-unsolved.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/163) |
+| Learning 22 | Pass-counting task and gorilla reveal | [Approved pair](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch22-selective-attention-task.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/166) |
 | Learning 23 | First-person Army intelligence-test room | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch23-intelligence-test-recruits.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/154) |
 | Learning 24 | Berkeley curb ramp; relaxed smile/thumbs-up revision | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch24-curb-cut-access.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 
-Second images: [Hercules returns](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) and [candle solution](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-solution.webp). The candle assets were added in #161; #163 established the current opening placement.
+Second images: [Hercules returns](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) and [candle solution](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-solution.webp). The candle assets were added in #161; #163 established the current opening placement. Learning #169 reuses the existing Hercules return image as the Chapter 26 closing callback.
 
-This inventory has **16 approved asset files across 14 chapter/front-matter pages**: 6 Econ pages, and 7 Learning chapters plus its opening study guide. The original November 20 proposal counts in the ledger remain historical.
+This inventory has **18 approved asset files across 15 chapter/front-matter pages**: 6 Econ pages, and 8 Learning chapters plus its opening study guide. The original November 20 proposal counts in the ledger remain historical. Five additional chapter placements are approved but await the PRs above; Chapter 26 reuses the already published Hercules return image.
 
 ## Decisions the next chat must preserve
 
