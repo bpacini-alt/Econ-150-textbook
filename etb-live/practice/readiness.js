@@ -68,7 +68,9 @@
         if (R.stage === "q") {
           h += '<div class="pp-choices">' + p.opt.map((i) => '<button type="button" class="pp-choice" data-ans="' + i + '">' + esc(it.options[i]) + "</button>").join("") + "</div>";
         } else {
-          h += '<div class="pp-feedback' + (p.correct ? "" : " pp-bad") + '" role="status"><b>' + (p.correct ? "Correct." : "Not this time.") + "</b><p>" + esc(it.why) + "</p>" +
+          const specific = !p.correct && it.option_why && it.option_why[p.picked];
+          h += '<div class="pp-feedback' + (p.correct ? "" : " pp-bad") + '" role="status"><b>' + (p.correct ? "Correct." : "Not this time.") + "</b>" +
+            (specific ? "<p>" + esc(specific) + "</p>" : "") + "<p>" + esc(it.why) + "</p>" +
             (p.correct ? "" : "<p><b>Best answer:</b> " + esc(it.options[it.answer]) + "</p>") + "</div>";
           if (p.correct) h += '<fieldset><legend>Could you explain why, without looking?</legend><div class="pp-actions" style="margin-top:4px"><button type="button" class="pp-primary" data-sure="1">Yes, I could explain it</button><button type="button" data-sure="0">Not yet</button></div></fieldset>';
           else h += '<div class="pp-actions"><button type="button" class="pp-primary" id="pp-next">Try another question</button></div>';
