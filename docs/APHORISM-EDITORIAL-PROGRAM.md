@@ -5,6 +5,10 @@
 **Companion:** [52-chapter candidate bank](APHORISM-CANDIDATE-BANK.md).  
 **Owner/approval:** Benjamin approves the exact final words; an assistant proposes, investigates, tracks, and never silently substitutes wording.
 
+## Latest approval — November 23, 2026
+
+Benjamin approved Levitt as Econ 23’s second aphorism. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places the exact quotation with Concept 4’s product-variety argument, preserves Chamberlin in Concept 1, and adds a matching two-line recap after the synthesis. The [approval and source record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026) supersedes Levitt’s earlier candidate-only status. This completes Econ 23’s two-card selection target once merged. The earlier Econ #216 / Learning #171 follow-up is now merged. Only Learning 26 still needs a companion to Palmer in Chapters 20–26; the [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-2026-placement-status--november-22-2026) distinguishes publication from this pending card.
+
 ## Latest chapter decisions — November 22, 2026
 
 The latest follow-up adds Boring in Learning 23 and Boser/McDaniels in Learning 25 to the existing Learning #171. The [approval record](APHORISM-CANDIDATE-BANK.md#boring-and-bosermcdaniels-approvals--november-22-2026) includes source verification and Boring’s operational-definition context. Learning 23 and 25 now each have two selected cards with matching recaps, pending merge. The remaining minimum slots are one Econ 23 companion and one Learning 26 companion.
