@@ -1,7 +1,7 @@
 # Chapter Anchor Handoff
 
 **Snapshot:** November 22, 2026.  
-**Verified main commits:** Econ `3023ef9f20314c99cb31d1e3b1ffd8c2b8d802d0`; Learning `772e43195579a2734f1744fbc443e4bec8e39daa`.
+**Verified main commits:** Econ `0b9d3a017048b3ca7d6680f503eea0933c738840`; Learning `772e43195579a2734f1744fbc443e4bec8e39daa`.
 
 This is enough context to resume in a new chat. Recheck current branches, chapter text, and PR status when resuming; this snapshot is not a permanent statement of repository state.
 
