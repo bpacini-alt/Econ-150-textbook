@@ -7,7 +7,7 @@
 - **Guardrail:** Water is not always cheap, and a diamond is not always worth more than water. The pictured availability and the next unit matter. Prices are illustrative, not observed current market prices.
 - **Image status:** Approved after the bottle-proportion correction. Benjamin selected the scene, requested a smaller foreground bottle, then said of the revised image: “Yep, that's perfect. Approved.”
 - **Approved asset:** [`ch02-diamond-water.png`](../../etb-live/images/chapter-anchors/ch02-diamond-water.png), revised PNG, 1672 × 941; Git blob `5c01b2812769f6d680e258628906b876eefa5a59`.
-- **Placement:** Immediately after the paragraph introducing Smith's diamond–water paradox, before the explanation of the next glass.
+- **Placement:** Immediately after the title card and before the opening hook. The caption frames the price contrast before the chapter explains marginal value.
 - **Alt text:** A passerby compares neighboring shop windows: plentiful water bottles priced at $1 and one diamond priced at $5,000.
 - **Generation:** Built-in imagegen; original charcoal/graphite artwork on cream paper. The price tags are the author-requested exception to the default text-free direction.
 - **Revision:** The foreground bottle was reduced to a normal individual-serving scale. The author approved this exact revised PNG. The hot-dog, kidney-exchange, and oversized-bottle drafts are not publication assets.
