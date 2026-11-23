@@ -7,7 +7,7 @@
 - **Guardrail:** Without the break the shopkeeper could have had an intact window and a suit; the picture does not imply the repair itself creates extra wealth.
 - **Image status:** Approved as is. Benjamin: “The window is perfect. Approved as is.”
 - **Approved asset:** [`ch01-broken-window.png`](../../etb-live/images/chapter-anchors/ch01-broken-window.png), original PNG, 1672 × 941; Git blob `42caba1f7658ad457f40b40a9ee5b832c51345a9`.
-- **Placement:** Immediately after Bastiat's visible-gain/invisible-loss explanation, inside the chapter's own HTML.
+- **Placement:** Immediately after the title card and before the opening hook. The caption introduces the visible repair and unseen forgone suit before the chapter's explanation.
 - **Alt text:** A shopkeeper pays a glazier beside a broken window while a tailor watches from the neighboring shop beside an unpurchased suit.
 - **Generation:** Built-in imagegen; original artwork in the book's restrained charcoal/graphite style on cream paper. No borrowed image.
 - **Preservation:** The approved PNG is included without cropping, recompression, or further image edits.
