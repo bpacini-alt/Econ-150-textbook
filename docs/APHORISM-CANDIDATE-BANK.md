@@ -2,6 +2,10 @@
 
 **Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**; Batch 7: **three NO, two REWRITE, three MAYBE**. All recorded explicitly below. “Nature via Nurture” is now MAYBE. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
+## Decision update — November 22, 2026
+
+Benjamin approved a new set of Econ 20–26 wordings and selected Stigler, Smith, Simon, and Feynman quotations in the chapter-by-chapter discussion. Chapter 23 is on hold; Econ 24's Nash-equilibrium line and Econ 25's Thaler selection remain open. The exact decision table and checked source notes are being recorded in this documentation-only review. Chapter prose and live-card counts have not changed.
+
 ## Decision update — November 9, 2026
 
 Benjamin approved the exact lines below for placement in this reviewable pass. This dated list is the exception to the older rule that a “YES” means wording approval only; it records explicit chapter-placement approval for these lines. Older batch statuses remain historical and unchanged.
