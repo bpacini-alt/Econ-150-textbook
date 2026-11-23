@@ -32,7 +32,7 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 
 | Book / chapter | Approved image | Placement PR |
 | --- | --- | --- |
-| Econ 20 | The Pen in Midair: a patient pauses before consenting while a clinician interprets a chest X-ray | This branch; PR link will be recorded when opened |
+| Econ 20 | The Pen in Midair: a patient pauses before consenting while a clinician interprets a chest X-ray | [PR #217](https://github.com/bpacini-alt/Econ-150-textbook/pull/217) |
 
 Learning [#167](https://github.com/bpacini-alt/edcor-310-textbook/pull/167) is a Chapter 19 generated-page rebuild, not an image placement.
 
