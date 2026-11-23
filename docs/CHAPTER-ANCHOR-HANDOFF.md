@@ -1,7 +1,7 @@
 # Chapter Anchor Handoff
 
 **Snapshot:** November 22, 2026.  
-**Verified main commits:** Econ `0b3ce8ef65297dbc2853de1739ca22fa8ee3fefd`; Learning `f7545879f1287b9b714a87ed91ee00beb5ed8f2b`.
+**Verified main commits:** Econ `64d395964f4aa96aa054a1179247eb4e24193f92`; Learning `772e43195579a2734f1744fbc443e4bec8e39daa`.
 
 This is enough context to resume in a new chat. Recheck current branches, chapter text, and PR status when resuming; this snapshot is not a permanent statement of repository state.
 
@@ -16,7 +16,7 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 
 ## Current publication state
 
-**All image-placement PRs from the reviewed batches are merged at this snapshot. There are no pending image-placement PRs.**
+**All image-placement PRs from the earlier reviewed batches are merged. Learning Chapter 18 now has one approved image-placement PR open; it has not merged or published yet.**
 
 - Learning [#162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162): approved highlighter and elephant–rider v2 images, source notes, and generated pages — merged.
 - Econ [#208](https://github.com/bpacini-alt/Econ-150-textbook/pull/208): shared tracker update for those Learning approvals — merged.
@@ -24,9 +24,17 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 - Learning [#163](https://github.com/bpacini-alt/edcor-310-textbook/pull/163): moved the unsolved candle image to Chapter 20's opening — merged.
 - Learning [#160](https://github.com/bpacini-alt/edcor-310-textbook/pull/160): Chapter 22 text/forgetting-curve revision — merged; this does not approve the old proposed Four-Slot Workbench mental anchor.
 
-Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. They are superseded as routes to the current cross-book inventory; do not mistake them for waiting image placements. Do not close or delete them without Benjamin's instruction. Unrelated practice prototypes and editorial PRs are separate work.
+Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. Econ #200 adds `docs/CHAPTER-MENTAL-ANCHOR-TRACKER.md`, which is not on Econ `main`; its file overlaps the shared-ledger update needed for Learning 18. Learning #153 touches the teaching-strategy tracker. Neither is an image-placement PR. Do not overwrite, close, or delete either draft without Benjamin's instruction. Unrelated practice prototypes and editorial PRs are separate work.
 
-### Approved artwork already in main
+### Approved artwork awaiting placement
+
+| Page | Approved anchor | Status / record |
+| --- | --- | --- |
+| Learning 18 | Robbers Cave: Eagles and Rattlers | Exact image approved; placement in [Learning PR #168](https://github.com/bpacini-alt/edcor-310-textbook/pull/168), not merged; [source note and prompt record](https://github.com/bpacini-alt/edcor-310-textbook/blob/art/ch18-robbers-cave-anchor-20261122/docs/chapter-anchors/ch18-robbers-cave-eagles-rattlers.md) |
+
+The shared chapter ledger needs a Chapter 18 entry. Because Econ #200 edits the same tracker file on an open branch and the file is absent from `main`, wait for Benjamin to choose how that draft should be handled before creating or revising the ledger entry.
+
+## Approved artwork already in main
 
 | Page | Approved anchor | Asset / publication record |
 | --- | --- | --- |
@@ -47,7 +55,7 @@ Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and
 
 Second images: [Hercules returns](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) and [candle solution](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-solution.webp). The candle assets were added in #161; #163 established the current opening placement.
 
-This inventory has **16 approved asset files across 14 chapter/front-matter pages**: 6 Econ pages, and 7 Learning chapters plus its opening study guide. The original November 20 proposal counts in the ledger remain historical.
+The published main branches have **16 approved asset files across 14 chapter/front-matter pages**: 6 Econ pages, and 7 Learning chapters plus its opening study guide. Learning 18 has one additional approved image awaiting placement in PR #168. The original November 20 proposal counts in the ledger remain historical.
 
 ## Decisions the next chat must preserve
 
@@ -66,7 +74,7 @@ Recent source/prompt notes: [Econ 1](https://github.com/bpacini-alt/Econ-150-tex
 
 ## Agreed next work
 
-Finish this documentation handoff, then **read Chapter 3 in both books** and identify actual stories, research findings, or narratives. Present specific image descriptions before generating.
+Resolve the overlap with Econ #200 and record Learning 18 in the shared ledger once the tracker route is clear. Then **read Chapter 3 in both books** and identify actual stories, research findings, or narratives. Present specific image descriptions before generating.
 
 - Econ 3: “Supply and Demand I: The Price System.” The ledger's older “One Price, Many Decisions” proposal is an existing possibility, not a newly approved image.
 - Learning 3: “An Introduction to Empiricism.” No image is selected in this handoff.
@@ -87,8 +95,8 @@ Benjamin explicitly asked for a deliberate return to the beginning in both Chapt
 
 ## Suggested new-chat prompt
 
-> Continue the Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the GitHub chapter-anchor workflow, handoff, tracker, and both repositories' AGENTS.md; check current main and open PRs. All prior image-placement batches were merged at the handoff snapshot. Start by reading Chapter 3 in both books and propose strong story/research-based scene descriptions. Keep Econ's sparse charcoal style and Learning's bright realistic-cartoon style. No new images until we choose the scenes.
+> Continue the Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the GitHub chapter-anchor workflow, handoff, and both repositories' AGENTS.md; check current main and open PRs. Learning PR #168 places the approved Robbers Cave image in Chapter 18 and is not merged yet. Econ PR #200 adds a tracker file that overlaps the needed Chapter 18 ledger update; coordinate with Benjamin before changing that file. Then read Chapter 3 in both books and propose strong story/research-based scene descriptions. Keep Econ's sparse charcoal style and Learning's bright realistic-cartoon style. No new images until we choose the scenes.
 
 ## Keep this handoff useful
 
-After each batch, update the current ledger and source notes, record the exact approved assets and merge routes, and refresh the next-work/pending-work sections. Keep older research candidates as history rather than presenting them as current approvals. A future chat should not need this original conversation.
+After each batch, update the current ledger and source notes, record exact approvals separately from merge/publication, and refresh the next-work/pending-work sections. For Learning 18, the per-book index and source note are in PR #168; the cross-book ledger entry is waiting on coordination about Econ #200. Keep older research candidates as history rather than presenting them as current approvals. A future chat should not need this original conversation.
