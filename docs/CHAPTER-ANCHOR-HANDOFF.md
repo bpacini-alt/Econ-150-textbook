@@ -2,7 +2,7 @@
 
 **Snapshot:** November 23, 2026.
 
-**Verified main commits:** Econ `1bc2266a0ab89406e463bd1785676d95ccd6497a`; Learning `477c556466b7bcc91fb79d7b2c2f52c0dcfa7204`.
+**Verified main commits:** Econ `1eda97ba31c4d25337a8c8545a2e02342f6f7afc`; Learning `5ecc2710551ce4b35d3946d5cd4be3167313a84d`.
 
 This is enough context to resume in a new chat. Recheck current branches, chapter text, and PR status when resuming; this snapshot is not a permanent statement of repository state.
 
@@ -17,7 +17,7 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 
 ## Current publication state
 
-**Published on main at this snapshot:** 24 unique approved image files across 22 chapter/front-matter pages: 9 Econ chapters, 12 Learning chapters, and the Learning study guide. Econ #217 (Chapter 20) and #222 (Chapter 25) are merged. Learning 19's approved hallway-routine image is awaiting merge in PR #174.
+**Published on main at this snapshot:** 25 unique approved image files across 23 chapter/front-matter pages: 9 Econ chapters, 13 Learning chapters, and the Learning study guide. Econ #217 (Chapter 20), #222 (Chapter 25), and #223 (placement standard) are merged. Learning #174 published the Chapter 19 hallway-routine opener.
 
 - Learning [#162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162): approved highlighter and elephant–rider v2 images, source notes, and generated pages — merged.
 - Econ [#208](https://github.com/bpacini-alt/Econ-150-textbook/pull/208): shared tracker update for those Learning approvals — merged.
@@ -27,17 +27,17 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 - Learning [#166](https://github.com/bpacini-alt/edcor-310-textbook/pull/166): Chapter 22 pass-counting opener and gorilla reveal — merged.
 - Learning [#168](https://github.com/bpacini-alt/edcor-310-textbook/pull/168): Robbers Cave / Eagles and Rattlers in Learning 18 — merged.
 - Learning [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169): Fryer in Learning 21, Semmelweis in Learning 25, and the Hercules return callback in Learning 26 — merged.
+- Learning [#174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174): approved hallway-routine opener in Chapter 19 — merged.
 - Econ [#213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213): Midas and the golden phone in Econ 26 — merged.
+- Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223): common chapter-anchor opening standard and Econ 1, 2, and 26 placements — merged.
 
 ### Approved placements awaiting merge
 
 | Book / chapter | Approved image | Placement PR |
 | --- | --- | --- |
-| Learning 19 | Preschool hallway routine: predictable cues and rehearsed actions help a class move safely together | [PR #174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) |
 | Learning placement standard | Move published anchors to the common opening position; update Learning pages and generated site | [PR #175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) |
-| Econ placement standard | Move approved anchors in Chapters 1, 2, and 26 to the common opening position | [PR #223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) |
 
-The approved image in Learning [#174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) already sits after the Chapter 19 title card. The coordinated Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) PRs move previously published anchors into the same opening position and record the shared standard.
+Learning [#174](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) is merged; its Chapter 19 opener already follows the common standard. Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) is the remaining placement-standard PR. Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) has merged.
 
 Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. Econ [#210](https://github.com/bpacini-alt/Econ-150-textbook/pull/210) is an open handoff-only PR prepared before Learning #168 merged; it is not an image placement. Recheck these branches before acting on them. Do not close or delete them without Benjamin's instruction.
 
@@ -56,6 +56,7 @@ Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and
 | Learning 2 | Elephant and rider; approved plain-clothed fable revision | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch02-elephant-rider.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) |
 | Learning 11 | Baseball prior-knowledge study | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch11-baseball-prior-knowledge.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 | Learning 18 | Eagles and Rattlers at Robbers Cave | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch18-robbers-cave-eagles-rattlers.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/168) |
+| Learning 19 | Preschool hallway routine | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch19-hallway-routine.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/174) |
 | Learning 21 | Roland Fryer rewards the steps | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch21-fryer-rewards-the-steps.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
 | Learning 20 | Candle puzzle and solution pair; puzzle moved into opening | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-unsolved.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/163) |
 | Learning 22 | Pass-counting task and gorilla reveal | [Approved pair](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch22-selective-attention-task.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/166) |
@@ -66,7 +67,7 @@ Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and
 
 Paired imagery: the Hercules departure/return figures open Learning 1, and Learning 26 reuses the return image as its opening callback. The candle task opens Learning 20 while its solution stays with the answer; the pass-counting task opens Learning 22 while the gorilla reveal stays with its explanation.
 
-This inventory has **24 unique approved image files across 22 chapter/front-matter pages**: 9 Econ chapters, 12 Learning chapters, and the Learning study guide. Learning 26 reuses the already published Hercules return image. Learning 19's approved image is pending in PR #174.
+This inventory has **25 unique approved image files across 23 chapter/front-matter pages**: 9 Econ chapters, 13 Learning chapters, and the Learning study guide. Learning 26 reuses the already published Hercules return image. Learning 19's approved image was published in PR #174.
 
 ## Decisions the next chat must preserve
 
@@ -85,8 +86,8 @@ Recent source/prompt notes: [Econ 1](https://github.com/bpacini-alt/Econ-150-tex
 
 ## Agreed next work
 
-- Review the coordinated Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) and Econ [#223](https://github.com/bpacini-alt/Econ-150-textbook/pull/223) placement-standard previews before merging.
-- Learning 19's approved opener remains a separate open PR (#174) and already follows the standard.
+- Review the Learning [#175](https://github.com/bpacini-alt/edcor-310-textbook/pull/175) preview before merging. Econ #223 is merged.
+- Learning 19's approved opener was published in #174 and already follows the standard.
 - Econ 3 and Learning 3 remain the next anchor-development batch after this placement work.
 
 ## Later directions already discussed
@@ -100,7 +101,7 @@ These concepts have progressed since the older planning notes:
 
 ## Suggested new-chat prompt
 
-> Continue Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the current GitHub chapter-anchor workflow, handoff, tracker, both repositories' AGENTS.md files, current main commits, and open PRs. The cross-book chapter-anchor opening standard is in review in Learning #175 and Econ #223; also check the Learning 19 opener PR #174. Econ 20 (#217) and Econ 25 (#222) are published. Learning Chapters 20–26 and Econ Chapters 21–24 and 26 already have approved, published anchors. Preserve the exact-image approval and publication states separately.
+> Continue Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the current GitHub chapter-anchor workflow, handoff, tracker, both repositories' AGENTS.md files, current main commits, and open PRs. The cross-book chapter-anchor opening standard is in review in Learning #175; its Econ companion PR #223 is merged. Learning 19's hallway-routine opener is published in #174. Econ 20 (#217) and Econ 25 (#222) are published. Learning Chapters 20–26 and Econ Chapters 21–24 and 26 already have approved, published anchors. Preserve the exact-image approval and publication states separately.
 
 ## Keep this handoff useful
 
