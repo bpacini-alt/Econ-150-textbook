@@ -8,28 +8,35 @@
 
 ## Chapters 20–26 placement status — November 22, 2026
 
-**Updated November 23, 2026.** This table supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `b689b65390347a646232052be5f5934afe42e16a`; Learning `f719a864d44e20b873c41adad19af51639240d44`. [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216) and [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171) are merged, so Chamberlin, Hawking, Boring, and Boser–McDaniels count as published.
+**Verified November 23, 2026.** This table supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `5ddfee32cf986fa4e967bd2d2d50b3c362e8898a`; Learning `f719a864d44e20b873c41adad19af51639240d44`. Counts were checked against all 14 chapter sources, with Learning's generated `site/` pages checked for agreement. All referenced anchor assets exist in both the appropriate source and published trees.
 
-Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places it with product variety and adds a matching Chamberlin/Levitt recap. This single addition remains pending merge. See the [approval and source record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026). Learning 26 is the only remaining aphorism slot in this range.
+[Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) is merged: Levitt is published in Concept 4 with the Chamberlin/Levitt recap. All previously approved aphorism and image placements in this pass are merged. **No content placement is pending merge.** This refresh changes documentation only.
 
-| Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
-| --- | ---: | ---: | ---: | --- |
-| ECON 20 | 2 | 0 | 2 | None; ambulance and Sowell. |
-| ECON 21 | 2 | 0 | 2 | None; demand curve and restricted output. |
-| ECON 22 | 3 | 0 | 3 | None; entry barriers, Stigler, rent-seeking. |
-| ECON 23 | 1 | 1 | 2 | None after merge; Chamberlin and Levitt. |
-| ECON 24 | 3 | 0 | 3 | None; Dixit–Nalebuff, Smith, cartel. |
-| ECON 25 | 2 | 0 | 2 | None; two Thaler excerpts and the model/person framing. |
-| ECON 26 | 3 | 0 | 3 | None; wants, Simon, abundance / soul. |
-| EDCOR 20 | 2 | 0 | 2 | None; motivational harm and Montessori. |
-| EDCOR 21 | 2 | 0 | 2 | None; Greene and systems. |
-| EDCOR 22 | 2 | 0 | 2 | None; Willingham pair. |
-| EDCOR 23 | 2 | 0 | 2 | None; Boring and Hawking. |
-| EDCOR 24 | 2 | 0 | 2 | None; visual learning and good teaching. |
-| EDCOR 25 | 2 | 0 | 2 | None; Boser–McDaniels and Feynman. |
-| EDCOR 26 | 1 | 0 | 1 | One companion to Palmer; not yet selected. |
+| Chapter | Published cards | Gap to 2 | Current status / next step |
+| --- | ---: | ---: | --- |
+| ECON 20 | 2 | 0 | Ambulance and Sowell. |
+| ECON 21 | 2 | 0 | Demand curve and restricted output. |
+| ECON 22 | 3 | 0 | Entry barriers, Stigler, rent-seeking. |
+| ECON 23 | 2 | 0 | Chamberlin and Levitt; #218 merged. |
+| ECON 24 | 3 | 0 | Dixit–Nalebuff, Smith, cartel. |
+| ECON 25 | 2 | 0 | Two Thaler excerpts and the model/person framing. |
+| ECON 26 | 3 | 0 | Wants, Simon, abundance / soul. |
+| EDCOR 20 | 2 | 0 | Motivational harm and Montessori. |
+| EDCOR 21 | 2 | 0 | Greene and systems. |
+| EDCOR 22 | 2 | 0 | Willingham pair. |
+| EDCOR 23 | 2 | 0 | Boring and Hawking. |
+| EDCOR 24 | 2 | 0 | Visual learning and good teaching. |
+| EDCOR 25 | 2 | 0 | Boser–McDaniels and Feynman. |
+| EDCOR 26 | 1 | 1 | Choose one companion to Palmer; no second wording approved. |
 
-**Range totals:** 29 published cards; **30 after Econ #218 merges**, with 27/28 minimum slots filled. Only one Learning 26 companion remains. A third card does not fill another chapter’s gap. These are selection/placement counts, not a claim that every chapter has completed a full editorial audit.
+**Aphorism totals:** 30 published cards across 14 chapters; 13/14 chapters meet the two-card minimum, with 27/28 minimum slots filled. Only **one Learning 26 companion aphorism** remains open. Third cards do not fill another chapter's gap. These are placement counts, not a claim that every chapter has completed a full editorial audit.
+
+**Remaining work in this range**
+
+| Book / chapter | Item still needed | Existing direction |
+| --- | --- | --- |
+| Learning 26 | One companion aphorism | Palmer's “We teach who we are” is published; consider the deliberate return to Chapter 1 without treating a draft as approved. |
+| Econ 25 | One approved chapter-anchor image | Organ-donation defaults remain a provisional working concept; no final image is approved or placed. |
 
 ### Chapter-anchor image status for the same range
 
@@ -43,7 +50,7 @@ Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](
 | 25 | Open; organ-donation defaults remain a working concept. | Published: Semmelweis; merged #169. |
 | 26 | Published: Midas with a gold phone; merged #213. | Published: Hercules returns, deliberate opening callback; merged #169. |
 
-**Images: 13/14 chapters covered.** Only Econ 25 still needs an anchor; its organ-donation-default concept remains provisional. The image authority remains the [chapter mental-anchor tracker](CHAPTER-MENTAL-ANCHOR-TRACKER.md); this table is a dated cross-book handoff. No images were generated or changed in this aphorism pass.
+**Images: 13/14 chapters covered.** Only Econ 25 still needs an anchor; its organ-donation-default concept remains provisional. The image authority remains the [chapter mental-anchor tracker](CHAPTER-MENTAL-ANCHOR-TRACKER.md); this table is a dated cross-book handoff. This status refresh generated no images and changed no chapter content.
 
 ## Historical full-book snapshot — November 18, 2026
 
