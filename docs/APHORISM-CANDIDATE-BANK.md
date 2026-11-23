@@ -2,6 +2,12 @@
 
 **Working candidates, not an approved publication list.** Companion: [Editorial program](APHORISM-EDITORIAL-PROGRAM.md). Each row identifies a **thicker concept and likely misconception** before listing lines. Preserve earlier proposals as alternatives even if weaker. **Status:** Batch 1: **seven YES, one REWRITE**; Batch 2: **three YES, three MAYBE, two NO**; Batch 3: **one MAYBE, seven Not rated**; Batch 4: **three YES, two MAYBE, three REWRITE**; Batch 5: **five REWRITE, three MAYBE**; Batch 6: **eight Not rated**; Batch 7: **three NO, two REWRITE, three MAYBE**. All recorded explicitly below. “Nature via Nurture” is now MAYBE. Other candidates remain `UNREVIEWED` except `EXISTING`, `VERIFY`, or historic `AUTHOR-POSITIVE` markers. `YES` means editor-approved wording for later placement review, **not permission to edit chapters**. `NO` does **not** mean delete already-published material. The source of truth is the current main-branch chapter, **not this outline**; check full paragraph/context during individual chapter review.
 
+## Placement pass — November 22, 2026
+
+Benjamin approved **“The key lesson of game theory is to put yourself in the other player’s shoes.”** for Econ 24. Exact wording is verified in Avinash Dixit and Barry Nalebuff, *The Art of Strategy* (2008), Chapter 1, “Pick a Number” ([original book excerpt](https://bugarinmauricio.com/wp-content/uploads/2014/03/jogosaula01-aosexcerpt.pdf)). Credit both authors; this is a strategic-perspective quotation, not a John Nash quotation or a definition of Nash equilibrium. It is Econ 24's third selected aphorism.
+
+This placement pass implements the 15 Econ selections across Chapters 20, 21, 22, 24, 25, and 26 plus the Feynman selection in Learning 25. Econ 23 remains on hold. The earlier November 22 decision table is preserved as history; this added approval raises its total from 15 to **16 selections**. Placement and validation details are being prepared in this PR.
+
 ## Decision update — November 22, 2026
 
 **Scope:** Benjamin reviewed Econ 20–26, starting with Econ 20 and continuing one chapter at a time. The decisions below supersede older candidate ratings only for these exact selections. They record approved wording and selected quotations for subsequent chapter placement; they do not claim that cards have been published or that chapter audits are complete. Chapter 23 remains on hold. In a follow-up on November 22, Benjamin approved both Thaler excerpts, requested verification and the framing recorded below, and took the Nash-equilibrium wording work himself.
