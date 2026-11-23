@@ -8,28 +8,28 @@
 
 ## Chapters 20–26 placement status — November 22, 2026
 
-The table below supersedes the November 18 snapshot **for these 14 chapters**. Current-main counts were checked after merging approved image PRs [Econ #213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213) and [Learning #169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169). Econ base: `6865269d3c720a6af336a6b12a2866d4a0b704c7`; Learning base: `17717ff9487584b6077e4a0a0e5553324d3a756a`. Existing Learning 21/22 pairs are included; their zeroes in the old full-book ledger are stale.
+The table below supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `92961e2713aa4f8cc8c140a97239b109616c81b4`; Learning `a1c7248261d529419f35336582bc602a7baac8a2`. The earlier placement PRs [Econ #215](https://github.com/bpacini-alt/Econ-150-textbook/pull/215) and [Learning #170](https://github.com/bpacini-alt/edcor-310-textbook/pull/170) are now merged. Their cards count as published.
 
-The [approved-wording record](APHORISM-CANDIDATE-BANK.md#placement-pass--november-22-2026) now contains 16 additions. **Econ #215 places 15; Learning #170 places Feynman’s one.** These additions remain in PRs until merged. Three is the ceiling; an extra card in one chapter does not fill another chapter’s gap.
+Benjamin approved the first card for each Chapter 23: Chamberlin in [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216), Hawking in [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171). These two additions remain pending merge. See the [approval and source record](APHORISM-CANDIDATE-BANK.md#chapter-23-approvals--november-22-2026). Econ 23’s old HOLD is lifted for Chamberlin only; Levitt remains a candidate. A second card remains open in each Chapter 23.
 
-| Chapter | Published cards at inspected main | Cards added in PR | Total after merge | Still needed to reach two / decision |
+| Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
 | --- | ---: | ---: | ---: | --- |
-| ECON 20 | 0 | 2 | 2 | None; ambulance and Sowell. |
-| ECON 21 | 0 | 2 | 2 | None; demand curve and restricted output. |
-| ECON 22 | 0 | 3 | 3 | None; entry barriers, Stigler, rent-seeking. |
-| ECON 23 | 0 | 0 | 0 | Two; Benjamin’s HOLD remains in force. |
-| ECON 24 | 0 | 3 | 3 | None; Dixit–Nalebuff, Smith, cartel. Earlier Nash drafts are unselected history. |
-| ECON 25 | 0 | 2 | 2 | None; two verified Thaler excerpts; the model/person distinction appears in the Homo Economicus card’s source context, not a third card. |
-| ECON 26 | 0 | 3 | 3 | None; wants, Simon, abundance / soul. |
-| EDCOR 20 | 2 | 0 | 2 | None; existing motivational-harm and Montessori pair. |
-| EDCOR 21 | 2 | 0 | 2 | None; existing Greene and systems pair. |
-| EDCOR 22 | 2 | 0 | 2 | None; existing Willingham pair. |
-| EDCOR 23 | 0 | 0 | 0 | Two; no new wording approved. |
-| EDCOR 24 | 2 | 0 | 2 | None; existing visual-learning and good-teaching pair. |
-| EDCOR 25 | 0 | 1 | 1 | One companion to Feynman; not yet selected. |
+| ECON 20 | 2 | 0 | 2 | None; ambulance and Sowell. |
+| ECON 21 | 2 | 0 | 2 | None; demand curve and restricted output. |
+| ECON 22 | 3 | 0 | 3 | None; entry barriers, Stigler, rent-seeking. |
+| ECON 23 | 0 | 1 | 1 | One companion to Chamberlin; not yet selected. |
+| ECON 24 | 3 | 0 | 3 | None; Dixit–Nalebuff, Smith, cartel. Earlier Nash drafts remain unselected history. |
+| ECON 25 | 2 | 0 | 2 | None; two Thaler excerpts and the model/person framing. |
+| ECON 26 | 3 | 0 | 3 | None; wants, Simon, abundance / soul. |
+| EDCOR 20 | 2 | 0 | 2 | None; motivational harm and Montessori. |
+| EDCOR 21 | 2 | 0 | 2 | None; Greene and systems. |
+| EDCOR 22 | 2 | 0 | 2 | None; Willingham pair. |
+| EDCOR 23 | 0 | 1 | 1 | One companion to Hawking; not yet selected. |
+| EDCOR 24 | 2 | 0 | 2 | None; visual learning and good teaching. |
+| EDCOR 25 | 1 | 0 | 1 | One companion to Feynman; not yet selected. |
 | EDCOR 26 | 1 | 0 | 1 | One companion to Palmer; not yet selected. |
 
-**Range totals after both merges:** 25 cards, with 22/28 minimum slots filled. Six minimum slots remain: Econ 23 (2), Learning 23 (2), Learning 25 (1), Learning 26 (1). Counts are implementation coverage, not a claim that all 14 chapters have completed a full editorial audit.
+**Range totals:** 25 published cards; **27 after the two Chapter 23 PRs merge**, with 24/28 minimum slots filled. Four minimum slots then remain: Econ 23 (1), Learning 23 (1), Learning 25 (1), Learning 26 (1). Three is the ceiling; a third card does not fill another chapter’s gap. Counts are implementation coverage, not a claim that all chapters have completed a full editorial audit.
 
 ### Chapter-anchor image status for the same range
 

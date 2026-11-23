@@ -7,6 +7,8 @@
 
 ## Latest chapter decisions — November 22, 2026
 
+Benjamin subsequently approved the first Chapter 23 cards: Chamberlin in Econ and Hawking in Learning. The [Chapter 23 approval record](APHORISM-CANDIDATE-BANK.md#chapter-23-approvals--november-22-2026) supersedes the earlier Econ 23 hold for Chamberlin only; one companion remains open in each Chapter 23. The earlier 16-card placement pass is merged through Econ #215 and Learning #170. The new two-card follow-up is pending merge in Econ #216 / Learning #171.
+
 The [November 22 placement record](APHORISM-CANDIDATE-BANK.md#placement-pass--november-22-2026) contains **16 approved selections**: 15 Econ cards across Chapters 20, 21, 22, 24, 25, 26 and Feynman in Learning 25. Benjamin’s latest approval adds the Dixit–Nalebuff perspective-taking quotation as Econ 24’s third card and closes the former Nash-wording slot. The placement PRs include source context and the requested Econ 25 framing. Econ 23 remains on hold. These cards are pending merge; the [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-2026-placement-status--november-22-2026) distinguishes published cards from proposed additions.
 
 ## Why we are doing this
