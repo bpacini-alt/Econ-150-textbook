@@ -1,7 +1,7 @@
 # Chapter Anchor Handoff
 
 **Snapshot:** November 22, 2026.  
-**Verified main commits:** Econ `0b9d3a017048b3ca7d6680f503eea0933c738840`; Learning `772e43195579a2734f1744fbc443e4bec8e39daa`.
+**Verified main commits:** Econ `c733edfdd6e3683cf185719f3879b03efff1735c`; Learning `f719a864d44e20b873c41adad19af51639240d44`.
 
 This is enough context to resume in a new chat. Recheck current branches, chapter text, and PR status when resuming; this snapshot is not a permanent statement of repository state.
 
@@ -16,7 +16,7 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 
 ## Current publication state
 
-**Published on main at this snapshot:** 18 approved image files across 15 chapter/front-matter pages. The new Chapter 22 attention pair is included below. Five additional chapter placements have approved artwork and are awaiting merge through three open image PRs.
+**Published on main at this snapshot:** 22 unique approved image files across 20 chapter/front-matter pages. This includes the completed Learning #168 and #169 placements and Econ #213. Econ Chapter 20's approved opening image is the one placement awaiting merge in the current PR.
 
 - Learning [#162](https://github.com/bpacini-alt/edcor-310-textbook/pull/162): approved highlighter and elephant–rider v2 images, source notes, and generated pages — merged.
 - Econ [#208](https://github.com/bpacini-alt/Econ-150-textbook/pull/208): shared tracker update for those Learning approvals — merged.
@@ -24,20 +24,19 @@ This is enough context to resume in a new chat. Recheck current branches, chapte
 - Learning [#163](https://github.com/bpacini-alt/edcor-310-textbook/pull/163): moved the unsolved candle image to Chapter 20's opening — merged.
 - Learning [#160](https://github.com/bpacini-alt/edcor-310-textbook/pull/160): Chapter 22 text/forgetting-curve revision — merged; this does not approve the old proposed Four-Slot Workbench mental anchor.
 - Learning [#166](https://github.com/bpacini-alt/edcor-310-textbook/pull/166): Chapter 22 pass-counting opener and gorilla reveal — merged.
+- Learning [#168](https://github.com/bpacini-alt/edcor-310-textbook/pull/168): Robbers Cave / Eagles and Rattlers in Learning 18 — merged.
+- Learning [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169): Fryer in Learning 21, Semmelweis in Learning 25, and the Hercules return callback in Learning 26 — merged.
+- Econ [#213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213): Midas and the golden phone in Econ 26 — merged.
 
 ### Approved placements awaiting merge
 
 | Book / chapter | Approved image | Placement PR |
 | --- | --- | --- |
-| Learning 18 | Eagles and Rattlers at Robbers Cave | [#168](https://github.com/bpacini-alt/edcor-310-textbook/pull/168) |
-| Learning 21 | Roland Fryer rewards the steps | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
-| Learning 25 | Semmelweis handwashing | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
-| Learning 26 | Hercules callback; reuses the Chapter 1 return image | [#169](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
-| Econ 26 | Midas and the golden phone | [#213](https://github.com/bpacini-alt/Econ-150-textbook/pull/213) |
+| Econ 20 | The Pen in Midair: a patient pauses before consenting while a clinician interprets a chest X-ray | [PR #217](https://github.com/bpacini-alt/Econ-150-textbook/pull/217) |
 
 Learning [#167](https://github.com/bpacini-alt/edcor-310-textbook/pull/167) is a Chapter 19 generated-page rebuild, not an image placement.
 
-Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. They are superseded as routes to the current cross-book inventory; do not mistake them for waiting image placements. Do not close or delete them without Benjamin's instruction. Unrelated practice prototypes and editorial PRs are separate work.
+Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and [Learning #153](https://github.com/bpacini-alt/edcor-310-textbook/pull/153) remain open as tracker-related drafts. Econ [#210](https://github.com/bpacini-alt/Econ-150-textbook/pull/210) is an open handoff-only PR prepared before Learning #168 merged; it is not an image placement. Recheck these branches before acting on them. Do not close or delete them without Benjamin's instruction.
 
 ### Approved artwork already in main
 
@@ -48,20 +47,23 @@ Older [Econ #200](https://github.com/bpacini-alt/Econ-150-textbook/pull/200) and
 | Econ 21 | Standard Oil refinery / rail network | [Approved asset](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/etb-live/images/chapter-anchors/ch21-standard-oil-monopoly.png) · [Merged PR](https://github.com/bpacini-alt/Econ-150-textbook/pull/207) |
 | Econ 22 | Bell System / natural monopoly | [Approved asset](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/etb-live/images/chapter-anchors/ch22-bell-system-natural-monopoly.png) · [Merged PR](https://github.com/bpacini-alt/Econ-150-textbook/pull/207) |
 | Econ 23 | Differentiated cafés with distinct fonts and muted awnings | [Approved asset](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/etb-live/images/chapter-anchors/ch23-monopolistic-competition-cafes.png) · [Merged PR](https://github.com/bpacini-alt/Econ-150-textbook/pull/203) |
-| Econ 24 | Rival gas stations; 3.40 and 3.30 | [Approved asset](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/etb-live/images/chapter-anchors/ch24-oligopoly-gas-stations.png) · [Merged PR](https://github.com/bpacini-alt/Econ-150-textbook/pull/204) |
+| Econ 26 | Midas and the golden phone | [Approved asset](https://github.com/bpacini-alt/Econ-150-textbook/blob/main/etb-live/images/chapter-anchors/ch26-midas-golden-distraction.png) · [Merged PR](https://github.com/bpacini-alt/Econ-150-textbook/pull/213) |
 | Learning study guide | Highlighter and mostly blank recall page; v2 proportions | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/intro-highlighter-retrieval.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) |
 | Learning 1 | Hercules departure / return pair | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-departure.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/155) |
 | Learning 2 | Elephant and rider; approved plain-clothed fable revision | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch02-elephant-rider.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/162) |
 | Learning 11 | Baseball prior-knowledge study | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch11-baseball-prior-knowledge.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
-| Learning 12 | Bobo doll / observational learning | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch12-bobo-observational-learning.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/155) |
+| Learning 18 | Eagles and Rattlers at Robbers Cave | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch18-robbers-cave-eagles-rattlers.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/168) |
+| Learning 21 | Roland Fryer rewards the steps | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch21-fryer-rewards-the-steps.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
 | Learning 20 | Candle puzzle and solution pair; puzzle moved into opening | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-unsolved.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/163) |
 | Learning 22 | Pass-counting task and gorilla reveal | [Approved pair](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch22-selective-attention-task.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/166) |
 | Learning 23 | First-person Army intelligence-test room | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch23-intelligence-test-recruits.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/154) |
+| Learning 25 | Semmelweis handwashing | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch25-semmelweis-handwashing.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
+| Learning 26 | Hercules return callback; reuses the Chapter 1 return image | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/169) |
 | Learning 24 | Berkeley curb ramp; relaxed smile/thumbs-up revision | [Approved asset](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch24-curb-cut-access.png) · [Merged PR](https://github.com/bpacini-alt/edcor-310-textbook/pull/157) |
 
 Second images: [Hercules returns](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch01-hercules-return.webp) and [candle solution](https://github.com/bpacini-alt/edcor-310-textbook/blob/main/etb-live/images/chapter-anchors/ch20-candle-problem-solution.webp). The candle assets were added in #161; #163 established the current opening placement. Learning #169 reuses the existing Hercules return image as the Chapter 26 closing callback.
 
-This inventory has **18 approved asset files across 15 chapter/front-matter pages**: 6 Econ pages, and 8 Learning chapters plus its opening study guide. The original November 20 proposal counts in the ledger remain historical. Five additional chapter placements are approved but await the PRs above; Chapter 26 reuses the already published Hercules return image.
+This inventory has **22 unique approved image files across 20 chapter/front-matter pages**: 7 Econ chapters, 12 Learning chapters, and the Learning study guide. Learning 26 reuses the already published Hercules return image. Econ 20 is approved but not yet published; its current placement PR is listed above.
 
 ## Decisions the next chat must preserve
 
@@ -80,28 +82,22 @@ Recent source/prompt notes: [Econ 1](https://github.com/bpacini-alt/Econ-150-tex
 
 ## Agreed next work
 
-Finish this documentation handoff, then **read Chapter 3 in both books** and identify actual stories, research findings, or narratives. Present specific image descriptions before generating.
-
-- Econ 3: “Supply and Demand I: The Price System.” The ledger's older “One Price, Many Decisions” proposal is an existing possibility, not a newly approved image.
-- Learning 3: “An Introduction to Empiricism.” No image is selected in this handoff.
-- Check other chapters for duplicate use before assigning a story. Work in a reviewable pair rather than generating the whole book at once.
+- Econ 20: the approved “Pen in Midair” image is in the current placement PR. After merge, verify it on the live chapter page.
+- Econ 25: the organ-donation default / checkbox is the selected concept; develop the concrete scene and image next.
+- Learning 20–26 and Econ 21–24 and 26 already have approved, published anchors. Check the tracker before proposing another image for those chapters.
 
 ## Later directions already discussed
 
-These are **provisional working concepts, with no generated/approved images in these batches**. Re-read the actual chapters and refine the brief before generating.
+These concepts have progressed since the older planning notes:
 
-| Book / chapter | Recorded working direction | What still needs care |
-| --- | --- | --- |
-| Econ 25 · Behavioral Economics | Organ-donation defaults / a checkbox decision. | Make the effect of the default concrete; distinguish it from the unselected Chapter 2 kidney-exchange scene. |
-| Learning 25 · Research-to-Practice Gap | Semmelweis and a handwashing basin. | Verify the research/history and chapter fit; propose a sourced addition if the story is absent. |
-| Econ 26 · Case for (and Limits of) Markets | King Midas with a gold phone, weighing wealth against human connection. | Work out the phone/family scene and deliberately echo the book's Chapter 1 or relevant introduction. |
-| Learning 26 · Grand Adventure, Reprise | An original returning hero, stronger, better, braver, potentially becoming a guide. | Echo Learning 1's departure/return imagery. The Bilbo-homecoming comparison was a story-feeling reference, not a selected literal character image. |
-
-Benjamin explicitly asked for a deliberate return to the beginning in both Chapter 26 anchors. These directions should not be lost merely because the next batch starts at Chapter 3.
+- **Econ 25:** Organ-donation defaults / a checkbox decision is selected; the scene and image still need to be developed.
+- **Learning 25:** Semmelweis handwashing is approved and published through Learning #169.
+- **Econ 26:** Midas and the golden phone are approved and published through Econ #213.
+- **Learning 26:** Hercules return callback is approved and published through Learning #169, reusing the Chapter 1 return image.
 
 ## Suggested new-chat prompt
 
-> Continue the Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the GitHub chapter-anchor workflow, handoff, tracker, and both repositories' AGENTS.md; check current main and open PRs. All prior image-placement batches were merged at the handoff snapshot. Start by reading Chapter 3 in both books and propose strong story/research-based scene descriptions. Keep Econ's sparse charcoal style and Learning's bright realistic-cartoon style. No new images until we choose the scenes.
+> Continue Chapter Anchor Studio work for Joy of Economics and Joy of Learning. Read the current GitHub chapter-anchor workflow, handoff, tracker, both repositories' AGENTS.md files, current main commits, and open PRs. Econ Chapter 20's approved opening image is awaiting merge in its placement PR; after merge, verify it on the live page. The next image to develop is Econ 25's selected organ-donation-default / checkbox concept. Learning Chapters 20–26 and Econ Chapters 21–24 and 26 already have approved, published anchors. Preserve the exact-image approval and publication states separately.
 
 ## Keep this handoff useful
 
