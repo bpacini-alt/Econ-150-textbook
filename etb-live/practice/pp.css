@@ -224,3 +224,40 @@ legend { font-weight: 650; padding: 0 4px; }
 .pp-gc-help { margin: 4px 2px 8px; }
 .pp-gc-fig { max-width: 540px; margin: 0 auto; }
 .pp-gc-streak { margin: 10px 0 2px; }
+
+/* Tables: schedules (figure kind "table") and payoff matrices (kind "matrix") */
+.pp-table-wrap { overflow-x: auto; margin: 6px 0; }
+.pp-table { border-collapse: collapse; margin: 0 auto; font-variant-numeric: tabular-nums; background: var(--pp-panel); }
+.pp-table th, .pp-table td { border: 1px solid var(--pp-line-strong); padding: 5px 10px; text-align: center; font-size: 15px; }
+.pp-table th { background: var(--pp-accent-soft); font-weight: 700; }
+
+/* Payoff matrix (figure kind "matrix"; clicked in renderers/matrixclick.js) */
+.pp-mx-fig { max-width: 560px; margin: 0 auto; }
+.pp-matrix { border-collapse: separate; border-spacing: 4px; margin: 0 auto; font-variant-numeric: tabular-nums; }
+.pp-matrix th { font-weight: 700; font-size: 14px; padding: 4px 6px; }
+.pp-mx-player { font-size: 15px; letter-spacing: .02em; }
+.pp-mx-r { color: #1a3a5c; }
+.pp-mx-c { color: #8a2a2a; }
+.pp-mx-side { width: 1.6em; padding: 0; }
+.pp-mx-side span { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
+.pp-mx-strat.pp-mx-r { text-align: right; max-width: 9em; }
+.pp-mx-cell { background: var(--pp-panel); border: 2px solid var(--pp-line-strong); border-radius: 8px; padding: 6px 8px; min-width: 6.5em; text-align: center; vertical-align: middle; transition: opacity .15s; }
+.pp-mx-cell .pp-mx-pay { display: block; margin: 2px 0; font-size: 15px; font-weight: 650; line-height: 1.25; }
+.pp-mx-p0 { color: #1a3a5c; }
+.pp-mx-p1 { color: #8a2a2a; }
+button.pp-mx-pay { width: 100%; min-height: 40px; padding: 4px 6px; border-radius: 6px; background: #fff; border: 1px dashed var(--pp-line-strong); cursor: pointer; }
+button.pp-mx-pay:hover { background: var(--pp-accent-soft); }
+.pp-mx-cellbtn { display: block; width: 100%; min-height: 64px; padding: 4px; background: transparent; border: 1px dashed var(--pp-line-strong); border-radius: 6px; cursor: pointer; }
+.pp-mx-cellbtn:hover { background: var(--pp-accent-soft); }
+.pp-mx-ring { outline: 2.5px solid #7a3e9d; outline-offset: 1px; border-radius: 999px; }
+button.pp-mx-ring { border-radius: 999px; }
+.pp-mx-picked { border-color: #7a3e9d; box-shadow: 0 0 0 2px rgba(122, 62, 157, .25); }
+.pp-mx-tag { display: inline-block; margin-top: 3px; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #fff; background: #7a3e9d; border-radius: 999px; padding: 1px 8px; }
+.pp-mx-dim { opacity: .28; }
+.pp-mx-wrong { border: 2px solid var(--pp-bad) !important; background: var(--pp-bad-soft) !important; }
+.pp-mx-note { text-align: center; margin-top: 2px; }
+@media (max-width: 420px) {
+  .pp-matrix { border-spacing: 2px; }
+  .pp-mx-cell { min-width: 0; padding: 4px; }
+  .pp-mx-cell .pp-mx-pay, .pp-matrix th { font-size: 13px; }
+}

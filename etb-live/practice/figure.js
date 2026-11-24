@@ -16,6 +16,12 @@
  *    interactive?: true}   graph students click (renderers/graphclick.js): the SVG
  *                          becomes focusable and carries its plot frame in data-* attributes
  * or several side by side: {kind:"panels", alt, panels:[graph, ...]}
+ * or a schedule:  {kind:"table", alt, caption?, columns:[...], rows:[[...], ...]}
+ * or a payoff matrix (Chapter 24 games; renderers/matrixclick.js makes it clickable):
+ *   {kind:"matrix", alt, caption?, row_player:{name, short}, col_player:{name, short},
+ *    rows:[strategy, ...], cols:[strategy, ...], payoffs:[[[row payoff, col payoff], ...], ...],
+ *    prefix?:"$", suffix?:"", note?}
+ *   Each cell shows both payoffs, each tagged with its player's short name ("A: $14").
  * role: demand | supply | tax | neutral | mark (sets color; mark is for labeled segments students pick from); style: solid | dotted
  * "alt" is required: it is the figure's text for screen readers.
  */
@@ -92,9 +98,65 @@
     return '<svg viewBox="0 0 ' + W + " " + H + '" xmlns="http://www.w3.org/2000/svg"' + attrs + ' style="width:100%;height:auto;display:block;font-family:system-ui,sans-serif">' + defs + s + "</svg>";
   }
 
+  function table(t) {
+    let h = '<figure class="pp-figure pp-table-fig" role="group" aria-label="' + esc(t.alt) + '">' +
+      (t.caption ? '<figcaption class="pp-fig-cap">' + esc(t.caption) + "</figcaption>" : "") +
+      '<div class="pp-table-wrap"><table class="pp-table"><thead><tr>' +
+      t.columns.map((c) => '<th scope="col">' + esc(c) + "</th>").join("") + "</tr></thead><tbody>";
+    for (const r of t.rows) h += "<tr>" + r.map((v) => "<td>" + esc(v) + "</td>").join("") + "</tr>";
+    return h + "</tbody></table></div></figure>";
+  }
+
+  /* opts (from renderers/matrixclick.js): {click: "cell"|"payoff"|null,
+     marks: {payoffs:[[r,c,p]...], cells:[{at:[r,c], label}]}, dim: {rows:[...], cols:[...]}} */
+  function matrix(m, opts) {
+    opts = opts || {};
+    const marks = opts.marks || {}, dim = opts.dim || {};
+    const pre = m.prefix == null ? "$" : m.prefix, suf = m.suffix || "";
+    const money = (v) => (v < 0 ? "−" : "") + pre + Math.abs(v).toLocaleString("en-US") + suf;
+    const who = [m.row_player.short, m.col_player.short];
+    const marked = (r, c, p) => (marks.payoffs || []).some((k) => k[0] === r && k[1] === c && k[2] === p);
+    const cellMark = (r, c) => (marks.cells || []).find((k) => k.at[0] === r && k.at[1] === c);
+    const nc = m.cols.length;
+    let h = '<figure class="pp-figure pp-matrix-fig" role="group" aria-label="' + esc(m.alt) + '">' +
+      (m.caption ? '<figcaption class="pp-fig-cap">' + esc(m.caption) + "</figcaption>" : "") +
+      '<div class="pp-table-wrap"><table class="pp-matrix' + (opts.click ? " pp-mx-live" : "") + '">' +
+      '<tr><td colspan="2"></td><th class="pp-mx-player pp-mx-c" colspan="' + nc + '" scope="colgroup">' + esc(m.col_player.name) + "</th></tr>" +
+      '<tr><td colspan="2"></td>' + m.cols.map((s, c) => '<th class="pp-mx-strat pp-mx-c' + ((dim.cols || []).includes(c) ? " pp-mx-dim" : "") + '" scope="col">' + esc(s) + "</th>").join("") + "</tr>";
+    m.rows.forEach((rs, r) => {
+      h += "<tr>";
+      if (r === 0) h += '<th class="pp-mx-player pp-mx-r pp-mx-side" rowspan="' + m.rows.length + '" scope="rowgroup"><span>' + esc(m.row_player.name) + "</span></th>";
+      h += '<th class="pp-mx-strat pp-mx-r' + ((dim.rows || []).includes(r) ? " pp-mx-dim" : "") + '" scope="row">' + esc(rs) + "</th>";
+      m.cols.forEach((cs, c) => {
+        const cm = cellMark(r, c);
+        const dimmed = (dim.rows || []).includes(r) || (dim.cols || []).includes(c);
+        const pay = (p) => {
+          const txt = esc(who[p]) + ": " + esc(money(m.payoffs[r][c][p]));
+          const cls = "pp-mx-pay pp-mx-p" + p + (marked(r, c, p) ? " pp-mx-ring" : "");
+          const label = esc(m[p ? "col_player" : "row_player"].name) + " earns " + esc(money(m.payoffs[r][c][p])) +
+            " when " + esc(m.row_player.name) + " plays " + esc(rs) + " and " + esc(m.col_player.name) + " plays " + esc(cs);
+          return opts.click === "payoff" && !dimmed
+            ? '<button type="button" class="' + cls + '" data-r="' + r + '" data-c="' + c + '" data-p="' + p + '" aria-label="' + label + '">' + txt + "</button>"
+            : '<span class="' + cls + '">' + txt + "</span>";
+        };
+        const inner = pay(0) + pay(1) + (cm && cm.label ? '<span class="pp-mx-tag">' + esc(cm.label) + "</span>" : "");
+        const cls = "pp-mx-cell" + (cm ? " pp-mx-picked" : "") + (dimmed ? " pp-mx-dim" : "");
+        h += '<td class="' + cls + '">' + (opts.click === "cell"
+          ? '<button type="button" class="pp-mx-cellbtn" data-r="' + r + '" data-c="' + c + '" aria-label="' + esc(m.row_player.name) + " plays " + esc(rs) + ", " + esc(m.col_player.name) + " plays " + esc(cs) + ": " +
+            esc(who[0]) + " " + esc(money(m.payoffs[r][c][0])) + ", " + esc(who[1]) + " " + esc(money(m.payoffs[r][c][1])) + '">' + inner + "</button>"
+          : inner) + "</td>";
+      });
+      h += "</tr>";
+    });
+    return h + "</table></div>" + (m.note ? '<div class="pp-tiny pp-muted pp-mx-note">' + esc(m.note) + "</div>" : "") + "</figure>";
+  }
+  PP.matrixFigure = matrix;
+
   let counter = 0;
   PP.figure = (spec) => {
     if (!spec) return "";
+    if (spec.kind === "table") return table(spec);
+    if (spec.kind === "matrix") return matrix(spec);
     const graphs = spec.kind === "panels" ? spec.panels : [spec];
     // Panels with nothing to read off the axes stay two to a row, even on phones.
     const compact = graphs.length > 1 && graphs.every((g) => !(g.guides || []).length && !(g.notes || []).length);
