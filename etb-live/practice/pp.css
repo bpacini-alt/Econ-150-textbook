@@ -215,3 +215,12 @@ legend { font-weight: 650; padding: 0 4px; }
 @media (max-width: 520px) { .pp-fig-grid:not(.pp-fig-compact) { grid-template-columns: 1fr; } }
 .pp-fig-compact { max-width: 480px; }
 .pp-fig-cap { text-align: center; font-weight: 700; font-size: .95rem; color: #21313e; margin: 2px 0 -4px; }
+
+/* Graph Click (renderers/graphclick.js) */
+.pp-figure svg[role="application"] { cursor: crosshair; touch-action: manipulation; }
+.pp-figure svg[role="application"]:focus-visible { outline: 3px solid var(--pp-focus); outline-offset: 3px; border-radius: 4px; }
+.pp-gc-ask { margin-top: 8px; font-weight: 650; }
+.pp-gc-step { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .7; margin-right: 4px; }
+.pp-gc-help { margin: 4px 2px 8px; }
+.pp-gc-fig { max-width: 540px; margin: 0 auto; }
+.pp-gc-streak { margin: 10px 0 2px; }
