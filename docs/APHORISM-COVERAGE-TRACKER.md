@@ -22,8 +22,8 @@ Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](
 | ECON 25 | 2 | 0 | 2 | None; two Thaler excerpts and the model/person framing. |
 | ECON 26 | 3 | 0 | 3 | None; wants, Simon, abundance / soul. |
 | EDCOR 20 | 2 | 0 | 2 | None; motivational harm and Montessori. |
-| EDCOR 21 | 2 | 0 | 2 | None; Greene and systems. |
-| EDCOR 22 | 2 | 0 | 2 | None; Willingham pair. |
+| EDCOR 21 | 2 | 0 | 2 | None; Greene and systems (both kept in the November 26 reorganization, Learning #182). |
+| EDCOR 22 | 3 | 0 | 3 | None; at the ceiling. “Clear their path, but make them climb.” added November 26 (Learning #182), plus the Willingham pair. |
 | EDCOR 23 | 2 | 0 | 2 | None; Boring and Hawking. |
 | EDCOR 24 | 2 | 1 | 3 | None needed to reach two; Packer adds a distinct relational-attention idea. |
 | EDCOR 25 | 2 | 0 | 2 | None; Boser–McDaniels and Feynman. |
