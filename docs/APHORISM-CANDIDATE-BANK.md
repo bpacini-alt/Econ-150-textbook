@@ -8,6 +8,21 @@
 
 See the current [coverage tracker](APHORISM-COVERAGE-TRACKER.md#chapters-20-26-placement-status--november-27-2026) for chapter-level counts and image status.
 
+## Learning 21–22: How the Brain Learns — November 27, 2026
+
+Benjamin approved and merged [Learning #185](https://github.com/bpacini-alt/edcor-310-textbook/pull/185). It reorganized Chapters 21 and 22 a second time, in the order of the learning process. **Chapter 21 is How the Brain Learns, Part I** (Executive Function, Perception and Attention, Working Memory and Cognitive Load, Encoding). **Chapter 22 is Part II** (Long-Term Memory, Desirable Difficulties, Metacognition, Executive Dysfunction and ADHD, Building and Supporting Executive Function). No wording changed, but every card moved. This section supersedes the chapter and concept placements in the November 26 section below:
+
+| Card | Now in |
+| --- | --- |
+| “Clear their path, but make them climb.” | Chapter 21, end of Concept 3 (Working Memory and Cognitive Load); also Chapter 21’s subtitle |
+| “Memory is the residue of thought.” (with About box) | Chapter 21, Concept 4 (Encoding) |
+| “The brain is not designed for thinking. It’s designed to save you from having to think.” | Chapter 22, Concept 3 (Metacognition) |
+| “Kids do well if they can.” (with About box) | Chapter 22, Concept 4 (Executive Dysfunction and ADHD) |
+| “Lend them your systems until they can run their own.” | Chapter 22, Concept 5 (Building and Supporting Executive Function); also Chapter 22’s subtitle |
+| “Practice until you are perfect and you will be perfect only briefly.” (prose quotation, not a card) | Chapter 21, Concept 3, Principle 2 |
+
+Counts: Chapter 21 has 2 cards and Chapter 22 has 3, which is the ceiling. The recap lists match the cards in each chapter, and the build's aphorism check passes.
+
 ## Learning 21–22 reorganization — November 26, 2026
 
 Benjamin approved and merged [Learning #182](https://github.com/bpacini-alt/edcor-310-textbook/pull/182), which reorganized the two chapters. Chapter 21 is now **Attention, Executive Function & ADHD** (4 concepts: Executive Function, Attention, ADHD, Supporting Students). Chapter 22 is now **Memory and Cognitive Load** (4 concepts: Memory, Cognitive Load Theory, Retention and Transfer, Metacognition).
@@ -221,8 +236,8 @@ To Review means pending, not rejected. Apply this status to the remaining unsele
 | EDCOR 18 · Belonging | — | Not started |
 | EDCOR 19 · Extrinsic motivation | 3 approved aphorisms in merged PR #136: “You are going to use behaviorism, so use it skillfully.”; “Attention is a reward. Spend it on purpose.”; “The goal isn’t students who obey, but students who choose well.” (adapted from Elder Dale G. Renlund, “Choose You This Day,” October 2018) | Chapter-by-chapter audit remains pending; at the three-card ceiling |
 | EDCOR 20 · Intrinsic motivation | 2 approved aphorisms in merged PR #137: “First, do no (motivational) harm.” (with an About the Aphorism box on the Hippocratic origin) and Maria Montessori, “The greatest sign of success for a teacher … is to be able to say, ‘The children are now working as if I did not exist.’” (*The Absorbent Mind*, 1949) | Chapter-by-chapter audit remains pending. Unselected candidates (Pink, Deci, Canning & Harackiewicz) are To Review in EDCOR’s `docs/APHORISM-BANK.md` |
-| EDCOR 21 · Executive function & ADHD | 2 aphorisms in merged EDCOR PR #150 (Mayleigh’s chapter revision): “Kids do well if they can.” (Ross Greene, *Lost at School*, 2008; with an About the Aphorism box) and “Lend them your systems until they can run their own.” “Can’t or won’t?” was the running question until November 26, 2026, when Learning #182 replaced it with will and skill; both cards kept. | Chapter-by-chapter audit remains pending. Unselected candidates are To Review in EDCOR’s `docs/APHORISM-BANK.md`; “Nets are greater than poles” and “Routines eat willpower for breakfast” belong in other chapters |
-| EDCOR 22 · Memory & cognitive load | 3 aphorisms after merged Learning #182 (November 26, 2026): “Clear their path, but make them climb.” (Benjamin’s original, Concept 2), plus the Willingham pair from EDCOR PR #150, “Memory is the residue of thought.” (Concept 3, with an About box) and “The brain is not designed for thinking. It’s designed to save you from having to think.” (Concept 4). In the text only: “Practice until you are perfect and you will be perfect only briefly.” (restored, Concept 2). At the three-card ceiling. | Chapter-by-chapter audit remains pending |
+| EDCOR 21 · How the Brain Learns, Part I | 2 aphorisms after merged Learning #185 (November 27, 2026): “Clear their path, but make them climb.” (Benjamin’s original; Concept 3, Working Memory and Cognitive Load; also the chapter subtitle) and “Memory is the residue of thought.” (Daniel Willingham; Concept 4, Encoding; with an About box). In the text only: “Practice until you are perfect and you will be perfect only briefly.” (Concept 3, Principle 2). | Chapter-by-chapter audit remains pending |
+| EDCOR 22 · How the Brain Learns, Part II | 3 aphorisms after merged Learning #185 (November 27, 2026): “The brain is not designed for thinking. It’s designed to save you from having to think.” (Willingham; Concept 3, Metacognition), “Kids do well if they can.” (Ross Greene; Concept 4, Executive Dysfunction and ADHD; with an About box), and “Lend them your systems until they can run their own.” (original, from Mayleigh’s draft; Concept 5, Building and Supporting Executive Function; also the chapter subtitle). Will and skill is the running idea in Concept 4. At the three-card ceiling. | Chapter-by-chapter audit remains pending |
 | EDCOR 23 · IQ | — | Not started |
 | EDCOR 24 · Learner differences | 3 published aphorisms, including Packer (merged Learning #173) | Chapter-by-chapter audit remains pending |
 | EDCOR 25 · Research/practice gap | Feynman quotation selected for inclusion | November 22: exact prose placement and full chapter audit pending; vocabulary/practice candidate remains MAYBE |
