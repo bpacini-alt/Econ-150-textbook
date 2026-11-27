@@ -1,37 +1,36 @@
 # Aphorism Coverage Tracker — Econ 150 and EDCOR 310
 
-**Last full-book count:** November 18, 2026; **Chapters 20–26 refreshed:** November 23, 2026  
+**Last full-book count:** November 18, 2026; **Chapters 20–26 refreshed:** November 27, 2026  
 **Scope:** The 52 numbered chapters: Econ 150 Chapters 1–26 and EDCOR 310 Chapters 1–26.  
 **Decision record:** The [cross-book candidate bank](APHORISM-CANDIDATE-BANK.md) keeps wording, source, and chapter-placement decisions. This file tracks per-chapter coverage and review status.
 
 **Current target authority:** Benjamin set the two-per-chapter goal on November 18, 2026. This tracker governs current coverage planning and supersedes older one-or-two guidance in the editorial archive; those files remain the record of prior wording, sources, and decisions.
 
-## Chapters 20–26 placement status — November 23, 2026
+## Chapters 20–26 placement status — November 27, 2026
 
-**Updated November 23, 2026.** This table supersedes the November 18 snapshot **for these 14 chapters**. Inspected main commits: Econ `b689b65390347a646232052be5f5934afe42e16a`; Learning `f719a864d44e20b873c41adad19af51639240d44`. [Econ #216](https://github.com/bpacini-alt/Econ-150-textbook/pull/216) and [Learning #171](https://github.com/bpacini-alt/edcor-310-textbook/pull/171) are merged, so Chamberlin, Hawking, Boring, and Boser–McDaniels count as published.
+**Verified November 27, 2026** against the current chapter sources. The status includes merged Econ #218 and Learning #173 and #182. The earlier Econ #216 / Learning #171 placements are also published. This table counts live Key aphorism cards; it does not claim the full editorial audit is complete.
 
-Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](https://github.com/bpacini-alt/Econ-150-textbook/pull/218) places it with product variety and adds a matching Chamberlin/Levitt recap. Benjamin also approved Packer as a distinct third card in Learning 24 and paired D&C 88:78 with D&C 50:22 in Learning 26; both are in [Learning #173](https://github.com/bpacini-alt/edcor-310-textbook/pull/173). These three additions across the two PRs remain pending merge. See the [Learning approval and source record](APHORISM-CANDIDATE-BANK.md#learning-24-and-26-approvals--november-23-2026) and the [Levitt record](APHORISM-CANDIDATE-BANK.md#levitt-approval-and-placement--november-23-2026).
+| Chapter | Published cards | Gap to 2 | Current status / next step |
+| --- | ---: | ---: | --- |
+| ECON 20 | 2 | 0 | Ambulance and Sowell. |
+| ECON 21 | 2 | 0 | Demand curve and restricted output. |
+| ECON 22 | 3 | 0 | Entry barriers, Stigler, rent-seeking. |
+| ECON 23 | 2 | 0 | Chamberlin and Levitt; #218 merged. |
+| ECON 24 | 3 | 0 | Dixit–Nalebuff, Smith, cartel. |
+| ECON 25 | 2 | 0 | Two Thaler excerpts and the model/person framing. |
+| ECON 26 | 3 | 0 | Wants, Simon, abundance / soul. |
+| EDCOR 20 | 2 | 0 | Motivational harm and Montessori. |
+| EDCOR 21 | 2 | 0 | Greene and systems; both cards retained in the #182 reorganization. |
+| EDCOR 22 | 3 | 0 | “Clear their path, but make them climb” plus the Willingham pair; merged #182. |
+| EDCOR 23 | 2 | 0 | Boring and Hawking. |
+| EDCOR 24 | 3 | 0 | Visual learning, good teaching, and Packer; merged #173. |
+| EDCOR 25 | 2 | 0 | Boser–McDaniels and Feynman. |
+| EDCOR 26 | 2 | 0 | Palmer and the paired D&C excerpts; merged #173. |
 
-| Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
-| --- | ---: | ---: | ---: | --- |
-| ECON 20 | 2 | 0 | 2 | None; ambulance and Sowell. |
-| ECON 21 | 2 | 0 | 2 | None; demand curve and restricted output. |
-| ECON 22 | 3 | 0 | 3 | None; entry barriers, Stigler, rent-seeking. |
-| ECON 23 | 1 | 1 | 2 | None after merge; Chamberlin and Levitt. |
-| ECON 24 | 3 | 0 | 3 | None; Dixit–Nalebuff, Smith, cartel. |
-| ECON 25 | 2 | 0 | 2 | None; two Thaler excerpts and the model/person framing. |
-| ECON 26 | 3 | 0 | 3 | None; wants, Simon, abundance / soul. |
-| EDCOR 20 | 2 | 0 | 2 | None; motivational harm and Montessori. |
-| EDCOR 21 | 2 | 0 | 2 | None; Greene and systems (both kept in the November 26 reorganization, Learning #182). |
-| EDCOR 22 | 3 | 0 | 3 | None; at the ceiling. “Clear their path, but make them climb.” added November 26 (Learning #182), plus the Willingham pair. |
-| EDCOR 23 | 2 | 0 | 2 | None; Boring and Hawking. |
-| EDCOR 24 | 2 | 1 | 3 | None needed to reach two; Packer adds a distinct relational-attention idea. |
-| EDCOR 25 | 2 | 0 | 2 | None; Boser–McDaniels and Feynman. |
-| EDCOR 26 | 1 | 1 | 2 | None after merge; Palmer plus paired D&C passages. |
-
-**Range totals:** 29 published cards; **32 after Econ #218 and Learning #173 merge**, with all 28/28 minimum slots filled. Learning 24 has an optional distinct third card. These are selection/placement counts, not a claim that every chapter has completed a full editorial audit.
+**Aphorism totals:** **33 published cards** across 14 chapters; **28/28 minimum slots filled**. Learning 24 has an optional third card. These are placement counts, not a claim that every chapter has completed a full editorial audit.
 
 ### Chapter-anchor image status for the same range
+
 
 | Chapter | Econ image | Learning image |
 | --- | --- | --- |
@@ -43,7 +42,7 @@ Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](
 | 25 | Open; organ-donation defaults remain a working concept. | Published: Semmelweis; merged #169. |
 | 26 | Published: Midas with a gold phone; merged #213. | Published: Hercules returns, deliberate opening callback; merged #169. |
 
-**Images: 13/14 chapters covered.** Only Econ 25 still needs an anchor; its organ-donation-default concept remains provisional. The image authority remains the [chapter mental-anchor tracker](CHAPTER-MENTAL-ANCHOR-TRACKER.md); this table is a dated cross-book handoff. No images were generated or changed in this aphorism pass.
+**Images: 13/14 chapters covered.** Only Econ 25 still needs an approved anchor; its organ-donation-default concept remains provisional. The image authority remains the [chapter mental-anchor tracker](CHAPTER-MENTAL-ANCHOR-TRACKER.md); this table is a dated cross-book handoff. No images were generated or changed in this aphorism pass.
 
 ## Historical full-book snapshot — November 18, 2026
 
