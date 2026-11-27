@@ -399,6 +399,22 @@ The reasoning is that students should first understand how firms turn inputs int
 
 **Status:** Record for later; do not implement yet. When this becomes active work, create a GitHub issue to track the structural revision, then use a pull request for the actual chapter and navigation changes.
 
+**Update November 18, 2026:** if this happens at the Fall 2026 → Winter 2027 break, merge it in the same pass as the Unit 3 reorder below, so chapter numbers change only once.
+
+### Econ 150 — Reorder Unit 3 into weekly pairs (decided November 18, 2026)
+
+Benjamin decided Unit 3 jumps around and should be taught in three weekly pairs:
+
+- **Week 8, markets need rules:** 15 Institutions (now 16), 16 The Tragedy of the Commons (now 18)
+- **Week 9, spillovers and how to fix them:** 17 Externalities (unchanged), 18 Pigouvian Taxes, Subsidies, and Incentives (now 19)
+- **Week 10, when you can't walk away, or can't see:** 19 Elasticity (now 15), 20 Healthcare with information problems (unchanged)
+
+The full change map is in [`docs/UNIT-3-REORDER.md`](docs/UNIT-3-REORDER.md): file moves, practice-bank spiral fixes, the prose that needs rewriting (the main one: the commons chapter assumes externalities are already taught), every chapter-number reference to change, the course-side changes, and four open questions.
+
+**Timing:** nothing students can see changes during Fall 2026. Draft the prose rewrites in a preview pull request before the break; do the file renumber as one scripted step on a fresh `main` at the break, and keep a frozen Fall 2026 copy for Incompletes. Takes effect Winter 2027.
+
+**Status:** Recorded; not started. When work begins, open a GitHub issue to track it.
+
 ### Both books: Add recorded narration in Benjamin's voice (ElevenLabs)
 
 Right now every chapter is read aloud by the student's own device voice. That's a stopgap while chapters are still being edited, so no money is spent on audio that would have to be regenerated. Once editing is done, replace it with narration in Benjamin's cloned voice.
