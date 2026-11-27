@@ -15,7 +15,7 @@ Benjamin approved Levitt as Econ 23’s second card on November 23. [Econ #218](
 | Chapter | Published cards at inspected main | Cards added in current PR | Total after merge | Still needed to reach two / decision |
 | --- | ---: | ---: | ---: | --- |
 | ECON 20 | 2 | 0 | 2 | None; ambulance and Sowell. |
-| ECON 21 | 2 | 0 | 2 | None; durable market power and restricted output (card B reworded November 26, 2026). |
+| ECON 21 | 2 | 0 | 2 | None; demand curve and restricted output. |
 | ECON 22 | 3 | 0 | 3 | None; entry barriers, Stigler, rent-seeking. |
 | ECON 23 | 1 | 1 | 2 | None after merge; Chamberlin and Levitt. |
 | ECON 24 | 3 | 0 | 3 | None; Dixit–Nalebuff, Smith, cartel. |

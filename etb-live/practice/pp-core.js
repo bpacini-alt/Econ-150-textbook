@@ -248,7 +248,7 @@
       const done = cs.counts[cs.tier] || 0;
       const pick = mix ? "mix" : activity.id;
       let h = '<div class="pp-panel">';
-      h += '<div class="pp-eyebrow">Concept ' + esc(concept.number) + ' practice</div>';
+      h += '<div class="pp-eyebrow">' + esc(concept.label || "Concept " + concept.number) + ' practice</div>';
       h += '<div class="pp-title">' + esc(concept.name) + "</div>";
       h += '<div class="pp-tiers" role="group" aria-label="Practice level">' + tiers.map((t) =>
         '<button type="button" data-tier="' + t + '" aria-pressed="' + (t === cs.tier) + '">' + '<span class="pp-tier-n">Tier ' + t + "</span>" + esc(tierLabel(t)) + "</button>").join("") + "</div>";
