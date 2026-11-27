@@ -138,17 +138,27 @@ Examples where the aphorism overturns a tempting intuition:
 4. Assess chapter fit explicitly: Does the line compress a main idea of this chapter? Is it accurate on its own? Does it correct a likely misconception? Is it distinct from the chapter's existing headings, synthesis, and other aphorisms? Does the surrounding prose give it the needed limits?
 5. Check ownership and attribution. Separate exact quotation, adapted slogan, paraphrase, and Benjamin-authored wording. Record a source and page or stable link when known; leave attribution open when it is not verified.
 6. Bring Benjamin a short recommendation for this chapter: the existing line(s) worth keeping, any one or two strongest additions, the exact fit/location, and unresolved source or qualification questions. Do not put candidates from several chapters in one review batch.
-7. After approval, place the exact line in the prose after its idea is introduced, never at the chapter opening. Use the existing card structure with **Key aphorism** as its label and one short explanatory line. Put a collapsed **About the Aphorism** accordion farther along the nearby prose when sourcing or context deserves more room; keep the accordion separate from the card.
+7. After approval, place the exact line in the prose after its idea is introduced, never at the chapter opening. Use the existing card structure with **Key aphorism** as its label and one short explanatory line. When sourcing or context deserves more room, fold it into the card as a collapsed **Learn more** toggle (see "Learn more inside the card" below).
 8. Preview the chapter, confirm the placement and source notes, then update the tracker. Mark **Done** only after Benjamin approves the preview and merges the PR. If existing lines already fill the target, review them for fit rather than adding more.
 
 The tracker is the [52-chapter progress ledger](APHORISM-CANDIDATE-BANK.md#chapter-by-chapter-progress-tracker--started-november-10-2026). Its statuses distinguish unreviewed candidates, active PR work, placement holds, and completed chapters. An open PR is not a completed chapter.
 
 When Benjamin has approved a chapter's few strongest lines:
 
-- Add the approved **exact wording** in the live Chapter 11 card structure: a label, aphorism line, and short explanatory subtext. For this placement pass, label new cards **Key aphorism**. Place them in the prose after the idea has been introduced, never in a chapter-opening title block or before the relevant explanation. If more sourcing or interpretation is needed, add a separate collapsed **About the Aphorism** accordion farther along the relevant prose; keep it nearby, not stacked with the card. Recaps may follow chapter synthesis when they reinforce the prose without adding new aphorisms.
+- Add the approved **exact wording** in the live Chapter 11 card structure: a label, aphorism line, and short explanatory subtext. For this placement pass, label new cards **Key aphorism**. Place them in the prose after the idea has been introduced, never in a chapter-opening title block or before the relevant explanation. If more sourcing or interpretation is needed, put it in a collapsed **Learn more** toggle inside the card (see below). Recaps may follow chapter synthesis when they reinforce the prose without adding new aphorisms.
 - Repeat the same words in memorization quizzes, slides, and practice rather than silently rephrasing them.
 - Practice more than verbatim recall: retrieve; interpret; discriminate correct/incorrect applications; explain the mechanism; identify limits; apply to a novel case; return after spacing. See [Precise Practice](PRECISE-PRACTICE-DESIGN.md). These are anchors, **not** a fifth foundational practice engine.
 - AI feedback for explanations remains **provisional** and gated on instructor-scored rubric calibration; never present a numerical score as certified understanding without evidence.
+
+### Learn more inside the card (adopted November 27, 2026)
+
+Benjamin replaced the separate **About the Aphorism** accordion with a **Learn more** toggle inside the card, after Econ Chapter 23 showed how far a separate box can drift from its line. The context now can't come apart from the quote. Markup, placed as the card's last child:
+
+```html
+<details class="etb-aphorism-more" id="aph-…-about" data-narrate="skip"><summary>Learn more</summary><div class="etb-aphorism-more-body"><p>…</p></div></details>
+```
+
+`data-narrate="skip"` keeps the audio player from reading the toggle as a question. The styles are in the shared `aphorism/etb-aphorism.css`. Older chapters keep their separate **About the Aphorism** boxes until each chapter is revised; convert them then, not in a sweep. Benjamin may adjust the look as more chapters are converted.
 
 ### Historical review workflow — eight *candidates*, not eight pages of prose
 
