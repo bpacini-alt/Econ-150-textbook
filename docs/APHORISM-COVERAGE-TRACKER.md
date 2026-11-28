@@ -20,8 +20,8 @@
 | ECON 25 | 2 | 0 | Two Thaler excerpts and the model/person framing. |
 | ECON 26 | 3 | 0 | Wants, Simon, abundance / soul. |
 | EDCOR 20 | 2 | 0 | Motivational harm and Montessori. |
-| EDCOR 21 | 2 | 0 | Greene and systems; both cards retained in the #182 reorganization. |
-| EDCOR 22 | 3 | 0 | “Clear their path, but make them climb” plus the Willingham pair; merged #182. |
+| EDCOR 21 | 2 | 0 | “Clear their path, but make them climb” and Willingham’s residue of thought; placements after Learning #185 (How the Brain Learns, Part I). |
+| EDCOR 22 | 3 | 0 | At the ceiling: Willingham’s “brain is not designed for thinking,” Greene, and “Lend them your systems”; placements after Learning #185 (Part II). |
 | EDCOR 23 | 2 | 0 | Boring and Hawking. |
 | EDCOR 24 | 3 | 0 | Visual learning, good teaching, and Packer; merged #173. |
 | EDCOR 25 | 2 | 0 | Boser–McDaniels and Feynman. |
